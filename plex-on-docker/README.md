@@ -43,3 +43,5 @@ Edit `/etc/fstab`
 //192.168.0.22/plex_media/movies /mnt/movies cifs credentials=/home/technotim/.smbcredentials 0 0
 //192.168.0.22/plex_media/music /mnt/music cifs credentials=/home/technotim/.smbcredentials 0 0
 ```
+Then reboot or
+`sudo mount -a` to mount
