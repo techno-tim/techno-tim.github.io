@@ -9,7 +9,7 @@ https://www.youtube.com/watch?v=fgx3NMk6F54
 
 edit grub
 
-`/etc/default/grub/`
+`/etc/default/grub`
 
 
 Change this line:
