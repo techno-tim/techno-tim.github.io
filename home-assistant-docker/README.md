@@ -4,3 +4,51 @@ Are you ready to start automating your smart home with the power of open source?
 
 
 https://www.youtube.com/watch?v=DK_Gdtn_wvw
+
+
+`configuration.yaml`
+
+```
+# Configure a default setup of Home Assistant (frontend, api, etc)
+default_config:
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+wemo:
+  discovery: true
+```
+
+
+`scripts.yaml`
+
+```
+'1591564249617':
+  alias: Dark Mode
+  sequence:
+  - data:
+      group_name: Office
+      scene_name: Gaming
+    service: hue.hue_activate_scene
+  - device_id: f41ccf86433148dcbd8e932d1412f12a
+    domain: switch
+    entity_id: switch.gaming_lights
+    type: turn_on
+'1591564322588':
+  alias: Light Mode
+  sequence:
+  - data:
+      group_name: Office
+      scene_name: Energize
+    service: hue.hue_activate_scene
+  - device_id: f41ccf86433148dcbd8e932d1412f12a
+    domain: switch
+    entity_id: switch.gaming_lights
+    type: turn_off
+```
