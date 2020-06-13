@@ -1,9 +1,5 @@
-# How to Virtualize Your Home Router / Firewall Using pfSense
+# Virtualize vs. Containerize (Which should I choose?)
 
-It's time to say goodbye to your home router and start virtualizing it using Proxmox and pfSense.
+Should I virtualize this?  Should I containerize this?  These are great questions to ask yourself when spinning up self-hosted services in your Homelab environment.  We'll review my previous video (20 Ways to Use a Virtual Machine (and other ideas for your homelab https://www.youtube.com/watch?v=SVQmz...) and decide which should run in a Docker container, which should be virtualized with Proxmox, and which should run on hardware as bare metal. 
 
-pfSense Community Edition Download: https://www.pfsense.org/download/
-Get started with Proxmox today: https://www.youtube.com/watch?v=7OVaWaqO2aU
-
-
-https://www.youtube.com/watch?v=hdoBQNI_Ab8
+https://www.youtube.com/watch?v=pxwUXJmAER4
