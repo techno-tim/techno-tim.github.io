@@ -10,5 +10,5 @@ https://www.youtube.com/watch?v=hdoBQNI_Ab8
 
 
 Be sure that you enabled PCI passthrough
-### Enabled PC Passthrough
+### Enable PCI Passthrough
 https://pve.proxmox.com/wiki/PCI(e)_Passthrough
