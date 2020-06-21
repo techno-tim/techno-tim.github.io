@@ -4,7 +4,6 @@ Have you been thinking about updating your Proxmox VE server?  Well, what are yo
 
 https://www.youtube.com/watch?v=rfK8fc-ccoQ
 
-
 Edit `/etc/apt/sources.list`
 
 ```
