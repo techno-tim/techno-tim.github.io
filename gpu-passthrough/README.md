@@ -1,6 +1,5 @@
 # Remote Gaming! (and Video Encoding using Proxmox and GPU Passthrough)
 
-
 Are you looking to build a remote gaming machine and passthrough your GPU to a virtual machine?  Do you want to use GPU acceleration for transcoding Plex or Adobe Media Encoder?  Do you dream of setting up Steam Link or Remote Play In Home Streaming and streaming games to any screen in your house?  If so, this complete step-by-step guide of how to passthrough your Nvidia or AMD video card through to a guest VM using Proxmox VE!  If not, well, please watch this anyway.  
 
 
