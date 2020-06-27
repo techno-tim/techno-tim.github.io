@@ -5,8 +5,6 @@ It use to be hard to back up Rancher, but with Rancher 2 it's super simple.  Upg
 https://www.youtube.com/watch?v=YWqBxCIfxw4
 
 
-If you need to install rancher, follow this guide
-
 Need to install Rancher?  See my guide https://www.youtube.com/watch?v=oILc0ywDVTk
 
 See the full guide from Rancher https://rancher.com/docs/rancher/v2.x/en/upgrades/upgrades/single-node/
