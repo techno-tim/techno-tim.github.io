@@ -9,6 +9,8 @@ If you need to install rancher, follow this guide
 
 Need to install Rancher?  See my guide https://www.youtube.com/watch?v=oILc0ywDVTk
 
+See the full guide from Rancher https://rancher.com/docs/rancher/v2.x/en/upgrades/upgrades/single-node/
+
 ## Upgrade & Backup Outline
 
 * Create a copy of the data from your Rancher server container
