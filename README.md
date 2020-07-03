@@ -4,6 +4,9 @@ Here you will find all the documentation for my YouTube vides on my channel [htt
 
 See each folder for details 📁
 
+## Credits
+Created by TechnoTim with 💛
+
 🔔 Social Media 🔔
 
 ► Twitch https://www.twitch.tv/TechnoTim
