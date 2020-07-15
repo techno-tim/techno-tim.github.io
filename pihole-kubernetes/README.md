@@ -26,4 +26,4 @@ enabled & start service
 
 Set pi-hole password
 
-`sudo -a -p`
+`sudo pihole -a -p`
