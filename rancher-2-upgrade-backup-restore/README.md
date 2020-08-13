@@ -81,7 +81,7 @@ docker ps
 Use the command you used to create your initial container, it looks something like this.
 
 ```
-docker run -d --restart=unless-stopped -p 9090:80 -p 9091:443 -v /opt/rancher:/var/lib/rancher --name=rancher_docker_server rancher/<RANCHER_VERSION>
+docker run -d --restart=unless-stopped -p 9090:80 -p 9091:443 -v /opt/rancher:/var/lib/rancher --name=rancher_docker_server rancher/rancher:<RANCHER_VERSION>
 ```
 
 Stop the container
