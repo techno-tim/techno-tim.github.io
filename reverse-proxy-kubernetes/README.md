@@ -92,7 +92,7 @@ https://hub.helm.sh/charts/stable/traefik
 
 
 
-## Traefic DNS Providers
+## Traefik DNS Providers
 
 
 https://docs.traefik.io/https/acme/#providers
