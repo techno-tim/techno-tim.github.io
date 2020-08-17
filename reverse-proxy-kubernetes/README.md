@@ -51,7 +51,7 @@ data:
 
 ## Traefik
 
-traefix sample answers yarl
+traefik sample answers yaml
 
 
 
