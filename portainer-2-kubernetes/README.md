@@ -58,6 +58,15 @@ $ sudo add-apt-repository \
  $ sudo apt-get install docker-ce docker-ce-cli containerd.io
 ```
 
+```
+sudo usermode -aG docker $USER
+```
+
+```
+logout
+```
+
+
 ### Install kubectl
 
 https://kubernetes.io/docs/tasks/tools/install-kubectl/
