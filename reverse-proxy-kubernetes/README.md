@@ -1,12 +1,9 @@
 # Self-Hosting Your Homelab Services with SSL -- Let's Encrypt, MetalLB, Traefik, Rancher, Kubernetes
 
+[![Self-Hosting Your Homelab Services with SSL -- Let's Encrypt, MetalLB, Traefik, Rancher, Kubernetes](http://img.youtube.com/vi/pAM2GBCDGTo/0.jpg)](https://www.youtube.com/watch?v=pAM2GBCDGTo "Self-Hosting Your Homelab Services with SSL -- Let's Encrypt, MetalLB, Traefik, Rancher, Kubernetes")
+
+
 Are you self-hosting lots of services at home in your homelab?  Have you been port forwarding or using VPN to access your self-hosted services wishing you had certificates so that you can access them securely over SSL?  Well after this video, you can!  In this step by step tutorial we'll walk through setting up Rancher and Kubernetes with a reverse proxy, Kubernetes Ingress, MetalLB, Traefik, Let's Encrypt, and DNS giving you free certificates.   
-
-https://www.youtube.com/watch?v=pAM2GBCDGTo
-
-
-
----
 
 
 ## Install WSL on Windows 10
