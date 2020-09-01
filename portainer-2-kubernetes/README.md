@@ -111,14 +111,10 @@ k3d cluster create portainer --api-port 6443 --servers 1 --agents 1 -p "30000-32
 
 ### Install Portainer
 
-https://github.com/portainer/portainer-k8s
+https://github.com/portainer/k8s
 
 ```
-curl -LO https://raw.githubusercontent.com/portainer/portainer-k8s/master/portainer.yaml
-kubectl apply -f portainer.yaml
-```
+kubectl create namespace portainer
+kubectl apply -n portainer -f https://raw.githubusercontent.com/portainer/k8s/master/deploy/manifests/portainer/portainer.yaml
 
-```
-curl -LO https://raw.githubusercontent.com/portainer/portainer-k8s/master/portainer-nodeport.yaml
-kubectl apply -f portainer-nodeport.yaml
 ```
