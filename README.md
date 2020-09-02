@@ -2,7 +2,7 @@
 
 Here you will find all the documentation for my YouTube videos on my channel [https://www.youtube.com/technotimlive](https://www.youtube.com/channel/UCOk-gHyjcWZNj3Br4oxwh0A)
 
-Don't forget to ⭐ this repo and fork it too! 👆
+Don't forget to ⭐  this repo and fork it too! 👆
 
 See each folder for details 📁
 
