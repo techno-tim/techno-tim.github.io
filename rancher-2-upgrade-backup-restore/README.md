@@ -102,3 +102,56 @@ Start the container
 ```
 docker start <RANCHER_CONTAINER_NAME>
 ```
+
+
+
+
+
+## Unofficial Way
+
+
+### Backup
+
+```
+cd /opt
+```
+
+```
+docker stop rancher_docker_server
+```
+
+if this fails it means you named your container something else, find it by running `docker ps`
+
+```
+sudo tar czpf rancher-data-backup-VERSION-DATE-unofficial.tar.gz rancher
+```
+
+```
+sudo mv rancher-data-backup-VERSION-DATE-unofficial.tar.gz ~/
+```
+
+```
+ docker start rancher_docker_server
+```
+
+### Retstore
+
+
+```
+cd /opt
+```
+
+```
+docker stop rancher_docker_server
+```
+
+if this fails it means you named your container something else, find it by running `docker ps`
+
+```
+sudo tar xzpf rancher-data-backup-VERSION-DATE-unofficial.tar.gz 
+```
+
+```
+ docker start rancher_docker_server
+```
+
