@@ -46,6 +46,8 @@ data:
       - 192.168.1.240-192.168.1.250
 ```
 
+`kubectl apply -f config.yaml`
+
 ## Traefik
 
 traefik sample answers yaml
