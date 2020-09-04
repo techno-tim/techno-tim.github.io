@@ -59,7 +59,7 @@ $ sudo add-apt-repository \
 ```
 
 ```
-sudo usermode -aG docker $USER
+sudo usermod -aG docker $USER
 ```
 
 ```
