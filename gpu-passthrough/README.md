@@ -76,3 +76,9 @@ blacklist nvidia
 blacklist radeon
 blacklist nouveau
 ```
+
+## Troubleshooting
+
+If your Windows machine fails to boot, you may want to create a new Windows VM using UEFI rather than BIOS.
+
+
