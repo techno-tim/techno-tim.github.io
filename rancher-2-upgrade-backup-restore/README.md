@@ -75,7 +75,7 @@ Check to see if it's running
 docker ps
 ```
 
-## Retoring Rancher from Backup
+## Restoring Rancher from Backup
 
 Use the command you used to create your initial container, it looks something like this.
 
