@@ -155,3 +155,42 @@ sudo tar xzpf rancher-data-backup-VERSION-DATE-unofficial.tar.gz
  docker start rancher_docker_server
 ```
 
+
+### Backup script
+
+Your rancher server must be named similar to `rancher_docker_server_v2.4.5` otherwise you'll need to modify this.
+This will not work with `latest` tag, so be sure to pin your version.
+
+`rancher_backup.sh`
+
+```
+# go to rancher dir
+cd /opt
+
+# get current rancher tag
+RANCHER_TAG=$(docker ps | grep rancher/rancher | grep -Eio 'rancher/rancher:.{0,6}' | sed 's/rancher\/rancher://g')
+
+# date format
+TODAY=`date -I`
+
+# stop docker container
+docker stop rancher_docker_server_$RANCHER_TAG
+
+# create tar
+tar czpf rancher-data-backup-$RANCHER_TAG-$TODAY-unofficial.tar.gz rancher
+
+# move tar
+mv rancher-data-backup-$RANCHER_TAG-$TODAY-unofficial.tar.gz /home/USERNAME/backups/rancher_backups/
+
+# start server
+docker start rancher_docker_server_$RANCHER_TAG
+
+```
+
+
+### upgrading to a new version
+
+```
+NEW_VERSION_TAG=v2.4.8
+docker run -d --restart=unless-stopped -p 9090:80 -p 9091:443 -v /opt/rancher:/var/lib/rancher --name=rancher_docker_server_$NEW_VERSION_TAG rancher/rancher:$NEW_VERSION_TAG
+```
