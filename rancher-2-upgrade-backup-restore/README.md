@@ -161,6 +161,8 @@ sudo tar xzpf rancher-data-backup-VERSION-DATE-unofficial.tar.gz
 Your rancher server must be named similar to `rancher_docker_server_v2.4.5` otherwise you'll need to modify this.
 This will not work with `latest` tag, so be sure to pin your version.
 
+It will need to be run with `sudo` or scheduled in `sudo crontab -e`
+
 `rancher_backup.sh`
 
 ```
