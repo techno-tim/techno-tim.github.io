@@ -11,3 +11,8 @@ You'll want to use a command similar to this so that there aren't any port confl
 Also, you may want to consider pinning your docker tag to a version other than `latest` to make backing up and upgrading easier.
 
 `docker run -d --restart=unless-stopped -p 9090:80 -p 9091:443 -v /opt/rancher:/var/lib/rancher --name=rancher_docker_server rancher/rancher:latest`
+
+## Troubleshooting
+
+* Make sure you have a static IP on your Rancher host
+* Be sure to use the ports above if you want to add SSL later and use commands in future videos
