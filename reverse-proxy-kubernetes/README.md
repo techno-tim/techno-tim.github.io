@@ -53,7 +53,6 @@ data:
 traefik sample answers yaml
 
 
-
 ```
 ---
   defaultImage: true
@@ -92,8 +91,10 @@ traefik sample answers yaml
 https://hub.helm.sh/charts/stable/traefik
 
 
-
 ## Traefik DNS Providers
 
-
 https://docs.traefik.io/https/acme/#providers
+
+## Troubleshooting
+
+* Be sure that your Traefik yaml matches the code above exactly, including whitespace.  Yaml is whitespace sensitive.
