@@ -20,3 +20,78 @@ https://www.youtube.com/watch?v=9OfoFAljPn4
                              "Y8bbdP"               
 ```
 
+
+
+If you need to passthrough a GPU, follow [this guide](https://github.com/techno-tim/youtube-videos/tree/master/gpu-passthrough) but install Ubuntu instead.
+
+
+## Proxmox
+Shut down your VM in proxmox, edit your conf file, it should be here (note, change path to your VM's ID)
+
+`/etc/pve/qemu-server/100.conf`
+
+
+add `cpu: host,hidden=1,flags=+pcid` to that file
+
+start the server.
+
+## Linux Guest
+
+```
+sudo apt-get update
+
+sudo apt-get upgrade
+
+sudo apt get install qemu-guest-agent
+
+sudo apt install --no-install-recommends nvidia-cuda-toolkit nvidia-headless-450 nvidia-utils-450 libnvidia-encode-450
+```
+
+Then reboot.
+
+Then install `nvtop`
+
+`sudo install nvtop`
+
+## Rancher / Kubernetes
+In your Rancher server (or kubernetes host)
+
+```
+distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
+
+curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | sudo apt-key add -
+
+curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.list | sudo tee /etc/apt/sources.list.d/nvidia-docker.list
+
+sudo apt-get update && sudo apt-get install -y nvidia-container-toolkit
+
+sudo apt-get install nvidia-container-runtime
+```
+
+update `daemon.json`
+
+`sudo nano /etc/docker/daemon.json`
+
+Replace with:
+
+```
+{
+  "default-runtime": "nvidia",
+  "runtimes": {
+    "nvidia": {
+      "path": "/usr/bin/nvidia-container-runtime",
+      "runtimeArgs": []
+    }
+  }
+}
+```
+
+Install one more util for nvidia:
+
+`sudo apt-get install -y nvidia-docker2`
+
+Reboot
+
+Then, using `kubectl` on your kubernetes / rancher host
+
+`kubectl create -f https://raw.githubusercontent.com/NVIDIA/k8s-device-plugin/master/nvidia-device-plugin.yml`
