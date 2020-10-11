@@ -42,7 +42,7 @@ sudo apt-get update
 
 sudo apt-get upgrade
 
-sudo apt get install qemu-guest-agent
+sudo apt-get install qemu-guest-agent build-essential # build-essential is required for nvidia drivers to compile
 
 sudo apt install --no-install-recommends nvidia-cuda-toolkit nvidia-headless-450 nvidia-utils-450 libnvidia-encode-450
 ```
@@ -51,7 +51,7 @@ Then reboot.
 
 Then install `nvtop`
 
-`sudo install nvtop`
+`sudo apt-get install nvtop`
 
 ## Rancher / Kubernetes
 In your Rancher server (or kubernetes host)
