@@ -66,7 +66,7 @@ Start your new rancher server container.
 Use the command you used to create your initial container, it looks something like this.
 
 ```
-docker run -d --restart=unless-stopped -p 9090:80 -p 9091:443 -v /opt/rancher:/var/lib/rancher --name=rancher_docker_server --privileged rancher/rancher:<RANCHER_VERSION>
+docker run -d --restart=unless-stopped -p 9090:80 -p 9091:443 --privileged -v /opt/rancher:/var/lib/rancher --name=rancher_docker_server rancher/rancher:<RANCHER_VERSION>
 ```
 
 Check to see if it's running
@@ -80,7 +80,7 @@ docker ps
 Use the command you used to create your initial container, it looks something like this.
 
 ```
-docker run -d --restart=unless-stopped -p 9090:80 -p 9091:443 -v /opt/rancher:/var/lib/rancher --name=rancher_docker_server --privileged rancher/rancher:<RANCHER_VERSION>
+docker run -d --restart=unless-stopped -p 9090:80 -p 9091:443 --privileged -v /opt/rancher:/var/lib/rancher --name=rancher_docker_server rancher/rancher:<RANCHER_VERSION>
 ```
 
 Stop the container
@@ -194,5 +194,5 @@ docker start rancher_docker_server_$RANCHER_TAG
 
 ```
 NEW_VERSION_TAG=v2.4.8
-docker run -d --restart=unless-stopped -p 9090:80 -p 9091:443 -v /opt/rancher:/var/lib/rancher --name=rancher_docker_server_$NEW_VERSION_TAG --privileged rancher/rancher:$NEW_VERSION_TAG
+docker run -d --restart=unless-stopped -p 9090:80 -p 9091:443 --privileged -v /opt/rancher:/var/lib/rancher --name=rancher_docker_server_$NEW_VERSION_TAG rancher/rancher:$NEW_VERSION_TAG
 ```
