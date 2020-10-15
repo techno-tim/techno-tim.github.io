@@ -42,7 +42,9 @@ sudo apt-get update
 
 sudo apt-get upgrade
 
-sudo apt-get install qemu-guest-agent build-essential # build-essential is required for nvidia drivers to compile
+sudo apt-get install qemu-guest-agent # this is optional if you are virtualizing this machine
+
+sudo apt-get install build-essential # build-essential is required for nvidia drivers to compile
 
 sudo apt install --no-install-recommends nvidia-cuda-toolkit nvidia-headless-450 nvidia-utils-450 libnvidia-encode-450
 ```
