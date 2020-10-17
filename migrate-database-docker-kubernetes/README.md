@@ -9,7 +9,6 @@ Have you been putting off migrating your database to Docker and Kubernetes like 
 `mysql_backup.sh`
 
 ```
-
 #! /bin/bash
 
 BACKUP_DIR="/home"
@@ -20,8 +19,9 @@ MYSQLDUMP=/usr/bin/mysqldump
 MYSQL_HOST="mysql"
 MYSQL_PORT="3306"
 
-databases=`$MYSQL --user=$MYSQL_USER --host $MYSQL_HOST --port $MYSQL_PORT -p$MYSQL_PASSWORD -e "SHOW DATABASES;" | gre>
+databases=`$MYSQL --user=$MYSQL_USER --host $MYSQL_HOST --port $MYSQL_PORT -p$MYSQL_PASSWORD -e "SHOW DATABASES;" | grep -Ev "(Database|information_schema|performance_schema)"`
 
 for db in $databases; do
-  $MYSQLDUMP --host $MYSQL_HOST --port $MYSQL_PORT --force --opt --user=$MYSQL_USER -p$MYSQL_PASSWORD --databases $db |>done
+  $MYSQLDUMP --host $MYSQL_HOST --port $MYSQL_PORT --force --opt --user=$MYSQL_USER -p$MYSQL_PASSWORD --databases $db | gzip > "$BACKUP_DIR/$db.gz"
+done
 ```
