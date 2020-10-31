@@ -29,7 +29,7 @@ add user
 
 add to sudoers
 
-`sudo usermod -aG sudo smoeuser`
+`sudo usermod -aG sudo someuser`
 
 ## SSH Server
 
