@@ -124,7 +124,7 @@ NTP=192.168.0.4
 
 ## install kvm agent
 
-`sudo apt-get install qemu-gest-agent`
+`sudo apt-get install qemu-guest-agent`
 
 
 ## firewall
