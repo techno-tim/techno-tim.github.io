@@ -118,3 +118,6 @@ kubectl create namespace portainer
 kubectl apply -n portainer -f https://raw.githubusercontent.com/portainer/k8s/master/deploy/manifests/portainer/portainer.yaml
 
 ```
+
+The Portainer UI is hosted on port `30777`
+
