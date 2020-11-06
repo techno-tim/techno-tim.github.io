@@ -151,7 +151,7 @@ backend = systemd
 
 check status
 
-`sudo fail2bban-client status`
+`sudo fail2ban-client status`
 
 
-`sudo fail2bban-client status sshd`
+`sudo fail2ban-client status sshd`
