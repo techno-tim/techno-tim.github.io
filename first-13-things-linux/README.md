@@ -10,7 +10,7 @@ After setting up my Linux servers, there are a few things I do before I use them
 ## Update
 
 ```
-sudo apt-apt update
+sudo apt-get update
 
 sudo apt-get upgrade
 ```
@@ -18,7 +18,6 @@ sudo apt-get upgrade
 Reconfigure
 
 `sudo dpkg-reconfigure --priority=low unattended-upgrades`
-
 
 
 ## Account
@@ -100,13 +99,19 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 ## hostname
 
-`sudo hostname ctl saet-hostname`
+`sudo hostnamectl set-hostname`
 
 `sudo nano /etc/hosts`
 
 ## Time Zone
 
 `sudo timedatectl set timezone`
+
+
+You can also use if you want a menu.
+
+`sudo dpkg-reconfigure tzdata `
+
 
 
 ##  NTP Time
