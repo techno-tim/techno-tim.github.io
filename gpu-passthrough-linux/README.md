@@ -55,6 +55,12 @@ Then install `nvtop`
 
 `sudo apt-get install nvtop`
 
+
+## tensorflow workload 
+
+`nvidia-docker run --rm -ti tensorflow/tensorflow:r0.9-devel-gpu`
+
+
 ## Rancher / Kubernetes
 In your Rancher server (or kubernetes host)
 
@@ -97,3 +103,4 @@ Reboot
 Then, using `kubectl` on your kubernetes / rancher host
 
 `kubectl create -f https://raw.githubusercontent.com/NVIDIA/k8s-device-plugin/master/nvidia-device-plugin.yml`
+
