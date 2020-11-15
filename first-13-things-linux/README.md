@@ -19,7 +19,7 @@ Reconfigure unattended-upgrades
 
 `sudo dpkg-reconfigure --priority=low unattended-upgrades`
 
-Verify Reconfiguration file in your text editor of choice
+Verify unattended upgrades configuration file in your text editor of choice
 
 `/etc/apt/apt.conf.d/20auto-upgrades`
 
