@@ -15,9 +15,13 @@ sudo apt-get update
 sudo apt-get upgrade
 ```
 
-Reconfigure
+Reconfigure unattended-upgrades
 
 `sudo dpkg-reconfigure --priority=low unattended-upgrades`
+
+Verify Reconfiguration file in your text editor of choice
+
+`/etc/apt/apt.conf.d/20auto-upgrades`
 
 
 ## Account
