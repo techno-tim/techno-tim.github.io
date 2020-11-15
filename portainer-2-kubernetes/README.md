@@ -121,3 +121,5 @@ kubectl apply -n portainer -f https://raw.githubusercontent.com/portainer/k8s/ma
 
 The Portainer UI is hosted on port `30777`
 
+      Example: `http://192.168.0.1:30777`
+
