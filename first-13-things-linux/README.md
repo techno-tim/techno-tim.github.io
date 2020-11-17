@@ -109,8 +109,13 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 ## Time Zone
 
-`sudo timedatectl set timezone`
+Check time zone: 
 
+`timedatectl`
+
+Change time zone: 
+
+`sudo timedatectl set-timezone`
 
 You can also use if you want a menu.
 
