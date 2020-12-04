@@ -13,7 +13,7 @@ You'll want to use a command similar to this so that there aren't any port confl
 
 Also, you may want to consider pinning your docker tag to a version other than `latest` to make backing up and upgrading easier. See [here](https://hub.docker.com/r/rancher/rancher/tags) for the latest version.
 
-`docker run -d --restart=unless-stopped -p 9090:80 -p 9091:443 --privileged -v /opt/rancher:/var/lib/rancher --name=rancher_docker_server rancher/rancher:latest`
+`docker run -d --restart=unless-stopped -p 80:80 -p 443:443 --privileged -v /opt/rancher:/var/lib/rancher --name=rancher_docker_server rancher/rancher:latest`
 
 ## Troubleshooting
 
