@@ -9,7 +9,7 @@ https://www.youtube.com/watch?v=UoOcLXfa8EU
 
 ## Load Balancer
 
-Create a load banalcer using `nginx`
+Create a load balancer using `nginx`
 
 `nginx.conf`
 
