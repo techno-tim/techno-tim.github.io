@@ -20,9 +20,9 @@ https://kubernetes.io/docs/tasks/tools/install-kubectl/
 
 https://metallb.universe.tf/installation/
 
-`kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.9.3/manifests/namespace.yaml`
+`kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.9.5/manifests/namespace.yaml`
 
-`kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.9.3/manifests/metallb.yaml`
+`kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.9.5/manifests/metallb.yaml`
 
 You should only ever run this step once.
 
