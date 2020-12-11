@@ -17,7 +17,7 @@ Ubuntu Fix
 add your upstream DNS (I use Quad9)
 
 ```
-name server 9.9.9.9
+nameserver 9.9.9.9
 ```
 
 enabled & start service
