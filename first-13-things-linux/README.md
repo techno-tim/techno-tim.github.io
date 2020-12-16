@@ -29,7 +29,7 @@ To disable automatic reboots by the automatic upgrades configuration edit the fo
 
 and uncomment the following line by removing the leading slashes:
 
-`//Unattended-Upgrade::Automatic-Reboot "false";'
+`//Unattended-Upgrade::Automatic-Reboot "false";`
 
 
 ## Account
