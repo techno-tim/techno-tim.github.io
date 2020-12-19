@@ -8,6 +8,7 @@ Are you running Kubernetes in your homelab or in the enterprise?  Do you want an
 https://www.youtube.com/watch?v=APsZJbnluXg
 
 
+## install
 
 https://rancher.com/docs/rancher/v2.x/en/installation/install-rancher-on-k8s/#1-install-the-required-cli-tools
 
@@ -118,6 +119,28 @@ you should see
 deployment "rancher" successfully rolled out
 ```
 
+
+## load balancer
+
+If you are using `k3s` you can use the `traefik` ingress controller that ships with `k3s`
+
+run
+
+```
+kubectl get svc --all-namespaces -o wide
+```
+
+look for 
+
+
+```
+kube-system     traefik                LoadBalancer   10.43.202.72   192.168.100.10   80:32003/TCP,443:32532/TCP   5d23h   app=traefik,release=traefik
+```
+
+then create a DNS entry for `rancher.example.com    192.168.100.10`
+
+
+otherwise you can use `nginx`
 
 nginx lb
 
