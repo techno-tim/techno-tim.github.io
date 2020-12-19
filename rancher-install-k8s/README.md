@@ -3,7 +3,11 @@
 [![Install Rancher on a Kubernetes Cluster](http://img.youtube.com/vi/APsZJbnluXg/0.jpg)](https://www.youtube.com/watch?v=APsZJbnluXg "Install Rancher on a Kubernetes Cluster")
 
 
-Are you running Kubernetes in your homelab or in the enterprise?  Do you want an easy way to manage and create Kubernetes clusters?  Join me as we walk through stalling Rancher on an existing high availability k3s cluster in this step-by-step tutorial.  We install Rancher, configure a load balancer, install and configure helm, install cert-manager, configure Rancher, walk through the GUI, scale up our cluster, and set up a health check and liveness check!   Join me, it's easy in this straightforward guide.
+Are you running Kubernetes in your homelab or in the enterprise?  
+Do you want an easy way to manage and create Kubernetes clusters?  
+Join me as we walk through stalling Rancher on an existing high availability k3s cluster in this step-by-step tutorial.  
+
+We install Rancher, configure a load balancer, install and configure helm, install cert-manager, configure Rancher, walk through the GUI, scale up our cluster, and set up a health check and liveness check!   Join me, it's easy in this straightforward guide.
 
 https://www.youtube.com/watch?v=APsZJbnluXg
 
@@ -60,7 +64,7 @@ Add the Jetstack Helm repository
  ```
 
 
-upddate helm repo
+update helm repo
 
 ```
 helm repo update
