@@ -1,4 +1,4 @@
-# Rancher on kubernetes
+# High Availability Rancher on kubernetes
 
 [![Install Rancher on a Kubernetes Cluster](http://img.youtube.com/vi/APsZJbnluXg/0.jpg)](https://www.youtube.com/watch?v=APsZJbnluXg "Install Rancher on a Kubernetes Cluster")
 
@@ -145,3 +145,11 @@ otherwise you can use `nginx`
 nginx lb
 
 https://rancher.com/docs/rancher/v2.x/en/installation/resources/k8s-tutorials/infrastructure-tutorials/nginx/
+
+
+## other considerations
+
+Separating Rancher Cluster from your User Cluster
+
+
+https://rancher.com/docs/rancher/v2.x/en/overview/architecture-recommendations/#separation-of-rancher-and-user-clusters
