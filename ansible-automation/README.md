@@ -10,6 +10,8 @@ Ansible. Need I say more?  Well, maybe, if you've never heard of it. Ansible is 
 https://www.youtube.com/watch?v=w9eCU4bGgjQ
 
 
+You can also find a collection of playbooks [here](https://github.com/techno-tim/ansible-homelab)
+
 ## install
 
 ```
