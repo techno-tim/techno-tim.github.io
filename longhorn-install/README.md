@@ -61,13 +61,13 @@ kubectl taint nodes luna-01 luna-02 luna-03 luna-04 StorageOnly=true:NoExecute
 ```
 
 
-The applying that toleration to Lonhorn in settings
+Then applying that toleration to Lonhorn in settings
 
 
 
 `StorageOnly=true:NoExecute;CriticalAddonsOnly=true:NoExecute`
 
 
-This ensures that the storage nodes wonn't take on any general workloads and still allow Lonhorn to use these ase storage.
+This ensures that the storage nodes won't take on any general workloads and still allow Lonhorn to use these as storage.
 
 
