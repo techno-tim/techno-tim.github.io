@@ -49,3 +49,25 @@ helm install longhorn ./longhorn/chart/ --namespace longhorn-system
 ```
 kubectl -n longhorn-system get pod
 ```
+
+
+## taints
+
+I ended up taining my storage nodes using this command"
+
+```
+kubectl taint nodes luna-01 luna-02 luna-03 luna-04 CriticalAddonsOnly=true:NoExecute
+kubectl taint nodes luna-01 luna-02 luna-03 luna-04 StorageOnly=true:NoExecute
+```
+
+
+The applying that toleration to Lonhorn in settings
+
+
+
+`StorageOnly=true:NoExecute;CriticalAddonsOnly=true:NoExecute`
+
+
+This ensures that the storage nodes wonn't take on any general workloads and still allow Lonhorn to use these ase storage.
+
+
