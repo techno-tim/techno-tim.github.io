@@ -1,7 +1,7 @@
 # Automate EVERYTHING with Ansible!
 
 
-[![Automate EVERYTHING with Ansible!](http://img.youtube.com/vi/w9eCU4bGgjQ/0.jpg)](https://www.youtube.com/watch?v=w9eCU4bGgjQ "Automate EVERYTHING with Ansible!")
+[![Automate EVERYTHING with Ansible!](https://img.youtube.com/vi/w9eCU4bGgjQ/0.jpg)](https://www.youtube.com/watch?v=w9eCU4bGgjQ "Automate EVERYTHING with Ansible!")
 
 
 Ansible. Need I say more?  Well, maybe, if you've never heard of it. Ansible is a simple IT automation that anyone can use.  You can Automate anything with an SSH connection and WITHOUT installing any agents or clients.

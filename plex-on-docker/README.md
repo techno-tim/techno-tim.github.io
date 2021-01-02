@@ -1,6 +1,6 @@
 # 4 Ways to Install Plex (one is unexpected)
 
-[![4 Ways to Install Plex (one is unexpected)](http://img.youtube.com/vi/MG_1XQxWns0/0.jpg)](https://www.youtube.com/watch?v=MG_1XQxWns0 "4 Ways to Install Plex (one is unexpected)")
+[![4 Ways to Install Plex (one is unexpected)](https://img.youtube.com/vi/MG_1XQxWns0/0.jpg)](https://www.youtube.com/watch?v=MG_1XQxWns0 "4 Ways to Install Plex (one is unexpected)")
 
 
 I'm a huge fan of virtualization and containerization (if you couldn't tell already)!  Today, we'll walk though the various ways to install Plex step-by-step.  We also see how easy it is to get Plex running on Docker and Kubernetes using Rancher.

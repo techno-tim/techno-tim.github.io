@@ -1,6 +1,6 @@
 # Migrate Your Databases to Kubernetes and Docker
 
-[![Migrate Your Databases to Kubernetes and Docker](http://img.youtube.com/vi/jZvnkf_HgcY/0.jpg)](https://www.youtube.com/watch?v=jZvnkf_HgcY "Migrate Your Databases to Kubernetes and Docker")
+[![Migrate Your Databases to Kubernetes and Docker](https://img.youtube.com/vi/jZvnkf_HgcY/0.jpg)](https://www.youtube.com/watch?v=jZvnkf_HgcY "Migrate Your Databases to Kubernetes and Docker")
 
 
 Have you been putting off migrating your database to Docker and Kubernetes like I have?  Well wait no longer.  It's simple using this step-by-step tutorial.  Today, we'll move a database that's on a virtual machine to a container that's running in kubernetes.  Oh yeah, this will also work if it's a bare metal server too, duh.  🙂

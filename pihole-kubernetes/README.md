@@ -1,6 +1,6 @@
 # PiHole on Docker and Kubernetes (I almost gave up)
 
-[![PiHole on Docker and Kubernetes (I almost gave up)](http://img.youtube.com/vi/NRe2-vye3ik/0.jpg)](https://www.youtube.com/watch?v=NRe2-vye3ik "PiHole on Docker and Kubernetes (I almost gave up)")
+[![PiHole on Docker and Kubernetes (I almost gave up)](https://img.youtube.com/vi/NRe2-vye3ik/0.jpg)](https://www.youtube.com/watch?v=NRe2-vye3ik "PiHole on Docker and Kubernetes (I almost gave up)")
 
 
 We know you've heard of Pihole and we know you are probably aware of how to install it but... have you tried running it on Docker and Kubernetes using Rancher?  Have you configured it for pfSense?  Don't worry, I figured out all the hard stuff for you.  So let's consolidate some hardware and services.

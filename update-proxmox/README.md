@@ -1,6 +1,6 @@
 # How to Update Proxmox VE (No subscription required)
 
-[![How to Update Proxmox VE (No subscription required)](http://img.youtube.com/vi/rfK8fc-ccoQ/0.jpg)](https://www.youtube.com/watch?v=rfK8fc-ccoQ "How to Update Proxmox VE (No subscription required)")
+[![How to Update Proxmox VE (No subscription required)](https://img.youtube.com/vi/rfK8fc-ccoQ/0.jpg)](https://www.youtube.com/watch?v=rfK8fc-ccoQ "How to Update Proxmox VE (No subscription required)")
 
 
 Have you been thinking about updating your Proxmox VE server?  Well, what are you waiting for?  Upgrade your Proxmox server in your home lab in just a few minutes with this step-by-step tutorial!

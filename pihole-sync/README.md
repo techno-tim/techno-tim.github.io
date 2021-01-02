@@ -1,6 +1,6 @@
 # High Availability Pi-Hole? Yes please!
 
-[![High Availability Pi-Hole? Yes please!](http://img.youtube.com/vi/IFVYe3riDRA/0.jpg)](https://www.youtube.com/watch?v=IFVYe3riDRA "High Availability Pi-Hole? Yes please!")
+[![High Availability Pi-Hole? Yes please!](https://img.youtube.com/vi/IFVYe3riDRA/0.jpg)](https://www.youtube.com/watch?v=IFVYe3riDRA "High Availability Pi-Hole? Yes please!")
 
 https://www.youtube.com/watch?v=IFVYe3riDRA
 

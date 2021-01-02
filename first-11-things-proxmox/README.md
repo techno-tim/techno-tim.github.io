@@ -1,7 +1,7 @@
 # Before I do anything on Proxmox, I do this first...
 
 
-[![Before I do anything on Proxmox, I do this first...](http://img.youtube.com/vi/GoZaMgEgrHw/0.jpg)](https://www.youtube.com/watch?v=GoZaMgEgrHw "Before I do anything on Proxmox, I do this first...")
+[![Before I do anything on Proxmox, I do this first...](https://img.youtube.com/vi/GoZaMgEgrHw/0.jpg)](https://www.youtube.com/watch?v=GoZaMgEgrHw "Before I do anything on Proxmox, I do this first...")
 
 https://www.youtube.com/watch?v=GoZaMgEgrHw
 

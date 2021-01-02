@@ -1,7 +1,7 @@
 # k3s HA Install
 
 
-[![k3s HA Install](http://img.youtube.com/vi/UoOcLXfa8EU/0.jpg)](https://www.youtube.com/watch?v=UoOcLXfa8EU "k3s HA Install")
+[![k3s HA Install](https://img.youtube.com/vi/UoOcLXfa8EU/0.jpg)](https://www.youtube.com/watch?v=UoOcLXfa8EU "k3s HA Install")
 
 https://www.youtube.com/watch?v=UoOcLXfa8EU
 

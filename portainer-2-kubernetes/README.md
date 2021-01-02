@@ -1,6 +1,6 @@
 # Portainer 2.0 -- Now with more Kubernetes!
 
-[![Portainer 2.0 -- Now with more Kubernetes!](http://img.youtube.com/vi/jzhd6tcjvw0/0.jpg)](http://www.youtube.com/watch?v=jzhd6tcjvw0 "Portainer 2.0 -- Now with more Kubernetes!")
+[![Portainer 2.0 -- Now with more Kubernetes!](https://img.youtube.com/vi/jzhd6tcjvw0/0.jpg)](http://www.youtube.com/watch?v=jzhd6tcjvw0 "Portainer 2.0 -- Now with more Kubernetes!")
 
 
 What's new in Portainer 2.0?  Well, a ton.  With the release of Portainer 2 you now have the option to install Kubernetes.  This makes installing, managing, and deploying Kubenetes really easy.  In this step by step tutorial, we'll start with nothing and end up with a fully working Portainer 2 server running Kubernetes.  We'll set up k3s using k3d, install kubectl, and then spin up Portainer.  As an added bonus, we'll also run a Minecraft server in Kubernetes as a proof of work.  Double bonus, we'll cover how to pronounce kubectl...

@@ -1,6 +1,6 @@
 # Build & Deploy Your Own Code in Your Homelab!
 
-[![Build & Deploy Your Own Code in Your Homelab!](http://img.youtube.com/vi/Xc94HJn1nNo/0.jpg)](https://www.youtube.com/watch?v=Xc94HJn1nNo "Build & Deploy Your Own Code in Your Homelab!")
+[![Build & Deploy Your Own Code in Your Homelab!](https://img.youtube.com/vi/Xc94HJn1nNo/0.jpg)](https://www.youtube.com/watch?v=Xc94HJn1nNo "Build & Deploy Your Own Code in Your Homelab!")
 
 So you're a software engineer or a developer who wants to self-host your own code in your own homelab?  Well this is the tutorial for you!  In this step-by-step guide we'll walk through setting up a repo, building and testing our own code (with unit tests) in a self-hosted Gitlab CI runner in our CI pipeline, then we'll build a Docker image and push it up to a container registry, then we'll use kubectl in our CD pipeline to deploy our Docker container to our self-hosted kubernetes cluster!  This all happens in a couple of minutes and then we'll truly have continuous integration and continuous delivery in our homelab!
 

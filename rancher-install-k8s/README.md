@@ -1,6 +1,6 @@
 # High Availability Rancher on kubernetes
 
-[![Install Rancher on a Kubernetes Cluster](http://img.youtube.com/vi/APsZJbnluXg/0.jpg)](https://www.youtube.com/watch?v=APsZJbnluXg "Install Rancher on a Kubernetes Cluster")
+[![Install Rancher on a Kubernetes Cluster](https://img.youtube.com/vi/APsZJbnluXg/0.jpg)](https://www.youtube.com/watch?v=APsZJbnluXg "Install Rancher on a Kubernetes Cluster")
 
 
 Are you running Kubernetes in your homelab or in the enterprise?  

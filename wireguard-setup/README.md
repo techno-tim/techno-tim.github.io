@@ -1,6 +1,6 @@
 # Meet WireGuard, the new hotness in VPN...
 
-[![Meet WireGuard, the new hotness in VPN...](http://img.youtube.com/vi/xlyTCuWqDOg/0.jpg)](https://www.youtube.com/watch?v=xlyTCuWqDOg "Meet WireGuard, the new hotness in VPN...")
+[![Meet WireGuard, the new hotness in VPN...](https://img.youtube.com/vi/xlyTCuWqDOg/0.jpg)](https://www.youtube.com/watch?v=xlyTCuWqDOg "Meet WireGuard, the new hotness in VPN...")
 
 
 https://www.youtube.com/watch?v=xlyTCuWqDOg
