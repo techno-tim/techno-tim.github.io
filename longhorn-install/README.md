@@ -53,7 +53,7 @@ kubectl -n longhorn-system get pod
 
 ## taints
 
-I ended up taining my storage nodes using this command
+I ended up tainting my storage nodes using this command
 
 ```
 kubectl taint nodes luna-01 luna-02 luna-03 luna-04 CriticalAddonsOnly=true:NoExecute
