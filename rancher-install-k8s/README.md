@@ -84,7 +84,7 @@ helm install \
 
 install rancher with helm
 
-
+*Note:If you have ".local" for your private TLD then rancer will NOT finish setup on the webUI*
 ```
 helm install rancher rancher-stable/rancher \
   --namespace cattle-system \

@@ -14,6 +14,9 @@ Create a load balancer using `nginx`
 `nginx.conf`
 
 ```
+#uncomment this next line if you are NOT running nginx in docker
+#load_module /usr/lib/nginx/modules/ngx_stream_module.so;
+
 events {}
 
 stream {
