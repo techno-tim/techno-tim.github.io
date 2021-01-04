@@ -18,6 +18,15 @@ https://www.youtube.com/watch?v=eKBBHc0t7bc
 See the app catalog within Rancher
 
 
+### additional dependencies
+
+There are some additional dependencies you might want to install prior to configuring
+
+
+```
+sudo apt update
+sudo apt install nfs-common open-iscsi
+```
 
 ### kubectl
 
@@ -69,5 +78,7 @@ Then applying that toleration to Lonhorn in settings
 
 
 This ensures that the storage nodes won't take on any general workloads and still allow Lonhorn to use these as storage.
+
+
 
 
