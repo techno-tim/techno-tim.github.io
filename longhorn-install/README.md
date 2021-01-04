@@ -4,7 +4,7 @@
 [![Cloud Native Distributed Storage in Kubernetes with Longhorn](https://img.youtube.com/vi/eKBBHc0t7bc/0.jpg)](https://www.youtube.com/watch?v=eKBBHc0t7bc "Cloud Native Distributed Storage in Kubernetes with Longhorn")
 
 
-Storage in Kubernetes is hard, complicated, and messy.  Configuring volumes, mounts, and persistent volumes claims and getting it right can be a challenge.  It's also challenging to manage that storage, replicated it across all your Kubernetes clusters.  It's also been very challenging to do this on bare metal, outside of a cloud provider.  That's where Longhorn comes.  Longhorn is an open source, a CNCF distributed block storage system for Kubernetes.  It comes with a UI, backups, snapshots, and cluster disaster recovery and it does all this with or without Rancher.  Rancher is NOT a requirement.
+Storage in Kubernetes is hard, complicated, and messy.  Configuring volumes, mounts, and persistent volumes claims and getting it right can be a challenge.  It's also challenging to manage that storage and replicate it across all your Kubernetes clusters.  It's also been very challenging to do this on bare metal, outside of a cloud provider.  That's where Longhorn comes.  Longhorn is an open source, a CNCF distributed block storage system for Kubernetes.  It comes with a UI, backups, snapshots, cluster disaster recovery, and it does all this with or without Rancher.  Rancher is NOT a requirement.
 
 
 
