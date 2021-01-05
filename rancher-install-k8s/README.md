@@ -80,8 +80,10 @@ helm install \
   --namespace cert-manager \
   --version v1.0.4
 ```
-
-
+Make sure cert-manager is fully rolled out before continuing. To check run the following and verify all pods are 1/1
+```
+kubectl get pods --namespace cert-manager
+```
 install rancher with helm
 
 *Note:If you have ".local" for your private TLD then rancer will NOT finish setup on the webUI*
