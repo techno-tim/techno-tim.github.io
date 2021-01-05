@@ -81,6 +81,16 @@ helm install \
   --version v1.0.4
 ```
 
+check rollout of cert-manager
+
+
+
+```
+kubectl get pods --namespace cert-manager
+```
+
+be sure each pod is fully running before proceeding
+
 
 install rancher with helm
 
