@@ -38,6 +38,11 @@ On your k3s servers
 
 `export K3S_DATASTORE_ENDPOINT='mysql://username:password@tcp(database_ip_or_hostname:port)/database'`
 
+If you plan on installing rancher in this cluser, the current stabe release (v2.5.5) does not support K3S v1.20. To prevent
+issues when installing rancher, be sure to include the following:
+
+`export INSTALL_K3S_VERSION=v1.19.7+k3s1`
+
 then 
 
 ```
@@ -81,7 +86,7 @@ To install `kubectl` [see this link](https://kubernetes.io/docs/tasks/tools/inst
 
 copy contents to your dev machine
 
-`~/kube/config`
+`~/.kube/config`
 
 
 Be sure to update the `server:` to your load balancer ip or hostname
