@@ -38,10 +38,13 @@ On your k3s servers
 
 `export K3S_DATASTORE_ENDPOINT='mysql://username:password@tcp(database_ip_or_hostname:port)/database'`
 
-If you plan on installing rancher in this cluser, the current stabe release (v2.5.5) does not support K3S v1.20. To prevent
-issues when installing rancher, be sure to include the following:
+If you plan on installing rancher in this cluser, the current stabe release (v2.5.5) does not support K3S v1.20.
+To prevent issues when installing rancher, be sure to include the following:
 
-`export INSTALL_K3S_VERSION=v1.19.7+k3s1`
+*Note: It's advised you consult the [Rancher Support Matrix](https://rancher.com/support-maintenance-terms/all-supported-versions)
+to get the recommended version for all Rancher dependencies.*
+
+`export INSTALL_K3S_VERSION=v1.19.5+k3s2`
 
 then 
 
