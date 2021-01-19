@@ -14,10 +14,9 @@ https://www.youtube.com/watch?v=APsZJbnluXg
 
 ## install
 
-**Note:** The current stable release of rancher, [rancher v2.5.5](https://github.com/rancher/rancher/releases/tag/v2.5.5),
-is restricted to Kubernetes version less than 1.20.0. Please see the 
-[Rancher support matrix](https://rancher.com/support-maintenance-terms/all-supported-versions/rancher-v2.5.5/) 
-for more details on which version of K3S/K8s to use.
+**Note:** If you plan on installing rancher in your cluser, the current stabe release (v2.5.5) does not support Kubernetes v1.20.
+It's advised you consult the [Rancher Support Matrix](https://rancher.com/support-maintenance-terms/all-supported-versions)
+to get the recommended version for all Rancher dependencies.
 
 https://rancher.com/docs/rancher/v2.x/en/installation/install-rancher-on-k8s/#1-install-the-required-cli-tools
 
