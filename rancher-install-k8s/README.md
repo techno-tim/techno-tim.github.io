@@ -14,6 +14,10 @@ https://www.youtube.com/watch?v=APsZJbnluXg
 
 ## install
 
+**Note:** If you plan on installing rancher in your cluser, the current stabe release (v2.5.5) does not support Kubernetes v1.20.
+It's advised you consult the [Rancher Support Matrix](https://rancher.com/support-maintenance-terms/all-supported-versions)
+to get the recommended version for all Rancher dependencies.
+
 https://rancher.com/docs/rancher/v2.x/en/installation/install-rancher-on-k8s/#1-install-the-required-cli-tools
 
 `kubectl`
@@ -47,7 +51,7 @@ install `cert-manager`
 
 
 ```
-kubectl apply --validate=false -f https://github.com/jetstack/cert-manager/releases/download/v1.0.4/cert-manager.crds.yaml
+kubectl apply --validate=false -f https://github.com/jetstack/cert-manager/releases/download/v1.1.0/cert-manager.crds.yaml
 ```
 
 create name-space for `cert-manager`
@@ -74,11 +78,13 @@ helm repo update
 install `cert-manager` helm chart
 
 
+*Note: If you receive an "Error: Kubernetes cluster unreachable" message when install cert-manager, try copying
+the contents of "/etc/rancher/k3s/k3s.yam" to "~/.kube/config" to resolve the issue.*
 ```
 helm install \
   cert-manager jetstack/cert-manager \
   --namespace cert-manager \
-  --version v1.0.4
+  --version v1.1.0
 ```
 
 check rollout of cert-manager
