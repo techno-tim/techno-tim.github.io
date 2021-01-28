@@ -81,4 +81,5 @@ blacklist nouveau
 
 If your Windows machine fails to boot, you may want to create a new Windows VM using UEFI rather than BIOS.
 
+If your motherboard has onboard GPU set in BIOS to use the onboard primarily or exclusively to free up PCIE GPU
 
