@@ -14,17 +14,21 @@ Ubuntu Fix
 
 `sudo nano /etc/resolvconf/resolv.conf.d/head`
 
+enabled & start service
+
+`sudo systemctl enable resolvconf.service`
+
+`sudo systemctl start resolvconf.service`
+
 add your upstream DNS (I use Quad9)
 
 ```
 nameserver 9.9.9.9
 ```
 
-enabled & start service
+update resolv.conf after adding nameserver
 
-`sudo systemctl enable resolvconf.service`
-
-`sudo systemctl start resolvconf.service`
+`sudo resolvconf -u`
 
 Set pi-hole password
 
