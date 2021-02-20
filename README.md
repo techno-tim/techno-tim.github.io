@@ -27,6 +27,7 @@ Created by TechnoTim with 💛
 Don't forget to ⭐ this repo and fork it! 👆
 
 ## Home Lab
+
 * [How to Create a Multiboot USB with Ventoy Fast, Simple, and Easy Guide](https://github.com/techno-tim/youtube-videos/tree/master/ventoy-tutorial)
 * [The Best Way to Dual Boot Windows and Ubuntu](https://github.com/techno-tim/youtube-videos/tree/master/dual-boot-windows-ubuntu)
 * [RTX 3090 for Machine Learning and Object Detection?](https://github.com/techno-tim/youtube-videos/tree/master/3090-machine-learning)
@@ -45,12 +46,8 @@ Don't forget to ⭐ this repo and fork it! 👆
 * [20 Ways to Use a Virtual Machine (and other ideas for your homelab)
 ](https://github.com/techno-tim/youtube-videos/tree/master/20-ways-to-use-a-vm)
 
-## Portainer
-* [How to Update Portainer Fast, Simple, and Easy Guide](https://github.com/techno-tim/youtube-videos/tree/master/portainer-update)
-* [Portainer 2.0 -- Now with more Kubernetes!
-](https://github.com/techno-tim/youtube-videos/tree/master/portainer-2-kubernetes)
-
 ## Rancher & Kubernetes
+
 * [Cloud Native Distributed Storage in Kubernetes with Longhorn](https://github.com/techno-tim/youtube-videos/tree/master/longhorn-install)
 * [High Availability Rancher on a Kubernetes Cluster](https://github.com/techno-tim/youtube-videos/tree/master/rancher-install-k8s)
 * [HIGH AVAILABILITY k3s (Kubernetes) in minutes!](https://github.com/techno-tim/youtube-videos/tree/master/k3s-ha-install)
@@ -60,6 +57,7 @@ Don't forget to ⭐ this repo and fork it! 👆
 * [Docker, Rancher, Kubernetes... Minecraft?  (Rancher Setup and Install Tutorial)](https://github.com/techno-tim/youtube-videos/tree/master/docker-rancher-kubernetes)
 
 ## Self-hosted
+
 * [Containerizing HandBrake with Docker and Kubernetes](https://github.com/techno-tim/youtube-videos/tree/master/handbrake-docker-k8s)
 * [Self-host your own internet speed test with LibreSpeed!](https://github.com/techno-tim/youtube-videos/tree/master/librespeed)
 * [Self-Host All Your Homelab Services with DuckDNS -- Free Dynamic DNS Running on Docker](https://github.com/techno-tim/youtube-videos/tree/master/duckdns-docker)
@@ -89,6 +87,7 @@ Don't forget to ⭐ this repo and fork it! 👆
 ](https://github.com/techno-tim/youtube-videos/tree/master/proxmox-setup)
 
 ## TrueNAS
+
 * [How to Upgrade FreeNAS to TrueNAS](https://github.com/techno-tim/youtube-videos/tree/master/upgrade-freenas-to-truenas)
 * [How To Create an iSCSI Target with FreeNAS
 ](https://github.com/techno-tim/youtube-videos/tree/master/freenas-iscsi)
@@ -97,6 +96,7 @@ Don't forget to ⭐ this repo and fork it! 👆
 ](https://github.com/techno-tim/youtube-videos/tree/master/proxmox-freenas)
 
 ## Code
+
 * [How to Build a Slack Bot](https://github.com/techno-tim/youtube-videos/tree/master/slack-bot)
 * [How to Build a Twitch Bot Using TMI.JS (a moderator bot).](https://github.com/techno-tim/youtube-videos/tree/master/twitch-moderator-bot)
 * [Setting Up Windows for JavaScript Development THE RIGHT WAY (WSL Terminal NVM Node Yarn VS Code ZSH)
@@ -105,7 +105,15 @@ Don't forget to ⭐ this repo and fork it! 👆
 ](https://github.com/techno-tim/youtube-videos/tree/master/discord-bot)
 
 
+## Portainer
+
+* [How to Update Portainer Fast, Simple, and Easy Guide](https://github.com/techno-tim/youtube-videos/tree/master/portainer-update)
+* [Portainer 2.0 -- Now with more Kubernetes!
+](https://github.com/techno-tim/youtube-videos/tree/master/portainer-2-kubernetes)
+
+
 ## Streaming
+
 * [Setup and Best Settings for Streamlabs OBS on Mac](https://github.com/techno-tim/youtube-videos/tree/master/streamlabs-mac)
 * [Touch Portal vs. Stream Deck
 ](https://github.com/techno-tim/youtube-videos/tree/master/touchportal-vs-streamdeck)
@@ -118,5 +126,6 @@ Don't forget to ⭐ this repo and fork it! 👆
 * [GoXLR WITH WIRELESS HEADSET - Connect ANY wireless bluetooth headphones](https://github.com/techno-tim/youtube-videos/tree/master/goxlr-wireless-headset)
 
 ## Vlog
+
 * [I ran MY LIFE through a DEEP LEARNING algorithm and here's what came out...](https://github.com/techno-tim/youtube-videos/tree/master/deep-learning-my-life)
 * [Convert ANY Desk to a STANDING Desk: Home Office Upgrade](https://github.com/techno-tim/youtube-videos/tree/master/standing-desk-upgrade)
