@@ -27,99 +27,96 @@ Created by TechnoTim with 💛
 Don't forget to ⭐ this repo and fork it! 👆
 
 ## Home Lab
-* [How to Create a Multiboot USB with Ventoy Fast, Simple, and Easy Guide](https://www.youtube.com/watch?v=z1FyoCswwAc)
-* [The Best Way to Dual Boot Windows and Ubuntu](https://www.youtube.com/watch?v=CWQMYN12QD0)
-* [RTX 3090 for Machine Learning and Object Detection?](https://www.youtube.com/watch?v=mDUa5sY4Jeo)
+* [How to Create a Multiboot USB with Ventoy Fast, Simple, and Easy Guide](https://github.com/techno-tim/youtube-videos/tree/master/ventoy-tutorial)
+* [The Best Way to Dual Boot Windows and Ubuntu](https://github.com/techno-tim/youtube-videos/tree/master/dual-boot-windows-ubuntu)
+* [RTX 3090 for Machine Learning and Object Detection?](https://github.com/techno-tim/youtube-videos/tree/master/3090-machine-learning)
 * [My HUGE Home Security Upgrade
-](https://www.youtube.com/watch?v=W9XgDZAezkg)
-* [Automate EVERYTHING with Ansible!](https://www.youtube.com/watch?v=w9eCU4bGgjQ)
-* [High Availability Pi-Hole? Yes please!](https://www.youtube.com/watch?v=IFVYe3riDRA)
-* [My HUGE (but small) 1U Server Upgrade](https://www.youtube.com/watch?v=CMu5gsWKc9Y)
-* [Before I do anything on Linux, I do this first...](https://www.youtube.com/watch?v=ZsjK4VDopiE)
-* [Huge Network Upgrade for My Homelab](https://www.youtube.com/watch?v=sWvEiVM9Yfw)
-* [GPU Passthrough on Linux and Docker for AI, ML, and Plex](https://www.youtube.com/watch?v=9OfoFAljPn4)
-* [Bridge Mode with UniFi Access Points](https://www.youtube.com/watch?v=UCB61jc0PUA)
-* [Homelab Services Tour -- What am I running on my Homelab?](https://www.youtube.com/watch?v=NHvoN-phAgo)
-* [Techno Tim Homelab Tour -- Server Rack and Network](https://www.youtube.com/watch?v=23jbcw_n20I)
-* [Virtualize vs. Containerize (Which should I choose?)](https://www.youtube.com/watch?v=pxwUXJmAER4)
+](https://github.com/techno-tim/youtube-videos/tree/master/home-security-upgrade)
+* [Automate EVERYTHING with Ansible!](https://github.com/techno-tim/youtube-videos/tree/master/ansible-automation)
+* [High Availability Pi-Hole? Yes please!](https://github.com/techno-tim/youtube-videos/tree/master/pihole-sync)
+* [My HUGE (but small) 1U Server Upgrade](https://github.com/techno-tim/youtube-videos/tree/master/1u-server-upgrade)
+* [Before I do anything on Linux, I do this first...](https://github.com/techno-tim/youtube-videos/tree/master/first-13-things-linux)
+* [Huge Network Upgrade for My Homelab](https://github.com/techno-tim/youtube-videos/tree/master/homelab-network-upgrade)
+* [GPU Passthrough on Linux and Docker for AI, ML, and Plex](https://github.com/techno-tim/youtube-videos/tree/master/gpu-passthrough-linux)
+* [Bridge Mode with UniFi Access Points](https://github.com/techno-tim/youtube-videos/tree/master/unifi-ap-bridge-mode)
+* [Homelab Services Tour -- What am I running on my Homelab?](https://github.com/techno-tim/youtube-videos/tree/master/homelab-services-tour)
+* [Techno Tim Homelab Tour -- Server Rack and Network](https://github.com/techno-tim/youtube-videos/tree/master/homelab-tour-hardware)
+* [Virtualize vs. Containerize (Which should I choose?)](https://github.com/techno-tim/youtube-videos/tree/master/virtualize-vs-containerize)
 * [20 Ways to Use a Virtual Machine (and other ideas for your homelab)
-](https://www.youtube.com/watch?v=SVQmzaSabEQ)
+](https://github.com/techno-tim/youtube-videos/tree/master/20-ways-to-use-a-vm)
 
 ## Portainer
-* [How to Update Portainer Fast, Simple, and Easy Guide](https://www.youtube.com/watch?v=M365jgJ0O2E)
+* [How to Update Portainer Fast, Simple, and Easy Guide](https://github.com/techno-tim/youtube-videos/tree/master/portainer-update)
 * [Portainer 2.0 -- Now with more Kubernetes!
-](https://www.youtube.com/watch?v=jzhd6tcjvw0)
+](https://github.com/techno-tim/youtube-videos/tree/master/portainer-2-kubernetes)
 
 ## Rancher & Kubernetes
-* [Cloud Native Distributed Storage in Kubernetes with Longhorn](https://www.youtube.com/watch?v=eKBBHc0t7bc)
-* [High Availability Rancher on a Kubernetes Cluster](https://www.youtube.com/watch?v=APsZJbnluXg)
-* [HIGH AVAILABILITY k3s (Kubernetes) in minutes!](https://www.youtube.com/watch?v=UoOcLXfa8EU)
-* [SSL, Traefik, and OAuth for Rancher! (Google, GitHub, Keycloak, Azure, and more!)](https://www.youtube.com/watch?v=Af7HXhElams)
-* [Self-Hosting Your Homelab Services with SSL --  Let's Encrypt, MetalLB, Traefik, Rancher, Kubernetes](https://www.youtube.com/watch?v=pAM2GBCDGTo)
-* [How to Upgrade, Backup, and Restore Rancher 2](https://www.youtube.com/watch?v=YWqBxCIfxw4)
-* [Docker, Rancher, Kubernetes... Minecraft?  (Rancher Setup and Install Tutorial)](https://www.youtube.com/watch?v=oILc0ywDVTk)
+* [Cloud Native Distributed Storage in Kubernetes with Longhorn](https://github.com/techno-tim/youtube-videos/tree/master/longhorn-install)
+* [High Availability Rancher on a Kubernetes Cluster](https://github.com/techno-tim/youtube-videos/tree/master/rancher-install-k8s)
+* [HIGH AVAILABILITY k3s (Kubernetes) in minutes!](https://github.com/techno-tim/youtube-videos/tree/master/k3s-ha-install)
+* [SSL, Traefik, and OAuth for Rancher! (Google, GitHub, Keycloak, Azure, and more!)](https://github.com/techno-tim/youtube-videos/tree/master/rancher-oauth-ssl)
+* [Self-Hosting Your Homelab Services with SSL --  Let's Encrypt, MetalLB, Traefik, Rancher, Kubernetes](https://github.com/techno-tim/youtube-videos/tree/master/reverse-proxy-kubernetes)
+* [How to Upgrade, Backup, and Restore Rancher 2](https://github.com/techno-tim/youtube-videos/tree/master/rancher-2-upgrade-backup-restore)
+* [Docker, Rancher, Kubernetes... Minecraft?  (Rancher Setup and Install Tutorial)](https://github.com/techno-tim/youtube-videos/tree/master/docker-rancher-kubernetes)
 
 ## Self-hosted
-* [Containerizing HandBrake with Docker and Kubernetes](https://www.youtube.com/watch?v=vyrj6t8xjoQ)
-* [Self-host your own internet speed test with LibreSpeed!](https://www.youtube.com/watch?v=FWhsEsh1P3Y)
-* [Self-Host All Your Homelab Services with DuckDNS -- Free Dynamic DNS Running on Docker](https://www.youtube.com/watch?v=bVmUV1G5wpI)
-* [Self-Host Code Server in Your Homelab -- VS Code in a Browser!](https://www.youtube.com/watch?v=_QwQnyoz_-w)
-* [Meet WireGuard, the new hotness in VPN](https://www.youtube.com/watch?v=xlyTCuWqDOg)
-* [I think I found a Dropbox replacement with Nextcloud...](https://www.youtube.com/watch?v=nt__J9Yr8_w)
-* [Migrate Your Databases to Kubernetes and Docker](https://www.youtube.com/watch?v=jZvnkf_HgcY)
-* [Self-Host a BroadLink Remote. Cloud NOT required.](https://www.youtube.com/watch?v=4MJW29mR-Xc)
-* [Meet Guacamole, Your Remote Access Gateway](https://www.youtube.com/watch?v=LWdxhZyHT_8)
-* [Build & Deploy Your Own Code in Your Homelab!](https://www.youtube.com/watch?v=Xc94HJn1nNo)
-* [Meet Heimdall, Your Homelab Application Dashboard](https://www.youtube.com/watch?v=PA01Z6-z8Qs)
-* [Home Assistant on Docker and Kubernetes (Open Source Home Automation)](https://www.youtube.com/watch?v=DK_Gdtn_wvw)
-* [PiHole on Docker and Kubernetes (I almost gave up)](https://www.youtube.com/watch?v=NRe2-vye3ik)
-* [4 Ways to Install Plex (one is unexpected)](https://www.youtube.com/watch?v=MG_1XQxWns0)
+* [Containerizing HandBrake with Docker and Kubernetes](https://github.com/techno-tim/youtube-videos/tree/master/handbrake-docker-k8s)
+* [Self-host your own internet speed test with LibreSpeed!](https://github.com/techno-tim/youtube-videos/tree/master/librespeed)
+* [Self-Host All Your Homelab Services with DuckDNS -- Free Dynamic DNS Running on Docker](https://github.com/techno-tim/youtube-videos/tree/master/duckdns-docker)
+* [Self-Host Code Server in Your Homelab -- VS Code in a Browser!](https://github.com/techno-tim/youtube-videos/tree/master/code-server-self-host)
+* [Meet WireGuard, the new hotness in VPN](https://github.com/techno-tim/youtube-videos/tree/master/wireguard-setup)
+* [I think I found a Dropbox replacement with Nextcloud...](https://github.com/techno-tim/youtube-videos/tree/master/nextcloud-setup)
+* [Migrate Your Databases to Kubernetes and Docker](https://github.com/techno-tim/youtube-videos/tree/master/migrate-database-docker-kubernetes)
+* [Self-Host a BroadLink Remote. Cloud NOT required.](https://github.com/techno-tim/youtube-videos/tree/master/broadlink-control)
+* [Meet Guacamole, Your Remote Access Gateway](https://github.com/techno-tim/youtube-videos/tree/master/guacamole-remote-access-gateway)
+* [Build & Deploy Your Own Code in Your Homelab!](https://github.com/techno-tim/youtube-videos/tree/master/dev-ops-stack)
+* [Meet Heimdall, Your Homelab Application Dashboard](https://github.com/techno-tim/youtube-videos/tree/master/heimdall-setup)
+* [Home Assistant on Docker and Kubernetes (Open Source Home Automation)](https://github.com/techno-tim/youtube-videos/tree/master/home-assistant-docker)
+* [PiHole on Docker and Kubernetes (I almost gave up)](https://github.com/techno-tim/youtube-videos/tree/master/pihole-kubernetes)
+* [4 Ways to Install Plex (one is unexpected)](https://github.com/techno-tim/youtube-videos/tree/master/plex-on-docker)
 
 ## Proxmox
 
-* [Before I do anything on Proxmox, I do this first...](https://www.youtube.com/watch?v=GoZaMgEgrHw)
-* [Proxmox Backup Server Install Tutorial](https://www.youtube.com/watch?v=jLBNm0fNIog)
-* [How to Virtualize Your Home Router / Firewall Using pfSense](https://www.youtube.com/watch?v=hdoBQNI_Ab8)
-* [How to Update Proxmox VE (No subscription required)](https://www.youtube.com/watch?v=rfK8fc-ccoQ)
-* [Remote Gaming! (and Video Encoding using Proxmox and GPU Passthrough)](https://www.youtube.com/watch?v=fgx3NMk6F54)
-* [Virtualize Ubuntu Server with Proxmox VE](https://www.youtube.com/watch?v=YR9SNDD8WB4)
+* [Before I do anything on Proxmox, I do this first...](https://github.com/techno-tim/youtube-videos/tree/master/first-11-things-proxmox)
+* [Proxmox Backup Server Install Tutorial](https://github.com/techno-tim/youtube-videos/tree/master/proxmox-backup-server)
+* [How to Virtualize Your Home Router / Firewall Using pfSense](https://github.com/techno-tim/youtube-videos/tree/master/proxmox-pfsense)
+* [How to Update Proxmox VE (No subscription required)](https://github.com/techno-tim/youtube-videos/tree/master/update-proxmox)
+* [Remote Gaming! (and Video Encoding using Proxmox and GPU Passthrough)](https://github.com/techno-tim/youtube-videos/tree/master/gpu-passthrough)
+* [Virtualize Ubuntu Server with Proxmox VE](https://github.com/techno-tim/youtube-videos/tree/master/proxmox-ubuntu-server)
 * [Virtualize Windows 10 with Proxmox VE
-](https://www.youtube.com/watch?v=6c-6xBkD2J4)
+](https://github.com/techno-tim/youtube-videos/tree/master/proxmox-windows-10)
 * [Proxmox VE Install and Setup Tutorial
-](https://www.youtube.com/watch?v=7OVaWaqO2aU)
+](https://github.com/techno-tim/youtube-videos/tree/master/proxmox-setup)
 
 ## TrueNAS
-* [How to Upgrade FreeNAS to TrueNAS](https://www.youtube.com/watch?v=SsxvPhlOiYI)
+* [How to Upgrade FreeNAS to TrueNAS](https://github.com/techno-tim/youtube-videos/tree/master/upgrade-freenas-to-truenas)
 * [How To Create an iSCSI Target with FreeNAS
-](https://www.youtube.com/watch?v=JzX6c58ydY4)
+](https://github.com/techno-tim/youtube-videos/tree/master/freenas-iscsi)
 
 * [How to Install and Virtualize FreeNAS with Proxmox
-](https://www.youtube.com/watch?v=iva4DmOmSTc)
+](https://github.com/techno-tim/youtube-videos/tree/master/proxmox-freenas)
 
 ## Code
-* [How to Build a Slack Bot](https://www.youtube.com/watch?v=AajBk59nOgw)
-* [How to Build a Twitch Bot Using TMI.JS (a moderator bot).](https://www.youtube.com/watch?v=7uSjKbAUHXg)
+* [How to Build a Slack Bot](https://github.com/techno-tim/youtube-videos/tree/master/slack-bot)
+* [How to Build a Twitch Bot Using TMI.JS (a moderator bot).](https://github.com/techno-tim/youtube-videos/tree/master/twitch-moderator-bot)
 * [Setting Up Windows for JavaScript Development THE RIGHT WAY (WSL Terminal NVM Node Yarn VS Code ZSH)
-](https://www.youtube.com/watch?v=kL8iGErULiw)
+](https://github.com/techno-tim/youtube-videos/tree/master/windows-developer-setup)
 * [Let's Build a Discord Bot Using DiscordJS - Moderator Bot
-](https://www.youtube.com/watch?v=YSZcyz2-twQ)
+](https://github.com/techno-tim/youtube-videos/tree/master/discord-bot)
 
 
 ## Streaming
-* [Setup and Best Settings for Streamlabs OBS on Mac](https://www.youtube.com/watch?v=MMGg3g_72zI)
+* [Setup and Best Settings for Streamlabs OBS on Mac](https://github.com/techno-tim/youtube-videos/tree/master/streamlabs-mac)
 * [Touch Portal vs. Stream Deck
-](https://www.youtube.com/watch?v=dtI81N-YQT8)
+](https://github.com/techno-tim/youtube-videos/tree/master/touchportal-vs-streamdeck)
 
 * [BEST OBS Streaming Settings 2021! 🔴 (Quality, Frame Rate, Bit Rate, Audio, 1080p 60/FPS & MORE!)
-](https://www.youtube.com/watch?v=_-G-RvWpojc)
+](https://github.com/techno-tim/youtube-videos/tree/master/obs-best-settings)
 
 * [Upgrade Your ROOM (One of the most OVERLOOKED stream upgrades!)
-](https://www.youtube.com/watch?v=X7g3rjVN1Dw)
-* [GoXLR WITH WIRELESS HEADSET - Connect ANY wireless bluetooth headphones](https://www.youtube.com/watch?v=dTd7f-jK_BE)
+](https://github.com/techno-tim/youtube-videos/tree/master/upgrade-your-room)
+* [GoXLR WITH WIRELESS HEADSET - Connect ANY wireless bluetooth headphones](https://github.com/techno-tim/youtube-videos/tree/master/goxlr-wireless-headset)
 
 ## Vlog
-* [I ran MY LIFE through a DEEP LEARNING algorithm and here's what came out...](https://www.youtube.com/watch?v=76bQjX-042U)
-* [Convert ANY Desk to a STANDING Desk: Home Office Upgrade](https://www.youtube.com/watch?v=wOSx4pDyq7E)
-* [Game Deals & Freebies! This Week In Games - E01
-](https://www.youtube.com/watch?v=1n-aAzCS22w)
-
+* [I ran MY LIFE through a DEEP LEARNING algorithm and here's what came out...](https://github.com/techno-tim/youtube-videos/tree/master/deep-learning-my-life)
+* [Convert ANY Desk to a STANDING Desk: Home Office Upgrade](https://github.com/techno-tim/youtube-videos/tree/master/standing-desk-upgrade)
