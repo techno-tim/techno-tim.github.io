@@ -28,6 +28,7 @@ Don't forget to ⭐ this repo and fork it! 👆
 
 ## Home Lab
 
+* [What is a HomeLab and How Do I Get Started?](https://github.com/techno-tim/youtube-videos/tree/master/we-are-home-lab)
 * [Windows Terminal and WSL Config Fast, Simple, and Easy Guide](https://github.com/techno-tim/youtube-videos/tree/master/windows-terminal-wsl)
 * [How to Create a Multiboot USB with Ventoy Fast, Simple, and Easy Guide](https://github.com/techno-tim/youtube-videos/tree/master/ventoy-tutorial)
 * [The Best Way to Dual Boot Windows and Ubuntu](https://github.com/techno-tim/youtube-videos/tree/master/dual-boot-windows-ubuntu)
