@@ -13,9 +13,13 @@ You'll want to use a command similar to this so that there aren't any port confl
 
 Also, you may want to consider pinning your docker tag to a version other than `latest` to make backing up and upgrading easier. See [here](https://hub.docker.com/r/rancher/rancher/tags) for the latest version.
 
-`docker run -d --restart=unless-stopped -p 9090:80 -p 9091:443 --privileged -v /opt/rancher:/var/lib/rancher --name=rancher_docker_server rancher/rancher:latest`
+```
+docker run -d --restart=unless-stopped -p 9090:80 -p 9091:443 --privileged -v /opt/rancher:/var/lib/rancher --name=rancher_docker_server rancher/rancher:latest
+```
 
 ## Troubleshooting
 
 * Make sure you have a static IP on your Rancher host
 * Be sure to use the ports above if you want to add SSL later and use commands in future videos
+* The new UI is now the "Cluster Explorer".  You can toggle between this and the "Cluser Manager" UI by clicking the button.
+* Do not create workloads in the `local` cluster.  This is a management cluster for Rancher.  You should create new cluster for your workload, just like in this video.
