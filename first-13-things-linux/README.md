@@ -25,7 +25,7 @@ Verify unattended upgrades configuration file in your text editor of choice
 
 To disable automatic reboots by the automatic upgrades configuration edit the following file:
 
-`/etc/apt/apt.conf.d/50-unattended-upgrades`
+`/etc/apt/apt.conf.d/50unattended-upgrades`
 
 and uncomment the following line by removing the leading slashes:
 
@@ -76,7 +76,7 @@ network:
   ethernets:
     ens18:
      dhcp4: no
-     addresses: 
+     addresses:
         - 192.168.0.222/24
      gateway4: 192.168.0.1
      nameservers:
@@ -117,11 +117,11 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 ## Time Zone
 
-Check time zone: 
+Check time zone:
 
 `timedatectl`
 
-Change time zone: 
+Change time zone:
 
 `sudo timedatectl set-timezone`
 
