@@ -153,3 +153,28 @@ Then you can sign in at this URL using your token we got in the previous step:
 
 `http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/`
 
+here's testdeploy.yml you can use
+
+```
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mysite
+  labels: 
+    app: mysite
+spec:
+  replicas: 1
+  selector: 
+    matchLabels:
+      app: mysite
+  template:
+    metadata:
+      labels: 
+        app : mysite
+    spec:
+      containers:
+        - name : mysite
+          image: nginx
+          ports:
+            - containerPort: 80
+```
