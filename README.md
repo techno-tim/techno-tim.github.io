@@ -50,6 +50,7 @@ Don't forget to ⭐ this repo and fork it! 👆
 
 ## Rancher & Kubernetes
 
+* [Rancher vs. Portainer - Which one should I choose?](https://github.com/techno-tim/youtube-videos/tree/master/rancher-vs-portainer)
 * [Cloud Native Distributed Storage in Kubernetes with Longhorn](https://github.com/techno-tim/youtube-videos/tree/master/longhorn-install)
 * [High Availability Rancher on a Kubernetes Cluster](https://github.com/techno-tim/youtube-videos/tree/master/rancher-install-k8s)
 * [HIGH AVAILABILITY k3s (Kubernetes) in minutes!](https://github.com/techno-tim/youtube-videos/tree/master/k3s-ha-install)
@@ -109,6 +110,7 @@ Don't forget to ⭐ this repo and fork it! 👆
 
 ## Portainer
 
+* [Rancher vs. Portainer - Which one should I choose?](https://github.com/techno-tim/youtube-videos/tree/master/rancher-vs-portainer)
 * [How to Update Portainer Fast, Simple, and Easy Guide](https://github.com/techno-tim/youtube-videos/tree/master/portainer-update)
 * [Portainer 2.0 -- Now with more Kubernetes!
 ](https://github.com/techno-tim/youtube-videos/tree/master/portainer-2-kubernetes)
