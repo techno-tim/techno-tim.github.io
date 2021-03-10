@@ -52,6 +52,7 @@ data:
 
 traefik sample answers yaml
 
+*change "staging: true" to "staging: false" once you confirm its all working to get the live certs*
 
 ```
 ---
@@ -70,7 +71,7 @@ traefik sample answers yaml
     enabled: true
     email: "you@example.com"
     onHostRule: true
-    staging: false
+    staging: true
     logging: true
     challengeType: "dns-01"
     dnsProvider:
