@@ -3,9 +3,9 @@
 [![Install Rancher on a Kubernetes Cluster](https://img.youtube.com/vi/APsZJbnluXg/0.jpg)](https://www.youtube.com/watch?v=APsZJbnluXg "Install Rancher on a Kubernetes Cluster")
 
 
-Are you running Kubernetes in your homelab or in the enterprise?  
-Do you want an easy way to manage and create Kubernetes clusters?  
-Join me as we walk through installing Rancher on an existing high availability k3s cluster in this step-by-step tutorial.  
+Are you running Kubernetes in your homelab or in the enterprise?
+Do you want an easy way to manage and create Kubernetes clusters?
+Join me as we walk through installing Rancher on an existing high availability k3s cluster in this step-by-step tutorial.
 
 We install Rancher, configure a load balancer, install and configure helm, install cert-manager, configure Rancher, walk through the GUI, scale up our cluster, and set up a health check and liveness check! Join me, it's easy in this straightforward guide.
 
@@ -51,7 +51,7 @@ install `cert-manager`
 
 
 ```
-kubectl apply --validate=false -f https://github.com/jetstack/cert-manager/releases/download/v1.1.0/cert-manager.crds.yaml
+kubectl apply --validate=false -f https://github.com/jetstack/cert-manager/releases/download/v1.2.0/cert-manager.crds.yaml
 ```
 
 create name-space for `cert-manager`
@@ -84,7 +84,7 @@ the contents of "/etc/rancher/k3s/k3s.yaml" to "~/.kube/config" to resolve the i
 helm install \
   cert-manager jetstack/cert-manager \
   --namespace cert-manager \
-  --version v1.1.0
+  --version v1.2.0
 ```
 
 check rollout of cert-manager
@@ -117,7 +117,7 @@ kubectl -n cattle-system rollout status deploy/rancher
 ```
 
 
-you should see 
+you should see
 
 
 ```
@@ -133,7 +133,7 @@ check status
 kubectl -n cattle-system rollout status deploy/rancher
 ```
 
-you should see 
+you should see
 
 ```
 deployment "rancher" successfully rolled out
@@ -150,7 +150,7 @@ run
 kubectl get svc --all-namespaces -o wide
 ```
 
-look for 
+look for
 
 
 ```
