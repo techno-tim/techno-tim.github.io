@@ -139,3 +139,5 @@ In Rancher go to Load Balancing
 kubectl delete -n kube-system persistentvolumeclaims acme-json-certs
 kubectl apply -f traefik-config.yaml
 ```
+
+## Putting Rancher behind Traefik 2
