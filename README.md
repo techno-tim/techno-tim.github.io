@@ -51,7 +51,7 @@ Don't forget to ⭐ this repo and fork it! 👆
 
 ## Rancher & Kubernetes
 
-* [MTraefik 2, k3s, Rancher](https://github.com/techno-tim/youtube-videos/tree/master/traefik2-k3s-rancher)
+* [Traefik 2, k3s, Rancher](https://github.com/techno-tim/youtube-videos/tree/master/traefik2-k3s-rancher)
 * [Multi-CPU Architecture Kubernetes Cluster with a Raspberry Pi?](https://github.com/techno-tim/youtube-videos/tree/master/multi-arch-k3s-rpi)
 * [Rancher vs. Portainer - Which one should I choose?](https://github.com/techno-tim/youtube-videos/tree/master/rancher-vs-portainer)
 * [Cloud Native Distributed Storage in Kubernetes with Longhorn](https://github.com/techno-tim/youtube-videos/tree/master/longhorn-install)
