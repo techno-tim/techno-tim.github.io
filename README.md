@@ -27,6 +27,7 @@ Created by TechnoTim with 💛
 Don't forget to ⭐ this repo and fork it! 👆
 
 ## Home Lab
+
 * [Multi-CPU Architecture Kubernetes Cluster with a Raspberry Pi?](https://github.com/techno-tim/youtube-videos/tree/master/multi-arch-k3s-rpi)
 * [What is a HomeLab and How Do I Get Started?](https://github.com/techno-tim/youtube-videos/tree/master/we-are-home-lab)
 * [Windows Terminal and WSL Config Fast, Simple, and Easy Guide](https://github.com/techno-tim/youtube-videos/tree/master/windows-terminal-wsl)
@@ -49,6 +50,8 @@ Don't forget to ⭐ this repo and fork it! 👆
 ](https://github.com/techno-tim/youtube-videos/tree/master/20-ways-to-use-a-vm)
 
 ## Rancher & Kubernetes
+
+* [MTraefik 2, k3s, Rancher](https://github.com/techno-tim/youtube-videos/tree/master/traefik2-k3s-rancher)
 * [Multi-CPU Architecture Kubernetes Cluster with a Raspberry Pi?](https://github.com/techno-tim/youtube-videos/tree/master/multi-arch-k3s-rpi)
 * [Rancher vs. Portainer - Which one should I choose?](https://github.com/techno-tim/youtube-videos/tree/master/rancher-vs-portainer)
 * [Cloud Native Distributed Storage in Kubernetes with Longhorn](https://github.com/techno-tim/youtube-videos/tree/master/longhorn-install)
