@@ -36,7 +36,7 @@ install `k3s` as an agent using your token from above
 
 
 ```
-curl -sfL https://get.k3s.io | K3S_URL=https://k3s.local.techtronic.us:6443 K3S_TOKEN=hksadhahdklahkadjhasjdhasdhasjk::server:asljkdklasjdaskdljaskjdlasj sh -
+curl -sfL https://get.k3s.io | K3S_URL=https://example.local.com:6443 K3S_TOKEN=hksadhahdklahkadjhasjdhasdhasjk::server:asljkdklasjdaskdljaskjdlasj sh -
 ```
 
 
