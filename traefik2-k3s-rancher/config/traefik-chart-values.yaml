@@ -5,7 +5,7 @@ additionalArguments:
   - --providers.file.filename=/data/traefik-config.yaml
   - --entrypoints.websecure.http.tls.certresolver=cloudflare
   - --entrypoints.websecure.http.tls.domains[0].main=example.com
-  - --entrypoints.websecure.http.tls.domains[0].sans=*.example.livecom
+  - --entrypoints.websecure.http.tls.domains[0].sans=*.example.com
   - --certificatesresolvers.cloudflare.acme.caserver=https://acme-staging-v02.api.letsencrypt.org/directory
   # comment the line above when going to production
   - --certificatesresolvers.cloudflare.acme.dnschallenge.provider=cloudflare
