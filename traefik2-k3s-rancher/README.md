@@ -140,6 +140,41 @@ kubectl delete -n kube-system persistentvolumeclaims acme-json-certs
 kubectl apply -f traefik-config.yaml
 ```
 
+## Dashboard
+
+First you will need `htpassword` to generate a password for your dashboard
+
+```
+sudo apt-get update
+sudo apt-get install apache2-utils
+```
+
+You can then genate one using this, be sure to swap your username and password
+
+```
+htpasswd -nb techno password | openssl base64
+```
+
+it should output
+
+```
+dGVjaG5vOiRhcHIxJFRnVVJ0N2E1JFpoTFFGeDRLMk8uYVNaVWNueG41eTAKCg==
+```
+
+copy `traefik-dashboard-secret.yaml` locally and update it with your credentials
+
+
+then apply
+
+```
+kubectl apply -f traefik-config.yaml
+```
+
+copy `traefik-dashboard-ingressroute.yaml` and update it with your hostname
+
+
+Save this in a secure place, it will be the password you use to access the traefik dashboard
+
 ## Putting Rancher behind Traefik 2
 
 TBD
