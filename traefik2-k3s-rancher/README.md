@@ -102,7 +102,7 @@ apply the config
 kubectl apply -f traefik-config.yaml
 ```
 
-create `traefik-chart-values.yaml` with the contents from `/config/traefik-config.yaml`
+create `traefik-chart-values.yaml` with the contents from `/config/traefik-chart-values.yaml`
 
 Update `loadBalancerIP` in `traefik-chart-values.yaml` with your Metal LB IP
 
