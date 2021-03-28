@@ -70,6 +70,6 @@ service:
   annotations: {}
   labels: {}
   spec:
-    loadBalancerIP: "192.168.30.230"
+    loadBalancerIP: "192.168.100.240" # this should be your Metal LB IP
   loadBalancerSourceRanges: []
   externalIPs: []
