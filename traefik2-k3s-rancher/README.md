@@ -75,6 +75,9 @@ kubectl expose deployment rancher -n cattle-system --type=LoadBalancer --name=ra
 
 ## Install Traefik 2
 
+You can can choose between creating `Ingress` in Rancher or `IngresRoute` with `traefik`  If you choose `IngressRoute` pleasse use the config in `/configingress-route/traefik-config.yaml`
+
+
 * You must have a persistent volume set up already for `acme.json` certificate
 * This uses cloudflare, check providers if you want to switch
 * This will get wildcard certs
@@ -123,7 +126,7 @@ helm install traefik traefik/traefik --namespace=kube-system --values=traefik-ch
 If all went well, you should now have traefik 2 installed and configured.
 
 
-## Exposing a service with traefik
+## Exposing a service with traefik and Rancher Ingress
 
 In Rancher go to Load Balancing
 
@@ -139,6 +142,19 @@ In Rancher go to Load Balancing
 kubectl delete -n kube-system persistentvolumeclaims acme-json-certs
 kubectl apply -f traefik-config.yaml
 ```
+
+## Exposing a service with traefik `IngressRoute`
+
+copy the contents os `/config-ingress-route/kubernetes` to your local machine
+
+then run
+
+```
+kubectl apply -f kubernetes
+```
+
+This will create the deployment, service, and ingress.
+
 
 ## Dashboard
 
