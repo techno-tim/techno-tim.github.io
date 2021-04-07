@@ -14,7 +14,7 @@ https://www.youtube.com/watch?v=APsZJbnluXg
 
 ## install
 
-**Note:** If you plan on installing Rancher in your cluster, the current stable release (v2.5.5) does not support Kubernetes v1.20.
+**Note:**
 It's advised you consult the [Rancher Support Matrix](https://rancher.com/support-maintenance-terms/all-supported-versions)
 to get the recommended version for all Rancher dependencies.
 

@@ -28,7 +28,7 @@ sudo cat /var/lib/rancher/k3s/server/node-token
 set `k3s` version (the value you got from `k3s --version`)
 
 ```
- export INSTALL_K3S_VERSION=v1.19.5+k3s2
+ export INSTALL_K3S_VERSION=v1.20.5+k3s1
 ```
 
 

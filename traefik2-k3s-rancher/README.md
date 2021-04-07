@@ -44,15 +44,14 @@ Get the version of `k3s` that's currently running
 
 ```
 k3s --version
-k3s version v1.19.5+k3s2 (746cf403)
+export INSTALL_K3S_VERSION=v1.20.5+k3s1
 ```
 
 Run the same command you ran initially to install `k3s` on your servers but add `--disable traefik --disable servicelb` and be sure to set your version.
 
 example
-
 ```
-export INSTALL_K3S_VERSION=v1.19.5+k3s2
+export INSTALL_K3S_VERSION=v1.20.5+k3s1
 ```
 ```
 curl -sfL https://get.k3s.io | sh -s - server --node-taint CriticalAddonsOnly=true:NoExecute --tls-san your.load.balancer.ip --write-kubeconfig-mode 644 --disable traefik --disable servicelb
