@@ -38,11 +38,6 @@ On your k3s servers
 
 `export K3S_DATASTORE_ENDPOINT='mysql://username:password@tcp(database_ip_or_hostname:port)/database'`
 
-If you plan on installing rancher in this cluser, the current stabe release (v2.5.5) does not support K3S v1.20.
-To prevent issues when installing rancher, be sure to include the following:
-
-`export INSTALL_K3S_VERSION=v1.19.5+k3s2`
-
 *Note: It's advised you consult the [Rancher Support Matrix](https://rancher.com/support-maintenance-terms/all-supported-versions)
 to get the recommended version for all Rancher dependencies.*
 
@@ -72,7 +67,6 @@ get tokens
 ## k3s agents / workers
 
 ```
-export INSTALL_K3S_VERSION=v1.19.5+k3s2
 curl -sfL https://get.k3s.io | K3S_URL=https://load_balancer_ip_or_hostname:6443 K3S_TOKEN=mynodetoken sh -
 ```
 
@@ -153,3 +147,28 @@ Then you can sign in at this URL using your token we got in the previous step:
 
 `http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/`
 
+here's testdeploy.yml you can use
+
+```
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mysite
+  labels: 
+    app: mysite
+spec:
+  replicas: 1
+  selector: 
+    matchLabels:
+      app: mysite
+  template:
+    metadata:
+      labels: 
+        app : mysite
+    spec:
+      containers:
+        - name : mysite
+          image: nginx
+          ports:
+            - containerPort: 80
+```

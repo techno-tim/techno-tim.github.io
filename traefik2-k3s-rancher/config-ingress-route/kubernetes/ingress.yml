@@ -1,0 +1,21 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: example-workload-ingress
+  namespace: public
+  annotations: 
+    kubernetes.io/ingress.class: traefik-external
+spec:
+  entryPoints:
+    - websecure
+  routes:
+    - match: Host(`www.example.com`)
+      kind: Rule
+      services:
+        - name: example-workload
+          port: 80
+    - match: Host(`example.com`)
+      kind: Rule
+      services:
+        - name: example-workload
+          port: 80
