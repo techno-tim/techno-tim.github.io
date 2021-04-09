@@ -34,7 +34,7 @@ Check this site for the command https://github.com/nvm-sh/nvm
 
 It should be something like this, but be sure to use the version from the link above
 
-`curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash`
+`curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash`
 
 If `nvm` doesn't work, check this https://youtu.be/kL8iGErULiw?t=507
 
