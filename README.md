@@ -51,6 +51,7 @@ Don't forget to ⭐ this repo and fork it! 👆
 
 ## Rancher & Kubernetes
 
+* [Monitoring Your Kubernetes Cluster with Grafana, Prometheus, and Alertmanager](https://github.com/techno-tim/youtube-videos/tree/master/rancher-monitoring)
 * [Everything you need to know about the NEW Rancher UI](https://github.com/techno-tim/youtube-videos/tree/master/rancher-new-ui)
 * [Traefik 2, k3s, Rancher](https://github.com/techno-tim/youtube-videos/tree/master/traefik2-k3s-rancher)
 * [Multi-CPU Architecture Kubernetes Cluster with a Raspberry Pi?](https://github.com/techno-tim/youtube-videos/tree/master/multi-arch-k3s-rpi)
