@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Home Assistant on Docker and Kubernetes (Open Source Home Automation)"
-date: 2020-01-01 09:00:00 -0500
+date: 2020-06-13 09:00:00 -0500
 categories: self-hosted
 tags: homelab rancher kubernetes docker portainer self-hosted home-assistant
 ---
