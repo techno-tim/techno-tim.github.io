@@ -10,6 +10,9 @@ tags: homelab rancher kubernetes docker minecraft gaming
 
 If you want to set up Kubernetes at home using Rancher to run Docker containers, this is the guide for you. This is a step by step tutorial of how to install and configure Rancher, Docker, and Kubernetes for your homelab.  In this video we set up and configure a Minecraft server in just a matter of minutes with some enterprise like features.  You can use this same process to spin up other Docker containers at home on your server or desktop.
 
+[Watch Video](https://www.youtube.com/watch?v=oILc0ywDVTk)
+
+
 The two paths in the workload configuration need to be reversed:
  - `Path on the Node` should be `mc`
  - `Mount Point` should be `/data`
@@ -30,4 +33,3 @@ docker run -d --restart=unless-stopped -p 9090:80 -p 9091:443 --privileged -v /o
 * Do not create workloads in the `local` cluster.  This is a management cluster for Rancher.  You should create new cluster for your workload, just like in this video.
 
 
-[Watch Video](https://www.youtube.com/watch?v=oILc0ywDVTk)

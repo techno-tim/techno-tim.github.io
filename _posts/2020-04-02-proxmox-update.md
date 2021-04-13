@@ -2,13 +2,16 @@
 layout: post
 title: "How to Update Proxmox VE (No subscription required)"
 date: 2020-04-02 09:00:00 -0500
-categories: homelab
-tags: homelab rancher kubernetes
+categories: proxmox
+tags: homelab proxmox
 ---
 
 [![How to Update Proxmox VE (No subscription required)](https://img.youtube.com/vi/rfK8fc-ccoQ/0.jpg)](https://www.youtube.com/watch?v=rfK8fc-ccoQ "How to Update Proxmox VE (No subscription required)")
 
 Have you been thinking about updating your Proxmox VE server?  Well, what are you waiting for?  Upgrade your Proxmox server in your home lab in just a few minutes with this step-by-step tutorial!
+
+
+[Watch Video](https://www.youtube.com/watch?v=rfK8fc-ccoQ)
 
 
 Edit `/etc/apt/sources.list`
@@ -34,5 +37,3 @@ apt-get update
 ```bash
 apt dist-upgrade
 ```
-
-[Watch Video](https://www.youtube.com/watch?v=rfK8fc-ccoQ)

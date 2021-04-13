@@ -1,9 +1,17 @@
-# Remote Gaming! (and Video Encoding using Proxmox and GPU Passthrough)
+---
+layout: post
+title: "Remote Gaming! (and Video Encoding using Proxmox and GPU Passthrough)"
+date: 2020-01-01 09:00:00 -0500
+categories: homelab
+tags: homelab rancher kubernetes
+---
 
 [![Remote Gaming! (and Video Encoding using Proxmox and GPU Passthrough)](https://img.youtube.com/vi/fgx3NMk6F54/0.jpg)](https://www.youtube.com/watch?v=fgx3NMk6F54 "Remote Gaming! (and Video Encoding using Proxmox and GPU Passthrough)")
 
 
 Are you looking to build a remote gaming machine and passthrough your GPU to a virtual machine?  Do you want to use GPU acceleration for transcoding Plex or Adobe Media Encoder?  Do you dream of setting up Steam Link or Remote Play In Home Streaming and streaming games to any screen in your house?  If so, this complete step-by-step guide of how to passthrough your Nvidia or AMD video card through to a guest VM using Proxmox VE!  If not, well, please watch this anyway.  
+
+[Watch Video](https://www.youtube.com/watch?v=fgx3NMk6F54)
 
 
 
@@ -18,10 +26,14 @@ Change this line:
 
 run
 
-`update-grub`
+```bash
+update-grub
+```
 
 reboot
-`reboot`
+```bash
+reboot
+```
 
 Edit
 `/etc/modules`
@@ -34,12 +46,15 @@ vfio_virqfd
 ```
 
 reboot
-`reboot`
+
+```bash
+reboot
+```
 
 
 `qm.conf` (will be something like `100.conf`)
 
-```
+```conf
 agent: 1
 balloon: 4096
 bios: ovmf
@@ -70,7 +85,7 @@ Add your PCI device
 
 edit `/etc/modprobe.d/pve-blacklist.conf`
 
-```
+```conf
 blacklist nvidiafb
 blacklist nvidia
 blacklist radeon
