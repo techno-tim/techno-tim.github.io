@@ -1,7 +1,12 @@
-# Docker, Rancher, Kubernetes... Minecraft? (Setup and Install Tutorial)
+---
+layout: post
+title: "Docker, Rancher, Kubernetes... Minecraft? (Setup and Install Tutorial)"
+date: 2020-04-09 09:00:00 -0500
+categories: homelab
+tags: homelab rancher kubernetes docker minecraft gaming
+---
 
 [![Docker, Rancher, Kubernetes... Minecraft? (Setup and Install Tutorial)](https://img.youtube.com/vi/oILc0ywDVTk/0.jpg)](https://www.youtube.com/watch?v=oILc0ywDVTk "Docker, Rancher, Kubernetes... Minecraft? (Setup and Install Tutorial)")
-
 
 If you want to set up Kubernetes at home using Rancher to run Docker containers, this is the guide for you. This is a step by step tutorial of how to install and configure Rancher, Docker, and Kubernetes for your homelab.  In this video we set up and configure a Minecraft server in just a matter of minutes with some enterprise like features.  You can use this same process to spin up other Docker containers at home on your server or desktop.
 
@@ -13,7 +18,7 @@ You'll want to use a command similar to this so that there aren't any port confl
 
 Also, you may want to consider pinning your docker tag to a version other than `latest` to make backing up and upgrading easier. See [here](https://hub.docker.com/r/rancher/rancher/tags) for the latest version.
 
-```
+```bash
 docker run -d --restart=unless-stopped -p 9090:80 -p 9091:443 --privileged -v /opt/rancher:/var/lib/rancher --name=rancher_docker_server rancher/rancher:latest
 ```
 
@@ -23,3 +28,6 @@ docker run -d --restart=unless-stopped -p 9090:80 -p 9091:443 --privileged -v /o
 * Be sure to use the ports above if you want to add SSL later and use commands in future videos
 * The new UI is now the "Cluster Explorer".  You can toggle between this and the "Cluser Manager" UI by clicking the button.
 * Do not create workloads in the `local` cluster.  This is a management cluster for Rancher.  You should create new cluster for your workload, just like in this video.
+
+
+[Watch Video](https://www.youtube.com/watch?v=oILc0ywDVTk)
