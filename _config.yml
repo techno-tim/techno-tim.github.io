@@ -177,6 +177,7 @@ exclude:
   - package.json
   - package-lock.json
   - archive_old
+  - template
 
 jekyll-archives:
   enabled: [categories, tags]
