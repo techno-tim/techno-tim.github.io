@@ -3,7 +3,7 @@ layout: post
 title: "Homelab Services Tour -- What am I running on my Homelab?"
 date: 2020-07-18 09:00:00 -0500
 categories: homelab
-tags: homelab rancher kubernetes
+tags: homelab rancher kubernetes proxmox truenas docker
 ---
 
 [![Homelab Services Tour -- What am I running on my Homelab?](https://img.youtube.com/vi/NHvoN-phAgo/0.jpg)](https://www.youtube.com/watch?v=NHvoN-phAgo "Homelab Services Tour -- What am I running on my Homelab?")
