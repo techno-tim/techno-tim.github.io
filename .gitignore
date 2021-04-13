@@ -12,3 +12,9 @@ coverage
 cassettes
 yarn-error.log
 .compiled
+
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
