@@ -9,7 +9,7 @@ on:
       - LICENSE
 
 jobs:
-  continuous-delivery:
+  pull-request:
 
     runs-on: ubuntu-latest
 

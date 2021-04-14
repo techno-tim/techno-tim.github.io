@@ -9,7 +9,7 @@ on:
       - LICENSE
 
 jobs:
-  continuous-delivery:
+  build-release:
 
     runs-on: ubuntu-latest
 
