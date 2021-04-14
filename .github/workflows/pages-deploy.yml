@@ -1,4 +1,4 @@
-name: 'Automatic build'
+name: 'Build & Release'
 on:
   push:
     branches:
