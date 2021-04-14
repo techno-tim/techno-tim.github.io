@@ -1,3 +1,11 @@
+---
+layout: post
+title: "Traefik 2, k3s, Rancher"
+date: 2021-04-08 09:00:00 -0500
+categories: kubernetes rancher
+tags: homelab rancher kubernetes k3s traefik
+---
+
 # Traefik 2, k3s, Rancher
 
 ## About
@@ -22,7 +30,7 @@ Make note of your version of Rancher
 
 Remove Rancher
 
-```
+```bash
 helm uninstall rancher
 ```
 
@@ -30,7 +38,7 @@ Install Rancher
 
 (replace with version above)
 
-```
+```bash
 helm install rancher rancher-stable/rancher \
   --namespace cattle-system \
   --set hostname=rancher.example.com \
@@ -42,7 +50,7 @@ helm install rancher rancher-stable/rancher \
 
 Get the version of `k3s` that's currently running
 
-```
+```bash
 k3s --version
 export INSTALL_K3S_VERSION=v1.20.5+k3s1
 ```
@@ -50,10 +58,10 @@ export INSTALL_K3S_VERSION=v1.20.5+k3s1
 Run the same command you ran initially to install `k3s` on your servers but add `--disable traefik --disable servicelb` and be sure to set your version.
 
 example
-```
+```bash
 export INSTALL_K3S_VERSION=v1.20.5+k3s1
 ```
-```
+```bash
 curl -sfL https://get.k3s.io | sh -s - server --node-taint CriticalAddonsOnly=true:NoExecute --tls-san your.load.balancer.ip --write-kubeconfig-mode 644 --disable traefik --disable servicelb
 ```
 
@@ -68,7 +76,7 @@ This should reconfigure your servers.  I ran it on all servers in my cluster.
 
 It's a good idea to do this until traefik is configured otherwise you won't have access to the Rancher Ui
 
-```
+```bash
 kubectl expose deployment rancher -n cattle-system --type=LoadBalancer --name=rancher-lb --port=443
 ```
 
@@ -87,7 +95,7 @@ We will be installing this into the `kube-system` namespace, which already exist
 
 add `traefik` helm repo and update
 
-```
+```bash
 helm repo add traefik https://helm.traefik.io/traefik
 helm repo update
 ```
@@ -100,7 +108,7 @@ update this file with your values
 
 apply the config
 
-```
+```bash
 kubectl apply -f traefik-config.yaml
 ```
 
@@ -114,11 +122,11 @@ Before running this, be sure you only have one default storage class set.  If yo
 
 create config then update the values
 
-```
+```bash
 kubectl apply -f traefik-config.yaml
 ```
 
-```
+```bash
 helm install traefik traefik/traefik --namespace=kube-system --values=traefik-chart-values.yaml
 ```
 
@@ -137,7 +145,7 @@ In Rancher go to Load Balancing
 * note, `traefik-external` comes from `--providers.kubernetesingress.ingressclass=traefik-external` in `traefik-chart-values.yml`.  If you used something else, you will need to set your label properly.
 * when you visit your website (`https://service.example.com`) you should now see a certificate issues.  If it's a staging cert, see the note about switching to production in `traefik-chart-values.yaml`.  After changing, you will need to delete your certs in storage and reapply that file
 
-```
+```bash
 kubectl delete -n kube-system persistentvolumeclaims acme-json-certs
 kubectl apply -f traefik-config.yaml
 ```
@@ -148,7 +156,7 @@ copy the contents os `/config-ingress-route/kubernetes` to your local machine
 
 then run
 
-```
+```bash
 kubectl apply -f kubernetes
 ```
 
@@ -159,20 +167,20 @@ This will create the deployment, service, and ingress.
 
 First you will need `htpassword` to generate a password for your dashboard
 
-```
+```bash
 sudo apt-get update
 sudo apt-get install apache2-utils
 ```
 
 You can then genate one using this, be sure to swap your username and password
 
-```
+```bash
 htpasswd -nb techno password | openssl base64
 ```
 
 it should output
 
-```
+```bash
 dGVjaG5vOiRhcHIxJFRnVVJ0N2E1JFpoTFFGeDRLMk8uYVNaVWNueG41eTAKCg==
 ```
 
@@ -181,7 +189,7 @@ copy `traefik-dashboard-secret.yaml` locally and update it with your credentials
 
 then apply
 
-```
+```bash
 kubectl apply -f traefik-config.yaml
 ```
 
@@ -189,6 +197,13 @@ copy `traefik-dashboard-ingressroute.yaml` and update it with your hostname
 
 
 Save this in a secure place, it will be the password you use to access the traefik dashboard
+
+
+## files
+
+
+
+
 
 ## Putting Rancher behind Traefik 2
 

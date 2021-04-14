@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Remote Gaming! (and Video Encoding using Proxmox and GPU Passthrough)"
-date: 2020-01-01 09:00:00 -0500
+date: 2020-03-26 09:00:00 -0500
 categories: homelab
 tags: homelab rancher kubernetes
 ---
