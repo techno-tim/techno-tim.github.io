@@ -84,7 +84,7 @@ kubectl expose deployment rancher -n cattle-system --type=LoadBalancer --name=ra
 
 You can can choose between creating `Ingress` in Rancher or `IngresRoute` with `traefik` 
 
-If you choose `IngressRoute` see [IngressRoute](#Exposing-a-service-with-traefik-IngressRoute) otherwise continue on.
+If you choose `IngressRoute` see [IngressRoute](#exposing-a-service-with-traefik-ingressroute) otherwise continue on.
 
 * You must have a persistent volume set up already for `acme.json` certificate
 * This uses cloudflare, check providers if you want to switch
