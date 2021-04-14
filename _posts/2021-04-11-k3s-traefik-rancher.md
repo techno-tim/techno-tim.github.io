@@ -82,14 +82,14 @@ kubectl expose deployment rancher -n cattle-system --type=LoadBalancer --name=ra
 
 ## Install Traefik 2
 
-You can can choose between creating `Ingress` in Rancher or `IngresRoute` with `traefik`  If you choose `IngressRoute` pleasse use the config in `/configingress-route/traefik-config.yaml`
+You can can choose between creating `Ingress` in Rancher or `IngresRoute` with `traefik` 
 
+If you choose `IngressRoute` see [IngressRoute](#Exposing-a-service-with-traefik-IngressRoute) otherwise continue on.
 
 * You must have a persistent volume set up already for `acme.json` certificate
 * This uses cloudflare, check providers if you want to switch
 * This will get wildcard certs
 * This is pointed at staging, if you want production be sure comment staging the line (and delete your staging certs)
-
 
 We will be installing this into the `kube-system` namespace, which already exists.  If you are going to use anther namespace you will need change it everywhere.
 
@@ -100,7 +100,7 @@ helm repo add traefik https://helm.traefik.io/traefik
 helm repo update
 ```
 
-create `traefik-config.yaml` with the contents from `/config/traefik-config.yaml`
+create `traefik-config.yaml` with the contents of `/config/traefik-config.yaml` from [/config](https://github.com/techno-tim/techno-tim.github.io/tree/master/reference_files/traefik2-k3s-rancher/config)
 
 this holds our cloudflare secrets along with a configmap
 
@@ -112,7 +112,7 @@ apply the config
 kubectl apply -f traefik-config.yaml
 ```
 
-create `traefik-chart-values.yaml` with the contents from `/config/traefik-chart-values.yaml`
+create `traefik-chart-values.yaml` with the contents of `/config/traefik-chart-values.yaml` from [/config](https://github.com/techno-tim/techno-tim.github.io/tree/master/reference_files/traefik2-k3s-rancher/config)
 
 Update `loadBalancerIP` in `traefik-chart-values.yaml` with your Metal LB IP
 
@@ -150,9 +150,9 @@ kubectl delete -n kube-system persistentvolumeclaims acme-json-certs
 kubectl apply -f traefik-config.yaml
 ```
 
-## Exposing a service with traefik `IngressRoute`
+## Exposing a service with traefik IngressRoute
 
-copy the contents os `/config-ingress-route/kubernetes` to your local machine
+copy the contents of [config-ingress-route/kubernetes](https://github.com/techno-tim/techno-tim.github.io/tree/master/reference_files/traefik2-k3s-rancher/config-ingress-route) to your local machine
 
 then run
 
@@ -172,7 +172,7 @@ sudo apt-get update
 sudo apt-get install apache2-utils
 ```
 
-You can then genate one using this, be sure to swap your username and password
+You can then generate one using this, be sure to swap your username and password
 
 ```bash
 htpasswd -nb techno password | openssl base64
@@ -200,10 +200,6 @@ Save this in a secure place, it will be the password you use to access the traef
 
 
 ## files
-
-
-
-
 
 ## Putting Rancher behind Traefik 2
 

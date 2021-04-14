@@ -3,7 +3,7 @@ layout: post
 title: "I ran MY LIFE through a DEEP LEARNING algorithm and here's what came out..."
 date: 2021-02-01 09:00:00 -0500
 categories: homelab
-tags: windows linux homelab machine-learning deep-learning ai nvidia hardwawre life
+tags: windows linux homelab machine-learning deep-learning ai nvidia hardware life
 
 ---
 
