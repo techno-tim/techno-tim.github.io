@@ -10,4 +10,6 @@ tags: homelab rancher kubernetes
 
 Setting up iSCSI with TrueNAS and Windows 10 is super simple with TrueNAS.  This is an easy way to have a hard drive installed on your machine that isn't really attached, it lives on the network.
 
+[test](#testing)
+
 [Watch Video](https://www.youtube.com/watch?v=JzX6c58ydY4)
