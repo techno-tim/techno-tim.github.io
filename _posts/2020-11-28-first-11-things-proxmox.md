@@ -160,10 +160,9 @@ sudo nano /etc/hosts
 reset machine ID
 
 ```bash
-sudo rm /etc/machine-id
-sudo rm /var/lib/dbus/machine-id
-sudo truncate -s 0 /etc/machine-id
-sudo ln -s /etc/machine-id /var/lib/dbus/machine-id
+rm -f /etc/machine-id /var/lib/dbus/machine-id
+dbus-uuidgen --ensure=/etc/machine-id
+dbus-uuidgen --ensure
 ```
 
 regenerate ssh keys
