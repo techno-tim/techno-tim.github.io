@@ -101,7 +101,7 @@ Stop the container
 docker stop <RANCHER_CONTAINER_NAME>
 ```
 
-Delete state data and replce from backup
+Delete state data and replace from backup
 
 ```bash
 docker run  --volumes-from <RANCHER_CONTAINER_NAME> -v $PWD:/backup \
@@ -146,7 +146,7 @@ sudo mv rancher-data-backup-VERSION-DATE-unofficial.tar.gz ~/
  docker start rancher_docker_server
 ```
 
-### Retstore
+### Restore
 
 
 ```bash
