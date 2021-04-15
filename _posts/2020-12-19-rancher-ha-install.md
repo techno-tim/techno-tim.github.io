@@ -97,7 +97,6 @@ helm install \
 check rollout of cert-manager
 
 
-
 ```bash
 kubectl get pods --namespace cert-manager
 ```
@@ -166,6 +165,8 @@ kube-system     traefik                LoadBalancer   10.43.202.72   192.168.100
 ```
 
 then create a DNS entry for `rancher.example.com    192.168.100.10`
+
+This can be a host entry on your machine, or a DNS entry in your local DNS system (router, pi hole, etc...)
 
 
 otherwise you can use `nginx`
