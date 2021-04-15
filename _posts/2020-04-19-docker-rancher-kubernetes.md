@@ -19,7 +19,7 @@ The two paths in the workload configuration need to be reversed:
 
 You'll want to use a command similar to this so that there aren't any port conflicts with other services or kubernetes itself.
 
-Also, you may want to consider pinning your docker tag to a version other than `latest` to make backing up and upgrading easier. See [here](https://hub.docker.com/r/rancher/rancher/tags) for the latest version.
+Also, you may want to consider pinning your docker tag to a version other than `latest` to make backing up and upgrading easier. See [here](https://github.com/rancher/rancher/tags) for the latest version.
 
 ```bash
 docker run -d --restart=unless-stopped -p 9090:80 -p 9091:443 --privileged -v /opt/rancher:/var/lib/rancher --name=rancher_docker_server rancher/rancher:latest
