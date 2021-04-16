@@ -10,11 +10,11 @@ Here you will find all the documentation for my YouTube videos on my channel [ht
 
 Created by TechnoTim with 💛
 
+► Patreon https://patreon.com/technotim
+
 ► Twitch https://www.twitch.tv/TechnoTim
 
 ► Twitter  https://twitter.com/TechnoTimLive
-
-► Patreon https://patreon.com/technotim
 
 ► Discord https://discord.gg/DJKexrJ
 
