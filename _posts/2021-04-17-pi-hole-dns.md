@@ -11,3 +11,11 @@ tags: homelab pi-hole dns
 Pi-Hole is a wonderful ad blocking DNS sever for your network, but did you know you can also use it for a Local DNS server? In this fast, simple, and easy guide we'll walk through how to create DNS Entries (A Records) for the clients on your network and also set up Aliases (pointers to A Records) so that you can start using DNS at home instead of relying on IP addresses.
 
 [Watch Video](https://www.youtube.com/watch?v=kKsHo6r4_rc)
+
+
+## commands
+
+```bash
+nslookup juno.home.lan # lookup by host name
+host 192.168.0.100 # reverse lookup
+```
