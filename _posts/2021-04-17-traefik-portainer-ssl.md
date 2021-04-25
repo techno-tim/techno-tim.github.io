@@ -109,7 +109,7 @@ mkdir data
 
 ```bash
 sudo apt update
-sudo apt install apache2 apache2-utils
+sudo apt install apache2-utils
 ```
 
 ```bash
