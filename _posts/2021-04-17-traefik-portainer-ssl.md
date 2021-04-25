@@ -109,11 +109,11 @@ mkdir data
 
 ```bash
 sudo apt update
-sudo apt install apache2 apache2-utils
+sudo apt install apache2-utils
 ```
 
 ```bash
-`echo $(htpasswd -nb USER PASSWORD) | sed -e s/\\$/\\$\\$/g`
+echo $(htpasswd -nb USER PASSWORD) | sed -e s/\\$/\\$\\$/g
 ```
 
 use this in your `docker-compose.yml` (`USER:BASIC_AUTH_PASSWORD`)
