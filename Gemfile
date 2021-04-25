@@ -34,3 +34,6 @@ gem "jekyll-theme-chirpy"
 
 # for ci
 gem 'html-proofer'
+
+# github
+gem "jekyll-get-json", "~> 1.0"

@@ -100,6 +100,19 @@
       </span>
     {% endunless %}
 
+    <div class="d-flex flex-row justify-content-center align-items-center">
+      <div class="p-1">
+        <a href="https://github.com/techno-tim/techno-tim.github.io" target="_blank" rel="noopener">
+        <i class="fab fa-github fa-2x"></i>
+      </a>
+      </div>
+      <div class="p-1">
+        <div class="d-flex flex-column align-items-start justify-content-end">
+          <div class="text-sm-left">{{ site.data.github.stargazers_count}} stars</div>
+          <div class="p-0">{{ site.data.github.forks_count}} forks</div>
+        </div>
+      </div>
+    </div>
   </div> <!-- .sidebar-bottom -->
 
 </div><!-- #sidebar -->

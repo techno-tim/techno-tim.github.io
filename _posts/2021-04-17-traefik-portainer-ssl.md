@@ -63,6 +63,7 @@ sudo chmod +x /usr/local/bin/docker-compose
 mkdir traefik
 cd traefik
 mkdir data
+cd data
 touch acme.json
 chmod 600 acme.json
 touch traefik.yml
@@ -115,6 +116,7 @@ sudo apt install apache2 apache2-utils
 `echo $(htpasswd -nb USER PASSWORD) | sed -e s/\\$/\\$\\$/g`
 ```
 
+use this in your `docker-compose.yml` (`USER:BASIC_AUTH_PASSWORD`)
 
 ```bash
 docker-compose up -d
