@@ -125,12 +125,12 @@ docker-compose up -d
 ## Traefik Routes Config
 
 ```bash
-cd traefik
+cd traefik/data
 nano config.yml
 ```
 
 `config.yml` [here](https://github.com/techno-tim/techno-tim.github.io/tree/master/reference_files/traefik-portainer-ssl/traefik) 
 
 ```bash
-docker-compose -d --force-recreate
+docker-compose up -d --force-recreate
 ```
