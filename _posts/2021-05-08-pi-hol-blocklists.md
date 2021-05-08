@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Is adding 3 MILLION domains to your Pi-Hole Block List a good thing?"
-date: 2021-04-17 09:00:00 -0500
+date: 2021-05-08 09:00:00 -0500
 categories: homelab
 tags: homelab pi-hole dns
 ---
