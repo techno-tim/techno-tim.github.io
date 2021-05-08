@@ -10,6 +10,6 @@ tags: homelab pi-hole dns
 
 In some of my previous Pi-Hole videos many of you spotted my blocklist with over a millions sites added and you wondered how you can do the same.  Well, today I show you how to block more ads, block more tracking, block more malware, and block more telemetry with these community lists.  Bonus (and spoiler alert) I show you how to add 3.5 million!
 
-Thanks to Firebog for the great lists https://firebog.net/
+Thanks to Firebog for the great lists [firebog.net](https://firebog.net/)
 
 [Watch Video](https://www.youtube.com/watch?v=0wpn3rXTe0g)
