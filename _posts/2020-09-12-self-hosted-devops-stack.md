@@ -2,7 +2,7 @@
 layout: post
 title: "Build & Deploy Your Own Code in Your Homelab!"
 date: 2020-09-12 09:00:00 -0500
-categories: self-hosted
+categories: self-hosted homelab
 tags: homelab rancher kubernetes gitlab
 ---
 
