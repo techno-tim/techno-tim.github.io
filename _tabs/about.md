@@ -12,4 +12,4 @@ Here you will find all the documentation for my YouTube videos on my channel [ht
 If you see something that needs to be fixed, this documentation is open source!  Feel free to open an issue or PR [here](https://github.com/techno-tim/techno-tim.github.io).
 
 
-You can this project by becoming a [sponsor on GitHub](https://github.com/sponsors/timothystewart6) or a [patron on Patreon](https://www.patreon.com/technotim).  Thank you for your consideration!
+You can support this project by becoming a [sponsor on GitHub](https://github.com/sponsors/timothystewart6) or a [patron on Patreon](https://www.patreon.com/technotim).  Thank you for your consideration!
