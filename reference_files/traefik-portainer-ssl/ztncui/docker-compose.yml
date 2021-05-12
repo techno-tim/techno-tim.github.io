@@ -1,0 +1,33 @@
+version: "3"
+
+services:
+  ztncui:
+    image: keynetworks/ztncui
+    volumes:
+      - ./ztncui:/opt/key-networks/ztncui/etc
+      - ./zt1:/var/lib/zerotier-one 
+    environment:
+      - NODE_ENV=production
+      - HTTP_PORT=3000
+      - ZTNCUI_PASSWD=password
+      - MYDOMAIN=URL_FOR_TLS_CERT
+      - HTTP_ALL_INTERFACES=yes
+      - MYADDR=YOUR_PUBLIC_IP
+    networks:
+      - proxy
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.ztncui.entrypoints=http"
+      - "traefik.http.routers.ztncui.rule=Host(`zerotier.local.example.com`)"
+      - "traefik.http.middlewares.ztncui-https-redirect.redirectscheme.scheme=https"
+      - "traefik.http.routers.ztncui.middlewares=ztncui-https-redirect"
+      - "traefik.http.routers.ztncui-secure.entrypoints=https"
+      - "traefik.http.routers.ztncui-secure.rule=Host(`zerotier.local.example.com`)"
+      - "traefik.http.routers.ztncui-secure.tls=true"
+      - "traefik.http.routers.ztncui-secure.service=ztncui"
+      - "traefik.http.services.ztncui.loadbalancer.server.port=3000"
+      - "traefik.docker.network=proxy"
+
+networks:
+  proxy:
+    external: true
