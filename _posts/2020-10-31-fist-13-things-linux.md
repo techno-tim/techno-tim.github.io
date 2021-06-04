@@ -64,7 +64,7 @@ sudo usermod -aG sudo someuser
 
 install
 ```bash
-sudo apt-get istall openssh-server
+sudo apt-get install openssh-server
 ```
 
 copy key from client to server
