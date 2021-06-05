@@ -3,7 +3,7 @@ layout: post
 title: "Using Pi-Hole for Local DNS - Fast, Simple, and Easy Guide"
 date: 2021-04-17 09:00:00 -0500
 categories: homelab
-tags: homelab pi-hole dns
+tags: homelab pi-hole dns self-hosted
 ---
 
 [![Using Pi-Hole for Local DNS - Fast, Simple, and Easy Guide](https://img.youtube.com/vi/kKsHo6r4_rc/0.jpg)](https://www.youtube.com/watch?v=kKsHo6r4_rc "Using Pi-Hole for Local DNS - Fast, Simple, and Easy Guide")

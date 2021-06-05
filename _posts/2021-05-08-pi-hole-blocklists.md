@@ -3,7 +3,7 @@ layout: post
 title: "Is adding 3 MILLION domains to your Pi-Hole Block List a good thing?"
 date: 2021-05-08 09:00:00 -0500
 categories: homelab
-tags: homelab pi-hole dns
+tags: homelab pi-hole dns self-hosted
 ---
 
 [![Is adding 3 MILLION domains to your Pi-Hole Block List a good thing?](https://img.youtube.com/vi/0wpn3rXTe0g/0.jpg)](https://www.youtube.com/watch?v=0wpn3rXTe0g "Is adding 3 MILLION domains to your Pi-Hole Block List a good thing?")
