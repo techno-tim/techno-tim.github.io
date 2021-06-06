@@ -80,10 +80,11 @@ Password hash: $argon2id$v=19$m=65536$3oc26byQuSkQqksq$zM1QiTvVPrMfV6BVLs2t4gM+a
 
 ```bash 
 mkdir authelia
+cd authelia
 mkdir config
 cd config
 nano configuration.yml
-nano user_database.yml
+nano users_database.yml
 cd ..
 nano docker-compose.yml
 ```
