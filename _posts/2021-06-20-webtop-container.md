@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Linux desktop, inside of a container, inside of a browser???  Yes. A Webtop."
-date: 2021-06-05 09:00:00 -0500
+date: 2021-06-20 09:00:00 -0500
 categories: self-hosted
-tags: homelab traefik portainer docker self-hosted ubuntu
+tags: homelab traefik portainer docker self-hosted ubuntu webtop
 ---
 
 [![Linux desktop, inside of a container, inside of a browser???  Yes. A Webtop.?](https://img.youtube.com/vi/Gd9bvdkIXOQ/0.jpg)](https://www.youtube.com/watch?v=Gd9bvdkIXOQ "Linux desktop, inside of a container, inside of a browser???  Yes. A Webtop.?")
