@@ -111,7 +111,7 @@ bridge-vids 20
 nano /etc/network/interfaces
 ```
 
-```confg
+```conf
 auto eno1
 iface eno1 inet manual
 
