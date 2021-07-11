@@ -111,7 +111,7 @@ bridge-vids 20
 nano /etc/network/interfaces
 ```
 
-```
+```confg
 auto eno1
 iface eno1 inet manual
 
@@ -136,6 +136,9 @@ iface vmbr0 inet static
         bridge-vids 2-4094
 #lacp nic team
 ```
+
+**If you're running Proxmox 7, see the modified [config here](https://techno-tim.github.io/posts/proxmox-7/) for LAGG / LACP**
+
 
 ## Cloning
 
