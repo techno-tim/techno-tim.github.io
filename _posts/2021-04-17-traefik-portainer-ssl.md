@@ -42,6 +42,8 @@ Today, we're going to use SSL for everything.  No more self-sign certs.  No more
  sudo apt-get install docker-ce docker-ce-cli containerd.io
 ```
 
+Are you installing Docker in a LXC container and seeing an error? [Read this.](https://stackoverflow.com/questions/22085657/can-docker-run-inside-a-linux-container/25885682)
+
 ```bash
  sudo usermod -aG docker $USER
 ```
