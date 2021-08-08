@@ -1,9 +1,0 @@
-# I ran MY LIFE through a DEEP LEARNING algorithm and here's what came out...
-
-[![I ran MY LIFE through a DEEP LEARNING algorithm and here's what came out...](https://img.youtube.com/vi/76bQjX-042U/0.jpg)](https://www.youtube.com/watch?v=76bQjX-042U "I ran MY LIFE through a DEEP LEARNING algorithm and here's what came out...")
-
-https://www.youtube.com/watch?v=76bQjX-042U
-
-My life, ran against a neural network and detected by Deep Learning.  If you'd like to see how this video was generated using ML and Deep Learning, check out the video here: 
-
-https://www.youtube.com/watch?v=mDUa5sY4Jeo

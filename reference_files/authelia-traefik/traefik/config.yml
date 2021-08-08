@@ -1,0 +1,51 @@
+http:
+  routers:
+    pve1:
+      entryPoints:
+        - "https"
+      rule: "Host(`pve1.local.example.com`)"
+      middlewares:
+        - authelia
+        - default-headers
+      tls: {}
+      service: pve1
+  services:
+    pve1:
+      loadBalancer:
+        servers:
+          - url: "https://192.168.0.11:8006"
+        passHostHeader: true
+
+  middlewares:
+    https-redirect:
+      redirectScheme:
+        scheme: https
+    authelia:
+      forwardAuth:
+        address: "http://authelia:9091/api/verify?rd=https://auth.local.example.com"
+    default-headers:
+      headers:
+        frameDeny: true
+        sslRedirect: true
+        browserXssFilter: true
+        contentTypeNosniff: true
+        forceSTSHeader: true
+        stsIncludeSubdomains: true
+        stsPreload: true
+        stsSeconds: 15552000
+        customFrameOptionsValue: SAMEORIGIN
+        customRequestHeaders:
+          X-Forwarded-Proto: https
+
+    default-whitelist:
+      ipWhiteList:
+        sourceRange:
+        - "10.0.0.0/8"
+        - "192.168.0.0/16"
+        - "172.0.0.0/12"
+
+    secured:
+      chain:
+        middlewares:
+        - default-whitelist
+        - default-headers
