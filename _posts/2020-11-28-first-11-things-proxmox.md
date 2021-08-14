@@ -89,6 +89,8 @@ vfio_pci
 vfio_virqfd
 ```
 
+`update-initramfs -u -k all`
+
 `reboot`
 
 ## VLAN Aware
