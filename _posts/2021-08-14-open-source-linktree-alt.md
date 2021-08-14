@@ -84,8 +84,9 @@ services:
       - META_DESCRIPTION=Techno Tim Link page
       - META_AUTHOR=Techno Tim
       - THEME=Dark
-      - FAVICON_URL=https://pbs.twimg.com/profile_images/1286144221217316864/qIAsKOpB_400x400.jpg
-      - AVATAR_URL=https://pbs.twimg.com/profile_images/1286144221217316864/qIAsKOpB_400x400.jpg
+      - FAVICON_URL=https://pbs.twimg.com/profile_images/1286144221217316864/qIAsKOpB_200x200.jpg
+      - AVATAR_URL=https://pbs.twimg.com/profile_images/1286144221217316864/qIAsKOpB_200x200.jpg
+      - AVATAR_2X_URL=https://pbs.twimg.com/profile_images/1286144221217316864/qIAsKOpB_400x400.jpg
       - AVATAR_ALT=Techno Tim Profile Pic
       - NAME=TechnoTim
       - BIO=Hey! Just a place where you can connect with me!
@@ -137,8 +138,9 @@ docker run -d \
   -e META_DESCRIPTION='Techno Tim Link page' \
   -e META_AUTHOR='Techno Tim' \
   -e THEME='Dark' \
-  -e FAVICON_URL='https://pbs.twimg.com/profile_images/1286144221217316864/qIAsKOpB_400x400.jpg' \
-  -e AVATAR_URL='https://pbs.twimg.com/profile_images/1286144221217316864/qIAsKOpB_400x400.jpg' \
+  -e FAVICON_URL='https://pbs.twimg.com/profile_images/1286144221217316864/qIAsKOpB_200x200.jpg' \
+  -e AVATAR_URL='https://pbs.twimg.com/profile_images/1286144221217316864/qIAsKOpB_200x200.jpg' \
+  -e AVATAR_2X_URL='https://pbs.twimg.com/profile_images/1286144221217316864/qIAsKOpB_400x400.jpg' \
   -e AVATAR_ALT='Techno Tim Profile Pic' \
   -e NAME='TechnoTim' \
   -e BIO='Hey! Just a place where you can connect with me!' \
