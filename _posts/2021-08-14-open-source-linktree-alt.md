@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Self-Hosted, DIY, Open Source Alternative to Linktree"
-date: 2021-08-14 12:00:00 -0500
+date: 2021-08-14 11:00:00 -0500
 categories: self-hosted
 tags: homelab pi-hole dns littlelink-server portainer self-hosted docker rancher
 ---
