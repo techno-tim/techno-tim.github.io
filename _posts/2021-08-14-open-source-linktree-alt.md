@@ -61,6 +61,13 @@ sudo chmod +x /usr/local/bin/docker-compose
 
 ## Running the container
 
+```bash
+mkdir littlelink-server
+cd littlelink-server
+touch docker-compose.yml
+```
+
+If you're using Docker compose
 
 `docker-compose.yml`
 
@@ -117,6 +124,8 @@ services:
       - no-new-privileges:true
 ```
 
+If you're running docker only
+
 Docker command
 
 ```
@@ -143,3 +152,6 @@ docker run -d \
   --restart unless-stopped \
   ghcr.io/techno-tim/littlelink-server:latest
 ```
+
+
+If you're using Rancher, Portainer, Open Media Vault, Unraid, or anything else with a GUI, just copy and paste the environment variables above into the form on the web page.
