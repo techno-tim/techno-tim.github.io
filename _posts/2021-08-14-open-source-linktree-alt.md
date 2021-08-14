@@ -15,6 +15,7 @@ Meet LittleLink & LittleLink-Server  - a DIY, self hosted, and open source alter
 
 (see video description for gear links)
 
+You can find the LittleLink-Server repo [here](https://github.com/techno-tim/littlelink-server).
 
 ## Docker Setup
 
