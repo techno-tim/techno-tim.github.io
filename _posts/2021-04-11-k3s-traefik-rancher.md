@@ -145,7 +145,8 @@ If you are using Rancher it is `Cluster > Storage > Storage Classes`. Make sure 
 helm install traefik traefik/traefik --namespace=kube-system --values=traefik-chart-values.yaml
 ```
 
-More 
+More configuration value can be add from this [default-value.yaml](https://github.com/traefik/traefik-helm-chart/blob/master/traefik/values.yaml) from Traefik github.
+
 If all went well, you should now have traefik 2 installed and configured.
 
 ### Check for container logs
