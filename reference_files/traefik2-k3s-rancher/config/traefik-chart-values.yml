@@ -9,7 +9,6 @@ additionalArguments:
   - --certificatesresolvers.cloudflare.acme.caserver=https://acme-staging-v02.api.letsencrypt.org/directory
   # comment the line above when going to production
   - --certificatesresolvers.cloudflare.acme.dnschallenge.provider=cloudflare
-  - --certificatesresolvers.cloudflare.acme.email=youremail@example.com
   - --certificatesresolvers.cloudflare.acme.dnschallenge.resolvers=1.1.1.1:53,8.8.8.8:53
   - --certificatesresolvers.cloudflare.acme.storage=/certs/acme.json
   - --serversTransport.insecureSkipVerify=true
@@ -50,14 +49,20 @@ env:
       secretKeyRef:
         key: apiKey
         name: cloudflare-apikey-secret
+  - name: CF_API_EMAIL
+    valueFrom:
+      secretKeyRef:
+        key: email
+        name: cloudflare-apikey-secret
 ingressRoute:
   dashboard:
     enabled: false
 persistence:
   enabled: true
+# make sure this claim is existed
+  existingClaim: acme-json-certs
   accessMode: ReadWriteOnce
   size: 128Mi
-  existingClaim: acme-json-certs
   path: /certs
 volumes:
   - mountPath: /data
