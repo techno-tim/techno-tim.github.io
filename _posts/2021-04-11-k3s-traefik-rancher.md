@@ -65,19 +65,29 @@ export INSTALL_K3S_VERSION=v1.20.5+k3s1
 curl -sfL https://get.k3s.io | sh -s - server --node-taint CriticalAddonsOnly=true:NoExecute --tls-san your.load.balancer.ip --write-kubeconfig-mode 644 --disable traefik --disable servicelb
 ```
 
-This should reconfigure your servers.  I ran it on all servers in my cluster.
+This should reconfigure your servers.  Just run it on all server nodes, not agent nodes.
 
 ## Install Metal LB
 
 [Metal LB installation](https://metallb.universe.tf/installation/)
 
+You can follow [Self-Hosting Your Homelab Services with SSL](https://www.youtube.com/watch?v=pAM2GBCDGTo) to get the idea of Metal LB. It's recommended to:
+
+* Install with [helm](https://metallb.universe.tf/installation/#installation-with-helm)
+* Use [Layer2 configuration](https://metallb.universe.tf/configuration/#layer-2-configuration) if you follow this series
 
 ## Exposing Rancher directly to your Metal LB 
 
-It's a good idea to do this until traefik is configured otherwise you won't have access to the Rancher Ui
+It's a good idea to do this until traefik is configured otherwise you won't have access to the Rancher UI
 
 ```bash
 kubectl expose deployment rancher -n cattle-system --type=LoadBalancer --name=rancher-lb --port=443
+```
+
+Then, you can access Rancher UI after getting external-IP
+
+```bash
+kubectl get service/rancher-lb -n cattle-system
 ```
 
 ## Install Traefik 2
@@ -91,47 +101,104 @@ If you choose `IngressRoute` see [IngressRoute](#exposing-a-service-with-traefik
 * This will get wildcard certs
 * This is pointed at staging, if you want production be sure comment staging the line (and delete your staging certs)
 
-We will be installing this into the `kube-system` namespace, which already exists.  If you are going to use anther namespace you will need change it everywhere.
+We will be installing this into the `kube-system` namespace, which already exists. If you are going to use anther namespace you will need change it everywhere.
 
-add `traefik` helm repo and update
+### (Opional) Make sure that persistent volume claim is available
+
+The dynamic configuration for Traefik is stored in a persistent volume. If you want to persist the certificate, it's better to create one now to claim later.
+
+To create a persistent volume, it's better to check out [Cloud Native Distributed Storage in Kubernetes with Longhorn](https://www.youtube.com/watch?v=eKBBHc0t7bc).
+
+If not, just create one from `Rancher UI > Clusters (Choose your cluster) > Storage > Persistent Volume > Add volume`
+
+### Add `traefik` helm repo and update
 
 ```bash
 helm repo add traefik https://helm.traefik.io/traefik
 helm repo update
 ```
 
-create `traefik-config.yaml` with the contents of `/config/traefik-config.yaml` from [/config](https://github.com/techno-tim/techno-tim.github.io/tree/master/reference_files/traefik2-k3s-rancher/config)
+### Edit & apply ConfigMap
 
-this holds our cloudflare secrets along with a configmap
-
-update this file with your values
-
-apply the config
-
-```bash
-kubectl apply -f traefik-config.yaml
-```
-
-create `traefik-chart-values.yaml` with the contents of `/config/traefik-chart-values.yaml` from [/config](https://github.com/techno-tim/techno-tim.github.io/tree/master/reference_files/traefik2-k3s-rancher/config)
-
-Update `loadBalancerIP` in `traefik-chart-values.yaml` with your Metal LB IP
-
-
-Before running this, be sure you only have one default storage class set.  If you are using Rancher it is Cluster>Storage>Storage Classes.  Make sure only one is default.
-
-
-create config then update the values
+* Create `traefik-config.yaml` with the contents of `/config/traefik-config.yaml` from [/config](https://github.com/techno-tim/techno-tim.github.io/tree/master/reference_files/traefik2-k3s-rancher/config)
+* This holds our cloudflare secrets along with a configmap
+* Update this file with your values
+* Re-check if you have a persistent volume ready to claim
+* Apply the config
 
 ```bash
 kubectl apply -f traefik-config.yaml
 ```
+
+###  Edit & install Traefik helm chart
+
+* Create `traefik-chart-values.yaml` with the contents of `/config/traefik-chart-values.yaml` from [/config](https://github.com/techno-tim/techno-tim.github.io/tree/master/reference_files/traefik2-k3s-rancher/config)
+* Update `loadBalancerIP` in `traefik-chart-values.yaml` with your Metal LB IP
+
+Before running this, be sure you only have one default storage class set.
+
+If you are using Rancher it is `Cluster > Storage > Storage Classes`. Make sure only one is default.
+
+* Install Traefik with chart values
 
 ```bash
 helm install traefik traefik/traefik --namespace=kube-system --values=traefik-chart-values.yaml
 ```
 
+More configuration value can be add from this [default-value.yaml](https://github.com/traefik/traefik-helm-chart/blob/master/traefik/values.yaml) from Traefik github.
+
 If all went well, you should now have traefik 2 installed and configured.
 
+### Check for container logs
+
+To check if the Traefik instance is running correctly, see the logs:
+
+```bash
+kubectl -n kube-system logs $(kubectl -n kube-system get pods --selector "app.kubernetes.io/name=traefik" --output=name)
+```
+
+It should be `level=info msg="Configuration loaded from flags."`
+
+## Traefik Dashboard
+
+To see all router to Traefik, we can install and expose Traefik Dashboard.
+
+First you will need `htpassword` to generate a password for your dashboard.
+
+```bash
+sudo apt-get update
+sudo apt-get install apache2-utils
+```
+
+You can then generate one using this, be sure to swap your username and password.
+
+```bash
+htpasswd -nb techno password | openssl base64
+```
+
+It should output:
+
+```bash
+dGVjaG5vOiRhcHIxJFRnVVJ0N2E1JFpoTFFGeDRLMk8uYVNaVWNueG41eTAKCg==
+```
+
+Save this in a secure place, it will be the password you use to access the traefik dashboard.
+
+Copy `traefik-dashboard-secret.yaml` locally and update it with your credentials.
+
+Copy `traefik-dashboard-ingressroute.yaml` and update it with your hostname, then apply:
+
+```bash
+kubectl apply -f traefik-dashboard-secret.yaml
+kubectl apply -f traefik-dashboard-ingressroute.yaml
+```
+
+This should create:
+* A secret in Kubernetes cluster name `traefik-dashboard-auth`
+* A middleware for Traefik name `traefik-dashboard-basicauth`
+* An ingress route for Traefik name `dashboard`
+
+Check out the Traefik Dashboard with the URL you specify earlier.
 
 ## Exposing a service with traefik and Rancher Ingress
 
@@ -161,46 +228,3 @@ kubectl apply -f kubernetes
 ```
 
 This will create the deployment, service, and ingress.
-
-
-## Dashboard
-
-First you will need `htpassword` to generate a password for your dashboard
-
-```bash
-sudo apt-get update
-sudo apt-get install apache2-utils
-```
-
-You can then generate one using this, be sure to swap your username and password
-
-```bash
-htpasswd -nb techno password | openssl base64
-```
-
-it should output
-
-```bash
-dGVjaG5vOiRhcHIxJFRnVVJ0N2E1JFpoTFFGeDRLMk8uYVNaVWNueG41eTAKCg==
-```
-
-copy `traefik-dashboard-secret.yaml` locally and update it with your credentials
-
-
-then apply
-
-```bash
-kubectl apply -f traefik-config.yaml
-```
-
-copy `traefik-dashboard-ingressroute.yaml` and update it with your hostname
-
-
-Save this in a secure place, it will be the password you use to access the traefik dashboard
-
-
-## files
-
-## Putting Rancher behind Traefik 2
-
-TBD
