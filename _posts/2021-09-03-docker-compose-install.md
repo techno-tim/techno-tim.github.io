@@ -6,7 +6,7 @@ categories: docker
 tags: homelab docker-docker-compose
 ---
 
-# Install Docker
+## Install Docker
 
 ```bash
  sudo apt-get update
@@ -39,7 +39,7 @@ Check Install
 docker -v
 ```
 
-# Install Docker Compose
+## Install Docker Compose
 
 ```bash
 sudo curl -L "https://github.com/docker/compose/releases/download/1.29.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
@@ -55,7 +55,7 @@ Check Install
 docker-compose -v
 ```
 
-# Use Docker without sudo
+## Use Docker without sudo
 
 ```bash
  sudo usermod -aG docker $USER
