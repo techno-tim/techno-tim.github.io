@@ -13,9 +13,7 @@ Meet File Browser, and open source, self-hosted alternative to services like Dro
 [Watch Video](https://www.youtube.com/watch?v=W2yZ5_sd9Hc)
 
 
-(see video description for gear links)
-
-You can find the LittleLink-Server repo [here](https://github.com/techno-tim/littlelink-server).
+(see video description for links to gear, discord, and other ways to connect.)
 
 ## Docker Setup
 
