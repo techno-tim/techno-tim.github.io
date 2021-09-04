@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Meet File Browser, a Small but Mighty Web File Browser"
-date: 2021-09-04 14:00:00 -0600
+date: 2021-09-04 10:00:00 -0500
 categories: self-hosted
-tags: homelab pi-hole dns littlelink-server portainer self-hosted docker rancher file-browser
+tags: homelab portainer self-hosted docker rancher file-browser
 ---
 
 [![Meet File Browser, a Small but Mighty Web File Browser](https://img.youtube.com/vi/W2yZ5_sd9Hc/0.jpg)](https://www.youtube.com/watch?v=W2yZ5_sd9Hc "Meet File Browser, a Small but Mighty Web File Browser")
