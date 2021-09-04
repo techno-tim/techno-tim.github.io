@@ -8,7 +8,7 @@ tags: homelab portainer self-hosted docker rancher file-browser
 
 [![Meet File Browser, a Small but Mighty Web File Browser](https://img.youtube.com/vi/W2yZ5_sd9Hc/0.jpg)](https://www.youtube.com/watch?v=W2yZ5_sd9Hc "Meet File Browser, a Small but Mighty Web File Browser")
 
-Meet File Browser, an open source, self-hosted alternative to services like Dropbox and other web based file browsers.  Today we'll configure a containerized version of File Browser and have you open and going in just a few minutes.  We'll also walk through creating, editing, moving, copying, and even sharing files and folders so that you get a better understanding about what File Browser is all about.
+Meet File Browser, an open source, self-hosted alternative to services like Dropbox and other web based file browsers.  Today we'll configure a containerized version of File Browser and have you up and going in just a few minutes.  We'll also walk through creating, editing, moving, copying, and even sharing files and folders so that you get a better understanding about what File Browser is all about.
 
 [Watch Video](https://www.youtube.com/watch?v=W2yZ5_sd9Hc)
 
