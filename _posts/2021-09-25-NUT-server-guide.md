@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Network UPS Tools (NUT) Ultimate Guide"
-date: 2021-09-04 10:00:00 -0500
-categories: self-hosted
+date: 2021-09-25 10:00:00 -0500
+categories: homelab
 tags: homelab nut self-hosted docker ups pdu open-source
 ---
 
