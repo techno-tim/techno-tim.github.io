@@ -12,6 +12,8 @@ Meet NUT Server, or Network UPS Tools.  It's an open UPS networking monitoring t
 
 This is the ultimate guide to configuring Network UPS Tools (NUT).  We cover everything from installing and configuring the server on as Raspberry Pi, configuring the client on Windows and Linux, configure a charting and graphing website to visualize NUT data, spin up an additional web site use Docker, and finally set up monitoring and alerting to automate shutdowns of your machine.
 
+https://networkupstools.org/
+
 Also, note to self, don't eat a salad before you record a video....
 
 
