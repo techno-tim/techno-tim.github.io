@@ -11,7 +11,7 @@ spec:
     - match: Host(`traefik.example.com`) && (PathPrefix(`/dashboard`) || PathPrefix(`/api`))
       kind: Rule
       middlewares:
-        - traefik-dashboard-basicauth
+        - name: traefik-dashboard-basicauth
       services:
         - name: api@internal
           kind: TraefikService

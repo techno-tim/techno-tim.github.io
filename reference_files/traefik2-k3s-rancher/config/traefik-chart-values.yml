@@ -44,7 +44,7 @@ ports:
   web:
     redirectTo: websecure
 env:
-  - name: CF_DNS_API_TOKEN
+  - name: CF_API_KEY
     valueFrom:
       secretKeyRef:
         key: apiKey
