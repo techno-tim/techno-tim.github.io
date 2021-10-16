@@ -12,18 +12,16 @@
 -
   type: patreon
   icon: 'fab fa-patreon'
-# -
-#   type: github
-#   icon: 'fab fa-github-alt'
-# -
+
+-
 #   type: instagram
 #   icon: 'fab fa-instagram'
 # -
 #   type: facebook
 #   icon: 'fab fa-facebook'
 -
-  type: discord
-  icon: 'fab fa-discord'
+    type: discord
+    icon: 'fab fa-discord'
 # -
 #   type: tiktok
 #   icon: 'fab fa-tiktok'
@@ -31,10 +29,13 @@
 #   type: email
 #   icon: 'fas fa-envelope'
 #   noblank: true            # open link in current tab
-# -
-#   type: rss
-#   icon: 'fas fa-rss'
-#   noblank: true
+-
+  type: github
+  icon: 'fab fa-github-alt'
+-
+    type: rss
+    icon: 'fas fa-rss'
+    noblank: true
 
 # Uncomment and complete the url below to enable more contact options
 # -
