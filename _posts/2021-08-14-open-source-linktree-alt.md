@@ -29,7 +29,7 @@ cd littlelink-server
 touch docker-compose.yml
 ```
 
-If you're using Docker compose
+If you're using Docker compose (see the [GitHub repo](https://github.com/techno-tim/littlelink-server) for the latest file)
 
 `docker-compose.yml`
 
