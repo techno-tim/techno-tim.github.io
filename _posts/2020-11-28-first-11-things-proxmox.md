@@ -17,6 +17,7 @@ After setting up my Proxmox servers, there are a few thigns I do before I use th
 ## Updates
 Edit `/etc/apt/sources.list`
 
+### Proxmox Version 6.X
 ```
 deb http://ftp.us.debian.org/debian buster main contrib
 
@@ -27,6 +28,20 @@ deb http://security.debian.org buster/updates main contrib
 
 # not for production use
 deb http://download.proxmox.com/debian buster pve-no-subscription
+```
+
+### Proxmox Version 7.X
+```
+deb http://ftp.debian.org/debian bullseye main contrib
+
+deb http://ftp.debian.org/debian bullseye-updates main contrib
+
+# security updates
+deb http://security.debian.org/debian-security bullseye-security main contrib
+
+# PVE pve-no-subscription repository provided by proxmox.com,
+# NOT recommended for production use
+deb http://download.proxmox.com/debian/pve bullseye pve-no-subscription
 ```
 
 
