@@ -18,7 +18,8 @@ After setting up my Proxmox servers, there are a few thigns I do before I use th
 Edit `/etc/apt/sources.list`
 
 ### Proxmox Version 6.X
-```
+
+```bash
 deb http://ftp.us.debian.org/debian buster main contrib
 
 deb http://ftp.us.debian.org/debian buster-updates main contrib
@@ -31,7 +32,10 @@ deb http://download.proxmox.com/debian buster pve-no-subscription
 ```
 
 ### Proxmox Version 7.X
-```
+
+(for a full guide on Proxmox 7, please [see this link](https://techno-tim.github.io/posts/proxmox-7/))
+
+```bash
 deb http://ftp.debian.org/debian bullseye main contrib
 
 deb http://ftp.debian.org/debian bullseye-updates main contrib
