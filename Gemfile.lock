@@ -78,6 +78,8 @@ GEM
       jekyll (>= 3.5, < 5.0)
       jekyll-feed (~> 0.9)
       jekyll-seo-tag (~> 2.1)
+    nokogiri (1.12.5-x86_64-darwin)
+      racc (~> 1.4)
     nokogiri (1.12.5-x86_64-linux)
       racc (~> 1.4)
     nokogumbo (2.0.5)
@@ -104,6 +106,7 @@ GEM
     yell (2.2.2)
 
 PLATFORMS
+  x86_64-darwin-18
   x86_64-linux
 
 DEPENDENCIES
@@ -118,4 +121,4 @@ DEPENDENCIES
   wdm (~> 0.1.1)
 
 BUNDLED WITH
-   2.2.16
+   2.2.29
