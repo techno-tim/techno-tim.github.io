@@ -215,3 +215,7 @@ query all logs from the `container_name` label of `uptime-kuma` and filter on `h
 ```
 
 Read more about LogQL [here](https://grafana.com/docs/loki/latest/logql/)
+
+## Kubernetes Setup
+
+If you're looking to set this up in kubernetes, see [this post](https://techno-tim.github.io/posts/grafana-loki-kubernetes/)
