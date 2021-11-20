@@ -76,7 +76,7 @@ services:
 ## Loki Config
 
 ```bash
-touch nano loki/loki-config.yml
+nano loki/loki-config.yml
 ```
 
 `loki-config.yml`
@@ -117,7 +117,7 @@ ruler:
 ## Promtail Config
 
 ```bash
-touch nano promtail/promtail-config.yml
+nano promtail/promtail-config.yml
 ```
 
 `promtail-config.yml`
