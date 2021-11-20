@@ -10,7 +10,6 @@ tags: homelab proxmox grafana logging promtail prometheus
 
 I've been on a quest to find a new logging system.  I've use quite a few in the past, some open source, some proprietary, and some home grown, but recently I've decided to switch.  I've switched to Grafana Loki for all of my logs for all of my systems - this includes machines, devices, docker systems and hosts, and my all of my kubernetes clusters.  If you're thinking of using Grafana and are also looking for a fast way to log all of your systems, join me as we discuss and configure Grafana Loki.
 
-
 [Watch Video](https://www.youtube.com/watch?v=h_GGd7HfKQ8)
 
 (see video description for links to gear, discord, and other ways to connect.)
@@ -74,7 +73,9 @@ services:
       - loki
 ```
 
-```
+## Loki Config
+
+```bash
 touch nano loki/loki-config.yml
 ```
 
@@ -113,9 +114,10 @@ ruler:
   alertmanager_url: http://localhost:9093
 ```
 
+## Promtail Config
 
-```
-touch nano promtail/loki-config.yml
+```bash
+touch nano promtail/promtail-config.yml
 ```
 
 `promtail-config.yml`
@@ -132,6 +134,7 @@ clients:
   - url: http://loki:3100/loki/api/v1/push
 
 # local machine logs
+
 scrape_configs:
 - job_name: local
   static_configs:
@@ -141,7 +144,8 @@ scrape_configs:
       job: varlogs
       __path__: /var/log/*log
   
-## docker logs  
+## docker logs
+
 # scrape_configs:
 #   - job_name: docker 
 #     pipeline_stages:
@@ -152,6 +156,7 @@ scrape_configs:
 #           __path__: /var/lib/docker/containers/*/*-json.log
 
 ## syslog target
+
 # scrape_configs:
 #   - job_name: syslog
 #     syslog:
@@ -165,9 +170,9 @@ scrape_configs:
 #         target_label: 'host'
 ```
 
+## Loki Docker Driver
 
-
-```
+```bash
 sudo nano /etc/daemon.json
 ```
 
@@ -186,3 +191,27 @@ sudo nano /etc/daemon.json
 ```bash
  sudo systemctl restart docker
 ```
+
+## LogQL sample queries
+
+Query all logs from the `varlogs` stream
+
+```sql
+{job="varlogs"} 
+```
+
+query all logs from the `varlogs` stream and filter on  `docker`
+
+```sql
+{job="varlogs" |= "docker"}
+
+```
+
+query all logs from the `container_name` label of `uptime-kuma` and filter on `host` of `juno`
+
+```sql
+{container_name="uptime-kuma", host="juno"}
+
+```
+
+Read more about LogQL [here](https://grafana.com/docs/loki/latest/logql/)
