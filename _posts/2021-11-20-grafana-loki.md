@@ -32,7 +32,7 @@ cd ..
 touch docker-compose.yml
 nano docker-compose.yml # copy the contents from below
 ls
-docker-compose up -d --force-recreate
+docker-compose up -d --force-recreate # be sure you've created promtail-config.yml and loki-config.yml before running this
 ```
 
 `docker-compose.yml`
