@@ -87,7 +87,7 @@ Query all logs from the `container` label
 query all logs from the `container` stream and filter on `error`
 
 ```sql
-{container="uptime-kuma" |= "error"}
+{container="uptime-kuma"} |= "error"
 
 ```
 

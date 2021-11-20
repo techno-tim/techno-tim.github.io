@@ -203,7 +203,7 @@ Query all logs from the `varlogs` stream
 query all logs from the `varlogs` stream and filter on  `docker`
 
 ```sql
-{job="varlogs" |= "docker"}
+{job="varlogs"}  |= "docker"
 
 ```
 
