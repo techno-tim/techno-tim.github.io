@@ -172,6 +172,14 @@ scrape_configs:
 
 ## Loki Docker Driver
 
+Install docker plugin
+
+```bash
+docker plugin install grafana/loki-docker-driver:latest --alias loki --grant-all-permissions
+```
+
+edit docker daemon config
+
 ```bash
 sudo nano /etc/daemon.json
 ```
