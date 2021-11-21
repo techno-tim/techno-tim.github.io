@@ -73,11 +73,13 @@ sudo apt install apache2-utils
 ```
 
 ```bash
-echo $(htpasswd -nb USER PASSWORD) | sed -e s/\\$/\\$\\$/g
+echo $(htpasswd -nb <USER> <PASSWORD>) | sed -e s/\\$/\\$\\$/g
 ```
+NOTE: Replace `<USER>` with your username and `<PASSWORD>` with your password to be hashed.
 
-use this in your `docker-compose.yml` (`USER:BASIC_AUTH_PASSWORD`)
+Paste the output in your `docker-compose.yml` in line (`traefik.http.middlewares.traefik-auth.basicauth.users=<USER>:<HASHED-PASSWORD>`)
 
+#### Sping up the container
 ```bash
 docker-compose up -d
 ```
