@@ -181,7 +181,7 @@ docker plugin install grafana/loki-docker-driver:latest --alias loki --grant-all
 edit docker daemon config
 
 ```bash
-sudo nano /etc/daemon.json
+sudo nano /etc/docker/daemon.json
 ```
 
 `daemon.json`
