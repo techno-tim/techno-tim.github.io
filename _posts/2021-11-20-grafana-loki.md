@@ -57,6 +57,8 @@ services:
     volumes:
       - /var/log:/var/log
       - /home/serveradmin/docker_volumes/promtail:/etc/promtail
+    # ports:
+    #   - "1514:1514" # this is only needed if you are going to send syslogs
     restart: unless-stopped
     command: -config.file=/etc/promtail/promtail-config.yml
     networks:
