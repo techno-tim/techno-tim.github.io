@@ -66,6 +66,22 @@ http:
         - default-headers
       tls: {}
       service: rancher
+    idrac:
+      entryPoints:
+        - "https"
+      rule: "Host(`idrac.local.example.com`)"
+      middlewares:
+        - idrac
+      tls: {}
+      service: idrac
+    idrac-console:
+      entryPoints:
+        - "idrac" # REQUIRED for iDRAC virtual console: Create a new TCP entry point in traefik on port 5900
+      rule: "Host(`idrac.local.example.com`)"
+      middlewares:
+        - idrac
+      tls: {}
+      service: idrac-console
 
 #endregion
 #region services
@@ -110,6 +126,16 @@ http:
         servers:
           - url: "https://192.168.0.107"
         passHostHeader: true
+    idrac:
+      loadBalancer:
+        servers:
+          - url: "https://192.168.0.108"
+        passHostHeader: true
+    idrac-console:
+      loadBalancer:
+        servers:
+          - url: "https://192.168.0.108:5900"
+        passHostHeader: true
 #endregion
   middlewares:
     addprefix-pihole:
@@ -128,6 +154,18 @@ http:
         forceSTSHeader: true
         stsIncludeSubdomains: true
         stsPreload: true
+        stsSeconds: 15552000
+        customFrameOptionsValue: SAMEORIGIN
+        customRequestHeaders:
+          X-Forwarded-Proto: https
+
+    idrac:
+      headers:
+        frameDeny: true
+        sslRedirect: true
+        browserXssFilter: true
+        forceSTSHeader: true
+        stsIncludeSubdomains: true
         stsSeconds: 15552000
         customFrameOptionsValue: SAMEORIGIN
         customRequestHeaders:
