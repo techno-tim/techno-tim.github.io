@@ -144,7 +144,7 @@ http:
     https-redirect:
       redirectScheme:
         scheme: https
-    
+
     default-headers:
       headers:
         frameDeny: true
