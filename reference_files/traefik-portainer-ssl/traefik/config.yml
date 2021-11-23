@@ -71,7 +71,7 @@ http:
         - "https"
       rule: "Host(`idrac.local.example.com`)"
       middlewares:
-      1  - idrac
+        - idrac
       tls: {}
       service: idrac
     idrac-console:
