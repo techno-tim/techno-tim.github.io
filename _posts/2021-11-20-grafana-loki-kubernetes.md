@@ -14,6 +14,18 @@ Think of `helm` as a package manager for kubernetes. It'a an easy way to bundle 
 
 ## Installing Loki Stack
 
+First add Loki's chart repository to `helm`
+
+```bash
+helm repo add grafana https://grafana.github.io/helm-charts
+```
+
+The update the chart repository
+
+```bash
+helm repo add grafana https://grafana.github.io/helm-charts
+```
+
 This command will:
 
 * install grafana
@@ -99,3 +111,11 @@ query all logs from the `pod` label of `uptime-kuma-8d45g32fd-lk8rl`
 ```
 
 Read more about LogQL [here](https://grafana.com/docs/loki/latest/logql/)
+
+## Upgrading Loki Stack
+
+To upgrade, you run the same command you use to install it
+
+```bash
+helm upgrade --install loki grafana/loki-stack  --set grafana.enabled=true,prometheus.enabled=true,prometheus.alertmanager.persistentVolume.enabled=false,prometheus.server.persistentVolume.enabled=false,loki.persistence.enabled=true,loki.persistence.storageClassName=nfs-client,loki.persistence.size=5Gi
+```
