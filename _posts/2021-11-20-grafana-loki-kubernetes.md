@@ -20,7 +20,7 @@ First add Loki's chart repository to `helm`
 helm repo add grafana https://grafana.github.io/helm-charts
 ```
 
-The update the chart repository
+Then update the chart repository
 
 ```bash
 helm repo add grafana https://grafana.github.io/helm-charts
