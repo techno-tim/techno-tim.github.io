@@ -23,7 +23,7 @@ helm repo add grafana https://grafana.github.io/helm-charts
 Then update the chart repository
 
 ```bash
-helm repo add grafana https://grafana.github.io/helm-charts
+helm repo update
 ```
 
 This command will:
@@ -114,7 +114,11 @@ Read more about LogQL [here](https://grafana.com/docs/loki/latest/logql/)
 
 ## Upgrading Loki Stack
 
-To upgrade, you run the same command you use to install it
+To upgrade, you run the same command you use to install it, with an updated chart
+
+```bash
+helm repo update
+```
 
 ```bash
 helm upgrade --install loki grafana/loki-stack  --set grafana.enabled=true,prometheus.enabled=true,prometheus.alertmanager.persistentVolume.enabled=false,prometheus.server.persistentVolume.enabled=false,loki.persistence.enabled=true,loki.persistence.storageClassName=nfs-client,loki.persistence.size=5Gi
