@@ -179,7 +179,7 @@ Install docker plugin
 docker plugin install grafana/loki-docker-driver:latest --alias loki --grant-all-permissions
 ```
 
-edit docker daemon config
+Edit docker daemon config
 
 ```bash
 sudo nano /etc/docker/daemon.json
@@ -197,9 +197,13 @@ sudo nano /etc/docker/daemon.json
 }
 ```
 
+Restart docker daemon.
+
 ```bash
  sudo systemctl restart docker
 ```
+
+You will also need to recreate your containers after applying this setting *
 
 ## LogQL sample queries
 
@@ -209,14 +213,14 @@ Query all logs from the `varlogs` stream
 {job="varlogs"} 
 ```
 
-query all logs from the `varlogs` stream and filter on  `docker`
+Query all logs from the `varlogs` stream and filter on  `docker`
 
 ```sql
 {job="varlogs"}  |= "docker"
 
 ```
 
-query all logs from the `container_name` label of `uptime-kuma` and filter on `host` of `juno`
+Query all logs from the `container_name` label of `uptime-kuma` and filter on `host` of `juno`
 
 ```sql
 {container_name="uptime-kuma", host="juno"}
