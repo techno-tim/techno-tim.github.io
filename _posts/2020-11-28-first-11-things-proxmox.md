@@ -10,11 +10,10 @@ tags: homelab proxmox homelab
 
 After setting up my Proxmox servers, there are a few thigns I do before I use them for their intended purpose.  This ranges from updates, to storage, to networking and VLANS, to uploading ISOs, to clustering, and more.  Join me as we pick up where the rest of the proxmox tutorials stop, and that's everything you need to do to make these production ready (and maybe a bonus item too).
 
-
 [Watch Video](https://www.youtube.com/watch?v=GoZaMgEgrHw)
 
-
 ## Updates
+
 Edit `/etc/apt/sources.list`
 
 ### Proxmox Version 6.X
@@ -48,13 +47,11 @@ deb http://security.debian.org/debian-security bullseye-security main contrib
 deb http://download.proxmox.com/debian/pve bullseye pve-no-subscription
 ```
 
-
 Edit `/etc/apt/sources.list.d/pve-enterprise.list`
 
-```
+```bash
 # deb https://enterprise.proxmox.com/debian/pve buster pve-enterprise
 ```
-
 
 Run
 
@@ -71,7 +68,6 @@ reboot
 ```
 
 ## Storage
-
 
 BE CAREFUL.  This will wipe your disks.
 
@@ -93,7 +89,7 @@ See [Proxmox PCI Passthrough](https://pve.proxmox.com/wiki/Pci_passthrough)
 
 `nano /etc/default/grub`
 
-```
+```bash
 GRUB_CMDLINE_LINUX_DEFAULT="quiet intel_iommu=on"
 ```
 
@@ -101,7 +97,7 @@ GRUB_CMDLINE_LINUX_DEFAULT="quiet intel_iommu=on"
 
 Edit `/etc/modules`
 
-```
+```bash
 vfio
 vfio_iommu_type1
 vfio_pci
@@ -121,7 +117,8 @@ nano /etc/network/interfaces
 ```
 
 Set your VLAN here
-```
+
+```bash
 bridge-vlan-aware yes
 bridge-vids 20
 ```
@@ -160,7 +157,6 @@ iface vmbr0 inet static
 
 **If you're running Proxmox 7, see the modified [config here](https://techno-tim.github.io/posts/proxmox-7/) for LAGG / LACP**
 
-
 ## Cloning
 
 These are the commands I run after cloning a Linux machine so that it resets all information for the machine it was cloned from.
@@ -195,8 +191,6 @@ regenerate ssh keys
 regen ssh keys
 sudo rm /etc/ssh/ssh_host_*
 sudo dpkg-reconfigure openssh-server
-
 ```
-
 
 reboot
