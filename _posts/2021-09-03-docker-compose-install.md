@@ -8,6 +8,8 @@ tags: homelab docker-docker-compose
 
 ## Install Docker
 
+If you have an existing version of Docker install, it might be best to remove it first.  See the cleaning up section at the end
+
 ```bash
  sudo apt-get update
  sudo apt-get install \
@@ -60,4 +62,13 @@ docker-compose -v
 ```bash
  sudo usermod -aG docker $USER
 ```
+
 You'll need to log out then back in to apply this
+
+## Cleaning Up
+
+If you need to uninstall Docker, run the following
+
+```bash
+ sudo apt-get remove docker docker-engine docker.io containerd runc
+```
