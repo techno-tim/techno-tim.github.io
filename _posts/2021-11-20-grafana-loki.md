@@ -24,11 +24,8 @@ If you're using Docker compose
 
 ```bash
 mkdir grafana
-cd ..
 mkdir loki
-cd ..
 mkdir promtail
-cd ..
 touch docker-compose.yml
 nano docker-compose.yml # copy the contents from below
 ls
