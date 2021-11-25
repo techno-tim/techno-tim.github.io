@@ -70,5 +70,5 @@ You'll need to log out then back in to apply this
 If you need to uninstall Docker, run the following
 
 ```bash
- sudo apt-get remove docker docker-engine docker.io containerd runc
+sudo apt-get remove docker docker-engine docker.io containerd runc
 ```
