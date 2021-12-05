@@ -12,7 +12,6 @@ Meet LittleLink & LittleLink-Server  - a DIY, self hosted, and open source alter
 
 [Watch Video](https://www.youtube.com/watch?v=42SqfI_AjXU)
 
-
 (see video description for gear links)
 
 You can find the LittleLink-Server repo [here](https://github.com/techno-tim/littlelink-server).
@@ -91,7 +90,7 @@ If you're running docker only
 
 Docker command
 
-```
+```bash
 docker run -d \
   --name=littlelink-server \
   -p 8080:3000 \
@@ -116,6 +115,5 @@ docker run -d \
   --restart unless-stopped \
   ghcr.io/techno-tim/littlelink-server:latest
 ```
-
 
 If you're using Rancher, Portainer, Open Media Vault, Unraid, or anything else with a GUI, just copy and paste the environment variables above into the form on the web page.

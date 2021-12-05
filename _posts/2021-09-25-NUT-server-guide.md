@@ -267,7 +267,7 @@ I_HAVE_SECURED_MY_CGI_DIRECTORY
 
 visit
 
-http://your.ip.adddress/cgi-bin/nut/upsstats.cgi
+[http://your.ip.adddress/cgi-bin/nut/upsstats.cgi](http://your.ip.adddress/cgi-bin/nut/upsstats.cgi)
 
 ## Webnut Docker Container
 

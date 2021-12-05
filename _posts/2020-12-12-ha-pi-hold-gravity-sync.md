@@ -19,20 +19,16 @@ Techno Tim (and probably thousands of other lovers of Pi-Hole).
 
 P.S.  Keep up the good work!
 
-Thank you Gravity Sync! 
+Thank you Gravity Sync!
 
 (don't forget to star the repo!)
 
-
 [https://github.com/vmstan/gravity-sync](https://github.com/vmstan/gravity-sync)
-
 
 Great Raspberry Pi - Pi-Hole Servers!
 
 ► Raspberry Pi Zero W Kit - [https://amzn.to/3qOl9yS](https://amzn.to/3qOl9yS)
 
 ► Raspberry Pi 4 Kit - [https://amzn.to/3nophDm](https://amzn.to/3nophDm)
-
-
 
 [Watch Video](https://www.youtube.com/watch?v=IFVYe3riDRA)

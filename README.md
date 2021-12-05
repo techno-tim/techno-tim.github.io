@@ -4,24 +4,24 @@ Here you will find all the documentation for my YouTube videos on my channel [ht
 
 ## Don't forget to ⭐ this repo and fork it! 👆
 
-# Documentation has moved here 👉 [The new documentation site](https://techno-tim.github.io/) 
+## Documentation has moved here 👉 [The new documentation site](https://techno-tim.github.io/)
 
 ## Credits
 
 Created by TechnoTim with 💛
 
-► YouTube https://www.youtube.com/channel/UCOk-gHyjcWZNj3Br4oxwh0A
+► YouTube <https://www.youtube.com/channel/UCOk-gHyjcWZNj3Br4oxwh0A>
 
-► Patreon https://patreon.com/technotim
+► Patreon <https://patreon.com/technotim>
 
-► Twitch https://www.twitch.tv/TechnoTim
+► Twitch <https://www.twitch.tv/TechnoTim>
 
-► Twitter  https://twitter.com/TechnoTimLive
+► Twitter  <https://twitter.com/TechnoTimLive>
 
-► Discord https://discord.gg/DJKexrJ
+► Discord <https://discord.gg/DJKexrJ>
 
-► Instagram https://www.instagram.com/techno.tim/
+► Instagram <https://www.instagram.com/techno.tim/>
 
-► Facebook https://www.facebook.com/TechnoTimLive/
+► Facebook <https://www.facebook.com/TechnoTimLive/>
 
-► GitHub https://github.com/timothystewart6
+► GitHub <https://github.com/timothystewart6>

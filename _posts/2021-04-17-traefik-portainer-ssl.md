@@ -12,7 +12,6 @@ Today, we're going to use SSL for everything.  No more self-sign certs.  No more
 
 [Watch Video](https://www.youtube.com/watch?v=liV3c9m_OX8)
 
-
 ## Docker Setup
 
 See [this post](https://techno-tim.github.io/posts/docker-compose-install/) on how to install `docker` and `docker-compose`
@@ -29,7 +28,7 @@ chmod 600 acme.json
 touch traefik.yml
 ```
 
-`traefik.config` can be found [here](https://github.com/techno-tim/techno-tim.github.io/tree/master/reference_files/traefik-portainer-ssl/traefik) 
+`traefik.config` can be found [here](https://github.com/techno-tim/techno-tim.github.io/tree/master/reference_files/traefik-portainer-ssl/traefik)
 
 create docker network
 
@@ -41,7 +40,7 @@ docker network create proxy
 touch docker-compose.yml
 ```
 
-`docker-compose.yml` can be found [here](https://github.com/techno-tim/techno-tim.github.io/tree/master/reference_files/traefik-portainer-ssl/traefik) 
+`docker-compose.yml` can be found [here](https://github.com/techno-tim/techno-tim.github.io/tree/master/reference_files/traefik-portainer-ssl/traefik)
 
 ```bash
 cd data
@@ -61,7 +60,7 @@ touch docker-compose.yml
 mkdir data
 ```
 
-`docker-compose.yml` can be found [here](https://github.com/techno-tim/techno-tim.github.io/tree/master/reference_files/traefik-portainer-ssl/portainer) 
+`docker-compose.yml` can be found [here](https://github.com/techno-tim/techno-tim.github.io/tree/master/reference_files/traefik-portainer-ssl/portainer)
 
 ### Generate Basic Auth Password
 
@@ -78,7 +77,7 @@ NOTE: Replace `<USER>` with your username and `<PASSWORD>` with your password to
 
 Paste the output in your `docker-compose.yml` in line (`traefik.http.middlewares.traefik-auth.basicauth.users=<USER>:<HASHED-PASSWORD>`)
 
-#### Sping up the container
+#### Spin up the container
 
 ```bash
 docker-compose up -d
