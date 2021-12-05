@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Traefik 2, k3s, Rancher"
+title: "Configuring Traefik 2 Ingress for Kubernetes"
 date: 2021-04-08 09:00:00 -0500
 categories: kubernetes rancher
 tags: homelab rancher kubernetes k3s traefik
