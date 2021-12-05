@@ -12,8 +12,6 @@ So you're a software engineer or a developer who wants to self-host your own cod
 
 [Watch Video](https://www.youtube.com/watch?v=Xc94HJn1nNo)
 
-
-
 ## Helpful videos
 
 1 - [Set Up Kubernetes with Rancher](https://www.youtube.com/watch?v=oILc0ywDVTk)
@@ -39,7 +37,6 @@ Kubernetes deployment yaml
 nginx config for your react application
 
 [https://github.com/techno-tim/techno-react/blob/master/nginx.conf](https://github.com/techno-tim/techno-react/blob/master/nginx.conf)
-
 
 `pbcopy` for WSL on Windows
 

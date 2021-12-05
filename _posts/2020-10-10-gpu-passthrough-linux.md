@@ -13,9 +13,7 @@ Do you have a lot of virtual machines?  Are you running Windows, Linux, and Mac 
 
 [Watch Video](https://www.youtube.com/watch?v=9OfoFAljPn4)
 
-
-
-```
+```na
 88          88                                      
 88          ""                                      
 88                                                  
@@ -28,16 +26,13 @@ Do you have a lot of virtual machines?  Are you running Windows, Linux, and Mac 
                              "Y8bbdP"               
 ```
 
-
-
 If you need to passthrough a GPU, follow [this guide](https://github.com/techno-tim/youtube-videos/tree/master/gpu-passthrough) but install Ubuntu instead.
 
-
 ## Proxmox
+
 Shut down your VM in proxmox, edit your conf file, it should be here (note, change path to your VM's ID)
 
 `/etc/pve/qemu-server/100.conf`
-
 
 add `cpu: host,hidden=1,flags=+pcid` to that file
 
@@ -65,15 +60,14 @@ Then install `nvtop`
 sudo apt-get install nvtop
 ```
 
-
-## tensorflow workload 
+## tensorflow workload
 
 ```bash
 nvidia-docker run --rm -ti tensorflow/tensorflow:r0.9-devel-gpu
 ```
 
-
 ## Rancher / Kubernetes
+
 In your Rancher server (or kubernetes host)
 
 ```bash
@@ -121,4 +115,3 @@ Then, using `kubectl` on your kubernetes / rancher host
 ```bash
 kubectl create -f https://raw.githubusercontent.com/NVIDIA/k8s-device-plugin/master/nvidia-device-plugin.yml
 ```
-

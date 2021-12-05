@@ -63,9 +63,7 @@ mkdir data
 
 `docker-compose.yml` can be found [here](https://github.com/techno-tim/techno-tim.github.io/tree/master/reference_files/traefik-portainer-ssl/portainer) 
 
-
 ### Generate Basic Auth Password
-
 
 ```bash
 sudo apt update
@@ -75,11 +73,13 @@ sudo apt install apache2-utils
 ```bash
 echo $(htpasswd -nb <USER> <PASSWORD>) | sed -e s/\\$/\\$\\$/g
 ```
+
 NOTE: Replace `<USER>` with your username and `<PASSWORD>` with your password to be hashed.
 
 Paste the output in your `docker-compose.yml` in line (`traefik.http.middlewares.traefik-auth.basicauth.users=<USER>:<HASHED-PASSWORD>`)
 
 #### Sping up the container
+
 ```bash
 docker-compose up -d
 ```
@@ -91,7 +91,7 @@ cd traefik/data
 nano config.yml
 ```
 
-`config.yml` [here](https://github.com/techno-tim/techno-tim.github.io/tree/master/reference_files/traefik-portainer-ssl/traefik) 
+`config.yml` [here](https://github.com/techno-tim/techno-tim.github.io/tree/master/reference_files/traefik-portainer-ssl/traefik)
 
 ```bash
 docker-compose up -d --force-recreate

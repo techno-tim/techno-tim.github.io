@@ -16,20 +16,15 @@ This is the ultimate guide to configuring Network UPS Tools (NUT).  We cover eve
 
 Also, note to self, don't eat a salad before you record a video....
 
-
 [Watch Video](https://www.youtube.com/watch?v=vyBP7wpN72c)
 
-
 (see video description for links to gear, discord, and other ways to connect.)
-
 
 ## NUT UPS Server
 
 plug in ups
 
-
 `lsusb`
-
 
 should see something like
 
@@ -49,11 +44,11 @@ sudo apt install nut nut-client nut-server
 sudo nut-scanner -U
 ```
 
-
 should see something like
 
 tripp lite
-```
+
+```conf
 [nutdev1]
         driver = "usbhid-ups"
         port = "auto"
@@ -66,7 +61,7 @@ tripp lite
 
 apc 1500
 
-```
+```conf
 [nutdev1]
         driver = "usbhid-ups"
         port = "auto"
@@ -80,7 +75,7 @@ apc 1500
 
 apc 850
 
-```
+```conf
 [nutdev3]
         driver = "usbhid-ups"
         port = "auto"
@@ -92,9 +87,7 @@ apc 850
         bus = "001"
 ```
 
-
 `sudo nano /etc/nut/ups.conf`
-
 
 ```conf
 pollinterval = 1
@@ -124,7 +117,6 @@ maxretry = 3
     serial = 3xxxxxxxxx
 ```
 
-
 `sudo nano /etc/nut/upsmon.conf`
 
 ```log
@@ -136,11 +128,13 @@ MONITOR apc-network@localhost 1 admin secret master
 `sudo nano /etc/nut/upsd.conf`
 
 local host
+
 ```log
 LISTEN 127.0.0.1 3493 
 ```
 
 all interface
+
 ```log
 LISTEN 0.0.0.0 3493 
 ```
@@ -159,7 +153,6 @@ MODE=netserver
   admin master
 ```
 
-
 `sudo nano /etc/udev/rules.d/99-nut-ups.rules`
 
 ```conf
@@ -174,7 +167,7 @@ LABEL="nut-usbups_rules_end"
 
 reboot (because it's easy)
 
-or 
+or
 
 ```bash
 sudo service nut-server restart
@@ -184,14 +177,13 @@ sudo upsdrvctl stop
 sudo upsdrvctl start
 ```
 
-
 APC UPS 950 va
 
 query device by USB bus
 
 `lsusb -D /dev/bus/usb/001/057`
 
-```
+```log
 Device Descriptor:
   bLength                18
   bDescriptorType         1
@@ -269,7 +261,6 @@ MONITOR apc-network@localhost "APC Back-UPS XS 1500 - Rack"
 
 `sudo nano /etc/nut/upsset.conf`
 
-
 ```conf
 I_HAVE_SECURED_MY_CGI_DIRECTORY
 ```
@@ -278,11 +269,7 @@ visit
 
 http://your.ip.adddress/cgi-bin/nut/upsstats.cgi
 
-
-
 ## Webnut Docker Container
-
-
 
 ```bash
 mkdir webnut
@@ -292,7 +279,7 @@ nano docker-compose.yml
 
 paste contents and save
 
-```
+```conf
 version: "3.1"
 services:
   nut:
@@ -317,14 +304,11 @@ networks:
 
 `docker-compose up -d --force-recreate`
 
-
-
-
 ## Linux NUT Client (remote)
 
 `sudo apt install nut-client`
 
-then run 
+then run
 
 `upsc` to verify
 
@@ -334,7 +318,7 @@ verify you can connect
 
 `sudo nano /etc/nut/upsmon.conf`
 
-```
+```conf
 RUN_AS_USER root
 
 MONITOR apc-modem@ip.address.of.nut.server 1 admin secret slave
@@ -390,14 +374,11 @@ check status
 
 `systemctl status user-client`
 
-
 ## Windows NUT Client
 
-https://github.com/gawindx/WinNUT-Client/releases
-
+[https://github.com/gawindx/WinNUT-Client/releases](https://github.com/gawindx/WinNUT-Client/releases)
 
 scheduling on the remote system
-
 
 `sudo nano /etc/nut/upssched.conf`
 
@@ -446,9 +427,8 @@ make it executable (should already be)
 
 `chmod +x /etc/nut/upssched-cmd`
 
-
 Be sure PIPEFN and LOCKFN point to a folder that esists, I've seen it point to `/etc/nut/upssched/` instead of `/etc/nut`  If it does, create the folder or update these variables.
-`mkdir /etc/nut/upssched/` 
+`mkdir /etc/nut/upssched/`
 
 test
 
@@ -461,4 +441,3 @@ then pull the plug on the ups connected to the master, check syslogs
 should see the logs
 
 machine should shutdown
-

@@ -8,7 +8,7 @@ tags: homelab traefik portainer docker self-hosted ubuntu webtop
 
 [![Linux desktop, inside of a container, inside of a browser???  Yes. A Webtop.?](https://img.youtube.com/vi/Gd9bvdkIXOQ/0.jpg)](https://www.youtube.com/watch?v=Gd9bvdkIXOQ "Linux desktop, inside of a container, inside of a browser???  Yes. A Webtop.?")
 
-Have you ever thought about running a Linux desktop inside of a container?  Me neither until I found this awesome project from LinuxServer called Webtops.  A webtop is a technology stack that allows you to run Ubuntu or Alpine Linux within a container that is fully accessible from a browser.  This allows you to use most Linux features with a container with a fraction of the cost of resources.  Join me as we configure one from beginning to end. 
+Have you ever thought about running a Linux desktop inside of a container?  Me neither until I found this awesome project from LinuxServer called Webtops.  A webtop is a technology stack that allows you to run Ubuntu or Alpine Linux within a container that is fully accessible from a browser.  This allows you to use most Linux features with a container with a fraction of the cost of resources.  Join me as we configure one from beginning to end.
 
 [Watch Video](https://www.youtube.com/watch?v=Gd9bvdkIXOQ)
 
@@ -18,12 +18,11 @@ See [this post](https://techno-tim.github.io/posts/docker-compose-install/) on h
 
 ## Webtop
 
-`docker-compose.yml` and `.env` can be found [here](https://github.com/techno-tim/techno-tim.github.io/tree/master/reference_files/webtop-container/) 
- 
+`docker-compose.yml` and `.env` can be found [here](https://github.com/techno-tim/techno-tim.github.io/tree/master/reference_files/webtop-container/)
 
 ## Files and folders
 
-```bash 
+```bash
 mkdir webtop
 cd webtop
 mkdir config

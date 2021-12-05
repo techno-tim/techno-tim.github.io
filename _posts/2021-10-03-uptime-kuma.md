@@ -53,5 +53,4 @@ services:
       - no-new-privileges:true
 ```
 
-
 If you're using Rancher, Portainer, Open Media Vault, Unraid, or anything else with a GUI, just copy and paste the environment variables, ports, and volumes from above into the form on the web page.

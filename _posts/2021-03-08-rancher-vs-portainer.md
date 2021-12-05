@@ -11,6 +11,5 @@ tags:  homelab rancher portainer
 
 Rancher vs. Portainer, which one is better"  Which one should I choose?  Can Portainer manager Kubernetes?  Can Rancher manage Kubernetes? We answer all these questions and more in this quick, no fluff video. Side note, this is one of the most asked questions in my live streams.
 
-
 Please share this with anyone who asks what a Home Lab is. 
 [Watch Video](https://www.youtube.com/watch?v=FFh-k-oI4UQ)

@@ -6,9 +6,8 @@ categories: kubernetes rancher
 tags: homelab rancher kubernetes k3s traefik
 ---
 
-# Traefik 2, k3s, Rancher
-
 ## About
+
 No video currently exists for this (yet)
 
 This guide is for installing `traefik 2` on `k3s`
@@ -19,10 +18,7 @@ It assumes you have followed:
 
 * [High Availability Rancher on a Kubernetes Cluster](https://www.youtube.com/watch?v=APsZJbnluXg)
 
-
-
 There is a little bit of "undoing" we'll have to do since k3s ships with `traefik` and Rancher doesn't play well with service load balancer. So, we'll pick up after instaling these two.
-
 
 ## Reconfigure Rancher
 
@@ -45,7 +41,6 @@ helm install rancher rancher-stable/rancher \
   --version 2.5.6
 ```
 
-
 ## Reconfiguring k3s
 
 Get the version of `k3s` that's currently running
@@ -58,9 +53,11 @@ export INSTALL_K3S_VERSION=v1.20.5+k3s1
 Run the same command you ran initially to install `k3s` on your servers but add `--disable traefik --disable servicelb` and be sure to set your version.
 
 example
+
 ```bash
 export INSTALL_K3S_VERSION=v1.20.5+k3s1
 ```
+
 ```bash
 curl -sfL https://get.k3s.io | sh -s - server --node-taint CriticalAddonsOnly=true:NoExecute --tls-san your.load.balancer.ip --write-kubeconfig-mode 644 --disable traefik --disable servicelb
 ```
@@ -76,7 +73,7 @@ You can follow [Self-Hosting Your Homelab Services with SSL](https://www.youtube
 * Install with [helm](https://metallb.universe.tf/installation/#installation-with-helm)
 * Use [Layer2 configuration](https://metallb.universe.tf/configuration/#layer-2-configuration) if you follow this series
 
-## Exposing Rancher directly to your Metal LB 
+## Exposing Rancher directly to your Metal LB
 
 It's a good idea to do this until traefik is configured otherwise you won't have access to the Rancher UI
 
@@ -92,7 +89,7 @@ kubectl get service/rancher-lb -n cattle-system
 
 ## Install Traefik 2
 
-You can can choose between creating `Ingress` in Rancher or `IngresRoute` with `traefik` 
+You can can choose between creating `Ingress` in Rancher or `IngresRoute` with `traefik`
 
 If you choose `IngressRoute` see [IngressRoute](#exposing-a-service-with-traefik-ingressroute) otherwise continue on.
 
@@ -130,7 +127,7 @@ helm repo update
 kubectl apply -f traefik-config.yaml
 ```
 
-###  Edit & install Traefik helm chart
+### Edit & install Traefik helm chart
 
 * Create `traefik-chart-values.yaml` with the contents of `/config/traefik-chart-values.yaml` from [/config](https://github.com/techno-tim/techno-tim.github.io/tree/master/reference_files/traefik2-k3s-rancher/config)
 * Update `loadBalancerIP` in `traefik-chart-values.yaml` with your Metal LB IP
@@ -194,6 +191,7 @@ kubectl apply -f traefik-dashboard-ingressroute.yaml
 ```
 
 This should create:
+
 * A secret in Kubernetes cluster name `traefik-dashboard-auth`
 * A middleware for Traefik name `traefik-dashboard-basicauth`
 * An ingress route for Traefik name `dashboard`

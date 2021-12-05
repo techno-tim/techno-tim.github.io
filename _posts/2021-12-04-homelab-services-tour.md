@@ -15,3 +15,5 @@ Worth mentioning, I [have videos on almost every service mentioned in this video
 [Watch Video](https://www.youtube.com/watch?v=IE5y2_S8S8U)
 
 (see video description for links to gear, discord, and other ways to connect.)
+
+Be sure to check out the [2021 HomeLab hardware tour here](https://techno-tim.github.io/posts/homelab-tour-2021/)

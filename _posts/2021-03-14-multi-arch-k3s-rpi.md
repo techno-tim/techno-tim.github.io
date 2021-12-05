@@ -7,8 +7,7 @@ tags: raspberry-pi k3s kubernetes homelab hardware
 
 ---
 
-[![ Multi-CPU Architecture Kubernetes Cluster with a Raspberry Pi](https://img.youtube.com/vi/_xykXkNia-Y/0.jpg)](https://www.youtube.com/watch?v=_xykXkNia-Y" Multi-CPU Architecture Kubernetes Cluster with a Raspberry Pi")
-
+[![Multi-CPU Architecture Kubernetes Cluster with a Raspberry Pi](https://img.youtube.com/vi/_xykXkNia-Y/0.jpg)](https://www.youtube.com/watch?v=_xykXkNia-Y" "Multi-CPU Architecture Kubernetes Cluster with a Raspberry Pi")
 
 [Watch Video](https://www.youtube.com/watch?v=_xykXkNia-Y)
 
@@ -16,12 +15,9 @@ Building a Multi-architecture CPU Kubernetes cluster is easier than you think wi
 
 Happy Pi Day!
 
-
-
 ```bash
 k3s --version
 ```
-
 
 get `k3s` token from a server
 
@@ -35,14 +31,11 @@ set `k3s` version (the value you got from `k3s --version`)
  export INSTALL_K3S_VERSION=v1.20.5+k3s1
 ```
 
-
 install `k3s` as an agent using your token from above
-
 
 ```bash
 curl -sfL https://get.k3s.io | K3S_URL=https://example.local.com:6443 K3S_TOKEN=hksadhahdklahkadjhasjdhasdhasjk::server:asljkdklasjdaskdljaskjdlasj sh -
 ```
-
 
 check all `k3s` nodes from your workstation
 
@@ -50,13 +43,11 @@ check all `k3s` nodes from your workstation
 kubectl get nodes
 ```
 
-
 get all pods running on a specific node (`elio`)
 
 ```bash
 kubectl get pods --all-namespaces -o wide --field-selector spec.nodeName=elio
 ```
-
 
 set a label on a node (`elio`)
 

@@ -12,5 +12,4 @@ People have asked how I've been able to create and grow a Tech YouTube channel a
 
 [Watch Video](https://www.youtube.com/watch?v=SivkS9Ug5dw)
 
-
 (see video description for gear links)

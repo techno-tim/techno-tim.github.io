@@ -12,7 +12,6 @@ Meet [File Browser](https://github.com/filebrowser/filebrowser), an open source,
 
 [Watch Video](https://www.youtube.com/watch?v=W2yZ5_sd9Hc)
 
-
 (see video description for links to gear, discord, and other ways to connect.)
 
 ## Docker Setup
@@ -51,6 +50,5 @@ services:
     security_opt:
       - no-new-privileges:true
 ```
-
 
 If you're using Rancher, Portainer, Open Media Vault, Unraid, or anything else with a GUI, just copy and paste the environment variables above into the form on the web page.

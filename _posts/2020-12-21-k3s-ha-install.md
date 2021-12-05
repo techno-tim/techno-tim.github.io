@@ -13,7 +13,6 @@ Are you running Kubernetes in your homelab or in the enterprise?  Do you want an
 
 [Watch Video](https://www.youtube.com/watch?v=UoOcLXfa8EU)
 
-
 ## Load Balancer
 
 Create a load balancer using `nginx`
@@ -50,47 +49,53 @@ export K3S_DATASTORE_ENDPOINT='mysql://username:password@tcp(database_ip_or_host
 *Note: It's advised you consult the [Rancher Support Matrix](https://rancher.com/support-maintenance-terms/all-supported-versions)
 to get the recommended version for all Rancher dependencies.*
 
-then 
+then
 
 ```bash
 curl -sfL https://get.k3s.io | sh -s - server --node-taint CriticalAddonsOnly=true:NoExecute --tls-san load_balancer_ip_or_hostname
 ```
 
-test with 
+test with
 
 ```bash
 sudo k3s kubectl get nodes
 ```
 
+to add additional servers, get token from first server
+
+```bash
+sudo cat /var/lib/rancher/k3s/server/node-token
+```
+
+then run the same command but add the token (replace SECRET with token from previous command)
+
+```bash
+curl -sfL https://get.k3s.io | sh -s - server --token=SECRET --node-taint CriticalAddonsOnly=true:NoExecute --tls-san load_balancer_ip_or_hostname
+```
 
 on agents / workers
 
 to run without `sudo`
 
-```
+```bash
 sudo chmod 644 /etc/rancher/k3s/k3s.yaml` on the servers
 ```
 
-get tokens
+get token
 
-```
+```bash
 sudo cat /var/lib/rancher/k3s/server/node-token
 ```
 
-
-
 ## k3s agents / workers
 
-```
+```bash
 curl -sfL https://get.k3s.io | K3S_URL=https://load_balancer_ip_or_hostname:6443 K3S_TOKEN=mynodetoken sh -
 ```
-
-
 
 ## other
 
 To install `kubectl` [see this link](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
-
 
 `kubeconfig` location on server
 
@@ -100,23 +105,19 @@ To install `kubectl` [see this link](https://kubernetes.io/docs/tasks/tools/inst
 sudo cat /etc/rancher/k3s/k3s.yaml
 ```
 
-
 copy contents to your dev machine
 
 `~/.kube/config`
 
-
 Be sure to update the `server:` to your load balancer ip or hostname
-
 
 ## kubernetes dashboard
 
-check [releases](https://github.com/kubernetes/dashboard/releases) for the command to use. At time or filming it's: 
+check [releases](https://github.com/kubernetes/dashboard/releases) for the command to use. At time or filming it's:
 
 ```bash
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.4/aio/deploy/recommended.yaml
 ```
-
 
 ### Dashboard RBAC Configuration
 
@@ -129,7 +130,6 @@ metadata:
   name: admin-user
   namespace: kubernetes-dashboard
 ```
-
 
 `dashboard.admin-user-role.yml`
 

@@ -8,7 +8,7 @@ tags: authelia homelab traefik portainer ssl docker self-hosted
 
 [![2 Factor Auth and Single Sign on with Authelia?](https://img.youtube.com/vi/u6H-Qwf4nZA/0.jpg)](https://www.youtube.com/watch?v=u6H-Qwf4nZA "2 Factor Auth and Single Sign on with Authelia?")
 
-Authelia is an open source Single Sign On and 2FA companion for reverse proxies.  It helps you secure your endpoints with single factor and 2 factor auth.  It works with Nginx, Traefik, and HA proxy.  Today, we'll configure Authelia with Portainer and Traefik and have 2 Factor up and running with brute force protection! 
+Authelia is an open source Single Sign On and 2FA companion for reverse proxies.  It helps you secure your endpoints with single factor and 2 factor auth.  It works with Nginx, Traefik, and HA proxy.  Today, we'll configure Authelia with Portainer and Traefik and have 2 Factor up and running with brute force protection!
 
 [Watch Video](https://www.youtube.com/watch?v=u6H-Qwf4nZA)
 
@@ -16,19 +16,17 @@ Authelia is an open source Single Sign On and 2FA companion for reverse proxies.
 
 Authelia will work with other reverse proxies but I used Traefik.  If you want to configure Traefik as your reverse proxy see this [guide](https://techno-tim.github.io/posts/traefik-portainer-ssl/).
 
-
 ## Docker Setup
 
 See [this post](https://techno-tim.github.io/posts/docker-compose-install/) on how to install `docker` and `docker-compose`
 
 ## Authelia
 
-`configuration.yml`,  `users_database.yml`, and `docker-compose.yml` can be found [here](https://github.com/techno-tim/techno-tim.github.io/tree/master/reference_files/authelia-traefik/authelia) 
- 
+`configuration.yml`,  `users_database.yml`, and `docker-compose.yml` can be found [here](https://github.com/techno-tim/techno-tim.github.io/tree/master/reference_files/authelia-traefik/authelia)
+
 Example `heimdall` can be found here [here](https://github.com/techno-tim/techno-tim.github.io/tree/master/reference_files/authelia-traefik/heimdall) 
 
 Traefik configuration changes can be found  [here](https://github.com/techno-tim/techno-tim.github.io/tree/master/reference_files/authelia-traefik/traefik) 
-
 
 ## Generation a hashed password
 
@@ -39,7 +37,7 @@ Password hash: $argon2id$v=19$m=65536$3oc26byQuSkQqksq$zM1QiTvVPrMfV6BVLs2t4gM+a
 
 ## Files and folders
 
-```bash 
+```bash
 mkdir authelia
 cd authelia
 mkdir config
