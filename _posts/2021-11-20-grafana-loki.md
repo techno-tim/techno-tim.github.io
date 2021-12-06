@@ -226,6 +226,78 @@ Query all logs from the `container_name` label of `uptime-kuma` and filter on `h
 
 Read more about LogQL [here](https://grafana.com/docs/loki/latest/logql/)
 
+## ARM CPU (Raspberry Pi)
+
+There is a workaround for using this with ARM CPUs. Credit to [AndreiTelteu](https://github.com/AndreiTelteu) for finding this [in this discussion](https://github.com/techno-tim/techno-tim.github.io/discussions/97)
+
+delete `/etc/docker/daemon.json`
+
+Add the vector service to the docker-compose.yml file
+
+```yml
+
+    vector:
+        image: timberio/vector:0.18.1-debian
+        volumes:
+            - /var/run/docker.sock:/var/run/docker.sock
+            - /home/serveradmin/docker_volumes/vector/vector-config.toml:/etc/vector/vector.toml:ro
+        ports:
+            - "8383:8383"
+        restart: unless-stopped
+        networks:
+            - loki
+```
+
+Run this command
+
+```bash
+mkdir vector
+cd vector
+nano vector-config.toml
+```
+
+paste this config in the file:
+
+```toml
+[sources.docker-local]
+  type = "docker_logs"
+  docker_host = "/var/run/docker.sock"
+  exclude_containers = []
+ 
+  # Identify zero-width space as first line of a multiline block.
+  multiline.condition_pattern = '^\x{200B}' # required
+  multiline.mode = "halt_before" # required
+  multiline.start_pattern = '^\x{200B}' # required
+  multiline.timeout_ms = 1000 # required, milliseconds
+ 
+[sinks.loki]
+  # General
+  type = "loki" # required
+  inputs = ["docker*"] # required
+  endpoint = "http://loki:3100" # required
+  
+  # Auth
+  auth.strategy = "bearer" # required
+  auth.token = "none" # required
+  
+  # Encoding
+  encoding.codec = "json" # required
+  
+  # Healthcheck
+  healthcheck.enabled = false # optional, default
+  
+  # Loki Labels
+  labels.forwarder = 'vector'
+  labels.host = '{{ host }}'
+  labels.container_name = '{{ container_name }}'
+  labels.compose_service = '{{ label.com\.docker\.compose\.service }}'
+  labels.compose_project = '{{ label.com\.docker\.compose\.project }}'
+  labels.source = '{{ stream }}'
+  labels.category = 'dockerlogs'
+```
+
+Credits to this post for the config file: [grafana/loki#2361 (comment)](https://github.com/grafana/loki/issues/2361#issuecomment-826732810)
+
 ## Kubernetes Setup
 
 If you're looking to set this up in kubernetes, see [this post](https://techno-tim.github.io/posts/grafana-loki-kubernetes/)
