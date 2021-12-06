@@ -296,7 +296,7 @@ services:
     networks:
       - proxy
     ports:
-      - 6543::6543
+      - 6543:6543
 networks:
   proxy:
     external: true
