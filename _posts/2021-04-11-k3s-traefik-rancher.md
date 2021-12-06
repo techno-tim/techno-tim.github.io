@@ -10,7 +10,7 @@ tags: homelab rancher kubernetes k3s traefik
 
 No video currently exists for this (yet)
 
-This guide is for installing `traefik 2` on `k3s`
+This guide is for installing `traefik 2` on `k3s`.  If you're not using rancher, that's fine, just skip to `Reconfiguring k3s`
 
 It assumes you have followed:
 
@@ -52,7 +52,7 @@ export INSTALL_K3S_VERSION=v1.20.5+k3s1
 
 Run the same command you ran initially to install `k3s` on your servers but add `--disable traefik --disable servicelb` and be sure to set your version.
 
-example
+example (be sure you are using the right version)
 
 ```bash
 export INSTALL_K3S_VERSION=v1.20.5+k3s1
