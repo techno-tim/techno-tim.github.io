@@ -146,26 +146,26 @@ scrape_configs:
   
 ## docker logs
 
-#   - job_name: docker 
-#     pipeline_stages:
-#       - docker: {}
-#     static_configs:
-#       - labels:
-#           job: docker
-#           __path__: /var/lib/docker/containers/*/*-json.log
+#- job_name: docker 
+#  pipeline_stages:
+#    - docker: {}
+#  static_configs:
+#    - labels:
+#        job: docker
+#        __path__: /var/lib/docker/containers/*/*-json.log
 
 # syslog target
 
-  # - job_name: syslog
-  #   syslog:
-  #     listen_address: 0.0.0.0:1514 # make sure you also expose this port on the container
-  #     idle_timeout: 60s
-  #     label_structured_data: yes
-  #     labels:
-  #       job: "syslog"
-  #   relabel_configs:
-  #     - source_labels: ['__syslog_message_hostname']
-  #       target_label: 'host'
+#- job_name: syslog
+#  syslog:
+#    listen_address: 0.0.0.0:1514 # make sure you also expose this port on the container
+#    idle_timeout: 60s
+#    label_structured_data: yes
+#    labels:
+#      job: "syslog"
+#  relabel_configs:
+#    - source_labels: ['__syslog_message_hostname']
+#      target_label: 'host'
 ```
 
 ## Loki Docker Driver
