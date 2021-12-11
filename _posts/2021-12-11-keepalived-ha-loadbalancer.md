@@ -144,3 +144,9 @@ docker run --name some-nginx -v /home/user/docker_volumes/nginx:/usr/share/nginx
 ```
 
 visit your VIP on port `8080`
+
+## PiHole
+
+In this video we covered the PiHole use case.  After setting this up, be sure to check out the tutorial on Gravity Sync
+
+[https://techno-tim.github.io/posts/ha-pi-hold-gravity-sync/](https://techno-tim.github.io/posts/ha-pi-hold-gravity-sync/)
