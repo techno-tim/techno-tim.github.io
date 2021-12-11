@@ -38,7 +38,7 @@ sudo nano /etc/keepalived/keepalived.conf
 
 First node
 
-```apacheconf 
+```apacheconf
 vrrp_instance VI_1 {
   state MASTER
   interface ens18
@@ -63,7 +63,7 @@ vrrp_instance VI_1 {
 
 Second node
 
-```apacheconf 
+```apacheconf
 vrrp_instance VI_1 {
   state BACKUP
   interface ens18
