@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Meet keepalived - High Availability and Load Balancing in One"
-date: 2021-12-011 8:00:00 -0500
+date: 2021-12-11 8:00:00 -0500
 categories: homelab
 tags: homelab keepalived self-hosted linux ubuntu
 ---
