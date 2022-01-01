@@ -13,13 +13,24 @@ The Turing Pi 2 is a compact ARM cluster that provides a scalable computing on t
 [Watch Video](https://www.youtube.com/watch?v=PX5UAtPeyd8)
 
 Turing Pi 2 - <https://turingpi.com>
+
 Raspberry Pi Compute Modules - <https://www.raspberrypi.com/products/compute-module-4>
+
 NVIDIA Jetson - <https://amzn.to/3eGDQje>
+
 Rosewill 2U Server Chassis Case - <https://amzn.to/3qxbygk>
+
 EVGA 550 Power Supply - <https://amzn.to/3EMEzd4>
+
 Noctua 80mm Redux PWM Fans - <https://amzn.to/3zdBUbp>
+
 Samsung EVO microSD 64 GB - <https://amzn.to/3FR5Oos>
+
 Samsung EVO microSD 128 GB - <https://amzn.to/3eCIajx>
+
 CR2032 Batteries - <https://amzn.to/3zfWE2b>
+
 CM4 Heat Sinks - <https://amzn.to/31hSVVk>
+
 Multipurpose Rails <https://amzn.to/3Hr6wsS>
+
