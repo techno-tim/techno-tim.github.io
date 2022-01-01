@@ -3,7 +3,7 @@ layout: post
 title: "High Availability Pi-Hole? Yes please!"
 date: 2020-12-12 09:00:00 -0500
 categories: self-hosted
-tags: homelab rancher kubernetes docker portainer self-hosted pi-hole gravity-sync
+tags: homelab rancher kubernetes docker portainer self-hosted pi-hole gravity-sync keepalived
 ---
 
 [![High Availability Pi-Hole? Yes please!](https://img.youtube.com/vi/IFVYe3riDRA/0.jpg)](https://www.youtube.com/watch?v=IFVYe3riDRA "High Availability Pi-Hole? Yes please!")
@@ -32,3 +32,7 @@ Great Raspberry Pi - Pi-Hole Servers!
 ► Raspberry Pi 4 Kit - [https://amzn.to/3nophDm](https://amzn.to/3nophDm)
 
 [Watch Video](https://www.youtube.com/watch?v=IFVYe3riDRA)
+
+If you're looking to have your PiHole instances failover automatically, be sure to check out the documentation on `keepalived`
+
+[Meet keepalived - High Availability and Load Balancing in One](https://techno-tim.github.io/posts/keepalived-ha-loadbalancer/)
