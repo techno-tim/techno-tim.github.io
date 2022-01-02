@@ -34,3 +34,4 @@ CM4 Heat Sinks - <https://amzn.to/31hSVVk>
 
 Multipurpose Rails <https://amzn.to/3Hr6wsS>
 
+4 Pin Splitter Cables <https://amzn.to/3mQvzh4>
