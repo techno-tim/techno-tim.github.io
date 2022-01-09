@@ -55,7 +55,7 @@ services:
       - INSTAGRAM=https://www.instagram.com/techno.tim
       - YOUTUBE=https://www.youtube.com/channel/UCOk-gHyjcWZNj3Br4oxwh0A
       - TWITCH=https://www.twitch.tv/technotim/
-      - DISCORD=https://discord.gg/DJKexrJ
+      - DISCORD=https://l.technotim.live/discord
       - TIKTOK=https://www.tiktok.com/@technotim
       - KIT=https://kit.co/TechnoTim
       # - FACEBOOK=https://facebook.com
@@ -109,7 +109,7 @@ docker run -d \
   -e INSTAGRAM='https://www.instagram.com/techno.tim' \
   -e YOUTUBE='https://www.youtube.com/channel/UCOk-gHyjcWZNj3Br4oxwh0A' \
   -e TWITCH='https://www.twitch.tv/technotim' \
-  -e DISCORD='https://discord.gg/DJKexrJ' \
+  -e DISCORD='https://l.technotim.live/discord' \
   -e TIKTOK='https://www.tiktok.com/@technotim' \
   -e KIT='https://kit.co/TechnoTim' \
   --restart unless-stopped \
