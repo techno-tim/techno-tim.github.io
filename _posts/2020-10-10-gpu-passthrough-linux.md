@@ -25,7 +25,7 @@ Do you have a lot of virtual machines?  Are you running Windows, Linux, and Mac 
                              "Y8bbdP"               
 ```
 
-If you need to passthrough a GPU, follow [this guide](https://github.com/techno-tim/youtube-videos/tree/master/gpu-passthrough) but install Ubuntu instead.
+If you need to passthrough a GPU, follow [this guide](https://techno-tim.github.io/posts/gpu-passthrough/) but install Ubuntu instead.
 
 ## Proxmox
 
