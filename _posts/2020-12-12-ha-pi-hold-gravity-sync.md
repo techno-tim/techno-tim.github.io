@@ -35,4 +35,4 @@ Great Raspberry Pi - Pi-Hole Servers!
 
 If you're looking to have your PiHole instances failover automatically, be sure to check out the documentation on `keepalived`
 
-[Meet keepalived - High Availability and Load Balancing in One](https://techno-tim.github.io/posts/keepalived-ha-loadbalancer/)
+[Meet keepalived - High Availability and Load Balancing in One](https://docs.technotim.live/posts/keepalived-ha-loadbalancer/)

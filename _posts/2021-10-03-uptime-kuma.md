@@ -18,7 +18,7 @@ You've spun up lots of self-hosted services in your HomeLab but you haven't set 
 
 ## Docker Setup
 
-See [this post](https://techno-tim.github.io/posts/docker-compose-install/) on how to install `docker` and `docker-compose`
+See [this post](https://docs.technotim.live/posts/docker-compose-install/) on how to install `docker` and `docker-compose`
 
 ## Running the container
 

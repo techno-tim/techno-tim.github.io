@@ -14,11 +14,11 @@ Authelia is an open source Single Sign On and 2FA companion for reverse proxies.
 
 ## Traefik
 
-Authelia will work with other reverse proxies but I used Traefik.  If you want to configure Traefik as your reverse proxy see this [guide](https://techno-tim.github.io/posts/traefik-portainer-ssl/).
+Authelia will work with other reverse proxies but I used Traefik.  If you want to configure Traefik as your reverse proxy see this [guide](https://docs.technotim.live/posts/traefik-portainer-ssl/).
 
 ## Docker Setup
 
-See [this post](https://techno-tim.github.io/posts/docker-compose-install/) on how to install `docker` and `docker-compose`
+See [this post](https://docs.technotim.live/posts/docker-compose-install/) on how to install `docker` and `docker-compose`
 
 ## Authelia
 

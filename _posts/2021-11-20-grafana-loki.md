@@ -16,7 +16,7 @@ I've been on a quest to find a new logging system.  I've use quite a few in the 
 
 ## Docker Setup
 
-See [this post](https://techno-tim.github.io/posts/docker-compose-install/) on how to install `docker` and `docker-compose`
+See [this post](https://docs.technotim.live/posts/docker-compose-install/) on how to install `docker` and `docker-compose`
 
 ## Running the container
 
@@ -300,4 +300,4 @@ Credits to this post for the config file: [grafana/loki#2361 (comment)](https://
 
 ## Kubernetes Setup
 
-If you're looking to set this up in kubernetes, see [this post](https://techno-tim.github.io/posts/grafana-loki-kubernetes/)
+If you're looking to set this up in kubernetes, see [this post](https://docs.technotim.live/posts/grafana-loki-kubernetes/)

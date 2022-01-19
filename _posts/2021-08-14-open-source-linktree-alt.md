@@ -18,7 +18,7 @@ You can find the LittleLink-Server repo [here](https://github.com/techno-tim/lit
 
 ## Docker Setup
 
-See [this post](https://techno-tim.github.io/posts/docker-compose-install/) on how to install `docker` and `docker-compose`
+See [this post](https://docs.technotim.live/posts/docker-compose-install/) on how to install `docker` and `docker-compose`
 
 ## Running the container
 
