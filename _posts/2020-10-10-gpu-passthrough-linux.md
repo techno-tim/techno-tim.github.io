@@ -8,7 +8,7 @@ tags: homelab rancher kubernetes docker portainer nvidia hardware
 
 [![I Heard You Like GPUs in Servers... GPU Passthrough on Linux and Docker](https://img.youtube.com/vi/9OfoFAljPn4/0.jpg)](https://www.youtube.com/watch?v=9OfoFAljPn4 "I Heard You Like GPUs in Servers... GPU Passthrough on Linux and Docker")
 
-Do you have a lot of virtual machines?  Are you running Windows, Linux, and Mac and need remote access from a single UI?  Well, Apache Guacamole is for you!  Apache Guacamole is a clientless remote access gateway that give you a web portal to access any of your clients over standard protocols like VNC, RDP, SSH, TELNET, and more. Join me in this step by step tutorial as we set up a self-hosted version of Guacamole in your homelab.  As an added bonus, we'll set up 2FA (multifactor authentication) to help secure Guacamole.  Oh, yeah, and we'll do this all in Docker and or Kubernetes, it's up to you!  :)
+We've already figured out how to pass through a GPU to Windows machine but why let Windows have all the fun?  Today, we do it on an Ubuntu headless server that's virtualized, run some AI and Deep Learning workloads, then turn up the transcoding on Plex to 11.
 
 [Watch Video](https://www.youtube.com/watch?v=9OfoFAljPn4)
 
