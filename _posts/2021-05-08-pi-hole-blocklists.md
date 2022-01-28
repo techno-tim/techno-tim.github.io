@@ -13,3 +13,5 @@ In some of my previous Pi-Hole videos many of you spotted my blocklist with over
 Thanks to Firebog for the great lists [firebog.net](https://firebog.net/)
 
 [Watch Video](https://www.youtube.com/watch?v=0wpn3rXTe0g)
+
+See all the hardware I recommend at <https://kit.co/TechnoTim>

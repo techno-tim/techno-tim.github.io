@@ -12,6 +12,8 @@ In my quest to make my services highly available I decided to use keepalived.  k
 
 [Watch Video](https://www.youtube.com/watch?v=hPfk0qd4xEY)
 
+See all the hardware I recommend at <https://kit.co/TechnoTim>
+
 (see video description for links to gear, discord, and other ways to connect.)
 
 ## Installation

@@ -123,3 +123,6 @@ helm repo update
 ```bash
 helm upgrade --install loki grafana/loki-stack  --set grafana.enabled=true,prometheus.enabled=true,prometheus.alertmanager.persistentVolume.enabled=false,prometheus.server.persistentVolume.enabled=false,loki.persistence.enabled=true,loki.persistence.storageClassName=nfs-client,loki.persistence.size=5Gi
 ```
+
+
+See all the hardware I recommend at <https://kit.co/TechnoTim>

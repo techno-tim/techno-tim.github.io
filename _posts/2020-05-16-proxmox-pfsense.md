@@ -18,3 +18,5 @@ Get started with Proxmox today: https://www.youtube.com/watch?v=hdoBQNI_Ab8
 ## Enable PCI Passthrough
 
 [https://pve.proxmox.com/wiki/PCI(e)_Passthrough](https://pve.proxmox.com/wiki/PCI(e)_Passthrough)
+
+See all the hardware I recommend at <https://kit.co/TechnoTim>

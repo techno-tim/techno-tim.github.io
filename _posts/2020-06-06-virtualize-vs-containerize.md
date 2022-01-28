@@ -12,3 +12,5 @@ Should I virtualize this?  Should I containerize this?  These are great question
 
 
 [Watch Video](https://www.youtube.com/watch?v=pxwUXJmAER4)
+
+See all the hardware I recommend at <https://kit.co/TechnoTim>

@@ -12,6 +12,8 @@ I've been on a quest to find a new logging system.  I've use quite a few in the 
 
 [Watch Video](https://www.youtube.com/watch?v=h_GGd7HfKQ8)
 
+See all the hardware I recommend at <https://kit.co/TechnoTim>
+
 (see video description for links to gear, discord, and other ways to connect.)
 
 ## Docker Setup

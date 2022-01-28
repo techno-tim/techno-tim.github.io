@@ -13,6 +13,8 @@ Storage in Kubernetes is hard, complicated, and messy.  Configuring volumes, mou
 
 [Watch Video](https://www.youtube.com/watch?v=eKBBHc0t7bc)
 
+See all the hardware I recommend at <https://kit.co/TechnoTim>
+
 ## install
 
 ### Rancher app catalog

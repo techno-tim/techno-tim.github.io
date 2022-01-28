@@ -12,6 +12,8 @@ Pi-Hole is a wonderful ad blocking DNS sever for your network, but did you know 
 
 [Watch Video](https://www.youtube.com/watch?v=kKsHo6r4_rc)
 
+See all the hardware I recommend at <https://kit.co/TechnoTim>
+
 ## commands
 
 ```bash

@@ -12,6 +12,8 @@ Authelia is an open source Single Sign On and 2FA companion for reverse proxies.
 
 [Watch Video](https://www.youtube.com/watch?v=u6H-Qwf4nZA)
 
+See all the hardware I recommend at <https://kit.co/TechnoTim>
+
 ## Traefik
 
 Authelia will work with other reverse proxies but I used Traefik.  If you want to configure Traefik as your reverse proxy see this [guide](https://docs.technotim.live/posts/traefik-portainer-ssl/).

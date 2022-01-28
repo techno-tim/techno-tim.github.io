@@ -13,6 +13,7 @@ We know you've heard of Pihole and we know you are probably aware of how to inst
 
 [Watch Video](https://www.youtube.com/watch?v=NRe2-vye3ik)
 
+See all the hardware I recommend at <https://kit.co/TechnoTim>
 
 Ubuntu Fix
 

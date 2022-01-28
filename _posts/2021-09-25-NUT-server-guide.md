@@ -18,6 +18,9 @@ Also, note to self, don't eat a salad before you record a video....
 
 [Watch Video](https://www.youtube.com/watch?v=vyBP7wpN72c)
 
+See all the hardware I recommend at <https://kit.co/TechnoTim>
+
+
 (see video description for links to gear, discord, and other ways to connect.)
 
 ## NUT UPS Server

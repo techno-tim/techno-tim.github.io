@@ -13,6 +13,8 @@ Are you running Kubernetes in your homelab or in the enterprise?  Do you want an
 
 [Watch Video](https://www.youtube.com/watch?v=UoOcLXfa8EU)
 
+See all the hardware I recommend at <https://kit.co/TechnoTim>
+
 ## Load Balancer
 
 Create a load balancer using `nginx`

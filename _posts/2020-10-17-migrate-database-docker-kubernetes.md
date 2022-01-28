@@ -12,6 +12,8 @@ Have you been putting off migrating your database to Docker and Kubernetes like 
 
 [Watch Video](https://www.youtube.com/watch?v=jZvnkf_HgcY)
 
+See all the hardware I recommend at <https://kit.co/TechnoTim>
+
 `mysql_backup.sh`
 
 ```shell

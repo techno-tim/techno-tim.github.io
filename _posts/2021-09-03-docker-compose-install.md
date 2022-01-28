@@ -72,3 +72,5 @@ If you need to uninstall Docker, run the following
 ```bash
 sudo apt-get remove docker docker-engine docker.io containerd runc
 ```
+
+See all the hardware I recommend at <https://kit.co/TechnoTim>

@@ -12,6 +12,8 @@ Today, we're going to use SSL for everything.  No more self-sign certs.  No more
 
 [Watch Video](https://www.youtube.com/watch?v=liV3c9m_OX8)
 
+See all the hardware I recommend at <https://kit.co/TechnoTim>
+
 ## Docker Setup
 
 See [this post](https://docs.technotim.live/posts/docker-compose-install/) on how to install `docker` and `docker-compose`

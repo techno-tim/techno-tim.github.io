@@ -12,6 +12,8 @@ If you want to set up Kubernetes at home using Rancher to run Docker containers,
 
 [Watch Video](https://www.youtube.com/watch?v=oILc0ywDVTk)
 
+See all the hardware I recommend at <https://kit.co/TechnoTim>
+
 
 The two paths in the workload configuration need to be reversed:
  - `Path on the Node` should be `mc`

@@ -12,8 +12,7 @@ I'm a huge fan of virtualization and containerization (if you couldn't tell alre
 
 [Watch Video](https://www.youtube.com/watch?v=MG_1XQxWns0)
 
-
-
+See all the hardware I recommend at <https://kit.co/TechnoTim>
 
 ## Id for Container
 

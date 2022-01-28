@@ -12,6 +12,9 @@ Meet [File Browser](https://github.com/filebrowser/filebrowser), an open source,
 
 [Watch Video](https://www.youtube.com/watch?v=W2yZ5_sd9Hc)
 
+See all the hardware I recommend at <https://kit.co/TechnoTim>
+
+
 (see video description for links to gear, discord, and other ways to connect.)
 
 ## Docker Setup

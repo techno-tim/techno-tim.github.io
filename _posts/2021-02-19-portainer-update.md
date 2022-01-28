@@ -12,3 +12,5 @@ tags: portainer kubernetes homelab docker
 Updating Portainer is easy, if you know how.  In this quick no fluff video, I will show you how to update any version of Portainer.  This guide can be used for installing it too.  Portainer is a container management system for Docker, Kubernetes, Swarm, and Azure ACI.  Portainer is free and open source.
 
 [Watch Video](https://www.youtube.com/watch?v=M365jgJ0O2E)
+
+See all the hardware I recommend at <https://kit.co/TechnoTim>

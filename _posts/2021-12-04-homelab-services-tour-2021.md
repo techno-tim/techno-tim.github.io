@@ -14,6 +14,8 @@ Worth mentioning, I [have videos on almost every service mentioned in this video
 
 [Watch Video](https://www.youtube.com/watch?v=IE5y2_S8S8U)
 
+See all the hardware I recommend at <https://kit.co/TechnoTim>
+
 (see video description for links to gear, discord, and other ways to connect.)
 
 Be sure to check out the [2021 HomeLab hardware tour here](https://docs.technotim.live/posts/homelab-tour-2021/)

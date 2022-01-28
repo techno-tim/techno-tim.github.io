@@ -12,6 +12,8 @@ Meet LittleLink & LittleLink-Server  - a DIY, self hosted, and open source alter
 
 [Watch Video](https://www.youtube.com/watch?v=42SqfI_AjXU)
 
+See all the hardware I recommend at <https://kit.co/TechnoTim>
+
 (see video description for gear links)
 
 You can find the LittleLink-Server repo [here](https://github.com/techno-tim/littlelink-server).

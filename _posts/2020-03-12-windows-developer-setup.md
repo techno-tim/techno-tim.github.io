@@ -12,9 +12,10 @@ You want to get started developing JavaScript with NodeJS, ReactJS, or AngularJS
 
 [Watch Video](https://www.youtube.com/watch?v=kL8iGErULiw)
 
-
+See all the hardware I recommend at <https://kit.co/TechnoTim>
 
 ## Update Ubuntu
+
 ```bash
 sudo apt-get update
 ```

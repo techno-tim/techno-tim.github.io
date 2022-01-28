@@ -13,6 +13,8 @@ Ansible. Need I say more?  Well, maybe, if you've never heard of it. Ansible is 
 
 [Watch Video](https://www.youtube.com/watch?v=w9eCU4bGgjQ)
 
+See all the hardware I recommend at <https://kit.co/TechnoTim>
+
 You can also find a collection of playbooks [here](https://github.com/techno-tim/ansible-homelab)
 
 ## install

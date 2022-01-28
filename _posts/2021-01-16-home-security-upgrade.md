@@ -14,3 +14,5 @@ I am a huge fan of self hosted home security and I've been doing it for years. I
 * Note, everything here was purchased with my own money. 0 outside influence by brands.
 
 [Watch Video](https://www.youtube.com/watch?v=W9XgDZAezkg)
+
+See all the hardware I recommend at <https://kit.co/TechnoTim>

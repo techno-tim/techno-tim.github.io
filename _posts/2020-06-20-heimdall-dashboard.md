@@ -13,3 +13,5 @@ Tired of bookmarking all of your self-hosted services only to lose them?  Want a
 
 
 [Watch Video](https://www.youtube.com/watch?v=PA01Z6-z8Qs)
+
+See all the hardware I recommend at <https://kit.co/TechnoTim>

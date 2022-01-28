@@ -13,3 +13,5 @@ Connect any wireless headset to a GoXLR or GoXLR mini. In this video, I show you
 I bought these products with my own money because I thought they were cool.  Nothing in this video was sponsored.
 
 [Watch Video](https://www.youtube.com/watch?v=dTd7f-jK_BE)
+
+See all the hardware I recommend at <https://kit.co/TechnoTim>

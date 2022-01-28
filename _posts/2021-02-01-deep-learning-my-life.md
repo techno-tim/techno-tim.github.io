@@ -14,3 +14,5 @@ My life, ran against a neural network and detected by Deep Learning.  If you'd l
 [How this video was generated](https://www.youtube.com/watch?v=mDUa5sY4Jeo)
 
 [Watch Video](https://www.youtube.com/watch?v=76bQjX-042U)
+
+See all the hardware I recommend at <https://kit.co/TechnoTim>

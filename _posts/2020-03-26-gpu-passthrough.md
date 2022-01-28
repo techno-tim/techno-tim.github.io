@@ -13,6 +13,7 @@ Are you looking to build a remote gaming machine and passthrough your GPU to a v
 
 [Watch Video](https://www.youtube.com/watch?v=fgx3NMk6F54)
 
+See all the hardware I recommend at <https://kit.co/TechnoTim>
 
 
 edit grub

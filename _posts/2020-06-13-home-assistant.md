@@ -12,7 +12,7 @@ Are you ready to start automating your smart home with the power of open source?
 
 [Watch Video](https://www.youtube.com/watch?v=DK_Gdtn_wvw)
 
-
+See all the hardware I recommend at <https://kit.co/TechnoTim>
 
 `configuration.yaml`
 

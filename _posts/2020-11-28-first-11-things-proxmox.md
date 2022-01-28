@@ -12,6 +12,8 @@ After setting up my Proxmox servers, there are a few thigns I do before I use th
 
 [Watch Video](https://www.youtube.com/watch?v=GoZaMgEgrHw)
 
+See all the hardware I recommend at <https://kit.co/TechnoTim>
+
 ## Updates
 
 Edit `/etc/apt/sources.list`

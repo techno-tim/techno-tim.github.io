@@ -12,6 +12,8 @@ After setting up my Linux servers, there are a few things I do before I use them
 
 [Watch Video](https://www.youtube.com/watch?v=ZsjK4VDopiE)
 
+See all the hardware I recommend at <https://kit.co/TechnoTim>
+
 ## Update
 
 ```bash

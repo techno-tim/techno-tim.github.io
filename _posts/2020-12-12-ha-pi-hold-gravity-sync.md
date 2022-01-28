@@ -32,6 +32,8 @@ Great Raspberry Pi - Pi-Hole Servers!
 ► Raspberry Pi 4 Kit - [https://amzn.to/3nophDm](https://amzn.to/3nophDm)
 
 [Watch Video](https://www.youtube.com/watch?v=IFVYe3riDRA)
+See all the hardware I recommend at <https://kit.co/TechnoTim>
+
 
 If you're looking to have your PiHole instances failover automatically, be sure to check out the documentation on `keepalived`
 

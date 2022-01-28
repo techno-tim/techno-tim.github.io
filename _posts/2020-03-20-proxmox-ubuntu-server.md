@@ -12,4 +12,4 @@ Do you need to virtualize Ubuntu Server with Proxmox? Join me as we install and 
 
 [Watch Video](https://www.youtube.com/watch?v=YR9SNDD8WB4)
 
-
+See all the hardware I recommend at <https://kit.co/TechnoTim>

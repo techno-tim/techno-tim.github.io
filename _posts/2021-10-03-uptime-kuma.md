@@ -14,6 +14,9 @@ You've spun up lots of self-hosted services in your HomeLab but you haven't set 
 
 [Watch Video](https://www.youtube.com/watch?v=r_A5NKkAqZM)
 
+See all the hardware I recommend at <https://kit.co/TechnoTim>
+
+
 (see video description for links to gear, discord, and other ways to connect.)
 
 ## Docker Setup

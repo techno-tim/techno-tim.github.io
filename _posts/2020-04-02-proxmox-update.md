@@ -13,6 +13,7 @@ Have you been thinking about updating your Proxmox VE server?  Well, what are yo
 
 [Watch Video](https://www.youtube.com/watch?v=rfK8fc-ccoQ)
 
+See all the hardware I recommend at <https://kit.co/TechnoTim>
 
 Edit `/etc/apt/sources.list`
 

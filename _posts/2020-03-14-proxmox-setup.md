@@ -12,3 +12,5 @@ Do you need to virtualize something at home?  Thinking of building your own Home
 
 
 [Watch Video](https://www.youtube.com/watch?v=7OVaWaqO2aU)
+
+See all the hardware I recommend at <https://kit.co/TechnoTim>

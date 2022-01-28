@@ -16,6 +16,8 @@ We install Rancher, configure a load balancer, install and configure helm, insta
 
 [Watch Video](https://www.youtube.com/watch?v=APsZJbnluXg)
 
+See all the hardware I recommend at <https://kit.co/TechnoTim>
+
 ## install
 
 **Note:**

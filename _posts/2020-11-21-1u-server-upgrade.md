@@ -11,3 +11,6 @@ tags: homelab hardware
 I've been making great use of some older, bigger servers but I decided to try and build, upgrade, and migrate to some 1U servers.  Join me as we unbox and build my 2 new virtualization servers!
 
 [Watch Video](https://www.youtube.com/watch?v=CMu5gsWKc9Y)
+
+See all the hardware I recommend at <https://kit.co/TechnoTim>
+

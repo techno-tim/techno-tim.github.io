@@ -12,6 +12,8 @@ Have you ever thought about running a Linux desktop inside of a container?  Me n
 
 [Watch Video](https://www.youtube.com/watch?v=Gd9bvdkIXOQ)
 
+See all the hardware I recommend at <https://kit.co/TechnoTim>
+
 ## Docker Setup
 
 See [this post](https://docs.technotim.live/posts/docker-compose-install/) on how to install `docker` and `docker-compose`

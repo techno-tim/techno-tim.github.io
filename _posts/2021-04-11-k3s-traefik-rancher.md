@@ -100,7 +100,7 @@ If you choose `IngressRoute` see [IngressRoute](#exposing-a-service-with-traefik
 
 We will be installing this into the `kube-system` namespace, which already exists. If you are going to use anther namespace you will need change it everywhere.
 
-### (Opional) Make sure that persistent volume claim is available
+### (Optional) Make sure that persistent volume claim is available
 
 The dynamic configuration for Traefik is stored in a persistent volume. If you want to persist the certificate, it's better to create one now to claim later.
 
@@ -226,3 +226,5 @@ kubectl apply -f kubernetes
 ```
 
 This will create the deployment, service, and ingress.
+
+See all the hardware I recommend at <https://kit.co/TechnoTim>

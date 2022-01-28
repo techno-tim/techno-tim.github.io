@@ -12,6 +12,9 @@ Windows 11 is here and with it comes new hardware requirements.  These requireme
 
 [Watch Video](https://www.youtube.com/watch?v=fupuTkkKPDU)
 
+See all the hardware I recommend at <https://kit.co/TechnoTim>
+
+
 (see video description for links to gear, discord, and other ways to connect.)
 
 ## Links

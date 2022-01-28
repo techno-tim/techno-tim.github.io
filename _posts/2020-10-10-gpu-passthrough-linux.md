@@ -12,6 +12,9 @@ We've already figured out how to pass through a GPU to Windows machine but why l
 
 [Watch Video](https://www.youtube.com/watch?v=9OfoFAljPn4)
 
+See all the hardware I recommend at <https://kit.co/TechnoTim>
+
+
 ```na
 88          88                                      
 88          ""                                      

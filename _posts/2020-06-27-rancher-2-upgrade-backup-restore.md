@@ -12,7 +12,7 @@ It use to be hard to back up Rancher, but with Rancher 2 it's super simple.  Upg
 
 [Watch Video](https://www.youtube.com/watch?v=YWqBxCIfxw4)
 
-
+See all the hardware I recommend at <https://kit.co/TechnoTim>
 
 * Need to install Rancher?  See my guide https://www.youtube.com/watch?v=YWqBxCIfxw4
 

@@ -12,4 +12,6 @@ People have asked how I've been able to create and grow a Tech YouTube channel a
 
 [Watch Video](https://www.youtube.com/watch?v=SivkS9Ug5dw)
 
+See all the hardware I recommend at <https://kit.co/TechnoTim>
+
 (see video description for gear links)
