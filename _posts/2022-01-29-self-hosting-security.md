@@ -113,11 +113,11 @@ It looks like this.
 
 While we’re talking about cloud flare you also have the option to block countries or even TOR if you like.  I’ve never really found this to be too helpful because most attacks ill come from a VPN in your country, so up to you whether you want to turn this on or not.
 
-## IDS/IPS
+### IDS/IPS
 
 While we’re talking about Firewall and networking we should also talk about IDS/IPS protection.  IDS (Intrusion Detection System) and Intrusion Preventions system) are ways to detect and block attacks.  These systems analyze network traffic for signatures that match known cyber-attacks.  I would l definitely turn these both on, self-hosting or not, because they offer protection against known attacks.  I say “known” because they are only as good as the signatures you have.  So if you are running PFSense this will be Snort or Suricata, and if you’re running a UDM pro or anything else, this might be under the security settings.  As you can see here, I have detect and block turned on, sensitivity is high against 25 categories.  Also there are other settings you might see here like dark web blocker (no dark web for me)  and,  I have both IDS and IPS turned on as you can see here, detect and block.  You can see here that there were some attempts on an attack here but they were blocked.  
 
-## Reverse proxy
+### Reverse proxy
 
 Now that we have everything in place, we can now finally meet in the middle and use our own internal reverse proxy.  Arguably if you’re using Cloudflare technically you don’t have to but I do with or without Cloudflare.    A reverse proxy is an easy way to direct traffic from clients to one of your servers (we talked about this with Cloudflare) and it’s also a place where you can have your certificates.  Having them here vs on each individual server makes maintenance much easier. Setting up a reverse proxy can be challenging however I’ve already documented this in another video and the reverse proxy I use is Traefik.  Traefik can route requests to your servers, get publicly signed certificates for you to use, and even integrate with other systems using middleware.  
 
