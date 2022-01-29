@@ -8,7 +8,6 @@ tags: homelab hardware security self-hosted
 
 [![Self-Hosting Security Guide for your HomeLab](https://img.youtube.com/vi/Cs8yOmTJNYQ/0.jpg)](https://www.youtube.com/watch?v=Cs8yOmTJNYQ "Self-Hosting Security Guide for your HomeLab")
 
-When most people think about self-hosting services in their HomeLab, they often think of the last mile. By last mile I mean the very last hop before a user accesses your services.   This last hop, whether that’s using certificates or a reverse proxy, is incredibly important, but it’s also important to know that security starts at the foundation of your HomeLab.  Today, we'll work our way up from hardware security, to OS, to networking, to containers, to firewalls, IDS/IPS, reverse proxies, auth proxies for authentication and authorization, and even lean in to an external provider like Cloudflare.
 
 A HUGE thanks to Micro Center for sponsoring this video!
 
@@ -20,7 +19,7 @@ See all the hardware I recommend at <https://kit.co/TechnoTim>
 
 ## Intro
 
-When most people think about self-hosting services in their homelab, they often think of the last mile. By last mile I mean the very last hop before a user accesses your services.   This last hop, whether that’s using certificates or a reverse proxy, is incredibly important, it’s also important to know that security starts at the foundation of your homelab.  
+When most people think about self-hosting services in their homelab, they often think of the last mile. By last mile I mean the very last hop before a user accesses your services.   This last hop, whether that’s using certificates or a reverse proxy, is incredibly important, it’s also important to know that security starts at the foundation of your homelab.  Today, we'll work our way up from hardware security, to OS, to networking, to containers, to firewalls, IDS/IPS, reverse proxies, auth proxies for authentication and authorization, and even lean in to an external provider like Cloudflare.
 
 Take for instance this diagram.  This most likely makes up most of the things in your homelab and whether that be physical or virtual you will find that you should have most of these components.  But what if I told you that your homelab should look like this?  That might seem incredibly complicated but it’s much easier to set up than you think.  So today we’re going to discuss and review some great practices and architecture for your homelab.  We’re going to take a holistic approach to self-hosting applications out of your homelab.  We’ll dive into individual systems, hardware and configurations, application hosting considerations, networking configuration and segmentation, reverse proxies, certificates and 2 factor auth, firewall configuration internet security settings, and we’ll even lean in to external protection from a provider like Cloudflare.  This will cover everything from the last mile, down to hardware.  
 
