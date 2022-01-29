@@ -8,7 +8,6 @@ tags: homelab hardware security self-hosted
 
 [![Self-Hosting Security Guide for your HomeLab](https://img.youtube.com/vi/Cs8yOmTJNYQ/0.jpg)](https://www.youtube.com/watch?v=Cs8yOmTJNYQ "Self-Hosting Security Guide for your HomeLab")
 
-
 A HUGE thanks to Micro Center for sponsoring this video!
 
 New Customers Exclusive – Get a Free 240gb SSD at Micro Center: <https://micro.center/0ef37a>
