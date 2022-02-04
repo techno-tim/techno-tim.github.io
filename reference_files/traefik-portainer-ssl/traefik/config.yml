@@ -82,6 +82,14 @@ http:
         - idrac
       tls: {}
       service: idrac-console
+    opnsense:
+      entryPoints:
+        - "https"
+      rule: "Host(`opnsense.local.example.com`)"
+      middlewares:
+        - default-headers
+      tls: {}
+   
 
 #endregion
 #region services
@@ -135,6 +143,11 @@ http:
       loadBalancer:
         servers:
           - url: "https://192.168.0.108:5900"
+        passHostHeader: true
+    opnsense:
+      loadBalancer:
+        servers:
+          - url: "https://192.168.0.109"
         passHostHeader: true
 #endregion
   middlewares:
