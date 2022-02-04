@@ -97,3 +97,14 @@ nano config.yml
 ```bash
 docker-compose up -d --force-recreate
 ```
+
+Your folder structure should look like the below, if you are following along with the example.  But feel free to make it however you wish just keep in mind you'll need to change the location in the corresponding files. 
+
+```
+./traefik
+├── data
+│   ├── acme.json
+│   ├── config.yml
+│   └── traefik.yml
+└── docker-compose.yml
+```
