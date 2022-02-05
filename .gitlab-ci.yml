@@ -10,7 +10,7 @@ variables:
 cache: &global_cache
   key: $CI_PROJECT_NAME
   paths:
-    - .jekyll-cache/
+    - vendor/ruby/
   policy: pull-push
 
 build:
@@ -42,8 +42,6 @@ docker_image_build_release:
   cache:
     <<: *global_cache
     policy: pull
-  only:
-    - tags
   retry: 2
   script:
     - mkdir -p /kaniko/.docker
