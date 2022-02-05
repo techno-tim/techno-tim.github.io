@@ -1,4 +1,4 @@
-name: '0-push-remote'
+name: 'push-remote'
 
 on:
   push:
