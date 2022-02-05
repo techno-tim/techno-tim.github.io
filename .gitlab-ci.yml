@@ -1,0 +1,51 @@
+stages:
+  - test
+  - docker
+  - deploy
+
+variables:
+  KUBECONFIG: .kube/config
+  JEKYLL_ENV: production
+
+cache: &global_cache
+  key: $CI_PROJECT_NAME
+  paths:
+    - .jekyll-cache/
+  policy: pull-push
+
+build:
+  image: ruby:2.7
+  stage: test
+  artifacts:
+    paths:
+      - _site
+    expire_in: 1 week
+  cache:
+    <<: *global_cache
+  retry: 2
+  script:
+    - gem install bundler
+    - bundle install
+    - |
+          baseurl="$(grep '^baseurl:' _config.yml | sed "s/.*: *//;s/['\"]//g;s/#.*//")"
+          if [[ -n $baseurl ]]; then
+            echo "BASE_URL=$baseurl" >> $GITHUB_ENV
+          fi
+    - bundle exec jekyll b -d "_site$BASE_URL"
+    - bash tools/test.sh
+
+docker_image_build_release:
+  image:
+    name: gcr.io/kaniko-project/executor:debug
+    entrypoint: [""]
+  stage: docker
+  cache:
+    <<: *global_cache
+    policy: pull
+  only:
+    - tags
+  retry: 2
+  script:
+    - mkdir -p /kaniko/.docker
+    - echo "{\"auths\":{\"$CI_REGISTRY\":{\"username\":\"$CI_REGISTRY_USER\",\"password\":\"$CI_REGISTRY_PASSWORD\"}}}" > /kaniko/.docker/config.json
+    - /kaniko/executor --context $CI_PROJECT_DIR --dockerfile $CI_PROJECT_DIR/Dockerfile --destination $CI_REGISTRY_IMAGE:latest
