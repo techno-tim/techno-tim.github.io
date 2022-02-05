@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: technotim-docs
+spec:
+  selector:
+    matchLabels:
+      app: technotim-docs
+  replicas: 2
+  progressDeadlineSeconds: 600
+  revisionHistoryLimit: 2
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: technotim-docs
+      annotations:
+        deploy-date: "deploy-date-value"
+    spec:
+      containers:
+      - name: technotim-docs
+        image: "registry-value"
+        ports: 
+        - containerPort: 80
+      imagePullSecrets: 
+      - name: registry-credentials-gitlab
