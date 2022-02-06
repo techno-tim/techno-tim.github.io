@@ -6,6 +6,7 @@ stages:
 variables:
   KUBECONFIG: .kube/config
   JEKYLL_ENV: production
+  GIT_STRATEGY: clone
 
 cache: &global_cache
   key: $CI_PROJECT_NAME
