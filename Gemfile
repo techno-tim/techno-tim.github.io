@@ -30,7 +30,7 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 
 
 # chirpy theme
-gem "jekyll-theme-chirpy"
+gem "jekyll-theme-chirpy", "~> 4.0.2", ">= 4.0.2"
 
 # for ci
 gem 'html-proofer'
