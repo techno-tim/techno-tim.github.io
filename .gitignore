@@ -19,3 +19,4 @@ _site
 .jekyll-metadata
 vendor
 yarn*
+.bundle

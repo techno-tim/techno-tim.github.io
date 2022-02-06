@@ -10,7 +10,7 @@ variables:
 cache: &global_cache
   key: $CI_PROJECT_NAME
   paths:
-    - /vendor/ruby
+    - vendor/ruby
   policy: pull-push
 
 build:
@@ -25,7 +25,7 @@ build:
   retry: 2
   script:
     - gem install bundler
-    - bundle config set --local path '/vendor/ruby'
+    - bundle config set --local path 'vendor/ruby'
     - bundle install
     - |
           baseurl="$(grep '^baseurl:' _config.yml | sed "s/.*: *//;s/['\"]//g;s/#.*//")"
@@ -60,4 +60,4 @@ deploy:
     - mkdir -p .kube/ && touch .kube/config
     - echo ${KUBERNETES_EXTERNAL_CLUSTER} | base64 -d -i > ${KUBECONFIG}    
   script:
-    - kubectl apply -f kubernetes/deployment.yaml
+    - kubectl apply -f kubernetes
