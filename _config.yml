@@ -183,7 +183,10 @@ exclude:
   - package.json
   - package-lock.json
   - archive_old
-  - template- reference_files
+  - template
+  - reference_files
+  - kubernetes
+  - Dockerfile
 
 jekyll-archives:
   enabled: [categories, tags]
