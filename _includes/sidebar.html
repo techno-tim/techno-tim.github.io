@@ -3,37 +3,38 @@
 -->
 
 <div id="sidebar" class="d-flex flex-column align-items-end">
-
   <div class="profile-wrapper text-center">
     <div id="avatar">
       <a href="{{ '/' | relative_url }}" alt="avatar" class="mx-auto">
-        {% capture avatar_url %}
-        {%- if site.avatar contains '://' -%}
-        {{ site.avatar }}
-        {%- elsif site.img_cdn != '' and site.img_cdn -%}
-        {{ site.avatar | prepend: site.img_cdn }}
-        {%- else -%}
-        {{ site.avatar | relative_url }}
-        {%- endif -%}
-        {% endcapture %}
-        <img src="{{ avatar_url }}" alt="avatar" onerror="this.style.display='none'">
+        {% if site.avatar != empty and site.avatar %}
+          {% capture avatar_url %}
+            {% if site.avatar contains '://' %}
+              {{ site.avatar }}
+            {% elsif site.img_cdn != empty and site.img_cdn %}
+              {{ site.avatar | prepend: site.img_cdn }}
+            {% else %}
+              {{ site.avatar | relative_url }}
+            {% endif %}
+          {% endcapture %}
+          <img src="{{ avatar_url }}" alt="avatar" onerror="this.style.display='none'">
+        {% endif %}
       </a>
     </div>
 
     <div class="site-title mt-3">
-      <a href="{{ '/' | relative_url }}">{{- site.title -}}</a>
+      <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
     </div>
-
-    <div class="site-subtitle font-italic">{{- site.tagline -}}</div>
+    <div class="site-subtitle font-italic">{{ site.tagline }}</div>
 
   </div><!-- .profile-wrapper -->
 
   <ul class="w-100">
+
     <!-- home -->
     <li class="nav-item{% if page.layout == 'home' %}{{ " active" }}{% endif %}">
       <a href="{{ '/' | relative_url }}" class="nav-link">
         <i class="fa-fw fas fa-home ml-xl-3 mr-xl-3 unloaded"></i>
-        <span>{{ "HOME" }}</span>
+        <span>{{ site.data.locales[lang].tabs.home | upcase }}</span>
       </a>
     </li>
     <!-- the real tabs -->
@@ -41,7 +42,9 @@
     <li class="nav-item{% if tab.url == page.url %}{{ " active" }}{% endif %}">
       <a href="{{ tab.url | relative_url }}" class="nav-link">
         <i class="fa-fw {{ tab.icon }} ml-xl-3 mr-xl-3 unloaded"></i>
-        <span>{{ tab.title | upcase }}</span>
+        {% capture tab_name %}{{ tab.url | split: '/' }}{% endcapture %}
+
+        <span>{{ site.data.locales[lang].tabs.[tab_name] | default: tab.title | upcase }}</span>
       </a>
     </li> <!-- .nav-item -->
     {% endfor %}
@@ -81,11 +84,10 @@
     {% endcapture %}
 
     {% if url %}
-    <a href="{{ url }}" aria-label="{{ entry.type }}" {% unless site.theme_mode
-      %}class="order-{{ forloop.index | plus: 2 }}" {% endunless %} {% unless entry.noblank %}target="_blank"
-      rel="noopener" {% endunless %}>
-      <i class="{{ entry.icon }}"></i>
-    </a>
+      <a href="{{ url }}" aria-label="{{ entry.type }}"
+        {% unless entry.noblank %}target="_blank" rel="noopener"{% endunless %}>
+        <i class="{{ entry.icon }}"></i>
+      </a>
     {% endif %}
 
     {% endfor %}
