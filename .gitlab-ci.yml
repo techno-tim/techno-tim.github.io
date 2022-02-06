@@ -27,13 +27,7 @@ build:
     - gem install bundler
     - bundle config set --local path 'vendor/ruby'
     - bundle install
-    - |
-          baseurl="$(grep '^baseurl:' _config.yml | sed "s/.*: *//;s/['\"]//g;s/#.*//")"
-          if [[ -n $baseurl ]]; then
-            echo "BASE_URL=$baseurl" >> $GITHUB_ENV
-          fi
-    - bundle exec jekyll b -d "_site$BASE_URL"
-    - bash tools/test.sh
+    - bash bash tools/deploy.sh --dry-run
 
 docker_image_build_release:
   image:

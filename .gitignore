@@ -20,3 +20,4 @@ _site
 vendor
 yarn*
 .bundle
+!.travis.yml
