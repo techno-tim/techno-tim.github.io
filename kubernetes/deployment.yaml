@@ -10,7 +10,10 @@ spec:
   progressDeadlineSeconds: 600
   revisionHistoryLimit: 2
   strategy:
-    type: Recreate
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 25%
+      maxSurge: 1
   template:
     metadata:
       labels:
@@ -20,7 +23,7 @@ spec:
     spec:
       containers:
       - name: technotim-docs
-        image: "registry-value"
+        image: "registry-value:latest"
         ports: 
         - containerPort: 80
       imagePullSecrets: 
