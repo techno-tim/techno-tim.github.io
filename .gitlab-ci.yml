@@ -51,8 +51,6 @@ deploy:
     entrypoint: [""]
   cache: []
   stage: deploy
-  only:
-    - tags
   retry: 2
   before_script:
     - sed -ie "s/deploy-date-value/$(date)/g" kubernetes/deployment.yaml
