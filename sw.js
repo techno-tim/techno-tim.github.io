@@ -1,10 +1,10 @@
 ---
-layout: compress
+  layout: compress
 permalink: '/sw.js'
 # PWA service worker
 ---
 
-self.importScripts('{{ "/assets/js/data/swcache.js" | relative_url }}');
+  self.importScripts('{{ "/assets/js/data/swcache.js" | relative_url }}');
 
 const cacheName = 'chirpy-{{ "now" | date: "%Y%m%d.%H%M" }}';
 
@@ -69,19 +69,19 @@ self.addEventListener('fetch', event => {
             return response;
           });
       })
-    );
+  );
 });
 
 self.addEventListener('activate', e => {
   e.waitUntil(
     caches.keys().then(keyList => {
-          return Promise.all(
-            keyList.map(key => {
-              if(key !== cacheName) {
-                return caches.delete(key);
-              }
-            })
-          );
+      return Promise.all(
+        keyList.map(key => {
+          if (key !== cacheName) {
+            return caches.delete(key);
+          }
+        })
+      );
     })
   );
 });
