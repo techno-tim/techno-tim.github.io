@@ -25,7 +25,8 @@ build:
   retry: 2
   script:
     - gem install bundler
-    - bundle install --path=/vendor/ruby
+    - bundle config set --local path '/vendor/ruby'
+    - bundle install
     - |
           baseurl="$(grep '^baseurl:' _config.yml | sed "s/.*: *//;s/['\"]//g;s/#.*//")"
           if [[ -n $baseurl ]]; then
@@ -38,6 +39,7 @@ docker_image_build_release:
   image:
     name: gcr.io/kaniko-project/executor:debug
     entrypoint: [""]
+  cache: []
   stage: docker
   retry: 2
   script:
@@ -54,7 +56,7 @@ deploy:
   retry: 2
   before_script:
     - sed -ie "s/deploy-date-value/$(date)/g" kubernetes/deployment.yaml
-    - sed -ie "s/registry-value/$CI_REGISTRY_IMAGE/g" kubernetes/deployment.yaml
+    - sed -ie "s|registry-value|$CI_REGISTRY_IMAGE|g" kubernetes/deployment.yaml
     - mkdir -p .kube/ && touch .kube/config
     - echo ${KUBERNETES_EXTERNAL_CLUSTER} | base64 -d -i > ${KUBECONFIG}    
   script:
