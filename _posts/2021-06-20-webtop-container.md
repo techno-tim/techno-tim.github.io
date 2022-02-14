@@ -22,7 +22,7 @@ See [this post](https://docs.technotim.live/posts/docker-compose-install/) on ho
 
 ## Webtop
 
-`docker-compose.yml` and `.env` can be found [here](https://github.com/techno-tim/techno-tim.github.io/tree/master/reference_files/webtop-container/)
+`docker-compose.yml` and `.env` can be found [here](https://github.com/techno-tim/launchpad/tree/master/docker/webtop)
 
 ## Files and folders
 

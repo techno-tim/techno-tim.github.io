@@ -117,7 +117,7 @@ helm repo update
 
 ### Edit & apply ConfigMap
 
-* Create `traefik-config.yaml` with the contents of `/config/traefik-config.yaml` from [/config](https://github.com/techno-tim/techno-tim.github.io/tree/master/reference_files/traefik2-k3s-rancher/config)
+* Create `traefik-config.yaml` with the contents of `/config/traefik-config.yaml` from [/config](https://github.com/techno-tim/launchpad/tree/master/kubernetes/traefik2-k3s-rancher/config)
 * This holds our cloudflare secrets along with a configmap
 * Update this file with your values
 * Re-check if you have a persistent volume ready to claim
@@ -129,7 +129,7 @@ kubectl apply -f traefik-config.yaml
 
 ### Edit & install Traefik helm chart
 
-* Create `traefik-chart-values.yaml` with the contents of `/config/traefik-chart-values.yaml` from [/config](https://github.com/techno-tim/techno-tim.github.io/tree/master/reference_files/traefik2-k3s-rancher/config)
+* Create `traefik-chart-values.yaml` with the contents of `/config/traefik-chart-values.yaml` from [/config](https://github.com/techno-tim/launchpad/tree/master/kubernetes/traefik2-k3s-rancher/config)
 * Update `loadBalancerIP` in `traefik-chart-values.yaml` with your Metal LB IP
 
 Before running this, be sure you only have one default storage class set.
@@ -217,7 +217,7 @@ kubectl apply -f traefik-config.yaml
 
 ## Exposing a service with traefik IngressRoute
 
-copy the contents of [config-ingress-route/kubernetes](https://github.com/techno-tim/techno-tim.github.io/tree/master/reference_files/traefik2-k3s-rancher/config-ingress-route) to your local machine
+copy the contents of [config-ingress-route/kubernetes](https://github.com/techno-tim/launchpad/tree/master/kubernetes/traefik2-k3s-rancher/config-ingress-route/kubernetes) to your local machine
 
 then run
 

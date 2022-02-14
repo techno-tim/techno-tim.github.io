@@ -26,7 +26,7 @@ See [this post](https://docs.technotim.live/posts/docker-compose-install/) on ho
 
 ## Authelia
 
-`configuration.yml`,  `users_database.yml`, and `docker-compose.yml` can be found [here](https://github.com/techno-tim/techno-tim.github.io/tree/master/reference_files/authelia-traefik/authelia)
+`configuration.yml`,  `users_database.yml`, and `docker-compose.yml` can be found [here](https://github.com/techno-tim/launchpad/tree/master/docker/authelia)
 
 Example `heimdall` can be found here [here](https://github.com/techno-tim/techno-tim.github.io/tree/master/reference_files/authelia-traefik/heimdall)
 
