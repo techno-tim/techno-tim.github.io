@@ -35,7 +35,7 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 gem "jekyll-theme-chirpy", "~> 5.0", ">= 5.0.0"
 
 # for ci
-gem 'html-proofer'
+gem "html-proofer", "~> 3.18"
 
 # github
 gem "jekyll-get-json", "~> 1.0"

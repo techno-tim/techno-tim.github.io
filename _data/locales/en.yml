@@ -65,8 +65,8 @@ post:
   timeago:
     day: days ago
     hour: hours ago
-    minute: min ago
-    just_now: minutes now
+    minute: minutes ago
+    just_now: just now
   words: words
   pageview_measure: views
   read_time:
