@@ -13,3 +13,5 @@ I am betting you have at least 3 infrared remote controls in your house.  I am a
 [Watch Video](https://www.youtube.com/watch?v=4MJW29mR-Xc)
 
 See all the hardware I recommend at <https://kit.co/TechnoTim>
+
+Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.

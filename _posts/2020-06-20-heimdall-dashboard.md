@@ -15,3 +15,5 @@ Tired of bookmarking all of your self-hosted services only to lose them?  Want a
 [Watch Video](https://www.youtube.com/watch?v=PA01Z6-z8Qs)
 
 See all the hardware I recommend at <https://kit.co/TechnoTim>
+
+Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.

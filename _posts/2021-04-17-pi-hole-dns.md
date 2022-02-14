@@ -14,6 +14,8 @@ Pi-Hole is a wonderful ad blocking DNS sever for your network, but did you know 
 
 See all the hardware I recommend at <https://kit.co/TechnoTim>
 
+Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
+
 ## commands
 
 ```bash

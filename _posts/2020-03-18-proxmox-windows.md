@@ -13,3 +13,5 @@ Do you need to virtualize Windows 10 with Proxmox? Join me as we install and con
 [Watch Video](https://www.youtube.com/watch?v=6c-6xBkD2J4)
 
 See all the hardware I recommend at <https://kit.co/TechnoTim>
+
+Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.

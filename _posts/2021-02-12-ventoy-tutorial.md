@@ -14,3 +14,5 @@ In this quick no fluff video, I will show you how to create a multi-bootable USB
 [Watch Video](https://www.youtube.com/watch?v=z1FyoCswwAc)
 
 See all the hardware I recommend at <https://kit.co/TechnoTim>
+
+Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.

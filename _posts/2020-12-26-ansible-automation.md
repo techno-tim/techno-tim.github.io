@@ -15,7 +15,7 @@ Ansible. Need I say more?  Well, maybe, if you've never heard of it. Ansible is 
 
 See all the hardware I recommend at <https://kit.co/TechnoTim>
 
-You can also find a collection of playbooks [here](https://github.com/techno-tim/launchpad)
+Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
 
 ## install
 

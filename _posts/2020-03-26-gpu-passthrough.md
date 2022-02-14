@@ -15,6 +15,7 @@ Are you looking to build a remote gaming machine and passthrough your GPU to a v
 
 See all the hardware I recommend at <https://kit.co/TechnoTim>
 
+Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
 
 edit grub
 

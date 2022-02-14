@@ -16,6 +16,8 @@ New Customers Exclusive – Get a Free 240gb SSD at Micro Center: <https://micro
 
 See all the hardware I recommend at <https://kit.co/TechnoTim>
 
+Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
+
 ## Intro
 
 When most people think about self-hosting services in their homelab, they often think of the last mile. By last mile I mean the very last hop before a user accesses your services.   This last hop, whether that’s using certificates or a reverse proxy, is incredibly important, it’s also important to know that security starts at the foundation of your homelab.  Today, we'll work our way up from hardware security, to OS, to networking, to containers, to firewalls, IDS/IPS, reverse proxies, auth proxies for authentication and authorization, and even lean in to an external provider like Cloudflare.

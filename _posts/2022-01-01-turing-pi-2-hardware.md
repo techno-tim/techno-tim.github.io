@@ -14,6 +14,8 @@ The Turing Pi 2 is a compact ARM cluster that provides a scalable computing on t
 
 See all the hardware I recommend at <https://kit.co/TechnoTim>
 
+Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
+
 Turing Pi 2 - <https://turingpi.com>
 
 Raspberry Pi Compute Modules - <https://www.raspberrypi.com/products/compute-module-4>

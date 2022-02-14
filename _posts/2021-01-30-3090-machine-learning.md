@@ -14,3 +14,5 @@ The NVIDIA RTX 3090 is a beast.  We all know it can beat the benchmarks in gamin
 [Watch Video](https://www.youtube.com/watch?v=mDUa5sY4Jeo)
 
 See all the hardware I recommend at <https://kit.co/TechnoTim>
+
+Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.

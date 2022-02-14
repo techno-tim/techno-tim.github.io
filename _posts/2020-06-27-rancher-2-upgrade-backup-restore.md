@@ -14,6 +14,8 @@ It use to be hard to back up Rancher, but with Rancher 2 it's super simple.  Upg
 
 See all the hardware I recommend at <https://kit.co/TechnoTim>
 
+Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
+
 * Need to install Rancher?  See my guide https://www.youtube.com/watch?v=YWqBxCIfxw4
 
 * See the full guide from Rancher https://rancher.com/docs/rancher/v2.x/en/upgrades/upgrades/single-node/

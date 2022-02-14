@@ -14,6 +14,8 @@ Are you self-hosting lots of services at home in your homelab?  Have you been po
 
 See all the hardware I recommend at <https://kit.co/TechnoTim>
 
+Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
+
 ## Install WSL on Windows 10
 
 https://www.youtube.com/watch?v=kL8iGErULiw

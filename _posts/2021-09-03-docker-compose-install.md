@@ -74,3 +74,5 @@ sudo apt-get remove docker docker-engine docker.io containerd runc
 ```
 
 See all the hardware I recommend at <https://kit.co/TechnoTim>
+
+Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.

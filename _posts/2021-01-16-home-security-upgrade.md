@@ -16,3 +16,5 @@ I am a huge fan of self hosted home security and I've been doing it for years. I
 [Watch Video](https://www.youtube.com/watch?v=W9XgDZAezkg)
 
 See all the hardware I recommend at <https://kit.co/TechnoTim>
+
+Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.

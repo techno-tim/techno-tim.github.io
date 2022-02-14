@@ -13,3 +13,5 @@ Self hosting a VPN has traditionally been hard to set up and we've had very few 
 [Watch Video](https://www.youtube.com/watch?v=xlyTCuWqDOg)
 
 See all the hardware I recommend at <https://kit.co/TechnoTim>
+
+Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.

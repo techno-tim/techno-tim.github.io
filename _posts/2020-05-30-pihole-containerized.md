@@ -15,6 +15,8 @@ We know you've heard of Pihole and we know you are probably aware of how to inst
 
 See all the hardware I recommend at <https://kit.co/TechnoTim>
 
+Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
+
 Ubuntu Fix
 
 ```bash

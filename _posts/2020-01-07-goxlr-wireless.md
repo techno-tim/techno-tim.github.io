@@ -15,3 +15,5 @@ I bought these products with my own money because I thought they were cool.  Not
 [Watch Video](https://www.youtube.com/watch?v=dTd7f-jK_BE)
 
 See all the hardware I recommend at <https://kit.co/TechnoTim>
+
+Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.

@@ -14,8 +14,7 @@ Meet [File Browser](https://github.com/filebrowser/filebrowser), an open source,
 
 See all the hardware I recommend at <https://kit.co/TechnoTim>
 
-
-(see video description for links to gear, discord, and other ways to connect.)
+Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
 
 ## Docker Setup
 

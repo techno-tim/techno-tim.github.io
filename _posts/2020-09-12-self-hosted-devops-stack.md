@@ -14,6 +14,8 @@ So you're a software engineer or a developer who wants to self-host your own cod
 
 See all the hardware I recommend at <https://kit.co/TechnoTim>
 
+Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
+
 ## Helpful videos
 
 1 - [Set Up Kubernetes with Rancher](https://www.youtube.com/watch?v=oILc0ywDVTk)

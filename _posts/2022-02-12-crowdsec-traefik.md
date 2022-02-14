@@ -22,11 +22,11 @@ See all the hardware I recommend at <https://kit.co/TechnoTim>
 
 A HUGE THANK YOU to Micro Center for sponsoring this video!
 
-Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start files
+Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files
 
 If you need to set up traefik, you can follow this post here on [configuring traefik](https://docs.technotim.live/posts/traefik-portainer-ssl/)
 
-If you need a high level overview of HomeLab and Self-Hosting Security, check out [this video](https://www.youtube.com/watch?v=Cs8yOmTJNYQ) that will help you keep your network safe.  
+If you need a high level overview of HomeLab and Self-Hosting Security, check out [this video](https://www.youtube.com/watch?v=Cs8yOmTJNYQ) that will help you keep your network safe.
 
 ## Configure CrowdSec
 

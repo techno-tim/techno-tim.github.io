@@ -8,6 +8,8 @@ tags: homelab proxmox grafana logging promtail prometheus kubernetes helm
 
 In my previous video ([Meet Grafana LOKI, a log aggregation system for everything](https://www.youtube.com/watch?v=h_GGd7HfKQ8) and [post](https://docs.technotim.live/posts/grafana-loki/), I promised that I would also explain how to install Granfana Loki on Kubernetes using `helm`.  If you're looking to set this up in `docker-compose`, be sure to check out this [video](https://www.youtube.com/watch?v=h_GGd7HfKQ8)
 
+Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files
+
 ## Installing helm
 
 Think of `helm` as a package manager for kubernetes. It'a an easy way to bundle and deploy config to kubernetes with versioning.  If you need to install `helm` visit [helm.sh](https://helm.sh/docs/intro/install/)

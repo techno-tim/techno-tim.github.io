@@ -38,3 +38,5 @@ apt-get update
 ```bash
 apt dist-upgrade
 ```
+
+Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.

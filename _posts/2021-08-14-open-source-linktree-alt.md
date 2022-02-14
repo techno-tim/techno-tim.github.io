@@ -18,6 +18,8 @@ See all the hardware I recommend at <https://kit.co/TechnoTim>
 
 You can find the LittleLink-Server repo [here](https://github.com/techno-tim/littlelink-server).
 
+Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
+
 ## Docker Setup
 
 See [this post](https://docs.technotim.live/posts/docker-compose-install/) on how to install `docker` and `docker-compose`
