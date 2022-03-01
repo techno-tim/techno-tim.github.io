@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Creating your first Dockerfile, Image, and Container"
+title: "Building your first Dockerfile, Image, and Container"
 date: 2022-02-26 8:00:00 -0500
 categories: homelab
 tags: docker docker-compose container image
 ---
 
-[![Creating your first Dockerfile, Image, and Container](https://img.youtube.com/vi/SnSH8Ht3MIc/0.jpg)](https://www.youtube.com/watch?v=SnSH8Ht3MIc "Creating your first Dockerfile, Image, and Container")
+[![Build YOUR OWN Dockerfile, Image, and Container](https://img.youtube.com/vi/SnSH8Ht3MIc/0.jpg)](https://www.youtube.com/watch?v=SnSH8Ht3MIc "Build YOUR OWN Dockerfile, Image, and Container")
 
 We spin up all types of containers on my channel in my tutorials, but we have yet to build our own custom Docker container image.  Today we'll start from scratch with an empty Dockerfile and create, build, and run our very own custom Docker image!  We'll learn all the commands that everyone should know when building and maintaining images with Docker.  This tutorial is a great way to get started with Docker!
 
