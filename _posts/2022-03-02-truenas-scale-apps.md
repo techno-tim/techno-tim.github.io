@@ -8,7 +8,7 @@ tags: homelab docker-compose container image helm kubernetes k3s truenas docker
 
 [![TrueNAS Scale Apps - Official, Unofficial, Docker, and Kubernetes](https://img.youtube.com/vi/oafOky5GSzc/0.jpg)](https://www.youtube.com/watch?v=oafOky5GSzc "TrueNAS Scale Apps - Official, Unofficial, Docker, and Kubernetes")
 
-TrueNAS SCALE is here and with it comes new way of installing and managing applications.  You can install official apps, unofficial and community apps using TrueCharts, and also any Docker image or Kubernetes deployment with helm.  Join me as we dive into managing applications and exploring TrueNAS scale new app engine that runs Docker, Kubernetes, and K3S.
+TrueNAS SCALE is here and with it comes new way of installing and managing applications.  You can install official apps, unofficial and community apps using TrueCharts, and also any Docker image or Kubernetes deployment with helm.  Join me as we dive into managing applications and exploring TrueNAS SCALES's new app engine that runs Docker, Kubernetes, and K3S.
 
 [Watch Video](https://www.youtube.com/watch?v=oafOky5GSzc)
 
