@@ -7,7 +7,7 @@ variables:
   KUBECONFIG: .kube/config
   JEKYLL_ENV: production
   GIT_STRATEGY: clone
-  GIT_DEPTH: 0
+  GIT_DEPTH: 100
 
 cache: &global_cache
   key: $CI_PROJECT_NAME
