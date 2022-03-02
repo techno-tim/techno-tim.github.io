@@ -12,7 +12,6 @@ TrueNAS SCALE is here and with it comes new way of installing and managing appli
 
 Watch Video](https://www.youtube.com/watch?v=oafOky5GSzc)
 
-
 If you're looking for Community App Catalog for TrueNAS SCALE, you can find it [here](https://truecharts.org/)
 
 See all the hardware I recommend at <https://kit.co/TechnoTim>
