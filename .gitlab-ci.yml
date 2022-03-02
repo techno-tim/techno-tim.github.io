@@ -29,7 +29,7 @@ build:
     - gem install bundler
     - bundle config set --local path 'vendor/ruby'
     - bundle install
-    - bash tools/deploy.sh --dry-run
+    - JEKYLL_ENV=production bundle exec jekyll b
 
 docker_image_build_release:
   image:
