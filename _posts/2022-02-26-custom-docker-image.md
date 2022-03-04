@@ -41,7 +41,7 @@ docker build -t hello-internet
 list docker images
 
 ```bash
-docker ls
+docker images
 ```
 
 list docker containers
