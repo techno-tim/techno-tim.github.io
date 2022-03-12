@@ -10,10 +10,12 @@ tags: harvester homelab rancher k3s kubernetes grafana
 
 Rancher released a next generation open source HCI software hypervisor built on Kubernetes that helps you run virtual machines.  With Harvester you can create Linux, Windows, or any virtual machine that can be easily scaled and cluster giving your high availability virtual machines with a few clicks.  It also gives you a platform to automatically create HA RKE1, RKE2, and K3S Kubernetes clusters with etcd along with the virtual machines it runs on.  Now you can run virtual machines and kubernetes on the edge on one machine.
 
-[Watch Video](https://www.youtube.com/watch?v=tVsMen_e6OI)
+📺 [Watch Video](https://www.youtube.com/watch?v=tVsMen_e6OI)
 
-[Harvester Documentation](https://docs.harvesterhci.io)
+⬇️ [Download Harvester](https://github.com/harvester/harvester/releases)
 
-See all the hardware I recommend at <https://kit.co/TechnoTim>
+📖 [Harvester Documentation](https://docs.harvesterhci.io)
 
-Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files
+⚙️ See all the hardware I recommend at <https://kit.co/TechnoTim>
+
+🚀 Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files
