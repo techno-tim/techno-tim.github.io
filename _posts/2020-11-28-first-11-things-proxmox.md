@@ -12,7 +12,7 @@ After setting up my Proxmox servers, there are a few thigns I do before I use th
 
 [Watch Video](https://www.youtube.com/watch?v=GoZaMgEgrHw)
 
-See all the hardware I recommend at <https://kit.co/TechnoTim>
+See all the hardware I recommend at <https://l.technotim.live/gear>
 
 Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
 

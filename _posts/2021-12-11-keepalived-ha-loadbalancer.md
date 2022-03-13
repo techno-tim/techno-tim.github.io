@@ -12,7 +12,7 @@ In my quest to make my services highly available I decided to use keepalived.  k
 
 [Watch Video](https://www.youtube.com/watch?v=hPfk0qd4xEY)
 
-See all the hardware I recommend at <https://kit.co/TechnoTim>
+See all the hardware I recommend at <https://l.technotim.live/gear>
 
 Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
 

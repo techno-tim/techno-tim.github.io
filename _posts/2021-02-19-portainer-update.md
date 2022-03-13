@@ -13,6 +13,6 @@ Updating Portainer is easy, if you know how.  In this quick no fluff video, I wi
 
 [Watch Video](https://www.youtube.com/watch?v=M365jgJ0O2E)
 
-See all the hardware I recommend at <https://kit.co/TechnoTim>
+See all the hardware I recommend at <https://l.technotim.live/gear>
 
 Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.

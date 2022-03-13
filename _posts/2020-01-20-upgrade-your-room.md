@@ -12,6 +12,6 @@ There are so many upgrades out there for streaming, what do I start with? Video 
 
 [Watch Video](https://www.youtube.com/watch?v=X7g3rjVN1Dw)
 
-See all the hardware I recommend at <https://kit.co/TechnoTim>
+See all the hardware I recommend at <https://l.technotim.live/gear>
 
 Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.

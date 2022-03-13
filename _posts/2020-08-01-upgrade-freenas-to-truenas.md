@@ -13,6 +13,6 @@ Want to migrate FreeNAS to TrueNAS today?  It's simple using this step by step t
 
 [Watch Video](https://www.youtube.com/watch?v=SsxvPhlOiYI)
 
-See all the hardware I recommend at <https://kit.co/TechnoTim>
+See all the hardware I recommend at <https://l.technotim.live/gear>
 
 Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.

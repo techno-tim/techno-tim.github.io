@@ -14,6 +14,6 @@ TrueNAS SCALE is here and with it comes new way of installing and managing appli
 
 If you're looking for Community App Catalog for TrueNAS SCALE, you can find it [here](https://truecharts.org/)
 
-See all the hardware I recommend at <https://kit.co/TechnoTim>
+See all the hardware I recommend at <https://l.technotim.live/gear>
 
 Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files

@@ -14,7 +14,7 @@ New Customers Exclusive – Get a Free 240gb SSD at Micro Center: <https://micro
 
 [Watch Video](https://www.youtube.com/watch?v=-GxUP6bNxF0)
 
-See all the hardware I recommend at <https://kit.co/TechnoTim>
+See all the hardware I recommend at <https://l.technotim.live/gear>
 
 ## Intro
 

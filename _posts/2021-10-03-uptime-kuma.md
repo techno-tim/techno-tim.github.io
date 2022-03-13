@@ -14,7 +14,7 @@ You've spun up lots of self-hosted services in your HomeLab but you haven't set 
 
 [Watch Video](https://www.youtube.com/watch?v=r_A5NKkAqZM)
 
-See all the hardware I recommend at <https://kit.co/TechnoTim>
+See all the hardware I recommend at <https://l.technotim.live/gear>
 
 Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
 

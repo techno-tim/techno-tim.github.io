@@ -13,7 +13,7 @@ We know you've heard of Pihole and we know you are probably aware of how to inst
 
 [Watch Video](https://www.youtube.com/watch?v=NRe2-vye3ik)
 
-See all the hardware I recommend at <https://kit.co/TechnoTim>
+See all the hardware I recommend at <https://l.technotim.live/gear>
 
 Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
 

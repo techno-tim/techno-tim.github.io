@@ -12,7 +12,7 @@ We've already figured out how to pass through a GPU to Windows machine but why l
 
 [Watch Video](https://www.youtube.com/watch?v=9OfoFAljPn4)
 
-See all the hardware I recommend at <https://kit.co/TechnoTim>
+See all the hardware I recommend at <https://l.technotim.live/gear>
 
 Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
 

@@ -13,6 +13,6 @@ Have you ever wanted to run VS Code in your browser?  What if you had access to 
 
 [Watch Video](https://www.youtube.com/watch?v=_QwQnyoz_-w)
 
-See all the hardware I recommend at <https://kit.co/TechnoTim>
+See all the hardware I recommend at <https://l.technotim.live/gear>
 
 Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.

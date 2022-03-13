@@ -12,6 +12,6 @@ Do you have some places where you can't run ethernet?  Do want to extend your et
 
 [Watch Video](https://www.youtube.com/watch?v=UCB61jc0PUA)
 
-See all the hardware I recommend at <https://kit.co/TechnoTim>
+See all the hardware I recommend at <https://l.technotim.live/gear>
 
 Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.

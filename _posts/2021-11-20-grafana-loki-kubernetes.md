@@ -127,4 +127,4 @@ helm upgrade --install loki grafana/loki-stack  --set grafana.enabled=true,prome
 ```
 
 
-See all the hardware I recommend at <https://kit.co/TechnoTim>
+See all the hardware I recommend at <https://l.technotim.live/gear>

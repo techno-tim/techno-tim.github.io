@@ -12,6 +12,6 @@ Do you want the best settings for OBS in 2020? This is the ultimate OBS settings
 
 [Watch Video](https://www.youtube.com/watch?v=_-G-RvWpojc)
 
-See all the hardware I recommend at <https://kit.co/TechnoTim>
+See all the hardware I recommend at <https://l.technotim.live/gear>
 
 Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
