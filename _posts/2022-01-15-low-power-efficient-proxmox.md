@@ -17,7 +17,7 @@ New Customers Exclusive – Get a Free 240gb SSD at Micro Center: <https://micro
 [Watch Video](https://www.youtube.com/watch?v=XoObI3L9xNA)
 
 See the kit here:
-<https://l.technotim.live/gear/efficient-low-power-powerful-virtualization-server>
+<https://kit.co/technotim/efficient-low-power-powerful-virtualization-server>
 
 See all the hardware I recommend at <https://l.technotim.live/gear>
 
