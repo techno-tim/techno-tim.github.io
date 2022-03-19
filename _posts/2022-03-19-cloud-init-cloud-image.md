@@ -60,9 +60,9 @@ Add serial console
 qm set 8000 --serial0 socket --vga serial0
 ```
 
-DO NOT START YOUR VM
+**DO NOT START YOUR VM**
 
-Configure hardware and cloud init, then clone if you want
+Now, configure hardware and cloud init, then create a template and clone.  If you want to expand your hard drive you can on this base image before creating a template or after you clone a new machine.  I pefere to expand the hard drive after I clone a new machine based on need.
 
 ## Troubleshooting
 
