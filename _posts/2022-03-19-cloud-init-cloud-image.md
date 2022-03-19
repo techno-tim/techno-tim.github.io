@@ -12,8 +12,6 @@ Using Cloud Images and Cloud Init with Proxmox is easy, fast, efficient, and fun
 
 📺 [Watch Video](https://www.youtube.com/watch?v=shiIi38cJe4)
 
-
-
 ## Intructions
 
 Choose your [Ubuntu Cloud Image](https://cloud-images.ubuntu.com/)
@@ -66,17 +64,16 @@ Now, configure hardware and cloud init, then create a template and clone.  If yo
 
 ## Troubleshooting
 
-
 If you need to reset your machine-id
 
 ```bash
 sudo rm -f /etc/machine-id
 sduo rm -f /var/lib/dbus/machine-id
-
 ```
 
 Then shut it down and do not boot it up
 
+## Links
 
 ⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>
 
