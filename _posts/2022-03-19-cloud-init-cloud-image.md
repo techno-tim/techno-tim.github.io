@@ -25,7 +25,7 @@ wget https://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-amd64-d
 Create a new virtual machine
 
 ```bash
-qm create 8000 –-name ubuntu-cloud --memory 2048 --net0 virtio,bridge=vmbr0
+qm create 8000 --memory 2048 --core 2 --name ubuntu-cloud --net0 virtio,bridge=vmbr0
 ```
 
 Import the downloaded Ubuntut disk to local-lvm storage
