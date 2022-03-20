@@ -31,7 +31,7 @@ qm create 8000 --memory 2048 --core 2 --name ubuntu-cloud --net0 virtio,bridge=v
 Import the downloaded Ubuntut disk to local-lvm storage
 
 ```bash
-qm importdisk 8000 focal-server-cloudimg-amd64.img local-lvm
+qm importdisk 8000 focal-server-cloudimg-amd64-disk-kvm.img local-lvm
 ```
 
 Attach the new disk to the vm as a scsi drive on the scsi controller
