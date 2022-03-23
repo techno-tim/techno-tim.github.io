@@ -10,6 +10,9 @@ In my previous video ([Meet Grafana LOKI, a log aggregation system for everythin
 
 Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files
 
+Don't want to host it yourself?  Check out Grafana Cloud and sign up for a free account <https://l.technotim.live/grafana-labs>
+
+
 ## Installing helm
 
 Think of `helm` as a package manager for kubernetes. It'a an easy way to bundle and deploy config to kubernetes with versioning.  If you need to install `helm` visit [helm.sh](https://helm.sh/docs/intro/install/)
