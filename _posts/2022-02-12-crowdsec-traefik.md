@@ -278,7 +278,7 @@ restart container
 docker-compose up -d --force-recreate
 ```
 
-Default's credentials for metabase are `crowdsec@crowdsec.net` and `!!Cr0wdS3c_M3t4b4s3??`  Be sure to chane this.
+Default's credentials for metabase are `crowdsec@crowdsec.net` and `!!Cr0wdS3c_M3t4b4s3??`  Be sure to change this.
 
 ## CrowdSec Commands
 
