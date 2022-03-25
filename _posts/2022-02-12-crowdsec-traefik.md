@@ -34,7 +34,7 @@ traefik bouncer repo
 <https://github.com/fbonalair/traefik-crowdsec-bouncer>
 
 ```bash
-mkdir dir crowsec
+mkdir crowdsec
 cd crowdsec
 touch docker-compose.yml
 nano docker-compose.yml
