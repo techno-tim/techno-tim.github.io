@@ -34,7 +34,7 @@ traefik bouncer repo
 <https://github.com/fbonalair/traefik-crowdsec-bouncer>
 
 ```bash
-mkdir dir crowsec
+mkdir crowdsec
 cd crowdsec
 touch docker-compose.yml
 nano docker-compose.yml
@@ -278,7 +278,7 @@ restart container
 docker-compose up -d --force-recreate
 ```
 
-Default's credentials for metabase are `crowdsec@crowdsec.net` and `!!Cr0wdS3c_M3t4b4s3??`  Be sure to chane this.
+Default's credentials for metabase are `crowdsec@crowdsec.net` and `!!Cr0wdS3c_M3t4b4s3??`  Be sure to change this.
 
 ## CrowdSec Commands
 
