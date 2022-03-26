@@ -55,6 +55,8 @@ Start provisioning of the cluster using the following command:
 ansible-playbook site.yml -i inventory/my-cluster/hosts.ini
 ```
 
+**note: add --ask-pass --ask-become-pass if you are using password SSH login**
+
 After deployment control plane will be accessible via virtual ip address which is defined in `inventory/my-cluster/group_vars/all.yml` as `apiserver_endpoint`
 
 ## Removing
