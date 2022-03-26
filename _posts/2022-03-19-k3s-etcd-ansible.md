@@ -30,7 +30,7 @@ Next, you'll want to copy the `sample` directory within the `inventory` director
 cp -R inventory/sample inventory/my-cluster
 ```
 
-Next, edit the `inventory/hosts.ini` to match your systems.  DNS works here too.
+Next, edit the `inventory/my-cluster/hosts.ini` to match your systems.  DNS works here too.
 
 ```ini
 [master]
@@ -47,22 +47,22 @@ master
 node
 ```
 
-Edit `inventory/group_vars/all.yml`  to your liking.  See comments inline.
+Edit `inventory/my-cluster/group_vars/all.yml`  to your liking.  See comments inline.
 
 Start provisioning of the cluster using the following command:
 
 ```bash
-ansible-playbook site.yml -i inventory/hosts.ini
+ansible-playbook site.yml -i inventory/my-cluster/hosts.ini
 ```
 
-After deployment control plane will be accessible via virtual ip address which is defined in `inventory/group_vars/all.yml` as `apiserver_endpoint`
+After deployment control plane will be accessible via virtual ip address which is defined in `inventory/my-cluster/group_vars/all.yml` as `apiserver_endpoint`
 
 ## Removing
 
 To remove k3s from the nodes
 
 ```bash
-ansible-playbook reset.yml -i inventory/hosts.ini
+ansible-playbook reset.yml -i inventory/my-cluster/hosts.ini
 ```
 
 ## kube config
@@ -74,7 +74,7 @@ scp debian@master_ip:~/.kube/config ~/.kube/config
 
 ## Testing your cluster
 
-Be sure you can ping your VIP defined in `inventory/group_vars/all.yml` as `apiserver_endpoint`
+Be sure you can ping your VIP defined in `inventory/my-cluster/group_vars/all.yml` as `apiserver_endpoint`
 
 ```bash
 ping 192.168.30.222
@@ -106,7 +106,7 @@ kubectl apply -f example/service.yml
 ```
 
 
-Check service and be sure it has an IP from metal lb as defined in `inventory/group_vars/all.yml`
+Check service and be sure it has an IP from metal lb as defined in `inventory/my-cluster/group_vars/all.yml`
 
 ```bash
 kubectl describe service nginx
