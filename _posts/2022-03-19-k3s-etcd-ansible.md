@@ -12,7 +12,7 @@ Setting up k3s is hard.  That's why we made it easy.  Today we'll set up a High 
 
 A HUGE THANKS to our sponsor, Micro Center! 
 
-New Customers Exclusive – Get a Free 240gb SSD at Micro Center: https://micro.center/1043bc
+New Customers Exclusive – Get a Free 240gb SSD at Micro Center: <https://micro.center/1043bc>
 
 📺 [Watch Video](https://www.youtube.com/watch?v=CbkEWcUZ7zM)
 
