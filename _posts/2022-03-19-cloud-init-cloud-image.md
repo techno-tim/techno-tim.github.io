@@ -12,7 +12,7 @@ Using Cloud Images and Cloud Init with Proxmox is easy, fast, efficient, and fun
 
 📺 [Watch Video](https://www.youtube.com/watch?v=shiIi38cJe4)
 
-## Intructions
+## Instructions
 
 Choose your [Ubuntu Cloud Image](https://cloud-images.ubuntu.com/)
 
@@ -28,7 +28,7 @@ Create a new virtual machine
 qm create 8000 --memory 2048 --core 2 --name ubuntu-cloud --net0 virtio,bridge=vmbr0
 ```
 
-Import the downloaded Ubuntut disk to local-lvm storage
+Import the downloaded Ubuntu disk to local-lvm storage
 
 ```bash
 qm importdisk 8000 focal-server-cloudimg-amd64.img local-lvm
@@ -46,7 +46,7 @@ Add cloud init drive
 qm set 8000 --ide2 local-lvm:cloudinit
 ```
 
-Make the clud init drive bootable and restrict BIOS to boot from disk only
+Make the cloud init drive bootable and restrict BIOS to boot from disk only
 
 ```bash
 qm set 8000 --boot c --bootdisk scsi0
