@@ -12,7 +12,9 @@ Are you ready to start automating your smart home with the power of open source?
 
 [Watch Video](https://www.youtube.com/watch?v=DK_Gdtn_wvw)
 
+See all the hardware I recommend at <https://l.technotim.live/gear>
 
+Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
 
 `configuration.yaml`
 

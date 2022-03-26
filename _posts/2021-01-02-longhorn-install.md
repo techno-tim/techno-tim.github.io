@@ -13,6 +13,9 @@ Storage in Kubernetes is hard, complicated, and messy.  Configuring volumes, mou
 
 [Watch Video](https://www.youtube.com/watch?v=eKBBHc0t7bc)
 
+See all the hardware I recommend at <https://l.technotim.live/gear>
+
+Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
 
 ## install
 
@@ -31,11 +34,9 @@ sudo apt install nfs-common open-iscsi
 
 ### kubectl
 
-
 ```bash
 kubectl apply -f https://raw.githubusercontent.com/longhorn/longhorn/master/deploy/longhorn.yaml
 ```
-
 
 ```bash
 kubectl get pods \
@@ -44,7 +45,6 @@ kubectl get pods \
 ```
 
 See more at [https://longhorn.io/docs/1.0.0/deploy/install/install-with-kubectl](https://longhorn.io/docs/1.0.0/deploy/install/install-with-kubectl)
-
 
 ### helm
 
@@ -59,7 +59,6 @@ helm install longhorn ./longhorn/chart/ --namespace longhorn-system
 kubectl -n longhorn-system get pod
 ```
 
-
 ## taints
 
 I ended up tainting my storage nodes using this command
@@ -69,10 +68,8 @@ kubectl taint nodes luna-01 luna-02 luna-03 luna-04 CriticalAddonsOnly=true:NoEx
 kubectl taint nodes luna-01 luna-02 luna-03 luna-04 StorageOnly=true:NoExecute
 ```
 
-
 Then applying that toleration to Lonhorn in settings
 
 `StorageOnly=true:NoExecute;CriticalAddonsOnly=true:NoExecute`
 
 This ensures that the storage nodes won't take on any general workloads and still allow Lonhorn to use these as storage.
-

@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: example-workload-deployment
-  namespace: public
 spec:
   selector:
     matchLabels:

@@ -10,14 +10,19 @@ tags: homelab proxmox homelab
 
 After setting up my Proxmox servers, there are a few thigns I do before I use them for their intended purpose.  This ranges from updates, to storage, to networking and VLANS, to uploading ISOs, to clustering, and more.  Join me as we pick up where the rest of the proxmox tutorials stop, and that's everything you need to do to make these production ready (and maybe a bonus item too).
 
-
 [Watch Video](https://www.youtube.com/watch?v=GoZaMgEgrHw)
 
+See all the hardware I recommend at <https://l.technotim.live/gear>
+
+Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
 
 ## Updates
+
 Edit `/etc/apt/sources.list`
 
-```
+### Proxmox Version 6.X
+
+```bash
 deb http://ftp.us.debian.org/debian buster main contrib
 
 deb http://ftp.us.debian.org/debian buster-updates main contrib
@@ -29,13 +34,28 @@ deb http://security.debian.org buster/updates main contrib
 deb http://download.proxmox.com/debian buster pve-no-subscription
 ```
 
+### Proxmox Version 7.X
+
+(for a full guide on Proxmox 7, please [see this link](https://docs.technotim.live/posts/proxmox-7/))
+
+```bash
+deb http://ftp.debian.org/debian bullseye main contrib
+
+deb http://ftp.debian.org/debian bullseye-updates main contrib
+
+# security updates
+deb http://security.debian.org/debian-security bullseye-security main contrib
+
+# PVE pve-no-subscription repository provided by proxmox.com,
+# NOT recommended for production use
+deb http://download.proxmox.com/debian/pve bullseye pve-no-subscription
+```
 
 Edit `/etc/apt/sources.list.d/pve-enterprise.list`
 
-```
+```bash
 # deb https://enterprise.proxmox.com/debian/pve buster pve-enterprise
 ```
-
 
 Run
 
@@ -52,7 +72,6 @@ reboot
 ```
 
 ## Storage
-
 
 BE CAREFUL.  This will wipe your disks.
 
@@ -74,7 +93,7 @@ See [Proxmox PCI Passthrough](https://pve.proxmox.com/wiki/Pci_passthrough)
 
 `nano /etc/default/grub`
 
-```
+```bash
 GRUB_CMDLINE_LINUX_DEFAULT="quiet intel_iommu=on"
 ```
 
@@ -82,7 +101,7 @@ GRUB_CMDLINE_LINUX_DEFAULT="quiet intel_iommu=on"
 
 Edit `/etc/modules`
 
-```
+```bash
 vfio
 vfio_iommu_type1
 vfio_pci
@@ -102,7 +121,8 @@ nano /etc/network/interfaces
 ```
 
 Set your VLAN here
-```
+
+```bash
 bridge-vlan-aware yes
 bridge-vids 20
 ```
@@ -139,8 +159,7 @@ iface vmbr0 inet static
 #lacp nic team
 ```
 
-**If you're running Proxmox 7, see the modified [config here](https://techno-tim.github.io/posts/proxmox-7/) for LAGG / LACP**
-
+**If you're running Proxmox 7, see the modified [config here](https://docs.technotim.live/posts/proxmox-7/) for LAGG / LACP**
 
 ## Cloning
 
@@ -176,8 +195,6 @@ regenerate ssh keys
 regen ssh keys
 sudo rm /etc/ssh/ssh_host_*
 sudo dpkg-reconfigure openssh-server
-
 ```
-
 
 reboot

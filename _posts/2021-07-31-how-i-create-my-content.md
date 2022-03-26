@@ -12,5 +12,7 @@ People have asked how I've been able to create and grow a Tech YouTube channel a
 
 [Watch Video](https://www.youtube.com/watch?v=SivkS9Ug5dw)
 
+See all the hardware I recommend at <https://l.technotim.live/gear>
 
-(see video description for gear links)
+
+Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
