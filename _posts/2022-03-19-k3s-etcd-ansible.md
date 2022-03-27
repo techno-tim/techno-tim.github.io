@@ -49,6 +49,17 @@ node
 
 Edit `inventory/my-cluster/group_vars/all.yml`  to your liking.  See comments inline.
 
+The variables I used in the video are:
+
+*Note: These are for an advanced use case. There isn't a one size fits all setting for everyone and their needs, I would try using k3s without these before changing.  This could have undesired effects like nodes going offline, pods jumping or being removed, etc...*
+
+
+```yaml
+extra_server_args: "--no-deploy servicelb --no-deploy traefik --write-kubeconfig-mode 644 --kube-apiserver-arg default-not-ready-toleration-seconds=30 --kube-apiserver-arg default-unreachable-toleration-seconds=30 --kube-controller-arg node-monitor-period=20s --kube-controller-arg node-monitor-grace-period=20s --kubelet-arg node-status-update-frequency=5s"
+extra_agent_args: "--kubelet-arg node-status-update-frequency=5s"
+```
+
+
 Start provisioning of the cluster using the following command:
 
 ```bash
