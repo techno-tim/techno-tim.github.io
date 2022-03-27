@@ -58,7 +58,7 @@ extra_server_args: "--no-deploy servicelb --no-deploy traefik --write-kubeconfig
 extra_agent_args: "--kubelet-arg node-status-update-frequency=5s"
 ```
 
-It's best to start use these args, and optionally include `traefik` if you want it installed with `k3s`
+It's best to start using these args, and optionally include `traefik` if you want it installed with `k3s`
 
 ```yaml
 extra_server_args: "--no-deploy servicelb --no-deploy traefik"
