@@ -78,7 +78,7 @@ After deployment control plane will be accessible via virtual ip address which i
 
 ## Removing
 
-To remove k3s from the nodes.  These nodes should be rebooted afterwards due to VIP still being preset
+To remove k3s from the nodes.  These nodes should be rebooted afterwards due to VIP still being present
 
 ```bash
 ansible-playbook reset.yml -i inventory/my-cluster/hosts.ini
