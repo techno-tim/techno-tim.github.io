@@ -147,6 +147,10 @@ kubectl delete -f example/deployment.yml
 kubectl delete -f example/service.yml
 ```
 
+## Troubleshooting
+
+Be sure to see [this post on](https://github.com/techno-tim/k3s-ansible/discussions/20) how to troubleshoot common problems
+
 
 ## Links
 
