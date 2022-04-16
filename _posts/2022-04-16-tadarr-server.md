@@ -12,7 +12,7 @@ Tdarr is a distributed transcoding system that runs on on Windows, Mac, Linux, A
 
 A HUGE THANKS to our sponsor, Micro Center! 
 
-New Customers Exclusive – Get a Free 240gb SSD at Micro Center: <https://micro.center/a643c4>
+New Customers Exclusive – Get a Free 256gb SSD at Micro Center: <https://micro.center/a643c4>
 
 📺 [Watch Video](https://www.youtube.com/watch?v=UA1Sktq40pA)
 
