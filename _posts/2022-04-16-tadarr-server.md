@@ -89,7 +89,6 @@ services:
 }
 ```
 
-
 ## Links
 
 ⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>
