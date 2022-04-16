@@ -2,7 +2,7 @@
 layout: post
 title: "Building your first Dockerfile, Image, and Container"
 date: 2022-02-26 8:00:00 -0500
-categories: homelab
+categories: docker
 tags: docker docker-compose container image
 ---
 
