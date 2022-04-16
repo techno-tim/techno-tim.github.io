@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "I Freed Up 700GB+ Converting my Videos Using Tdarr"
-date: 2022-03-26 10:00:00 -0500
+date: 2022-04-16 10:00:00 -0500
 categories: homelab 
 tags: tdarr plex
 ---
