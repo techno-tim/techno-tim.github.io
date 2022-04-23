@@ -196,6 +196,9 @@ sudo apt-get install qemu-guest-agent
 ```bash
 sudo  ufw default deny incoming
 ```
+```bash
+sudo ufw default allow outgoing
+```
 
 ```bash
 sudo ufw allow ssh
