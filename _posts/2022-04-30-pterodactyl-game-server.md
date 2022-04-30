@@ -223,6 +223,30 @@ Restart the stack
 docker-compose up -d --force-recreate
 ```
 
+## Troubleshooting
+
+### Missing Metrics
+
+
+If you aren't seeing your stats in the console
+
+
+```bash
+sudo nano /etc/default/grub
+
+```
+
+add:
+
+```bash
+GRUB_CMDLINE_LINUX="cgroup_enable=memory swapaccount=1"
+```
+
+```bash
+sudo update-grub
+sudo reboot
+```
+
 ## Links
 
 ⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>
