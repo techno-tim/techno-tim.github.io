@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "I Built the PERFECT Game Server with Pterodactyl and Docker"
-date: 2022-04-30 10:00:00 -0500
+date: 2022-04-30 08:00:00 -0500
 categories: homelab 
 tags: gaming pterodactyl docker redis mariabdb opensource
 ---
