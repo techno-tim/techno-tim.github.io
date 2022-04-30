@@ -241,7 +241,6 @@ If you aren't seeing your stats in the console
 
 ```bash
 sudo nano /etc/default/grub
-
 ```
 
 add:
