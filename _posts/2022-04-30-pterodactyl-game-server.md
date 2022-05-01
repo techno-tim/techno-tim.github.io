@@ -254,6 +254,11 @@ sudo update-grub
 sudo reboot
 ```
 
+
+## Kubernetes
+
+If you are looking to install the Pterodactyl Panel on kubernetes, [see the manifests here](https://github.com/techno-tim/launchpad/tree/master/kubernetes/pterodactyl).
+
 ## Links
 
 ⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>
