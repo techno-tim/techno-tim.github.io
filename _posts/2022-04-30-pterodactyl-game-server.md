@@ -243,10 +243,10 @@ If you aren't seeing your stats in the console
 sudo nano /etc/default/grub
 ```
 
-add:
+add additional parameters to `GRUB_CMDLINE_LINUX_DEFAULT`
 
 ```bash
-GRUB_CMDLINE_LINUX="cgroup_enable=memory swapaccount=1"
+GRUB_CMDLINE_LINUX_DEFAULT="swapaccount=1 systemd.unified_cgroup_hierarchy=1"
 ```
 
 ```bash
