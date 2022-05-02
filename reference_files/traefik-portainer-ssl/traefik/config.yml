@@ -101,7 +101,15 @@ http:
         - https-redirectscheme
       tls: {}
       service: opnsense
-   
+    pterodactyl:
+      entryPoints:
+        - "https"
+      rule: "Host(`pterodactyl.local.kmcyber.net`)"
+      middlewares:
+        - default-headers
+        - https-redirectscheme
+      tls: {}
+      service: pterodactyl
 
 #endregion
 #region services
@@ -160,6 +168,11 @@ http:
       loadBalancer:
         servers:
           - url: "https://192.168.0.109"
+        passHostHeader: true
+    pterodactyl:
+      loadBalancer:
+        servers:
+          - url: "http://192.168.0.110:80"
         passHostHeader: true
 #endregion
   middlewares:
