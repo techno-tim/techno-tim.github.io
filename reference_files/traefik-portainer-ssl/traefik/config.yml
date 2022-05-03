@@ -104,7 +104,7 @@ http:
     pterodactyl:
       entryPoints:
         - "https"
-      rule: "Host(`pterodactyl.local.kmcyber.net`)"
+      rule: "Host(`pterodactyl.local.example.com`)"
       middlewares:
         - default-headers
         - https-redirectscheme
