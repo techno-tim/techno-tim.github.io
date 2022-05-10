@@ -60,7 +60,7 @@ qm set 8000 --serial0 socket --vga serial0
 
 **DO NOT START YOUR VM**
 
-Now, configure hardware and cloud init, then create a template and clone.  If you want to expand your hard drive you can on this base image before creating a template or after you clone a new machine.  I pefere to expand the hard drive after I clone a new machine based on need.
+Now, configure hardware and cloud init, then create a template and clone.  If you want to expand your hard drive you can on this base image before creating a template or after you clone a new machine.  I prefer to expand the hard drive after I clone a new machine based on need.
 
 ## Troubleshooting
 
@@ -68,7 +68,7 @@ If you need to reset your machine-id
 
 ```bash
 sudo rm -f /etc/machine-id
-sduo rm -f /var/lib/dbus/machine-id
+sudo rm -f /var/lib/dbus/machine-id
 ```
 
 Then shut it down and do not boot it up.  A new id will be generated the next time it boots.  If it does not you can run:
