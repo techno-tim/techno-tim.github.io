@@ -92,7 +92,7 @@ extra_agent_args: ""
 Start provisioning of the cluster using the following command:
 
 ```bash
-ansible-playbook ./playbooks/site.yml -i inventory/my-cluster/hosts.ini
+ansible-playbook ./playbooks/site.yml -i ./inventory/my-cluster/hosts.ini
 ```
 
 **note: add --ask-pass --ask-become-pass if you are using password SSH login**
@@ -104,7 +104,7 @@ After deployment control plane will be accessible via virtual ip address which i
 To remove k3s from the nodes.  These nodes should be rebooted afterwards due to VIP still being present
 
 ```bash
-ansible-playbook ./playbooks/reset.yml -i inventory/my-cluster/hosts.ini
+ansible-playbook ./playbooks/reset.yml -i ./inventory/my-cluster/hosts.ini
 ```
 
 ## kube config
