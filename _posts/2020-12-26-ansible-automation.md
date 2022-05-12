@@ -115,7 +115,7 @@ ansible-playbook ./playbooks/apt.yml --user someuser --ask-pass --ask-become-pas
       state: started
 ```
 
-`timezonsync.conf`
+`timesyncd.conf`
 
 ```conf
 #  This file is part of systemd.
