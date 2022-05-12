@@ -20,15 +20,39 @@ New Customers Exclusive – Get a Free 240gb SSD at Micro Center: <https://micro
 
 First, you'll need Ansible installed.  Here's an easy way to [install Ansible](https://docs.technotim.live/posts/ansible-automation/) and a video if you need.
 
+Second, you'll need to provision the VMs. Here's an easy way to create [perfect Proxmox templates with cloud image and cloud init](https://docs.technotim.live/posts/cloud-init-cloud-image/) and a video if you need.
+
 Next, you'll need to fork and clone [the repo](https://github.com/techno-tim/k3s-ansible).  While you're at it, give it a ⭐ too :).
 
-## Installing k3s
+```bash
+git clone https://github.com/techno-tim/k3s-ansible
+```
 
 Next, you'll want to copy the `sample` directory within the `inventory` directory.
 
 ```bash
-cp -R inventory/sample inventory/my-cluster
+cp -R k3s-ansible/inventory/sample inventory/my-cluster
 ```
+
+Next, copy the `roles` directory into your playbook directory.
+
+```bash
+cp -R k3s-ansible/roles playbooks/roles
+```
+
+Now copy the `site.yml` to your playbooks directory.
+
+```bash
+cp k3s-ansible/site.yml playbooks/site.yml
+```
+
+For later on, we will also need the `reset.yml` playbook.
+
+```bash
+cp k3s-ansible/reset.yml playbooks/reset.yml
+```
+
+## Installing k3s
 
 Next, edit the `inventory/my-cluster/hosts.ini` to match your systems.  DNS works here too.
 
@@ -65,11 +89,10 @@ extra_server_args: "--no-deploy servicelb --no-deploy traefik"
 extra_agent_args: ""
 ```
 
-
 Start provisioning of the cluster using the following command:
 
 ```bash
-ansible-playbook site.yml -i inventory/my-cluster/hosts.ini
+ansible-playbook ./playbooks/site.yml -i inventory/my-cluster/hosts.ini
 ```
 
 **note: add --ask-pass --ask-become-pass if you are using password SSH login**
@@ -81,7 +104,7 @@ After deployment control plane will be accessible via virtual ip address which i
 To remove k3s from the nodes.  These nodes should be rebooted afterwards due to VIP still being present
 
 ```bash
-ansible-playbook reset.yml -i inventory/my-cluster/hosts.ini
+ansible-playbook ./playbooks/reset.yml -i inventory/my-cluster/hosts.ini
 ```
 
 ## kube config
@@ -108,7 +131,7 @@ kubectl get nodes
 Deploying a sample `nginx` workload
 
 ```bash
-kubectl apply -f example/deployment.yml
+kubectl apply -f k3s-ansible/example/deployment.yml
 ```
 
 Check to be sure it was deployed
@@ -121,7 +144,7 @@ kubectl describe deployment nginx
 Deploying a sample `nginx` service with a `LoadBalancer`
 
 ```bash
-kubectl apply -f example/service.yml
+kubectl apply -f k3s-ansible/example/service.yml
 ```
 
 
@@ -143,8 +166,8 @@ You should see the `nginx` welcome page.
 You can clean this up by running
 
 ```bash
-kubectl delete -f example/deployment.yml
-kubectl delete -f example/service.yml
+kubectl delete -f k3s-ansible/example/deployment.yml
+kubectl delete -f k3s-ansible/example/service.yml
 ```
 
 ## Troubleshooting
