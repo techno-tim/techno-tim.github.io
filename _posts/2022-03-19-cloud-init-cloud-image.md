@@ -62,6 +62,18 @@ qm set 8000 --serial0 socket --vga serial0
 
 Now, configure hardware and cloud init, then create a template and clone.  If you want to expand your hard drive you can on this base image before creating a template or after you clone a new machine.  I prefer to expand the hard drive after I clone a new machine based on need.
 
+Create template.
+
+```bash
+qm template 8000
+```
+
+Clone template.
+
+```bash
+qm clone 8000 135 --name yoshi --full
+```
+
 ## Troubleshooting
 
 If you need to reset your machine-id
