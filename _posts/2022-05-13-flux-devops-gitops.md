@@ -82,7 +82,7 @@ flux create image repository podinfo \
 --export > ./clusters/my-cluster/podinfo-registry.yaml
 ```
 
-Create `ImageRepository` policy
+Create `ImagePolicy`
 
 ```bash
 flux create image policy podinfo \
@@ -91,7 +91,7 @@ flux create image policy podinfo \
 --export > ./clusters/my-cluster/podinfo-policy.yaml
 ```
 
-Then deploy the `ImageRepository` and `ImageRepository`
+Then deploy the `ImageRepository` and `ImagePolicy `
 
 ```bash
 git add -A && \
