@@ -3,14 +3,14 @@ layout: post
 title: "The FASTEST way to deploy apps to Kubernetes"
 date: 2022-05-13 08:00:00 -0500
 categories: homelab 
-tags: flux devops gitops kubenetes
+tags: flux devops gitops kubernetes
 ---
 
 [![The FASTEST way to deploy apps to Kubernetes](https://img.youtube.com/vi/PFLimPh5-wo/0.jpg)](https://www.youtube.com/watch?v=PFLimPh5-wo "The FASTEST way to deploy apps to Kubernetes")
 
 I think I found the perfect GitOps and DevOps toolkit with FluxCD and Kubernetes.  Flux is an open source GitOps solution that helps your deploy app and infrastructure with automation.  It can monitor git  repositories, source control, image container repositories, helm repositories, and more.  It can install apps using Kustomize, Helm, Kubernetes manifests so it's designed to fit into your existing workflow.  It can even push alerts to your chat system letting you know when deployments happen.  In this tutorial we'll cover all of this and more.
 
-<https://fluxcd.io/>
+<https://fluxcd.io>
 
 Be sure to ⭐ the [Flux GitHub repo](https://github.com/fluxcd/flux2)
 
@@ -20,10 +20,9 @@ Be sure to ⭐ the [Flux GitHub repo](https://github.com/fluxcd/flux2)
 
 If you're looking to install your own Kubernetes cluster, be sure to check out [this video that creates a cluster with Ansible](https://www.youtube.com/watch?v=CbkEWcUZ7zM)
 
-
 ## Reference Repo
 
-If you're looking for the repo I created this in video, you can [find it here](https://github.com/techno-tim/flux-demo)
+If you're looking for the repo I created this in video, you can [find it here](https://l.technotim.live/quick-start)
 
 ## Install Flux CLI
 
@@ -31,11 +30,9 @@ If you're looking for the repo I created this in video, you can [find it here](h
 curl -s https://fluxcd.io/install.sh | sudo bash
 ```
 
-
 ## Installing Flux using a GitHub Repo
 
 You'll need to grab a personal access token from [here](https://github.com/settings/tokens)
-
 
 ```bash
 flux bootstrap github \
@@ -44,13 +41,11 @@ flux bootstrap github \
   --repository=flux \
   --branch=main \
   --path=clusters/home \
-  --personal
+  --personal \
   --token-auth
 ```
 
-
 Check flux pods
-
 
 ```bash
 kubectl get pods -n flux-system
@@ -58,27 +53,25 @@ kubectl get pods -n flux-system
 
 ## Source Controller (installing manifests)
 
-See reference repo for files
+See [reference repo](https://l.technotim.live/quick-start) for files
 
 ## Helm Controller (installing helm charts)
 
-See reference repo for files.
-
+See [reference repo](https://l.technotim.live/quick-start) for files.
 
 ## Image Automation Controller (monitoring a container registry)
 
-See reference repo for files.
+See [reference repo](https://l.technotim.live/quick-start) for files.
 
 First create a workload (see redis deployment file)
 
 Deploy the workload  (`deployment.yml`)
 
-```
+```bash
 git add -A && \
 git commit -m "add redis deployment" && \
 git push origin main
 ```
-
 
 Create `ImageRepository`
 
@@ -91,7 +84,6 @@ flux create image repository podinfo \
 
 Create `ImageRepository` policy
 
-
 ```bash
 flux create image policy podinfo \
 --image-ref=podinfo \
@@ -101,7 +93,7 @@ flux create image policy podinfo \
 
 Then deploy the `ImageRepository` and `ImageRepository`
 
-```
+```bash
 git add -A && \
 git commit -m "add podinfo image scan" && \
 git push origin main
@@ -138,7 +130,6 @@ flux create image update flux-system \
 
 Commit and deploy
 
-
 ```bash
 git add -A && \
 git commit -m "add image updates automation" && \
@@ -153,13 +144,11 @@ flux reconcile kustomization flux-system --with-source
 
 Now do a git pull to see that flux has applied the tags
 
-
 ```bash
 git pull
 ```
 
 Your `deployment.yml` should be updated and it should be deployed to your cluster!
-
 
 ```yml
     spec:
@@ -167,10 +156,6 @@ Your `deployment.yml` should be updated and it should be deployed to your cluste
       - name: redis
         image: redis:6.0.16 # {"$imagepolicy": "flux-system:redis"}
 ```
-
-
-
-
 
 ## Links
 
