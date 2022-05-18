@@ -157,6 +157,58 @@ Your `deployment.yml` should be updated and it should be deployed to your cluste
         image: redis:6.0.16 # {"$imagepolicy": "flux-system:redis"}
 ```
 
+## Notifications
+
+Create a secret
+
+```bash
+kubectl -n flux-system create secret generic discord-url \
+--from-literal=address=https://discord.com/api/webhooks/YOUR/WEBHOOK/URL
+```
+
+Create a notification provider
+
+```yaml
+apiVersion: notification.toolkit.fluxcd.io/v1beta1
+kind: Provider
+metadata:
+  name: discord
+  namespace: flux-system
+spec:
+  type: discord
+  channel: general
+  secretRef:
+    name: discord-url
+```
+
+Define an Alert
+
+```yaml
+apiVersion: notification.toolkit.fluxcd.io/v1beta1
+kind: Alert
+metadata:
+  name: on-call-webapp
+  namespace: flux-system
+spec:
+  providerRef:
+    name: discord
+  eventSeverity: info
+  eventSources:
+    - kind: GitRepository
+      name: '*'
+    - kind: Kustomization
+      name: '*'
+```
+
+Get alerts
+
+```bash
+kubectl -n flux-system get alerts
+
+NAME             READY   STATUS        AGE
+on-call-webapp   True    Initialized   1m
+```
+
 ## Links
 
 ⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>
