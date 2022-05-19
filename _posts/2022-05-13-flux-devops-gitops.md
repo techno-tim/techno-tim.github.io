@@ -2,7 +2,7 @@
 layout: post
 title: "The FASTEST way to deploy apps to Kubernetes"
 date: 2022-05-13 08:00:00 -0500
-categories: homelab 
+categories: kubernetes 
 tags: flux devops gitops kubernetes
 ---
 
