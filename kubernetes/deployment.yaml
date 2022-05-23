@@ -7,7 +7,7 @@ spec:
   selector:
     matchLabels:
       app: technotim-docs
-  replicas: 2
+  replicas: 3
   progressDeadlineSeconds: 600
   revisionHistoryLimit: 3
   strategy:
@@ -34,5 +34,14 @@ spec:
             cpu: "250m" 
         ports: 
         - containerPort: 80
+      affinity:
+          podAntiAffinity:
+            preferredDuringSchedulingIgnoredDuringExecution:
+            - podAffinityTerm:
+                labelSelector:
+                  matchLabels:
+                    name: technotim-docs
+                topologyKey: kubernetes.io/hostname
+              weight: 100
       imagePullSecrets: 
       - name: registry-credentials-gitlab
