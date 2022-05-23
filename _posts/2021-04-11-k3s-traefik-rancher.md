@@ -14,9 +14,9 @@ This guide is for installing `traefik 2` on `k3s`.  If you're not using rancher,
 
 It assumes you have followed:
 
-* [HIGH AVAILABILITY k3s (Kubernetes) in minutes!](https://www.youtube.com/watch?v=UoOcLXfa8EU)
-
-* [High Availability Rancher on a Kubernetes Cluster](https://www.youtube.com/watch?v=APsZJbnluXg)
+* [Fully Automated K3S etcd High Availability Install](https://www.youtube.com/watch?v=CbkEWcUZ7zM)
+* (or) [HIGH AVAILABILITY k3s (Kubernetes) in minutes!](https://www.youtube.com/watch?v=UoOcLXfa8EU)
+* (if you need rancher) [High Availability Rancher on a Kubernetes Cluster](https://www.youtube.com/watch?v=APsZJbnluXg)
 
 There is a little bit of "undoing" we'll have to do since k3s ships with `traefik` and Rancher doesn't play well with service load balancer. So, we'll pick up after instaling these two.
 
