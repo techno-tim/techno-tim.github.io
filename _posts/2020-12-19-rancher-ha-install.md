@@ -55,7 +55,7 @@ user rancher generated (default)
 install `cert-manager`
 
 ```bash
-kubectl apply --validate=false -f https://github.com/jetstack/cert-manager/releases/download/v1.2.0/cert-manager.crds.yaml
+kubectl apply --validate=false -f https://github.com/jetstack/cert-manager/releases/download/v1.7.1/cert-manager.crds.yaml
 ```
 
 create name-space for `cert-manager`
@@ -86,7 +86,7 @@ the contents of "/etc/rancher/k3s/k3s.yaml" to "~/.kube/config" to resolve the i
 helm install \
   cert-manager jetstack/cert-manager \
   --namespace cert-manager \
-  --version v1.2.0
+  --version v1.7.1
 ```
 
 check rollout of cert-manager
