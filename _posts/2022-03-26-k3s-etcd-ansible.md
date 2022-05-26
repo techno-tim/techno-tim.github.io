@@ -170,6 +170,11 @@ kubectl delete -f k3s-ansible/example/deployment.yml
 kubectl delete -f k3s-ansible/example/service.yml
 ```
 
+## What's next?
+See here to get the steps for installing [traefik](https://docs.technotim.live/posts/k3s-traefik-rancher/#install-traefik-2)
+
+See here for steps to deploy [rancher](https://docs.technotim.live/posts/rancher-ha-install/#install)
+
 ## Troubleshooting
 
 Be sure to see [this post on](https://github.com/techno-tim/k3s-ansible/discussions/20) how to troubleshoot common problems
