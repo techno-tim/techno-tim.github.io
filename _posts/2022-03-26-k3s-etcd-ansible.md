@@ -73,20 +73,20 @@ node
 
 Edit `inventory/my-cluster/group_vars/all.yml`  to your liking.  See comments inline.
 
-The variables I used in the video are below but...
-
-*Note: These are for an advanced use case. There isn't a one size fits all setting for everyone and their needs, I would try using k3s without these before changing.  This could have undesired effects like nodes going offline, pods jumping or being removed, etc... This might come at the cost of stability*
-
-```yaml
-extra_server_args: "--no-deploy servicelb --no-deploy traefik --write-kubeconfig-mode 644 --kube-apiserver-arg default-not-ready-toleration-seconds=30 --kube-apiserver-arg default-unreachable-toleration-seconds=30 --kube-controller-arg node-monitor-period=20s --kube-controller-arg node-monitor-grace-period=20s --kubelet-arg node-status-update-frequency=5s"
-extra_agent_args: "--kubelet-arg node-status-update-frequency=5s"
-```
-
-It's best to start using these args, and optionally include `traefik` if you want it installed with `k3s`
+It's best to start using these args, and optionally include `traefik` if you want it installed with `k3s` however I would recommend installing it later ith `helm`
 
 ```yaml
 extra_server_args: "--no-deploy servicelb --no-deploy traefik"
 extra_agent_args: ""
+```
+
+*Note: These are for an advanced use case. There isn't a one size fits all setting for everyone and their needs, I would try using k3s without these before changing.  This could have undesired effects like nodes going offline, pods jumping or being removed, etc... This might come at the cost of stability*
+
+I would not use these unless you know what you are doing.  It will most likely not work for you but listing for posterity.
+
+```yaml
+extra_server_args: "--no-deploy servicelb --no-deploy traefik --write-kubeconfig-mode 644 --kube-apiserver-arg default-not-ready-toleration-seconds=30 --kube-apiserver-arg default-unreachable-toleration-seconds=30 --kube-controller-arg node-monitor-period=20s --kube-controller-arg node-monitor-grace-period=20s --kubelet-arg node-status-update-frequency=5s"
+extra_agent_args: "--kubelet-arg node-status-update-frequency=5s"
 ```
 
 Start provisioning of the cluster using the following command:
@@ -108,9 +108,10 @@ ansible-playbook ./playbooks/reset.yml -i ./inventory/my-cluster/hosts.ini
 ```
 
 ## kube config
+
 To get access to your Kubernetes cluster and copy your kube config locally run:
 
-```
+```bash
 scp debian@master_ip:~/.kube/config ~/.kube/config
 ```
 
@@ -140,13 +141,11 @@ Check to be sure it was deployed
 kubectl describe deployment nginx
 ```
 
-
 Deploying a sample `nginx` service with a `LoadBalancer`
 
 ```bash
 kubectl apply -f k3s-ansible/example/service.yml
 ```
-
 
 Check service and be sure it has an IP from metal lb as defined in `inventory/my-cluster/group_vars/all.yml`
 
@@ -154,14 +153,13 @@ Check service and be sure it has an IP from metal lb as defined in `inventory/my
 kubectl describe service nginx
 ```
 
-Visit that url or curl 
+Visit that url or curl
 
 ```bash
 curl http://192.168.30.80
 ```
 
 You should see the `nginx` welcome page.
-
 
 You can clean this up by running
 
@@ -171,6 +169,7 @@ kubectl delete -f k3s-ansible/example/service.yml
 ```
 
 ## What's next?
+
 See here to get the steps for installing [traefik](https://docs.technotim.live/posts/k3s-traefik-rancher/#install-traefik-2)
 
 See here for steps to deploy [rancher](https://docs.technotim.live/posts/rancher-ha-install/#install)
