@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Meet Jekyll - The Static Site Generator"
-date: 2022-05-128 10:00:00 -0500
+date: 2022-05-28 10:00:00 -0500
 categories: self-hosted
 tags: jekyll website github gitlab docker
 ---
