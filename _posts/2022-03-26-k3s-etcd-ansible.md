@@ -178,7 +178,6 @@ See here for steps to deploy [rancher](https://docs.technotim.live/posts/rancher
 
 Be sure to see [this post on](https://github.com/techno-tim/k3s-ansible/discussions/20) how to troubleshoot common problems
 
-
 ## Links
 
 ⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>
