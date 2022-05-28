@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Meet Jekyll - The Static Site Generator"
-date: 2022-04-16 10:00:00 -0500
-categories: homelab 
-tags: tdarr plex
+date: 2022-05-128 10:00:00 -0500
+categories: self-hosted
+tags: jekyll website github gitlab docker
 ---
 
 [![Meet Jekyll - The Static Site Generator](https://img.youtube.com/vi/F8iOU1ci19Q/0.jpg)](https://www.youtube.com/watch?v=F8iOU1ci19Q "Meet Jekyll - The Static Site Generator")
