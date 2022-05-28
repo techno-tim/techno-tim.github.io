@@ -38,7 +38,7 @@ echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc
 ```
 
-If you are using `zsh` (you know if you are using this)
+If you are using `zsh` (you know if you are)
 
 ```bash
 echo '# Install Ruby Gems to ~/gems' >> ~/.zshrc
@@ -107,7 +107,6 @@ Create a `Dockerfile` with the following
 
 ```Dockerfile
 FROM nginx:stable-alpine
-
 COPY _site /usr/share/nginx/html
 ```
 
@@ -120,6 +119,12 @@ JEKYLL_ENV=production bundle exec jekyll b
 Then build your image:
 
 `docker build .`
+
+## Markdown Examples
+
+If you need some help with markdown, check out the [markdown cheat sheet](https://www.markdownguide.org/cheat-sheet/)
+
+I have lots of examples in my [documentation site repo](https://github.com/techno-tim/techno-tim.github.io/tree/master/_posts).  Just click on the Raw button to see the code behind the page.
 
 ## Links
 
