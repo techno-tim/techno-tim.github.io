@@ -126,7 +126,7 @@ Then build your image:
 
 Jekyll uses a naming [convention for pages and posts](https://jekyllrb.com/docs/posts/)
 
-Create a file in `_posts` with the formnat
+Create a file in `_posts` with the format
 
 ```file
 YEAR-MONTH-DAY-title.MARKUP
