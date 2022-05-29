@@ -120,7 +120,43 @@ Then build your image:
 
 `docker build .`
 
-## Markdown Examples
+## Creating a Post
+
+### Naming Conventions
+
+Jekyll uses a naming [convention for pages and posts](https://jekyllrb.com/docs/posts/)
+
+Create a file in `_posts` with the formnat
+
+```file
+YEAR-MONTH-DAY-title.MARKUP
+```
+
+For example:
+
+```file
+2022-05-23-homelab-docs.md
+2022-05-34-hardware-specs.md
+```
+
+### Local Linking of Files
+
+Image from asset:
+
+```markdown
+... which is shown in the screenshot below:
+![A screenshot](/assets/screenshot.jpg)
+```
+
+Linking to a file
+
+```markdown
+... you can [download the PDF](/assets/diagram.pdf) here.
+```
+
+See more post formatting rules on the [Jekyll site](https://jekyllrb.com/docs/posts/)
+
+### Markdown Examples
 
 If you need some help with markdown, check out the [markdown cheat sheet](https://www.markdownguide.org/cheat-sheet/)
 
