@@ -162,6 +162,8 @@ If you need some help with markdown, check out the [markdown cheat sheet](https:
 
 I have lots of examples in my [documentation site repo](https://github.com/techno-tim/techno-tim.github.io/tree/master/_posts).  Just click on the Raw button to see the code behind the page.
 
+For more neat syntax for the Chirpy theme check their demo page on making posts <https://chirpy.cotes.page/posts/write-a-new-post/>
+
 ## Links
 
 See [reference repo](https://l.technotim.live/quick-start) for files
