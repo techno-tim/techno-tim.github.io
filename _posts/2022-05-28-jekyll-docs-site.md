@@ -54,7 +54,7 @@ gem install jekyll bundler
 
 ```
 
-## Creating a site basked on Chirpy Starter
+## Creating a site based on Chirpy Starter
 
 Visit <https://github.com/cotes2020/jekyll-theme-chirpy#quick-start>
 
