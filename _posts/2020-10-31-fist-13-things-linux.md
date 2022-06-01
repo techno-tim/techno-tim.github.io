@@ -12,6 +12,10 @@ After setting up my Linux servers, there are a few things I do before I use them
 
 [Watch Video](https://www.youtube.com/watch?v=ZsjK4VDopiE)
 
+See all the hardware I recommend at <https://l.technotim.live/gear>
+
+Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
+
 ## Update
 
 ```bash
@@ -191,6 +195,9 @@ sudo apt-get install qemu-guest-agent
 
 ```bash
 sudo  ufw default deny incoming
+```
+```bash
+sudo ufw default allow outgoing
 ```
 
 ```bash

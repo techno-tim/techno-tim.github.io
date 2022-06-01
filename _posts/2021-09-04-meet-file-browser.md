@@ -12,11 +12,13 @@ Meet [File Browser](https://github.com/filebrowser/filebrowser), an open source,
 
 [Watch Video](https://www.youtube.com/watch?v=W2yZ5_sd9Hc)
 
-(see video description for links to gear, discord, and other ways to connect.)
+See all the hardware I recommend at <https://l.technotim.live/gear>
+
+Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
 
 ## Docker Setup
 
-See [this post](https://techno-tim.github.io/posts/docker-compose-install/) on how to install `docker` and `docker-compose`
+See [this post](https://docs.technotim.live/posts/docker-compose-install/) on how to install `docker` and `docker-compose`
 
 ## Running the container
 

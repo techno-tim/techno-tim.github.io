@@ -1,0 +1,59 @@
+stages:
+  - test
+  - docker
+  - deploy
+
+variables:
+  KUBECONFIG: .kube/config
+  JEKYLL_ENV: production
+  GIT_STRATEGY: clone
+  GIT_DEPTH: 0
+
+cache: &global_cache
+  key: $CI_PROJECT_NAME
+  paths:
+    - vendor/ruby
+  policy: pull-push
+
+build:
+  image: ruby:2.7
+  stage: test
+  artifacts:
+    paths:
+      - _site
+    expire_in: 1 week
+  cache:
+    <<: *global_cache
+  retry: 2
+  script:
+    - gem install bundler
+    - bundle config set --local path 'vendor/ruby'
+    - bundle install
+    - JEKYLL_ENV=production bundle exec jekyll b
+
+docker_image_build_release:
+  image:
+    name: gcr.io/kaniko-project/executor:debug
+    entrypoint: [""]
+  cache: []
+  stage: docker
+  retry: 2
+  script:
+    - mkdir -p /kaniko/.docker
+    - echo "{\"auths\":{\"$CI_REGISTRY\":{\"username\":\"$CI_REGISTRY_USER\",\"password\":\"$CI_REGISTRY_PASSWORD\"}}}" > /kaniko/.docker/config.json
+    - /kaniko/executor --context $CI_PROJECT_DIR --dockerfile $CI_PROJECT_DIR/Dockerfile --destination $CI_REGISTRY_IMAGE:latest
+
+deploy:
+  image: 
+    name: bitnami/kubectl:latest
+    entrypoint: [""]
+  cache: []
+  stage: deploy
+  retry: 2
+  before_script:
+    - sed -ie "s/deploy-date-value/$(date)/g" kubernetes/deployment.yaml
+    - sed -ie "s|registry-value|$CI_REGISTRY_IMAGE|g" kubernetes/deployment.yaml
+    - mkdir -p .kube/ && touch .kube/config
+    - echo ${KUBERNETES_EXTERNAL_CLUSTER} | base64 -d -i > ${KUBECONFIG}    
+  script:
+    - kubectl apply -f kubernetes

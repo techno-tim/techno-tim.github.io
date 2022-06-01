@@ -14,9 +14,9 @@ This guide is for installing `traefik 2` on `k3s`.  If you're not using rancher,
 
 It assumes you have followed:
 
-* [HIGH AVAILABILITY k3s (Kubernetes) in minutes!](https://www.youtube.com/watch?v=UoOcLXfa8EU)
-
-* [High Availability Rancher on a Kubernetes Cluster](https://www.youtube.com/watch?v=APsZJbnluXg)
+* [Fully Automated K3S etcd High Availability Install](https://www.youtube.com/watch?v=CbkEWcUZ7zM)
+* (or) [HIGH AVAILABILITY k3s (Kubernetes) in minutes!](https://www.youtube.com/watch?v=UoOcLXfa8EU)
+* (if you need rancher) [High Availability Rancher on a Kubernetes Cluster](https://www.youtube.com/watch?v=APsZJbnluXg)
 
 There is a little bit of "undoing" we'll have to do since k3s ships with `traefik` and Rancher doesn't play well with service load balancer. So, we'll pick up after instaling these two.
 
@@ -100,7 +100,7 @@ If you choose `IngressRoute` see [IngressRoute](#exposing-a-service-with-traefik
 
 We will be installing this into the `kube-system` namespace, which already exists. If you are going to use anther namespace you will need change it everywhere.
 
-### (Opional) Make sure that persistent volume claim is available
+### (Optional) Make sure that persistent volume claim is available
 
 The dynamic configuration for Traefik is stored in a persistent volume. If you want to persist the certificate, it's better to create one now to claim later.
 
@@ -117,7 +117,7 @@ helm repo update
 
 ### Edit & apply ConfigMap
 
-* Create `traefik-config.yaml` with the contents of `/config/traefik-config.yaml` from [/config](https://github.com/techno-tim/techno-tim.github.io/tree/master/reference_files/traefik2-k3s-rancher/config)
+* Create `traefik-config.yaml` with the contents of `/config/traefik-config.yaml` from [/config](https://github.com/techno-tim/launchpad/tree/master/kubernetes/traefik2-k3s-rancher/config)
 * This holds our cloudflare secrets along with a configmap
 * Update this file with your values
 * Re-check if you have a persistent volume ready to claim
@@ -129,7 +129,7 @@ kubectl apply -f traefik-config.yaml
 
 ### Edit & install Traefik helm chart
 
-* Create `traefik-chart-values.yaml` with the contents of `/config/traefik-chart-values.yaml` from [/config](https://github.com/techno-tim/techno-tim.github.io/tree/master/reference_files/traefik2-k3s-rancher/config)
+* Create `traefik-chart-values.yaml` with the contents of `/config/traefik-chart-values.yaml` from [/config](https://github.com/techno-tim/launchpad/tree/master/kubernetes/traefik2-k3s-rancher/config)
 * Update `loadBalancerIP` in `traefik-chart-values.yaml` with your Metal LB IP
 
 Before running this, be sure you only have one default storage class set.
@@ -217,7 +217,7 @@ kubectl apply -f traefik-config.yaml
 
 ## Exposing a service with traefik IngressRoute
 
-copy the contents of [config-ingress-route/kubernetes](https://github.com/techno-tim/techno-tim.github.io/tree/master/reference_files/traefik2-k3s-rancher/config-ingress-route) to your local machine
+copy the contents of [config-ingress-route/kubernetes](https://github.com/techno-tim/launchpad/tree/master/kubernetes/traefik2-k3s-rancher/config-ingress-route/kubernetes) to your local machine
 
 then run
 
@@ -226,3 +226,7 @@ kubectl apply -f kubernetes
 ```
 
 This will create the deployment, service, and ingress.
+
+See all the hardware I recommend at <https://l.technotim.live/gear>
+
+Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.

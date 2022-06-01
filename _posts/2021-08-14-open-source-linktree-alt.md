@@ -12,13 +12,17 @@ Meet LittleLink & LittleLink-Server  - a DIY, self hosted, and open source alter
 
 [Watch Video](https://www.youtube.com/watch?v=42SqfI_AjXU)
 
+See all the hardware I recommend at <https://l.technotim.live/gear>
+
 (see video description for gear links)
 
 You can find the LittleLink-Server repo [here](https://github.com/techno-tim/littlelink-server).
 
+Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
+
 ## Docker Setup
 
-See [this post](https://techno-tim.github.io/posts/docker-compose-install/) on how to install `docker` and `docker-compose`
+See [this post](https://docs.technotim.live/posts/docker-compose-install/) on how to install `docker` and `docker-compose`
 
 ## Running the container
 
@@ -50,14 +54,14 @@ services:
       - AVATAR_ALT=Techno Tim Profile Pic
       - NAME=TechnoTim
       - BIO=Hey! Just a place where you can connect with me!
-      - GITHUB=https://github.com/timothystewart6
-      - TWITTER=https://twitter.com/TechnoTimLive
-      - INSTAGRAM=https://www.instagram.com/techno.tim
-      - YOUTUBE=https://www.youtube.com/channel/UCOk-gHyjcWZNj3Br4oxwh0A
-      - TWITCH=https://www.twitch.tv/technotim/
-      - DISCORD=https://discord.gg/DJKexrJ
-      - TIKTOK=https://www.tiktok.com/@technotim
-      - KIT=https://kit.co/TechnoTim
+      - GITHUB=https://l.technotim.live/github
+      - TWITTER=https://l.technotim.live/twitter
+      - INSTAGRAM=https://l.technotim.live/instagram
+      - YOUTUBE=https://l.technotim.live/subscribe
+      - TWITCH=https://l.technotim.live/twitch/
+      - DISCORD=https://l.technotim.live/discord
+      - TIKTOK=https://l.technotim.live/tiktok
+      - KIT=https://l.technotim.live/gear
       # - FACEBOOK=https://facebook.com
       # - FACEBOOK_MESSENGER=https://facebook.com
       # - LINKED_IN=https://linkedin.com
@@ -104,14 +108,14 @@ docker run -d \
   -e AVATAR_ALT='Techno Tim Profile Pic' \
   -e NAME='TechnoTim' \
   -e BIO='Hey! Just a place where you can connect with me!' \
-  -e GITHUB='https://github.com/timothystewart6' \
-  -e TWITTER='https://twitter.com/TechnoTimLive' \
-  -e INSTAGRAM='https://www.instagram.com/techno.tim' \
-  -e YOUTUBE='https://www.youtube.com/channel/UCOk-gHyjcWZNj3Br4oxwh0A' \
-  -e TWITCH='https://www.twitch.tv/technotim' \
-  -e DISCORD='https://discord.gg/DJKexrJ' \
-  -e TIKTOK='https://www.tiktok.com/@technotim' \
-  -e KIT='https://kit.co/TechnoTim' \
+  -e GITHUB='https://l.technotim.live/github' \
+  -e TWITTER='https://l.technotim.live/twitter' \
+  -e INSTAGRAM='https://l.technotim.live/instagram' \
+  -e YOUTUBE='https://l.technotim.live/subscribe' \
+  -e TWITCH='https://l.technotim.live/twitch' \
+  -e DISCORD='https://l.technotim.live/discord' \
+  -e TIKTOK='https://l.technotim.live/tiktok' \
+  -e KIT='https://l.technotim.live/gear' \
   --restart unless-stopped \
   ghcr.io/techno-tim/littlelink-server:latest
 ```

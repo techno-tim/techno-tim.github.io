@@ -6,22 +6,33 @@
 -
   type: youtube
   icon: 'fab fa-youtube'
+  url: 'https://l.technotim.live/subscribe'
 -
   type: twitch
   icon: 'fab fa-twitch'
+  url: 'https://l.technotim.live/twitch'
 -
   type: patreon
   icon: 'fab fa-patreon'
-
+  url:  'https://www.patreon.com/technotim'
 -
+  type: discord
+  icon: 'fab fa-discord'
+  url: 'https://l.technotim.live/discord'
+-
+  type: github
+  icon: 'fab fa-github'
+-
+  type: rss
+  icon: 'fas fa-rss'
+  noblank: true
+
 #   type: instagram
 #   icon: 'fab fa-instagram'
 # -
 #   type: facebook
 #   icon: 'fab fa-facebook'
--
-    type: discord
-    icon: 'fab fa-discord'
+
 # -
 #   type: tiktok
 #   icon: 'fab fa-tiktok'
@@ -29,13 +40,6 @@
 #   type: email
 #   icon: 'fas fa-envelope'
 #   noblank: true            # open link in current tab
--
-  type: github
-  icon: 'fab fa-github-alt'
--
-    type: rss
-    icon: 'fas fa-rss'
-    noblank: true
 
 # Uncomment and complete the url below to enable more contact options
 # -

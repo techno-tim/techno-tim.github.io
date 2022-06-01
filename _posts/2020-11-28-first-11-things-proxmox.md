@@ -12,6 +12,10 @@ After setting up my Proxmox servers, there are a few thigns I do before I use th
 
 [Watch Video](https://www.youtube.com/watch?v=GoZaMgEgrHw)
 
+See all the hardware I recommend at <https://l.technotim.live/gear>
+
+Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
+
 ## Updates
 
 Edit `/etc/apt/sources.list`
@@ -32,7 +36,7 @@ deb http://download.proxmox.com/debian buster pve-no-subscription
 
 ### Proxmox Version 7.X
 
-(for a full guide on Proxmox 7, please [see this link](https://techno-tim.github.io/posts/proxmox-7/))
+(for a full guide on Proxmox 7, please [see this link](https://docs.technotim.live/posts/proxmox-7/))
 
 ```bash
 deb http://ftp.debian.org/debian bullseye main contrib
@@ -155,7 +159,7 @@ iface vmbr0 inet static
 #lacp nic team
 ```
 
-**If you're running Proxmox 7, see the modified [config here](https://techno-tim.github.io/posts/proxmox-7/) for LAGG / LACP**
+**If you're running Proxmox 7, see the modified [config here](https://docs.technotim.live/posts/proxmox-7/) for LAGG / LACP**
 
 ## Cloning
 

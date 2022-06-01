@@ -12,9 +12,13 @@ Today, we're going to use SSL for everything.  No more self-sign certs.  No more
 
 [Watch Video](https://www.youtube.com/watch?v=liV3c9m_OX8)
 
+See all the hardware I recommend at <https://l.technotim.live/gear>
+
+Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
+
 ## Docker Setup
 
-See [this post](https://techno-tim.github.io/posts/docker-compose-install/) on how to install `docker` and `docker-compose`
+See [this post](https://docs.technotim.live/posts/docker-compose-install/) on how to install `docker` and `docker-compose`
 
 ## Traefik
 
@@ -28,7 +32,7 @@ chmod 600 acme.json
 touch traefik.yml
 ```
 
-`traefik.config` can be found [here](https://github.com/techno-tim/techno-tim.github.io/tree/master/reference_files/traefik-portainer-ssl/traefik)
+`traefik.yml` can be found [here](https://github.com/techno-tim/techno-tim.github.io/tree/master/reference_files/traefik-portainer-ssl/traefik)
 
 create docker network
 
@@ -94,4 +98,15 @@ nano config.yml
 
 ```bash
 docker-compose up -d --force-recreate
+```
+
+Your folder structure should look like the below, if you are following along with the example.  But feel free to make it however you wish just keep in mind you'll need to change the location in the corresponding files. 
+
+```
+./traefik
+├── data
+│   ├── acme.json
+│   ├── config.yml
+│   └── traefik.yml
+└── docker-compose.yml
 ```

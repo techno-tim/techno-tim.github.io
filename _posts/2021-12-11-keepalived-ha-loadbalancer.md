@@ -12,7 +12,9 @@ In my quest to make my services highly available I decided to use keepalived.  k
 
 [Watch Video](https://www.youtube.com/watch?v=hPfk0qd4xEY)
 
-(see video description for links to gear, discord, and other ways to connect.)
+See all the hardware I recommend at <https://l.technotim.live/gear>
+
+Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
 
 ## Installation
 
@@ -149,4 +151,4 @@ visit your VIP on port `8080`
 
 In this video we covered the PiHole use case.  After setting this up, be sure to check out the tutorial on Gravity Sync
 
-[https://techno-tim.github.io/posts/ha-pi-hold-gravity-sync/](https://techno-tim.github.io/posts/ha-pi-hold-gravity-sync/)
+[https://docs.technotim.live/posts/ha-pi-hold-gravity-sync/](https://docs.technotim.live/posts/ha-pi-hold-gravity-sync/)

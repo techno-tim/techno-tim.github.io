@@ -12,13 +12,17 @@ Have you ever thought about running a Linux desktop inside of a container?  Me n
 
 [Watch Video](https://www.youtube.com/watch?v=Gd9bvdkIXOQ)
 
+See all the hardware I recommend at <https://l.technotim.live/gear>
+
+Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
+
 ## Docker Setup
 
-See [this post](https://techno-tim.github.io/posts/docker-compose-install/) on how to install `docker` and `docker-compose`
+See [this post](https://docs.technotim.live/posts/docker-compose-install/) on how to install `docker` and `docker-compose`
 
 ## Webtop
 
-`docker-compose.yml` and `.env` can be found [here](https://github.com/techno-tim/techno-tim.github.io/tree/master/reference_files/webtop-container/)
+`docker-compose.yml` and `.env` can be found [here](https://github.com/techno-tim/launchpad/tree/master/docker/webtop)
 
 ## Files and folders
 

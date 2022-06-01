@@ -12,11 +12,15 @@ I've been on a quest to find a new logging system.  I've use quite a few in the 
 
 [Watch Video](https://www.youtube.com/watch?v=h_GGd7HfKQ8)
 
-(see video description for links to gear, discord, and other ways to connect.)
+Don't want to host it yourself?  Check out Grafana Cloud and sign up for a free account <https://l.technotim.live/grafana-labs>
+
+See all the hardware I recommend at <https://l.technotim.live/gear>
+
+Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
 
 ## Docker Setup
 
-See [this post](https://techno-tim.github.io/posts/docker-compose-install/) on how to install `docker` and `docker-compose`
+See [this post](https://docs.technotim.live/posts/docker-compose-install/) on how to install `docker` and `docker-compose`
 
 ## Running the container
 
@@ -300,4 +304,4 @@ Credits to this post for the config file: [grafana/loki#2361 (comment)](https://
 
 ## Kubernetes Setup
 
-If you're looking to set this up in kubernetes, see [this post](https://techno-tim.github.io/posts/grafana-loki-kubernetes/)
+If you're looking to set this up in kubernetes, see [this post](https://docs.technotim.live/posts/grafana-loki-kubernetes/)

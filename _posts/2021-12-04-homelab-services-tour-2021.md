@@ -10,10 +10,12 @@ tags: homelab proxmox grafana logging dns dashboard kubernetes certificates shli
 
 After showing off my Home Lab hardware in my late 2021 tour, many of you asked what services are self-hosted in this stack.   This is always a moving target so I decided it was time to share which services I am running here at home.  Today, we walk through everything I am hosting including:  Dashboard, Hypervisor, Virtualization, Containerization, Network Attached Storage (NAS), DNS, Network Management, Home Security, Kubernetes, Kubernetes Storage, Docker, Reverse Proxy, Certificates, Monitoring, Logging, Syncing Data, File Sharing, Self-Promotion (Contact Page), Link Shortening, Home Entertainment, Home Automation, Battery / UPS Monitoring, CMS, Static Site Generators, Dynamic DNS, CI/CD, and many, many others.  Enjoy the virtual tour!
 
-Worth mentioning, I [have videos on almost every service mentioned in this video](https://www.youtube.com/channel/UCOk-gHyjcWZNj3Br4oxwh0A)!
+Worth mentioning, I [have videos on almost every service mentioned in this video](https://l.technotim.live/subscribe)!
 
 [Watch Video](https://www.youtube.com/watch?v=IE5y2_S8S8U)
 
-(see video description for links to gear, discord, and other ways to connect.)
+See all the hardware I recommend at <https://l.technotim.live/gear>
 
-Be sure to check out the [2021 HomeLab hardware tour here](https://techno-tim.github.io/posts/homelab-tour-2021/)
+Be sure to check out the [2021 HomeLab hardware tour here](https://docs.technotim.live/posts/homelab-tour-2021/)
+
+Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files

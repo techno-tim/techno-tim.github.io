@@ -32,7 +32,11 @@ Great Raspberry Pi - Pi-Hole Servers!
 ► Raspberry Pi 4 Kit - [https://amzn.to/3nophDm](https://amzn.to/3nophDm)
 
 [Watch Video](https://www.youtube.com/watch?v=IFVYe3riDRA)
+See all the hardware I recommend at <https://l.technotim.live/gear>
+
 
 If you're looking to have your PiHole instances failover automatically, be sure to check out the documentation on `keepalived`
 
-[Meet keepalived - High Availability and Load Balancing in One](https://techno-tim.github.io/posts/keepalived-ha-loadbalancer/)
+[Meet keepalived - High Availability and Load Balancing in One](https://docs.technotim.live/posts/keepalived-ha-loadbalancer/)
+
+Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.

@@ -16,6 +16,10 @@ We install Rancher, configure a load balancer, install and configure helm, insta
 
 [Watch Video](https://www.youtube.com/watch?v=APsZJbnluXg)
 
+See all the hardware I recommend at <https://l.technotim.live/gear>
+
+Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
+
 ## install
 
 **Note:**
@@ -51,7 +55,7 @@ user rancher generated (default)
 install `cert-manager`
 
 ```bash
-kubectl apply --validate=false -f https://github.com/jetstack/cert-manager/releases/download/v1.2.0/cert-manager.crds.yaml
+kubectl apply --validate=false -f https://github.com/jetstack/cert-manager/releases/download/v1.7.1/cert-manager.crds.yaml
 ```
 
 create name-space for `cert-manager`
@@ -82,7 +86,7 @@ the contents of "/etc/rancher/k3s/k3s.yaml" to "~/.kube/config" to resolve the i
 helm install \
   cert-manager jetstack/cert-manager \
   --namespace cert-manager \
-  --version v1.2.0
+  --version v1.7.1
 ```
 
 check rollout of cert-manager
