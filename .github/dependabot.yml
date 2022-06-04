@@ -9,6 +9,7 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "daily"
-    allow:
+    rebase-strategy: "auto"
+    ignore:
     - dependency-name: "*"
-      update-types: ["version-update:semver-patch"]
+      update-types: ["version-update:semver-major"]
