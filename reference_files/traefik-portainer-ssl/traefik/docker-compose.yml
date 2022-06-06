@@ -18,11 +18,11 @@ services:
       # - CF_API_KEY=YOU_API_KEY
       # be sure to use the correct one depending on if you are using a token or key
     volumes:
-      - /etc/localtime:/etc/localtime:ro
-      - /var/run/docker.sock:/var/run/docker.sock:ro
-      - /home/username/traefik/data/traefik.yml:/traefik.yml:ro
-      - /home/username/traefik/data/acme.json:/acme.json
-      - /home/username/traefik/data/config.yml:/config.yml:ro
+        - /etc/localtime:/etc/localtime:ro
+        - /var/run/docker.sock:/var/run/docker.sock:ro
+        - /home/username/traefik/data/traefik.yml:/traefik.yml:ro
+        - /home/username/traefik/data/acme.json:/acme.json
+        - /home/username/traefik/data/config.yml:/config.yml:ro
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.traefik.entrypoints=http"
