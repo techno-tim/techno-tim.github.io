@@ -12,12 +12,16 @@ If you want to set up Kubernetes at home using Rancher to run Docker containers,
 
 [Watch Video](https://www.youtube.com/watch?v=oILc0ywDVTk)
 
+## Install Docker
+
+To install docker, see [https://docs.technotim.live/posts/docker-compose-install/](https://docs.technotim.live/posts/docker-compose-install/)
+
 See all the hardware I recommend at <https://l.technotim.live/gear>
 
-
 The two paths in the workload configuration need to be reversed:
- - `Path on the Node` should be `mc`
- - `Mount Point` should be `/data`
+
+- `Path on the Node` should be `mc`
+- `Mount Point` should be `/data`
 
 You'll want to use a command similar to this so that there aren't any port conflicts with other services or kubernetes itself.
 
@@ -29,10 +33,9 @@ docker run -d --restart=unless-stopped -p 9090:80 -p 9091:443 --privileged -v /o
 
 ## Troubleshooting
 
-* Make sure you have a static IP on your Rancher host
-* Be sure to use the ports above if you want to add SSL later and use commands in future videos
-* The new UI is now the "Cluster Explorer".  You can toggle between this and the "Cluser Manager" UI by clicking the button.
-* Do not create workloads in the `local` cluster.  This is a management cluster for Rancher.  You should create new cluster for your workload, just like in this video.
+- Make sure you have a static IP on your Rancher host
+- Be sure to use the ports above if you want to add SSL later and use commands in future videos
+- The new UI is now the "Cluster Explorer".  You can toggle between this and the "Cluser Manager" UI by clicking the button.
+- Do not create workloads in the `local` cluster.  This is a management cluster for Rancher.  You should create new cluster for your workload, just like in this video.
 
 Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
-
