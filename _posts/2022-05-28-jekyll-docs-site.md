@@ -139,6 +139,9 @@ For example:
 2022-05-34-hardware-specs.md
 ```
 
+> Jekyll can delay posts which have the date/time set for a point in the future determined by the "front matter" section at the top of your post file. Check the date & time as well as time zone if you don't see a post appear shortly after re-build.
+{: .prompt-tip }
+
 ### Local Linking of Files
 
 Image from asset:
