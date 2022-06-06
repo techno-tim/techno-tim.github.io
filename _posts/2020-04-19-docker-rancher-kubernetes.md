@@ -12,11 +12,13 @@ If you want to set up Kubernetes at home using Rancher to run Docker containers,
 
 [Watch Video](https://www.youtube.com/watch?v=oILc0ywDVTk)
 
+See all the hardware I recommend at <https://l.technotim.live/gear>
+
 ## Install Docker
 
 To install docker, see [https://docs.technotim.live/posts/docker-compose-install/](https://docs.technotim.live/posts/docker-compose-install/)
 
-See all the hardware I recommend at <https://l.technotim.live/gear>
+## Install Rancher
 
 The two paths in the workload configuration need to be reversed:
 
