@@ -54,7 +54,7 @@ reboot
 ```
 
 
-`qm.conf` (will be something like `100.conf`)
+`/etc/pve/qemu-server/qm.conf` (will be something like `100.conf`)
 
 ```conf
 agent: 1
