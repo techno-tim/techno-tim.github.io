@@ -74,7 +74,7 @@ sudo apt install apache2-utils
 ```
 
 ```bash
-echo $(htpasswd -nb <USER> <PASSWORD>) | sed -e s/\\$/\\$\\$/g
+echo $(htpasswd -nb "<USER>" "<PASSWORD>") | sed -e s/\\$/\\$\\$/g
 ```
 
 NOTE: Replace `<USER>` with your username and `<PASSWORD>` with your password to be hashed.
