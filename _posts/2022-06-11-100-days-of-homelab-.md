@@ -14,6 +14,8 @@ So, to celebrate my 100k subs, I brought in some of the biggest names in the Hom
 
 📺 [Watch Video](https://www.youtube.com/watch?v=bwDVW_ifkBU)
 
+Take the challenge! <https://100daysofhomelab.com/>
+
 ## Links
 
 ⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>
