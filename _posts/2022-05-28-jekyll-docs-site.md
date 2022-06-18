@@ -129,7 +129,7 @@ Jekyll uses a naming [convention for pages and posts](https://jekyllrb.com/docs/
 Create a file in `_posts` with the format
 
 ```file
-YEAR-MONTH-DAY-title.MARKUP
+YEAR-MONTH-DAY-title.md
 ```
 
 For example:
