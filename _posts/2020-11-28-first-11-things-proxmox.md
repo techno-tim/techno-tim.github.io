@@ -165,6 +165,8 @@ iface vmbr0 inet static
 
 These are the commands I run after cloning a Linux machine so that it resets all information for the machine it was cloned from.
 
+(Note: If you use cloud-init-aware OS images as described under *Cloud-Init Support* on https://pve.proxmox.com/pve-docs/chapter-qm.html, these steps won't be necessary!)
+
 change hostname
 
 ```bash
