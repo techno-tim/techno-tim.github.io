@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "My HomeLab Regrets..."
-date: 2022-06-11 10:00:00 -0500
+date: 2022-06-21 10:00:00 -0500
 categories: homelab
 tags: homelab challenge
 ---
