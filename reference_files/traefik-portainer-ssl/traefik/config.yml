@@ -29,6 +29,17 @@ http:
         - https-redirectscheme
       tls: {}
       service: homebridge
+    homeassistant:
+      # For Homeassistant config, check: https://www.home-assistant.io/integrations/http/#reverse-proxies
+      # This relies on Homeassistant using http. No certs are needed in the Homeassistant config.
+      entryPoints:
+        - "https"
+      rule: "Host(`homeassistant.local.example.com`)"
+      middlewares:
+        - default-headers
+        - https-redirectscheme
+      tls: {}
+      service: homeassistant
     syncthing:
       entryPoints:
         - "https"
@@ -125,6 +136,11 @@ http:
           - url: "http://192.168.0.101:80"
         passHostHeader: true
     homebridge:
+      loadBalancer:
+        servers:
+          - url: "http://192.168.0.102:10999"
+        passHostHeader: true
+    homeassistant:
       loadBalancer:
         servers:
           - url: "http://192.168.0.102:10999"
