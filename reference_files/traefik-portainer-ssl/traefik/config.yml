@@ -187,7 +187,6 @@ http:
     default-headers:
       headers:
         frameDeny: true
-        sslRedirect: true
         browserXssFilter: true
         contentTypeNosniff: true
         forceSTSHeader: true
@@ -201,7 +200,6 @@ http:
     idrac:
       headers:
         frameDeny: true
-        sslRedirect: true
         browserXssFilter: true
         forceSTSHeader: true
         stsIncludeSubdomains: true
