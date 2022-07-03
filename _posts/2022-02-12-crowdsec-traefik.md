@@ -83,8 +83,8 @@ volumes:
 
 ```bash
 cd config
-touch acquis.yml
-nano acquis.yml
+touch acquis.yaml
+nano acquis.yaml
 docker-compose up -d --force-recreate
 ```
 
