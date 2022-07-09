@@ -42,6 +42,27 @@ RJ45 Keystone Jacks - <https://amzn.to/3IxwMDG>
 
 SFP+ DAC - <https://amzn.to/3Pg96py>
 
+## iperf
+
+Install
+
+```bash
+sudo apt update
+sudo apt install iperf
+```
+
+on the remote machine
+
+```bash
+iperf -s
+```
+
+then on another machine
+
+```bash
+iperf -c 192.168.0.104 # ip of the remote machine
+```
+
 ## Links
 
 ⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>
