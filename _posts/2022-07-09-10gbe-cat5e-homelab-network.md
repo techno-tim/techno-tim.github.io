@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Will 10 Gigabit work with Cat5e? - 10Gbe HomeLab Network Upgrade!"
-date: 2022-07-09 10:00:00 -0600
+date: 2022-07-09 10:00:00 -0500
 categories: homelab
 tags: homelab network unifi 10gbe
 ---

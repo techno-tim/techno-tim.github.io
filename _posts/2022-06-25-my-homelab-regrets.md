@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "My HomeLab Regrets..."
-date: 2022-06-21 10:00:00 -0500
+date: 2022-06-25 10:00:00 -0500
 categories: homelab
-tags: homelab challenge
+tags: homelab hardware network unifi
 ---
 
 [![My HomeLab Regrets...](https://img.youtube.com/vi/yCquqeM7UO0/0.jpg)](https://www.youtube.com/watch?v=yCquqeM7UO0 "My HomeLab Regrets...")
