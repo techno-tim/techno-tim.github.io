@@ -188,7 +188,7 @@ Visit Grafana
 If you make changes to your `values.yaml` you can deploy these changes by running
 
 ```bash
-helm install -n monitoring prometheus prometheus-community/kube-prometheus-stack -f values.yaml
+helm upgrade -n monitoring prometheus prometheus-community/kube-prometheus-stack -f values.yaml
 ```
 
 Examples:
