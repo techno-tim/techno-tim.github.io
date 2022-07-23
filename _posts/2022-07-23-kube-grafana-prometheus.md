@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Monitoring & Beautiful Dashboards with Grafana and Prometheus on Kubernetes"
+title: "Beautiful Dashboards with Grafana and Prometheus - Monitoring Kubernetes Tutorial"
 date: 2022-07-23 10:00:00 -0500
 categories: kubernetes
 tags: kubernetes grafana prometheus alert-manager k3s
