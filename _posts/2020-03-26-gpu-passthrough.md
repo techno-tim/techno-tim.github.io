@@ -13,7 +13,9 @@ Are you looking to build a remote gaming machine and passthrough your GPU to a v
 
 [Watch Video](https://www.youtube.com/watch?v=fgx3NMk6F54)
 
+See all the hardware I recommend at <https://l.technotim.live/gear>
 
+Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
 
 edit grub
 
@@ -52,7 +54,7 @@ reboot
 ```
 
 
-`qm.conf` (will be something like `100.conf`)
+`/etc/pve/qemu-server/qm.conf` (will be something like `100.conf`)
 
 ```conf
 agent: 1

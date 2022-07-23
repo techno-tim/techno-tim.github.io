@@ -1,0 +1,47 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: technotim-docs
+  namespace: default
+spec:
+  selector:
+    matchLabels:
+      app: technotim-docs
+  replicas: 3
+  progressDeadlineSeconds: 600
+  revisionHistoryLimit: 3
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 25%
+      maxSurge: 1
+  template:
+    metadata:
+      labels:
+        app: technotim-docs
+      annotations:
+        deploy-date: "deploy-date-value"
+    spec:
+      containers:
+      - name: technotim-docs
+        image: "registry-value:latest"
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "100m"
+          limits: 
+            memory: "128Mi"
+            cpu: "250m" 
+        ports: 
+        - containerPort: 80
+      affinity:
+          podAntiAffinity:
+            preferredDuringSchedulingIgnoredDuringExecution:
+            - podAffinityTerm:
+                labelSelector:
+                  matchLabels:
+                    name: technotim-docs
+                topologyKey: kubernetes.io/hostname
+              weight: 100
+      imagePullSecrets: 
+      - name: registry-credentials-gitlab

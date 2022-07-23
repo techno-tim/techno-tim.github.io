@@ -12,6 +12,9 @@ After setting up my Linux servers, there are a few things I do before I use them
 
 [Watch Video](https://www.youtube.com/watch?v=ZsjK4VDopiE)
 
+See all the hardware I recommend at <https://l.technotim.live/gear>
+
+Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
 
 ## Update
 
@@ -29,22 +32,21 @@ sudo dpkg-reconfigure --priority=low unattended-upgrades
 
 Verify unattended upgrades configuration file in your text editor of choice
 
-```
+```bash
 /etc/apt/apt.conf.d/20auto-upgrades
 ```
 
 To disable automatic reboots by the automatic upgrades configuration edit the following file:
 
-```
+```bash
 /etc/apt/apt.conf.d/50unattended-upgrades
 ```
 
 and uncomment the following line by removing the leading slashes:
 
-```
+```bash
 //Unattended-Upgrade::Automatic-Reboot "false";
 ```
-
 
 ## Account
 
@@ -63,6 +65,7 @@ sudo usermod -aG sudo someuser
 ## SSH Server
 
 install
+
 ```bash
 sudo apt-get install openssh-server
 ```
@@ -81,11 +84,10 @@ sudo nano /etc/ssh/sshd_config
 
 Add these attributes
 
-```
+```bash
 PasswordAuthentication no
 ChallengeResponseAuthentication no
 ```
-
 
 ## Networking
 
@@ -107,11 +109,7 @@ network:
        addresses: [192.168.0.4]
 ```
 
-
-
-
 ## Install `oh-my-zsh`
-
 
 ```bash
 sudo apt-get update
@@ -126,7 +124,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 ```bash
 sudo lvm
 ```
-
 
 ```bash
 lvextend -l +100%FREE /dev/ubuntu-vg/ubuntu-lv
@@ -170,13 +167,13 @@ You can also use if you want a menu.
 sudo dpkg-reconfigure tzdata 
 ```
 
-##  NTP Time
+## NTP Time
 
 ```bash
 sudo nano /etc/systemd/timesyncd.conf
 ```
 
-```
+```conf
 NTP=192.168.0.4
 ```
 
@@ -188,18 +185,19 @@ sudo timedatectl set-net off
 sudo timedatectl set-ntp on
 ```
 
-
 ## install kvm agent
 
 ```bash
 sudo apt-get install qemu-guest-agent
 ```
 
-
 ## firewall
 
 ```bash
 sudo  ufw default deny incoming
+```
+```bash
+sudo ufw default allow outgoing
 ```
 
 ```bash
@@ -228,7 +226,7 @@ sudo cp /etc/fail2ban/jail.{conf,local}
 sudo nano /etc/fail2ban/jail.local
 ```
 
-```
+```conf
 backend = systemd
 ```
 
@@ -237,7 +235,6 @@ check status
 ```bash
 sudo fail2ban-client status
 ```
-
 
 ```bash
 sudo fail2ban-client status sshd

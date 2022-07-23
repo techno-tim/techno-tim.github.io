@@ -7,6 +7,7 @@ http:
       rule: "Host(`proxmox.local.example.com`)"
       middlewares:
         - default-headers
+        - https-redirectscheme
       tls: {}
       service: proxmox
     pihole:
@@ -16,6 +17,7 @@ http:
       middlewares:
         - default-headers
         - addprefix-pihole
+        - https-redirectscheme
       tls: {}
       service: pihole
     homebridge:
@@ -24,14 +26,27 @@ http:
       rule: "Host(`homebridge.local.example.com`)"
       middlewares:
         - default-headers
+        - https-redirectscheme
       tls: {}
       service: homebridge
+    homeassistant:
+      # For Homeassistant config, check: https://www.home-assistant.io/integrations/http/#reverse-proxies
+      # This relies on Homeassistant using http. No certs are needed in the Homeassistant config.
+      entryPoints:
+        - "https"
+      rule: "Host(`homeassistant.local.example.com`)"
+      middlewares:
+        - default-headers
+        - https-redirectscheme
+      tls: {}
+      service: homeassistant
     syncthing:
       entryPoints:
         - "https"
       rule: "Host(`syncthing.local.example.com`)"
       middlewares:
         - default-headers
+        - https-redirectscheme
       tls: {}
       service: syncthing
     truenas:
@@ -40,6 +55,7 @@ http:
       rule: "Host(`truenas.local.example.com`)"
       middlewares:
         - default-headers
+        - https-redirectscheme
       tls: {}
       service: truenas
     plex:
@@ -48,6 +64,7 @@ http:
       rule: "Host(`plex.local.example.com`)"
       middlewares:
         - default-headers
+        - https-redirectscheme
       tls: {}
       service: plex
     minio:
@@ -56,6 +73,7 @@ http:
       rule: "Host(`minio.local.example.com`)"
       middlewares:
         - default-headers
+        - https-redirectscheme
       tls: {}
       service: minio
     rancher:
@@ -64,8 +82,45 @@ http:
       rule: "Host(`rancher.local.example.com`)"
       middlewares:
         - default-headers
+        - https-redirectscheme
       tls: {}
       service: rancher
+    idrac:
+      entryPoints:
+        - "https"
+      rule: "Host(`idrac.local.example.com`)"
+      middlewares:
+        - idrac
+        - https-redirectscheme
+      tls: {}
+      service: idrac
+    idrac-console:
+      entryPoints:
+        - "idrac" # REQUIRED for iDRAC virtual console: Create a new TCP entry point in traefik on port 5900
+      rule: "Host(`idrac.local.example.com`)"
+      middlewares:
+        - idrac
+        - https-redirectscheme
+      tls: {}
+      service: idrac-console
+    opnsense:
+      entryPoints:
+        - "https"
+      rule: "Host(`opnsense.local.example.com`)"
+      middlewares:
+        - default-headers
+        - https-redirectscheme
+      tls: {}
+      service: opnsense
+    pterodactyl:
+      entryPoints:
+        - "https"
+      rule: "Host(`pterodactyl.local.example.com`)"
+      middlewares:
+        - default-headers
+        - https-redirectscheme
+      tls: {}
+      service: pterodactyl
 
 #endregion
 #region services
@@ -81,6 +136,11 @@ http:
           - url: "http://192.168.0.101:80"
         passHostHeader: true
     homebridge:
+      loadBalancer:
+        servers:
+          - url: "http://192.168.0.102:10999"
+        passHostHeader: true
+    homeassistant:
       loadBalancer:
         servers:
           - url: "http://192.168.0.102:10999"
@@ -110,24 +170,55 @@ http:
         servers:
           - url: "https://192.168.0.107"
         passHostHeader: true
+    idrac:
+      loadBalancer:
+        servers:
+          - url: "https://192.168.0.108"
+        passHostHeader: true
+    idrac-console:
+      loadBalancer:
+        servers:
+          - url: "https://192.168.0.108:5900"
+        passHostHeader: true
+    opnsense:
+      loadBalancer:
+        servers:
+          - url: "https://192.168.0.109"
+        passHostHeader: true
+    pterodactyl:
+      loadBalancer:
+        servers:
+          - url: "http://192.168.0.110:80"
+        passHostHeader: true
 #endregion
   middlewares:
     addprefix-pihole:
       addPrefix:
         prefix: "/admin"
-    https-redirect:
+    https-redirectscheme:
       redirectScheme:
         scheme: https
+        permanent: true
 
     default-headers:
       headers:
         frameDeny: true
-        sslRedirect: true
         browserXssFilter: true
         contentTypeNosniff: true
         forceSTSHeader: true
         stsIncludeSubdomains: true
         stsPreload: true
+        stsSeconds: 15552000
+        customFrameOptionsValue: SAMEORIGIN
+        customRequestHeaders:
+          X-Forwarded-Proto: https
+
+    idrac:
+      headers:
+        frameDeny: true
+        browserXssFilter: true
+        forceSTSHeader: true
+        stsIncludeSubdomains: true
         stsSeconds: 15552000
         customFrameOptionsValue: SAMEORIGIN
         customRequestHeaders:

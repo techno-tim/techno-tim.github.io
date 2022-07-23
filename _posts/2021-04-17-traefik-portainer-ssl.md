@@ -12,52 +12,13 @@ Today, we're going to use SSL for everything.  No more self-sign certs.  No more
 
 [Watch Video](https://www.youtube.com/watch?v=liV3c9m_OX8)
 
+See all the hardware I recommend at <https://l.technotim.live/gear>
+
+Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
 
 ## Docker Setup
 
-### Install Docker
-
-```bash
- sudo apt-get update
- sudo apt-get install \
-    apt-transport-https \
-    ca-certificates \
-    curl \
-    gnupg \
-    lsb-release
-```
-
-```bash
- curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
-```
-
-```bash
- echo \
-  "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
-  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-```
-
-```bash
- sudo apt-get update
- sudo apt-get install docker-ce docker-ce-cli containerd.io
-```
-
-Are you installing Docker in a LXC container and seeing an error? [Read this.](https://stackoverflow.com/questions/22085657/can-docker-run-inside-a-linux-container/25885682)
-
-```bash
- sudo usermod -aG docker $USER
-```
-You'll need to log out then back in to apply this
-
-### Install Docker Compose
-
-```bash
-sudo curl -L "https://github.com/docker/compose/releases/download/1.29.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-```
-
-```bash
-sudo chmod +x /usr/local/bin/docker-compose
-```
+See [this post](https://docs.technotim.live/posts/docker-compose-install/) on how to install `docker` and `docker-compose`
 
 ## Traefik
 
@@ -71,7 +32,7 @@ chmod 600 acme.json
 touch traefik.yml
 ```
 
-`traefik.config` can be found [here](https://github.com/techno-tim/techno-tim.github.io/tree/master/reference_files/traefik-portainer-ssl/traefik) 
+`traefik.yml` can be found [here](https://github.com/techno-tim/techno-tim.github.io/tree/master/reference_files/traefik-portainer-ssl/traefik)
 
 create docker network
 
@@ -83,7 +44,7 @@ docker network create proxy
 touch docker-compose.yml
 ```
 
-`docker-compose.yml` can be found [here](https://github.com/techno-tim/techno-tim.github.io/tree/master/reference_files/traefik-portainer-ssl/traefik) 
+`docker-compose.yml` can be found [here](https://github.com/techno-tim/techno-tim.github.io/tree/master/reference_files/traefik-portainer-ssl/traefik)
 
 ```bash
 cd data
@@ -103,11 +64,9 @@ touch docker-compose.yml
 mkdir data
 ```
 
-`docker-compose.yml` can be found [here](https://github.com/techno-tim/techno-tim.github.io/tree/master/reference_files/traefik-portainer-ssl/portainer) 
-
+`docker-compose.yml` can be found [here](https://github.com/techno-tim/techno-tim.github.io/tree/master/reference_files/traefik-portainer-ssl/portainer)
 
 ### Generate Basic Auth Password
-
 
 ```bash
 sudo apt update
@@ -115,10 +74,14 @@ sudo apt install apache2-utils
 ```
 
 ```bash
-echo $(htpasswd -nb USER PASSWORD) | sed -e s/\\$/\\$\\$/g
+echo $(htpasswd -nb "<USER>" "<PASSWORD>") | sed -e s/\\$/\\$\\$/g
 ```
 
-use this in your `docker-compose.yml` (`USER:BASIC_AUTH_PASSWORD`)
+NOTE: Replace `<USER>` with your username and `<PASSWORD>` with your password to be hashed.
+
+Paste the output in your `docker-compose.yml` in line (`traefik.http.middlewares.traefik-auth.basicauth.users=<USER>:<HASHED-PASSWORD>`)
+
+#### Spin up the container
 
 ```bash
 docker-compose up -d
@@ -131,8 +94,19 @@ cd traefik/data
 nano config.yml
 ```
 
-`config.yml` [here](https://github.com/techno-tim/techno-tim.github.io/tree/master/reference_files/traefik-portainer-ssl/traefik) 
+`config.yml` [here](https://github.com/techno-tim/techno-tim.github.io/tree/master/reference_files/traefik-portainer-ssl/traefik)
 
 ```bash
 docker-compose up -d --force-recreate
+```
+
+Your folder structure should look like the below, if you are following along with the example.  But feel free to make it however you wish just keep in mind you'll need to change the location in the corresponding files. 
+
+```
+./traefik
+├── data
+│   ├── acme.json
+│   ├── config.yml
+│   └── traefik.yml
+└── docker-compose.yml
 ```

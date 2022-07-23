@@ -8,14 +8,15 @@ tags: homelab rancher kubernetes docker portainer nvidia hardware
 
 [![I Heard You Like GPUs in Servers... GPU Passthrough on Linux and Docker](https://img.youtube.com/vi/9OfoFAljPn4/0.jpg)](https://www.youtube.com/watch?v=9OfoFAljPn4 "I Heard You Like GPUs in Servers... GPU Passthrough on Linux and Docker")
 
-Do you have a lot of virtual machines?  Are you running Windows, Linux, and Mac and need remote access from a single UI?  Well, Apache Guacamole is for you!  Apache Guacamole is a clientless remote access gateway that give you a web portal to access any of your clients over standard protocols like VNC, RDP, SSH, TELNET, and more. Join me in this step by step tutorial as we set up a self-hosted version of Guacamole in your homelab.  As an added bonus, we'll set up 2FA (multifactor authentication) to help secure Guacamole.  Oh, yeah, and we'll do this all in Docker and or Kubernetes, it's up to you!  :)
-
+We've already figured out how to pass through a GPU to Windows machine but why let Windows have all the fun?  Today, we do it on an Ubuntu headless server that's virtualized, run some AI and Deep Learning workloads, then turn up the transcoding on Plex to 11.
 
 [Watch Video](https://www.youtube.com/watch?v=9OfoFAljPn4)
 
+See all the hardware I recommend at <https://l.technotim.live/gear>
 
+Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
 
-```
+```na
 88          88                                      
 88          ""                                      
 88                                                  
@@ -28,16 +29,13 @@ Do you have a lot of virtual machines?  Are you running Windows, Linux, and Mac 
                              "Y8bbdP"               
 ```
 
-
-
-If you need to passthrough a GPU, follow [this guide](https://github.com/techno-tim/youtube-videos/tree/master/gpu-passthrough) but install Ubuntu instead.
-
+If you need to passthrough a GPU, follow [this guide](https://docs.technotim.live/posts/gpu-passthrough/) but install Ubuntu instead.
 
 ## Proxmox
+
 Shut down your VM in proxmox, edit your conf file, it should be here (note, change path to your VM's ID)
 
 `/etc/pve/qemu-server/100.conf`
-
 
 add `cpu: host,hidden=1,flags=+pcid` to that file
 
@@ -65,15 +63,14 @@ Then install `nvtop`
 sudo apt-get install nvtop
 ```
 
-
-## tensorflow workload 
+## tensorflow workload
 
 ```bash
 nvidia-docker run --rm -ti tensorflow/tensorflow:r0.9-devel-gpu
 ```
 
-
 ## Rancher / Kubernetes
+
 In your Rancher server (or kubernetes host)
 
 ```bash
@@ -121,4 +118,3 @@ Then, using `kubectl` on your kubernetes / rancher host
 ```bash
 kubectl create -f https://raw.githubusercontent.com/NVIDIA/k8s-device-plugin/master/nvidia-device-plugin.yml
 ```
-

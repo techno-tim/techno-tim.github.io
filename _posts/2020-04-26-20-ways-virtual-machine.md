@@ -12,3 +12,7 @@ Looking for new ideas on how to use your virtual machines?  Well, here's the top
 
 
 [Watch Video](https://www.youtube.com/watch?v=SVQmzaSabEQ)
+
+See all the hardware I recommend at <https://l.technotim.live/gear>
+
+Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.

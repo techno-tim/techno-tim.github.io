@@ -13,9 +13,9 @@ Ansible. Need I say more?  Well, maybe, if you've never heard of it. Ansible is 
 
 [Watch Video](https://www.youtube.com/watch?v=w9eCU4bGgjQ)
 
+See all the hardware I recommend at <https://l.technotim.live/gear>
 
-
-You can also find a collection of playbooks [here](https://github.com/techno-tim/ansible-homelab)
+Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
 
 ## install
 
@@ -45,7 +45,6 @@ ansible -i ./inventory/hosts ubuntu -m ping --user someuser --ask-pass
 
 command with playbook
 
-
 ```bash
 ansible-playbook ./playbooks/apt.yml --user someuser --ask-pass --ask-become-pass -i ./inventory/hosts
 ```
@@ -63,7 +62,6 @@ ansible-playbook ./playbooks/apt.yml --user someuser --ask-pass --ask-become-pas
         update_cache: yes
         upgrade: 'yes'
 ```
-
 
 `qemu-guest-agent.yml`
 
@@ -117,7 +115,7 @@ ansible-playbook ./playbooks/apt.yml --user someuser --ask-pass --ask-become-pas
       state: started
 ```
 
-`timezonsync.conf`
+`timesyncd.conf`
 
 ```conf
 #  This file is part of systemd.

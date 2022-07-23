@@ -14,7 +14,9 @@ services:
       - 443:443
     environment:
       - CF_API_EMAIL=user@example.com
-      - CF_API_KEY=YOUR_API_KEY
+      - CF_DNS_API_TOKEN=YOU_API_TOKEN
+      # - CF_API_KEY=YOU_API_KEY
+      # be sure to use the correct one depending on if you are using a token or key
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /var/run/docker.sock:/var/run/docker.sock:ro

@@ -2,7 +2,6 @@ apiVersion: traefik.containo.us/v1alpha1
 kind: IngressRoute
 metadata:
   name: example-workload-ingress
-  namespace: public
   annotations: 
     kubernetes.io/ingress.class: traefik-external
 spec:
