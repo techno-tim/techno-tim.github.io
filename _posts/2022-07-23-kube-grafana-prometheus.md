@@ -8,7 +8,7 @@ tags: kubernetes grafana prometheus alert-manager k3s
 
 [![Beautiful Dashboards & Monitoring - Grafana and Prometheus Kubernetes Tutorial](https://img.youtube.com/vi/fzny5uUaAeY/0.jpg)](https://www.youtube.com/watch?v=fzny5uUaAeY "Beautiful Dashboards & Monitoring - Grafana and Prometheus Kubernetes Tutorial")
 
-If I could start my HomeLab all over, what would I choose?  Would I choose the same servers, rack, networking, gateway, switch, firewall, my pc conversion, and even my disk shelf NAS?  Did I make a good choice or a bad one?  Join me as we give each piece of my HomeLab a Keep or Upgrade rating.
+Grafana and Prometheus are a powerful monitoring solution.  It allows you to visualize, query, and alert metrics no matter where they are stored.  Today, we'll install and configure Prometheus and Grafana in Kubernetes using kube-prometheus-stack. By the end of this tutorial you be able to observe and visualize your entire Kubernetes cluster with Grafana and Prometheus.
 
 📺 [Watch Video](https://www.youtube.com/watch?v=fzny5uUaAeY)
 
