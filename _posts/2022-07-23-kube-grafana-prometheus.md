@@ -185,6 +185,12 @@ Visit Grafana
 
 <http://localhost:52222>
 
+If you make changes to your `values.yaml` you can deploy these changes by running
+
+```bash
+helm install -n monitoring prometheus prometheus-community/kube-prometheus-stack -f values.yaml
+```
+
 Examples:
 
 [Traefik Ingress example](https://github.com/techno-tim/launchpad/tree/master/kubernetes/kube-prometheus-stack)
