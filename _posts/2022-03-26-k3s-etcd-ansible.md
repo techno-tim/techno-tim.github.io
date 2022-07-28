@@ -94,7 +94,7 @@ ansible-playbook ./reset.yml -i ./inventory/my-cluster/hosts.ini
 To get access to your Kubernetes cluster and copy your kube config locally run:
 
 ```bash
-scp debian@master_ip:~/.kube/config ~/.kube/config
+scp ansibleuser@192.168.30.38:~/.kube/config ~/.kube/config
 ```
 
 ## Testing your cluster
