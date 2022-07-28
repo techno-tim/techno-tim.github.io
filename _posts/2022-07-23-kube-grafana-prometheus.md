@@ -162,7 +162,7 @@ rm admin-user && rm admin-password
 Create a values file to hold our helm values
 
 ```bash
-nano values.yml
+nano values.yaml
 ```
 
 paste in values from [here](https://github.com/techno-tim/launchpad/tree/master/kubernetes/kube-prometheus-stack)
