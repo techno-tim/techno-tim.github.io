@@ -62,9 +62,10 @@ extra_server_args: "--no-deploy servicelb --no-deploy traefik"
 extra_agent_args: ""
 ```
 
-*Note: These are for an advanced use case. There isn't a one size fits all setting for everyone and their needs, I would try using k3s without these before changing.  This could have undesired effects like nodes going offline, pods jumping or being removed, etc... This might come at the cost of stability*
+I would change these values unless you know what you are doing.  It will most likely not work for you but listing for posterity.
 
-I would not use these unless you know what you are doing.  It will most likely not work for you but listing for posterity.
+> *Note: These are for an advanced use case. There isn't a one size fits all setting for everyone and their needs, I would try using k3s without these before changing.  This could have undesired effects like nodes going offline, pods jumping or being removed, etc... Using these args might come at the cost of stability*
+{: .prompt-danger }
 
 ```yaml
 extra_server_args: "--no-deploy servicelb --no-deploy traefik --write-kubeconfig-mode 644 --kube-apiserver-arg default-not-ready-toleration-seconds=30 --kube-apiserver-arg default-unreachable-toleration-seconds=30 --kube-controller-arg node-monitor-period=20s --kube-controller-arg node-monitor-grace-period=20s --kubelet-arg node-status-update-frequency=5s"
