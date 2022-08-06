@@ -140,7 +140,7 @@ htpasswd -nb techno password | openssl base64
 apply secret
 
 ```bash
-kubectl apply -f secret
+kubectl apply -f secret-dashboard.yaml
 ```
 
 get secret
