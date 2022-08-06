@@ -189,7 +189,7 @@ helm repo add jetstack https://charts.jetstack.io
 ```
 
 ```bash
-update
+helm repo update
 ```
 
 ```bash
