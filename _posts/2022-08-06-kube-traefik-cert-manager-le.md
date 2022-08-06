@@ -67,19 +67,25 @@ version.BuildInfo{Version:"v3.8.0", GitCommit:"d14138609b01886f544b2025f5000351c
 > These [resources](https://github.com/techno-tim/launchpad/tree/master/kubernetes/traefik-cert-manager) are in the `launchpad/kubernetes/traefik-cert-manager/traefik/` folder
 {: .prompt-info }
 
+Add repo
+
 ```bash
 helm repo add traefik https://helm.traefik.io/traefik
 ```
+
+Update repo
 
 ```bash
 helm repo update
 ```
 
+Install traefik
+
 ```bash
 helm install --namespace=traefik traefik traefik/traefik --values=values.yaml
 ```
 
-Check the status of the Traefik ingress controller service
+Check the status of the traefik ingress controller service
 
 ```bash
 kubectl get svc --all-namespaces -o wide
@@ -96,6 +102,8 @@ metallb-system   webhook-service   ClusterIP      10.43.205.142   <none>        
 traefik          traefik           LoadBalancer   10.43.156.161   192.168.30.80   80:30358/TCP,443:31265/TCP   22s   app.kubernetes.io/instance=traefik,app.kubernetes.io/name=traefik
 ```
 
+Ger all pods in `traefik` namespace
+
 ```bash
 kubectl get pods --namespace traefik
 ```
@@ -111,9 +119,13 @@ traefik-76474c4d47-xx5lw   1/1     Running   0          11m
 
 ### middleware
 
+Apply middleware
+
 ```bash
 kubectl apply -f default-headers.yaml
 ```
+
+Get middleware
 
 ```bash
 kubectl get middleware
@@ -226,7 +238,7 @@ metallb-system    Active   21h
 traefik           Active   4h35m
 ```
 
-Apply crds (1.9.1)
+Apply crds
 
 > *Note: Be sure to change this to the [latest version](https://cert-manager.io/docs/installation/supported-releases/) of `cert-manager`*
 {: .prompt-info }
