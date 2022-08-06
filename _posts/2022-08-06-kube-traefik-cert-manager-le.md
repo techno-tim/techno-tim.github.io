@@ -24,8 +24,7 @@ If you need to install a new kubernetes cluster you can use my [Ansible Playbook
 
 ## Resources
 
-You can find all of the resources from this tutorial here
-
+You can find all of the resources from this tutorial [here](https://github.com/techno-tim/launchpad/tree/master/kubernetes/traefik-cert-manager)
 
 ### helm
 
