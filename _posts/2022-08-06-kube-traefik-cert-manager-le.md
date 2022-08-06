@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Wildcard Certificates with Traefik + cert-manager + Let's Encrypt in Kubernetes Tutorial"
-date: 2022-08-06 10:00:00 -0500
+date: 2022-08-06 09:00:00 -0500
 categories: kubernetes
-tags: kubernetes grafana prometheus alert-manager k3s
+tags: kubernetes traefik cert-manager k3s cloudflare letsencrypt
 ---
 
 [![Wildcard Certificates with Traefik + cert-manager + Let's Encrypt in Kubernetes Tutorial](https://img.youtube.com/vi/G4CmbYL9UPg/0.jpg)](https://www.youtube.com/watch?v=G4CmbYL9UPg "Wildcard Certificates with Traefik + cert-manager + Let's Encrypt in Kubernetes Tutorial")
@@ -21,6 +21,11 @@ Combat misconfigurations. Empower engineers.
 ## Getting Started
 
 If you need to install a new kubernetes cluster you can use my [Ansible Playbook](https://docs.technotim.live/posts/k3s-etcd-ansible/) to install one.
+
+## Resources
+
+You can find all of the resources from this tutorial here
+
 
 ### helm
 
