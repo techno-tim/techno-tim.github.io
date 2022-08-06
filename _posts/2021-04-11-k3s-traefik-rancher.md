@@ -20,6 +20,9 @@ It assumes you have followed:
 
 There is a little bit of "undoing" we'll have to do since k3s ships with `traefik` and Rancher doesn't play well with service load balancer. So, we'll pick up after instaling these two.
 
+> *Note: There is an updated tutorial on installing traefik + cert-manager on Kubernetes [here](https://docs.technotim.live/posts/kube-traefik-cert-manager-le/). However, if you want to store your certificates on disk, this tutorial here is perfectly fine.*
+{: .prompt-info }
+
 ## Reconfigure Rancher
 
 Make note of your version of Rancher
