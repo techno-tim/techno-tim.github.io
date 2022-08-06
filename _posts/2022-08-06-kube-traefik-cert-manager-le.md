@@ -149,6 +149,12 @@ get secret
 kubectl get secrets --namespace traefik
 ```
 
+apply middleware
+
+```bash
+kubectl apply -f middleware.yaml
+```
+
 apply dashboard
 
 ```bash
