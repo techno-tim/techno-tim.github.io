@@ -243,6 +243,9 @@ helm install cert-manager jetstack/cert-manager --namespace cert-manager --value
 
 Apply secrets
 
+> Be sure to generate the correct token if using Cloudflare.  This is using an [API Token](https://cert-manager.io/docs/configuration/acme/dns01/cloudflare/#api-tokens) and not a global key.
+{: .prompt-info }
+
 ```bash
 kubectl apply -f secret-cf-token.yaml
 kubectl apply -f secret-cf-email.yaml
