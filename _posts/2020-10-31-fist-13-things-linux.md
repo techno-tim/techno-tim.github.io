@@ -178,7 +178,7 @@ NTP=192.168.0.4
 ```
 
 ```bash
-sudo timedatectl set-net off
+sudo timedatectl set-ntp off
 ```
 
 ```bash
