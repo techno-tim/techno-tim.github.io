@@ -24,7 +24,8 @@ If you need to install a new kubernetes cluster you can use my [Ansible Playbook
 
 ## Resources
 
-You can find all of the resources from this tutorial [here](https://github.com/techno-tim/launchpad/tree/master/kubernetes/traefik-cert-manager)
+> You can find all of the resources from this tutorial [here](https://github.com/techno-tim/launchpad/tree/master/kubernetes/traefik-cert-manager)
+{: .prompt-success }
 
 ### helm
 
@@ -81,7 +82,7 @@ Check the status of the Traefik ingress controller service
 kubectl get svc --all-namespaces -o wide
 ```
 
-should see traefik with the specified IP
+We should see traefik with the specified IP
 
 ```console
 NAMESPACE        NAME              TYPE           CLUSTER-IP      EXTERNAL-IP     PORT(S)                      AGE   SELECTOR
@@ -96,7 +97,7 @@ traefik          traefik           LoadBalancer   10.43.156.161   192.168.30.80 
 kubectl get pods --namespace traefik
 ```
 
-should see
+We should see pods in the `traefik` namespace
 
 ```console
 NAME                       READY   STATUS    RESTARTS   AGE
@@ -115,7 +116,7 @@ kubectl apply -f default-headers.yaml
 kubectl get middleware
 ```
 
-should see
+We should see our headers
 
 ```console
 NAME              AGE
@@ -124,49 +125,46 @@ default-headers   25s
 
 ### dashboard
 
-install `htpassword`
+Install `htpassword`
 
 ```bash
 sudo apt-get update
 sudo apt-get install apache2-utils
 ```
 
-generate password
+Generate a credential / password that's base64 encoded
 
 ```bash
 htpasswd -nb techno password | openssl base64
 ```
 
-apply secret
+Apply secret
 
 ```bash
 kubectl apply -f secret-dashboard.yaml
 ```
 
-get secret
+Get secret
 
 ```bash
 kubectl get secrets --namespace traefik
 ```
 
-apply middleware
+Apply middleware
 
 ```bash
 kubectl apply -f middleware.yaml
 ```
 
-apply dashboard
+Apply dashboard
 
 ```bash
 kubectl apply -f ingress.yaml
 ```
 
-visit
+Visit `https://traefik.local.example.com`
 
-<https://traefik.local.technotim.live/>
-
-
-## sample workload
+## Sample Workload
 
 ```bash
 kubectl apply -f deployment.yaml
@@ -174,7 +172,7 @@ kubectl apply -f service.yaml
 kubectl apply -f ingress.yaml
 ```
 
-or folder
+Or you can apply an entire folder at once!
 
 ```bash
 kubectl apply -f nginx
@@ -182,25 +180,31 @@ kubectl apply -f nginx
 
 ## cert-manager
 
-add repo
+Add repo
 
 ```bash
 helm repo add jetstack https://charts.jetstack.io
 ```
 
+Update it
+
 ```bash
 helm repo update
 ```
+
+Create our namespace
 
 ```bash
 kubectl create namespace cert-manager
 ```
 
+Get all namespaces
+
 ```bash
 kubectl get namespaces
 ```
 
-should see
+We should see
 
 ```console
 NAME              STATUS   AGE
@@ -213,60 +217,69 @@ metallb-system    Active   21h
 traefik           Active   4h35m
 ```
 
-apply crds (1.9.1)
+Apply crds (1.9.1)
+
+> *Note: Be sure to change this to the [latest version](https://cert-manager.io/docs/installation/supported-releases/) of `cert-manager`*
+{: .prompt-info }
 
 ```bash
 kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.9.1/cert-manager.crds.yaml
 ```
 
+Install with helm
+
 ```bash
 helm install cert-manager jetstack/cert-manager --namespace cert-manager --values=values.yaml --version v1.9.1
 ```
 
-secrets
+Apply secrets
 
 ```bash
 kubectl apply -f secret-cf-token.yaml
 kubectl apply -f secret-cf-email.yaml
 ```
 
-issuers
-
+Apply `ClusterIssuer`s
 
 ```bash
 kubectl apply -f letsencrypt-staging.yaml
 ```
 
-create certs
+Create certs
 
-staging
+### staging
 
-from staging folder
+From staging folder
 
 ```bash
 kubectl apply -f technotim-live-cert.yaml
 ```
 
-looks at logs
-
-can tail with
+Check the logs
 
 ```bash
 kubectl logs -n cert-manager -f cert-manager-877fd747c-fjwhp
 ```
 
-get challenges
+Get `challenges`
 
 ```bash
 kubectl get challenges
 ```
 
-or more details with
+Get more details
 
 ```bash
 kubectl describe order local-technotim-live-frm2z-1836084675
 ```
 
+### production
+
+From production folder
+
+```bash
+kubectl apply -f technotim-live-cert.yaml
+```
 
 ## Links
 
