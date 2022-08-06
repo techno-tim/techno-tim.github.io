@@ -152,7 +152,7 @@ kubectl get secrets --namespace traefik
 apply dashboard
 
 ```bash
-kubectl apply -f dashboard.yaml
+kubectl apply -f ingress.yaml
 ```
 
 visit
