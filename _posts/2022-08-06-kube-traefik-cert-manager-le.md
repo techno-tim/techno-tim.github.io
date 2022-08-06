@@ -140,7 +140,7 @@ htpasswd -nb techno password | openssl base64
 apply secret
 
 ```bash
-kubectl apply -f secret
+kubectl apply -f secret-dashboard.yaml
 ```
 
 get secret
@@ -149,10 +149,16 @@ get secret
 kubectl get secrets --namespace traefik
 ```
 
+apply middleware
+
+```bash
+kubectl apply -f middleware.yaml
+```
+
 apply dashboard
 
 ```bash
-kubectl apply -f dashboard.yaml
+kubectl apply -f ingress.yaml
 ```
 
 visit
@@ -183,7 +189,7 @@ helm repo add jetstack https://charts.jetstack.io
 ```
 
 ```bash
-update
+helm repo update
 ```
 
 ```bash
