@@ -10,6 +10,9 @@ tags: youtube live unboxing
 
 YouTube sent a package.  I have a feeling I know what it is, but we'll all find out live!
 
+Find all of my server gear here!
+<https://kit.co/TechnoTim/techno-tim-homelab-and-server-room-upgrade-2021>
+
 ## Links
 
 ⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>
