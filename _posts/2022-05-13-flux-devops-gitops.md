@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The FASTEST way to deploy apps to Kubernetes"
+title: "The FASTEST way to deploy apps to Kubernetes - GitOps with FLUX"
 date: 2022-05-13 08:00:00 -0500
 categories: kubernetes 
 tags: flux devops gitops kubernetes
