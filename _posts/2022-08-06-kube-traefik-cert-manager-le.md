@@ -43,6 +43,8 @@ Verify you can communicate with your cluster
 kubectl get nodes
 ```
 
+You should see
+
 ```console
 NAME     STATUS   ROLES                       AGE   VERSION
 k3s-01   Ready    control-plane,etcd,master   10h   v1.23.4+k3s1
@@ -57,6 +59,8 @@ Verify helm is installed
 ```bash
 helm version
 ```
+
+You should see
 
 ```console
 version.BuildInfo{Version:"v3.8.0", GitCommit:"d14138609b01886f544b2025f5000351c9eb092e", GitTreeState:"clean", GoVersion:"go1.17.5"}
