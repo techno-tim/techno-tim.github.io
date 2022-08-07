@@ -116,7 +116,7 @@ Now edit your `deployment.yml` and add a comment
 
 Create `ImageUpdateAutomation`
 
-```
+```bash
 flux create image update flux-system \
 --git-repo-ref=flux-system \
 --git-repo-path="./clusters/my-cluster" \
