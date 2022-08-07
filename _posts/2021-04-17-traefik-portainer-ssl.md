@@ -16,6 +16,9 @@ See all the hardware I recommend at <https://l.technotim.live/gear>
 
 Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
 
+> *Looking to do this same thing in Kubernetes? Check out [traefik + cert-manager on Kubernetes](https://docs.technotim.live/posts/kube-traefik-cert-manager-le/)*
+{: .prompt-info }
+
 ## Docker Setup
 
 See [this post](https://docs.technotim.live/posts/docker-compose-install/) on how to install `docker` and `docker-compose`
