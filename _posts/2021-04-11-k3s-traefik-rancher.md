@@ -8,7 +8,8 @@ tags: homelab rancher kubernetes k3s traefik
 
 ## About
 
-No video currently exists for this (yet)
+> *Note: There is an updated tutorial on installing traefik + cert-manager on Kubernetes [here](https://docs.technotim.live/posts/kube-traefik-cert-manager-le/). However, if you want to store your certificates on disk, this tutorial here is perfectly fine.*
+{: .prompt-info }
 
 This guide is for installing `traefik 2` on `k3s`.  If you're not using rancher, that's fine, just skip to `Reconfiguring k3s`
 
@@ -19,9 +20,6 @@ It assumes you have followed:
 * (if you need rancher) [High Availability Rancher on a Kubernetes Cluster](https://www.youtube.com/watch?v=APsZJbnluXg)
 
 There is a little bit of "undoing" we'll have to do since k3s ships with `traefik` and Rancher doesn't play well with service load balancer. So, we'll pick up after instaling these two.
-
-> *Note: There is an updated tutorial on installing traefik + cert-manager on Kubernetes [here](https://docs.technotim.live/posts/kube-traefik-cert-manager-le/). However, if you want to store your certificates on disk, this tutorial here is perfectly fine.*
-{: .prompt-info }
 
 ## Reconfigure Rancher
 
