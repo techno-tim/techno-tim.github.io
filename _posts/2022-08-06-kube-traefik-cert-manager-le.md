@@ -262,12 +262,16 @@ Apply secrets
 > Be sure to generate the correct token if using Cloudflare.  This is using an [API Token](https://cert-manager.io/docs/configuration/acme/dns01/cloudflare/#api-tokens) and not a global key.
 {: .prompt-info }
 
+From `issuers` folder
+
 ```bash
 kubectl apply -f secret-cf-token.yaml
 kubectl apply -f secret-cf-email.yaml
 ```
 
-Apply `ClusterIssuer`s
+Apply staging `ClusterIssuer`
+
+From `issuers` folder
 
 ```bash
 kubectl apply -f letsencrypt-staging.yaml
@@ -277,10 +281,10 @@ Create certs
 
 ### staging
 
-From staging folder
+From `certificates/staging` folder
 
 ```bash
-kubectl apply -f technotim-live-cert.yaml
+kubectl apply -f local-example-com.yaml
 ```
 
 Check the logs
@@ -303,10 +307,18 @@ kubectl describe order local-technotim-live-frm2z-1836084675
 
 ### production
 
-From production folder
+Apply production `ClusterIssuer`
+
+From `issuers` folder
 
 ```bash
-kubectl apply -f technotim-live-cert.yaml
+kubectl apply -f letsencrypt-production.yaml
+```
+
+From `certificates/production` folder
+
+```bash
+kubectl apply -f local-example-com.yaml
 ```
 
 ## Links
