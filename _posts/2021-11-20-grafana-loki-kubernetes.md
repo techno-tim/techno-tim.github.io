@@ -36,7 +36,7 @@ This command will:
 * install grafana
 * install prometheus
 * install loki
-* enable persistance for your stack and create a PVC
+* enable persistence for your stack and create a PVC
 
 ```bash
 helm upgrade --install loki grafana/loki-stack  --set grafana.enabled=true,prometheus.enabled=true,prometheus.alertmanager.persistentVolume.enabled=false,prometheus.server.persistentVolume.enabled=false,loki.persistence.enabled=true,loki.persistence.storageClassName=nfs-client,loki.persistence.size=5Gi
