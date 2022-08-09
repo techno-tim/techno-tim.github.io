@@ -83,6 +83,31 @@ Update repo
 helm repo update
 ```
 
+Create our namespace
+
+```bash
+kubectl create namespace traefik
+```
+
+Get all namespaces
+
+```bash
+kubectl get namespaces
+```
+
+We should see
+
+```console
+NAME              STATUS   AGE
+cert-manager      Active   12s
+default           Active   21h
+kube-node-lease   Active   21h
+kube-public       Active   21h
+kube-system       Active   21h
+metallb-system    Active   21h
+traefik           Active   12s
+```
+
 Install traefik
 
 ```bash
@@ -266,7 +291,6 @@ From `issuers` folder
 
 ```bash
 kubectl apply -f secret-cf-token.yaml
-kubectl apply -f secret-cf-email.yaml
 ```
 
 Apply staging `ClusterIssuer`
