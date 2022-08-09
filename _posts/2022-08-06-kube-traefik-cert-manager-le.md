@@ -99,7 +99,6 @@ We should see
 
 ```console
 NAME              STATUS   AGE
-cert-manager      Active   12s
 default           Active   21h
 kube-node-lease   Active   21h
 kube-public       Active   21h
