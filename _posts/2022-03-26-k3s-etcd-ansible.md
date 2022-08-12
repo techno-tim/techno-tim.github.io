@@ -58,7 +58,7 @@ Edit `inventory/my-cluster/group_vars/all.yml`  to your liking.  See comments in
 It's best to start using these args, and optionally include `traefik` if you want it installed with `k3s` however I would recommend installing it later ith `helm`
 
 ```yaml
-extra_server_args: "--no-deploy servicelb --no-deploy traefik"
+extra_server_args: "--disable servicelb --disable traefik"
 extra_agent_args: ""
 ```
 
@@ -68,7 +68,7 @@ I would not change these values unless you know what you are doing.  It will mos
 {: .prompt-danger }
 
 ```yaml
-extra_server_args: "--no-deploy servicelb --no-deploy traefik --write-kubeconfig-mode 644 --kube-apiserver-arg default-not-ready-toleration-seconds=30 --kube-apiserver-arg default-unreachable-toleration-seconds=30 --kube-controller-arg node-monitor-period=20s --kube-controller-arg node-monitor-grace-period=20s --kubelet-arg node-status-update-frequency=5s"
+extra_server_args: "--disable servicelb --disable traefik --write-kubeconfig-mode 644 --kube-apiserver-arg default-not-ready-toleration-seconds=30 --kube-apiserver-arg default-unreachable-toleration-seconds=30 --kube-controller-arg node-monitor-period=20s --kube-controller-arg node-monitor-grace-period=20s --kubelet-arg node-status-update-frequency=5s"
 extra_agent_args: "--kubelet-arg node-status-update-frequency=5s"
 ```
 
