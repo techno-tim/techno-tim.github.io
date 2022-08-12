@@ -154,7 +154,7 @@ kubectl delete -f example/service.yml
 
 ## What's next?
 
-See here to get the steps for installing [traefik](https://docs.technotim.live/posts/k3s-traefik-rancher/#install-traefik-2)
+See here to get the steps for installing [traefik + let's encrypt](https://docs.technotim.live/posts/kube-traefik-cert-manager-le/)
 
 See here for steps to deploy [rancher](https://docs.technotim.live/posts/rancher-ha-install/#install)
 
