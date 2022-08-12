@@ -55,7 +55,7 @@ node
 
 Edit `inventory/my-cluster/group_vars/all.yml`  to your liking.  See comments inline.
 
-It's best to start using these args, and optionally include `traefik` if you want it installed with `k3s` however I would recommend installing it later ith `helm`
+It's best to start using these args, and optionally include `traefik` if you want it installed with `k3s` however I would recommend installing it later with `helm`
 
 ```yaml
 extra_server_args: "--disable servicelb --disable traefik"
