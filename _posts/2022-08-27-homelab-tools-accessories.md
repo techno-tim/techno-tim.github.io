@@ -55,6 +55,10 @@ Here are all of the items that were in the video, plus a few more.
 
 * <https://amzn.to/3vOVCth>
 
+### Kill A Watt Electricity Usage Monitor
+
+* <https://amzn.to/3ASub52>
+
 ### SSD Mounting bracket
 
 * <https://amzn.to/3PeN3PB>
