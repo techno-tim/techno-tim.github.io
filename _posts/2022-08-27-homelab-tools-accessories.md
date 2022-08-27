@@ -22,7 +22,7 @@ Submit your build to Micro Center’s Build Showcase: <https://micro.center/vo6>
 
 Here are all of the items that were in the video, plus a few more.
 
-📦 See the kit here:  <https://kit.co/TechnoTim/essential-homelab-tools-accessories-for-home-labbers-and-it-pros>
+📦 See the entire kit here:  <https://kit.co/TechnoTim/essential-homelab-tools-accessories-for-home-labbers-and-it-pros>
 
 ### Cage nuts
 
