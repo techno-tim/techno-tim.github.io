@@ -64,7 +64,7 @@ extra_agent_args: ""
 
 I would not change these values unless you know what you are doing.  It will most likely not work for you but listing for posterity.
 
-> *Note: These are for an advanced use case. There isn't a one size fits all setting for everyone and their needs, I would try using k3s without these before changing.  This could have undesired effects like nodes going offline, pods jumping or being removed, etc... Using these args might come at the cost of stability*
+> *Note: These are for an advanced use case. There isn't a one size fits all setting for everyone and their needs, I would try using k3s with the above values before changing them.  This could have undesired effects like nodes going offline, pods jumping or being removed, etc... Using these args might come at the cost of stability*
 {: .prompt-danger }
 
 ```yaml
