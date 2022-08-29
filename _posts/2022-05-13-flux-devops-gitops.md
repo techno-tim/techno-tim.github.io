@@ -65,7 +65,7 @@ See [reference repo](https://l.technotim.live/quick-start) for files.
 
 First create a workload (see redis deployment file)
 
-Deploy the workload  (`deployment.yml`)
+Deploy the redis workload  (`deployment.yml`)
 
 ```bash
 git add -A && \
@@ -73,29 +73,29 @@ git commit -m "add redis deployment" && \
 git push origin main
 ```
 
-Create `ImageRepository`
+Create `ImageRepository` in the cluster, namespace, and chart that correspond.
 
 ```bash
 flux create image repository podinfo \
---image=ghcr.io/stefanprodan/podinfo \
+--image=redis \
 --interval=1m \
---export > ./clusters/my-cluster/podinfo-registry.yaml
+--export > ./clusters/home/default/redis/redis-registry.yaml
 ```
 
-Create `ImagePolicy`
+Create `ImagePolicy` in the cluster, namespace, and chart that correspond.
 
 ```bash
 flux create image policy podinfo \
 --image-ref=podinfo \
 --select-semver=5.0.x \
---export > ./clusters/my-cluster/podinfo-policy.yaml
+--export > ./clusters/home/default/redis/redis-policy.yaml
 ```
 
 Then deploy the `ImageRepository` and `ImagePolicy`
 
 ```bash
 git add -A && \
-git commit -m "add podinfo image scan" && \
+git commit -m "add redis image scan" && \
 git push origin main
 ```
 
@@ -119,13 +119,13 @@ Create `ImageUpdateAutomation`
 ```bash
 flux create image update flux-system \
 --git-repo-ref=flux-system \
---git-repo-path="./clusters/my-cluster" \
+--git-repo-path="./clusters/home" \
 --checkout-branch=main \
 --push-branch=main \
 --author-name=fluxcdbot \
 --author-email=fluxcdbot@users.noreply.github.com \
 --commit-template="{{range .Updated.Images}}{{println .}}{{end}}" \
---export > ./clusters/my-cluster/flux-system-automation.yaml
+--export > ./clusters/home/flux-system-automation.yaml
 ```
 
 Commit and deploy
