@@ -27,13 +27,14 @@ If you need to install a new kubernetes cluster you can use my [Ansible Playbook
 > You can find all of the resources for this tutorial [here](https://github.com/techno-tim/launchpad/tree/master/kubernetes/traefik-cert-manager)
 {: .prompt-info }
 
-### helm
+### Helm
 
 ```bash
 curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
 chmod 700 get_helm.sh
 ./get_helm.sh
 ```
+For other ways to install Helm see the installation docs [here](https://helm.sh/docs/intro/install)
 
 ## Installing
 
