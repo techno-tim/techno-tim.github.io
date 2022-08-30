@@ -13,7 +13,7 @@ jobs:
   push:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b # 3.0.2
     - name: Mirror + trigger CI
       uses: SvanBoxel/gitlab-mirror-and-ci-action@75d5778cddb9b18f4da47b5e4a826cd148dde62a
       with:
