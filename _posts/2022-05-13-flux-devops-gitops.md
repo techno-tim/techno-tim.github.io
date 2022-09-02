@@ -53,15 +53,15 @@ kubectl get pods -n flux-system
 
 ## Source Controller (installing manifests)
 
-See [reference repo](https://l.technotim.live/quick-start) for files, located in `/demos/flux-demo/clusters/home`
+See [reference repo](https://l.technotim.live/quick-start) for files, located in `/demos/flux-demo`
 
 ## Helm Controller (installing helm charts)
 
-See [reference repo](https://l.technotim.live/quick-start) for files, `/demos/flux-demo/clusters/home`
+See [reference repo](https://l.technotim.live/quick-start) for files, `/demos/flux-demo`
 
 ## Image Automation Controller (monitoring a container registry)
 
-See [reference repo](https://l.technotim.live/quick-start) for files, `/demos/flux-demo/clusters/home`
+See [reference repo](https://l.technotim.live/quick-start) for files, `/demos/flux-demo`
 
 First create a workload (see redis deployment file)
 
