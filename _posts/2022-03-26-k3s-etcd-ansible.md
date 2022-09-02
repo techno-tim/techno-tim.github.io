@@ -83,14 +83,6 @@ ansible-playbook ./site.yml -i ./inventory/my-cluster/hosts.ini
 
 After deployment control plane will be accessible via virtual ip address which is defined in `inventory/my-cluster/group_vars/all.yml` as `apiserver_endpoint`
 
-## Removing
-
-To remove k3s from the nodes.  These nodes should be rebooted afterwards due to VIP still being present
-
-```bash
-ansible-playbook ./reset.yml -i ./inventory/my-cluster/hosts.ini
-```
-
 ## kube config
 
 To get access to your Kubernetes cluster and copy your kube config locally run:
@@ -150,6 +142,14 @@ You can clean this up by running
 ```bash
 kubectl delete -f example/deployment.yml
 kubectl delete -f example/service.yml
+```
+
+## Resetting your cluster
+
+This will remove k3s from all nodes.  These nodes should be rebooted afterwards.
+
+```bash
+ansible-playbook ./reset.yml -i ./inventory/my-cluster/hosts.ini
 ```
 
 ## What's next?
