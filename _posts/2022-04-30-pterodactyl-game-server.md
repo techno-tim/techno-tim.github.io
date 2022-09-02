@@ -24,7 +24,6 @@ To install docker, see [https://docs.technotim.live/posts/docker-compose-install
 
 If you need to configure your reverse proxy, [see my guide on how to do that](https://docs.technotim.live/posts/traefik-portainer-ssl/).
 
-
 ## Need games 🎮?
 
 Check out game deals on [Humble Games (affiliate link)](https://l.technotim.live/humble-store)
