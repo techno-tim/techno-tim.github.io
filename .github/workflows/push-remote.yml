@@ -13,7 +13,11 @@ jobs:
   push:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b # 3.0.2+
+    - name: Checkout
+      uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b # 3.0.2
+      with:
+        fetch-depth: 0  # for posts's lastmod
+
     - name: Mirror + trigger CI
       uses: SvanBoxel/gitlab-mirror-and-ci-action@871fb56ab2be794ca4df43e81cd03236ad8fba62
       with:
