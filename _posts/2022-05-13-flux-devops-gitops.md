@@ -22,7 +22,7 @@ If you're looking to install your own Kubernetes cluster, be sure to check out [
 
 ## Reference Repo
 
-If you're looking for the repo I created this in video, you can [find it here](https://l.technotim.live/quick-start)
+If you're looking for the repo I created this in video, you can [find it here](https://l.technotim.live/quick-start) `/demos/flux-demo`
 
 ## Install Flux CLI
 
