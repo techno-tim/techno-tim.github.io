@@ -19,6 +19,7 @@ jobs:
       with:
         args: 'https://gitlab.com/${{ secrets.GITLAB_PROJECT_ID }}'
       env:
+        FORCE_PUSH: "false"
         GITLAB_HOSTNAME: ${{ secrets.GITLAB_HOSTNAME }}
         GITLAB_USERNAME: ${{ secrets.GITLAB_USERNAME }}
         GITLAB_PASSWORD: ${{ secrets.GITLAB_PASSWORD }}
