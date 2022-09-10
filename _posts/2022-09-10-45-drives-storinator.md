@@ -22,7 +22,7 @@ Submit your build to Micro Center’s Build Showcase: <https://micro.center/gov>
 
 Check out 45Drives Storinators and other servers -  <https://www.45drives.com/>
 
-Seagate Exos X16 14TB Drives - <https://amzn.to/3TYmt0u>
+Seagate Exos X16 14TB Drives and more - <https://kit.co/TechnoTim/best-ssd-hard-drive-flash-storage>
 
 ## Links
 
