@@ -20,7 +20,7 @@ Submit your build to Micro Center’s Build Showcase: <https://micro.center/gov>
 
 📺 [Watch Video](https://www.youtube.com/watch?v=yqiCsSNpwjQ)
 
-Check out 45Drives Storinators and other servers -  <https://www.45drives.com/ >
+Check out 45Drives Storinators and other servers -  <https://www.45drives.com/>
 
 Seagate Exos X16 14TB Drives - <https://amzn.to/3TYmt0u>
 
