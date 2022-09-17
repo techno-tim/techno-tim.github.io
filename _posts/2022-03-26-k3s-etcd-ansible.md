@@ -28,7 +28,15 @@ Next, you'll need to fork and clone [the repo](https://github.com/techno-tim/k3s
 git clone https://github.com/techno-tim/k3s-ansible
 ```
 
+Next you'll need to install some requirements for `ansible`
+
+```bash
+ansible-galaxy install -r ./collections/requirements.yml
+```
+
 Next, you'll want to `cd` into the repo and copy the `sample` directory within the `inventory` directory.
+
+(Be sure you're using the [latest template](https://github.com/techno-tim/k3s-ansible/blob/master/inventory/sample/group_vars/all.yml))
 
 ```bash
 cp -R inventory/sample inventory/my-cluster
@@ -57,14 +65,20 @@ Edit `inventory/my-cluster/group_vars/all.yml`  to your liking.  See comments in
 
 It's best to start using these args, and optionally include `traefik` if you want it installed with `k3s` however I would recommend installing it later with `helm`
 
+It's best to start ith the default values in the repo.
+
 ```yaml
-extra_server_args: "--disable servicelb --disable traefik"
-extra_agent_args: ""
+extra_server_args: >-
+  {{ extra_args }}
+  --disable servicelb
+  --disable traefik
+extra_agent_args: >-
+  {{ extra_args }}
 ```
 
 I would not change these values unless you know what you are doing.  It will most likely not work for you but listing for posterity.
 
-> *Note: These are for an advanced use case. There isn't a one size fits all setting for everyone and their needs, I would try using k3s with the above values before changing them.  This could have undesired effects like nodes going offline, pods jumping or being removed, etc... Using these args might come at the cost of stability*
+> *Note: These are for an advanced use case. There isn't a one size fits all setting for everyone and their needs, I would try using k3s with the above values before changing them.  This could have undesired effects like nodes going offline, pods jumping or being removed, etc... Using these args might come at the cost of stability Also, these will not work anymore without some modifications*  
 {: .prompt-danger }
 
 ```yaml
