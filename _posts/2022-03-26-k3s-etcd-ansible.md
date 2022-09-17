@@ -68,12 +68,8 @@ It's best to start using these args, and optionally include `traefik` if you wan
 It's best to start ith the default values in the repo.
 
 ```yaml
-extra_server_args: >-
-  {{ extra_args }}
-  --disable servicelb
-  --disable traefik
-extra_agent_args: >-
-  {{ extra_args }}
+extra_server_args: {{ extra_args }} --disable servicelb --disable traefik
+extra_agent_args: {{ extra_args }}
 ```
 
 I would not change these values unless you know what you are doing.  It will most likely not work for you but listing for posterity.
