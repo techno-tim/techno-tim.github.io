@@ -126,7 +126,7 @@ should see
 AGE-SECRET-KEY-1HJCRJVK7EE3A5N8CRP8YSDUGZKNW90Y5UR2RGYAS8L279LFP6LCQU5ADNR
 ```
 
-> *Remember this is a secret so keep this safe* Do not commit this!
+> *Remember this is a secret so keep this safe!*  Do not commit this!
 {: .prompt-info }
 
 move the file and add to our shell
