@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Encrypt Your Secrets with Mozilla SOPS and AGE - Commit YAML, JSON, ENV, Kubernetes Secrets to Git"
+title: "Encrypt Your Sensitive Information Before Storing It - Encrypting with Mozilla SOPS and AGE"
 date: 2022-10-01 09:00:00 -0500
 categories: homelab
 tags: git kubernetes secrets security
 ---
 
-[![Encrypt Your Secrets with Mozilla SOPS and AGE - Commit YAML, JSON, ENV, Kubernetes Secrets to Git](https://img.youtube.com/vi/1BquzE3Yb4I/0.jpg)](https://www.youtube.com/watch?v=1BquzE3Yb4I "Encrypt Your Secrets with Mozilla SOPS and AGE - Commit YAML, JSON, ENV, Kubernetes Secrets to Git")
+[![Encrypt Your Sensitive Information Before Storing It - Encrypting with Mozilla SOPS and AGE](https://img.youtube.com/vi/1BquzE3Yb4I/0.jpg)](https://www.youtube.com/watch?v=1BquzE3Yb4I "Encrypt Your Sensitive Information Before Storing It - Encrypting with Mozilla SOPS and AGE")
 
 Committing secrets to your Git Repo can expose information like passwords, access tokens, and other types of sensitive information.  Some might think that committing secrets to a private Git Repo is OK, but I am here to tell you it's not.  If you're going to commit secrets to a git repo, private or public, you should encrypt them first using Mozilla SOPS (Secret Operations) and AGE.  SOPS is an editor of encrypted files that supports YAML, JSON, ENV, INI and BINARY formats and encrypts with AWS KMS, GCP KMS, Azure Key Vault, age, and PGP.  Age is a simple, modern, and secure file encryption tool, format, and build using Go.  It can encrypt and decrypt your files making then safe enough to commit to your Git repos!
 
