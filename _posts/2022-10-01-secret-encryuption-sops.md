@@ -25,9 +25,7 @@ from releases page
 <https://github.com/mozilla/sops/releases>
 
 ```bash
-
 wget https://github.com/mozilla/sops/releases/download/v3.7.3/sops_3.7.3_amd64.deb
-
 sudo dpkg -i ./sops_3.7.3_amd64.deb
 rm ./sops_3.7.3_amd64.deb
 ```
@@ -44,7 +42,7 @@ should see
 sops 3.7.3 (latest)
 ```
 
-## Install AGE
+## Install Age
 
 <https://github.com/FiloSottile/age>
 
@@ -54,9 +52,13 @@ sudo apt install age
 
 or the manual way
 
+get the file
+
 ```bash
 wget -O age.tar.gz https://github.com/FiloSottile/age/releases/download/v1.0.0/age-v1.0.0-linux-amd64.tar.gz
 ```
+
+extract and move
 
 ```bash
 tar xf age.tar.gz
@@ -64,12 +66,14 @@ sudo mv age/age /usr/local/bin
 sudo mv age/age-keygen /usr/local/bin
 ```
 
+clean up
+
 ```bash
 rm -rm age
 rm age.tar.gz
 ```
 
-test with
+test `age` with
 
 ```bash
  age -version
@@ -81,7 +85,7 @@ should see
 v1.0.0
 ```
 
-test with
+test `age-keygen` with
 
 ```bash
  age-keygen -version
@@ -122,11 +126,10 @@ should see
 AGE-SECRET-KEY-1HJCRJVK7EE3A5N8CRP8YSDUGZKNW90Y5UR2RGYAS8L279LFP6LCQU5ADNR
 ```
 
+> *Remember this is a secret so keep this safe* Do not commit this!
+{: .prompt-info }
+
 move the file and add to our shell
-
-Remember this is a secret so keep this safe
-
-Do not commit this!
 
 ```bash
 mkdir ~/.sops
@@ -140,7 +143,7 @@ nano ~/.zshrc
 # or nano ~/.bashrc
 ```
 
-add to the end
+add to the end of file
 
 ```bash
 export SOPS_AGE_KEY_FILE=$HOME/.sops/key.txt
@@ -153,7 +156,7 @@ source ~/.zshrc
 # or source ~/.bashrc
 ```
 
-## Now!  Let's encrypt
+## Now! Let's encrypt
 
 A few ways you can do this.  You can encrypt in place or encrypt with an editor but we’re going to do an in place encryption.
 
@@ -333,7 +336,7 @@ sops --decrypt --age $(cat $SOPS_AGE_KEY_FILE |grep -oP "public key: \K(.*)") --
 
 ## Flux
 
-If you're thinking of doing GitOps with Flux, you can [check out my video on this topic](https://www.youtube.com/watch?v=PFLimPh5-wo) or see my [documentation](https://docs.technotim.live/posts/flux-devops-gitops/).  Flux do in cluster decryption and fully automating decryption of secrets.
+If you're thinking of doing GitOps with Flux, you can [check out my video on this topic](https://www.youtube.com/watch?v=PFLimPh5-wo) or see my [documentation](https://docs.technotim.live/posts/flux-devops-gitops/).  You can do cluster decryption and fully automate decryption of secrets.
 
 In cluster decryption with Flux
 
