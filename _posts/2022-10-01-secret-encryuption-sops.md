@@ -223,7 +223,7 @@ then
 kubectl get secret mysql-secret-test -o jsonpath='{.data.MYSQL_PASSWORD}'  | base64 --decode
 ```
 
-## VSCOde
+## VSCode
 
 install vscode extension
 
