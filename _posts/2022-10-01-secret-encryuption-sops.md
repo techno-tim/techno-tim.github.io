@@ -93,7 +93,7 @@ should see
 v1.0.0
 ```
 
-### configure keys
+## configure keys
 
 Now that we have `age` installed we need to create a public and private key
 
@@ -153,11 +153,11 @@ source ~/.zshrc
 # or source ~/.bashrc
 ```
 
-### Now!  Let's encrypt
+## Now!  Let's encrypt
 
 A few ways you can do this.  You can encrypt in place or encrypt with an editor but we’re going to do an in place encryption.
 
-### YAML
+## YAML
 
 This can be kubernetes secrets, helm values, or just plain old yaml
 
@@ -189,7 +189,7 @@ to decrypt
 sops --decrypt --age $(cat $SOPS_AGE_KEY_FILE |grep -oP "public key: \K(.*)") --encrypted-regex '^(data|stringData)$' --in-place ./secret.yaml
 ```
 
-### Kubernetes
+## Kubernetes
 
 If you want to decrypt this secret on the fly and apply to kubernetes
 
@@ -223,13 +223,7 @@ then
 kubectl get secret mysql-secret-test -o jsonpath='{.data.MYSQL_PASSWORD}'  | base64 --decode
 ```
 
-### Flux
-
-In cluster decryption with Flux
-
-<https://fluxcd.io/flux/guides/mozilla-sops/#configure-in-cluster-secrets-decryption>
-
-### VSCOde
+## VSCOde
 
 install vscode extension
 
@@ -241,7 +235,7 @@ encrypt .env files
 
 make sure extension is installed
 
-#### .env
+## .ENV Files
 
 create
 
@@ -266,7 +260,7 @@ sops --decrypt --age $(cat $SOPS_AGE_KEY_FILE |grep -oP "public key: \K(.*)") -i
 
 don't forget to add `.decrypted~secret.env` to your `.gitignore`
 
-### json
+## JSON Files
 
 `secret.json`
 
@@ -291,7 +285,7 @@ sops --decrypt --age $(cat $SOPS_AGE_KEY_FILE |grep -oP "public key: \K(.*)") -i
 
 don't forget to add `.decrypted~secret.json` to your `.gitignore`
 
-### ini
+## INI Files
 
 `secret.ini`
 
@@ -315,7 +309,7 @@ sops --decrypt --age $(cat $SOPS_AGE_KEY_FILE |grep -oP "public key: \K(.*)") -i
 
 don't forget to add `.decrypted~secret.ini` to you `.gitignore`
 
-### whole files
+## Files
 
 `secret.sql`
 
@@ -337,12 +331,13 @@ decrypt
 sops --decrypt --age $(cat $SOPS_AGE_KEY_FILE |grep -oP "public key: \K(.*)") --in-place ./secret.sql
 ```
 
-## Links
+## Flux
 
-⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>
+If you're thinking of doing GitOps with Flux, you can [check out my video on this topic](https://www.youtube.com/watch?v=PFLimPh5-wo) or see my [documentation](https://docs.technotim.live/posts/flux-devops-gitops/).  Flux do in cluster decryption and fully automating decryption of secrets.
 
-🚀 Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files
+In cluster decryption with Flux
 
+<https://fluxcd.io/flux/guides/mozilla-sops/#configure-in-cluster-secrets-decryption>
 
 ## Links
 
