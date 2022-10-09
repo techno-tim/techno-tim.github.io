@@ -3,7 +3,7 @@ layout: post
 title: "Encrypt Your Sensitive Information Before Storing It - Encrypting with Mozilla SOPS and AGE"
 date: 2022-10-01 09:00:00 -0500
 categories: homelab
-tags: git kubernetes secrets security
+tags: git kubernetes secrets security sops age
 ---
 
 [![Encrypt Your Sensitive Information Before Storing It - Encrypting with Mozilla SOPS and AGE](https://img.youtube.com/vi/1BquzE3Yb4I/0.jpg)](https://www.youtube.com/watch?v=1BquzE3Yb4I "Encrypt Your Sensitive Information Before Storing It - Encrypting with Mozilla SOPS and AGE")
