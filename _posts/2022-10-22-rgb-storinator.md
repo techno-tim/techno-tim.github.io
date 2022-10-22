@@ -8,7 +8,7 @@ tags: git kubernetes secrets security sops age
 
 [![I Put RGB Fans in My Server and I am NOT Apologizing](https://img.youtube.com/vi/zaAUn0QeKVo/0.jpg)](https://www.youtube.com/watch?v=zaAUn0QeKVo "I Put RGB Fans in My Server and I am NOT Apologizing")
 
-My Storinator server  from 45Drives is great, except for 1 thing.  It's a little loud for my home.  It would be fine if it were in a data center or a real network closet, however this is in my basement.  I decided to swap out all the fans to make it quieter, and install RGB fans along with a ZigBee controller so I can control them with Home Automation!
+My Storinator server from 45Drives is great, except for 1 thing.  It's a little loud for my home.  It would be fine if it were in a data center or a real network closet, however this is in my basement.  I decided to swap out all the fans to make it quieter, and install RGB fans along with a ZigBee controller so I can control them with Home Automation!
 
 📺 [Watch Video](https://www.youtube.com/watch?v=zaAUn0QeKVo)
 
@@ -31,6 +31,7 @@ Time Codes
 00:00 - Making My Server Quiet
 
 02:13 - Micro Center (Sponsor)
+
 03:18 - Taking the Server Apart
 
 04:17 - Changing the CPU Cooler
