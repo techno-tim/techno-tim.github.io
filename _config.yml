@@ -113,8 +113,8 @@ comments:
   giscus:
     repo: techno-tim/techno-tim.github.io
     repo_id: MDEwOlJlcG9zaXRvcnkyNTQ3ODQ3Nzk
-    category: General
-    category_id: DIC_kwDODy-1C84B_m7y
+    category: Comments
+    category_id: DIC_kwDODy-1C84CSN7z
     mapping: pathname          # optional, default to 'pathname'
     input_position: bottom  # optional, default to 'bottom'
     lang: en            # optional, default to the value of `site.lang`
