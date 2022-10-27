@@ -39,3 +39,7 @@ vendor
 # npm dependencies
 node_modules
 package-lock.json
+
+!.husky
+!.commitlintrc.json
+!.versionrc.json
