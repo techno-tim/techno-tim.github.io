@@ -34,14 +34,14 @@ spec:
             cpu: "250m" 
         ports: 
         - containerPort: 80
-      affinity:
-          podAntiAffinity:
-            preferredDuringSchedulingIgnoredDuringExecution:
-            - podAffinityTerm:
-                labelSelector:
-                  matchLabels:
-                    name: technotim-docs
-                topologyKey: kubernetes.io/hostname
-              weight: 100
       imagePullSecrets: 
       - name: registry-credentials-gitlab
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+              - matchExpressions:
+                  - key: network
+                    operator: In
+                    values:
+                      - servers-untrusted
