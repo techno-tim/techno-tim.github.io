@@ -22,7 +22,7 @@ To install docker, see [https://docs.technotim.live/posts/docker-compose-install
 
 ## Reverse Proxy
 
-If you need to configure your reverse proxy, [see my guide on how to do that](https://docs.technotim.live/posts/traefik-portainer-ssl/).
+Both your Pterodactyl Panel server as well as your Pterodactyl Wing server will need to be configured in your reverse proxy, each with their own public URL. If you need help configuring your reverse proxy, [see my guide on how to do that](https://docs.technotim.live/posts/traefik-portainer-ssl/).
 
 ## Need games 🎮?
 
@@ -51,6 +51,7 @@ x-common:
     MYSQL_ROOT_PASSWORD: "CHANGE_ME_TOO"
   panel:
     &panel-environment
+    # This URL should be the URL that your reverse proxy routes to the panel server
     APP_URL: "https://pterodactyl.example.com"
     # A list of valid timezones can be found here: http://php.net/manual/en/timezones.php
     APP_TIMEZONE: "UTC"
@@ -199,7 +200,8 @@ docker-compose up -d
 sudo nano /etc/pterodactyl/config.yml
 ```
 
-Paste the contents from the config in your panel for this node
+Paste the contents from the config your panel generated for your node into this file
+Note: The `FQDN` field when configuring the node in the panel should be the URL that your reverse proxy routes to your wing server. Also ensure you entered `443` for the `Daemon Port` field.
 
 `config.yml`
 
