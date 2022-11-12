@@ -3,7 +3,7 @@ layout: post
 title: "Best Server Rack for Your HomeLab? Sysracks Enclosed Rack!"
 date: 2022-10-22 09:00:00 -0500
 categories: homelab
-tags: git kubernetes secrets security sops age
+tags: server server-rack homelab hardware sysracks 
 ---
 
 [![Best Server Rack for Your HomeLab? Sysracks Enclosed Rack!](https://img.youtube.com/vi/plwhD5tRsGM/0.jpg)](https://www.youtube.com/watch?v=plwhD5tRsGM "Best Server Rack for Your HomeLab? Sysracks Enclosed Rack!")
