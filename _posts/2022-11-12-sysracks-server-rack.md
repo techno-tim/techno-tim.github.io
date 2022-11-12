@@ -8,7 +8,7 @@ tags: git kubernetes secrets security sops age
 
 [![Best Server Rack for Your HomeLab? Sysracks Enclosed Rack!](https://img.youtube.com/vi/plwhD5tRsGM/0.jpg)](https://www.youtube.com/watch?v=plwhD5tRsGM "Best Server Rack for Your HomeLab? Sysracks Enclosed Rack!")
 
-I've been on a quest looking for a new server rack for my HomeLab in my home.  I've outgrow my current 18u open frame rack and decided to give a 32u Sysracks Enclosed Rack a try!  Join me as we put together this server rack, test out all of the features, and I'll let you know my thoughts about this brand new server rack!
+I've been on a quest looking for a new server rack for my HomeLab in my home.  I've outgrown my current 18u open frame rack and decided to give a 32u Sysracks Enclosed Rack a try!  Join me as we put together this server rack, test out all of the features, and I'll let you know my thoughts about this brand new server rack!
 
 📺 [Watch Video](https://www.youtube.com/watch?v=plwhD5tRsGM)
 
@@ -29,7 +29,7 @@ Shop Micro Center’s Black Friday Deals: <https://micro.center/rgu>
 📦 See a collection of Sysracks racks here:
 <https://kit.co/TechnoTim/sysracks-server-racks>
 
-## Time Codes
+## Chapters
 
 00:00 - Why get a new Server Rack?
 
