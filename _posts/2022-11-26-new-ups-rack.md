@@ -16,6 +16,7 @@ Huge THANK YOU to Eaton / Tripp Lite for sending these UPS systems.  If you're l
 
 Tripp Lite
 <https://tripplite.eaton.com>
+
 Eaton
 <https://www.eaton.com/us/en-us/products/backup-power-ups-surge-it-power-distribution/backup-power-ups.html>
 
