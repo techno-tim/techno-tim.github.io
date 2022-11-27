@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "I'll never run out of power! - Eaton and Tripp Lite UPS"
-date: 2022-10-22 09:00:00 -0500
+date: 2022-11-26 09:00:00 -0500
 categories: homelab
 tags: ups eaton tripp-lite server server-rack
 ---
