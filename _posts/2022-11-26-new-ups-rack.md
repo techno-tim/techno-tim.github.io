@@ -26,25 +26,19 @@ Eaton
 
 ## Check out a variety of UPS Systems
 
-Tripp Lite
+### Tripp Lite
 
-Tripp Lite 1500VA Smart UPS Back Up - <https://amzn.to/3gEwbGG>
+- Tripp Lite 1500VA Smart UPS Back Up - <https://amzn.to/3gEwbGG>
+- Tripp Lite 2200VA 1920W UPS Smart 2U Rackmount - <https://amzn.to/3XrnC2q>
+- Tripp Lite BP36V15-2U Smart UPS 36V 2U Rackmount External Battery Pack - <https://amzn.to/3XxwBzd>
+- Tripp Lite SMART1500LCD 1500VA Smart UPS Battery Back Up - <https://amzn.to/3VnIWny>
 
-Tripp Lite 2200VA 1920W UPS Smart 2U Rackmount - <https://amzn.to/3XrnC2q>
+### Eaton
 
-Tripp Lite BP36V15-2U Smart UPS 36V 2U Rackmount External Battery Pack - <https://amzn.to/3XxwBzd>
-
-Tripp Lite SMART1500LCD 1500VA Smart UPS Battery Back Up - <https://amzn.to/3VnIWny>
-
-Eaton
-
-Eaton 5P550R 5P 550 Rackmount  - <https://amzn.to/3UaLwwa>
-
-Eaton 5P Rackmount Compact 1500VA UPS  -  <https://amzn.to/3OEJVhd>
-
-Eaton 5P1500R - <https://amzn.to/3OC2D90>
-
-Eaton 5S1500LCD UPS  - <https://amzn.to/3GHXaf8>
+- Eaton 5P550R 5P 550 Rackmount  - <https://amzn.to/3UaLwwa>
+- Eaton 5P Rackmount Compact 1500VA UPS  -  <https://amzn.to/3OEJVhd>
+- Eaton 5P1500R - <https://amzn.to/3OC2D90>
+- Eaton 5S1500LCD UPS  - <https://amzn.to/3GHXaf8>
 
 ## NUT Server Install script
 
