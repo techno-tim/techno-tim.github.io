@@ -22,7 +22,7 @@ Be sure to check out (and star) the repo with an automated NUT server install!
 
 ## Instructions
 
-Be sure you have a raspberry pi or any machine running Debian / Ubuntu Linux.  Then plugin in your UPS via USB and then SSH into your Pi.
+Be sure you have a raspberry pi or any machine running Debian / Ubuntu Linux.  Then plug in your UPS via USB and then SSH into your Pi.
 
 Then download th script.
 
@@ -40,7 +40,6 @@ Run the script.
 
 ```bash
 sudo ./nutinstall.sh
-
 ```
 
 Answer a few questions.
