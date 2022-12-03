@@ -3,7 +3,7 @@ layout: post
 title: "How to Install Docker and Docker Compose"
 date: 2021-08-14 11:00:00 -0500
 categories: docker
-tags: homelab docker-docker-compose
+tags: homelab docker docker-compose
 ---
 
 ## Install Docker
