@@ -14,11 +14,16 @@ Setting up alerts in Proxmox is important and critical to making sure you are no
 
 📺 [Watch Video](https://www.youtube.com/watch?v=85ME8i4Ry6A)
 
+## Sponsor
+
 Huge THANK YOU to Micro Center for Sponsoring Today's video!
 
 New Customer Exclusive – Free 256GB SDD: <https://micro.center/24c>
+
 Check out Micro Center’s PC Builder: <https://micro.center/1wk>
+
 Submit your build to Micro Center’s Build Showcase: <https://micro.center/tvv>
+
 Shop Micro Center’s Top Deals: <https://micro.center/jb4>
 
 ## Configuring Alerts
@@ -86,7 +91,7 @@ postfix reload
 send a test emails
 
 ```bash
-echo "This is a test message sent from postfix on my Proxmox Server" | mail -s "Test Email from Proxmox" youremailaddress@gmail.com
+echo "This is a test message sent from postfix on my Proxmox Server" | mail -s "Test Email from Proxmox" your-email@gmail.com
 ```
 
 fix from name in email
