@@ -148,18 +148,31 @@ postfix reload
 ## Chapters
 
 00:00 - Why you should set up alerts in Proxmox
+
 01:42 - Micro Center / Free SSD (Sponsor)
+
 02:56 - Where can I find the documentation
+
 03:07 - Installing and configuring dependencies
+
 03:54 - Google Email address configuration
+
 08:43 - Configuring postfix and customizing the email alert
+
 11:47 - Changing the mail sender name with pcre
+
 14:20 - Configure where email alerts are sent
+
 15:01 - Backup Alerts
+
 17:33 - SMART alerts
+
 18:53 - ZFS Alerts
+
 19:52 - Testing in Production
+
 24:03 - How Proxmox alerts could be better
+
 25:30 - Stream Highlight - "Just some flashing lights & music"
 
 ## Links
