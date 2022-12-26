@@ -130,7 +130,7 @@ cat /etc/postfix/smtp_header_checks.db
 add the module to our postfix config
 
 ```bash
-nano nano /etc/postfix/main.cf
+nano /etc/postfix/main.cf
 ```
 
 add to the end of the file
