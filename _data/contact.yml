@@ -3,6 +3,7 @@
 -
   type: twitter
   icon: 'fab fa-twitter'
+  url:  'https://l.technotim.live/twitter'
 -
   type: youtube
   icon: 'fab fa-youtube'
@@ -14,7 +15,7 @@
 -
   type: patreon
   icon: 'fab fa-patreon'
-  url:  'https://www.patreon.com/technotim'
+  url:  'https://l.technotim.live/patreon'
 -
   type: discord
   icon: 'fab fa-discord'
@@ -22,35 +23,37 @@
 -
   type: github
   icon: 'fab fa-github'
+  url:  'https://l.technotim.live/linkedin'
+-
+  type: instagram
+  icon: 'fab fa-instagram'
+  url:  'https://l.technotim.live/instagram'
+-
+  type: linkedin
+  icon: 'fab fa-linkedin'
+  url:  'https://l.technotim.live/linkedin'
+-
+  type: mastodon
+  icon: 'fab fa-mastodon'
+  url:  'https://l.technotim.live/mastodon'  # Fill with your Mastodon account page, rel="me" will be applied for verification
+-
+  type: tiktok
+  icon: 'fab fa-tiktok'
+  url:  'https://l.technotim.live/tiktok'
+-
+  type: facebook
+  icon: 'fab fa-facebook'
+  url:  'https://l.technotim.live/facebook'
 -
   type: rss
   icon: 'fas fa-rss'
   noblank: true
-
-#   type: instagram
-#   icon: 'fab fa-instagram'
-# -
-#   type: facebook
-#   icon: 'fab fa-facebook'
-
-# -
-#   type: tiktok
-#   icon: 'fab fa-tiktok'
 
 #   type: email
 #   icon: 'fas fa-envelope'
 #   noblank: true            # open link in current tab
 
 # Uncomment and complete the url below to enable more contact options
-# -
-#   type: mastodon
-#   icon: 'fab fa-mastodon'   # icons powered by <https://fontawesome.com/>
-#   url:  ''                  # Fill with your mastodon account page
-# -
-#   type: linkedin
-#   icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
-#   url:  ''                  # Fill with your Linkedin homepage
-# -
 #   type: stack-overflow
 #   icon: 'fab fa-stack-overflow'
 #   url:  ''                  # Fill with your stackoverflow homepage
