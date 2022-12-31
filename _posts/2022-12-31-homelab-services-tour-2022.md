@@ -58,7 +58,6 @@ Meet Jekyll - The Static Site Generator - <https://www.youtube.com/watch?v=F8iOU
 
 (Affiliate links are included in this description. I may receive a small commission at no cost to you.)
 
-
 ### Kit
 
 Want to see all the gear in this video?
