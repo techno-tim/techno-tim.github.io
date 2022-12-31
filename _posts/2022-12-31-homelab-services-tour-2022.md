@@ -3,7 +3,7 @@ layout: post
 title: "Techno Tim HomeLab Services Tour (Late 2022) - What am I Self-Hosting in my HomeLab?"
 date: 2022-12-31 09:00:00 -0500
 categories: homelab
-tags: homelab hardware network server server-rack
+tags: homelab hardware network server self-hosted kubernetes k3s linux
 ---
 
 [![Techno Tim HomeLab Services Tour (Late 2022) - What am I Self-Hosting in my HomeLab?](https://img.youtube.com/vi/yrMRZVvkxeA/0.jpg)](https://www.youtube.com/watch?v=yrMRZVvkxeA "Techno Tim HomeLab Services Tour (Late 2022) - What am I Self-Hosting in my HomeLab?")
@@ -20,39 +20,23 @@ Worth mentioning, I have videos on almost every service mentioned in this video!
 
 Here are most of the videos mentioned in this video:
 
-Techno Tim HomeLab Server Room Tour! (Late 2022) - <https://www.youtube.com/watch?v=dzh3so5wOro>
-
-Self-Hosting Security Guide for your HomeLab - <https://www.youtube.com/watch?v=Cs8yOmTJNYQ>
-
-Meet Heimdall, Your Homelab Application Dashboard - <https://www.youtube.com/watch?v=PA01Z6-z8Qs>
-
-Before I do anything on Proxmox, I do this first... - <https://www.youtube.com/watch?v=GoZaMgEgrHw>
-
-The FASTEST Way to run Kubernetes at Home - k3s Ansible Automation - <https://www.youtube.com/watch?v=CbkEWcUZ7zM>
-
-TrueNAS Scale Apps - Official, Unofficial, Docker, and Kubernetes - <https://www.youtube.com/watch?v=oafOky5GSzc>
-
-High Availability Pi-Hole? Yes please! - <https://www.youtube.com/watch?v=IFVYe3riDRA>
-
-Using Pi-Hole for Local DNS - Fast, Simple, and Easy Guide - <https://www.youtube.com/watch?v=kKsHo6r4_rc>
-
-Flux GitOps Tutorial - DevOps and GitOps for Kubernetes - <https://www.youtube.com/watch?v=PFLimPh5-wo>
-
-Wildcard Certificates with Traefik + cert-manager + Let's Encrypt in Kubernetes Tutorial - <https://www.youtube.com/watch?v=G4CmbYL9UPg>
-
-Beautiful Dashboards with Grafana and Prometheus - Monitoring Kubernetes Tutorial - <https://www.youtube.com/watch?v=fzny5uUaAeY>
-
-Network UPS Tools (NUT Server) Ultimate Guide - <https://www.youtube.com/watch?v=vyBP7wpN72c>
-
-Self-Hosted, DIY, Open Source Alternative to Linktree - <https://www.youtube.com/watch?v=42SqfI_AjXU>
-
-Meet keepalived - High Availability and Load Balancing in One - <https://www.youtube.com/watch?v=hPfk0qd4xEY>
-
-Meet Grafana LOKI, a Log Aggregation System for EVERYTHING - <https://www.youtube.com/watch?v=h_GGd7HfKQ8>
-
-Meet Uptime Kuma, a Fancy Open Source Uptime Monitor for all your HomeLab Monitoring Needs - <https://www.youtube.com/watch?v=r_A5NKkAqZM>
-
-Meet Jekyll - The Static Site Generator - <https://www.youtube.com/watch?v=F8iOU1ci19Q>
+- [Techno Tim HomeLab Server Room Tour! (Late 2022)](https://www.youtube.com/watch?v=dzh3so5wOro)
+- [Self-Hosting Security Guide for your HomeLab](https://www.youtube.com/watch?v=Cs8yOmTJNYQ)
+- [Meet Heimdall, Your Homelab Application Dashboard](https://www.youtube.com/watch?v=PA01Z6-z8Qs)
+- [Before I do anything on Proxmox, I do this first...](https://www.youtube.com/watch?v=GoZaMgEgrHw)
+- [The FASTEST Way to run Kubernetes at Home - k3s Ansible Automation](https://www.youtube.com/watch?v=CbkEWcUZ7zM)
+- [TrueNAS Scale Apps - Official, Unofficial, Docker, and Kubernetes](https://www.youtube.com/watch?v=oafOky5GSzc)
+- [High Availability Pi-Hole? Yes please!](https://www.youtube.com/watch?v=IFVYe3riDRA)
+- [Using Pi-Hole for Local DNS - Fast, Simple, and Easy Guide](https://www.youtube.com/watch?v=kKsHo6r4_rc)
+- [Flux GitOps Tutorial - DevOps and GitOps for Kubernetes](https://www.youtube.com/watch?v=PFLimPh5-wo)
+- [Wildcard Certificates with Traefik + cert-manager + Let's Encrypt in Kubernetes Tutorial](https://www.youtube.com/watch?v=G4CmbYL9UPg)
+- [Beautiful Dashboards with Grafana and Prometheus - Monitoring Kubernetes Tutorial](https://www.youtube.com/watch?v=fzny5uUaAeY)
+- [Network UPS Tools (NUT Server) Ultimate Guide](https://www.youtube.com/watch?v=vyBP7wpN72c)
+- [Self-Hosted, DIY, Open Source Alternative to Linktree](https://www.youtube.com/watch?v=42SqfI_AjXU)
+- [Meet keepalived - High Availability and Load Balancing in One](https://www.youtube.com/watch?v=hPfk0qd4xEY)
+- [Meet Grafana LOKI, a Log Aggregation System for EVERYTHING](https://www.youtube.com/watch?v=h_GGd7HfKQ8)
+- [Meet Uptime Kuma, a Fancy Open Source Uptime Monitor for all your HomeLab Monitoring Needs](https://www.youtube.com/watch?v=r_A5NKkAqZM)
+- [Meet Jekyll - The Static Site Generator](https://www.youtube.com/watch?v=F8iOU1ci19Q)
 
 ## 📦 Gear in this video 📦
 
