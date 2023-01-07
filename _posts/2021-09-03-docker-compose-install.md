@@ -6,55 +6,51 @@ categories: docker
 tags: homelab docker docker-compose
 ---
 
-## Install Docker
+## Install Docker Engine, containerd, and Docker Compose
 
-If you have an existing version of Docker install, it might be best to remove it first.  See the cleaning up section at the end
+If you have an existing version of Docker install, it might be best to remove it first.  See the [Cleaning Up](#cleaning-up)
 
 ```bash
 sudo apt-get update
 sudo apt-get install \
-  apt-transport-https \
-  ca-certificates \
-  curl \
-  gnupg \
-  lsb-release
+    ca-certificates \
+    curl \
+    gnupg \
+    lsb-release
 ```
 
 ```bash
- curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+sudo mkdir -p /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
 ```
 
 ```bash
- echo \
-  "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 ```
 
 ```bash
 sudo apt-get update
-sudo apt-get install docker-ce docker-ce-cli containerd.io
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 ```
 
-Check Install
+Check Installed version
 
 ```bash
 docker -v
 ```
 
-## Install Docker Compose
+Check docker compose
 
 ```bash
-sudo curl -L "https://github.com/docker/compose/releases/download/1.29.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+docker compose
 ```
 
-```bash
-sudo chmod +x /usr/local/bin/docker-compose
-```
-
-Check Install
+Check runtime
 
 ```bash
-docker-compose -v
+ sudo docker run hello-world
 ```
 
 ## Use Docker without sudo
@@ -70,7 +66,7 @@ You'll need to log out then back in to apply this
 If you need to uninstall Docker, run the following
 
 ```bash
-sudo apt-get remove docker docker-engine docker.io containerd runc
+ sudo apt-get remove docker docker-engine docker.io containerd runc
 ```
 
 See all the hardware I recommend at <https://l.technotim.live/gear>
