@@ -91,13 +91,13 @@ smartctl -a /dev/sda
 
 See [Proxmox PCI Passthrough](https://pve.proxmox.com/wiki/Pci_passthrough)
 
-`nano /etc/default/grub`
+`nano /etc/kernel/cmdline`
+
+add `intel_iommu=on iommu=pt` to the end of this line without line breaks
 
 ```bash
-GRUB_CMDLINE_LINUX_DEFAULT="quiet intel_iommu=on"
+root=ZFS=rpool/ROOT/pve-1 boot=zfs intel_iommu=on iommu=pt
 ```
-
-`update-grub`
 
 Edit `/etc/modules`
 
@@ -108,9 +108,17 @@ vfio_pci
 vfio_virqfd
 ```
 
-`update-initramfs -u -k all`
+run
 
-`reboot`
+```bash
+update-initramfs -u -k all
+```
+
+then reboot
+
+```bash
+reboot
+```
 
 ## VLAN Aware
 
