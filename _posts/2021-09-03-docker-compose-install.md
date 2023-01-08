@@ -6,9 +6,11 @@ categories: docker
 tags: homelab docker docker-compose
 ---
 
-## Install Docker Engine, containerd, and Docker Compose
+## Install Docker Engine, containerd, and Docker Compose on Ubuntu
 
-If you have an existing version of Docker install, it might be best to remove it first.  See the [Cleaning Up](#cleaning-up)
+If you have an existing version of Docker install, it is best to remove it first.  See the [Cleaning Up](#cleaning-up)
+
+if you're installing this on Debian, see [Docker's Debian Install Guide](https://docs.docker.com/engine/install/debian/)
 
 ```bash
 sudo apt-get update
