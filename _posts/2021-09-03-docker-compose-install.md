@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to Install Docker and Docker Compose"
+title: "How to Install Docker and Docker Compose Ubuntu"
 date: 2021-08-14 11:00:00 -0500
 categories: docker
 tags: homelab docker docker-compose
