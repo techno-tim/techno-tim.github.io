@@ -132,7 +132,7 @@ docker-compose up -d
 ## Create a User
 
 ```bash
-docker-compose run --rm panel php artisan p:user:mak
+docker-compose run --rm panel php artisan p:user:make
 ```
 
 ## Wings
