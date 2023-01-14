@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The EASIEST way to Expand Your ZFS Pool in TrueNAS (But is it the Best?)"
-date: 2023-01-14 09:00:00 -0500
+date: 2023-01-14 10:00:00 -0500
 categories: proxmox
 tags: homelab proxmox alerting open source
 ---
