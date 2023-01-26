@@ -69,7 +69,7 @@ sudo mv age/age-keygen /usr/local/bin
 clean up
 
 ```bash
-rm -rm age
+rm -rf age
 rm age.tar.gz
 ```
 
