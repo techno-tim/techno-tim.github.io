@@ -252,13 +252,13 @@ MYSQL_PASSWORD="super-Secret-Password!!!!############"
 encrypt
 
 ```bash
-sops --encrypt --age $(cat $SOPS_AGE_KEY_FILE |grep -oP "public key: \K(.*)") -i .env
+sops --encrypt --age $(cat $SOPS_AGE_KEY_FILE |grep -oP "public key: \K(.*)") -i secret.env
 ```
 
 decrypt
 
 ```bash
-sops --decrypt --age $(cat $SOPS_AGE_KEY_FILE |grep -oP "public key: \K(.*)") -i .env
+sops --decrypt --age $(cat $SOPS_AGE_KEY_FILE |grep -oP "public key: \K(.*)") -i secret.env
 ```
 
 don't forget to add `.decrypted~secret.env` to your `.gitignore`
