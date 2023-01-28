@@ -2,7 +2,7 @@
 layout: post
 title: "Deploying Machines with MaaS and Packer - Metal as a Service + Hashicorp Packer Tutorial"
 date: 2023-01-28 09:00:00 -0500
-categories: proxmox
+categories: maas
 tags: homelab packer maas hashicorp canonical ubuntu
 ---
 
