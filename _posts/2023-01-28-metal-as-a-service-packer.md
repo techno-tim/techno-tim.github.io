@@ -3,7 +3,7 @@ layout: post
 title: "Deploying Machines with MaaS and Packer - Metal as a Service + Hashicorp Packer Tutorial"
 date: 2023-01-28 09:00:00 -0500
 categories: proxmox
-tags: homelab proxmox alerting open source
+tags: homelab packer maas
 ---
 
 [![Deploying Machines with MaaS and Packer - Metal as a Service + Hashicorp Packer Tutorial](https://img.youtube.com/vi/lEqD3mRcqSo/0.jpg)](https://www.youtube.com/watch?v=lEqD3mRcqSo "Deploying Machines with MaaS and Packer - Metal as a Service + Hashicorp Packer Tutorial")
@@ -26,7 +26,7 @@ Visit Micro Center's Community Page: <https://micro.center/2vr>
 
 ## Installing MaaS
 
-MaaS can be installed via `apt` or `snap`.  I had some issues with the `apt` version so I used `snap` for this install. 
+MaaS can be installed via `apt` or `snap`.  I had some issues with the `apt` version so I used `snap` for this install.
 
 ### snap install
 
@@ -38,6 +38,14 @@ sudo apt install snapd
 
 ```bash
 sudo snap install --channel=3.2 maas
+```
+
+### apt install
+
+```bash
+sudo apt-add-repository ppa:maas/3.2
+sudo apt update
+sudo apt install maas
 ```
 
 ### Installing a Test Database
