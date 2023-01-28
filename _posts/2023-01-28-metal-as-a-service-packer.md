@@ -1,0 +1,245 @@
+---
+layout: post
+title: "Deploying Machines with MaaS and Packer - Metal as a Service + Hashicorp Packer Tutorial"
+date: 2023-01-28 09:00:00 -0500
+categories: proxmox
+tags: homelab proxmox alerting open source
+---
+
+[![Deploying Machines with MaaS and Packer - Metal as a Service + Hashicorp Packer Tutorial](https://img.youtube.com/vi/lEqD3mRcqSo/0.jpg)](https://www.youtube.com/watch?v=lEqD3mRcqSo "Deploying Machines with MaaS and Packer - Metal as a Service + Hashicorp Packer Tutorial")
+
+## Description
+
+MaaS or Metal as a service from Canonical is a great way to provision bare metal machines as well as virtual machines.  MaaS allows you to deploy Windows, Linux, ESXi, and many other operating systems to your systems helping you to build a bare metal cloud.  You can even use Packer from Hashicorp to configure custom images too!  We'll cover all of this and more in this tutorial on how to install and configure MaaS from start to finish with Packer!
+
+📺 [Watch Video](https://www.youtube.com/watch?v=lEqD3mRcqSo)
+
+## Sponsor
+
+New Customer Exclusive - $25 Off ALL Processors: <https://micro.center/3si>
+
+Check out Micro Center's Custom PC Builder: <https://micro.center/wcx>
+
+Submit your build to Micro Center's Build Showcase: <https://micro.center/dcm>
+
+Visit Micro Center's Community Page: <https://micro.center/2vr>
+
+## Installing MaaS
+
+MaaS can be installed via `apt` or `snap`.  I had some issues with the `apt` version so I used `snap` for this install. 
+
+### snap install
+
+Be sure `snap` is installed
+
+```bash
+sudo apt install snapd
+```
+
+```bash
+sudo snap install --channel=3.2 maas
+```
+
+### Installing a Test Database
+
+(skip this step if you already have postgres in your environment)
+
+This should be used if you want to use MaaS test database
+
+```bash
+sudo snap install maas-test-db
+```
+
+testing the database
+
+```bash
+sudo maas-test-db.psql
+```
+
+then list databases you should see `maasdb` there
+
+```bash
+postgres=# \l
+```
+
+### Initializing MaaS
+
+If you are using the test database above, initialize maas
+
+```bash
+sudo maas init region+rack --database-uri maas-test-db:///
+
+```
+
+If you already have postgres in your environment you can initialize maas using your existing postgres service.  Be sure to create the database, user, and assign that user permissions before running the init command.
+
+```bash
+sudo maas init region+rack --database-uri "postgres://username:password@192.168.0.100/maas" # replace username /password / ip /db name
+```
+
+> if you don't wand to store your secrets in your terminal's history, consider using ENV variables:
+{: .prompt-info }
+
+```bash
+sudo maas init region+rack --database-uri "postgres://$MAAS_DBUSER:$MAAS_DBPASS@$HOSTNAME/$MAAS_DBNAME"
+```
+
+### Create admin account
+
+```bash
+sudo maas createadmin
+```
+
+Here you can choose to import your LaunchPad or GitHub public key using `gh:githubusername`
+
+### Checking MaaS
+
+```bash
+sudo maas status
+```
+
+The output should like something similar to this:
+
+```bash
+bind9                            RUNNING   pid 1014, uptime 2 days, 10:52:40
+dhcpd                            STOPPED   Not started
+dhcpd6                           STOPPED   Not started
+http                             RUNNING   pid 1477, uptime 2 days, 10:52:23
+ntp                              RUNNING   pid 1143, uptime 2 days, 10:52:37
+proxy                            RUNNING   pid 1454, uptime 2 days, 10:52:25
+rackd                            RUNNING   pid 1017, uptime 2 days, 10:52:40
+regiond                          RUNNING   pid 1018, uptime 2 days, 10:52:40
+syslog                           RUNNING   pid 1144, uptime 2 days, 10:52:37
+```
+
+If you ever need to reinitialize MaaS
+
+```bash
+sudo maas init region
+```
+
+### Configuring Packer Images
+
+#### Install Packer
+
+Get key ring
+
+```bash
+wget --no-verbose --output-document=- https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor --output=/usr/share/keyrings/hashicorp-archive-keyring.gpg 
+```
+
+Add keyring
+
+```bash
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release --codename --short) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+```
+
+add Hashicorp Repo
+
+```bash
+sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main" 
+```
+
+Install Packer
+
+```bash
+sudo apt update
+sudo apt install packer
+```
+
+Update and install dependencies needed to build images
+
+```bash
+sudo apt update
+sudo apt install qemu-utils qemu-system ovmf cloud-image-utils make curtain git
+```
+
+#### Building a custom image from `canonical/packer-maas`
+
+Clone the `canonical/packer-maas` repo
+
+```bash
+git clone https://github.com/canonical/packer-maas.git
+
+```
+
+```bash
+cd packer-maas
+cd ubuntu
+sudo packer init ubuntu-cloudimg.pkr.hcl
+sudo make custom-cloudimg.tar.gz
+```
+
+check and change permissions of archive (change `root` to your username)
+
+```bash
+ls -l
+sudo chown root:root ./custom-cloudimg.tar.gz
+
+```
+
+#### Uploading Packer image to MaaS
+
+echo your `maas` api key to your home directory
+
+```bash
+sudo maas apikey --username=massadmin > ~/api-key-file
+```
+
+You can check with with
+
+```bash
+cat ~/api-key-fil
+```
+
+Authenticate to `maas` with your api key
+
+```bash
+maas login massadmin http://localhost:5240/MAAS/api/2.0/ $(head -1  ~/api-key-file)
+```
+
+Upload the custom image we made to `maas`
+
+```bash
+maas massadmin boot-resources create name='custom/cloudimg-tgz' title='Ubuntu Custom TGZ' architecture='amd64/generic' filetype='tgz' content@=custom-cloudimg.tar.gz
+```
+
+## Chapters
+
+00:00 - What is MaaS (Metal as a Service) from Canonical?
+
+02:00 - Micro Center / $25 Off CPUs! (Sponsor)
+
+03:00 - Installing MaaS
+
+06:56 - Initial MaaS Configuration
+
+09:41 - Importing your SSH Key
+
+10:23 - Networking Configuration & Discovery
+
+14:05 - PXE & Network Boot with DHCP
+
+15:33 - Commissioning a Machine (Initial Discovery)
+
+18:45 - Power Types & Wake on LAN (WOL)
+
+20:50 - Commissioning a Machine Part 2 (For real this time)
+
+24:00 - Deploying Ubuntu
+
+26:15 - SSH in to machine
+
+26:54 - Creating Custom Images with Hashicorp Packer
+
+33:40 - Uploading a Custom Image to MaaS
+
+38:40 - What do I think of MaaS from Canonical?
+
+39:57 - Stream Highlight - "100 + 50 subs dropped 🫳🎤"
+
+## Links
+
+⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>
+
+🚀 Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files
