@@ -241,7 +241,7 @@ maas massadmin boot-resources create name='custom/cloudimg-tgz' title='Ubuntu Cu
 
 33:40 - Uploading a Custom Image to MaaS
 
-38:40 - What do I think of MaaS from Canonical?
+38:05 - What do I think of MaaS from Canonical?
 
 39:57 - Stream Highlight - "100 + 50 subs dropped 🫳🎤"
 
