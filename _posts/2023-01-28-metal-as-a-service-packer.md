@@ -72,14 +72,14 @@ postgres=# \l
 
 ### Initializing MaaS
 
-If you are using the test database above, initialize maas
+If you are using the test database above, initialize MaaS
 
 ```bash
 sudo maas init region+rack --database-uri maas-test-db:///
 
 ```
 
-If you already have postgres in your environment you can initialize maas using your existing postgres service.  Be sure to create the database, user, and assign that user permissions before running the init command.
+If you already have postgres in your environment you can initialize MaaS using your existing postgres service.  Be sure to create the database, user, and assign that user permissions before running the init command.
 
 ```bash
 sudo maas init region+rack --database-uri "postgres://username:password@192.168.0.100/maas" # replace username /password / ip /db name
@@ -188,7 +188,7 @@ sudo chown root:root ./custom-cloudimg.tar.gz
 
 #### Uploading Packer image to MaaS
 
-echo your `maas` api key to your home directory
+echo your MaaS api key to your home directory
 
 ```bash
 sudo maas apikey --username=massadmin > ~/api-key-file
@@ -200,13 +200,13 @@ You can check with with
 cat ~/api-key-fil
 ```
 
-Authenticate to `maas` with your api key
+Authenticate to MaaS with your api key
 
 ```bash
 maas login massadmin http://localhost:5240/MAAS/api/2.0/ $(head -1  ~/api-key-file)
 ```
 
-Upload the custom image we made to `maas`
+Upload the custom image we made to MaaS
 
 ```bash
 maas massadmin boot-resources create name='custom/cloudimg-tgz' title='Ubuntu Custom TGZ' architecture='amd64/generic' filetype='tgz' content@=custom-cloudimg.tar.gz
