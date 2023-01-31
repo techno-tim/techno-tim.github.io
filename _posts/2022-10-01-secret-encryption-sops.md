@@ -18,17 +18,8 @@ Combat misconfigurations. Empower engineers.
 
 ## Install SOPS
 
-<https://github.com/mozilla/sops>
+You can install sops by [following this guide](https://docs.technotim.live/posts/install-mozilla-sops/).
 
-from releases page
-
-<https://github.com/mozilla/sops/releases>
-
-```bash
-wget https://github.com/mozilla/sops/releases/download/v3.7.3/sops_3.7.3_amd64.deb
-sudo dpkg -i ./sops_3.7.3_amd64.deb
-rm ./sops_3.7.3_amd64.deb
-```
 
 test with
 
@@ -44,34 +35,7 @@ sops 3.7.3 (latest)
 
 ## Install Age
 
-<https://github.com/FiloSottile/age>
-
-```bash
-sudo apt install age
-```
-
-or the manual way
-
-get the file
-
-```bash
-wget -O age.tar.gz https://github.com/FiloSottile/age/releases/download/v1.0.0/age-v1.0.0-linux-amd64.tar.gz
-```
-
-extract and move
-
-```bash
-tar xf age.tar.gz
-sudo mv age/age /usr/local/bin
-sudo mv age/age-keygen /usr/local/bin
-```
-
-clean up
-
-```bash
-rm -rf age
-rm age.tar.gz
-```
+You can install age by [following this guide](https://docs.technotim.live/posts/install-age/)
 
 test `age` with
 
