@@ -46,7 +46,7 @@ rm -rf age.tar.gz
 rm -rf age
 ```
 
-Then we can test to make user `age` and `age-keygen` are working by running
+Then we can test to make sure `age` and `age-keygen` are working by running
 
 ```bash
 age -version
