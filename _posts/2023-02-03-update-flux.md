@@ -73,7 +73,7 @@ After this file is updated, you can check to be sure it updated the correct file
 git diff
 ```
 
-You should see something to the following
+You should see something like the following
 
 
 ```diff
