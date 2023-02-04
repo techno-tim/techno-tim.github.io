@@ -32,7 +32,7 @@ lsusb
 
 should see something like
 
-```log
+```console
 Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
 Bus 001 Device 019: ID 09ae:2012 Tripp Lite
 Bus 001 Device 002: ID 2109:3431 VIA Labs, Inc. Hub
@@ -127,7 +127,7 @@ maxretry = 3
 sudo nano /etc/nut/upsmon.conf
 ```
 
-```log
+```console
 MONITOR tripplite@localhost 1 admin secret master
 MONITOR apc-modem@localhost 1 admin secret master
 MONITOR apc-network@localhost 1 admin secret master
@@ -139,13 +139,13 @@ sudo nano /etc/nut/upsd.conf
 
 Change `127.0.0.1`
 
-```log
+```console
 LISTEN 127.0.0.1 3493 
 ```
 
 to all interface
 
-```log
+```console
 LISTEN 0.0.0.0 3493 
 ```
 
@@ -207,7 +207,9 @@ query device by USB bus (replace with # from previous command)
 lsusb -D /dev/bus/usb/001/057
 ```
 
-```log
+You should see something like
+
+```console
 Device Descriptor:
   bLength                18
   bDescriptorType         1
@@ -276,7 +278,7 @@ sudo apt install apache2 nut-cgi
 sudo nano /etc/nut/hosts.conf
 ```
 
-```log
+```console
 MONITOR tripplite@localhost "Tripp Lite 1500VA SmartUPS - Rack"
 MONITOR apc-modem@localhost "APC 850 VA - Wall"
 MONITOR apc-network@localhost "APC Back-UPS XS 1500 - Rack"
