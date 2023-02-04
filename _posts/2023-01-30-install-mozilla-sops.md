@@ -8,7 +8,7 @@ tags: homelab secops mozilla sops
 
 ## What is Mozilla SOPS?
 
-**SOPS** is an editor of encrypted files that supports YAML, JSON, ENV, INI and BINARY formats and encrypts with AWS KMS, GCP KMS, Azure Key Vault, age, and PGP.  It's open source and you can read more about it on the [GitHub repo](https://github.com/mozilla/sops).  Looking for a turial on how use this?  [Checkout this video on how to use SOPS and Age for your Git Repos](https://docs.technotim.live/posts/secret-encryption-sops/)!
+**SOPS** is an editor of encrypted files that supports YAML, JSON, ENV, INI and BINARY formats and encrypts with AWS KMS, GCP KMS, Azure Key Vault, age, and PGP.  It's open source and you can read more about it on the [GitHub repo](https://github.com/mozilla/sops).  Looking for a turial on how use this?  [Check out this video on how to use SOPS and Age for your Git Repos](https://docs.technotim.live/posts/secret-encryption-sops/)!
 
 ## Install
 
