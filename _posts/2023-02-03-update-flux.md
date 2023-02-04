@@ -8,7 +8,7 @@ tags: flux devops gitops kubernetes
 
 ## What is Fux?
 
-**Flux** Flux is a tool for keeping Kubernetes clusters in sync with sources of configuration (like Git repositories), and automating updates to configuration when there is new code to deploy. It's open source and you can read more about it on the [GitHub repo](https://github.com/fluxcd/flux2). Looking for a turial on how use this?  [Checkout this video on how to use SOPS and Age for your Git Repos](https://docs.technotim.live/posts/flux-devops-gitops/)!
+**Flux** is a tool for keeping Kubernetes clusters in sync with sources of configuration (like Git repositories), and automating updates to configuration when there is new code to deploy. It's open source and you can read more about it on the [GitHub repo](https://github.com/fluxcd/flux2). Looking for a turial on how use this?  [Checkout this video on how to use SOPS and Age for your Git Repos](https://docs.technotim.live/posts/flux-devops-gitops/)!
 
 ## Updating Flux
 
@@ -110,22 +110,10 @@ index 79576f0f..9c26b708 100644
 
 if you see something other than the original `gotk-components.yaml` being updated, you might want to check the location of the file and try again.
 
-
 Once this is updated, you can simply commit and push this up and let GitOps do the rest!
-
 
 ```bash
 git add .
 git commit -m "feat(flux): Upgraded flux to 0.39.0" # replace with your verion
 git push
-```
-
-
-## Uninstall
-
-To uninstall, it's as simple as removing the binaries
-
-```bash
-sudo rm -rf /usr/local/bin/age
-sudo rm -rf /usr/local/bin/age-keygen
 ```
