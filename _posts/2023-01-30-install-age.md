@@ -8,7 +8,7 @@ tags: homelab secops devops age
 
 ## What is Age?
 
-**age** is a simple, modern and secure file encryption tool, format, and Go library. It features small explicit keys, no config options, and UNIX-style composability.  It is commonly used in tandem with Mozilla SOPS.  It's open source and you can read more about it on the [GitHub repo](https://github.com/FiloSottile/age). Looking for a turial on how use this?  [Checkout this video on how to use SOPS and Age for your Git Repos]!
+**age** is a simple, modern and secure file encryption tool, format, and Go library. It features small explicit keys, no config options, and UNIX-style composability.  It is commonly used in tandem with Mozilla SOPS.  It's open source and you can read more about it on the [GitHub repo](https://github.com/FiloSottile/age). Looking for a turial on how use this?  [Checkout this video on how to use SOPS and Age for your Git Repos](https://docs.technotim.live/posts/secret-encryption-sops/)!
 
 ## Install
 

@@ -209,6 +209,10 @@ NAME             READY   STATUS        AGE
 on-call-webapp   True    Initialized   1m
 ```
 
+## Updating Flux
+
+If you need to update flux, check out [Updating Flux Installation Using the Latest Binary from CLI](https://docs.technotim.live/posts/update-flux/)
+
 ## Links
 
 ⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>
