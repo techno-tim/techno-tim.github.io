@@ -34,7 +34,7 @@ If you want to use `wget` instead of `curl`, you can run the rollowing
 wget https://github.com/ddo/fast/releases/download/v0.0.4/fast_linux_amd64 -O fast
 ```
 
-Then we'll want to download the latest `fast`` binary by running
+Then we'll want to download the latest `fast` binary by running
 
 ```bash
 curl -L https://github.com/ddo/fast/releases/download/v0.0.4/fast_linux_amd64 -o fast
