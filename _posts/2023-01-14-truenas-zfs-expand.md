@@ -3,7 +3,7 @@ layout: post
 title: "The EASIEST way to Expand Your ZFS Pool in TrueNAS (But is it the Best?)"
 date: 2023-01-14 10:00:00 -0500
 categories: truenas
-tags: homelab truenas zfs storage
+tags: homelab truenas zfs storage open-source
 ---
 
 [![The EASIEST way to Expand Your ZFS Pool in TrueNAS (But is it the Best?)](https://img.youtube.com/vi/Uzk6Janio0g/0.jpg)](https://www.youtube.com/watch?v=Uzk6Janio0g "The EASIEST way to Expand Your ZFS Pool in TrueNAS (But is it the Best?)")
