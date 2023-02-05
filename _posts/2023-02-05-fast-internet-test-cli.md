@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Test your internet speed from the command line with fast"
-date: 2023-02-05 20:00:00 -0500
+title: "Test Your Internet Speed from the Linux Terminal with fast"
+date: 2023-02-05 10:00:00 -0500
 categories: utilities
 tags: fast cli linux open-source
 ---
