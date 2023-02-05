@@ -6,7 +6,7 @@ categories: kubernetes
 tags: flux devops gitops kubernetes open-source
 ---
 
-## What is Fux?
+## What is Flux?
 
 **Flux** is a tool for keeping Kubernetes clusters in sync with sources of configuration (like Git repositories), and automating updates to configuration when there is new code to deploy. It's open source and you can read more about it on the [GitHub repo](https://github.com/fluxcd/flux2). Looking for a tutorial on how use this?  [Check out this video on how to use SOPS and Age for your Git Repos](https://docs.technotim.live/posts/flux-devops-gitops/)!
 
