@@ -3,12 +3,12 @@ layout: post
 title: "Updating Flux Installation Using the Latest Binary from CLI"
 date: 2023-02-03 20:00:00 -0500
 categories: kubernetes
-tags: flux devops gitops kubernetes
+tags: flux devops gitops kubernetes open-source
 ---
 
 ## What is Flux?
 
-**Flux** is a tool for keeping Kubernetes clusters in sync with sources of configuration (like Git repositories), and automating updates to configuration when there is new code to deploy. It's open source and you can read more about it on the [GitHub repo](https://github.com/fluxcd/flux2). Looking for a turial on how use this?  [Check out this video on how to use SOPS and Age for your Git Repos](https://docs.technotim.live/posts/flux-devops-gitops/)!
+**Flux** is a tool for keeping Kubernetes clusters in sync with sources of configuration (like Git repositories), and automating updates to configuration when there is new code to deploy. It's open source and you can read more about it on the [GitHub repo](https://github.com/fluxcd/flux2). Looking for a tutorial on how use this?  [Check out this video on how to use SOPS and Age for your Git Repos](https://docs.technotim.live/posts/flux-devops-gitops/)!
 
 ## Updating Flux
 
@@ -18,7 +18,7 @@ We're going to use `curl` so you'll want to be sure you have it installed
 curl -V
 ```
 
-This should return something simiar to the following
+This should return something similar to the following
 
 ```console
 curl 7.68.0 (x86_64-pc-linux-gnu) libcurl/7.68.0 OpenSSL/1.1.1f zlib/1.2.11 brotli/1.0.7 libidn2/2.2.0 libpsl/0.21.0 (+libidn2/2.2.0) libssh/0.9.3/openssl/zlib nghttp2/1.40.0 librtmp/2.3

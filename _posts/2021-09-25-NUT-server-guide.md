@@ -26,11 +26,13 @@ Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quic
 
 plug in ups
 
-`lsusb`
+```bash
+lsusb
+```
 
 should see something like
 
-```log
+```console
 Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
 Bus 001 Device 019: ID 09ae:2012 Tripp Lite
 Bus 001 Device 002: ID 2109:3431 VIA Labs, Inc. Hub
@@ -89,7 +91,9 @@ apc 850
         bus = "001"
 ```
 
-`sudo nano /etc/nut/ups.conf`
+```bash
+sudo nano /etc/nut/ups.conf
+```
 
 ```conf
 pollinterval = 1
@@ -119,35 +123,43 @@ maxretry = 3
     serial = 3xxxxxxxxx
 ```
 
-`sudo nano /etc/nut/upsmon.conf`
+```bash
+sudo nano /etc/nut/upsmon.conf
+```
 
-```log
+```console
 MONITOR tripplite@localhost 1 admin secret master
 MONITOR apc-modem@localhost 1 admin secret master
 MONITOR apc-network@localhost 1 admin secret master
 ```
 
-`sudo nano /etc/nut/upsd.conf`
+```bash
+sudo nano /etc/nut/upsd.conf
+```
 
-local host
+Change `127.0.0.1`
 
-```log
+```console
 LISTEN 127.0.0.1 3493 
 ```
 
-all interface
+to all interface
 
-```log
+```console
 LISTEN 0.0.0.0 3493 
 ```
 
-`sudo nano /etc/nut/nut.conf`
+```bash
+sudo nano /etc/nut/nut.conf
+```
 
 ```conf
 MODE=netserver
 ```
 
-`sudo nano /etc/nut/upsd.users`
+```bash
+sudo nano /etc/nut/upsd.users
+```
 
 ```conf
 [monuser]
@@ -155,7 +167,9 @@ MODE=netserver
   admin master
 ```
 
-`sudo nano /etc/udev/rules.d/99-nut-ups.rules`
+```bash
+sudo nano /etc/udev/rules.d/99-nut-ups.rules
+```
 
 ```conf
 SUBSYSTEM!="usb", GOTO="nut-usbups_rules_end"
@@ -181,11 +195,21 @@ sudo upsdrvctl start
 
 APC UPS 950 va
 
-query device by USB bus
+list all usb devices
 
-`lsusb -D /dev/bus/usb/001/057`
+```bash
+lsusb
+```
 
-```log
+query device by USB bus (replace with # from previous command)
+
+```bash
+lsusb -D /dev/bus/usb/001/057
+```
+
+You should see something like
+
+```console
 Device Descriptor:
   bLength                18
   bDescriptorType         1
@@ -246,22 +270,31 @@ Device Descriptor:
 
 ## NUT CGI Server
 
-`sudo apt install apache2 nut-cgi`
+```bash
+sudo apt install apache2 nut-cgi
+```
 
-`sudo nano /etc/nut/hosts.conf`
+```bash
+sudo nano /etc/nut/hosts.conf
+```
 
-```log
+```console
 MONITOR tripplite@localhost "Tripp Lite 1500VA SmartUPS - Rack"
 MONITOR apc-modem@localhost "APC 850 VA - Wall"
 MONITOR apc-network@localhost "APC Back-UPS XS 1500 - Rack"
-
 ```
 
-`sudo a2enmod cgi`
+```bash
+sudo a2enmod cgi
+```
 
-`sudo systemctl restart apache2`
+```bash
+sudo systemctl restart apache2
+```
 
-`sudo nano /etc/nut/upsset.conf`
+```bash
+sudo nano /etc/nut/upsset.conf
+```
 
 ```conf
 I_HAVE_SECURED_MY_CGI_DIRECTORY
@@ -304,21 +337,32 @@ networks:
     external: true
 ```
 
-`docker-compose up -d --force-recreate`
+```bash
+docker-compose up -d --force-recreate
+```
 
 ## Linux NUT Client (remote)
 
-`sudo apt install nut-client`
+```bash
+sudo apt install nut-client
+```
 
 then run
 
-`upsc` to verify
+```bash
+upsc
+``` 
+to verify
 
 verify you can connect
 
-`upsc tripplite@ip.address.of.server`
+```bash
+upsc tripplite@ip.address.of.server
+```
 
-`sudo nano /etc/nut/upsmon.conf`
+```bash
+sudo nano /etc/nut/upsmon.conf
+```
 
 ```conf
 RUN_AS_USER root
@@ -364,17 +408,26 @@ FINALDELAY 5
 ```
 
 set net client
-`sudo nano /etc/nut/nut.conf`
 
-`MODE=netclient`
+```bash
+sudo nano /etc/nut/nut.conf
+```
+
+```conf
+MODE=netclient
+```
 
 restart service
 
-`systemctl restart nut-client`
+```bash
+sudo systemctl restart nut-client
+```
 
 check status
 
-`systemctl status user-client`
+```bash
+sduo systemctl status nut-client
+```
 
 ## Windows NUT Client
 
@@ -382,7 +435,9 @@ check status
 
 scheduling on the remote system
 
-`sudo nano /etc/nut/upssched.conf`
+```bash
+sudo nano /etc/nut/upssched.conf
+```
 
 ```conf
 CMDSCRIPT /etc/nut/upssched-cmd
@@ -400,7 +455,9 @@ AT SHUTDOWN * EXECUTE powerdown
 AT SHUTDOWN * EXECUTE powerdown
 ```
 
-`sudo nano /etc/nut/upssched-cmd`
+```bash
+sudo nano /etc/nut/upssched-cmd
+``
 
 ```bash
 #!/bin/sh
@@ -427,18 +484,27 @@ AT SHUTDOWN * EXECUTE powerdown
 
 make it executable (should already be)
 
-`chmod +x /etc/nut/upssched-cmd`
+```bash
+chmod +x /etc/nut/upssched-cmd
+```
 
 Be sure PIPEFN and LOCKFN point to a folder that esists, I've seen it point to `/etc/nut/upssched/` instead of `/etc/nut`  If it does, create the folder or update these variables.
-`mkdir /etc/nut/upssched/`
+
+```bash
+mkdir /etc/nut/upssched/
+```
 
 test
 
-`systemctl restart nut-client`
+```bash
+systemctl restart nut-client
+```
 
 then pull the plug on the ups connected to the master, check syslogs
 
-`tail /var/log/syslog`
+```bash
+tail /var/log/syslog
+```
 
 should see the logs
 

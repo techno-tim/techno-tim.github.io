@@ -3,7 +3,7 @@ layout: post
 title: "Set up alerts in Proxmox before it's too late!"
 date: 2022-12-17 09:00:00 -0500
 categories: proxmox
-tags: homelab proxmox alerting open source
+tags: homelab proxmox alerting open-source
 ---
 
 [![Set up alerts in Proxmox before it's too late!](https://img.youtube.com/vi/85ME8i4Ry6A/0.jpg)](https://www.youtube.com/watch?v=85ME8i4Ry6A "Set up alerts in Proxmox before it's too late!")
