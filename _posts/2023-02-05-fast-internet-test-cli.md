@@ -35,7 +35,7 @@ LATEST_VERSION=$(curl -s "https://api.github.com/repos/ddo/fast/releases/latest"
 curl -L https://github.com/ddo/fast/releases/download/v${LATEST_VERSION}/fast_linux_$(dpkg --print-architecture) -o fast
 ```
 
-If you want to use `wget` instead of `curl`, you can run the rollowing
+If you want to use `wget` instead of `curl`, you can run the following
 
 ```bash
 LATEST_VERSION=$(curl -s "https://api.github.com/repos/ddo/fast/releases/latest" | grep -Po '"tag_name": "v\K[0-9.]+')
