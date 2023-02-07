@@ -27,21 +27,23 @@ Protocols: dict file ftp ftps gopher http https imap imaps ldap ldaps pop3 pop3s
 Features: AsynchDNS brotli GSS-API HTTP2 HTTPS-proxy IDN IPv6 Kerberos Largefile libz NTLM NTLM_WB PSL SPNEGO SSL TLS-SRP UnixSockets
 ```
 
+Then we'll want to download the latest `fast` binary by running
+
+```bash
+LATEST_VERSION=$(curl -s "https://api.github.com/repos/ddo/fast/releases/latest" | grep -Po '"tag_name": "v\K[0-9.]+')
+
+curl -L https://github.com/ddo/fast/releases/download/v${LATEST_VERSION}/fast_linux_$(dpkg --print-architecture) -o fast
+```
 
 If you want to use `wget` instead of `curl`, you can run the rollowing
 
 ```bash
-wget https://github.com/ddo/fast/releases/download/v0.0.4/fast_linux_amd64 -O fast
-```
+LATEST_VERSION=$(curl -s "https://api.github.com/repos/ddo/fast/releases/latest" | grep -Po '"tag_name": "v\K[0-9.]+')
 
-Then we'll want to download the latest `fast` binary by running
-
-```bash
-curl -L https://github.com/ddo/fast/releases/download/v0.0.4/fast_linux_amd64 -o fast
+wget https://github.com/ddo/fast/releases/download/v${LATEST_VERSION}/fast_linux_$(dpkg --print-architecture) -O fast
 ```
 
 Then we'll want to make it executable by running
-
 
 ```bash
 chmod +x fast
