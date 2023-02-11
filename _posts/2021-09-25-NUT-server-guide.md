@@ -426,7 +426,7 @@ sudo systemctl restart nut-client
 check status
 
 ```bash
-sduo systemctl status nut-client
+sudo systemctl status nut-client
 ```
 
 ## Windows NUT Client
