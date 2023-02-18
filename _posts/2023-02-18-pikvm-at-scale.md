@@ -80,7 +80,6 @@ So I bet you’re wondering if it’s worth it? I am going to break this down in
 
 That’s a little bit higher, however it’s a much better value than remote controlling just one machine with the PiKVM, which would be the cost of the PiKVM.
 
-
 `PiKVM $259 / 1 = $259 per machine`
 
 ## Hardware
