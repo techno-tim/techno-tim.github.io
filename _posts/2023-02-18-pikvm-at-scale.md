@@ -51,7 +51,46 @@ I decided to put my PiKVM on this little shelf for now but I’ll probably find 
 ![TESmart switch with PiKVM](/assets/img/posts/pikvm-tesmart-8-port-switch.jpg)
 _This was my first attempt with a TESmart Switch_
 
-I worked with Max for a few days on and off over discord.  He sent snippets of code for me to run and even gave me lots of EDIDs to try. EDIDs (Extended Display Identification Data) are a signature or metadata that tell a device how to work with the monitor.  Sometimes we could get the Linux machines running on the TESmart switch working, but not the Windows machines.   And other times we could get the Windows machines working but not the Linux machines.  We ended up discovering that the TESmart HDMI switch would “poison” the PiKVM and send the TESmart EDID rather than the one from the PiKVM.  At this point, I had to cut my losses and go with a smaller, non rack mountable, but more compatible EZCOO KVM Switch and, I have to say,  it’s fantastic.  
+I worked with Max for a few days on and off over discord.  He sent snippets of code for me to run and even gave me lots of EDIDs to try. EDIDs (Extended Display Identification Data) are a signature or metadata that tell a device how to work with the monitor.  Sometimes we could get the Linux machines running on the TESmart switch working, but not the Windows machines.   And other times we could get the Windows machines working but not the Linux machines.  We ended up discovering that the TESmart HDMI switch would “poison” the PiKVM and send the TESmart EDID rather than the one from the PiKVM.  
+
+TESmart EDID:
+
+```text
+Section "Monitor"
+        Identifier "ITE-FHD"
+        ModelName "ITE-FHD"
+        VendorName "ITE"
+        # Monitor Manufactured week 12 of 2010
+        # EDID version 1.3
+        # Digital Display
+        DisplaySize 620 340
+        Gamma 2.20
+        Option "DPMS" "false"
+        Horizsync 13-46
+        VertRefresh 23-61
+        # Maximum pixel clock is 170MHz
+```
+
+PiKVM EDID
+
+```text
+Section "Monitor"
+        Identifier "PiKVM"
+        ModelName "PiKVM"
+        VendorName "LNX"
+        # Monitor Manufactured week 28 of 2011
+        # EDID version 1.3
+        # Digital Display
+        # Display Physical Size not given. Normal for projectors.
+        Gamma 2.20
+        Option "DPMS" "false"
+        Horizsync 15-46
+        VertRefresh 59-61
+        # Maximum pixel clock is 150MHz
+        #Not giving standard mode: 256x160, 60Hz
+```
+
+At this point, I had to cut my losses and go with a smaller, non rack mountable, but more compatible EZCOO KVM Switch and, I have to say,  it’s fantastic.  
 
 ## A New HDMI Switch Enters the Chat
 
