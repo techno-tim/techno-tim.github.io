@@ -70,7 +70,7 @@ _You can customize the menu however you like (my config below), here I added WoL
 
 ## Is it worth it?
 
-So I bet you’re wondering if it’s worth it? I am going to break this down into 2 parts.  Is it worth it to buy pre assembled? And is it worth it for remote control with a PiKVM.   Well for me it is for a few reasons.  First of all I can’t find a raspberry pi to assemble this myself, and if you consider it comes with a case, a fan, a 32GB micro sd, additional cables, and even a little LCD screen 100% ready to go for an additional 90 bucks?  I would say it is.  Now on to the tougher question, is it worth it to have a PiKVM at all?  I would say yes for me, but for you it depends.  The way I looked at it was that I was going to scale it to 8, which would divide the cost of a PiKVM and switch across 8 machines making it around 70 dollars per machine if you include all of the cables. 
+So I bet you’re wondering if it’s worth it? I am going to break this down into 2 parts.  Is it worth it to buy pre assembled? And is it worth it for remote control with a PiKVM.   Well for me it is for a few reasons.  First of all I can’t find a raspberry pi to assemble this myself, and if you consider it comes with a case, a fan, a 32GB micro sd, additional cables, and even a little LCD screen 100% ready to go for an additional 90 bucks?  I would say it is.  Now on to the tougher question, is it worth it to have a PiKVM at all?  I would say yes for me, but for you it depends.  The way I looked at it was that I was going to scale it to 8, which would divide the cost of a PiKVM and switch across 8 machines making it around 70 dollars per machine if you include all of the cables.
 
 `PiKVM $259 + TESmart $299 / 8 = $70 per machine`
 
