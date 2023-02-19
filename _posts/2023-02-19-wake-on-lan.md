@@ -55,7 +55,7 @@ After you enabled Wake on LAN in the BIOS, and verified you see the light on you
 
 First we'll want to open the Device Manager.  Can you do this from the UI or from a command prompt
 
-```cmd
+```terminal
 devmgmt.msc
 ```
 
@@ -84,9 +84,9 @@ You should check to see if Wake on LAN works before proceeding to the next step 
 
 Another Windows Feature that can prevent a machine from shutting down properly to allow Wake on LAN is **Fast Startup**.  This disables hibernation.  I recommend testing to see if Wake on LAN works before disabling this.
 
-First, we'll need to open the Power Control Panel.  You can do this from the UI oor from a command prompt
+First, we'll need to open the Power Control Panel.  You can do this from the UI or from a command prompt
 
-```cmd
+```terminal
 powercfg.cpl
 ```
 
