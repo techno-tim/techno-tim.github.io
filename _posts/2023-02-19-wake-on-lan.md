@@ -231,7 +231,7 @@ Once it's installed you can now wake machines on the same network by using the c
 If your machine is on another network and you can reach the broadcast IP, you can supply it in your command
 
 ```bash
- sudo etherwake -b 192.168.2.255 00:11:22:33:44:55
+ sudo wakeonlan -i 192.168.2.255 00:11:22:33:44:55
 ```
 
 Be sure to replace the mac address and broadcast IP above with the mac address of the remote machine and set the broadcast IP if on a different network.
@@ -247,7 +247,13 @@ brew install wakeonlan
 Once it's installed you can now wake machines on the same network by using the command:
 
 ```bash
- sudo wakeonlan 00:11:22:33:44:55
+ wakeonlan 00:11:22:33:44:55
+```
+
+If your machine is on another network and you can reach the broadcast IP, you can supply it in your command
+
+```bash
+ wakeonlan -i 192.168.2.255 00:11:22:33:44:55
 ```
 
 Be sure to replace the mac address and broadcast IP above with the mac address of the remote machine and set the broadcast IP if on a different network.
