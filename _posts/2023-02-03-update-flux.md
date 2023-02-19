@@ -117,3 +117,9 @@ git add .
 git commit -m "feat(flux): Upgraded flux to 0.39.0" # replace with your verion
 git push
 ```
+
+## Links
+
+⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>
+
+🚀 Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files

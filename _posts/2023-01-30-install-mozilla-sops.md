@@ -50,3 +50,9 @@ To uninstall, it's as simple as using apt to remove it
 ```bash
 sudo apt remove sops
 ```
+
+## Links
+
+⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>
+
+🚀 Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files

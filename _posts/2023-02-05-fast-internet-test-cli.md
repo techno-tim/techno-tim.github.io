@@ -63,3 +63,9 @@ This should return something similar to the following
 ```
 
 That's it!  You can now run an internet speed test from the Linux cli without a browser!  What's your download speed?
+
+## Links
+
+⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>
+
+🚀 Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files

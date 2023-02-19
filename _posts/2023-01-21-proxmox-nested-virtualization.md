@@ -65,3 +65,9 @@ cat /sys/module/kvm_amd/parameters/nested
 ```
 
 You should see **Y** this time.  This means that you can now using virtulization inside of a VM, just be sure to set your VM's processor accordingly! (use HOST for CPU type)
+
+## Links
+
+⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>
+
+🚀 Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files

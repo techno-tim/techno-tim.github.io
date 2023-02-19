@@ -261,3 +261,9 @@ Be sure to replace the mac address and broadcast IP above with the mac address o
 ## Wrapping up
 
 At this point you should be able to power on any machine from any machine on your network. One piece of advice is if you are using VLANs you'll want to b sure you are sending the WoL packet from the same network, otherwise you'll have to be sure that you can reach and target the right broadcast IP from the network you are on.  As I mentioned in the beginning of this post, Wake on LAN is hard however if you follow these steps for each machine type you should be able to enjoy reliably waking up your machine remotely over the network.
+
+## Links
+
+⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>
+
+🚀 Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files
