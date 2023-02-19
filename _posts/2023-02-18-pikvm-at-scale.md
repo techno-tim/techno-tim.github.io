@@ -2,8 +2,8 @@
 layout: post
 title: "Using the Raspberry Pi PiKVM with Multiple Machines"
 date: 2023-02-18 10:00:00 -0500
-categories: raspberry pi
-tags: pikvm kvm raspberry-pi hardware arch
+categories: homelab
+tags: pikvm kvm raspberry-pi hardware arch homelab linux
 ---
 
 [![Scaling the PiKVM - Using the Raspberry Pi PiKVM with Multiple Machines](https://img.youtube.com/vi/aOgcqVcY4Yg/0.jpg)](https://www.youtube.com/watch?v=aOgcqVcY4Yg "Scaling the PiKVM - Using the Raspberry Pi PiKVM with Multiple Machines")
