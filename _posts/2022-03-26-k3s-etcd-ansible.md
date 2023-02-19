@@ -18,9 +18,9 @@ New Customers Exclusive – Get a Free 240gb SSD at Micro Center: <https://micro
 
 ## Prep
 
-First, you'll need Ansible installed.  Here's an easy way to [install Ansible](https://docs.technotim.live/posts/ansible-automation/) and a video if you need.
+First, you'll need Ansible installed.  Here's an easy way to [install Ansible](/posts/ansible-automation/) and a video if you need.
 
-Second, you'll need to provision the VMs. Here's an easy way to create [perfect Proxmox templates with cloud image and cloud init](https://docs.technotim.live/posts/cloud-init-cloud-image/) and a video if you need.
+Second, you'll need to provision the VMs. Here's an easy way to create [perfect Proxmox templates with cloud image and cloud init](/posts/cloud-init-cloud-image/) and a video if you need.
 
 Next, you'll need to fork and clone [the repo](https://github.com/techno-tim/k3s-ansible).  While you're at it, give it a ⭐ too :).
 
@@ -172,9 +172,9 @@ ansible-playbook ./reset.yml -i ./inventory/my-cluster/hosts.ini
 
 ## What's next?
 
-See here to get the steps for installing [traefik + let's encrypt](https://docs.technotim.live/posts/kube-traefik-cert-manager-le/)
+See here to get the steps for installing [traefik + let's encrypt](/posts/kube-traefik-cert-manager-le/)
 
-See here for steps to deploy [rancher](https://docs.technotim.live/posts/rancher-ha-install/#install)
+See here for steps to deploy [rancher](/posts/rancher-ha-install/#install)
 
 ## Troubleshooting
 

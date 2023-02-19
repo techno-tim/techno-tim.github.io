@@ -16,7 +16,7 @@ See all the hardware I recommend at <https://l.technotim.live/gear>
 
 ## Install Docker
 
-To install docker, see [https://docs.technotim.live/posts/docker-compose-install/](https://docs.technotim.live/posts/docker-compose-install/)
+To install docker, see [https://docs.technotim.live/posts/docker-compose-install/](/posts/docker-compose-install/)
 
 ## Install Rancher
 

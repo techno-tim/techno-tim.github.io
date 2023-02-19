@@ -29,7 +29,7 @@ Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quic
                              "Y8bbdP"               
 ```
 
-If you need to passthrough a GPU, follow [this guide](https://docs.technotim.live/posts/gpu-passthrough/) but install Ubuntu instead.
+If you need to passthrough a GPU, follow [this guide](/posts/gpu-passthrough/) but install Ubuntu instead.
 
 ## Proxmox
 

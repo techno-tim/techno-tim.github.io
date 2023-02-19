@@ -58,7 +58,7 @@ snmpwalk -v2c -c yourSNMPv2cCommunity yourRasberryPiIPaddress .1.3.6.1.4.1.8072.
 
 ## Advanced
 
-To see advanced configuration and configuring NUT Server and NUT client, see my [Network UPS Tools (NUT) Ultimate Guide](https://docs.technotim.live/posts/NUT-server-guide/).
+To see advanced configuration and configuring NUT Server and NUT client, see my [Network UPS Tools (NUT) Ultimate Guide](/posts/NUT-server-guide/).
 
 ## Links
 

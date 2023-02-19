@@ -18,7 +18,7 @@ Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quic
 
 ## Install Docker
 
-To install docker, see [https://docs.technotim.live/posts/docker-compose-install/](https://docs.technotim.live/posts/docker-compose-install/)
+To install docker, see [https://docs.technotim.live/posts/docker-compose-install/](/posts/docker-compose-install/)
 
 ## Docker commands
 

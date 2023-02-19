@@ -36,7 +36,7 @@ deb http://download.proxmox.com/debian buster pve-no-subscription
 
 ### Proxmox Version 7.X
 
-(for a full guide on Proxmox 7, please [see this link](https://docs.technotim.live/posts/proxmox-7/))
+(for a full guide on Proxmox 7, please [see this link](/posts/proxmox-7/))
 
 ```bash
 deb http://ftp.debian.org/debian bullseye main contrib
@@ -167,7 +167,7 @@ iface vmbr0 inet static
 #lacp nic team
 ```
 
-**If you're running Proxmox 7, see the modified [config here](https://docs.technotim.live/posts/proxmox-7/) for LAGG / LACP**
+**If you're running Proxmox 7, see the modified [config here](/posts/proxmox-7/) for LAGG / LACP**
 
 ## Cloning
 

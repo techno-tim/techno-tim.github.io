@@ -18,11 +18,11 @@ Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quic
 
 ## Traefik
 
-Authelia will work with other reverse proxies but I used Traefik.  If you want to configure Traefik as your reverse proxy see this [guide](https://docs.technotim.live/posts/traefik-portainer-ssl/).
+Authelia will work with other reverse proxies but I used Traefik.  If you want to configure Traefik as your reverse proxy see this [guide](/posts/traefik-portainer-ssl/).
 
 ## Docker Setup
 
-See [this post](https://docs.technotim.live/posts/docker-compose-install/) on how to install `docker` and `docker-compose`
+See [this post](/posts/docker-compose-install/) on how to install `docker` and `docker-compose`
 
 ## Authelia
 

@@ -211,7 +211,7 @@ on-call-webapp   True    Initialized   1m
 
 ## Updating Flux
 
-If you need to update flux, check out [Updating Flux Installation Using the Latest Binary from CLI](https://docs.technotim.live/posts/update-flux/)
+If you need to update flux, check out [Updating Flux Installation Using the Latest Binary from CLI](/posts/update-flux/)
 
 ## Links
 

@@ -18,11 +18,11 @@ Be sure to ⭐ the [Pterodactyl GitHub repo](https://github.com/pterodactyl/pane
 
 ## Install Docker
 
-To install docker, see [https://docs.technotim.live/posts/docker-compose-install/](https://docs.technotim.live/posts/docker-compose-install/)
+To install docker, see [https://docs.technotim.live/posts/docker-compose-install/](/posts/docker-compose-install/)
 
 ## Reverse Proxy
 
-Both your Pterodactyl Panel server as well as your Pterodactyl Wing server will need to be configured in your reverse proxy, each with their own public URL. If you need help configuring your reverse proxy, [see my guide on how to do that](https://docs.technotim.live/posts/traefik-portainer-ssl/).
+Both your Pterodactyl Panel server as well as your Pterodactyl Wing server will need to be configured in your reverse proxy, each with their own public URL. If you need help configuring your reverse proxy, [see my guide on how to do that](/posts/traefik-portainer-ssl/).
 
 ## Need games 🎮?
 

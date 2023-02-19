@@ -18,7 +18,7 @@ Combat misconfigurations. Empower engineers.
 
 ## Install SOPS
 
-You can install sops by [following this guide](https://docs.technotim.live/posts/install-mozilla-sops/).
+You can install sops by [following this guide](/posts/install-mozilla-sops/).
 
 
 test with
@@ -35,7 +35,7 @@ sops 3.7.3 (latest)
 
 ## Install Age
 
-You can install age by [following this guide](https://docs.technotim.live/posts/install-age/)
+You can install age by [following this guide](/posts/install-age/)
 
 test `age` with
 
@@ -300,7 +300,7 @@ sops --decrypt --age $(cat $SOPS_AGE_KEY_FILE |grep -oP "public key: \K(.*)") --
 
 ## Flux
 
-If you're thinking of doing GitOps with Flux, you can [check out my video on this topic](https://www.youtube.com/watch?v=PFLimPh5-wo) or see my [documentation](https://docs.technotim.live/posts/flux-devops-gitops/).  You can do cluster decryption and fully automate decryption of secrets.
+If you're thinking of doing GitOps with Flux, you can [check out my video on this topic](https://www.youtube.com/watch?v=PFLimPh5-wo) or see my [documentation](/posts/flux-devops-gitops/).  You can do cluster decryption and fully automate decryption of secrets.
 
 In cluster decryption with Flux
 
