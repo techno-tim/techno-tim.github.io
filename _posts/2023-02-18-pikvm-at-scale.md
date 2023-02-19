@@ -272,7 +272,7 @@ kvmd:
 
 ## Wake on LAN
 
-If you're having issues with Wak on LAN, see the [Ultimate Wake on LAN Guide for Windows, Mac, and Linux](/posts/wake-on-lan)
+If you're having issues with Wak on LAN, see [The Ultimate Guide to Wake on LAN for Windows, MacOS, and Linux](/posts/wake-on-lan)
 
 ## Links
 

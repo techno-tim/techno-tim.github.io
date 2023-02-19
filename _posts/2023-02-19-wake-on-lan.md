@@ -232,7 +232,7 @@ If your machine is on another network and you can reach the broadcast IP, you ca
 
 ```bash
  sudo etherwake -b 192.168.2.255 00:11:22:33:44:55
-``` 
+```
 
 Be sure to replace the mac address and broadcast IP above with the mac address of the remote machine and the broadcast IP of the network that the machine is on.
 
@@ -252,6 +252,6 @@ Once it's installed you can now wake machines on the same network by using the c
 
 Be sure to replace the mac address and broadcast IP above with the mac address of the remote machine and the broadcast IP of the network that the machine is on.
 
-## Wake on LAN
+## Wrapping up
 
-As I mentioned in the beginning of this post, Wake on LAN is hard however if you follow these steps for each machine type you should be able to enjoy reliably waking up your machine remotely over the network.
+At this point you should be able to power on any machine from any machine on your network. One piece of advice is if you are using VLANs you'll want to b sure you are sending the WoL packet from the same network, otherwise you'll have to be sure that you can reach and target the right broadcast IP from the network you are on.  As I mentioned in the beginning of this post, Wake on LAN is hard however if you follow these steps for each machine type you should be able to enjoy reliably waking up your machine remotely over the network.

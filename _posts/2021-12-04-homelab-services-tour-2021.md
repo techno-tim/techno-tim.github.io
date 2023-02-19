@@ -16,6 +16,6 @@ Worth mentioning, I [have videos on almost every service mentioned in this video
 
 See all the hardware I recommend at <https://l.technotim.live/gear>
 
-Be sure to check out the [2021 HomeLab hardware tour here](https://docs.technotim.live/posts/homelab-tour-2021/)
+Be sure to check out the [2021 HomeLab hardware tour here](/posts/
 
 Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files
