@@ -109,7 +109,7 @@ Now that I had everything working the way it should it was time to connect to ea
 
 But running HD videos probably isn’t the reason you want a KVM, it’s more likely that you want to have access to the machine while it boots, and here’s where it gets really awesome. The PiKVM is open and it’s totally hackable and there are some great plugins and drivers that allow you to customize the UI with those plugins.   For instance I can shutdown this machine and then wake it up using a Wake on LAN packet to power it back on.  Side note, I learned a ton about making Wake on LAN work for Windows and Linux and I will be updating my blogs with complete walk-throughs of how to enable it, but anyway If that wasn’t cool enough I can then get into the BIOS of this machine to make any changes that I want.  I can change the boot order, change boot devices, overclock the machine and do anything that I couldn’t normally do without being right in front of the machine.  I can even upload ISOs to the PiKVM and then attach them to the device virtually and boot from it to install any operating system!  This lets me rebuild any of these machines no matter where I am all from a web browser.  
 
-Want to install Linux on a machine that’s powered off, no problem.  Just attach the virtual drive to the machine, send a wake on lan packet to wake it up, then boot from the virtual drive and install! You could also attach the ATX power control to the header of the motherboard if you like and power it on that way, but I have network access to all of my machines so I will use wake on lan.  Plus, it’s super awesome to be able to wake devices up over the network.   And here’s where it gets really awesome,  remember how I said that my KVM also has a USB Hub?  Well, I’ve attached a 64GB USB drive to it with [Ventoy](https://docs.technotim.live/posts/ventoy-tutorial/) installed that has every ISO I could ever need.  As I switch inputs between machines it attaches the USB drive with Ventoy to each machine allowing me to install any operating system I want.
+Want to install Linux on a machine that’s powered off, no problem.  Just attach the virtual drive to the machine, send a wake on lan packet to wake it up, then boot from the virtual drive and install! You could also attach the ATX power control to the header of the motherboard if you like and power it on that way, but I have network access to all of my machines so I will use wake on lan.  Plus, it’s super awesome to be able to wake devices up over the network.   And here’s where it gets really awesome,  remember how I said that my KVM also has a USB Hub?  Well, I’ve attached a 64GB USB drive to it with [Ventoy](/posts/ventoy-tutorial/) installed that has every ISO I could ever need.  As I switch inputs between machines it attaches the USB drive with Ventoy to each machine allowing me to install any operating system I want.
 
 ![EZCOO switch with PiKVM and everything connected](/assets/img/posts/ezcoo-switch-connected-usb.jpg)
 _You can make this even more powerful by adding a USB drive and Ventoy_
@@ -269,6 +269,10 @@ kvmd:
                 - ["#PC", ch3_led, ch3_button, "wol_server3 | WoL-10g", "wol_server3a | WoL-1g"]
                 - ["#PiKVM", "pikvm_led|green", "restart_service_button|confirm|Service", "reboot_button|confirm|Reboot"]
 ```
+
+## Wake on LAN
+
+If you're having issues with Wak on LAN, see the [Ultimate Wake on LAN Guide for Windows, Mac, and Linux](/posts/wake-on-lan)
 
 ## Links
 
