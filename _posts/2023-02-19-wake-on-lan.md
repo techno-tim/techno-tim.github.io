@@ -10,11 +10,11 @@ image:
 
 ## Why is it so hard?
 
-After releasing [my video on the PiKVM](/posts/pikvm-at-scale/) I realized that there was so much confusion about Wake on LAN, and rightfully so. Wake on LAN (WoL) is a networking standard that allows a computer to be turned on by sending a network packet. The client sends a special packet (sometimes referred to as a "magic packet") and the remote machine will wake up either from a cold power state or from sleep.  This is where it starts to get complicated because different hardware manufactures have implemented different controls in BIOS to enable or disable this, and to make even more complex operating systems like Linux and Windows have also implemented their own way to wake the machine up when it's sleeping or in a low powered state.  I am just going to through this out there, Wake on LAN is hard.  Since there are so many different combinations I will try to cover how to configure your machines to successfully wake up to matter which device type of computer you are using, regardless of operating, system, and in any power state.
+After releasing [my video on the PiKVM](/posts/pikvm-at-scale/) I realized that there was so much confusion about Wake on LAN, and rightfully so. Wake on LAN (WoL) is a networking standard that allows a computer to be turned on by sending a network packet. The client sends a special packet (sometimes referred to as a "magic packet") and the remote machine will wake up either from a cold power state or from sleep.  This is where it starts to get complicated because different hardware manufactures have implemented different controls in BIOS to enable or disable this, and to make even more complex operating systems like Windows, macOS, and Linux have also implemented their own way to wake the machine up when it's sleeping or in a low powered state.  I am just going to throw this out there, Wake on LAN is hard.  Since there are so many different combinations I will try to cover how to configure your machines to successfully wake up to matter which device type of computer you are using, regardless of operating, system, and in any power state.
 
 ## Preparing your hardware for Wake on LAN
 
-In order to wake your machine up, we have to be sure that WoL features are turned on in the BIOS and that other features are disabled.  Since I cannot test every since BIOS out there, I am going to use my machine as an example for the types of options you will need to enable or disable.  Most of the options should be named similarly however where it is located in your BIOS will depend on your manufacture.
+In order to wake your machine up, we have to be sure that WoL features are turned on in the BIOS and that other features are disabled.  Since I cannot test every single BIOS out there, I am going to use my machine as an example for the types of options you will need to enable or disable.  Most of the options should be named similarly however where it is located in your BIOS will depend on your manufacturer.
 
 First, you'll need to get into the BIOS of the machine, this is typically done by pressing a key at book like `f2` or `del` but varies by machine.
 
@@ -31,7 +31,7 @@ Here are some things to look for:
 
 - **Deep S4/S5 Sleep** - You'll want to **disable** this, otherwise only the power button will wake the machine which will disable Wake on LAN
 
-- **Wake on LAN from S4/S5** - You'll want to **enable** this setting and if it has an option choose Power on - Normal Boot
+- **Wake on LAN from S4/S5** - You'll want to **enable** this setting and if it has an option choose **Power on - Normal Boot**
 
 - **Wake System from S5** - You'll want to **disable this**.  This is basically an alarm clock for your machine.  There's no need to enable this unless you want set a time for it to turn on every day.  I've used this in the past as a contingency plan for some of my servers in case they were powered off accidentally. I would set an alarm for 12 AM.
 
@@ -39,13 +39,13 @@ Here are some things to look for:
 
 - **Wake on LAN** - **enable** this might sound obvious but some older systems have an option that says exactly that however newer systems have options for waking in all of the different sleep states.
 
-- **What to do when AC Power is restored** - This is optional but I usually set it to **Stay Off** if it's a desktop, **Power On** if it's a server that should always be on, and **Last power state** if it's something like a machine that I wake seldomly.  There is one exception, which is if you have a way to toggle the power remotely too.  I have a [USP PDU Pro](https://store.ui.com/products/usp-pdu-pro) from UniFi that I can toggle all of my servers on and off.  If you are able to toggle them on and off, the best setting is **Power On** that way you have a way to power them on, even if they were gracefully shut down previously.
+- **What to do when AC Power is restored** - This is optional but I usually set it to **Stay Off** if it's a desktop, **Power On** if it's a server that should always be on, and **Last power state** if it's something like a machine that I wake seldomly.  There is one exception, which is if you have a way to toggle the power remotely too.  I have a [USP PDU Pro](https://store.ui.com/products/usp-pdu-pro) from UniFi that I can toggle all of my servers on and off.  If you are able to toggle them on and off, the best setting is **Power On**, that way you have a way to power them on, even if they were gracefully shut down previously.
 
 Another quick check you can do is power down the machine and check to be sure the network light is lit up on your NIC.  If it's not, this means Wake on LAN is not enabled on your machine and you'll have to find the option in your BIOS to make it work.
 
 ## Bare Metal Wake up
 
-If you don't have an operating system on your machine yet, you should be able to wake up the machine over the network now.  If you do have an operating system on your machine, another way you can test a bare metal / cold boot wake is by pulling the power on the machine and then plugging it back in.  The reason this should work is because modern operating systems might not full shut down (they go into a sort of sleep) or might disable WoL on the NIC when shutting down.  We'll fix this in the next section.
+If you don't have an operating system on your machine yet, you should be able to wake up the machine over the network now.  If you do have an operating system on your machine, another way you can test a bare metal / cold boot wake is by pulling the power on the machine and then plugging it back in.  The reason this should work is because modern operating systems might not fully shut down (they go into a sort of sleep) or might disable WoL on the NIC when shutting down.  We'll fix this in the next section.
 
 ## Waking up a Windows machine
 
@@ -53,7 +53,7 @@ After you enabled Wake on LAN in the BIOS, and verified you see the light on you
 
 ### Device manager
 
-First we'll want to open the Device Manager.  Can you do this from the UI or from a command prompt
+First we'll want to open the Device Manager.  You can do this from the UI or from a command prompt
 
 ```terminal
 devmgmt.msc
@@ -93,7 +93,7 @@ powercfg.cpl
 Then we'll need to change some settings
 
 - Click **Choose what the power buttons do** from the left menu
-- Click **Change settings that are currently unavailable**\
+- Click **Change settings that are currently unavailable**
 - Uncheck **Turn on fast startup (recommended)**
 - Click **Save changes**
 
@@ -101,11 +101,11 @@ You should now check to see if Wake on LAN works for your machine.
 
 ## Waking up a Linux machine
 
-After you enabled Wake on LAN in the BIOS, and verified you see the light on your NIC blinking when you power off your machine, we can now enable Wake on LAN at the operating system level for Linux.  This sounds odd but I have found that machines (especially Linux) need WoL turned on for each NIC.
+After you enable Wake on LAN in the BIOS, and verified you see the light on your NIC blinking when you power off your machine, we can now enable Wake on LAN at the operating system level for Linux.  This sounds odd but I have found that machines (especially Linux) need WoL turned on for each NIC.
 
-There are lots of outdate commands you'll find on the internet that won't work or will partially work so I advise that you only do this with `netplan`
+There are lots of outdated commands you'll find on the internet that won't work or will partially work so I advise that you only do this with `netplan`
 
-First check to see if WoL is support by your NIC
+First check to see if WoL is supported by your NIC
 
 ```bash
 ip a # this will list all of your NICs
@@ -206,14 +206,14 @@ In order to wake up a remote machine machine up, you will need a tool that can s
 
 ### Windows Wake On LAN CLient
 
-I am a fan of doing this in a terminal however a decent Windows utility with a GUI is [WakeOnLAN](https://github.com/basildane/WakeOnLAN) by Aquila Technology and it's also open source on GitHub.  After installing it and configuring a machine to wake you should be able to wake your machine if it is on the same network and you've followed the other steps that are outlined in this guide.
+I am a fan of doing this in a terminal however a decent Windows utility with a GUI is [WakeOnLAN](https://github.com/basildane/WakeOnLAN).  It's also open source and hosted on GitHub.  After installing it and configuring a machine to wake you should be able to wake your machine if it is on the same network and you've followed the other steps that are outlined in this guide.
 
 ![Windows WOL Client](/assets/img/posts/wake-on-lan-app-windows.jpg)
 _WakeOnLAN is an open source Windows utility that has a nice GUI_
 
 ### Linux Wake on LAN client
 
-I usually prefer installing a command line tool to wake machines up over the network from a Linux machine and I typically using `wakeonlan` and open source utility that's simple to use.
+I usually prefer installing a command line tool to wake machines up over the network from a Linux machine and I typically using `wakeonlan` an open source utility that's simple to use.
 
 To install it on a Debian-like system:
 
@@ -234,7 +234,7 @@ If your machine is on another network and you can reach the broadcast IP, you ca
  sudo etherwake -b 192.168.2.255 00:11:22:33:44:55
 ```
 
-Be sure to replace the mac address and broadcast IP above with the mac address of the remote machine and the broadcast IP of the network that the machine is on.
+Be sure to replace the mac address and broadcast IP above with the mac address of the remote machine and set the broadcast IP if on a different network.
 
 ### macOS Wake on LAN client
 
@@ -250,7 +250,7 @@ Once it's installed you can now wake machines on the same network by using the c
  sudo wakeonlan 00:11:22:33:44:55
 ```
 
-Be sure to replace the mac address and broadcast IP above with the mac address of the remote machine and the broadcast IP of the network that the machine is on.
+Be sure to replace the mac address and broadcast IP above with the mac address of the remote machine and set the broadcast IP if on a different network.
 
 ## Wrapping up
 
