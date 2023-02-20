@@ -103,7 +103,12 @@ You should now check to see if Wake on LAN works for your machine.
 
 After you enable Wake on LAN in the BIOS, and verified you see the light on your NIC blinking when you power off your machine, we can now enable Wake on LAN at the operating system level for Linux.  This sounds odd but I have found that machines (especially Linux) need WoL turned on for each NIC.
 
-There are lots of outdated commands you'll find on the internet that won't work or will partially work so I advise that you only do this with `netplan`
+Install `ethtool` if you don't have it already
+
+```bash
+sudo apt update
+sudo apt install ethtool
+```
 
 First check to see if WoL is supported by your NIC
 
@@ -145,10 +150,14 @@ Settings for eno1:
 
 You're looking for `Supports Wake-on: pumbg`  with at least the letter `g` in the string.  This means that the NIC does support WoL for a magic packet, which is a good thing.  If you don't see this here, don't worry we'll fix it in `netplan`
 
+### Using Netplan
+
+There are lots of outdated commands you'll find on the internet that won't work or will partially work so I advise that you only do this with `netplan`.  If you don't have `netplan` installed (Debian, etc...) skip to the next section.
+
 To edit your `netplan`
 
 ```bash
-sudo nano /etc/netplan/01-netcfg.yaml  # replace with your netplan yaml if it doesn't match this
+sudo nano /etc/netplan/01-netcfg.yaml  # replace with your netplan yaml
 ```
 
 Once here, you'll see your network settings.  You'll want to turn on `wakeonlan` in this yaml for each NIC.  For example if you have 2 NICs, `eno1` and `enp2s0` you would add it in both places under that key.
@@ -167,6 +176,7 @@ network:
       dhcp4:  yes
       wakeonlan: true
 ```
+{: file="/etc/netplan/01-netcfg.yaml" }
 
 Once this is set, you'll want to apply your netplan.
 
@@ -180,7 +190,63 @@ Then we'll want to shutdown
 sudo shutdown -P now
 ```
 
-Now we should be able to wake up the machine using WoL from a remote machine.  
+Now we should be able to wake up the machine using WoL from a remote machine.
+
+### Without Netplan (Debian, etc...)
+
+Since you don't have `netplan` we'll have to create a service and enable it.  Do not do this step if you configure it with `netplan`.
+
+Find the path to `ethtool`
+
+```bash
+which ethtool
+```
+
+In my case it's at `/usr/sbin/ethtool` but your may vary.
+
+Nest we'll create a file at `/etc/systemd/system/wol.service`
+
+```bash
+nano /etc/systemd/system/wol.service
+```
+
+In this file add the following
+
+```shell
+[Unit]
+Description=Enable Wake On LAN
+
+[Service]
+Type=oneshot
+ExecStart = /usr/sbin/ethtool --change eno1 wol g
+
+[Install]
+WantedBy=basic.target
+```
+{: file="/etc/systemd/system/wol.service" }
+
+You'll want to be sure to change your path for `ethtool` as well `eno1` to the name of your NIC
+
+Then we'll need to enable the service
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl enable wol.service
+```
+
+Then we can check to be sure out service is started
+
+```conf
+systemctl status wol
+```
+
+Then we'll want to shutdown
+
+```bash
+sudo shutdown -P now
+```
+
+Now we should be able to wake up the machine using WoL from a remote machine.
 
 ## Waking up a Mac
 
