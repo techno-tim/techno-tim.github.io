@@ -269,6 +269,7 @@ kvmd:
                 - ["#PC", ch3_led, ch3_button, "wol_server3 | WoL-10g", "wol_server3a | WoL-1g"]
                 - ["#PiKVM", "pikvm_led|green", "restart_service_button|confirm|Service", "reboot_button|confirm|Reboot"]
 ```
+{: file="/etc/kvmd/override.yaml" }
 
 ## Wake on LAN
 
