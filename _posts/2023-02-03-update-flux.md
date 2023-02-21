@@ -76,7 +76,6 @@ git diff
 
 You should see something like the following
 
-
 ```diff
 diff --git a/clusters/cluster-01/base/flux-system/gotk-components.yaml b/clusters/cluster-01/base/flux-system/gotk-components.yaml
 index 79576f0f..9c26b708 100644

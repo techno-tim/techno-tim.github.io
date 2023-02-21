@@ -21,7 +21,6 @@ Combat misconfigurations. Empower engineers.
 
 You can install sops by [following this guide](/posts/install-mozilla-sops/).
 
-
 test with
 
 ```bash
