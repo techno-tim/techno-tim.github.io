@@ -4,6 +4,8 @@ title: "Installing Age Encryption Tool"
 date: 2023-01-30 10:00:00 -0500
 categories: utilities
 tags: homelab secops devops age cli linux open-source
+image:
+  path: /assets/img/headers/age-install.jpg
 ---
 
 ## What is Age?

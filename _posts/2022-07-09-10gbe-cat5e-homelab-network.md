@@ -4,12 +4,13 @@ title: "Will 10 Gigabit work with Cat5e? - 10Gbe HomeLab Network Upgrade!"
 date: 2022-07-09 10:00:00 -0500
 categories: homelab
 tags: homelab network unifi 10gbe
+image:
+  path: /assets/img/headers/highway-10gbe.jpg
 ---
-
-[![Will 10 Gigabit work with Cat5e? - 10Gbe HomeLab Network Upgrade!](https://img.youtube.com/vi/_HaLU3ecUSY/0.jpg)](https://www.youtube.com/watch?v=_HaLU3ecUSY "Will 10 Gigabit work with Cat5e? - 10Gbe HomeLab Network Upgrade!")
 
 After deciding to upgrade my "old" 24 PoE switch to a new 48 port PoE switch with 4 SFP+ ports, I decided to check to see if my old house with old Cat5e network wiring will work at 10 gigabit speeds!  If this works, I will have a 10 Gbe network connection from my PCs to my HomeLab server rack!
 
+{% include embed/youtube.html id='_HaLU3ecUSY' %}
 📺 [Watch Video](https://www.youtube.com/watch?v=_HaLU3ecUSY)
 
 A HUGE thank you to Micro Center for sponsoring today's video!

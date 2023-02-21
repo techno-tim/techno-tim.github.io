@@ -3,13 +3,14 @@ layout: post
 title: "I Put RGB Fans in My Server and I am NOT Apologizing"
 date: 2022-10-22 09:00:00 -0500
 categories: homelab
-tags: git kubernetes secrets security sops age
+tags: homelab hardware server storinator 45-drives rgb
+image:
+  path: /assets/img/headers/hard-drive-close-up.jpg
 ---
-
-[![I Put RGB Fans in My Server and I am NOT Apologizing](https://img.youtube.com/vi/zaAUn0QeKVo/0.jpg)](https://www.youtube.com/watch?v=zaAUn0QeKVo "I Put RGB Fans in My Server and I am NOT Apologizing")
 
 My Storinator server from 45Drives is great, except for 1 thing.  It's a little loud for my home.  It would be fine if it were in a data center or a real network closet, however this is in my basement.  I decided to swap out all the fans to make it quieter, and install RGB fans along with a ZigBee controller so I can control them with Home Automation!
 
+{% include embed/youtube.html id='zaAUn0QeKVo' %}
 📺 [Watch Video](https://www.youtube.com/watch?v=zaAUn0QeKVo)
 
 HUGE THANK YOU to Micro Center for Sponsoring this Video!

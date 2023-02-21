@@ -4,14 +4,13 @@ title: "I'll never run out of power! - Eaton and Tripp Lite UPS"
 date: 2022-11-26 09:00:00 -0500
 categories: homelab
 tags: ups eaton tripp-lite server server-rack
+image:
+  path: /assets/img/headers/ups-install.jpg
 ---
-
-[![I'll never run out of power! - Eaton and Tripp Lite UPS](https://img.youtube.com/vi/tnrNGE5SRhQ/0.jpg)](https://www.youtube.com/watch?v=tnrNGE5SRhQ "I'll never run out of power! - Eaton and Tripp Lite UPS")
-
-## Description
 
 Today I look at 2 (or 3 depending on how you count them) UPS systems from Tripp Lite and Eaton.  These UPS devices couldn't be any different but they are awesome nonetheless.  Each has it's own unique capabilities and features.  Which on will you choose when looking for your next UPS?  Join me as we walk through and review these type UPS systems and rack them in my new rack!
 
+{% include embed/youtube.html id='tnrNGE5SRhQ' %}
 📺 [Watch Video](https://www.youtube.com/watch?v=tnrNGE5SRhQ)
 
 Huge THANK YOU to Eaton / Tripp Lite for sending these UPS systems.  If you're looking for a new UPS for home or work, you should totally check them out!

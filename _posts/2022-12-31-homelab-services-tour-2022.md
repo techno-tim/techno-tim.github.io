@@ -4,16 +4,15 @@ title: "Techno Tim HomeLab Services Tour (Late 2022) - What am I Self-Hosting in
 date: 2022-12-31 09:00:00 -0500
 categories: homelab
 tags: homelab hardware network server self-hosted kubernetes k3s linux
+image:
+  path: /assets/img/headers/services-tour-map.jpg
 ---
-
-[![Techno Tim HomeLab Services Tour (Late 2022) - What am I Self-Hosting in my HomeLab?](https://img.youtube.com/vi/yrMRZVvkxeA/0.jpg)](https://www.youtube.com/watch?v=yrMRZVvkxeA "Techno Tim HomeLab Services Tour (Late 2022) - What am I Self-Hosting in my HomeLab?")
-
-## Description
 
 Wow, what a year of self-hosting! After showing off my Home Lab hardware in my late 2022 tour, many of you asked what services are self-hosted in this stack.   This is always a moving target so I decided it was time to share which services I am running here at home.  Today, we walk through everything I am hosting including:  Dashboard, Hypervisor, Virtualization, Containerization, Network Attached Storage (NAS), DNS, Network Management, Home Security, Kubernetes, Kubernetes Storage, Docker, Reverse Proxy, Certificates, Monitoring, Logging, Syncing Data, File Sharing, Link Page, Link Shortening, Home Entertainment, Home Automation, Battery / UPS Monitoring, CMS, Static Site Generators, Dynamic DNS, CI/CD, Git Ops, Dev Ops, and many, many others.  Enjoy the virtual tour!
 
 Worth mentioning, I have videos on almost every service mentioned in this video!
 
+{% include embed/youtube.html id='yrMRZVvkxeA' %}
 📺 [Watch Video](https://www.youtube.com/watch?v=yrMRZVvkxeA)
 
 ## Related Videos

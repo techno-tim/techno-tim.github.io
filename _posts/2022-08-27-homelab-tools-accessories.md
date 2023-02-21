@@ -4,9 +4,9 @@ title: "Essential HomeLab Tools & Accessories - Network / Server / PC Tool Kit"
 date: 2022-08-27 09:00:00 -0500
 categories: homelab
 tags: homelab tools accessories
+image:
+  path: /assets/img/headers/tools-desk.jpg
 ---
-
-[![Essential HomeLab Tools & Accessories - Network / Server / PC Tool Kit](https://img.youtube.com/vi/VX2dxFkahgs/0.jpg)](https://www.youtube.com/watch?v=VX2dxFkahgs "Essential HomeLab Tools & Accessories - Network / Server / PC Tool Kit")
 
 Every Home Labber and IT person has their go to set of tools and accessories to help them accomplish tasks for technical projects in their HomeLab.  This ranges from the very specialized, to the common.  I do all kinds of projects at home, from building and racking servers, to building mini and full-size PCs, to upgrading and troubleshooting hardware, to home office upgrades, to installing wireless access points and cameras, down to building raspberry pi projects.  I’ve gathered up some of my most essential tools and accessories to assist you in your projects!
 
@@ -16,6 +16,7 @@ New Customers Exclusive – FREE Redragon GS500 Gaming Stereo Speakers: <https:/
 Check out Micro Center’s PC Builder: <https://micro.center/7hj>
 Submit your build to Micro Center’s Build Showcase: <https://micro.center/vo6>
 
+{% include embed/youtube.html id='VX2dxFkahgs' %}
 📺 [Watch Video](https://www.youtube.com/watch?v=VX2dxFkahgs)
 
 ## Items

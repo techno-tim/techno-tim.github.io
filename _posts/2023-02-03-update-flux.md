@@ -4,6 +4,8 @@ title: "Updating Flux Installation Using the Latest Binary from CLI"
 date: 2023-02-03 20:00:00 -0500
 categories: kubernetes
 tags: flux devops gitops kubernetes open-source
+image:
+  path: /assets/img/headers/flux-multi.jpg
 ---
 
 ## What is Flux?
@@ -26,7 +28,6 @@ Release-Date: 2020-01-08
 Protocols: dict file ftp ftps gopher http https imap imaps ldap ldaps pop3 pop3s rtmp rtsp scp sftp smb smbs smtp smtps telnet tftp
 Features: AsynchDNS brotli GSS-API HTTP2 HTTPS-proxy IDN IPv6 Kerberos Largefile libz NTLM NTLM_WB PSL SPNEGO SSL TLS-SRP UnixSockets
 ```
-
 
 ```bash
 sudo apt update && sudo apt install curl

@@ -4,14 +4,13 @@ title: "Automated NUT Server Install"
 date: 2022-11-28 09:00:00 -0500
 categories: homelab
 tags: homelab nut self-hosted ups pdu open-source automation
+image:
+  path: /assets/img/headers/nut-script.jpg
 ---
-
-[![Automated NUT Server Install](https://img.youtube.com/vi/HgKeD4320c0/0.jpg)](https://www.youtube.com/watch?v=HgKeD4320c0 "Automated NUT Server Install")
-
-## Description
 
 Here's a quick way to automate your battery backups and UPSes with and open source service called NUT server and a raspberry Pi.  
 
+{% include embed/youtube.html id='HgKeD4320c0' %}
 📺 [Watch Video](https://www.youtube.com/watch?v=HgKeD4320c0)
 
 ## NUT Server Install script

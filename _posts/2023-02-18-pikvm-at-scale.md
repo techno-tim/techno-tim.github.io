@@ -4,9 +4,9 @@ title: "Using the Raspberry Pi PiKVM with Multiple Machines"
 date: 2023-02-18 10:00:00 -0500
 categories: homelab
 tags: pikvm kvm raspberry-pi hardware arch homelab linux
+image:
+  path: /assets/img/headers/kvm-dark-desktop.jpg
 ---
-
-[![Scaling the PiKVM - Using the Raspberry Pi PiKVM with Multiple Machines](https://img.youtube.com/vi/aOgcqVcY4Yg/0.jpg)](https://www.youtube.com/watch?v=aOgcqVcY4Yg "Scaling the PiKVM - Using the Raspberry Pi PiKVM with Multiple Machines")
 
 ## What is the PiKVM?
 
@@ -14,7 +14,8 @@ If you don’t know what a KVM switch is, it’s a device that allows you to con
 
 This is all great except for one small thing, unlike a traditional KVM that lets you control multiple devices, the PiKVM is really meant for remote controlling just one device.  The PiKVM is built with just one HDMI input and one keyboard mouse input while traditional KVMs have multiple inputs for multiple clients.  So how can we scale the PiKVM to connect it to more devices so that we aren’t stuck moving it from machine to machine each time we need to remote control one of our other devices?
 
-📺 [Watch Video](https://www.youtube.com/watch?v=lEqD3mRcqSo)
+{% include embed/youtube.html id='aOgcqVcY4Yg' %}
+📺 [Watch Video](https://www.youtube.com/watch?v=aOgcqVcY4Yg)
 
 ![PiKVM v3 Hello screen](/assets/img/posts/pikvm-v3-lcd-hello.jpg)
 _The little LCD is both cute and functional_

@@ -4,12 +4,13 @@ title: "Wildcard Certificates with Traefik + cert-manager + Let's Encrypt in Kub
 date: 2022-08-06 09:00:00 -0500
 categories: kubernetes
 tags: kubernetes traefik cert-manager k3s cloudflare letsencrypt
+image:
+  path: /assets/img/headers/certificate-desk.jpg
 ---
-
-[![Wildcard Certificates with Traefik + cert-manager + Let's Encrypt in Kubernetes Tutorial](https://img.youtube.com/vi/G4CmbYL9UPg/0.jpg)](https://www.youtube.com/watch?v=G4CmbYL9UPg "Wildcard Certificates with Traefik + cert-manager + Let's Encrypt in Kubernetes Tutorial")
 
 Traefik, cert-manager, Cloudflare, and Let's Encrypt are a winning combination when it comes to securing your services with certificates in Kubernetes.  Today, we'll install and configure Traefik, the cloud native proxy and load balancer, as our Kubernetes Ingress Controller.  We'll then install and configure cert-manager  to manage certificates for our cluster.  We'll set up Let's Encrypt as our Cluster Issuer so that cert-manager can automatically provision TLS certificates and even wildcard certificates using Cloudflare DNS challenge absolutely free.  We'll walk through all of this, step by step, so you can help secure your cluster today.
 
+{% include embed/youtube.html id='G4CmbYL9UPg' %}
 📺 [Watch Video](https://www.youtube.com/watch?v=G4CmbYL9UPg)
 
 A HUGE thanks to Datree for sponsoring this video!

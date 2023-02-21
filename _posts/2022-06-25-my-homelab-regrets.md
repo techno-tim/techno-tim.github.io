@@ -4,12 +4,13 @@ title: "My HomeLab Regrets..."
 date: 2022-06-25 10:00:00 -0500
 categories: homelab
 tags: homelab hardware network unifi
+image:
+  path: /assets/img/headers/beach-regret.jpg
 ---
-
-[![My HomeLab Regrets...](https://img.youtube.com/vi/yCquqeM7UO0/0.jpg)](https://www.youtube.com/watch?v=yCquqeM7UO0 "My HomeLab Regrets...")
 
 If I could start my HomeLab all over, what would I choose?  Would I choose the same servers, rack, networking, gateway, switch, firewall, my pc conversion, and even my disk shelf NAS?  Did I make a good choice or a bad one?  Join me as we give each piece of my HomeLab a Keep or Upgrade rating.
 
+{% include embed/youtube.html id='yCquqeM7UO0' %}
 📺 [Watch Video](https://www.youtube.com/watch?v=yCquqeM7UO0)
 
 A HUGE thanks to Micro Center for sponsoring this video!
