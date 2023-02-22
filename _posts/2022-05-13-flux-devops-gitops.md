@@ -4,15 +4,17 @@ title: "The FASTEST way to deploy apps to Kubernetes - GitOps with FLUX"
 date: 2022-05-13 08:00:00 -0500
 categories: kubernetes 
 tags: flux devops gitops kubernetes
+image:
+  path: /assets/img/headers/flux-streak.jpg
 ---
-
-[![The FASTEST way to deploy apps to Kubernetes](https://img.youtube.com/vi/PFLimPh5-wo/0.jpg)](https://www.youtube.com/watch?v=PFLimPh5-wo "The FASTEST way to deploy apps to Kubernetes")
 
 I think I found the perfect GitOps and DevOps toolkit with FluxCD and Kubernetes.  Flux is an open source GitOps solution that helps your deploy app and infrastructure with automation.  It can monitor git  repositories, source control, image container repositories, helm repositories, and more.  It can install apps using Kustomize, Helm, Kubernetes manifests so it's designed to fit into your existing workflow.  It can even push alerts to your chat system letting you know when deployments happen.  In this tutorial we'll cover all of this and more.
 
 <https://fluxcd.io>
 
 Be sure to ⭐ the [Flux GitHub repo](https://github.com/fluxcd/flux2)
+
+{% include embed/youtube.html id='PFLimPh5-wo' %}
 
 📺 [Watch Video](https://www.youtube.com/watch?v=PFLimPh5-wo)
 

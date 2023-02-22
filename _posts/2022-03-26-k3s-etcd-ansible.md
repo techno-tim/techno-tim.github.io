@@ -4,15 +4,17 @@ title: "Fully Automated K3S etcd High Availability Install"
 date: 2022-03-26 10:00:00 -0500
 categories: kubernetes k3s
 tags: k3s rancher etcd ansible cloud-image metallb kube-vip
+image:
+  path: /assets/img/headers/k8s-blocks.jpg
 ---
-
-[![Fully Automated K3S etcd High Availability Install](https://img.youtube.com/vi/CbkEWcUZ7zM/0.jpg)](https://www.youtube.com/watch?v=CbkEWcUZ7zM "Fully Automated K3S etcd High Availability Install")
 
 Setting up k3s is hard.  That's why we made it easy.  Today we'll set up a High Availability K3s cluster using etcd, MetalLB, kube-vip, and Ansible.  We'll automate the entire process giving you an easy, repeatable way to create a k3s cluster that you can run in a few minutes.
 
 A HUGE THANKS to our sponsor, Micro Center!
 
 New Customers Exclusive – Get a Free 240gb SSD at Micro Center: <https://micro.center/1043bc>
+
+{% include embed/youtube.html id='CbkEWcUZ7zM' %}
 
 📺 [Watch Video](https://www.youtube.com/watch?v=CbkEWcUZ7zM)
 

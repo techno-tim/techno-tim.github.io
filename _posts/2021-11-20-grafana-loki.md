@@ -4,13 +4,15 @@ title: "Meet Grafana LOKI, a Log Aggregation System for Everything"
 date: 2021-11-20 8:00:00 -0500
 categories: homelab
 tags: homelab proxmox grafana logging promtail prometheus
+image:
+  path: /assets/img/headers/log-stack.jpg
 ---
-
-[![Meet Grafana LOKI, a Log Aggregation System for Everything](https://img.youtube.com/vi/h_GGd7HfKQ8/0.jpg)](https://www.youtube.com/watch?v=h_GGd7HfKQ8 "Meet Grafana LOKI, a Log Aggregation System for Everything")
 
 I've been on a quest to find a new logging system.  I've use quite a few in the past, some open source, some proprietary, and some home grown, but recently I've decided to switch.  I've switched to Grafana Loki for all of my logs for all of my systems - this includes machines, devices, docker systems and hosts, and my all of my kubernetes clusters.  If you're thinking of using Grafana and are also looking for a fast way to log all of your systems, join me as we discuss and configure Grafana Loki.
 
-[Watch Video](https://www.youtube.com/watch?v=h_GGd7HfKQ8)
+{% include embed/youtube.html id='h_GGd7HfKQ8' %}
+
+📺 [Watch Video](https://www.youtube.com/watch?v=h_GGd7HfKQ8)
 
 Don't want to host it yourself?  Check out Grafana Cloud and sign up for a free account <https://l.technotim.live/grafana-labs>
 
