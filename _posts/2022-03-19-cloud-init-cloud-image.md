@@ -4,11 +4,13 @@ title: "Perfect Proxmox Template with Cloud Image and Cloud Init"
 date: 2022-03-19 10:00:00 -0500
 categories: proxmox
 tags: proxmox ubuntu cloud-image cloud-init cloud clone linux
+image:
+  path: /assets/img/headers/cloud-moon.jpg
 ---
 
-[![Perfect Proxmox Template with Cloud Image and Cloud Init](https://img.youtube.com/vi/shiIi38cJe4/0.jpg)](https://www.youtube.com/watch?v=shiIi38cJe4 "Perfect Proxmox Template with Cloud Image and Cloud Init")
-
 Using Cloud Images and Cloud Init with Proxmox is easy, fast, efficient, and fun!  Cloud Images are small images that are certified cloud ready that have Cloud Init preinstalled and ready to accept a Cloud Config.  Cloud Images and Cloud Init also work with Proxmox and if you combine the two you have a perfect, small, efficient, optimized clone template to provision machines with your ssh keys and network settings.  So join me as we discuss, set up, and configure Proxmox with Cloud Images and Cloud Init.
+
+{% include embed/youtube.html id='shiIi38cJe4' %}
 
 📺 [Watch Video](https://www.youtube.com/watch?v=shiIi38cJe4)
 

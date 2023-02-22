@@ -4,15 +4,17 @@ title: "I Built the PERFECT Game Server with Pterodactyl and Docker"
 date: 2022-04-30 08:00:00 -0500
 categories: homelab 
 tags: gaming pterodactyl docker redis mariabdb opensource
+image:
+  path: /assets/img/headers/retro-gaming.jpg
 ---
-
-[![I Built the PERFECT Game Server with Pterodactyl and Docker](https://img.youtube.com/vi/_ypAmCcIlBE/0.jpg)](https://www.youtube.com/watch?v=_ypAmCcIlBE "I Built the PERFECT Game Server with Pterodactyl and Docker")
 
 Pterodactyl is a free an open source dedicated game server.  It comes with both a panel to configure and deploy your game servers as well as game server nodes to run your games.  It runs games in Docker containers to keep them isolated and making them easier than ever to deploy.  We're going to also use Docker to create our Pterodactyl server and the Wings agent making this truly Docker to the core.
 
 <https://pterodactyl.io>
 
 Be sure to ⭐ the [Pterodactyl GitHub repo](https://github.com/pterodactyl/panel) and the [Eggs repo (additional games)](https://github.com/parkervcp/eggs)
+
+{% include embed/youtube.html id='_ypAmCcIlBE' %}
 
 📺 [Watch Video](https://www.youtube.com/watch?v=_ypAmCcIlBE)
 

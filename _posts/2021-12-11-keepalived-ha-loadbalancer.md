@@ -4,13 +4,15 @@ title: "Meet keepalived - High Availability and Load Balancing in One"
 date: 2021-12-11 8:00:00 -0500
 categories: homelab
 tags: homelab keepalived self-hosted linux ubuntu
+image:
+  path: /assets/img/headers/life-love.jpg
 ---
-
-[![Meet keepalived - High Availability and Load Balancing in One](https://img.youtube.com/vi/hPfk0qd4xEY/0.jpg)](https://www.youtube.com/watch?v=hPfk0qd4xEY "Meet keepalived - High Availability and Load Balancing in One")
 
 In my quest to make my services highly available I decided to use keepalived.  keepalived is a framework for both load balancing and high availability that implements VRRP.  This is a protocol that you see on some routers and has been implemented in keepalived. It creates a Virtual IP (or VIP, or floating IP) that acts as a gateway to route traffic to all participating hosts.  This VIP that can provide a high availability setup and fail over to another host in the event that one is down. In this video, we'll set up and configure keepalived, we'll test our configuration to make sure it's working, and we'll also talk about some advanced use cases like load balancing.
 
-[Watch Video](https://www.youtube.com/watch?v=hPfk0qd4xEY)
+{% include embed/youtube.html id='hPfk0qd4xEY' %}
+
+📺 [Watch Video](https://www.youtube.com/watch?v=hPfk0qd4xEY)
 
 See all the hardware I recommend at <https://l.technotim.live/gear>
 
