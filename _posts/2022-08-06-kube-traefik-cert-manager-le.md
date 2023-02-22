@@ -133,7 +133,7 @@ metallb-system   webhook-service   ClusterIP      10.43.205.142   <none>        
 traefik          traefik           LoadBalancer   10.43.156.161   192.168.30.80   80:30358/TCP,443:31265/TCP   22s   app.kubernetes.io/instance=traefik,app.kubernetes.io/name=traefik
 ```
 
-Ger all pods in `traefik` namespace
+Get all pods in `traefik` namespace
 
 ```bash
 kubectl get pods --namespace traefik
