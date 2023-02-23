@@ -268,7 +268,7 @@ _This option might appear different in different versions of macOS and it also v
 
 ## Installing a Wake on LAN client
 
-In order to wake up a remote machine machine up, you will need a tool that can send a wak on LAN packet to the remote machine.
+In order to wake up a remote machine machine up, you will need a tool that can send a wake on LAN packet to the remote machine.
 
 ### Windows Wake On LAN CLient
 
