@@ -4,23 +4,21 @@ title: "Network UPS Tools (NUT) Ultimate Guide"
 date: 2021-09-25 10:00:00 -0500
 categories: homelab
 tags: homelab nut self-hosted docker ups pdu open-source
+image:
+  path: /assets/img/headers/lightning-island.jpg
 ---
-
-[![Network UPS Tools (NUT) Ultimate Guide](https://img.youtube.com/vi/vyBP7wpN72c/0.jpg)](https://www.youtube.com/watch?v=vyBP7wpN72c "Network UPS Tools (NUT) Ultimate Guide")
 
 Meet NUT Server, or Network UPS Tools.  It's an open UPS networking monitoring tool that runs on many different operating systems and processors.  This means you can run the server on Linux, MacOS, or BSD and run the client on Windows, MacOS, Linux, and more.  It' perfect for your Pi, server, or desktop.  It works with hundreds of UPS devices, PDUs, and many other power management systems.
 
 This is the ultimate guide to configuring Network UPS Tools (NUT).  We cover everything from installing and configuring the server on as Raspberry Pi, configuring the client on Windows and Linux, configure a charting and graphing website to visualize NUT data, spin up an additional web site use Docker, and finally set up monitoring and alerting to automate shutdowns of your machine.
 
-[https://networkupstools.org/](https://networkupstools.org)
+<https://networkupstools.org>
 
 Also, note to self, don't eat a salad before you record a video....
 
-[Watch Video](https://www.youtube.com/watch?v=vyBP7wpN72c)
+{% include embed/youtube.html id='vyBP7wpN72c' %}
 
-See all the hardware I recommend at <https://l.technotim.live/gear>
-
-Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
+📺 [Watch Video](https://www.youtube.com/watch?v=vyBP7wpN72c)
 
 ## NUT UPS Server
 
@@ -509,3 +507,9 @@ tail /var/log/syslog
 should see the logs
 
 machine should shutdown
+
+## Links
+
+⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>
+
+🚀 Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files

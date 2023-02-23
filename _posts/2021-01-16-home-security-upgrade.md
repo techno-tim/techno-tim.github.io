@@ -13,8 +13,10 @@ I am a huge fan of self hosted home security and I've been doing it for years. I
 
 * Note, everything here was purchased with my own money. 0 outside influence by brands.
 
-[Watch Video](https://www.youtube.com/watch?v=W9XgDZAezkg)
+📺 [Watch Video](https://www.youtube.com/watch?v=W9XgDZAezkg)
 
-See all the hardware I recommend at <https://l.technotim.live/gear>
+## Links
 
-Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
+⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>
+
+🚀 Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files

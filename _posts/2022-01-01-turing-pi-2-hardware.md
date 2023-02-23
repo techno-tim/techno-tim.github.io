@@ -38,6 +38,8 @@ Multipurpose Rails <https://amzn.to/3Hr6wsS>
 
 4 Pin Splitter Cables <https://amzn.to/3mQvzh4>
 
-See all the hardware I recommend at <https://l.technotim.live/gear>
+## Links
 
-Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
+⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>
+
+🚀 Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files

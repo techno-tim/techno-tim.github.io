@@ -4,17 +4,15 @@ title: "Put Wildcard Certificates and SSL on EVERYTHING"
 date: 2021-04-24 09:00:00 -0500
 categories: traefik
 tags: homelab pi-hole dns traefik portainer ssl self-hosted docker
+image:
+  path: /assets/img/headers/card-joker.jpg
 ---
-
-[![Put Wildcard Certificates and SSL on EVERYTHING](https://img.youtube.com/vi/liV3c9m_OX8/0.jpg)](https://www.youtube.com/watch?v=liV3c9m_OX8 "Put Wildcard Certificates and SSL on EVERYTHING")
 
 Today, we're going to use SSL for everything.  No more self-sign certs.  No more http.  No more hosting things on odd ports.  We're going all in with SSL for our internal services and our external services too.  We going to set up a reverse proxy using Traefik, Portainer, and use that to get wildcard certificates from Let's Encrypt. Join me and let's secure all the things.
 
-[Watch Video](https://www.youtube.com/watch?v=liV3c9m_OX8)
+{% include embed/youtube.html id='liV3c9m_OX8' %}
 
-See all the hardware I recommend at <https://l.technotim.live/gear>
-
-Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
+📺 [Watch Video](https://www.youtube.com/watch?v=liV3c9m_OX8)
 
 > *Looking to do this same thing in Kubernetes? Check out [traefik + cert-manager on Kubernetes](/posts/kube-traefik-cert-manager-le/)*
 {: .prompt-info }
@@ -120,3 +118,8 @@ Your folder structure should look like the below, if you are following along wit
 │   └── traefik.yml
 └── docker-compose.yml
 ```
+## Links
+
+⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>
+
+🚀 Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files

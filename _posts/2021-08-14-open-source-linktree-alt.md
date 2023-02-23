@@ -4,21 +4,15 @@ title: "Self-Hosted, DIY, Open Source Alternative to Linktree"
 date: 2021-08-14 11:00:00 -0500
 categories: self-hosted
 tags: homelab pi-hole dns littlelink-server portainer self-hosted docker rancher
+image:
+  path: /assets/img/headers/tree-colorful.jpg
 ---
-
-[![Self-Hosted, DIY, Open Source Alternative to Linktree](https://img.youtube.com/vi/42SqfI_AjXU/0.jpg)](https://www.youtube.com/watch?v=42SqfI_AjXU "Self-Hosted, DIY, Open Source Alternative to Linktree")
 
 Meet LittleLink & LittleLink-Server  - a DIY, self hosted, and open source alternative to the popular service Linktree.  This web site inside of a container allows you to create and host your own web site with all of your social information and links, giving your followers multiple ways to connect with you!  In this video we talk about what LittleLink-Server is, what it does, and how to create your own site using this Docker container with only a few environment variables, no knowledge of web development required.  Be sure to check the documentation for details!
 
-[Watch Video](https://www.youtube.com/watch?v=42SqfI_AjXU)
+{% include embed/youtube.html id='42SqfI_AjXU' %}
 
-See all the hardware I recommend at <https://l.technotim.live/gear>
-
-(see video description for gear links)
-
-You can find the LittleLink-Server repo [here](https://github.com/techno-tim/littlelink-server).
-
-Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
+📺 [Watch Video](https://www.youtube.com/watch?v=42SqfI_AjXU)
 
 ## Docker Setup
 
@@ -121,3 +115,9 @@ docker run -d \
 ```
 
 If you're using Rancher, Portainer, Open Media Vault, Unraid, or anything else with a GUI, just copy and paste the environment variables above into the form on the web page.
+
+## Links
+
+⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>
+
+🚀 Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files

@@ -4,20 +4,17 @@ title:  "Multi-CPU Architecture Kubernetes Cluster with a Raspberry Pi"
 date:   2021-03-14 09:00:00 -0500
 categories: kubernetes k3s 
 tags: raspberry-pi k3s kubernetes homelab hardware
-
+image:
+  path: /assets/img/headers/gears-green.jpg
 ---
-
-[![Multi-CPU Architecture Kubernetes Cluster with a Raspberry Pi](https://img.youtube.com/vi/_xykXkNia-Y/0.jpg)](https://www.youtube.com/watch?v=_xykXkNia-Y" "Multi-CPU Architecture Kubernetes Cluster with a Raspberry Pi")
-
-[Watch Video](https://www.youtube.com/watch?v=_xykXkNia-Y)
-
-See all the hardware I recommend at <https://l.technotim.live/gear>
-
-Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
 
 Building a Multi-architecture CPU Kubernetes cluster is easier than you think with `k3s`.  In this video we'll build a Raspberry Pi 4 with an ARM CPU and add it to our existing x86 x64 amd64 CPU Kubernetes cluster.  Our foundation will be Ubuntu for ARM, then we'll add `k3s`, and then join it to our cluster.  We'll also discuss how this works with Docker images built for specific CPU types.  We'll also talk about some build configurations and requirements for your Pi.
 
 Happy Pi Day!
+
+{% include embed/youtube.html id='_xykXkNia-Y' %}
+
+📺 [Watch Video](https://www.youtube.com/watch?v=_xykXkNia-Y)
 
 ```bash
 k3s --version
@@ -82,3 +79,9 @@ spec:
   nodeSelector:
     cputype: arm64
 ```
+
+## Links
+
+⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>
+
+🚀 Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files

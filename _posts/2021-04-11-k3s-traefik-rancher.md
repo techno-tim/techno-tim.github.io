@@ -4,14 +4,14 @@ title: "Configuring Traefik 2 Ingress for Kubernetes"
 date: 2021-04-08 09:00:00 -0500
 categories: kubernetes rancher
 tags: homelab rancher kubernetes k3s traefik
+image:
+  path: /assets/img/headers/traffic-streaks.jpg
 ---
 
-## About
+This guide is for installing `traefik 2` on `k3s`.  If you're not using rancher, that's fine, just skip to `Reconfiguring k3s`
 
 > *Note: There is an updated tutorial on installing traefik + cert-manager on Kubernetes [here](/posts/kube-traefik-cert-manager-le/). However, if you want to store your certificates on disk, this tutorial here is perfectly fine.*
 {: .prompt-info }
-
-This guide is for installing `traefik 2` on `k3s`.  If you're not using rancher, that's fine, just skip to `Reconfiguring k3s`
 
 It assumes you have followed:
 
@@ -228,6 +228,8 @@ kubectl apply -f kubernetes
 
 This will create the deployment, service, and ingress.
 
-See all the hardware I recommend at <https://l.technotim.live/gear>
+## Links
 
-Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
+⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>
+
+🚀 Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files

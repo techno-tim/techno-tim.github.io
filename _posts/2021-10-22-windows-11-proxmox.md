@@ -14,10 +14,6 @@ Windows 11 is here and with it comes new hardware requirements.  These requireme
 
 📺 [Watch Video](https://www.youtube.com/watch?v=fupuTkkKPDU)
 
-See all the hardware I recommend at <https://l.technotim.live/gear>
-
-Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
-
 ## Links
 
 Windows 11 Download
@@ -31,3 +27,7 @@ KVM/QEMU Windows guest drivers (virtio-win) download
 Need to Upgrade to Proxmox 7?  
 
 [https://docs.technotim.live/posts/proxmox-7/](/posts/proxmox-7/)
+
+⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>
+
+🚀 Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files

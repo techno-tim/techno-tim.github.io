@@ -18,6 +18,8 @@ Rancher released a next generation open source HCI software hypervisor built on 
 
 📖 [Harvester Documentation](https://docs.harvesterhci.io)
 
+## Links
+
 ⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>
 
 🚀 Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files

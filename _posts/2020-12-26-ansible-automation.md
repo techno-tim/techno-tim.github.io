@@ -4,7 +4,6 @@ title: "Automate EVERYTHING with Ansible!"
 date: 2020-12-26 09:00:00 -0500
 categories: homelab
 tags: homelab ansible
-
 ---
 
 [![Automate EVERYTHING with Ansible!](https://img.youtube.com/vi/w9eCU4bGgjQ/0.jpg)](https://www.youtube.com/watch?v=w9eCU4bGgjQ "Automate EVERYTHING with Ansible!")

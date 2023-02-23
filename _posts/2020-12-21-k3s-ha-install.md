@@ -4,7 +4,6 @@ title: "HIGH AVAILABILITY k3s (Kubernetes) in minutes!"
 date: 2020-12-19 09:00:00 -0500
 categories: kubernetes k3s
 tags: homelab rancher kubernetes k3s mysql nginx
-
 ---
 
 [![HIGH AVAILABILITY k3s (Kubernetes) in minutes!](https://img.youtube.com/vi/UoOcLXfa8EU/0.jpg)](https://www.youtube.com/watch?v=UoOcLXfa8EU "HIGH AVAILABILITY k3s (Kubernetes) in minutes!")

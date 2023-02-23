@@ -4,9 +4,11 @@ title: "How to Install Docker and Docker Compose Ubuntu"
 date: 2021-08-14 11:00:00 -0500
 categories: docker
 tags: homelab docker docker-compose
+image:
+  path: /assets/img/headers/docker-gold.jpg
 ---
 
-## Install Docker Engine, containerd, and Docker Compose on Ubuntu
+This guide will walk you through how to Install Docker Engine, containerd, and Docker Compose on Ubuntu.
 
 If you have an existing version of Docker install, it is best to remove it first.  See the [Cleaning Up](#cleaning-up)
 
@@ -71,6 +73,8 @@ If you need to uninstall Docker, run the following
  sudo apt-get remove docker docker-engine docker.io containerd runc
 ```
 
-See all the hardware I recommend at <https://l.technotim.live/gear>
+## Links
 
-Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
+⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>
+
+🚀 Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files

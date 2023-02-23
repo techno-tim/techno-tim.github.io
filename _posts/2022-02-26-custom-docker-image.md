@@ -14,10 +14,6 @@ We spin up all types of containers on my channel in my tutorials, but we have ye
 
 📺 [Watch Video](https://www.youtube.com/watch?v=SnSH8Ht3MIc)
 
-See all the hardware I recommend at <https://l.technotim.live/gear>
-
-Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files
-
 ## Install Docker
 
 To install docker, see [https://docs.technotim.live/posts/docker-compose-install/](/posts/docker-compose-install/)
@@ -80,7 +76,7 @@ start a stopped container
 docker start <container id>
 ```
 
-remove a container 
+remove a container
 
 ```bash
 docker rm <container id>
@@ -92,5 +88,8 @@ remove an image
 docker rmi <image id>
 ```
 
+## Links
 
+⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>
 
+🚀 Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files

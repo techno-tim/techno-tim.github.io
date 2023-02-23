@@ -14,10 +14,6 @@ In my quest to make my services highly available I decided to use keepalived.  k
 
 📺 [Watch Video](https://www.youtube.com/watch?v=hPfk0qd4xEY)
 
-See all the hardware I recommend at <https://l.technotim.live/gear>
-
-Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
-
 ## Installation
 
 ```bash
@@ -154,3 +150,9 @@ visit your VIP on port `8080`
 In this video we covered the PiHole use case.  After setting this up, be sure to check out the tutorial on Gravity Sync
 
 [https://docs.technotim.live/posts/ha-pi-hold-gravity-sync/](/posts/ha-pi-hold-gravity-sync/)
+
+## Links
+
+⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>
+
+🚀 Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files

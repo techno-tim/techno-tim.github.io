@@ -86,6 +86,7 @@ sudo rm -f /var/lib/dbus/machine-id
 ```
 
 Then shut it down and do not boot it up.  A new id will be generated the next time it boots.  If it does not you can run:
+
 ```bash
 sudo systemd-machine-id-setup
 ```

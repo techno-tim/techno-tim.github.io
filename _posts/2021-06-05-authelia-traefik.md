@@ -4,17 +4,15 @@ title: "2 Factor Auth and Single Sign on with Authelia"
 date: 2021-06-05 09:00:00 -0500
 categories: traefik
 tags: authelia homelab traefik portainer ssl docker self-hosted
+image:
+  path: /assets/img/headers/lock-night.jpg
 ---
-
-[![2 Factor Auth and Single Sign on with Authelia?](https://img.youtube.com/vi/u6H-Qwf4nZA/0.jpg)](https://www.youtube.com/watch?v=u6H-Qwf4nZA "2 Factor Auth and Single Sign on with Authelia?")
 
 Authelia is an open source Single Sign On and 2FA companion for reverse proxies.  It helps you secure your endpoints with single factor and 2 factor auth.  It works with Nginx, Traefik, and HA proxy.  Today, we'll configure Authelia with Portainer and Traefik and have 2 Factor up and running with brute force protection!
 
-[Watch Video](https://www.youtube.com/watch?v=u6H-Qwf4nZA)
+{% include embed/youtube.html id='u6H-Qwf4nZA' %}
 
-See all the hardware I recommend at <https://l.technotim.live/gear>
-
-Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
+📺 [Watch Video](https://www.youtube.com/watch?v=u6H-Qwf4nZA)
 
 ## Traefik
 
@@ -57,3 +55,9 @@ nano docker-compose.yml
 ```bash
 docker-compose up -d
 ```
+
+## Links
+
+⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>
+
+🚀 Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files

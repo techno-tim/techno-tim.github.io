@@ -16,9 +16,6 @@ I've been on a quest to find a new logging system.  I've use quite a few in the 
 
 Don't want to host it yourself?  Check out Grafana Cloud and sign up for a free account <https://l.technotim.live/grafana-labs>
 
-See all the hardware I recommend at <https://l.technotim.live/gear>
-
-Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
 
 ## Docker Setup
 
@@ -307,3 +304,9 @@ Credits to this post for the config file: [grafana/loki#2361 (comment)](https://
 ## Kubernetes Setup
 
 If you're looking to set this up in kubernetes, see [this post](/posts/grafana-loki-kubernetes/)
+
+## Links
+
+⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>
+
+🚀 Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files
