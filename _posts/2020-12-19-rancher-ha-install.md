@@ -97,7 +97,8 @@ Be sure each pod is fully running before proceeding
 
 Install Rancher with Helm
 
-*Note:If you have ".local" for your private TLD then Rancher will NOT finish the setup within the webUI*
+> *Note: If you have ".local" for your private TLD then Rancher will NOT finish the setup within the webUI*
+{: .prompt-info }
 
 ```bash
 helm install rancher rancher-stable/rancher \
