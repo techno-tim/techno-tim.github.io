@@ -4,17 +4,15 @@ title: "Automate EVERYTHING with Ansible!"
 date: 2020-12-26 09:00:00 -0500
 categories: homelab
 tags: homelab ansible
+image:
+  path: /assets/img/headers/car-assembly.jpg
 ---
 
-[![Automate EVERYTHING with Ansible!](https://img.youtube.com/vi/w9eCU4bGgjQ/0.jpg)](https://www.youtube.com/watch?v=w9eCU4bGgjQ "Automate EVERYTHING with Ansible!")
+Ansible.  Need I say more?  Well, maybe, if you've never heard of it. Ansible is a simple IT / DevOps automation that anyone can use.  You can Automate anything with an SSH connection and WITHOUT installing any agents or clients. Join me as we set up, configure and start automating with Ansible!
 
-Ansible. Need I say more?  Well, maybe, if you've never heard of it. Ansible is a simple IT automation that anyone can use.  You can Automate anything with an SSH conne
+{% include embed/youtube.html id='w9eCU4bGgjQ' %}
 
-[Watch Video](https://www.youtube.com/watch?v=w9eCU4bGgjQ)
-
-See all the hardware I recommend at <https://l.technotim.live/gear>
-
-Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
+📺 [Watch Video](https://www.youtube.com/watch?v=w9eCU4bGgjQ)
 
 ## install
 
@@ -137,3 +135,9 @@ FallbackNTP=time.cloudflare.com
 #PollIntervalMinSec=32
 #PollIntervalMaxSec=2048
 ```
+
+## Links
+
+⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>
+
+🚀 Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files

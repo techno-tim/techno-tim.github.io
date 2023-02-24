@@ -5,7 +5,7 @@ date: 2021-06-20 09:00:00 -0500
 categories: self-hosted
 tags: homelab traefik portainer docker self-hosted ubuntu webtop
 image:
-  path: /assets/img/headers/folders-colorful.jpg
+  path: /assets/img/headers/color-stacks.jpg
 ---
 
 Have you ever thought about running a Linux desktop inside of a container?  Me neither until I found this awesome project from LinuxServer called Webtops.  A webtop is a technology stack that allows you to run Ubuntu or Alpine Linux within a container that is fully accessible from a browser.  This allows you to use most Linux features with a container with a fraction of the cost of resources.  Join me as we configure one from beginning to end.

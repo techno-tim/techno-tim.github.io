@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "High Availability Rancher on kubernetes"
+title: "High Availability Rancher on Kubernetes"
 date: 2020-12-19 09:00:00 -0500
 categories: kubernetes rancher
 tags: homelab rancher kubernetes k3s
+image:
+  path: /assets/img/headers/rancher-cattle.jpg
 ---
-
-[![High Availability Rancher on kubernetes](https://img.youtube.com/vi/APsZJbnluXg/0.jpg)](https://www.youtube.com/watch?v=APsZJbnluXg "High Availability Rancher on kubernetes")
 
 Are you running Kubernetes in your homelab or in the enterprise?
 Do you want an easy way to manage and create Kubernetes clusters?
@@ -14,11 +14,9 @@ Join me as we walk through installing Rancher on an existing high availability k
 
 We install Rancher, configure a load balancer, install and configure helm, install cert-manager, configure Rancher, walk through the GUI, scale up our cluster, and set up a health check and liveness check! Join me, it's easy in this straightforward guide.
 
-[Watch Video](https://www.youtube.com/watch?v=APsZJbnluXg)
+{% include embed/youtube.html id='APsZJbnluXg' %}
 
-See all the hardware I recommend at <https://l.technotim.live/gear>
-
-Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
+📺 [Watch Video](https://www.youtube.com/watch?v=APsZJbnluXg)
 
 ## install
 
@@ -165,3 +163,9 @@ nginx lb
 Separating Rancher Cluster from your User Cluster
 
 [https://rancher.com/docs/rancher/v2.x/en/overview/architecture-recommendations/#separation-of-rancher-and-user-clusters](https://rancher.com/docs/rancher/v2.x/en/overview/architecture-recommendations/#separation-of-rancher-and-user-clusters)
+
+## Links
+
+⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>
+
+🚀 Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files

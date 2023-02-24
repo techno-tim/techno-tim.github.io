@@ -4,17 +4,15 @@ title: "HIGH AVAILABILITY k3s (Kubernetes) in minutes!"
 date: 2020-12-19 09:00:00 -0500
 categories: kubernetes k3s
 tags: homelab rancher kubernetes k3s mysql nginx
+image:
+  path: /assets/img/headers/prism-neon.jpg
 ---
-
-[![HIGH AVAILABILITY k3s (Kubernetes) in minutes!](https://img.youtube.com/vi/UoOcLXfa8EU/0.jpg)](https://www.youtube.com/watch?v=UoOcLXfa8EU "HIGH AVAILABILITY k3s (Kubernetes) in minutes!")
 
 Are you running Kubernetes in your homelab or in the enterprise?  Do you want an easy way to manage and create Kubernetes clusters? Do you want high availability Rancher? Join me as we walk through stalling Rancher on an existing high availability k3s cluster in this step-by-step tutorial.  We install Rancher, configure a load balancer, install and configure helm, install cert-manager, configure Rancher, walk through the GUI, scale up our cluster, and set up a health check and liveness check!  Join me, it's easy in this straightforward guide.
 
-[Watch Video](https://www.youtube.com/watch?v=UoOcLXfa8EU)
+{% include embed/youtube.html id='UoOcLXfa8EU' %}
 
-See all the hardware I recommend at <https://l.technotim.live/gear>
-
-Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
+📺 [Watch Video](https://www.youtube.com/watch?v=UoOcLXfa8EU)
 
 ## Load Balancer
 
@@ -200,3 +198,9 @@ spec:
           ports:
             - containerPort: 80
 ```
+
+## Links
+
+⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>
+
+🚀 Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files

@@ -4,18 +4,15 @@ title: "Cloud Native Distributed Storage in Kubernetes with Longhorn"
 date: 2021-01-02 09:00:00 -0500
 categories: kubernetes rancher
 tags: homelab rancher kubernetes longhorn k3s
-
+image:
+  path: /assets/img/headers/longhorn-cattle.jpg
 ---
-
-[![Cloud Native Distributed Storage in Kubernetes with Longhorn](https://img.youtube.com/vi/eKBBHc0t7bc/0.jpg)](https://www.youtube.com/watch?v=eKBBHc0t7bc "Cloud Native Distributed Storage in Kubernetes with Longhorn")
 
 Storage in Kubernetes is hard, complicated, and messy.  Configuring volumes, mounts, and persistent volumes claims and getting it right can be a challenge.  It's also challenging to manage that storage and replicate it across all your Kubernetes clusters.  It's also been very challenging to do this on bare metal, outside of a cloud provider.  That's where Longhorn comes.  Longhorn is an open source, a CNCF distributed block storage system for Kubernetes.  It comes with a UI, backups, snapshots, cluster disaster recovery, and it does all this with or without Rancher.  Rancher is NOT a requirement.
 
-[Watch Video](https://www.youtube.com/watch?v=eKBBHc0t7bc)
+{% include embed/youtube.html id='eKBBHc0t7bc' %}
 
-See all the hardware I recommend at <https://l.technotim.live/gear>
-
-Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
+📺 [Watch Video](https://www.youtube.com/watch?v=eKBBHc0t7bc)
 
 ## Installation
 
@@ -77,3 +74,9 @@ Then applying that toleration to Lonhorn in settings
 `StorageOnly=true:NoExecute;CriticalAddonsOnly=true:NoExecute`
 
 This ensures that the storage nodes won't take on any general workloads and still allow Lonhorn to use these as storage.
+
+## Links
+
+⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>
+
+🚀 Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files
