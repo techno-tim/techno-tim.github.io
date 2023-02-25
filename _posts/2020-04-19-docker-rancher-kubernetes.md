@@ -4,13 +4,15 @@ title: "Docker, Rancher, Kubernetes... Minecraft? (Setup and Install Tutorial)"
 date: 2020-04-09 09:00:00 -0500
 categories: homelab
 tags: homelab rancher kubernetes docker minecraft gaming
+image:
+  path: /assets/img/headers/block-dark.jpg
 ---
-
-[![Docker, Rancher, Kubernetes... Minecraft? (Setup and Install Tutorial)](https://img.youtube.com/vi/oILc0ywDVTk/0.jpg)](https://www.youtube.com/watch?v=oILc0ywDVTk "Docker, Rancher, Kubernetes... Minecraft? (Setup and Install Tutorial)")
 
 If you want to set up Kubernetes at home using Rancher to run Docker containers, this is the guide for you. This is a step by step tutorial of how to install and configure Rancher, Docker, and Kubernetes for your homelab.  In this video we set up and configure a Minecraft server in just a matter of minutes with some enterprise like features.  You can use this same process to spin up other Docker containers at home on your server or desktop.
 
-[Watch Video](https://www.youtube.com/watch?v=oILc0ywDVTk)
+{% include embed/youtube.html id='oILc0ywDVTk' %}
+
+📺 [Watch Video](https://www.youtube.com/watch?v=oILc0ywDVTk)
 
 See all the hardware I recommend at <https://l.technotim.live/gear>
 
@@ -40,4 +42,8 @@ docker run -d --restart=unless-stopped -p 9090:80 -p 9091:443 --privileged -v /o
 - The new UI is now the "Cluster Explorer".  You can toggle between this and the "Cluser Manager" UI by clicking the button.
 - Do not create workloads in the `local` cluster.  This is a management cluster for Rancher.  You should create new cluster for your workload, just like in this video.
 
-Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
+## Links
+
+⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>
+
+🚀 Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files

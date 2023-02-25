@@ -4,17 +4,15 @@ title: "Before I do anything on Proxmox, I do this first..."
 date: 2020-11-28 09:00:00 -0500
 categories: proxmox
 tags: homelab proxmox homelab
+image:
+  path: /assets/img/headers/engine-start.jpg
 ---
-
-[![Before I do anything on Proxmox, I do this first...](https://img.youtube.com/vi/GoZaMgEgrHw/0.jpg)](https://www.youtube.com/watch?v=GoZaMgEgrHw "Before I do anything on Proxmox, I do this first...")
 
 After setting up my Proxmox servers, there are a few things I do before I use them for their intended purpose.  This ranges from updates, to storage, to networking and VLANS, to uploading ISOs, to clustering, and more.  Join me as we pick up where the rest of the proxmox tutorials stop, and that's everything you need to do to make these production ready (and maybe a bonus item too).
 
-[Watch Video](https://www.youtube.com/watch?v=GoZaMgEgrHw)
+{% include embed/youtube.html id='GoZaMgEgrHw' %}
 
-See all the hardware I recommend at <https://l.technotim.live/gear>
-
-Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
+📺 [Watch Video](https://www.youtube.com/watch?v=GoZaMgEgrHw)
 
 ## Updates
 
@@ -173,7 +171,7 @@ iface vmbr0 inet static
 
 These are the commands I run after cloning a Linux machine so that it resets all information for the machine it was cloned from.
 
-(Note: If you use cloud-init-aware OS images as described under *Cloud-Init Support* on https://pve.proxmox.com/pve-docs/chapter-qm.html, these steps won't be necessary!)
+(Note: If you use cloud-init-aware OS images as described under *Cloud-Init Support* on <https://pve.proxmox.com/pve-docs/chapter-qm.html>, these steps won't be necessary!)
 
 change hostname
 
@@ -208,3 +206,9 @@ sudo dpkg-reconfigure openssh-server
 ```
 
 reboot
+
+## Links
+
+⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>
+
+🚀 Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files

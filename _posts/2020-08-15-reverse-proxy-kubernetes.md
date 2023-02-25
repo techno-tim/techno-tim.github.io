@@ -3,32 +3,28 @@ layout: post
 title: "Self-Hosting Your Homelab Services with SSL -- Let's Encrypt, MetalLB, Traefik, Rancher, Kubernetes"
 date: 2020-08-15 09:00:00 -0500
 categories: kubernetes rancher
-tags: homelab rancher kubernetes traefik wsl
+tags: homelab rancher kubernetes traefik wsl metal-lb
+image:
+  path: /assets/img/headers/traffic-light.jpg
 ---
 
-[![Self-Hosting Your Homelab Services with SSL -- Let's Encrypt, MetalLB, Traefik, Rancher, Kubernetes](https://img.youtube.com/vi/pAM2GBCDGTo/0.jpg)](https://www.youtube.com/watch?v=pAM2GBCDGTo "Self-Hosting Your Homelab Services with SSL -- Let's Encrypt, MetalLB, Traefik, Rancher, Kubernetes")
+Are you self-hosting lots of services at home in your homelab?  Have you been port forwarding or using VPN to access your self-hosted services wishing you had certificates so that you can access them securely over SSL?  Well after this video, you can!  In this step by step tutorial we'll walk through setting up Rancher and Kubernetes with a reverse proxy, Kubernetes Ingress, MetalLB, Traefik, Let's Encrypt, and DNS giving you free certificates.
 
-Are you self-hosting lots of services at home in your homelab?  Have you been port forwarding or using VPN to access your self-hosted services wishing you had certificates so that you can access them securely over SSL?  Well after this video, you can!  In this step by step tutorial we'll walk through setting up Rancher and Kubernetes with a reverse proxy, Kubernetes Ingress, MetalLB, Traefik, Let's Encrypt, and DNS giving you free certificates.   
+{% include embed/youtube.html id='pAM2GBCDGTo' %}
 
-[Watch Video](https://www.youtube.com/watch?v=pAM2GBCDGTo)
-
-See all the hardware I recommend at <https://l.technotim.live/gear>
-
-Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
+📺 [Watch Video](https://www.youtube.com/watch?v=pAM2GBCDGTo)
 
 ## Install WSL on Windows 10
 
-https://www.youtube.com/watch?v=kL8iGErULiw
-
+<https://www.youtube.com/watch?v=kL8iGErULiw>
 
 ## Install `kubectl`
 
-https://kubernetes.io/docs/tasks/tools/install-kubectl/
-
+<https://kubernetes.io/docs/tasks/tools/install-kubectl/>
 
 ## Install MetalLB
 
-https://metallb.universe.tf/installation/
+<https://metallb.universe.tf/installation/>
 
 `kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.9.5/manifests/namespace.yaml`
 
@@ -37,7 +33,6 @@ https://metallb.universe.tf/installation/
 You should only ever run this step once.
 
 `kubectl create secret generic -n metallb-system memberlist --from-literal=secretkey="$(openssl rand -base64 128)"`
-
 
 sample `config.yaml`
 
@@ -96,16 +91,20 @@ traefik sample answers yaml
       basic: ""
 ```
 
-
 ## Traefik Helm
 
-https://hub.helm.sh/charts/stable/traefik
-
+<https://hub.helm.sh/charts/stable/traefik>
 
 ## Traefik DNS Providers
 
-https://docs.traefik.io/https/acme/#providers
+<https://docs.traefik.io/https/acme/#providers>
 
 ## Troubleshooting
 
 Be sure that your Traefik yaml matches the code above exactly, including whitespace.  Yaml is whitespace sensitive.
+
+## Links
+
+⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>
+
+🚀 Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files

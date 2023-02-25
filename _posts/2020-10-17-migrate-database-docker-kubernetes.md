@@ -4,17 +4,15 @@ title: "Migrate Your Databases to Kubernetes and Docker"
 date: 2020-10-17 09:00:00 -0500
 categories: self-hosted
 tags: homelab rancher kubernetes docker self-hosted mysql database portainer
+image:
+  path: /assets/img/headers/library-floors.jpg
 ---
-
-[![Migrate Your Databases to Kubernetes and Docker](https://img.youtube.com/vi/jZvnkf_HgcY/0.jpg)](https://www.youtube.com/watch?v=jZvnkf_HgcY "Migrate Your Databases to Kubernetes and Docker")
 
 Have you been putting off migrating your database to Docker and Kubernetes like I have?  Well wait no longer.  It's simple using this step-by-step tutorial.  Today, we'll move a database that's on a virtual machine to a container that's running in kubernetes.  Oh yeah, this will also work if it's a bare metal server too, duh.  🙂
 
-[Watch Video](https://www.youtube.com/watch?v=jZvnkf_HgcY)
+{% include embed/youtube.html id='jZvnkf_HgcY' %}
 
-See all the hardware I recommend at <https://l.technotim.live/gear>
-
-Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
+📺 [Watch Video](https://www.youtube.com/watch?v=jZvnkf_HgcY)
 
 `mysql_backup.sh`
 
@@ -35,3 +33,9 @@ for db in $databases; do
   $MYSQLDUMP --host $MYSQL_HOST --port $MYSQL_PORT --force --opt --user=$MYSQL_USER -p$MYSQL_PASSWORD --databases $db | gzip > "$BACKUP_DIR/$db.gz"
 done
 ```
+
+## Links
+
+⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>
+
+🚀 Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files

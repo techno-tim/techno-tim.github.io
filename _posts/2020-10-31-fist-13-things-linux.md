@@ -4,17 +4,15 @@ title: "Before I do anything on Linux, I do these first..."
 date: 2020-10-31 09:00:00 -0500
 categories: homelab
 tags: homelab linux ubuntu
+image:
+  path: /assets/img/headers/penguin-looking.jpg
 ---
-
-[![Before I do anything on Linux, I do these first...](https://img.youtube.com/vi/ZsjK4VDopiE/0.jpg)](https://www.youtube.com/watch?v=ZsjK4VDopiE "Before I do anything on Linux, I do these first...")
 
 After setting up my Linux servers, there are a few things I do before I use them for their intended purpose.  This ranges from security, to tools, to config.  Join me as we set up our first Linux server in this tutorial and walk through setting it up proper (and maybe some bonus items sprinkled in).
 
-[Watch Video](https://www.youtube.com/watch?v=ZsjK4VDopiE)
+{% include embed/youtube.html id='ZsjK4VDopiE' %}
 
-See all the hardware I recommend at <https://l.technotim.live/gear>
-
-Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
+📺 [Watch Video](https://www.youtube.com/watch?v=ZsjK4VDopiE)
 
 ## Update
 
@@ -196,6 +194,7 @@ sudo apt-get install qemu-guest-agent
 ```bash
 sudo  ufw default deny incoming
 ```
+
 ```bash
 sudo ufw default allow outgoing
 ```
@@ -239,3 +238,9 @@ sudo fail2ban-client status
 ```bash
 sudo fail2ban-client status sshd
 ```
+
+## Links
+
+⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>
+
+🚀 Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files

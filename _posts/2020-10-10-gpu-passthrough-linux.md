@@ -4,19 +4,17 @@ title: "I Heard You Like GPUs in Servers... GPU Passthrough on Linux and Docker"
 date: 2020-10-10 09:00:00 -0500
 categories: homelab
 tags: homelab rancher kubernetes docker portainer nvidia hardware
+image:
+  path: /assets/img/headers/gpu-pc.jpg
 ---
-
-[![I Heard You Like GPUs in Servers... GPU Passthrough on Linux and Docker](https://img.youtube.com/vi/9OfoFAljPn4/0.jpg)](https://www.youtube.com/watch?v=9OfoFAljPn4 "I Heard You Like GPUs in Servers... GPU Passthrough on Linux and Docker")
 
 We've already figured out how to pass through a GPU to Windows machine but why let Windows have all the fun?  Today, we do it on an Ubuntu headless server that's virtualized, run some AI and Deep Learning workloads, then turn up the transcoding on Plex to 11.
 
-[Watch Video](https://www.youtube.com/watch?v=9OfoFAljPn4)
+{% include embed/youtube.html id='9OfoFAljPn4' %}
 
-See all the hardware I recommend at <https://l.technotim.live/gear>
+📺 [Watch Video](https://www.youtube.com/watch?v=9OfoFAljPn4)
 
-Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
-
-```na
+```text
 88          88                                      
 88          ""                                      
 88                                                  
@@ -118,3 +116,9 @@ Then, using `kubectl` on your kubernetes / rancher host
 ```bash
 kubectl create -f https://raw.githubusercontent.com/NVIDIA/k8s-device-plugin/master/nvidia-device-plugin.yml
 ```
+
+## Links
+
+⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>
+
+🚀 Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files
