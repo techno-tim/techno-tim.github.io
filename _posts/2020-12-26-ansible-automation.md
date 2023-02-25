@@ -22,6 +22,9 @@ sudo apt install ansible
 sudo apt install sshpass
 ```
 
+> *Note: Most distributions include an "older" version of Ansible.  If you want to install the latest version of Ansible, see [installing the latest version of ansible](#installing-the-latest-version-of-ansible)*
+{: .prompt-info }
+
 `hosts`
 
 ```ini
@@ -33,6 +36,12 @@ server-02
 ```
 
 ## commands
+
+check ansible version
+
+```bash
+ansible --version
+```
 
 command with module
 
@@ -134,6 +143,78 @@ FallbackNTP=time.cloudflare.com
 #RootDistanceMaxSec=5
 #PollIntervalMinSec=32
 #PollIntervalMaxSec=2048
+```
+
+## Installing the latest version of Ansible
+
+most distributions have an older version of Ansible installed.  This is usually fine expect sometimes you may need to use features from the latest Ansible.  Use the following commands to update Ansible to the latest version.
+
+Check version
+
+```bash
+ansible --version
+```
+
+If it's not the version you are looking for, check to see where it is installed
+
+```bash
+which ansible
+```
+
+If it lives somewhere like
+
+```bash
+/usr/bin/ansible
+```
+
+this is most likely due to your distribution installing it there.
+
+Remove previous version
+
+```bash
+sudo apt remove ansible
+```
+
+Check to be sure it is removed
+
+```bash
+which ansible
+```
+
+You should see
+
+```bash
+ansible not found
+```
+
+check to see that you have `python3` and `pip`
+
+```bash
+python3 -m pip -V
+```
+
+You should see something like
+
+```bash
+pip 22.3.1 from /home/user/.local/lib/python3.8/site-packages/pip (python 3.8)
+```
+
+Install `pip` if the previous couldn't find the `pip` module
+
+```bash
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+```
+
+Install ansible
+
+```bash
+python3 -m pip install --user ansible
+```
+
+Confirm your version with
+
+```bash
+ansible --version
 ```
 
 ## Links
