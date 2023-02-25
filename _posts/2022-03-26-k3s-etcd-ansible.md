@@ -20,7 +20,7 @@ New Customers Exclusive – Get a Free 240gb SSD at Micro Center: <https://micro
 
 ## Prep
 
-First, you'll need Ansible installed.  Here's an easy way to [install Ansible](/posts/ansible-automation/) and a video if you need.
+First, you'll need Ansible installed.  Here's an easy way to [install Ansible](/posts/ansible-automation/) and a video if you need.  You'll also need to be sure you are running at least Ansible 2.11+ on your machines.  If you aren't, you can use the [install Ansible](/posts/ansible-automation/) post on how to update it.
 
 Second, you'll need to provision the VMs. Here's an easy way to create [perfect Proxmox templates with cloud image and cloud init](/posts/cloud-init-cloud-image/) and a video if you need.
 
