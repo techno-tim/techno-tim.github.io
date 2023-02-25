@@ -147,7 +147,7 @@ FallbackNTP=time.cloudflare.com
 
 ## Installing the latest version of Ansible
 
-Most distributions have an older version of Ansible installed.  This is usually fine expect sometimes you may need to use features from the latest Ansible.  Use the following commands to update Ansible to the latest version.
+Most distributions have an older version of Ansible installed.  This is usually fine except sometimes you may need to use features from the latest Ansible.  Use the following commands to update Ansible to the latest version.
 
 Check version
 
