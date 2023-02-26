@@ -62,6 +62,9 @@ kubectl -n longhorn-system get pod
 
 ## Taints
 
+> This is not required, nor do I taint nodes anymore.  I allow Longhorn storage to use any available space on any node that is not running `etcd` / control plane.  You can simply skip this step and it will work like this.  If you're still convinced you need dedicated nodes, it's much easier doing it in the Longhorn UI after a node joins the cluster than with taints.
+{: .prompt-info }
+
 I ended up tainting my storage nodes using this command
 
 ```bash
