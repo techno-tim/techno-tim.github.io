@@ -72,7 +72,7 @@ kubectl taint nodes luna-01 luna-02 luna-03 luna-04 CriticalAddonsOnly=true:NoEx
 kubectl taint nodes luna-01 luna-02 luna-03 luna-04 StorageOnly=true:NoExecute
 ```
 
-Then applying that toleration to Lonhorn in settings
+Then applying that toleration to Longhorn in settings
 
 `StorageOnly=true:NoExecute;CriticalAddonsOnly=true:NoExecute`
 
