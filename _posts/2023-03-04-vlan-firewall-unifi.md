@@ -25,7 +25,7 @@ So why are VLANs important, even to the home user?
 - VLANs give you flexibility.
   - VLANS allow for network changes and reconfigurations without physical changes to your network infrastructure saving you time and money, and we all want to save that, right?
 
-So what’s not to love about VLANs if they give you greater control over network traffic, help optimize network performance, give you better security, and give you managment and flexibility?
+So what’s not to love about VLANs if they give you greater control over network traffic, help optimize network performance, give you better security, and give you management and flexibility?
 Well, for me it was complexity and knowing where to start.
 
 {% include embed/youtube.html id='v0B2IDEfnjA' %}
@@ -123,9 +123,9 @@ In order to block inter VLAN Communication we'll need to set up some firewall ru
 - For IPv4 Address Group choose "IoT Only" (this is the Profile we created above)
 - For Port Group choose "Any"
 
-This rule will block all communication that that originates on your IoT VLAN to all other VLANs (IoT Only)
+This rule will block all communication that that originates on your IoT VLAN to all other VLANs (IoT Only).
 
-You'll also want to be sure that this rule applies after every rule that you want to allow in your list of Firewall rules
+You'll also want to be sure that this rule applies after every rule that you want to allow in your list of Firewall rules.
 
 - Navigate to Firewall & Security
 - Check rule order
