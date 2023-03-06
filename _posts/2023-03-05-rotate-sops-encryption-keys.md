@@ -59,7 +59,7 @@ sops --decrypt --age $(cat $SOPS_AGE_KEY_FILE |grep -oP "public key: \K(.*)") --
 
 ## Updating your FLUX Secret in Kubernetes
 
-If you are able to see the decrypted secret, you are all set.  Another thing you'll need to do is delete your old secret in Kubernetes and replace it with this new one.
+If you are able to see the decrypted secret, you are all set as far as the ket goes.  Another thing you'll need to do is delete your old secret in Kubernetes and replace it with this new one so that your secrets can be decrypted in your cluster!
 
 ```bash
 kubectl delete -n flux-system secrets sops-age
