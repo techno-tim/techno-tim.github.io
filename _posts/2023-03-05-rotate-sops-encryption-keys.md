@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Rotating your AGE Encryption Key"
+title: "Rotating your AGE Encryption Key and Updating your Secrets with SOPS"
 date: 2023-03-05 10:00:00 -0500
 categories: utilities
 tags: sops age flux kubernetes
