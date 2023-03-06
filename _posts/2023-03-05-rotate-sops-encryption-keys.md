@@ -8,8 +8,6 @@ image:
   path: /assets/img/headers/museum-hieroglyphics.jpg
 ---
 
-## The Challenge
-
 If you've been encrypting your secrets with SOPS and Age you know how useful it is to keep your secrets safe from prying eyes. If you're not familiar with encrypting your secrets with SOPS and Age, I highly recommend checking out a post I did a while back that shows you how easy it is to [encrypt your secrets](/posts/secret-encryption-sops) and even hide them in plain sight in a Git repo.  I am happy (and relieved) that I started doing this for all of my secrets.
 
 This works great, until you need to rotate your encryption key that's used to encrypt your secrets. I use [FLUX for GitOps](/posts/flux-devops-gitops) which helps me deliver changes to my Kubernetes cluster via code and since I can commit my infrastructure, I can also commit my secrets as code too (SOPS, or Secrets Operations).  This means that all of my secret files (typically `secret.sops.yaml`) are all encrypted using my key.  But what happens when I need to change the key, either for good security hygiene or because it was compromised?  The short answer is, there's no easy way other than writing a little bit of code.
