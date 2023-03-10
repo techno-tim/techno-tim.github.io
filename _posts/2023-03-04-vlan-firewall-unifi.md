@@ -39,6 +39,8 @@ UniFI UDM SE - <https://amzn.to/3yu7vpM>
 
 UniFi UDM Pro - <https://amzn.to/3J8Ebtw>
 
+(Affiliate links are included in this description. I may receive a small commission at no cost to you.)
+
 ## How to Create a VLAN with UniFi
 
 ![Unifi Network - Networks](/assets/img/posts/unifi-na-networks.jpg)
