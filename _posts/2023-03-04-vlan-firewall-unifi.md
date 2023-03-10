@@ -31,6 +31,12 @@ Well, for me it was complexity and knowing where to start.
 {% include embed/youtube.html id='v0B2IDEfnjA' %}
 📺 [Watch Video](https://www.youtube.com/watch?v=v0B2IDEfnjA)
 
+## Hardware
+
+Ubiquiti UniFi 6 Lite Access Point - <https://amzn.to/41ZhyR7>
+UniFI UDM SE - <https://amzn.to/3yu7vpM>
+UniFi UDM Pro - <https://amzn.to/3J8Ebtw>
+
 ## How to Create a VLAN with UniFi
 
 ![Unifi Network - Networks](/assets/img/posts/unifi-na-networks.jpg)
