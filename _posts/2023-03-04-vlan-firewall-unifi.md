@@ -34,7 +34,9 @@ Well, for me it was complexity and knowing where to start.
 ## Hardware
 
 Ubiquiti UniFi 6 Lite Access Point - <https://amzn.to/41ZhyR7>
+
 UniFI UDM SE - <https://amzn.to/3yu7vpM>
+
 UniFi UDM Pro - <https://amzn.to/3J8Ebtw>
 
 ## How to Create a VLAN with UniFi
