@@ -111,7 +111,7 @@ nano /etc/postfix/smtp_header_checks
 add the following text
 
 ```conf
-/^From:.*/ REPLACE From: pve1-alert pve1-alert@something.com
+/^From:.*/ REPLACE From: pve1-alert <pve1-alert@something.com>
 ```
 
 hash the file
