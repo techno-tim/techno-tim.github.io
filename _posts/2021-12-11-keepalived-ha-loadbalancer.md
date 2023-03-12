@@ -38,7 +38,7 @@ sudo nano /etc/keepalived/keepalived.conf
 
 First node
 
-```apacheconf
+```nginx
 vrrp_instance VI_1 {
   state MASTER
   interface ens18
@@ -60,10 +60,11 @@ vrrp_instance VI_1 {
   }
 }
 ```
+{: file="/etc/keepalived/keepalived.conf" }
 
 Second node
 
-```apacheconf
+```nginx
 vrrp_instance VI_1 {
   state BACKUP
   interface ens18
@@ -85,6 +86,7 @@ vrrp_instance VI_1 {
   }
 }
 ```
+{: file="/etc/keepalived/keepalived.conf" }
 
 Start and enable the service
 
