@@ -3,47 +3,47 @@
 -
   type: twitter
   icon: 'fab fa-twitter'
-  url:  'https://l.technotim.live/twitter'
+  url: 'https://l.technotim.live/twitter'
 -
   type: youtube
   icon: 'fab fa-youtube'
   url: 'https://l.technotim.live/subscribe'
--
-  type: twitch
-  icon: 'fab fa-twitch'
-  url: 'https://l.technotim.live/twitch'
--
-  type: patreon
-  icon: 'fab fa-patreon'
-  url:  'https://l.technotim.live/patreon'
--
-  type: discord
-  icon: 'fab fa-discord'
-  url: 'https://l.technotim.live/discord'
+# -
+#   type: twitch
+#   icon: 'fab fa-twitch'
+#   url: 'https://l.technotim.live/twitch'
+# -
+#   type: discord
+#   icon: 'fab fa-discord'
+#   url: 'https://l.technotim.live/discord'
 -
   type: github
   icon: 'fab fa-github'
-  url:  'https://l.technotim.live/github'
+  url: 'https://l.technotim.live/github'
+# -
+#   type: instagram
+#   icon: 'fab fa-instagram'
+#   url:  'https://l.technotim.live/instagram'
+# -
+#   type: linkedin
+#   icon: 'fab fa-linkedin'
+#   url:  'https://l.technotim.live/linkedin'
+# -
+#   type: mastodon
+#   icon: 'fab fa-mastodon'
+#   url:  'https://l.technotim.live/mastodon'  # Fill with your Mastodon account page, rel="me" will be applied for verification
+# -
+#   type: tiktok
+#   icon: 'fab fa-tiktok'
+#   url:  'https://l.technotim.live/tiktok'
+# -
+#   type: facebook
+#   icon: 'fab fa-facebook'
+#   url:  'https://l.technotim.live/facebook'
 -
-  type: instagram
-  icon: 'fab fa-instagram'
-  url:  'https://l.technotim.live/instagram'
--
-  type: linkedin
-  icon: 'fab fa-linkedin'
-  url:  'https://l.technotim.live/linkedin'
--
-  type: mastodon
-  icon: 'fab fa-mastodon'
-  url:  'https://l.technotim.live/mastodon'  # Fill with your Mastodon account page, rel="me" will be applied for verification
--
-  type: tiktok
-  icon: 'fab fa-tiktok'
-  url:  'https://l.technotim.live/tiktok'
--
-  type: facebook
-  icon: 'fab fa-facebook'
-  url:  'https://l.technotim.live/facebook'
+  type: patreon
+  icon: 'fab fa-patreon'
+  url: 'https://l.technotim.live/patreon'
 -
   type: rss
   icon: 'fas fa-rss'

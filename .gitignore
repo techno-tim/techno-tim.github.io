@@ -30,10 +30,15 @@ yarn*
 !.travis.yml
 
 # bundler cache
+.bundle
 _site
 vendor
 
-# rubygem
+# Jekyll cache
+.jekyll-cache
+_site
+
+# RubyGems
 *.gem
 
 # npm dependencies
@@ -43,3 +48,10 @@ package-lock.json
 !.husky
 !.commitlintrc.json
 !.versionrc.json
+
+# IDE configurations
+.idea
+.vscode
+
+# Misc
+assets/js/dist
