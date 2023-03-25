@@ -36,7 +36,7 @@ Next you'll want to create a local copy of `ansible.example.cfg`.
 cp ansible.example.cfg ansible.cfg
 ```
 
-You'll want to adapt this to suite your needs however the defaults should work without issue.  If you're looking for the old defaults, you can see them in this [PR that remove the file](https://github.com/techno-tim/k3s-ansible/blob/96c49c864e3b9427e8eb59a6f420f032db51e831/ansible.cfg).
+You'll want to adapt this to suit your needs however the defaults should work without issue.  If you're looking for the old defaults, you can see them in this [PR that remove the file](https://github.com/techno-tim/k3s-ansible/blob/96c49c864e3b9427e8eb59a6f420f032db51e831/ansible.cfg).
 
 Next you'll need to install some requirements for `ansible`
 

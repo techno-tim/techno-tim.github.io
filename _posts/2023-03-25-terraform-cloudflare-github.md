@@ -10,7 +10,7 @@ image:
 
 ## What is Terraform and how does it help?
 
-Terraform is a powerful infrastructure as code tool  to help you create and manage infrastructure  across multiple public or private clouds.  It can help you provision, configure, and manage infrastructure using their simple and human readable configuration language.  Using Terraform helps you automate your infrastructure and your DevOps workflow, do it consistently, and allows you to collaborate with teams in Git.  
+Terraform is a powerful infrastructure as code tool to help you create and manage infrastructure  across multiple public or private clouds. It can help you provision, configure, and manage infrastructure using their simple and human readable configuration language. Using Terraform helps you automate your infrastructure and your DevOps workflow, do it consistently, and allows you to collaborate with teams in Git.
 
 Today, we're going to set up and configure Terraform on your machine so we can start using Terraform.  Then we'll configure `cf-terraforming` to import our Cloudflare state and configuration into Terraform.  After that we'll set up a GitHub report and configure GitHub actions so you have CI and CD for deploying your Infrastructure automatically using a Git Flow.  If you're new to Terraform, that's fine!  This is a beginner tutorial for Terraform and by the end of this, you will feel like an expert!
 
@@ -21,33 +21,35 @@ Today, we're going to set up and configure Terraform on your machine so we can s
 
 This will work on Ubuntu and Windows + WSL
 
-install dependencies
+Install dependencies
 
 ```bash
 sudo apt update
 sudo apt install  software-properties-common gnupg2 curl
 ```
 
-import the gpg key
+Import the gpg key
 
 ```bash
 curl https://apt.releases.hashicorp.com/gpg | gpg --dearmor > hashicorp.gpg
 sudo install -o root -g root -m 644 hashicorp.gpg /etc/apt/trusted.gpg.d/
 ```
 
-add hashicorp repository
+Add hashicorp repository
 
 ```bash
 sudo apt-add-repository "deb [arch=$(dpkg --print-architecture)] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
 ```
 
-install terraform
+Install `terraform`
+
+[Install `terraform` for other platforms](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
 
 ```bash
 sudo apt install terraform
 ```
 
-check the version
+Check the version
 
 ```bash
 terraform --version
@@ -83,8 +85,9 @@ resource "cloudflare_page_rule" "www" {
   # ...
 }
 ```
+{: file="cloudflare.tf" }
 
-Here is my editorconfig:
+Here is my `.editorconfig`:
 
 ```editorconfig
 # http://editorconfig.org
@@ -99,8 +102,8 @@ insert_final_newline = true
 
 [*.md]
 trim_trailing_whitespace = false
-
 ```
+{: file=".editorconfig" }
 
 Initialize terraform and cloudflare
 
@@ -184,6 +187,7 @@ nano ~/.zshrc
 export CLOUDFLARE_API_TOKEN='12345'
 export CLOUDFLARE_ZONE_ID='abcde'
 ```
+{: file="~/.zshrc" }
 
 The source your shell
 
@@ -191,7 +195,7 @@ The source your shell
 source ~/.zshrc
 ```
 
-Now let's export cloudflare state
+Now let's export Cloudflare state
 
 (Be sure you have copied your variables into your shell, or ran the export commands above )
 
@@ -266,6 +270,7 @@ Here is my `.gitignore`
 .terraform/
 terraform.tfstate*
 ```
+{: file=".gitignore" }
 
 Convert your local folder into a git repo:
 
@@ -342,8 +347,8 @@ jobs:
     - name: Terraform Apply
       if: github.ref == 'refs/heads/main' && github.event_name == 'push'
       run: terraform apply -auto-approve -input=false
-
 ```
+{: file=".github/workflows/terraform.yml" }
 
 ## Wrapping up
 
