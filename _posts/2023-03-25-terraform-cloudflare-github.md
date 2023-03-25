@@ -105,7 +105,7 @@ trim_trailing_whitespace = false
 ```
 {: file=".editorconfig" }
 
-Initialize terraform and cloudflare
+Initialize terraform and Cloudflare
 
 ```bash
 terraform init
@@ -137,7 +137,7 @@ we can also test with `nslookup`
 nslookup yoursite.example.com
 ```
 
-Check cloudflare's site.
+Check Cloudflare's site.
 
 if we run plan again, we can see there's no work to do
 
@@ -149,14 +149,15 @@ Should see that there isn't any work to do.
 
 ## Importing Cloudflare State
 
-An important point to understand about Terraform is that it can only manage configuration it created or was explicitly told about after the fact. The reason for this limitation is that Terraform expects to be authoritative for the resources it manages. It relies on two types of files to understand what resources it controls and what state they are in. Terraform determines when and how to make changes from the following:
+We will need to import our Cloudflare state into our local Terraform state.
+
+> An important point to understand about Terraform is that it can only manage configuration it created or was explicitly told about after the fact. The reason for this limitation is that Terraform expects to be authoritative for the resources it manages. It relies on two types of files to understand what resources it controls and what state they are in. Terraform determines when and how to make changes from the following:
+>- A configuration file (ending in .tf) that defines the configuration of resources for Terraform to manage. This is what you worked with in the tutorial steps.
+>- A local state file that maps the resource names defined in your configuration file — for example, cloudflare_load_balancer.www-lb — to the resources that exist in Cloudflare.
 
 <https://developers.cloudflare.com/terraform/advanced-topics/import-cloudflare-resources/>
 
-- A configuration file (ending in .tf) that defines the configuration of resources for Terraform to manage. This is what you worked with in the tutorial steps.
-- A local state file that maps the resource names defined in your configuration file — for example, cloudflare_load_balancer.www-lb — to the resources that exist in Cloudflare.
-
-So this means that we need to sync the remote state of cloudflare, down to our local state.
+So this means that we need to sync the remote state of Cloudflare, down to our local state.
 
 This is where `cf-terraforming` can help
 
