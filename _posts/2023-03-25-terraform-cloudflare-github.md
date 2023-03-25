@@ -89,7 +89,7 @@ resource "cloudflare_page_rule" "www" {
 
 Here is my `.editorconfig`:
 
-```editorconfig
+```bash
 # http://editorconfig.org
 root = true
 
