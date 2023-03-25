@@ -276,6 +276,9 @@ Convert your local folder into a git repo:
 
 first, `cd` into your folder
 
+> *Note: Be sure not to commit any of your secrets to git! This includes API tokens, terraform state, and any other files that might include sensitive information*  
+{: .prompt-danger }
+
 ```bash
 git init
 git commit -m "first commit"
