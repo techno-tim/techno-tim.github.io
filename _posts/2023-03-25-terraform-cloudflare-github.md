@@ -289,7 +289,6 @@ resource "cloudflare_page_rule" "www" {
 ```
 {: file="cloudflare.tf" }
 
-
 Then run
 
 ```bash
