@@ -253,6 +253,43 @@ It should look like this
   }
 ```
 
+Your `cloudflare.tf` file should now look like:
+
+```hcl
+terraform {
+  cloud {
+    hostname = "app.terraform.io"
+    organization = "your org"
+
+    workspaces {
+      name = "Cloudflare"
+    }
+  }
+  required_providers {
+    cloudflare = {
+      source  = "cloudflare/cloudflare"
+      version = "~> 3.0"
+    }
+  }
+}
+
+provider "cloudflare" {
+  api_token = var.cloudflare_api_token
+}
+
+# Create a record
+resource "cloudflare_record" "www" {
+  # ...
+}
+
+# Create a page rule
+resource "cloudflare_page_rule" "www" {
+  # ...
+}
+```
+{: file="cloudflare.tf" }
+
+
 Then run
 
 ```bash
