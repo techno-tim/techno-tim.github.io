@@ -12,6 +12,22 @@ image:
 
 Terraform is a powerful infrastructure as code tool to help you create and manage infrastructure  across multiple public or private clouds. It can help you provision, configure, and manage infrastructure using their simple and human readable configuration language. Using Terraform helps you automate your infrastructure and your DevOps workflow, do it consistently, and allows you to collaborate with teams in Git.
 
+There are 7 key areas where Terraform shines:
+
+- Automation: Terraform enables automation of infrastructure provisioning, configuration, and management, which reduces human error and saves time.
+
+- Consistency: Terraform ensures that your infrastructure is consistent across all environments, from development to production.
+
+- Collaboration: Terraform allows multiple teams to work together on infrastructure changes, using version control systems like Git.
+
+- Cloud-agnostic: Terraform supports various cloud providers, including AWS, Google Cloud, and Microsoft Azure, allowing you to use the same tool to manage resources across different clouds.
+
+- Scalability: Terraform is designed to handle large-scale infrastructure deployments and can easily manage thousands of resources.
+
+- Reusability: Terraform modules enable you to reuse code and infrastructure components across multiple projects, making it easier to manage infrastructure at scale.
+
+- Flexibility: Terraform is highly flexible and can be extended through plugins to integrate with other tools and services.
+
 Today, we're going to set up and configure Terraform on your machine so we can start using Terraform.  Then we'll configure `cf-terraforming` to import our Cloudflare state and configuration into Terraform.  After that we'll set up a GitHub report and configure GitHub actions so you have CI and CD for deploying your Infrastructure automatically using a Git Flow.  If you're new to Terraform, that's fine!  This is a beginner tutorial for Terraform and by the end of this, you will feel like an expert!
 
 {% include embed/youtube.html id='FmYvrxYvBP0' %}
@@ -20,6 +36,8 @@ Today, we're going to set up and configure Terraform on your machine so we can s
 ## Installing Terraform
 
 This will work on Ubuntu and Windows + WSL
+
+[Install `terraform` for other platforms](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
 
 Install dependencies
 
@@ -42,8 +60,6 @@ sudo apt-add-repository "deb [arch=$(dpkg --print-architecture)] https://apt.rel
 ```
 
 Install `terraform`
-
-[Install `terraform` for other platforms](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
 
 ```bash
 sudo apt install terraform
@@ -167,7 +183,7 @@ Check for the latest version here:
 Update this command with the latest tag
 
 ```bash
-curl -L https://github.com/cloudflare/cf-terraforming/releases/download/v0.10.0/cf-terraforming_0.10.0_linux_amd64.tar.gz -o cf-terraforming.tar.gz
+curl -L https://github.com/cloudflare/cf-terraforming/releases/download/v0.11.0/cf-terraforming_0.11.0_linux_amd64.tar.gz -o cf-terraforming.tar.gz
 
 tar -xzf cf-terraforming.tar.gz
 
@@ -234,7 +250,7 @@ If we run `terraform plan` now, we can see that there aren't any changes.
 
 ## Remote State with Terraform Cloud
 
-<https://developer.hashicorp.com/terraform/language/state/remote>
+[Terraform Cloud](https://app.terraform.io/)
 
 Be sure to sign up for an account and then get add your `CLOUDFLARE_API_TOKEN` and an ENV variable in Terraform Cloud.  Mark it as seneitive.
 
@@ -299,7 +315,7 @@ This will prompt you to sign in and then import your local state into Terraform 
 
 ## CI / CD with GitHub Actions
 
-If you want oo create a Ci / CD pipeline with GitHub actions, you'll need to create a new repo at <https://github.com/>
+If you want to create a CI / CD pipeline with GitHub actions, you'll need to create a new repo at [GitHub](https://github.com/)
 
 Here is my `.gitignore`
 
@@ -392,7 +408,7 @@ jobs:
 
 ## Wrapping up
 
-At this point you should be able to run terraform and have your Cloudflare state sync'd with Terraform cloud and GitHub actions running in CI / CD so you can start deploying your infrastructure using code!
+At this point you should be able to run terraform and have your Cloudflare state sync'd with Terraform Cloud and GitHub actions running in CI / CD so you can start deploying your infrastructure using code!
 
 ## Links
 
