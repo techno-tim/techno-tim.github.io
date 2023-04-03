@@ -1,7 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.8.1)
+    addressable (2.8.2)
       public_suffix (>= 2.0.2, < 6.0)
     colorator (1.1.0)
     concurrent-ruby (1.2.2)
@@ -52,7 +52,7 @@ GEM
       jekyll (>= 3.8, < 5.0)
     jekyll-sitemap (1.4.0)
       jekyll (>= 3.7, < 5.0)
-    jekyll-theme-chirpy (5.6.0)
+    jekyll-theme-chirpy (5.6.1)
       jekyll (~> 4.3)
       jekyll-archives (~> 2.2)
       jekyll-paginate (~> 1.1)
