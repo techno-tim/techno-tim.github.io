@@ -79,7 +79,7 @@ If you noticed from everything I listed, you didn’t hear anything about fans. 
 ![Protectli Connectivity](/assets/img/posts/protectli-connectivity-vp4650.jpg)
 Protectli devices come with plenty of options to connect all of your other devices devices_
 
-As far as connectivity goes, you have plenty of options for connecting devices, from USB 2.0, 3.0, USB C, to HDMI, to Display power, and even a microSD port for console access.
+As far as connectivity goes, you have plenty of options for connecting devices, from USB 2.0, 3.0, USB C, to HDMI, to Display power, and even a micro USB port for console access.
 
 ## BIOS
 
