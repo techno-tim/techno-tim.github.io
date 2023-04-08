@@ -54,7 +54,7 @@ It supports up to 64GB of RAM which is plenty for what I will be using it for, b
 It comes with 6 intel 2.5 gigabit NIC ports giving you enough throughput for most of your networking needs.
 
 ![Protectli Network ports](/assets/img/posts/protectli-network-ports-vp4650.jpg)
-_Protectli VP4650 has 6 - 2.5 Gb/sec network ports!_
+_Protectli VP4650 has 6 - 2.5 Gb/s network ports!_
 
 ## Storage
 
@@ -103,7 +103,7 @@ I knew that I wanted to install a router on this machine.  This will give me the
 So I installed pfsense, and passed through 2 NICs from the host down to the guest.   This first NIC is the WAN port, so an upstream provider like an ISP or even some network I don’t trust, and then one port for LAN if I do want to connect all of these devices to the local network. Passing these through and configuring them was pretty simple and if I forget which port is which they even included some stickers for me to label the ports.  I also added another network port that’s used as a network bridge in case I want these VMs to use an internal network.
 
 ![Protectli Stickers for network ports](/assets/img/posts/protectli-stickers-vp4650.jpg)
-_Protectli Network Interface stickers_
+_Protectli Network interface stickers_
 
 ## NAS
 
