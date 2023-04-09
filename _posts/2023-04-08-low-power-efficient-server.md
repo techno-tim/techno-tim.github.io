@@ -159,7 +159,7 @@ Well, I learned a lot about running Proxmox on Protectli devices and I hope you 
 
 ## Configuration
 
-Here is my configuration for each virtual machine on my Proxmox server.  Please note that (as seen in this article and the vide) I did have issues getting the Windows machines to output their display to a physical monitor however Quick Sync to encode videos worked just fine.
+Here is my configuration for each virtual machine on my Proxmox server.  Please note that (as seen in this article and the video) I did have issues getting the Windows machines to output their display to a physical monitor however Quick Sync to encode videos worked just fine and I could output the display using Ubuntu desktop however I could not use Quick Sync.  If you have a fix, let me know in the comments!
 
 ### pfSense
 
