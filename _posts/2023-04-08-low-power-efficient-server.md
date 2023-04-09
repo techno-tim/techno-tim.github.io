@@ -157,6 +157,177 @@ Now it wouldn’t be fair if I didn’t mention some of the beefs I have with it
 
 Well, I learned a lot about running Proxmox on Protectli devices and I hope you learned something too.  And remember if you found anything in this video helpful, don’t forget to like and subscribe.  Thanks for reading and watching!
 
+## Configuration
+
+Here is my configuration for each virtual machine on my Proxmox server.  Please note that (as seen in this article and the vide) I did have issues getting the Windows machines to output their display to a physical monitor however Quick Sync to encode videos worked just fine.
+
+### pfSense
+
+```conf
+boot: order=virtio0;ide2;net0
+cores: 4
+cpu: host,flags=+aes
+hostpci0: 0000:06:00
+ide2: none,media=cdrom
+memory: 2048
+meta: creation-qemu=7.2.0,ctime=1680150221
+name: pfsense
+net0: virtio=12:70:A1:22:F9:2F,bridge=vmbr1
+numa: 0
+ostype: other
+scsihw: virtio-scsi-single
+smbios1: uuid=0388a78d-7950-49e7-8ef9-19a9744e8ee2
+sockets: 1
+startup: order=1,up=30,down=30
+vga: qxl
+virtio0: local-lvm:vm-100-disk-0,discard=on,iothread=1,size=20G
+vmgenid: 314798d0-820e-40bd-89ad-ac364b03b83c
+```
+{: file="/etc/pve/qemu-server/100.conf" }
+
+### Windows 11
+
+```conf
+agent: 1
+balloon: 0
+bios: ovmf
+boot: order=ide0;ide2;virtio0;net0
+cores: 8
+cpu: host
+efidisk0: local-lvm:vm-101-disk-0,efitype=4m,pre-enrolled-keys=1,size=4M
+hostpci0: 0000:00:02,pcie=1
+hostpci1: 0000:00:12.0
+ide0: local:iso/virtio-win-0.1.229.iso,media=cdrom,size=522284K
+ide2: none,media=cdrom
+machine: pc-q35-7.2
+memory: 32768
+meta: creation-qemu=7.2.0,ctime=1680233057
+name: windows-11
+net0: virtio=DE:AB:E8:6B:9F:B7,bridge=vmbr2,firewall=1,tag=60
+numa: 0
+ostype: win11
+scsihw: virtio-scsi-single
+smbios1: uuid=5f7d30a5-b3df-4a29-800c-730c7a43668d
+sockets: 1
+tpmstate0: local-lvm:vm-101-disk-1,size=4M,version=v2.0
+vga: std
+virtio0: local-lvm:vm-101-disk-2,cache=unsafe,discard=on,iothread=1,size=10>vmgenid: 9193bc41-1b82-4069-bc42-8cbb0dfca31d
+```
+{: file="/etc/pve/qemu-server/101.conf" }
+
+### Ubuntu Desktop
+
+```conf
+agent: 1
+balloon: 0
+boot: order=scsi0;ide2;net0
+cores: 8
+cpu: host
+hostpci0: 0000:00:02,pcie=1,rombar=0,x-vga=1
+hostpci1: 0000:00:1f
+hostpci2: 0000:00:1a
+hostpci3: 0000:00:12,pcie=1
+ide2: none,media=cdrom
+machine: q35
+memory: 16384
+meta: creation-qemu=7.2.0,ctime=1680232192
+name: ubuntu
+net0: virtio=1E:05:6A:E7:68:85,bridge=vmbr2,tag=60
+numa: 0
+ostype: l26
+scsi0: local-lvm:vm-102-disk-0,cache=writeback,discard=on,iothread=1,size=8>scsihw: virtio-scsi-single
+smbios1: uuid=7b2a286b-197d-4382-9c04-5a0544596b89
+sockets: 1
+startup: order=4,up=30,down=30
+usb0: host=24f0:0142
+usb1: host=045e:0724
+vga: none
+vmgenid: e93460b1-66f7-4694-a528-98ed006eb770
+```
+{: file="/etc/pve/qemu-server/102.conf" }
+
+### Ubuntu Server
+
+```conf
+agent: 1
+balloon: 0
+boot: order=scsi0;ide2;net0
+cores: 4
+cpu: host
+ide2: none,media=cdrom
+memory: 8192
+meta: creation-qemu=7.2.0,ctime=1680232488
+name: ubuntu-server
+net0: virtio=F6:BF:85:17:B6:0F,bridge=vmbr2,firewall=1,tag=60
+numa: 0
+ostype: l26
+scsi0: local-lvm:vm-103-disk-0,cache=unsafe,discard=on,iothread=1,size=32G
+scsihw: virtio-scsi-single
+smbios1: uuid=7bc4309c-dc9a-4632-bfd5-2e5f8a5e4fcd
+sockets: 1
+startup: order=3,up=30,down=30
+vmgenid: 2500d141-f7be-4c7b-ab9f-0a0f0075ea97
+```
+{: file="/etc/pve/qemu-server/103.conf" }
+
+### TrueNAS
+
+```conf
+agent: 1
+balloon: 0
+boot: order=scsi0;ide2;net0
+cores: 4
+cpu: host
+ide2: none,media=cdrom
+machine: q35
+memory: 8192
+meta: creation-qemu=7.2.0,ctime=1680314889
+name: truenas
+net0: virtio=DE:16:B3:D8:6C:C7,bridge=vmbr2,firewall=1,tag=60
+numa: 0
+ostype: l26
+scsi0: local-lvm:vm-104-disk-0,discard=on,iothread=1,size=32G,ssd=1
+scsi1: evo:vm-104-disk-0,discard=on,iothread=1,size=1000G,ssd=1
+scsihw: virtio-scsi-single
+smbios1: uuid=2ab225ac-44d8-4fb0-b5eb-0ada70e05f33
+sockets: 1
+startup: order=2,up=30,down=30
+vmgenid: 79db20a3-ff24-457c-8abb-6dc4df3c6e38
+```
+{: file="/etc/pve/qemu-server/104.conf" }
+
+### Windows 10
+
+```conf
+agent: 1
+balloon: 0
+bios: ovmf
+boot: order=ide0;ide2;scsi0;net0
+cores: 8
+cpu: host
+efidisk0: local-lvm:vm-105-disk-0,efitype=4m,pre-enrolled-keys=1,size=4M
+hostpci0: 0000:00:02,pcie=1
+hostpci1: 0000:00:12,pcie=1
+hostpci2: 0000:00:1f
+ide0: none,media=cdrom
+ide2: none,media=cdrom
+machine: pc-q35-7.2
+memory: 32768
+meta: creation-qemu=7.2.0,ctime=1680459394
+name: windows-10
+net0: virtio=72:B4:A4:CD:C6:96,bridge=vmbr2,firewall=1,tag=60
+net1: virtio=C6:9F:2F:F2:73:7B,bridge=vmbr1,firewall=1,link_down=1
+numa: 0
+ostype: win10
+scsi0: local-lvm:vm-105-disk-1,cache=unsafe,discard=on,iothread=1,size=150G>scsihw: virtio-scsi-single
+smbios1: uuid=74ff8b62-d60d-4d5c-81a0-e3939baa380c
+sockets: 1
+startup: order=4,up=30,down=30
+vga: none
+vmgenid: f4593d16-12ab-4483-8962-6c27ee576f05
+```
+{: file="/etc/pve/qemu-server/105.conf" }
+
 ## Links
 
 ⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>
