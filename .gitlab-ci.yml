@@ -16,7 +16,7 @@ cache: &global_cache
   policy: pull-push
 
 build:
-  image: ruby:2.7
+  image: ruby:3.2.2
   stage: test
   artifacts:
     paths:
@@ -44,7 +44,7 @@ docker_image_build_release:
     - /kaniko/executor --context $CI_PROJECT_DIR --dockerfile $CI_PROJECT_DIR/Dockerfile --destination $CI_REGISTRY_IMAGE:latest
 
 deploy:
-  image: 
+  image:
     name: bitnami/kubectl:latest
     entrypoint: [""]
   cache: []
@@ -54,6 +54,6 @@ deploy:
     - sed -ie "s/deploy-date-value/$(date)/g" kubernetes/deployment.yaml
     - sed -ie "s|registry-value|$CI_REGISTRY_IMAGE|g" kubernetes/deployment.yaml
     - mkdir -p .kube/ && touch .kube/config
-    - echo ${KUBERNETES_EXTERNAL_CLUSTER} | base64 -d -i > ${KUBECONFIG}    
+    - echo ${KUBERNETES_EXTERNAL_CLUSTER} | base64 -d -i > ${KUBECONFIG}
   script:
     - kubectl apply -f kubernetes
