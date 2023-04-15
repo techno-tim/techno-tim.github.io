@@ -1,7 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.8.3)
+    addressable (2.8.4)
       public_suffix (>= 2.0.2, < 6.0)
     colorator (1.1.0)
     concurrent-ruby (1.2.2)
@@ -13,7 +13,7 @@ GEM
     eventmachine (1.2.7)
     ffi (1.15.5)
     forwardable-extended (2.6.0)
-    google-protobuf (3.22.2-x86_64-linux)
+    google-protobuf (3.22.3-x86_64-linux)
     html-proofer (3.19.4)
       addressable (~> 2.3)
       mercenary (~> 0.3)
