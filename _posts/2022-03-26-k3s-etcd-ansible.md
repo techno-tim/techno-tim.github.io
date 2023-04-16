@@ -75,11 +75,18 @@ Edit `inventory/my-cluster/group_vars/all.yml`  to your liking.  See comments in
 
 It's best to start using these args, and optionally include `traefik` if you want it installed with `k3s` however I would recommend installing it later with `helm`
 
-It's best to start ith the default values in the repo.
+It's best to start with the [default values in the repo](https://github.com/techno-tim/k3s-ansible/blob/master/inventory/sample/group_vars/all.yml).
 
 ```yaml
-extra_server_args: {{ extra_args }} --disable servicelb --disable traefik
-extra_agent_args: {{ extra_args }}
+# change these to your liking, the only required are: --disable servicelb, --tls-san {{ apiserver_endpoint }}
+extra_server_args: >-
+  {{ extra_args }}
+  {{ '--node-taint node-role.kubernetes.io/master=true:NoSchedule' if k3s_master_taint else '' }}
+  --tls-san {{ apiserver_endpoint }}
+  --disable servicelb
+  --disable traefik
+extra_agent_args: >-
+  {{ extra_args }}
 ```
 
 I would not change these values unless you know what you are doing.  It will most likely not work for you but listing for posterity.
