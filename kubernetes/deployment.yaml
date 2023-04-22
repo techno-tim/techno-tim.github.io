@@ -29,12 +29,12 @@ spec:
           requests:
             memory: "64Mi"
             cpu: "100m"
-          limits: 
+          limits:
             memory: "128Mi"
-            cpu: "250m" 
-        ports: 
+            cpu: "250m"
+        ports:
         - containerPort: 80
-      imagePullSecrets: 
+      imagePullSecrets:
       - name: registry-credentials-gitlab
       affinity:
         nodeAffinity:
@@ -45,3 +45,10 @@ spec:
                     operator: In
                     values:
                       - servers-untrusted
+      topologySpreadConstraints:
+        - maxSkew: 1
+          topologyKey: kubernetes.io/hostname
+          whenUnsatisfiable: DoNotSchedule
+          labelSelector:
+            matchLabels:
+              app: technotim-docs
