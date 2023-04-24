@@ -123,7 +123,6 @@ spec:
 ```
 {: file="deployment.yml" }
 
-
 So once this was set, I then deployed the Kubernetes deployment and could see that I had 3 pods, all spread across 3 nodes, awesome.
 
 But how to I actually get to this web page?  Well, remember how I mentioned that I typically use Traefik as my reverse proxy?  Well, that’s where this would come in handy.  It would allow me to expose multiple services on the same IP, but since I don’t have it installed, I will just expose it on the metal lb load balancer that comes with my playbook.
