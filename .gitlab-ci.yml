@@ -45,7 +45,7 @@ docker_image_build_release:
 
 deploy:
   image:
-    name: bitnami/kubectl:latest
+    name: bitnami/kubectl@sha256:6410882b254fde82200c364b606b0cbb9b0fb802fede69011a33b9d28066b459 #1.25.9
     entrypoint: [""]
   cache: []
   stage: deploy
