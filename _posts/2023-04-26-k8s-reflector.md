@@ -51,7 +51,7 @@ data:
 This will:
 
 - create a `Secret`
-- "reflect: the same secret to `namespace-1` , `namespace-2` and all other namespaces that match the pattern `namespace-[0-9]*`
+- "reflect" the same secret to `namespace-1` , `namespace-2` and all other namespaces that match the pattern `namespace-[0-9]*`
 
 ### ConfigMaps
 
@@ -72,7 +72,7 @@ data:
 This will:
 
 - create a `ConfigMap`
-- "reflect: the same `ConfigMap` to `namespace-1` , `namespace-2` and all other namespaces that match the pattern `namespace-[0-9]*`
+- "reflect" the same `ConfigMap` to `namespace-1` , `namespace-2` and all other namespaces that match the pattern `namespace-[0-9]*`
 
 ### Certificates
 
@@ -93,7 +93,7 @@ spec:
 This will:
 
 - create a `Certificate`
-- "reflect: the same `Certificate` to `namespace-1` , `namespace-2` and all other namespaces that match the pattern `namespace-[0-9]*`
+- "reflect" the same `Certificate` to `namespace-1` , `namespace-2` and all other namespaces that match the pattern `namespace-[0-9]*`
 
 The benefit of doing it this way with `cert-manager` is that when your certificates are updated with something like [Let's Encrypt](https://letsencrypt.org/), all certificates you reflect are also updated! Of course you will only want to limit your reflections to other namespaces you trust.  If you'd like to check out `cert-manager` see my post on [how to install traefik and cert-manager](/posts/kube-traefik-cert-manager-le)!
 
