@@ -28,6 +28,7 @@ yarn*
 !.editorconfig
 !.nojekyll
 !.travis.yml
+!.markdownlint.yaml
 
 # bundler cache
 .bundle
