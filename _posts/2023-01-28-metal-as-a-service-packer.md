@@ -244,6 +244,11 @@ maas massadmin boot-resources create name='custom/cloudimg-tgz' title='Ubuntu Cu
 
 39:57 - Stream Highlight - "100 + 50 subs dropped 🫳🎤"
 
+## Join the conversation
+
+<blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">This past week I learned how to solve the challenge of imaging bare metal machines. I settled on MaaS (Metal as a Service) and custom images with Hashicorp Packer. This is the missing link for automation in my <a href="https://twitter.com/hashtag/homelab?src=hash&amp;ref_src=twsrc%5Etfw">#homelab</a> <br><br>Check out the video here 👇<a href="https://t.co/5rhHtwaLi4">https://t.co/5rhHtwaLi4</a> <a href="https://t.co/KgeYCgYzgt">pic.twitter.com/KgeYCgYzgt</a></p>&mdash; Techno Tim (@TechnoTimLive) <a href="https://twitter.com/TechnoTimLive/status/1619379651494940674?ref_src=twsrc%5Etfw">January 28, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
 ## Links
 
 ⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>

@@ -306,6 +306,10 @@ In cluster decryption with Flux
 
 <https://fluxcd.io/flux/guides/mozilla-sops/#configure-in-cluster-secrets-decryption>
 
+## Join the conversation
+
+<blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">People often ask if it&#39;s OK to save secrets in code or config to a private git repo. I though this was ok until now... <br><br>If you&#39;re using Secrets in Kubernetes or ENVs in Docker I highly recommend encrypting them with Mozilla SOPS.<a href="https://twitter.com/mozhacks?ref_src=twsrc%5Etfw">@mozhacks</a> <a href="https://t.co/r1NpBoGWe2">https://t.co/r1NpBoGWe2</a> <a href="https://t.co/sdPFq06WQM">pic.twitter.com/sdPFq06WQM</a></p>&mdash; Techno Tim (@TechnoTimLive) <a href="https://twitter.com/TechnoTimLive/status/1576252417435635713?ref_src=twsrc%5Etfw">October 1, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ## Links
 
 ⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>

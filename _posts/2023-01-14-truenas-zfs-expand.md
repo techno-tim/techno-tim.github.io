@@ -45,6 +45,10 @@ See all of the storage I recommend in this kit!
 
 A clip used in this video was from [Tom Lawrence's channel](https://www.youtube.com/@LAWRENCESYSTEMS). Thanks Tom!
 
+## Join the conversation
+
+<blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">Over the last week I learned all about storage pools and how to move them, expand them, and even what not to do when trying to grow your storage pool.<a href="https://t.co/IoQKKKhEKm">https://t.co/IoQKKKhEKm</a><a href="https://twitter.com/hashtag/truenas?src=hash&amp;ref_src=twsrc%5Etfw">#truenas</a> <a href="https://twitter.com/hashtag/zfs?src=hash&amp;ref_src=twsrc%5Etfw">#zfs</a> <a href="https://twitter.com/hashtag/nas?src=hash&amp;ref_src=twsrc%5Etfw">#nas</a> <a href="https://t.co/UFZF4hLSBc">pic.twitter.com/UFZF4hLSBc</a></p>&mdash; Techno Tim (@TechnoTimLive) <a href="https://twitter.com/TechnoTimLive/status/1614299061237981187?ref_src=twsrc%5Etfw">January 14, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ## Links
 
 ⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>

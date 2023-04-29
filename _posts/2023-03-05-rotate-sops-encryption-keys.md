@@ -76,6 +76,10 @@ kubectl create secret generic sops-age \
 
 Now you should be all set!  Be sure to keep your new `age.agekey` somewhere safe.
 
+## Join the conversation
+
+<blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">I wrote up a quick post on how to rotate your SOPS encryption key and update all of your secrets at once! <br><br>Great if you&#39;re using SOPS with Kubernetes.<a href="https://t.co/iME1iS4Kpl">https://t.co/iME1iS4Kpl</a></p>&mdash; Techno Tim (@TechnoTimLive) <a href="https://twitter.com/TechnoTimLive/status/1632596441293103106?ref_src=twsrc%5Etfw">March 6, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ## Links
 
 ⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>

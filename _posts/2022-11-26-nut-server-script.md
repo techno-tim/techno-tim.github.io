@@ -59,6 +59,10 @@ snmpwalk -v2c -c yourSNMPv2cCommunity yourRasberryPiIPaddress .1.3.6.1.4.1.8072.
 
 To see advanced configuration and configuring NUT Server and NUT client, see my [Network UPS Tools (NUT) Ultimate Guide](/posts/NUT-server-guide/).
 
+## Join the conversation
+
+<blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">I figured I’d share my quick <a href="https://twitter.com/hashtag/homelab?src=hash&amp;ref_src=twsrc%5Etfw">#homelab</a> video on the open source NUT Server here too! <a href="https://t.co/e7wA0fNGk4">pic.twitter.com/e7wA0fNGk4</a></p>&mdash; Techno Tim (@TechnoTimLive) <a href="https://twitter.com/TechnoTimLive/status/1597442260886769664?ref_src=twsrc%5Etfw">November 29, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ## Links
 
 ⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>

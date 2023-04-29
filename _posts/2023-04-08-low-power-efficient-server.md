@@ -328,6 +328,10 @@ vmgenid: f4593d16-12ab-4483-8962-6c27ee576f05
 ```
 {: file="/etc/pve/qemu-server/105.conf" }
 
+## Join the conversation
+
+<blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">Over the last few weeks I built a lower power, efficient, and silent Proxmox server! I can run many virtual machine and even pass through the hardware to use it as a desktop simultaneously! <br><br>Check it out! 👉<a href="https://t.co/4u6DW3BS3E">https://t.co/4u6DW3BS3E</a><a href="https://twitter.com/hashtag/homelab?src=hash&amp;ref_src=twsrc%5Etfw">#homelab</a> <a href="https://t.co/32quyBjXH5">pic.twitter.com/32quyBjXH5</a></p>&mdash; Techno Tim (@TechnoTimLive) <a href="https://twitter.com/TechnoTimLive/status/1644736031583875073?ref_src=twsrc%5Etfw">April 8, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ## Links
 
 ⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>

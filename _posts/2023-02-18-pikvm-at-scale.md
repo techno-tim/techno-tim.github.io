@@ -276,6 +276,11 @@ kvmd:
 
 If you're having issues with Wake on LAN, see [The Ultimate Guide to Wake on LAN for Windows, MacOS, and Linux](/posts/wake-on-lan)
 
+## Join the conversation
+
+<blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">The last few weeks I have been trying to figure out how to scale the PiKVM to more than one device. It took a lot of twists and turns but I finally figured out a solution, even if the first attempts failed... <br><br>Check it out ⬇️<a href="https://t.co/4qgwcmPwMi">https://t.co/4qgwcmPwMi</a><a href="https://twitter.com/hashtag/raspberrypi?src=hash&amp;ref_src=twsrc%5Etfw">#raspberrypi</a> <a href="https://twitter.com/hashtag/homelab?src=hash&amp;ref_src=twsrc%5Etfw">#homelab</a> <a href="https://t.co/ljxpIE3cYx">pic.twitter.com/ljxpIE3cYx</a></p>&mdash; Techno Tim (@TechnoTimLive) <a href="https://twitter.com/TechnoTimLive/status/1626989646713430018?ref_src=twsrc%5Etfw">February 18, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
 ## Links
 
 ⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>

@@ -159,6 +159,10 @@ Checking these types of things will help you verify that your network rules are 
 
 At this point you should have a new VLAN that works on your WiFi access points, your network ports, and should have firewall rules in place to prevent unauthorized access! You can simply repeat this process for every new VLAN that you need!  Have you set up VLANs yet?
 
+## Join the conversation
+
+<blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">Today I decided to share how I set up my VLANs, Firewall rules, Wireless Networks, and Network Security. <br><br>👉<a href="https://t.co/SOGBrsmKXK">https://t.co/SOGBrsmKXK</a><a href="https://twitter.com/hashtag/vlan?src=hash&amp;ref_src=twsrc%5Etfw">#vlan</a> <a href="https://twitter.com/hashtag/unifi?src=hash&amp;ref_src=twsrc%5Etfw">#unifi</a> <a href="https://twitter.com/hashtag/homelab?src=hash&amp;ref_src=twsrc%5Etfw">#homelab</a> <a href="https://t.co/x2LovlQVd4">pic.twitter.com/x2LovlQVd4</a></p>&mdash; Techno Tim (@TechnoTimLive) <a href="https://twitter.com/TechnoTimLive/status/1632056646754091010?ref_src=twsrc%5Etfw">March 4, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ## Links
 
 ⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>

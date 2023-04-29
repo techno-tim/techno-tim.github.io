@@ -51,6 +51,22 @@ Time Codes
 
 09:33 - Stream Highlight - I will buy an LTT Screwdriver
 
+## Join the conversation
+
+<blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">I Put RGB Fans in My Server and I am NOT Apologizing!<a href="https://t.co/YRhA9jPRoj">https://t.co/YRhA9jPRoj</a> <a href="https://t.co/rR8EEMOobh">pic.twitter.com/rR8EEMOobh</a></p>&mdash; Techno Tim (@TechnoTimLive) <a href="https://twitter.com/TechnoTimLive/status/1583847529719877632?ref_src=twsrc%5Etfw">October 22, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+### Hacking my RGB fans to work with Zigbee!
+
+<blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">I hacked my RGB PC fans to use zigbee. No PC software required! <a href="https://t.co/DfV13n7tE2">pic.twitter.com/DfV13n7tE2</a></p>&mdash; Techno Tim (@TechnoTimLive) <a href="https://twitter.com/TechnoTimLive/status/1580190814839312384?ref_src=twsrc%5Etfw">October 12, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+### I made my servers quiet!
+
+<blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">I made my servers quiet! <a href="https://t.co/iFQSwWhM15">pic.twitter.com/iFQSwWhM15</a></p>&mdash; Techno Tim (@TechnoTimLive) <a href="https://twitter.com/TechnoTimLive/status/1585344146277289984?ref_src=twsrc%5Etfw">October 26, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+### Which color do you like best?
+
+<blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">Which color do you like best? <a href="https://t.co/O7ChniryYd">pic.twitter.com/O7ChniryYd</a></p>&mdash; Techno Tim (@TechnoTimLive) <a href="https://twitter.com/TechnoTimLive/status/1584230898576556032?ref_src=twsrc%5Etfw">October 23, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ## Links
 
 ⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>

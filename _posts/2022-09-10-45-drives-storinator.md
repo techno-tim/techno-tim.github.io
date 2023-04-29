@@ -25,6 +25,10 @@ Check out 45Drives Storinators and other servers -  <https://www.45drives.com/>
 
 Seagate Exos X16 14TB Drives and more - <https://kit.co/TechnoTim/best-ssd-hard-drive-flash-storage>
 
+## Join the conversation
+
+<blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">NEW SERVER! This week I built, configured, and (kind of) racked a new server! It&#39;s a customized Storinator server from the folks over at <a href="https://twitter.com/45Drives?ref_src=twsrc%5Etfw">@45Drives</a>! <br><br>What do you think of the design??? 💅<a href="https://t.co/r8i1fqYETj">https://t.co/r8i1fqYETj</a> <a href="https://t.co/EvxgilZb27">pic.twitter.com/EvxgilZb27</a></p>&mdash; Techno Tim (@TechnoTimLive) <a href="https://twitter.com/TechnoTimLive/status/1568639151045545987?ref_src=twsrc%5Etfw">September 10, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ## Links
 
 ⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>

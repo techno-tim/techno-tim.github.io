@@ -187,6 +187,10 @@ So, what do I think of these lower power, small, yet powerful devices?  Well, I 
 
 Well, I learned a lot today about low power servers, Intel NUCs, and cluster Kubernetes and I hope you learned something too.  And remember if you found anything in this video helpful, don't’ forget to share, like, and subscribe.   Thanks for reading and watching!
 
+## Join the conversation
+
+<blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr" data-chrome="transparent" h>What a week! I built a lower power, efficient, and near silent server cluster! Although this cluster is small and efficient, it&#39;s still powerful enough to run many services running in High Availability mode! <br><br>Check it out!👉<a href="https://t.co/5VP32kGqP4">https://t.co/5VP32kGqP4</a><a href="https://twitter.com/hashtag/homelab?src=hash&amp;ref_src=twsrc%5Etfw">#homelab</a> <a href="https://t.co/8dWy6FQQVj">pic.twitter.com/8dWy6FQQVj</a></p>&mdash; Techno Tim (@TechnoTimLive) <a href="https://twitter.com/TechnoTimLive/status/1649797964318089218?ref_src=twsrc%5Etfw">April 22, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ## Links
 
 ⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>

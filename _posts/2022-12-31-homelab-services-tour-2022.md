@@ -152,6 +152,10 @@ Check out the kit here: <https://kit.co/TechnoTim/techno-tim-homelab-tour-late-2
 
 38:30 - Thanks for Watching!
 
+## Join the conversation
+
+<blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">Wow, what a year of self-hosting! After showing off my HomeLab hardware in my late 2022 tour, many of you asked what services are self-hosted in this stack, so I decided it was time to share which services I am running here at home.<a href="https://t.co/Z1yKrwKOaP">https://t.co/Z1yKrwKOaP</a><a href="https://twitter.com/hashtag/homelab?src=hash&amp;ref_src=twsrc%5Etfw">#homelab</a> <a href="https://twitter.com/hashtag/selfhosted?src=hash&amp;ref_src=twsrc%5Etfw">#selfhosted</a> <a href="https://t.co/JW2WdvuIQM">pic.twitter.com/JW2WdvuIQM</a></p>&mdash; Techno Tim (@TechnoTimLive) <a href="https://twitter.com/TechnoTimLive/status/1609225385522204673?ref_src=twsrc%5Etfw">December 31, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ## Links
 
 ⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>

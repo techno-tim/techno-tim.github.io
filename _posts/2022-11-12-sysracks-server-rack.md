@@ -48,6 +48,10 @@ Shop Micro Center’s Black Friday Deals: <https://micro.center/rgu>
 
 13:42 - Stream Highlight - "The grow room isn't big enough for 2 racks!"
 
+## Join the conversation
+
+<blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">I’ve been on a quest looking for a new server rack for my HomeLab and I think I’ve found one that fits my needs! I’ve decided to give a new enclosed rack a try! <a href="https://t.co/BS4TMHo3Qw">https://t.co/BS4TMHo3Qw</a> <a href="https://t.co/CCGJIiWXsu">pic.twitter.com/CCGJIiWXsu</a></p>&mdash; Techno Tim (@TechnoTimLive) <a href="https://twitter.com/TechnoTimLive/status/1591477813059657728?ref_src=twsrc%5Etfw">November 12, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ## Links
 
 ⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>

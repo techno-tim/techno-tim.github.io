@@ -97,6 +97,10 @@ This will:
 
 The benefit of doing it this way with `cert-manager` is that when your certificates are updated with something like [Let's Encrypt](https://letsencrypt.org/), all certificates you reflect are also updated! Of course you will only want to limit your reflections to other namespaces you trust.  If you'd like to check out `cert-manager` see my post on [how to install traefik and cert-manager](/posts/kube-traefik-cert-manager-le)!
 
+## Join the conversation
+
+<blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">Ok, I think I made it just in time! <br><br>A post on reflector for Kubernetes!<a href="https://t.co/IOYIhTk6g5">https://t.co/IOYIhTk6g5</a><a href="https://twitter.com/hashtag/homelab?src=hash&amp;ref_src=twsrc%5Etfw">#homelab</a></p>&mdash; Techno Tim (@TechnoTimLive) <a href="https://twitter.com/TechnoTimLive/status/1651435186297421825?ref_src=twsrc%5Etfw">April 27, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ## Links
 
 ⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>

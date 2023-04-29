@@ -174,6 +174,10 @@ postfix reload
 
 25:30 - Stream Highlight - "Just some flashing lights & music"
 
+## Join the conversation
+
+<blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">Setting up alerts in Proxmox is important and critical to making sure you are notified if something goes wrong with your servers. It&#39;s so easy, I should have done this years ago!<a href="https://t.co/6uRz0eVisA">https://t.co/6uRz0eVisA</a><a href="https://twitter.com/hashtag/homelab?src=hash&amp;ref_src=twsrc%5Etfw">#homelab</a> <a href="https://twitter.com/hashtag/proxmox?src=hash&amp;ref_src=twsrc%5Etfw">#proxmox</a> <a href="https://t.co/i8E1jrP2pE">pic.twitter.com/i8E1jrP2pE</a></p>&mdash; Techno Tim (@TechnoTimLive) <a href="https://twitter.com/TechnoTimLive/status/1604150687469912066?ref_src=twsrc%5Etfw">December 17, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ## Links
 
 ⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>

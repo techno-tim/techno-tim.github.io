@@ -65,6 +65,10 @@ Be sure to check out (and star) David's repo with an automated NUT server instal
 
 13:01 - Stream Highlight - "Testing in Production"
 
+## Join the conversation
+
+<blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">Today I look at 2 (or 3 depending on how you count them) UPS systems. These UPS devices couldn&#39;t be any different but they are awesome nonetheless.<br><br>Which UPS do you use? <br> <br>(I think I had too much fun creating this thumbnail) <br><br>Check it out!<a href="https://t.co/1kxDvSeGt7">https://t.co/1kxDvSeGt7</a> <a href="https://t.co/fNiODnanAR">pic.twitter.com/fNiODnanAR</a></p>&mdash; Techno Tim (@TechnoTimLive) <a href="https://twitter.com/TechnoTimLive/status/1596578938133831682?ref_src=twsrc%5Etfw">November 26, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ## Links
 
 ⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>

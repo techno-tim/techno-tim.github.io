@@ -411,6 +411,10 @@ jobs:
 
 At this point you should be able to run terraform and have your Cloudflare state sync'd with Terraform Cloud and GitHub actions running in CI / CD so you can start deploying your infrastructure using code!
 
+## Join the conversation
+
+<blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">Over the past few weeks I learned all about Terraform and it&#39;s awesome! I converted my Cloudflare settings to code and deploy it with CI / CD using GitHub Actions!<br><br>You can check it out here:<br><br>👉 <a href="https://t.co/vUnvV8m3Mh">https://t.co/vUnvV8m3Mh</a><a href="https://twitter.com/hashtag/terraform?src=hash&amp;ref_src=twsrc%5Etfw">#terraform</a> <a href="https://twitter.com/hashtag/cloudflare?src=hash&amp;ref_src=twsrc%5Etfw">#cloudflare</a> <a href="https://twitter.com/hashtag/github?src=hash&amp;ref_src=twsrc%5Etfw">#github</a> <a href="https://twitter.com/hashtag/homelab?src=hash&amp;ref_src=twsrc%5Etfw">#homelab</a> <a href="https://t.co/2oWkhtZshu">pic.twitter.com/2oWkhtZshu</a></p>&mdash; Techno Tim (@TechnoTimLive) <a href="https://twitter.com/TechnoTimLive/status/1639660262818021376?ref_src=twsrc%5Etfw">March 25, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ## Links
 
 ⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>
