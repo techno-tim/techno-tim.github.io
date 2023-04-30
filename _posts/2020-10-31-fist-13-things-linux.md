@@ -124,16 +124,67 @@ sudo lvm
 ```
 
 ```bash
-lvextend -l +100%FREE /dev/ubuntu-vg/ubuntu-lv
+lvscan
+```
+
+You should see your logical volumes
+
+```bash
+lvm> lvscan
+  ACTIVE            '/dev/vgubuntu-server/root' [<168.54 GiB] inherit
+  ACTIVE            '/dev/vgubuntu-server/swap_1' [980.00 MiB] inherit
+```
+
+resize the logical volume group, usually the first one in the list but check to be sure!
+
+```bash
+lvextend -l +100%FREE /dev/vgubuntu-server/root
+```
+
+You should see:
+
+```bash
+  Size of logical volume vgubuntu-server/root changed from <138.54 GiB (35466 extents) to <168.54 GiB (43146 extents).
+  Logical volume vgubuntu-server/root successfully resized
 ```
 
 ```bash
 exit
 ```
 
+resize the file system
+
 ```bash
-sudo resize2fs /dev/ubuntu-vg/ubuntu-lv
+sudo resize2fs /dev/vgubuntu-server/root
 ```
+
+Check to see file system size
+
+```bash
+df -h
+```
+
+You should see:
+
+```bash
+Filesystem                         Size  Used Avail Use% Mounted on
+tmpfs                              1.6G  3.9M  1.6G   1% /run
+/dev/mapper/vgubuntu--server-root  166G   89G   70G  56% /
+tmpfs                              7.9G     0  7.9G   0% /dev/shm
+tmpfs                              5.0M     0  5.0M   0% /run/lock
+/dev/sda1                          511M  4.0K  511M   1% /boot/efi
+tmpfs                              1.6G     0  1.6G   0% /run/user/1000
+```
+
+You should see:
+
+```bash
+resize2fs 1.46.5 (30-Dec-2021)
+Filesystem at /dev/vgubuntu-server/root is mounted on /; on-line resizing required
+old_desc_blocks = 18, new_desc_blocks = 22
+The filesystem on /dev/vgubuntu-server/root is now 44181504 (4k) blocks long.
+```
+
 
 ## hostname
 
