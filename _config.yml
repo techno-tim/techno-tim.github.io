@@ -29,26 +29,26 @@ description: >-                        # used by seo meta and the atom feed
   Documentation for Techno Tim YouTube videos for all your copy pasta needs!
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: 'https://docs.technotim.live'
+url: 'https://saga-mylearning.github.io'
 
 github:
-  username: timothystewart6             # change to your github username
+  username: saga-mylearning       # change to your github username
 twitter:
-  username: technotimlive            # change to your twitter username
+  username: saga-mylearning            # change to your twitter username
 patreon:
-  username: technotim
+  username: saga-mylearning
 twitch:
-  username: technotim
+  username: saga-mylearning
 instagram:
-  username: techno.tim
+  username: saga-mylearning
 facebook:
-  username: TechnoTimLive
+  username: saga-mylearning
 discord:
   invitelink: akMB4HJpvF
 youtube:
   channelid: UCOk-gHyjcWZNj3Br4oxwh0A
 tiktok:
-  username: '@technotim'
+  username: '@saga-mylearning'
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
