@@ -1,27 +1,27 @@
 # YouTube Videos
 
-Here you will find all the documentation for my YouTube videos on my channel [https://www.youtube.com/technotimlive](https://l.technotim.live/subscribe)
+Here you will find all the documentation for my YouTube videos on my channel [https://www.youtube.com/saga-mylearninglive](https://l.saga-mylearning.live/subscribe)
 
 ## Don't forget to ⭐ this repo and fork it! 👆
 
-## Documentation has moved here 👉 [The new documentation site](https://docs.technotim.live/)
+## Documentation has moved here 👉 [The new documentation site](https://docs.saga-mylearning.live/)
 
 ## Credits
 
-Created by TechnoTim with 💛
+Created by saga-mylearning with 💛
 
-► YouTube <https://l.technotim.live/subscribe>
+► YouTube <https://l.saga-mylearning.live/subscribe>
 
-► Patreon <https://l.technotim.live/patreon>
+► Patreon <https://l.saga-mylearning.live/patreon>
 
-► Twitch <https://l.technotim.live/twitch>
+► Twitch <https://l.saga-mylearning.live/twitch>
 
-► Twitter  <https://l.technotim.live/twitter>
+► Twitter  <https://l.saga-mylearning.live/twitter>
 
-► Discord <https://l.technotim.live/discord>
+► Discord <https://l.saga-mylearning.live/discord>
 
-► Instagram <https://l.technotim.live/instagram>
+► Instagram <https://l.saga-mylearning.live/instagram>
 
-► Facebook <https://l.technotim.live/facebook>
+► Facebook <https://l.saga-mylearning.live/facebook>
 
-► GitHub <https://l.technotim.live/github>
+► GitHub <https://l.saga-mylearning.live/github>
