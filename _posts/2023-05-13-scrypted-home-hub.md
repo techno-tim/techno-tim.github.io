@@ -33,6 +33,8 @@ See the whole kit here!
 
 <https://kit.co/TechnoTim/smart-home-hubs-devices>
 
+(Affiliate links are included in this description. I may receive a small commission at no cost to you.)
+
 ## Smart Home Camera Fragmentation
 
 I have cameras in and around my house.  I have cameras on the front door, cameras inside my house, cameras that point outside of my house, cameras in my garage, cameras in my server room, and even cameras in my server rack….

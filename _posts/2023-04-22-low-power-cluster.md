@@ -33,6 +33,8 @@ See the entire kit here:
 
 <https://kit.co/TechnoTim/efficient-low-power-powerful-virtualization-server>
 
+(Affiliate links are included in this description. I may receive a small commission at no cost to you.)
+
 ## Hardware
 
 These [Intel NUCs](https://amzn.to/43TK8nS) are probably my favorite small form factor devices.  They are only 4x4 inches and pack quite a punch.  That’s because these NUCs have anywhere from a Core i3, to a Core i5, to a Core i7 processor in them.  This one has a Core i7 with 4 cores and 8 threads and has a base clock speed of 2.8 GHz and can turbo boost up to 4.70 GHz.  It even has QuickSync on this chip too so that I can offload encoding if I need to.  You can check out the specs [here](https://ark.intel.com/content/www/us/en/ark/products/205073/intel-nuc-11-performance-kit-nuc11pahi7.html).
