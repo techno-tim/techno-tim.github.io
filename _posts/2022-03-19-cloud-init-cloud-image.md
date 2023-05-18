@@ -21,7 +21,7 @@ Choose your [Ubuntu Cloud Image](https://cloud-images.ubuntu.com/)
 Download Ubuntu (replace with the url of the one you chose from above)
 
 ```bash
-wget https://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-amd64.img
+wget https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd64.img
 ```
 
 Create a new virtual machine
@@ -33,7 +33,7 @@ qm create 8000 --memory 2048 --core 2 --name ubuntu-cloud --net0 virtio,bridge=v
 Import the downloaded Ubuntu disk to local-lvm storage
 
 ```bash
-qm importdisk 8000 focal-server-cloudimg-amd64.img local-lvm
+qm importdisk 8000 jammy-server-cloudimg-amd64.img local-lvm
 ```
 
 Attach the new disk to the vm as a scsi drive on the scsi controller
