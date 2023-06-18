@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "My Mobile HomeLab!  (Travel Router with Proxmox, Docker, and OpenWRT)"
+title: "My Mobile HomeLab! (Travel Router with Proxmox, Docker, and OpenWRT)"
 date: 2023-06-18 10:00:00 -0500
 categories: homelab
 tags: homelab travel hardware proxmox docker portainer openwrt
@@ -184,6 +184,9 @@ So now that I have Portainer installed, we can install any container we like to 
 _Doing some local Plex transcoding while on the go!_
 
 Also, it does stop there, we can now install any docker container or LXC container we like, or even a full blown Virtual Machine since we’re running Proxmox!  If we really wanted to, we could now install pfsense or OPNSense as a virtual machine and use that as our router and disable all the routing features on OpenWRT, and only use that as an access point.  Once you have pFSense or OPNSense running, you can then create a VPN connection back home to get the same protection you have at home.  The possibilities are really endless.  Want to install other containers, like LANcache, Netcloud, or even a local Minecraft server, no problem.
+
+![VPN Diagram](/assets/img/posts/mobile-homelab-diagram-vpn-diagram.jpg)
+_You can even go as far as creating a VPN tunnel back home!_
 
 And that’s the nice thing about a general purpose machine like this, you have unlimited possibilities.  And using the Intel Celeron platform you get powerful hardware, at a fraction of the power consumption so you get the best of both worlds.  A WiFi router and access point that connects all of your devices, internet or not,  and lots of services that you can use while you are on the go.  I’ll be using this device full time when I travel so I will be sure to report back any modifications I make to this new "mobile homelab, forbidden travel router, plus plus, ultimate mobile homelab - thingie"
 
