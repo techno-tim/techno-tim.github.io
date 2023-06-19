@@ -8,18 +8,22 @@ image:
   path: /assets/img/headers/mobile-vanlife.jpg
 ---
 
-This has been months in the making, my new Mobile HomeLab!  It's a device that I can take with me to provide secure internet access for all of my devices.   Not only can it provide secure access, but it can also let me bring apps and services with me when I travel.  It's built on Proxmox, OpenWRT, PiHole, and many other services.  I'm taking this with me everywhere!
+This has been months in the making, my new Mobile HomeLab!  It's a device that I can take with me to provide secure internet access for all of my devices.   Not only can it provide secure access, but it can also let me bring apps and services with me when I travel.  It's built on Proxmox, OpenWRT, Pi-hole, and many other services.  I'm taking this with me everywhere!
 
 {% include embed/youtube.html id='02gYwJ2G-vE' %}
 📺 [Watch Video](https://www.youtube.com/watch?v=02gYwJ2G-vE)
 
 ## Where to Buy
 
-Protectli VP2420 - <https://amzn.to/46dxj9k>
+Protectli VP2420 - <https://amzn.to/443wb68>
+
+Crucial 16 GB RAM - <https://amzn.to/3qOMK7F>
 
 Intel Wi-Fi 6(alternate wifi option)  - <https://amzn.to/3PfuRZP>
 
-USB NIC (ralink chipset) - <https://amzn.to/3NyP8an>
+Samsung 1 TB SSD = <https://amzn.to/3Nj7Mme>
+
+USB WiFI NIC (ralink chipset) - <https://amzn.to/3NyP8an>
 
 Wyze Camera - <https://amzn.to/467JVi3>
 
@@ -61,14 +65,14 @@ _What I usually carry with me_
 
 ## The Hardware
 
-This is a Protectli Vault VP2420 which, if you couldn't tell by the huge heatsink on top, it’s fanless and silent.   This model has an intel Celeron J4612, but it’s not like the Celerons of the past, this Celeron has 4 cores and 4 threads and has a base clock speed of 2 GHz and can burst to 2.6 GHz.  What makes this CPU great is that it is super low power but yet still has features like AES-NI and VT-x and VT-d which makes it great for a hypervisor like VMWare or Proxmox.  It also has QuickSync which can be used for video transcoding too.   I opted for 32 GB of DDR-4 RAM , the most you can get on this device.  
+This is a Protectli Vault VP2420 which, if you couldn't tell by the huge heatsink on top, it’s fanless and silent.   This model has an intel Celeron J6412, but it’s not like the Celerons of the past, this Celeron has 4 cores and 4 threads and has a base clock speed of 2 GHz and can burst to 2.6 GHz.  What makes this CPU great is that it is super low power but yet still has features like AES-NI and VT-x and VT-d which makes it great for a hypervisor like VMWare or Proxmox.  It also has QuickSync which can be used for video transcoding too.   I opted for 32 GB of DDR-4 RAM , the most you can get on this device.  
 
 This model comes with (4) 2.5 Gb ethernet ports for lots of hard wired connectivity options.  But even more interesting than the wired options, are the wireless options.  You probably noticed all of the antennas sticking out, now one set is pretty obvious and that’s one for WiFi.  It’s a Protectli WiFi module that supports  802.11 ac/a/b/g/n and fits into the m.2 slot.  The other antennas are actually for a 4g LTE modem that works most carriers.  It even has a slot on the outside of the case that you can insert your SIM card into without opening the device up.
 
 As far as storage goes it has an internal 8GB eMMC module that I really won’t be using, and I opted for a 1 TB Samsung SSD.  I would like to have another option for another drive, but I figure this was good enough for what I am going to use it for.
 
 As far as IO goes we have an HDMI port, 2 USB 3.0 ports, a Display Port, USB C, and a micro USB port for console access.  It’s powered by this little brick and has a barrel plug for power.  This is quite a capable machine for something that’s smaller than a tablet.  All in all, it’s a solid fanless, quiet, yet power build.
- 
+
 ![Protectli Vault VP2420](/assets/img/posts/protectli-vault-vp2420.jpg)
 _My Protectli Vault VP2420 with 2.5 Gb/s networking_
 
@@ -76,7 +80,7 @@ _My Protectli Vault VP2420 with 2.5 Gb/s networking_
 
 So now that I have all of this put together (it came assembled) how was I going to build the ultimate mobile HomeLab?
 
-My original thought was to just run pfsense or OPNsense on this machine and use it as a router however, FreeBSD, the operating system that these are built on do not have drivers for this wireless NIC.  That shut that down really quick.  Then I noticed that Protecli have documentation on their site on how to set up this device with [OpenWRT](https://openwrt.org/).  That’s when I remembered Network Chuck’s video and decided that if he got it working, I could too.  Well, not really because he’s like a legit networking person and I am just a hack, but anyway I thought I would give it a shot.
+My original thought was to just run pfsense or OPNsense on this machine and use it as a router however, FreeBSD, the operating system that these are built on do not have drivers for this wireless NIC.  That shut that down really quick.  Then I noticed that Protecli have [documentation on their site](https://protectli.com/kb/openwrt-on-the-vault/) on how to set up this device with [OpenWRT](https://openwrt.org/).  That’s when I remembered Network Chuck’s video and decided that if he got it working, I could too.  Well, not really because he’s like a legit networking person and I am just a hack, but anyway I thought I would give it a shot.
 
 ![OpenWRT on Proxmox](/assets/img/posts/mobile-homelab-proxmox.jpg)
 _I should have installed OpenWRT on Proxmox to begin with..._
@@ -85,7 +89,7 @@ So I installed OpenWRT. The process was a little bit complicated but I had some 
 
 ## Proxmox
 
-So that’s what I did, I installed Proxmox on this machine since it supports virtualization and hardware passthrough.  At first, I wanted to create an LXC container  for OpenWRT to use less resources, however, it does not support hardware passthrough like virtualization does for network cards so I created a simple virtual machine..  I found this [great guide](https://i12bretro.github.io/tutorials/0405.html) on creating an OpenWRT VM on Proxmox!
+So that’s what I did, I installed Proxmox on this machine since it supports virtualization and hardware passthrough.  At first, I wanted to create an LXC container  for OpenWRT to use less resources, however, it does not support hardware passthrough like virtualization does for network cards so I created a simple virtual machine.  I found this [great guide](https://i12bretro.github.io/tutorials/0405.html) on creating an OpenWRT VM on Proxmox!
 
 The steps to create a VM were pretty straight forward and I followed each step on that checklist carefully.
 
@@ -100,7 +104,7 @@ Once the machine was up and running, I made some changes to the NIC and then wen
 
 ## NIC (LAN)
 
-First I wanted to be sure I could connect to this device via LAN.  This was as simple as just configuring the virtual machine to connect to the bridge on Proxmox.  This means when I plug in a network adapter to a port dedicated as LAN, I can connect to anything running on the Proxmox bridge.   This will be the local area network for all of my devices on this subnet.  If you want, you can configure DHCP on this OpenWRT interface but I am going to do that later with PiHole or even pfSense later.
+First I wanted to be sure I could connect to this device via LAN.  This was as simple as just configuring the virtual machine to connect to the bridge on Proxmox.  This means when I plug in a network adapter to a port dedicated as LAN, I can connect to anything running on the Proxmox bridge.   This will be the local area network for all of my devices on this subnet.  If you want, you can configure DHCP on this OpenWRT interface but I am going to do that later with Pi-hole or even pfSense later.
 
 ## NIC (WAN)
 
@@ -111,9 +115,9 @@ _After this step, the LAN and WAN should work by physically connecting_
 
 ## Wireless NIC (Access Point)
 
-Now that I have LAN and WAN NICs configured, I can plug in my laptop and connect to this network.  This works fine but really we want to broadcast our own wireless SSID so all of our devices can connect to it.  This is where we’ll need to configure our Protectli wireless NIC. In order for this NIC to work, we’ll need to install the drivers and a few packages on OpenWRT to enable the wireless access point feature and we can do this within the software section.  You’ll need to install a few packages and then overwrite a few files with ones from Protectli. They've found that some of the packages that are available on OpenWRT aren’t compatible so they’ve provided these files on their website along with instructions.  I’ve linked that in the docs too.  Once that’s taken care of and we reboot we can now see this wireless section with our wireless NIC!  Here we’ll want to configure the wireless network we want to broadcast for our clients to connect to.  You’ll need to configure the SSID, security, and wireless mode.  
+Now that I have LAN and WAN NICs configured, I can plug in my laptop and connect to this network.  This works fine but really we want to broadcast our own wireless SSID so all of our devices can connect to it.  This is where we’ll need to configure our Protectli wireless NIC. In order for this NIC to work, we’ll need to install the drivers and a few packages on OpenWRT to enable the wireless access point feature and we can do this within the software section.  You’ll need to install a few packages and then overwrite a few files with ones from Protectli. They've found that some of the packages that are available on OpenWRT aren’t compatible so [they’ve provided these files on their website along with instructions](https://protectli.com/kb/wifi-on-the-vault/).  Once that’s taken care of and we reboot we can now see this wireless section with our wireless NIC!  Here we’ll want to configure the wireless network we want to broadcast for our clients to connect to.  You’ll need to configure the SSID, security, and wireless mode.  
 
-![network Diagram WLAN](/assets/img/posts/mobile-homelab-diagram-wlan.jpg)
+![Network Diagram WLAN](/assets/img/posts/mobile-homelab-diagram-wlan.jpg)
 _Now you should have a fully working router with LAN, WAN, and an access point!_
 
 Pro tip, I found out that even though this is a dual band NIC, you cannot broadcast on both bands at the same time.  So if you aren’t going to use 2.4 GHz you’re fine, you can set it to AC mode or N 5GHz, but if you are using any 2.4GHz devices you’ll need to set the mode to the lowest common denominator of 2.4 GHz.  Another thing you can do is configure a second NIC to broadcast on 2.4 GHz, but we’ll talk about it a little bit later.
@@ -122,19 +126,19 @@ Once you apply this, you should be able to see your new SSID and connect to Open
 
 ## USB Wireless NIC (Client / WAN / other)
 
-At this point you should be able to connect to your router and use the internet from the WAN port, but what if you don’t have access to the WAN port?  This is where a second wireless network device comes into play.   Let me be clear, this was the most complicated part of this whole project.  OpenWRT  supports very few USB wireless adapters.  I tested 8 USB wireless network adapters before I finally found one that worked with OpenWRT.  I tested name brands, no name brands, USB 2, USB 3, ones with odd antennas, and ones without external antennas at all.  It turns out that most wireless USB adapters use a Realtek chipset and this does not play well with OpenWRT.  It was hard to find one without a Realtek chip, but it turns out this tiny little no-name one works great and that’s because it’s based on a Ralink chipset, one that’s very hard to find. I’ll have links below if you’re interested.
+At this point you should be able to connect to your router and use the internet from the WAN port, but what if you don’t have access to the WAN port?  This is where a second wireless network device comes into play.   Let me be clear, this was the most complicated part of this whole project.  OpenWRT  supports very few USB wireless adapters.  I tested 8 USB wireless network adapters before I finally found one that worked with OpenWRT.  I tested name brands, no name brands, USB 2, USB 3, ones with odd antennas, and ones without external antennas at all.  It turns out that most wireless USB adapters use a Realtek chipset and this does not play well with OpenWRT.  It was hard to find one without a Realtek chip, but it turns out [this tiny little no-name one works great](https://amzn.to/3NyP8an) and that’s because it’s based on a Ralink chipset, one that’s very hard to find.
 
 ![WLAN USB](/assets/img/posts/mobile-homelab-diagram-wlan-usb.jpg)
 _I tested 8 wireless USB NICs before finally finding one that works with OpenWRT_
 
-So you’ll need to install a few more packages for driver support and after that you should see another NIC in the wireless section.  This time we’re going to configure it as a client that connects to an existing wireless network, that way you don’t have to physically connect to the WAN port, we’ll connect over wireless.  We can do this by scanning and connecting to an existing wireless network, and after that  you'll then have a completely functional router that can connect a wireless network and share it with all of your clients!
+So you’ll need to install a few more packages for driver support. I chose to install mt7601u-firmware` for this wireless USB NIC.  After that you should see another NIC in the wireless section. This time we’re going to configure it as a client that connects to an existing wireless network, that way you don’t have to physically connect to the WAN port, we’ll connect over wireless.  We can do this by scanning and connecting to an existing wireless network, and after that  you'll then have a completely functional router that can connect a wireless network and share it with all of your clients!
 
 I should mention that even though this works fine, this USB NIC  only supports 2.4GHz / Wireless N.  This is generally fast enough for the internet connection but just know that you are going to be limited by the speed of this NIC, which is around 150 Mb/s at most.  Personally I would only use this option if you can’t physically connect your WAN port to your upstream router.  As you can see, when I am connected to the WAN via this USB NIC, I can be a lot slower than when it is connected via ethernet cable.
 
 ![Network Diagram WLAN USB](/assets/img/posts/mobile-homelab-diagram-wlan-usb-diagram.jpg)
 _Now you should be able to connect your router to an upstream WiFi connection using this NIC!_
 
-If you can physically connect to the WAN via ethernet, what I would do is disable this NIC or configure it to broadcast the same private network on 2.4Ghz this way you can set your primary NIC to use A/C/N 5 GHz.   I had to do this to connect my Wyze cam since it only supports 2.4 GHz.  Yes I take a Wyze cam with me when I travel so that I can keep an eye on the place when I leave and also keep an eye on my pups, Nano and Buddy,
+If you can physically connect to the WAN via ethernet, what I would do is disable this NIC or configure it to broadcast the same private network on 2.4Ghz this way you can set your primary NIC to use A/C/N 5 GHz.   I had to do this to connect my Wyze cam since it only supports 2.4 GHz.  Yes I take a [Wyze cam](https://amzn.to/467JVi3) with me when I travel so that I can keep an eye on the place when I leave and also keep an eye on my pups, Nano and Buddy,
 
 ![Security Camera](/assets/img/posts/mobile-homelab-wyze-cam.jpg)
 _I bring a Wyze cam with me to keep an eye on the place!_
@@ -146,32 +150,32 @@ After running a speed test you can see I am getting anywhere from 180/200 Mbps w
 
 ## LTE Modem
 
-So, not that I have OpenWRT working with an upstream router, what happens if I don’t have an upstream router at all?  This is where the LTE modem that I mentioned earlier comes into play.  This is great for times when you don’t have an internet provider where you are staying or if you decide to go and live the vanlife.
+So, not that I have OpenWRT working with an upstream router, what happens if I don’t have an upstream router at all?  This is where the LTE modem that I mentioned earlier comes into play.  This is great for times when you don’t have an internet provider where you are staying or if you decide to go and live the #vanlife.
 
 ![LTE Modem](/assets/img/posts/mobile-homelab-lte-modem.jpg)
 _A tiny LTE modem inside!_
 
-Installing the software on OpenWRt was pretty straightforward, again you install a few packages and then reboot. But before I rebooted I inserted this cheap testing SIM into my device.  After rebooting, you’ll then go to network interfaces and add the new interface which should be USB0.  You’ll want to set this as WAN as the firewall zone and then save and apply.   You can then access the modem’s web GUI on a private IP address of 172.16.0 from a device connected to the LAN port.  You should then see your device connected to your cellular provider and !viola! this connection can be shared with anyone connected to this device!  Oh yeah, I did update the firmware too because I love updating firmware 🤷
+Installing the software on OpenWRt was pretty straightforward, again you install a few packages (`kmod-usb-net-rndi`, `wwan`, `comgt-ncm`) and then reboot. But before I rebooted I inserted this cheap testing SIM into my device.  After rebooting, you’ll then go to network interfaces and add the new interface which should be `USB0`.  You’ll want to set this as WAN as the firewall zone and then save and apply.   You can then access the modem’s web GUI on a private IP address of 172.16.0 from a device connected to the LAN port.  You should then see your device connected to your cellular provider and !viola! this connection can be shared with anyone connected to this device!  Oh yeah, I did update the firmware too because I love updating firmware 🤷
 
 ![LTE Modem Diagram](/assets/img/posts/mobile-homelab-lte-modem-diagram.jpg)
 _If you use an LTE modem, you can now connect all if your devices to LTE data from your carrier!_
 
-## PiHole
+## Pi-hole
 
-Now that I had OpenWRT working as an access point, a firewall, and a router that can connect to an upstream router via ethernet, wireless, or LTE, it was now time to focus on the “homelab” part of this device.  Since I installed Proxmox on the host, I can now install anthony I want on this machine.  The first thing I decided to install was a Pi Hole to keep every connected device safe and free of ads and tracking.
+Now that I had OpenWRT working as an access point, a firewall, and a router that can connect to an upstream router via ethernet, wireless, or LTE, it was now time to focus on the “homelab” part of this device.  Since I installed Proxmox on the host, I can now install anthony I want on this machine.  The first thing I decided to install was a [Pi-hole](https://pi-hole.net/) to keep every connected device safe and free of ads and tracking.
 
 Like all installations on Proxmox you have options of how you want to install things.  I typically choose VMs but I wanted to keep this lean and mean, so I went with an LXC container.  LXC containers are easy to manage and use less resources than a full VM.  So I created an LXC container and set a hostname and password and uploaded my public ssh key.  I chose the ubuntu template, then gave it 8 GB of disk space, 2 CPU cores, and 2 GB of RAM.  For networking I connected it to the existing bridge, which is my LAN and gave it a static IP address.
 
-Once the LXC container was created, I updated it and installed Pi Hole.  After installing I updated all of my ad lists.  I also added about 5 millions sites to my block list that you can see [here](/posts/pi-hole-blocklists/).
+Once the LXC container was created, I updated it and installed Pi-hole.  After installing I updated all of my ad lists.  I also added about 5 millions sites to my block list that you can see [here](/posts/pi-hole-blocklists/).
 
-![PiHole](/assets/img/posts/mobile-homelab-pi-hole.jpg)
-_Added PiHole to block all those ads and tracking on the go!_
+![Pi-hole](/assets/img/posts/mobile-homelab-pi-hole.jpg)
+_Added Pi-hole to block all those ads and tracking on the go!_
 
-I did end up enabling DHCP on PiHole just to see what it was all about.  I usually let my router do this but for this travel router I wanted to have more control over blocking.  I ended up disabling DHCP on OpenWRT and enabling it on PiHole.
+I did end up enabling DHCP on Pi-hole just to see what it was all about.  I usually let my router do this but for this travel router I wanted to have more control over blocking.  I ended up disabling DHCP on OpenWRT and enabling it on Pi-hole.
 
 ## Portainer
 
-Awesome, so now I have PiHole with network wide ad blocking running, so what’s next? Well, I know I want to have docker as a platform for running applications on this mobile HomeLab device and portainer is the best way to manage them.  I chose to create another LXC container based on Ubuntu and gave it a 60 GB hard drive, 4 CPU cores, and 16 GB of ram.  I spun up the container and let it grab an IP, and then I reserved that IP inside of Pi Hole.  Once the container was up and running, I updated Ubuntu and installed Portainer.  Once Portainer was running I then installed a Watchtower to keep all of my containers up to date.  I typically use GitOps to handle this in my home production cluster, but I don’t want to worry about updating containers while traveling.  Installing Watchtower was easy, just copy and paste the docker compose and I was good to go.
+Awesome, so now I have Pi-hole with network wide ad blocking running, so what’s next? Well, I know I want to have docker as a platform for running applications on this mobile HomeLab device and portainer is the best way to manage them.  I chose to create another LXC container based on Ubuntu and gave it a 60 GB hard drive, 4 CPU cores, and 16 GB of ram.  I spun up the container and let it grab an IP, and then I reserved that IP inside of Pi-hole.  Once the container was up and running, I updated Ubuntu and installed Portainer.  Once Portainer was running I then installed a Watchtower to keep all of my containers up to date.  I typically use GitOps to handle this in my home production cluster, but I don’t want to worry about updating containers while traveling.  Installing Watchtower was easy, just copy and paste the docker compose and I was good to go.
 
 ![Portainer](/assets/img/posts/mobile-homelab-portainer.jpg)
 _Installed Portainer to manage all of my Docker containers_
