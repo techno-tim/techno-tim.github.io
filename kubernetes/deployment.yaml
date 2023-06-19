@@ -23,16 +23,24 @@ spec:
         deploy-date: "deploy-date-value"
     spec:
       containers:
-      - name: technotim-docs
-        image: "registry-value:latest"
-        resources:
-          requests:
-            memory: "64Mi"
-            cpu: "100m"
-        ports:
-        - containerPort: 80
+        - name: technotim-docs
+          image: "registry-value:latest"
+          imagePullPolicy: Always
+          resources:
+            requests:
+              memory: 100Mi
+              cpu: 100m
+          ports:
+            - containerPort: 80
+          readinessProbe:
+            successThreshold: 2
+            failureThreshold: 2
+            periodSeconds: 10
+            timeoutSeconds: 5
+            httpGet:
+              path: /
       imagePullSecrets:
-      - name: registry-credentials-gitlab
+        - name: registry-credentials-gitlab
       affinity:
         nodeAffinity:
           requiredDuringSchedulingIgnoredDuringExecution:
