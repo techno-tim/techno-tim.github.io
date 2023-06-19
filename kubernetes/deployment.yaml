@@ -33,12 +33,10 @@ spec:
           ports:
             - containerPort: 80
           livenessProbe:
-            exec:
-              command:
-                - /bin/sh
-                - -c
-                - "[ -f /run/nginx.pid ] && ps -A | grep nginx"
-            initialDelaySeconds: 10
+            httpGet:
+              path: /
+              port: 80
+            initialDelaySeconds: 5
             periodSeconds: 5
           readinessProbe:
             successThreshold: 2
