@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: mypost
 title: "My Mobile HomeLab! (Travel Router with Proxmox, Docker, and OpenWRT)"
 date: 2023-06-18 10:00:00 -0500
 categories: homelab
