@@ -19,9 +19,9 @@ Protectli VP2420 - <https://amzn.to/443wb68>
 
 Crucial 16 GB RAM - <https://amzn.to/3qOMK7F>
 
-Intel Wi-Fi 6(alternate wifi option)  - <https://amzn.to/3PfuRZP>
+Intel Wi-Fi 6 (alternate wifi option)  - <https://amzn.to/3PfuRZP>
 
-Samsung 1 TB SSD = <https://amzn.to/3Nj7Mme>
+Samsung 1 TB SSD - <https://amzn.to/3Nj7Mme>
 
 USB WiFI NIC (ralink chipset) - <https://amzn.to/3NyP8an>
 
