@@ -32,6 +32,14 @@ spec:
               cpu: 100m
           ports:
             - containerPort: 80
+          livenessProbe:
+            exec:
+              command:
+                - /bin/sh
+                - -c
+                - "[ -f /run/nginx.pid ] && ps -A | grep nginx"
+            initialDelaySeconds: 10
+            periodSeconds: 5
           readinessProbe:
             successThreshold: 2
             failureThreshold: 2
@@ -39,6 +47,7 @@ spec:
             timeoutSeconds: 5
             httpGet:
               path: /
+              port: 80
       imagePullSecrets:
         - name: registry-credentials-gitlab
       affinity:
