@@ -10,6 +10,8 @@ image:
 
 This has been months in the making, my new Mobile HomeLab!  It's a device that I can take with me to provide secure internet access for all of my devices.   Not only can it provide secure access, but it can also let me bring apps and services with me when I travel.  It's built on Proxmox, OpenWRT, Pi-hole, and many other services.  I'm taking this with me everywhere!
 
+A huge thank you to [Protectli](https://protectli.com/) for sending this device!
+
 {% include embed/youtube.html id='02gYwJ2G-vE' %}
 📺 [Watch Video](https://www.youtube.com/watch?v=02gYwJ2G-vE)
 
@@ -80,7 +82,7 @@ _My Protectli Vault VP2420 with 2.5 Gb/s networking_
 
 So now that I have all of this put together (it came assembled) how was I going to build the ultimate mobile HomeLab?
 
-My original thought was to just run pfsense or OPNsense on this machine and use it as a router however, FreeBSD, the operating system that these are built on do not have drivers for this wireless NIC.  That shut that down really quick.  Then I noticed that Protecli have [documentation on their site](https://protectli.com/kb/openwrt-on-the-vault/) on how to set up this device with [OpenWRT](https://openwrt.org/).  That’s when I remembered Network Chuck’s video and decided that if he got it working, I could too.  Well, not really because he’s like a legit networking person and I am just a hack, but anyway I thought I would give it a shot.
+My original thought was to just run pfsense or OPNsense on this machine and use it as a router however, FreeBSD, the operating system that these are built on do not have drivers for this wireless NIC.  That shut that down really quick.  Then I noticed that Protectli have [documentation on their site](https://protectli.com/kb/openwrt-on-the-vault/) on how to set up this device with [OpenWRT](https://openwrt.org/).  That’s when I remembered Network Chuck’s video and decided that if he got it working, I could too.  Well, not really because he’s like a legit networking person and I am just a hack, but anyway I thought I would give it a shot.
 
 ![OpenWRT on Proxmox](/assets/img/posts/mobile-homelab-proxmox.jpg)
 _I should have installed OpenWRT on Proxmox to begin with..._
