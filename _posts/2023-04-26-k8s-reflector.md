@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: mypost
 title: "Mirror your Kubernetes configs, secrets, and resources to other namespaces"
 date: 2023-04-26 21:37:00 -0500
 categories: homelab
