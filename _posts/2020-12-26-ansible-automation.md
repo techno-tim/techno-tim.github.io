@@ -3,7 +3,7 @@ layout: post
 title: "Automate EVERYTHING with Ansible!"
 date: 2020-12-26 09:00:00 -0500
 categories: homelab
-tags: homelab ansible zsh
+tags: homelab ansible
 image:
   path: /assets/img/headers/car-assembly.jpg
 ---

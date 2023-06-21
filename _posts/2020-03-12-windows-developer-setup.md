@@ -3,7 +3,7 @@ layout: post
 title: "Setting Up Windows for JavaScript Development THE RIGHT WAY (WSL Terminal NVM Node Yarn VS Code ZSH)"
 date: 2020-03-12 09:00:00 -0500
 categories: coding
-tags: windows coding javascript wsl nvm zsh node windows linux ubuntu
+tags: windows coding javascript wsl nvm node windows linux ubuntu
 image:
   path: /assets/img/headers/javascript-terminal.jpg
 ---
