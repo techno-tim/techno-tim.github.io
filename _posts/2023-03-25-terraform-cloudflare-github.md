@@ -3,7 +3,7 @@ layout: post
 title: "Automate Cloudflare with Terraform and GitHub Actions! - Terraform Tutorial for Beginners"
 date: 2023-03-25 10:00:00 -0500
 categories: cloud
-tags: terraform hashicorp cloudflare github cloud homelab
+tags: terraform hashicorp cloudflare github cloud homelab zsh
 image:
   path: /assets/img/headers/terraform-mars.jpg
 ---
