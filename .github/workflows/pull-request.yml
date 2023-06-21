@@ -28,3 +28,5 @@ jobs:
 
       - name: Test Site
         run: bash tools/deploy.sh --dry-run
+        env:
+        JEKYLL_ENV: production 
