@@ -27,7 +27,7 @@ jobs:
           bundler-cache: true
 
       - name: Test Site
-        run: bash tools/deploy.sh --dry-run
+        run: bash tools/test
         env:
           JEKYLL_ENV: production
 
