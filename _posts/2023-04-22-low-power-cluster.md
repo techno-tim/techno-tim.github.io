@@ -29,9 +29,7 @@ Combat misconfigurations. Empower engineers.
 - G.Skill RipJaws DDR4 SO-DIMM Series 64GB - <https://amzn.to/3AlstI8>
 - Mk1 Manufacturing - <https://www.mk1manufacturing.com/cart.php>
 
-See the entire kit here:
-
-<https://kit.co/TechnoTim/efficient-low-power-powerful-virtualization-server>
+See the whole kit here - <https://kit.co/TechnoTim/efficient-low-power-powerful-virtualization-server>
 
 (Affiliate links are included in this description. I may receive a small commission at no cost to you.)
 

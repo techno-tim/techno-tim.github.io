@@ -26,20 +26,14 @@ You might have heard of Protectli before.  They’re known for making really gre
 A HUGE thanks to [Protectli](https://protectli.com) for sending this device for me to test!
 
 - Protectli Vault FW2B - 2 Port - <https://amzn.to/3nRJfM1>
-
 - Protectli Vault FW4B - 4 Port - <https://amzn.to/3nVVU0u>
-
 - Protectli Vault FW6A - 6 Port - <https://amzn.to/3zHWHop>
-
 - Protectli Vault Pro VP4630-6 Port - <https://amzn.to/3GoYSRy>
-
 - Crucial RAM - <https://amzn.to/41eks31>
-
 - Samsung NVMe - <https://amzn.to/3KIsKuD>
-
 - Samsung SSD - <https://amzn.to/43fYb6Z>
 
-See the entire Kit! - <https://kit.co/TechnoTim/building-a-low-power-all-in-one-silent-server>
+See the whole kit here! - <https://kit.co/TechnoTim/building-a-low-power-all-in-one-silent-server>
 
 ## CPU
 

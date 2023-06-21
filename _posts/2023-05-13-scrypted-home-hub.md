@@ -15,23 +15,15 @@ Meet Scrypted an Open Source app that will let you connect almost any camera to 
 
 ## Where to Buy
 
-UniFi UDM SE - <https://amzn.to/44TWJYJ>
+- UniFi UDM SE - <https://amzn.to/44TWJYJ>
+- UniFi Cameras - <https://amzn.to/3M3FPyp>
+- Apple TV 4k - <https://amzn.to/3M1ZFtz>
+- Apple iPad - <https://amzn.to/3VX1k8z>
+- Echo Dot - <https://amzn.to/44YmpTW>
+- Echo Show 5 - <https://amzn.to/3MmFdoN>
+- Echo Show 15 - <https://amzn.to/3Mo8ZJM>
 
-UniFi Cameras - <https://amzn.to/3M3FPyp>
-
-Apple TV 4k - <https://amzn.to/3M1ZFtz>
-
-Apple iPad - <https://amzn.to/3VX1k8z>
-
-Echo Dot - <https://amzn.to/44YmpTW>
-
-Echo Show 5 - <https://amzn.to/3MmFdoN>
-
-Echo Show 15 - <https://amzn.to/3Mo8ZJM>
-
-See the whole kit here!
-
-<https://kit.co/TechnoTim/smart-home-hubs-devices>
+See the whole kit here! - <https://kit.co/TechnoTim/smart-home-hubs-devices>
 
 (Affiliate links are included in this description. I may receive a small commission at no cost to you.)
 

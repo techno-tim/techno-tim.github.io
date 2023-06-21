@@ -17,37 +17,23 @@ A huge thank you to [Protectli](https://protectli.com/) for sending this device!
 
 ## Where to Buy
 
-Protectli VP2420 - <https://amzn.to/443wb68>
+- Protectli VP2420 - <https://amzn.to/443wb68>
+- Crucial 16 GB RAM - <https://amzn.to/3qOMK7F>
+- Intel Wi-Fi 6 (alternate wifi option) - <https://amzn.to/3PfuRZP>
+- Samsung 1 TB SSD - <https://amzn.to/3Nj7Mme>
+- USB WiFI NIC (ralink chipset) - <https://amzn.to/3NyP8an>
+- Wyze Camera - <https://amzn.to/467JVi3>
+- Timbuk2 Backpack - <https://amzn.to/3p8L9ZF>
+- Slim Cat6a Cables - <https://amzn.to/3qOCHPT>
+- Anker Charging Station - <https://amzn.to/3qOk66r>
+- Anker USB C Cables - <https://amzn.to/3qOCXhP>
+- Anker Surge Protector - <https://amzn.to/3Jlq8ll>
+- Anker USB Hub - <https://amzn.to/42N15yF>
+- WD 5 TB USB Hard Drive - <https://amzn.to/42Oa3f4>
+- Protectli WiFi Kit - <https://protectli.com/product/m2-wifi/>
+- Protectli 4G LTE Modem - <https://protectli.com/product/mdg200-m2/>
 
-Crucial 16 GB RAM - <https://amzn.to/3qOMK7F>
-
-Intel Wi-Fi 6 (alternate wifi option) - <https://amzn.to/3PfuRZP>
-
-Samsung 1 TB SSD - <https://amzn.to/3Nj7Mme>
-
-USB WiFI NIC (ralink chipset) - <https://amzn.to/3NyP8an>
-
-Wyze Camera - <https://amzn.to/467JVi3>
-
-Timbuk2 Backpack - <https://amzn.to/3p8L9ZF>
-
-Slim Cat6a Cables - <https://amzn.to/3qOCHPT>
-
-Anker Charging Station - <https://amzn.to/3qOk66r>
-
-Anker USB C Cables - <https://amzn.to/3qOCXhP>
-
-Anker Surge Protector - <https://amzn.to/3Jlq8ll>
-
-Anker USB Hub - <https://amzn.to/42N15yF>
-
-WD 5 TB USB Hard Drive - <https://amzn.to/42Oa3f4>
-
-Protectli WiFi Kit - <https://protectli.com/product/m2-wifi/>
-
-Protectli 4G LTE Modem - <https://protectli.com/product/mdg200-m2/>
-
-See the whole kit here! <https://kit.co/TechnoTim/mobile-homelab>
+See the whole kit here! - <https://kit.co/TechnoTim/mobile-homelab>
 
 (Affiliate links are included in this description. I may receive a small commission at no cost to you.)
 
