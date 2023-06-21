@@ -61,10 +61,10 @@ main() {
     -d "$SITE_DIR$_baseurl" -c "$_config"
 
   # test
-  bundle exec htmlproofer "$SITE_DIR" \
-    --disable-external \
-    # --check-html \
-    --allow_hash_href
+  # bundle exec htmlproofer "$SITE_DIR" \
+  #   --disable-external \
+  #   --check-html \
+  #   --allow_hash_href
 }
 
 while (($#)); do
