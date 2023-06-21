@@ -132,7 +132,7 @@ sudo maas init region
 Get key ring
 
 ```bash
-wget --no-verbose --output-document=- https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor --output=/usr/share/keyrings/hashicorp-archive-keyring.gpg 
+wget -O- https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
 ```
 
 Add keyring
@@ -195,7 +195,7 @@ sudo maas apikey --username=massadmin > ~/api-key-file
 You can check with with
 
 ```bash
-cat ~/api-key-fil
+cat ~/api-key-file
 ```
 
 Authenticate to MaaS with your api key
