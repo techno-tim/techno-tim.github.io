@@ -61,6 +61,8 @@ main() {
     -d "$SITE_DIR$_baseurl" -c "$_config"
 
   # test
+  # this causes tons of false positives when checking HTML
+  # might be good for the template, but not good for real world sites
   # bundle exec htmlproofer "$SITE_DIR" \
   #   --disable-external \
   #   --check-html \
