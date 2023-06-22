@@ -149,9 +149,7 @@ visit your VIP on port `8080`
 
 ## PiHole
 
-In this video we covered the PiHole use case.  After setting this up, be sure to check out the tutorial on Gravity Sync
-
-[https://docs.technotim.live/posts/ha-pi-hold-gravity-sync/](/posts/ha-pi-hold-gravity-sync/)
+In this video we covered the PiHole use case.  After setting this up, be sure to check out the [tutorial on Gravity Sync](/posts/ha-pi-hold-gravity-sync/)
 
 ## Links
 

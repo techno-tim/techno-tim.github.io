@@ -26,7 +26,7 @@ KVM/QEMU Windows guest drivers (virtio-win) download
 
 Need to Upgrade to Proxmox 7?  
 
-[https://docs.technotim.live/posts/proxmox-7/](/posts/proxmox-7/)
+[See the guide here](/posts/proxmox-7/)
 
 ⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>
 

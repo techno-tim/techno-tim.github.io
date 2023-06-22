@@ -20,7 +20,7 @@ Be sure to ⭐ the [Pterodactyl GitHub repo](https://github.com/pterodactyl/pane
 
 ## Install Docker
 
-To install docker, see [https://docs.technotim.live/posts/docker-compose-install/](/posts/docker-compose-install/)
+To install docker, see [this post](/posts/docker-compose-install/)
 
 ## Reverse Proxy
 

@@ -209,7 +209,7 @@ reboot
 
 ## Alerts
 
-I've added yet another item to my list when setting up a new Proxmox server, and [that's setting up alerts!](https://docs.technotim.live/posts/proxmox-alerts/)
+I've added yet another item to my list when setting up a new Proxmox server, and [that's setting up alerts!](/posts/proxmox-alerts/)
 
 ## Links
 

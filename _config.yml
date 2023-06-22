@@ -21,12 +21,12 @@ timezone: America/Chicago
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Techno Tim Documentation                          # the main title
+title: Techno Tim                          # the main title
 
-tagline: Video documentation for all your copy pasta needs!   # it will display as the sub-title
+tagline: Software Engineer | Tech Content Creator| HomeLab | 🇺🇸 🇯🇵 | Full Nerd   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  Documentation for Techno Tim YouTube videos for all your copy pasta needs!
+  Software Engineer | Gamer | Twitch Streamer | Content Creator on YouTube | HomeLab | 🇺🇸 🇯🇵 | Full Nerd
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: 'https://docs.technotim.live'

@@ -169,7 +169,7 @@ _Testing my HA NGINX install, you can see that node 2 is down, but the Kubernete
 
 ## What else can we do?
 
-Awesome, so now we have an HA cluster but what can we do with it?  Well, I mentioned a few things but you can do some awesome home Kubernetes stuff like install [Home Assistant](https://www.home-assistant.io/), [game servers](https://docs.technotim.live/posts/pterodactyl-game-server/), [web sites](https://docs.technotim.live/posts/jekyll-docs-site/), or many other workloads, just remember  that not all workloads can be HA out of the box, they have to be stateless like my nginx container, meaning they have no state like storage mounts or state in memory, but they get their state from outside of the container like an external database.
+Awesome, so now we have an HA cluster but what can we do with it?  Well, I mentioned a few things but you can do some awesome home Kubernetes stuff like install [Home Assistant](https://www.home-assistant.io/), [game servers](/posts/pterodactyl-game-server/), [web sites](/posts/jekyll-docs-site/), or many other workloads, just remember  that not all workloads can be HA out of the box, they have to be stateless like my nginx container, meaning they have no state like storage mounts or state in memory, but they get their state from outside of the container like an external database.
 
 ![Stateless k8s apps](/assets/img/posts/k8s-stateless-apps.jpg)
 _This diagram explains how stateless Kubernetes apps should be architected_

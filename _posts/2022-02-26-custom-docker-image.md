@@ -16,7 +16,7 @@ We spin up all types of containers on my channel in my tutorials, but we have ye
 
 ## Install Docker
 
-To install docker, see [https://docs.technotim.live/posts/docker-compose-install/](/posts/docker-compose-install/)
+To install docker, see [this post](/posts/docker-compose-install/)
 
 ## Docker commands
 

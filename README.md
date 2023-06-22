@@ -4,7 +4,7 @@ Here you will find all the documentation for my YouTube videos on my channel [ht
 
 ## Don't forget to ⭐ this repo and fork it! 👆
 
-## Documentation has moved here 👉 [The new documentation site](https://docs.technotim.live/)
+## Documentation has moved here 👉 [The new documentation site](https://l.technotim.live/docs)
 
 ## Credits
 
