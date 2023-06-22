@@ -1,12 +1,12 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: technotim-docs
+  name: technotim-home
   namespace: default
 spec:
   selector:
     matchLabels:
-      app: technotim-docs
+      app: technotim-home
   replicas: 3
   progressDeadlineSeconds: 600
   revisionHistoryLimit: 3
@@ -18,12 +18,12 @@ spec:
   template:
     metadata:
       labels:
-        app: technotim-docs
+        app: technotim-home
       annotations:
         deploy-date: "deploy-date-value"
     spec:
       containers:
-        - name: technotim-docs
+        - name: technotim-home
           image: "registry-value:latest"
           imagePullPolicy: Always
           resources:
@@ -64,4 +64,4 @@ spec:
           whenUnsatisfiable: DoNotSchedule
           labelSelector:
             matchLabels:
-              app: technotim-docs
+              app: technotim-home
