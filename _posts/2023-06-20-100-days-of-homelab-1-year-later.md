@@ -69,11 +69,11 @@ I also picked up [Terraform too](https://www.terraform.io/)! Terraform is one of
 
 ## Networking
 
-Once of the biggest changes to networking wasn't new hardware or network speed, but VLANs. I implemented VLANs here to keep all of my network traffic segmented according to the roles these devices fill. For instance I created an `IoT` vlan for all of my IoT devices, a `Camera` VLAN just for secure video devices, and `Server` VLAN for my servers that are used for public facing services. This helps ensure that not only am I not mixing traffic, but also minimizing the blast radius if one of my devices were to become compromised. I talking about this and more [security recommendations in a video here](https://www.youtube.com/watch?v=Cs8yOmTJNYQ). Highly recommended if you are going to self-host anything.
+Once of the biggest changes to networking wasn't new hardware or network speed, but VLANs. I implemented VLANs here to keep all of my network traffic segmented according to the roles these devices fill. For instance I created an `IoT` vlan for all of my IoT devices, a `Camera` VLAN just for secure video devices, and `Server` VLAN for my servers that are used for public facing services. This helps ensure that not only am I not mixing traffic, but also minimizing the blast radius if one of my devices were to become compromised. I talked about this and more [security recommendations in a video here](https://www.youtube.com/watch?v=Cs8yOmTJNYQ). Highly recommended if you are going to self-host anything.
 
 ## Kubernetes
 
-The next big theme is Kubernetes and has been a theme on my channel almost since the beginning. I now run 3 HA Kubernetes clusters at home. That might sound crazy, but it's true. It's taught me so much about how to build, support, and maintain of the most popular technologies in the world. It's been challenging but rewarding at the same time. I ended up going all in and migrating all of my Docker only hosts to Kubernetes. I no longer have single Docker hosts (pets) and now have more Kubernetes nodes (cattle). Once I moved everything to Kubernetes, I quickly learned that I needed a better way to manage it than just a UI or applying manifests from the CLI.
+The next big theme is Kubernetes and has been a theme on my channel almost since the beginning. I now run 3 HA Kubernetes clusters at home. That might sound crazy, but it's true. It's taught me so much about how to build, support, and maintain one of the most popular technologies in the world. It's been challenging but rewarding at the same time. I ended up going all in and migrating all of my Docker only hosts to Kubernetes. I no longer have single Docker hosts (pets) and now have more Kubernetes nodes (cattle). Once I moved everything to Kubernetes, I quickly learned that I needed a better way to manage it than just a UI or applying manifests from the CLI.
 
 (_GitOps has entered the chat_)
 
@@ -83,7 +83,7 @@ Git Ops, such a such a huge term and people have varying opinions on where it st
 
 ## Community
 
-Last but definitely not least is community. Doing this challenge has taught me that there are so many other people out there just like me, trying to build/break/fix/learn with a lab environment at home. There are countless times where I have been inspired from others or even found better, more efficient way to accomplish things by interacting with the HomeLab community and have even picked up new tech all thanks to you. I have met lots of people on socials and will continue to follow your journey!
+Last but definitely not least is community. Doing this challenge has taught me that there are so many other people out there just like me, trying to build/break/fix/learn with a lab environment at home. There are countless times where I have been inspired from others or even found better, more efficient way to accomplish things by interacting with the HomeLab community. I have even picked up new tech all thanks to you. I have met lots of people on socials and will continue to follow your journey!
 
 So, what are you waiting for? Want to [join the challenge](https://twitter.com/intent/tweet?text=I%27m%20publicly%20committing%20to%20the%20100DaysOfHomeLab%20Challenge%20starting%20today!%20Join%20me!&url=https%3A%2F%2F100daysofhomelab.com&hashtags=100DaysOfHomeLab)? You're just one click away!
 
