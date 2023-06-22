@@ -85,7 +85,7 @@ Git Ops, such a such a huge term and people have varying opinions on where it st
 
 Last but definitely not least is community. Doing this challenge has taught me that there are so many other people out there just like me, trying to build/break/fix/learn with a lab environment at home. There are countless times where I have been inspired from others or even found better, more efficient way to accomplish things by interacting with the HomeLab community. I have even picked up new tech all thanks to you. I have met lots of people on socials and will continue to follow your journey!
 
-So, what are you waiting for? Want to [join the challenge](https://twitter.com/intent/tweet?text=I%27m%20publicly%20committing%20to%20the%20100DaysOfHomeLab%20Challenge%20starting%20today!%20Join%20me!&url=https%3A%2F%2F100daysofhomelab.com&hashtags=100DaysOfHomeLab)? You're just one click away!
+So, what are you waiting for? Want to [join the 100 Days of HomeLab Challenge](https://twitter.com/intent/tweet?text=I%27m%20publicly%20committing%20to%20the%20100DaysOfHomeLab%20Challenge%20starting%20today!%20Join%20me!&url=https%3A%2F%2F100daysofhomelab.com&hashtags=100DaysOfHomeLab)? You're just one click away!
 
 ## Join the conversation
 

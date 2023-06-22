@@ -42,7 +42,7 @@ See the whole kit here! - <https://kit.co/TechnoTim/mobile-homelab>
 This is my mobile HomeLab, or is it my mobile home lab, or just mobile lab, or a travel router ++, or ultimate mobile HomeLab, anyway, It’s a computer that I bring with me that serves as a network firewall, an access point, and a platform to run apps, services, and virtual machines. I guess it’s a cross between Wendell’s forbidden router and Network Chuck’s travel router. It’s something that I am going to take with me every time I travel and will provide internet access whether that be from an existing network, or one I connect to over my carrier’s mobile data network.
 
 ![My Mobile HomeLab](/assets/img/posts/my-mobile-homelab.jpg)
-_A Mobile HomeLab device I can take with me that also providers network access!_
+_A Mobile HomeLab device I can take with me that also provider network access!_
 
 This is something that I have wanted to create for quite some time because when traveling I bring with me a few pieces of technology to make my life a little easier and keep my nerd brain fed. Some of these are common like a laptop and a tablet, but others aren't. You see, when I travel I like to take a router with me to keep all of my devices connected securely, rather than connecting all of my devices to say the Air BnB’s WiFi. Bringing my own router assures me that my laptop, tablet, phone, pi, even security camera are connected to my router and that no other devices can spy on me.
 
