@@ -32,10 +32,11 @@ spec:
               cpu: 100m
           ports:
             - containerPort: 80
+              name: http
           livenessProbe:
             httpGet:
               path: /
-              port: 80
+              port: http
             initialDelaySeconds: 5
             periodSeconds: 5
           readinessProbe:
@@ -45,7 +46,7 @@ spec:
             timeoutSeconds: 5
             httpGet:
               path: /
-              port: 80
+              port: http
       imagePullSecrets:
         - name: registry-credentials-gitlab
       affinity:
