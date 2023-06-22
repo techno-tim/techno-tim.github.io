@@ -34,4 +34,4 @@ jobs:
           fi
 
       - name: Deploy
-        run: bash tools/deploy.sh
+        run: bash tools/release.sh
