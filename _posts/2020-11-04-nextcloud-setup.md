@@ -5,7 +5,7 @@ date: 2020-11-07 09:00:00 -0500
 categories: self-hosted
 tags: homelab rancher kubernetes docker self-hosted nextcloud portainer
 image:
-  path: /assets/img/headers/energy-ball.jpg
+  path: /assets/img/headers/cloud-geese-smoke.jpg
 ---
 
 Are you thinking about ditching Google apps or looking for a Dropbox replacement?  Are you ready to self host your own productivity platform?  Well, Nextcloud may be for you!  In today's tutorial we'll walk though setting up Nextcloud with Docker and Kubernetes.  We'll also walk through some of the new features, installing apps from the app store, exposing this Nextcloud publicly, as well as setting up 2FA (2 factor authentication) with TOTP clients like Google Authenticator and Authy.
