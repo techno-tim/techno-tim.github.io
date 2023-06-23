@@ -5,7 +5,7 @@ date: 2023-05-13 10:00:00 -0500
 categories: self-hosted
 tags: scrypted smart-home iot unifi apple google amazon alexa home-assistant home-security open-source
 image:
-  path: /assets/img/headers/smart-home-hub.jpg
+  path: /assets/img/headers/smart-home-hub.webp
 ---
 
 Meet Scrypted an Open Source app that will let you connect almost any camera to any home hub, certified or not!  You can connect popular devices from UniFi, Amcrest, Hikvision, Nest & Google, Tuya, Reolink, and many others to your home hub of choice, whether that be Apple’s HomeKit, Google Home, Alexa, or even Home Assistant.  This lets you choose and reuse your own devices and take advantage of the automation and integration you get with your Smart Home Hub.  
@@ -31,12 +31,12 @@ See the whole kit here! - <https://kit.co/TechnoTim/smart-home-hubs-devices>
 
 I have cameras in and around my house.  I have cameras on the front door, cameras inside my house, cameras that point outside of my house, cameras in my garage, cameras in my server room, and even cameras in my server rack….
 
-![Camera in my server rack](/assets/img/posts/camera-in-my-server-rack.jpg)
+![Camera in my server rack](/assets/img/posts/camera-in-my-server-rack.webp)
 _Don’t ask..._
 
 All of these cameras work great and I keep all of the recorded footage in my home but what’s not great is that I am not able to tap into popular Home Hubs like HomeKit, Alexa, Google Home, or even Home Assistant.  That’s because many of these platforms require some very specific requirements for adding cameras to your home hub.  That means they might have to be certified, have to be compatible, and both manufacturers have to get along…  and we know how that story goes.  
 
-![Getting ecosystems to play nice together](/assets/img/posts/ecosystem meme.jpg)
+![Getting ecosystems to play nice together](/assets/img/posts/ecosystem meme.webp)
 _Getting ecosystems to play nice together_
 
 So this left me with using one app to check my video, while leaving a whole host of features that my home hub provides on the table.  Things like notifications within my ecosystem, the ability to trigger automation based on my eco system, cool features like picture in a picture on other devices, and all the things that make home hubs, well, hubs.  And while I do like my home security choice, I don’t like that it doesn’t integrate with my home hub of choice.  It’s not my fault these two companies don’t get along and I am not going to buy all new cameras just to be compatible with my home hub. That’s where Scrypted comes in.
@@ -47,7 +47,7 @@ So this left me with using one app to check my video, while leaving a whole host
 
 You can connect popular devices from UniFi, Amcrest, Hikvision, Nest & Google, Tuya, Reolink, and many others to your home hub of choice, whether that be Apple’s HomeKit, Google Home, Alexa, or even Home Assistant.  This lets you choose and reuse your own devices and take advantage of the automation and integration you get with your home hub.  That’s right, something the big players aren’t offering you, and that’s choice.  This means that you don’t have to pay for that subscription if you want video outside of your home, you can use scrypted to connect to one of the major hubs or even an open source one like Home Assistant.  
 
-![Scrypted integrations](/assets/img/posts/scrypted-integrations-and-hubs.jpg)
+![Scrypted integrations](/assets/img/posts/scrypted-integrations-and-hubs.webp)
 _Scrypted supports many different camera integrations and many Home Hubs!_
 
 Here’s where it gets really cool...
@@ -70,7 +70,7 @@ So I first created a Linux machine and then installed Docker, which I highly rec
 
 Once you’re in portainer, all you need to do is connect to your Docker instance, add a container,  and then set a few properties like the name of the container, the image name and tag, and then you’ll need to map your data volume from the container to the local machine.  This should be somewhere your Portainer machine can read and write to, for me it’s just a simple path to a folder on the machine.  The last thing they recommend is setting the network to host mode which means it will use the networking on the host instead of Docker networking.  Once all that’s set, just deploy the container and you’re good to go.
 
-![Scrypted integrations](/assets/img/posts/scrypted-portainer-install.jpg)
+![Scrypted integrations](/assets/img/posts/scrypted-portainer-install.webp)
 _Installing Scrypted with Portainer is simple!_
 
 Oh, and if you want to use Docker compose, you can use this to get started quickly!  Note, this will also include `watchtower` to updated your stack automatically.  If you don't want to use `watchtower` just comment out that section.
@@ -181,7 +181,7 @@ The first thing I did was turn on dark mode, of course, and then went into the p
 
 Here you’ll want to install the plugin for the platform you want to support.  Scripted supports many different cameras and many different hub platforms, for instance you can search for Alex and see the plugins for Amazon Alexa or Google home and see the integrations for Google home, or even Amcrest if you want to find the amcrest camera plugin!  There are lots of supported cameras but  for me this is going to be unifi so I searched for unifi and installed it.  Once it’s installed it will ask for a username and password for your unifi device.  We need to create one in UniFi protect, but you’ll want to create a new local account and not provide yours!
 
-![Scrypted plugins](/assets/img/posts/scrypted-plugin-install.jpg)
+![Scrypted plugins](/assets/img/posts/scrypted-plugin-install.webp)
 _Installing the uniFi Protect Plugin for Scrypted_
 
 ## Create UniFi  Protect User
@@ -192,7 +192,7 @@ Once that user was created I then added the user and the password as well as the
 
 Once I saved my credentials I could then see all of my cameras and you can view them now, however since I am going to use HomeKit, I need to add that plugin as well.
 
-![Scrypted plugins](/assets/img/posts/scrypted-unifi-protect-user.jpg)
+![Scrypted plugins](/assets/img/posts/scrypted-unifi-protect-user.webp)
 _You'll need to create an account in UniFi Protect for Scrypted to use_
 
 ## Adding Cameras to HomeKit
@@ -209,14 +209,14 @@ Now that we have this set up, what can we do with it?
 
 Well, now in the home app I can see all of my cameras at a glance.  I can see the latest snapshot of each camera and drill in further to see a live view.  I can pin the camera too so that I can multitask.
 
-![Scrypted Apple TV Integration](/assets/img/posts/scrypted-homekit-apple-tv.jpg)
+![Scrypted Apple TV Integration](/assets/img/posts/scrypted-homekit-apple-tv.webp)
 _Finally!  Notifications on my Apple TV!_
 
 I get notifications if someone presses the doorbell and I can talk with them too.  Not only do I get notifications on my phone, but I also get them on my macbook, ipad, and even AppleTV -  so just in case I am “super busy” watching something that’s “super important” I can decide whether or not to get my lazy butt off the couch.
 
 Here’s the other cool thing: Since I have an  Apple TV, I can even say “Hey Siri” show me my cameras and it will show me all of my connected cameras.  From there I can browse them, pick one to watch and even listen to, and even pin it to the screen so I can keep an eye on things or if I am expecting a delivery.  If they are in the same zone as other devices, I can interact with these devices too, like toggling on and off the lights on my porch.
 
-![Scrypted Apple TV Picture in a Picture](/assets/img/posts/scrypted-pip-tv-game.jpg)
+![Scrypted Apple TV Picture in a Picture](/assets/img/posts/scrypted-pip-tv-game.webp)
 Picture in a Picture on my TV!_
 
 ## More Scrypted Compatibility

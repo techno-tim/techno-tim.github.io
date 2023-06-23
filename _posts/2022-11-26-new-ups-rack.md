@@ -5,7 +5,7 @@ date: 2022-11-26 09:00:00 -0500
 categories: homelab
 tags: ups eaton tripp-lite server server-rack
 image:
-  path: /assets/img/headers/ups-install.jpg
+  path: /assets/img/headers/ups-install.webp
 ---
 
 Today I look at 2 (or 3 depending on how you count them) UPS systems from Tripp Lite and Eaton.  These UPS devices couldn't be any different but they are awesome nonetheless.  Each has it's own unique capabilities and features.  Which on will you choose when looking for your next UPS?  Join me as we walk through and review these type UPS systems and rack them in my new rack!

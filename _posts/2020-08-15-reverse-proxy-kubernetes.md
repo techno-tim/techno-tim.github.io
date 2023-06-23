@@ -5,7 +5,7 @@ date: 2020-08-15 09:00:00 -0500
 categories: kubernetes rancher
 tags: homelab rancher kubernetes traefik wsl metal-lb
 image:
-  path: /assets/img/headers/traffic-light.jpg
+  path: /assets/img/headers/traffic-light.webp
 ---
 
 Are you self-hosting lots of services at home in your homelab?  Have you been port forwarding or using VPN to access your self-hosted services wishing you had certificates so that you can access them securely over SSL?  Well after this video, you can!  In this step by step tutorial we'll walk through setting up Rancher and Kubernetes with a reverse proxy, Kubernetes Ingress, MetalLB, Traefik, Let's Encrypt, and DNS giving you free certificates.

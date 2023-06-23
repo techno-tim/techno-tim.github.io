@@ -5,7 +5,7 @@ date: 2020-04-26 09:00:00 -0500
 categories: homelab
 tags: homelab rancher kubernetes
 image:
-  path: /assets/img/headers/virtual-pixels.jpg
+  path: /assets/img/headers/virtual-pixels.webp
 ---
 
 Looking for new ideas on how to use your virtual machines?  Well, here's the top 20 ways to use your virtual machines in your homelab.

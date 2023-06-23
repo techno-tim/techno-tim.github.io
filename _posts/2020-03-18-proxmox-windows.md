@@ -5,7 +5,7 @@ date: 2020-03-18 09:00:00 -0500
 categories: proxmox
 tags: proxmox windows
 image:
-  path: /assets/img/headers/windows-surface.jpg
+  path: /assets/img/headers/windows-surface.webp
 ---
 
 Do you need to virtualize Windows 10 with Proxmox? Join me as we install and configure Windows 10 on Proxmox VE step-by-step using the best performance options.

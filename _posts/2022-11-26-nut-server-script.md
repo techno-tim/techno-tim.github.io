@@ -5,7 +5,7 @@ date: 2022-11-28 09:00:00 -0500
 categories: homelab
 tags: homelab nut self-hosted ups pdu open-source automation
 image:
-  path: /assets/img/headers/nut-script.jpg
+  path: /assets/img/headers/nut-script.webp
 ---
 
 Here's a quick way to automate your battery backups and UPSes with and open source service called NUT server and a raspberry Pi.  

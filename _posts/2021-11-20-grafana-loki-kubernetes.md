@@ -5,7 +5,7 @@ date: 2021-11-20 7:00:00 -0500
 categories: kubernetes
 tags: homelab proxmox grafana logging promtail prometheus kubernetes helm
 image:
-  path: /assets/img/headers/logs-woods.jpg
+  path: /assets/img/headers/logs-woods.webp
 ---
 
 In my previous video ([Meet Grafana LOKI, a log aggregation system for everything](https://www.youtube.com/watch?v=h_GGd7HfKQ8) and [post](/posts/grafana-loki/), I promised that I would also explain how to install Granfana Loki on Kubernetes using `helm`.  If you're looking to set this up in `docker-compose`, be sure to check out this [video](https://www.youtube.com/watch?v=h_GGd7HfKQ8)

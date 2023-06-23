@@ -5,7 +5,7 @@ date: 2022-07-30 10:00:00 -0500
 categories: homelab
 tags: youtube live unboxing
 image:
-  path: /assets/img/headers/100-door.jpg
+  path: /assets/img/headers/100-door.webp
 ---
 
 YouTube sent a package.  I have a feeling I know what it is, but we'll all find out live!

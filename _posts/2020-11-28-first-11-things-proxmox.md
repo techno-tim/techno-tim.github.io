@@ -5,7 +5,7 @@ date: 2020-11-28 09:00:00 -0500
 categories: proxmox
 tags: homelab proxmox homelab
 image:
-  path: /assets/img/headers/engine-start.jpg
+  path: /assets/img/headers/engine-start.webp
 ---
 
 After setting up my Proxmox servers, there are a few things I do before I use them for their intended purpose.  This ranges from updates, to storage, to networking and VLANS, to uploading ISOs, to clustering, and more.  Join me as we pick up where the rest of the proxmox tutorials stop, and that's everything you need to do to make these production ready (and maybe a bonus item too).

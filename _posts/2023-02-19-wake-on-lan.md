@@ -5,7 +5,7 @@ date: 2023-02-19 10:00:00 -0500
 categories: utilities
 tags: wol windows mac linux network network wake-on-lan
 image:
-  path: /assets/img/headers/electric-city.jpg
+  path: /assets/img/headers/electric-city.webp
 ---
 
 ## What is Wake on LAN and why is it so hard?
@@ -24,7 +24,7 @@ Once you're in you're in we'll start changing some settings.
 
 You'll want to look around for something similar to power settings.  If you do not see these options in your power settings, it could be in advanced, networking, or onboard devices.
 
-![Windows WOL Client](/assets/img/posts/intel-nuc-power-settings.jpg)
+![Windows WOL Client](/assets/img/posts/intel-nuc-power-settings.webp)
 _Power settings menu for Intel NUC.  This will look different for your machine but the idea is still the same_
 
 Here are some things to look for:
@@ -59,7 +59,7 @@ First we'll want to open the Device Manager.  You can do this from the UI or fro
 devmgmt.msc
 ```
 
-![Windows device manager](/assets/img/posts/device-manager-wol.jpg)
+![Windows device manager](/assets/img/posts/device-manager-wol.webp)
 _Be sure to select the network card that you use to connect to your network._
 
 - Once open you'll want to expand Network adapters and find your network adapter, then right click and choose **Properties**
@@ -68,7 +68,7 @@ _Be sure to select the network card that you use to connect to your network._
   - **Allow this device to wake the computer**
   - **Only allow a magic packet to wake the computer**.
 
-![Windows Power management for NIC](/assets/img/posts/windows-nic-power-management-wol.jpg)
+![Windows Power management for NIC](/assets/img/posts/windows-nic-power-management-wol.webp)
 _Power Management options for your network adapter._
 
 Then we'll need to verify a few more settings.  These settings may or may not exist and depend on your network adapter manufacturer.
@@ -263,7 +263,7 @@ For all other Macs you'll want to search System Preferences for another option.
 - Search for **"Energy Saver"**
 - Here you'll see an option to **Wake for network access**.  Be sure this is check
 
-![Windows WOL Client](/assets/img/posts/macos-wake-on-lan.jpg)
+![Windows WOL Client](/assets/img/posts/macos-wake-on-lan.webp)
 _This option might appear different in different versions of macOS and it also varies by form factor, but you'll want to be sure that the "Wake for network access" option is turned on_
 
 ## Installing a Wake on LAN client
@@ -274,7 +274,7 @@ In order to wake up a remote machine machine up, you will need a tool that can s
 
 I am a fan of doing this in a terminal however a decent Windows utility with a GUI is [WakeOnLAN](https://github.com/basildane/WakeOnLAN).  It's also open source and hosted on GitHub.  After installing it and configuring a machine to wake you should be able to wake your machine if it is on the same network and you've followed the other steps that are outlined in this guide.
 
-![Windows WOL Client](/assets/img/posts/wake-on-lan-app-windows.jpg)
+![Windows WOL Client](/assets/img/posts/wake-on-lan-app-windows.webp)
 _WakeOnLAN is an open source Windows utility that has a nice GUI_
 
 ### Linux Wake on LAN client

@@ -5,7 +5,7 @@ date: 2022-02-26 8:00:00 -0500
 categories: docker
 tags: docker docker-compose container image
 image:
-  path: /assets/img/headers/whale-water.jpg
+  path: /assets/img/headers/whale-water.webp
 ---
 
 We spin up all types of containers on my channel in my tutorials, but we have yet to build our own custom Docker container image.  Today we'll start from scratch with an empty Dockerfile and create, build, and run our very own custom Docker image!  We'll learn all the commands that everyone should know when building and maintaining images with Docker.  This tutorial is a great way to get started with Docker!

@@ -5,7 +5,7 @@ date: 2021-01-16 09:00:00 -0500
 categories: homelab
 tags: homelab unifi protect home-security hardware
 image:
-  path: /assets/img/headers/robot-toy.jpg
+  path: /assets/img/headers/robot-toy.webp
 ---
 
 

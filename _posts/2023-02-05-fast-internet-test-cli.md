@@ -5,7 +5,7 @@ date: 2023-02-05 10:00:00 -0500
 categories: utilities
 tags: fast cli linux open-source
 image:
-  path: /assets/img/headers/fast-lights.jpg
+  path: /assets/img/headers/fast-lights.webp
 ---
 
 ## What is FAST.com?

@@ -5,7 +5,7 @@ date: 2020-11-21 09:00:00 -0500
 categories: homelab
 tags: homelab hardware
 image:
-  path: /assets/img/headers/server-lights.jpg
+  path: /assets/img/headers/server-lights.webp
 ---
 
 I've been making great use of some older, bigger servers but I decided to try and build, upgrade, and migrate to some 1U servers.  Join me as we unbox and build my 2 new virtualization servers!

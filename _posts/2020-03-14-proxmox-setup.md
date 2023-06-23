@@ -5,7 +5,7 @@ date: 2020-03-14 09:00:00 -0500
 categories: homelab
 tags: homelab rancher kubernetes
 image:
-  path: /assets/img/headers/laptop-start.jpg
+  path: /assets/img/headers/laptop-start.webp
 ---
 
 Do you need to virtualize something at home?  Thinking of building your own Homelab? (The answer is YES).  Join me as we install and configure Proxmox VE step-by-step.

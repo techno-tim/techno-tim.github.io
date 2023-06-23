@@ -5,7 +5,7 @@ date: 2023-03-04 10:00:00 -0500
 categories: homelab
 tags: unifi vlan network
 image:
-  path: /assets/img/headers/network-fiber.jpg
+  path: /assets/img/headers/network-fiber.webp
 ---
 
 ## What is a VLAN and How Do They Help?
@@ -43,7 +43,7 @@ UniFi UDM Pro - <https://amzn.to/3J8Ebtw>
 
 ## How to Create a VLAN with UniFi
 
-![Unifi Network - Networks](/assets/img/posts/unifi-na-networks.jpg)
+![Unifi Network - Networks](/assets/img/posts/unifi-na-networks.webp)
 _A list of common VLANs in UniFi Network Application_
 
 - Navigate Settings
@@ -66,7 +66,7 @@ Congrats you just created your first VLAN! 🎉
 
 ## Creating Wireless Network for a VLAN
 
-![Unifi Network - WiFi](/assets/img/posts/unifi-na-wifi-networks.jpg)
+![Unifi Network - WiFi](/assets/img/posts/unifi-na-wifi-networks.webp)
 _A list of common WiFI networks in UniFi Network Application_
 
 Once we’ve created our VLAN, we can now add this to a wireless network.  This is perfect for IoT devices or really any VLAN that you want to use over your wireless network.
@@ -83,7 +83,7 @@ If you check your access points, you can now see this wireless network being set
 
 ## Assigning a VLAN to a Switch port
 
-![Unifi Network - Ports](/assets/img/posts/unifi-na-ports.jpg)
+![Unifi Network - Ports](/assets/img/posts/unifi-na-ports.webp)
 _UniFi Network application port management_
 
 You can now assign this to one of your switch post by going into your switch and assigning it this VLAN / VLAN ID
@@ -100,7 +100,7 @@ We can fix that, with a firewall rule!
 
 ## Configuring a Network Profile
 
-![Unifi Network - Profiles](/assets/img/posts/unifi-na-profiles.jpg)
+![Unifi Network - Profiles](/assets/img/posts/unifi-na-profiles.webp)
 _A list of common WiFI networks in UniFi Network Application_
 
 Before we set up our firewall rules, first let's create a profile.  Profiles are a simple way to group items or alias them.  This comes in handy later when creating firewall rules.
@@ -143,7 +143,7 @@ You'll also want to be sure that this rule applies after every rule that you wan
 
 ## Testing
 
-![Testing Your Rules](/assets/img/posts/vlan-testing-rules.jpg)
+![Testing Your Rules](/assets/img/posts/vlan-testing-rules.webp)
 _Be sure to test all of your firewall rules!_
 
 Once you have these rules in place, I highly recommend you test your firewall rules.  Some examples of things you should test

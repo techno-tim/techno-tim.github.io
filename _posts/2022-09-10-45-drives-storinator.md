@@ -5,7 +5,7 @@ date: 2022-09-10 09:00:00 -0500
 categories: homelab
 tags: homelab hardware server storinator 45-drives
 image:
-  path: /assets/img/headers/hard-drive-wood.jpg
+  path: /assets/img/headers/hard-drive-wood.webp
 ---
 
 Check out my new server!  It's an Storinator  AV15 from 45 Drives loaded with lots of great upgrades!  Will it be my new high performance storage server and replace TrueNAS?  Will it be my new hypervisor and replace one of my Proxmox servers?  Or will I cluster this server and do something else? Let's see what this server is made of first!

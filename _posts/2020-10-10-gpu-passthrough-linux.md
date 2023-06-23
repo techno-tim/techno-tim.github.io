@@ -5,7 +5,7 @@ date: 2020-10-10 09:00:00 -0500
 categories: homelab
 tags: homelab rancher kubernetes docker portainer nvidia hardware
 image:
-  path: /assets/img/headers/gpu-pc.jpg
+  path: /assets/img/headers/gpu-pc.webp
 ---
 
 We've already figured out how to pass through a GPU to Windows machine but why let Windows have all the fun?  Today, we do it on an Ubuntu headless server that's virtualized, run some AI and Deep Learning workloads, then turn up the transcoding on Plex to 11.

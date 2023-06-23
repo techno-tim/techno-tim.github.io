@@ -5,7 +5,7 @@ date: 2020-10-17 09:00:00 -0500
 categories: self-hosted
 tags: homelab rancher kubernetes docker self-hosted mysql database portainer
 image:
-  path: /assets/img/headers/library-floors.jpg
+  path: /assets/img/headers/library-floors.webp
 ---
 
 Have you been putting off migrating your database to Docker and Kubernetes like I have?  Well wait no longer.  It's simple using this step-by-step tutorial.  Today, we'll move a database that's on a virtual machine to a container that's running in kubernetes.  Oh yeah, this will also work if it's a bare metal server too, duh.  🙂

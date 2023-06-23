@@ -5,7 +5,7 @@ date: 2022-02-12 8:00:00 -0500
 categories: homelab
 tags: homelab hardware security self-hosted crowdsec traefik fail2ban
 image:
-  path: /assets/img/headers/crowd-concert.jpg
+  path: /assets/img/headers/crowd-concert.webp
 ---
 
 [CrowdSec](https://crowdsec.net/) is a free, open-source and collaborative IPS. Analyze behaviors, respond to attacks & share signals across the community.  With CrowdSec, you can set up your own intrusion detection system that parses logs, detects and blocks threats, and shares bad actors with the larger CrowdSec community.  It works great with a reverse proxy like [traefik](https://traefik.io/) to help keep hackers at bay.  Could this be a viable alternative to fail2ban?

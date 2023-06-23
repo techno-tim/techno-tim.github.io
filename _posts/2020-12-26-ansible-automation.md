@@ -5,7 +5,7 @@ date: 2020-12-26 09:00:00 -0500
 categories: homelab
 tags: homelab ansible
 image:
-  path: /assets/img/headers/car-assembly.jpg
+  path: /assets/img/headers/car-assembly.webp
 ---
 
 Ansible.  Need I say more?  Well, maybe, if you've never heard of it. Ansible is a simple IT / DevOps automation that anyone can use.  You can Automate anything with an SSH connection and WITHOUT installing any agents or clients. Join me as we set up, configure and start automating with Ansible!

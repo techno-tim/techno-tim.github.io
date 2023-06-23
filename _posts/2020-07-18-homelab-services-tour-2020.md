@@ -5,7 +5,7 @@ date: 2020-07-18 09:00:00 -0500
 categories: homelab
 tags: homelab rancher kubernetes proxmox truenas docker
 image:
-  path: /assets/img/headers/postit-light.jpg
+  path: /assets/img/headers/postit-light.webp
 ---
 
 In my homelab tour, I  showed you my hardware and network setup that powers all the infrastructure at home.  Then, many of you asked which services I am hosting on this hardware.  Well, here it is.  This is a tour of all the self hosted services I have running in my Homelab.

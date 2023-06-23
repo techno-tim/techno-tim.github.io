@@ -5,7 +5,7 @@ date: 2021-04-24 09:00:00 -0500
 categories: traefik
 tags: homelab pi-hole dns traefik portainer ssl self-hosted docker
 image:
-  path: /assets/img/headers/card-joker.jpg
+  path: /assets/img/headers/card-joker.webp
 ---
 
 Today, we're going to use SSL for everything.  No more self-sign certs.  No more http.  No more hosting things on odd ports.  We're going all in with SSL for our internal services and our external services too.  We going to set up a reverse proxy using Traefik, Portainer, and use that to get wildcard certificates from Let's Encrypt. Join me and let's secure all the things.

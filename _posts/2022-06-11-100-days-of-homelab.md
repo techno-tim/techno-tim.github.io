@@ -5,7 +5,7 @@ date: 2022-06-11 10:00:00 -0500
 categories: homelab
 tags: homelab challenge
 image:
-  path: /assets/img/headers/teamwork-table.jpg
+  path: /assets/img/headers/teamwork-table.webp
 ---
 
 It's here. The #100DaysOfHomeLab challenge!  This challenge is meant to accelerate your knowledge in servers, networking, infrastructure, automation, storage, containerization, orchestration, virtualization, Windows, Linux, and more.  It can even possibly accelerate your IT career!  So, commit to the Hundred Days of HomeLab challenge, share your progress, and encourage others along the way!  

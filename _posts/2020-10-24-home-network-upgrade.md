@@ -5,7 +5,7 @@ date: 2020-10-24 09:00:00 -0500
 categories: homelab
 tags: homelab network hardware unifi
 image:
-  path: /assets/img/headers/energy-blue.jpg
+  path: /assets/img/headers/energy-blue.webp
 ---
 
 I decided to give my Home Lab a proper upgrade for 2020 and in to 2021!  I finally took the plunge and went all in with a UniFi UDM Pro and a UniFi Switch PRO 24 PoE switch and they are awesome!

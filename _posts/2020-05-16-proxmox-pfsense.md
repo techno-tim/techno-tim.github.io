@@ -5,7 +5,7 @@ date: 2020-05-16 09:00:00 -0500
 categories: homelab
 tags: homelab rancher kubernetes
 image:
-  path: /assets/img/headers/brick-door.jpg
+  path: /assets/img/headers/brick-door.webp
 ---
 
 It's time to say goodbye to your home router and start virtualizing it using Proxmox and pfSense.

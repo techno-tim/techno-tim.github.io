@@ -5,7 +5,7 @@ date: 2023-02-18 10:00:00 -0500
 categories: homelab
 tags: pikvm kvm raspberry-pi hardware arch homelab linux
 image:
-  path: /assets/img/headers/kvm-dark-desktop.jpg
+  path: /assets/img/headers/kvm-dark-desktop.webp
 ---
 
 ## What is the PiKVM?
@@ -17,7 +17,7 @@ This is all great except for one small thing, unlike a traditional KVM that lets
 {% include embed/youtube.html id='aOgcqVcY4Yg' %}
 📺 [Watch Video](https://www.youtube.com/watch?v=aOgcqVcY4Yg)
 
-![PiKVM v3 Hello screen](/assets/img/posts/pikvm-v3-lcd-hello.jpg)
+![PiKVM v3 Hello screen](/assets/img/posts/pikvm-v3-lcd-hello.webp)
 _The little LCD is both cute and functional_
 
 You can build a PiKVM yourself by purchasing the PiKVM v3 HAT which is a great choice if you already have a raspberry pi4 and are willing to build it yourself.  Or if you have a Pi Zero you can even build it using some inexpensive parts and without soldering.  But chances are you have neither since raspberry pis are impossible to find and buying a pre-assembled kit is the only option.  It was for me and that’s what I ended up doing.  I purchased the PiKVM v3 pre-assembled which comes with a Raspberry Pi 4 2GB model, 32GB micro SD card, power supply, an HDMI cable, a USB C to USB A cable, and a nice case.  The steel case is solid and feels sturdy and industrial.  The PiKVM has lots of connections, connections for power, USB devices, mouse and keyboard emulation, RJ45 to serial connection, HDMI, and even an RJ45 connector for ATX power which lets me hook this up to a motherboard to power it on and off remotely.  The other cool thing you get with the pre-assembled kit is the little LCD screen that shows system information and a cute cat when it boots. It comes pre-flashed with PiKVM installed and ready to go.
@@ -49,7 +49,7 @@ I tested PiKVM on my workbench with this old intel NUC and it worked fine.  I wa
 
 I decided to put my PiKVM on this little shelf for now but I’ll probably find somewhere a little more permanent to place it.   Once I had everything hooked up, that’s when the troubles began.  I could remote into some of the NUCs running Linux and the PC conversion, but not the ones running Windows.  I thought for sure that it was something with my connection so I checked all of the connections over and over again.  It was right around that time that the creator of PiKVM [Max Devaev](https://github.com/mdevaev) reach out to me asking me how I was liking the PiKVM and to let him know if I ran into any troubles because he was interested in advanced use cases for the PiKVM.  I’m not sure why he thought I was going to be using this in an advanced way…. But he was right…
 
-![TESmart switch with PiKVM](/assets/img/posts/pikvm-tesmart-8-port-switch.jpg)
+![TESmart switch with PiKVM](/assets/img/posts/pikvm-tesmart-8-port-switch.webp)
 _This was my first attempt with a TESmart Switch_
 
 I worked with Max for a few days on and off over discord.  He sent snippets of code for me to run and even gave me lots of EDIDs to try. EDIDs (Extended Display Identification Data) are a signature or metadata that tell a device how to work with the monitor.  Sometimes we could get the Linux machines running on the TESmart switch working, but not the Windows machines.   And other times we could get the Windows machines working but not the Linux machines.  We ended up discovering that the TESmart HDMI switch would “poison” the PiKVM and send the TESmart EDID rather than the one from the PiKVM.  
@@ -101,7 +101,7 @@ The real magic of this device is that it has a micro USB management port on the 
 
 Oh, speaking of the TESmart, after working with Max for a while on this device he mentioned that this might work with the new v4 version of the PiKVM which just [recently launched on Kickstarter](https://www.kickstarter.com/projects/mdevaev/pikvm-v4).  He said he was going to send one of their prototypes to test so, fingers crossed it works.  I will be sure to create a v4 video once it’s released and hopefully it supports the TESmart switch.
 
-![EZCOO switch with PiKVM](/assets/img/posts/ezcoo-switch-back.jpg)
+![EZCOO switch with PiKVM](/assets/img/posts/ezcoo-switch-back.webp)
 _This EZCOO is small, compact, and 100% compatible_
 
 ## Putting it all together
@@ -112,12 +112,12 @@ But running HD videos probably isn’t the reason you want a KVM, it’s more li
 
 Want to install Linux on a machine that’s powered off, no problem.  Just attach the virtual drive to the machine, send a wake on lan packet to wake it up, then boot from the virtual drive and install! You could also attach the ATX power control to the header of the motherboard if you like and power it on that way, but I have network access to all of my machines so I will use wake on lan.  Plus, it’s super awesome to be able to wake devices up over the network.   And here’s where it gets really awesome,  remember how I said that my KVM also has a USB Hub?  Well, I’ve attached a 64GB USB drive to it with [Ventoy](/posts/ventoy-tutorial/) installed that has every ISO I could ever need.  As I switch inputs between machines it attaches the USB drive with Ventoy to each machine allowing me to install any operating system I want.
 
-![EZCOO switch with PiKVM and everything connected](/assets/img/posts/ezcoo-switch-connected-usb.jpg)
+![EZCOO switch with PiKVM and everything connected](/assets/img/posts/ezcoo-switch-connected-usb.webp)
 _You can make this even more powerful by adding a USB drive and Ventoy_
 
 Because the PiKVM is hackable, I’ve customized the GPIO menu to let me switch between devices, wake them up, wake them up on different NICs, and restart the `kvmd` service or the PiKVM itself. (See my config below)  I should say that I didn’t really “hack” it, this isn’t a “techno tim” hack - there’s an overrides file that lets you customize most of the PiKVM so I didn’t go totally off the rails.  It even has a web ui to give you terminal access to your PiKVM in case you aren’t able to use SSH, which is super handy if you’re mobile. But this little device has so many features already and the fact that the software is open source and continues to be updated makes this solution such a great investment for me.
 
-![PiKVM remote control menu](/assets/img/posts/pikvm-remote-control-menu.jpg)
+![PiKVM remote control menu](/assets/img/posts/pikvm-remote-control-menu.webp)
 _You can customize the menu however you like (my config below), here I added WoL for each network card and even a way to restart the PiKVM from the menu_
 
 ## Is it worth it?

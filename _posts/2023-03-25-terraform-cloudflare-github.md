@@ -5,7 +5,7 @@ date: 2023-03-25 10:00:00 -0500
 categories: cloud
 tags: terraform hashicorp cloudflare github cloud homelab
 image:
-  path: /assets/img/headers/terraform-mars.jpg
+  path: /assets/img/headers/terraform-mars.webp
 ---
 
 

@@ -5,7 +5,7 @@ date: 2021-10-03 10:00:00 -0500
 categories: self-hosted
 tags: homelab uptime-kuma self-hosted docker monitoring alerting open-source
 image:
-  path: /assets/img/headers/green-kuma.jpg
+  path: /assets/img/headers/green-kuma.webp
 ---
 
 You've spun up lots of self-hosted services in your HomeLab but you haven't set up monitoring and alerting yet.  Well, be glad you waited because today well set up Uptime Kuma to do just that.  Uptime Kuma is a self-hosted, open source, fancy uptime monitoring and alerting system.  It can monitor HTTP, HTTP with keyword, TCP, Ping, and even DNS systems!

@@ -5,7 +5,7 @@ date: 2021-07-31 15:00:00 -0500
 categories: vlog
 tags: homelab office youtube content-creation adobe hardware
 image:
-  path: /assets/img/headers/camera-neon.jpg
+  path: /assets/img/headers/camera-neon.webp
 ---
 
 

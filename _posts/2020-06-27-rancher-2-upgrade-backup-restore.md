@@ -5,7 +5,7 @@ date: 2020-06-27 09:00:00 -0500
 categories: kubernetes rancher
 tags: homelab rancher kubernetes
 image:
-  path: /assets/img/headers/floppy-black.jpg
+  path: /assets/img/headers/floppy-black.webp
 ---
 
 It use to be hard to back up Rancher, but with Rancher 2 it's super simple.  Upgrading, backing up, and restoring your Rancher server should be part of your regular routine.  Join me in this tutorial as we walk through backing up, upgrading, and restoring a single node Rancher Docker install in just a couple of minutes.  Trust me, you'll feel better after you do.

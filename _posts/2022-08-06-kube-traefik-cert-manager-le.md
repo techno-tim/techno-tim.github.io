@@ -5,7 +5,7 @@ date: 2022-08-06 09:00:00 -0500
 categories: kubernetes
 tags: kubernetes traefik cert-manager k3s cloudflare letsencrypt
 image:
-  path: /assets/img/headers/certificate-desk.jpg
+  path: /assets/img/headers/certificate-desk.webp
 ---
 
 Traefik, cert-manager, Cloudflare, and Let's Encrypt are a winning combination when it comes to securing your services with certificates in Kubernetes.  Today, we'll install and configure Traefik, the cloud native proxy and load balancer, as our Kubernetes Ingress Controller.  We'll then install and configure cert-manager  to manage certificates for our cluster.  We'll set up Let's Encrypt as our Cluster Issuer so that cert-manager can automatically provision TLS certificates and even wildcard certificates using Cloudflare DNS challenge absolutely free.  We'll walk through all of this, step by step, so you can help secure your cluster today.

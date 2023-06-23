@@ -5,7 +5,7 @@ date: 2020-03-06 09:00:00 -0500
 categories: truenas
 tags: homelab rancher kubernetes
 image:
-  path: /assets/img/headers/folder-pink.jpg
+  path: /assets/img/headers/folder-pink.webp
 ---
 
 Setting up iSCSI with TrueNAS and Windows 10 is super simple with TrueNAS.  This is an easy way to have a hard drive installed on your machine that isn't really attached, it lives on the network.

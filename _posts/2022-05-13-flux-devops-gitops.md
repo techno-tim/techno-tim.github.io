@@ -5,7 +5,7 @@ date: 2022-05-13 08:00:00 -0500
 categories: kubernetes 
 tags: flux devops gitops kubernetes
 image:
-  path: /assets/img/headers/flux-streak.jpg
+  path: /assets/img/headers/flux-streak.webp
 ---
 
 I think I found the perfect GitOps and DevOps toolkit with FluxCD and Kubernetes.  Flux is an open source GitOps solution that helps your deploy app and infrastructure with automation.  It can monitor git  repositories, source control, image container repositories, helm repositories, and more.  It can install apps using Kustomize, Helm, Kubernetes manifests so it's designed to fit into your existing workflow.  It can even push alerts to your chat system letting you know when deployments happen.  In this tutorial we'll cover all of this and more.

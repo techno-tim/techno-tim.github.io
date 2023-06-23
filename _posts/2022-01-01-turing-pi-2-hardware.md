@@ -5,7 +5,7 @@ date: 2022-01-01 8:00:00 -0500
 categories: homelab
 tags: raspberry-pi k3s kubernetes homelab hardware turing-pi
 image:
-  path: /assets/img/headers/neon-light.jpg
+  path: /assets/img/headers/neon-light.webp
 ---
 
 The Turing Pi 2 is a compact ARM cluster that provides a scalable computing on the edge.  The Turning Pi 2 comes with many improvements over the Turning Pi 1.  This model ships with 32GB of RAM, SATA III interface, Raspberry Pi Compute module 4 support, and support for NVIDIA Jetson boards.  This means that you can mix and match both raspberry Pis along with Nvidia Jetson boards. This gives us a ton of flexibility to be able to run Pis for general compute workloads, and then Nvidia Jetsons for AI or ML workloads.  Join me as we explore the Turing Pi 2 and prepare its home inside of my HomeLab server rack.

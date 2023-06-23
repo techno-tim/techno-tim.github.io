@@ -5,7 +5,7 @@ date: 2020-05-30 09:00:00 -0500
 categories: self-hosted
 tags: homelab rancher kubernetes docker portainer self-hosted pi-hole
 image:
-  path: /assets/img/headers/fire-ring.jpg
+  path: /assets/img/headers/fire-ring.webp
 ---
 
 We know you've heard of Pihole and we know you are probably aware of how to install it but... have you tried running it on Docker and Kubernetes using Rancher?  Have you configured it for pfSense?  Don't worry, I figured out all the hard stuff for you.  So let's consolidate some hardware and services.

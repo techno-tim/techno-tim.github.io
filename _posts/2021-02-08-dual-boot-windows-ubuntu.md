@@ -5,7 +5,7 @@ date:   2021-02-08 09:00:00 -0500
 categories: homelab
 tags: windows linux homelab ubuntu
 image:
-  path: /assets/img/headers/pink-purple.jpg
+  path: /assets/img/headers/pink-purple.webp
 ---
 
 Dual booting Windows and Ubuntu Linux can be a pain however there are many benefits do doing this if you do it right.  In this tutorial we'll discuss how to dual boot Windows and Ubuntu on your PC or laptop in a few simple steps so that you can take advantage of all the hardware in your "best" machine with full access to your GPU.

@@ -5,7 +5,7 @@ date:   2021-03-14 09:00:00 -0500
 categories: kubernetes k3s 
 tags: raspberry-pi k3s kubernetes homelab hardware
 image:
-  path: /assets/img/headers/gears-green.jpg
+  path: /assets/img/headers/gears-green.webp
 ---
 
 Building a Multi-architecture CPU Kubernetes cluster is easier than you think with `k3s`.  In this video we'll build a Raspberry Pi 4 with an ARM CPU and add it to our existing x86 x64 amd64 CPU Kubernetes cluster.  Our foundation will be Ubuntu for ARM, then we'll add `k3s`, and then join it to our cluster.  We'll also discuss how this works with Docker images built for specific CPU types.  We'll also talk about some build configurations and requirements for your Pi.

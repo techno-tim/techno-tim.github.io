@@ -5,7 +5,7 @@ date: 2021-12-04 8:00:00 -0500
 categories: homelab
 tags: homelab proxmox grafana logging dns dashboard kubernetes certificates shlink littlelink-server portainer self-hosted docker rancher pi-hole heimdall plex truenas jekyll grafana loki monitoring uptime-kuma traefik nas unifi virtulization containerization
 image:
-  path: /assets/img/headers/neon-handshake.jpg
+  path: /assets/img/headers/neon-handshake.webp
 ---
 
 After showing off my Home Lab hardware in my late 2021 tour, many of you asked what services are self-hosted in this stack.   This is always a moving target so I decided it was time to share which services I am running here at home.  Today, we walk through everything I am hosting including:  Dashboard, Hypervisor, Virtualization, Containerization, Network Attached Storage (NAS), DNS, Network Management, Home Security, Kubernetes, Kubernetes Storage, Docker, Reverse Proxy, Certificates, Monitoring, Logging, Syncing Data, File Sharing, Self-Promotion (Contact Page), Link Shortening, Home Entertainment, Home Automation, Battery / UPS Monitoring, CMS, Static Site Generators, Dynamic DNS, CI/CD, and many, many others.  Enjoy the virtual tour!

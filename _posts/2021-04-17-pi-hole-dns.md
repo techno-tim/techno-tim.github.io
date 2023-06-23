@@ -5,7 +5,7 @@ date: 2021-04-17 09:00:00 -0500
 categories: homelab
 tags: homelab pi-hole dns self-hosted
 image:
-  path: /assets/img/headers/sparks-circle.jpg
+  path: /assets/img/headers/sparks-circle.webp
 ---
 
 Pi-Hole is a wonderful ad blocking DNS sever for your network, but did you know you can also use it for a Local DNS server? In this fast, simple, and easy guide we'll walk through how to create DNS Entries (A Records) for the clients on your network and also set up Aliases (pointers to A Records) so that you can start using DNS at home instead of relying on IP addresses.

@@ -5,7 +5,7 @@ date: 2020-09-12 09:00:00 -0500
 categories: self-hosted homelab
 tags: homelab rancher kubernetes gitlab
 image:
-  path: /assets/img/headers/infinity-glass.jpg
+  path: /assets/img/headers/infinity-glass.webp
 ---
 
 So you're a software engineer or a developer who wants to self-host your own code in your own homelab?  Well this is the tutorial for you!  In this step-by-step guide we'll walk through setting up a repo, building and testing our own code (with unit tests) in a self-hosted Gitlab CI runner in our CI pipeline, then we'll build a Docker image and push it up to a container registry, then we'll use kubectl in our CD pipeline to deploy our Docker container to our self-hosted kubernetes cluster!  This all happens in a couple of minutes and then we'll truly have continuous integration and continuous delivery in our homelab!

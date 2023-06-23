@@ -5,7 +5,7 @@ date: 2023-01-21 10:00:00 -0500
 categories: proxmox
 tags: homelab proxmox virtualization
 image:
-  path: /assets/img/headers/nested-eggs.jpg
+  path: /assets/img/headers/nested-eggs.webp
 ---
 
 ## What Is Nested Virtualization?

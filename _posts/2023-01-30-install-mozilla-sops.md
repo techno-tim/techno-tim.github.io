@@ -5,7 +5,7 @@ date: 2023-01-30 10:00:00 -0500
 categories: utilities
 tags: homelab secops mozilla sops cli linux open-source
 image:
-  path: /assets/img/headers/sops-install.jpg
+  path: /assets/img/headers/sops-install.webp
 ---
 
 ## What is Mozilla SOPS?

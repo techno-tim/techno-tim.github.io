@@ -5,7 +5,7 @@ date: 2020-12-12 09:00:00 -0500
 categories: self-hosted
 tags: homelab rancher kubernetes docker portainer self-hosted pi-hole gravity-sync keepalived
 image:
-  path: /assets/img/headers/metal-ball.jpg
+  path: /assets/img/headers/metal-ball.webp
 ---
 
 Dear Pi-Hole,

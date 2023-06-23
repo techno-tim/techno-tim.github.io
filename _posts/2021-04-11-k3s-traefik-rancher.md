@@ -5,7 +5,7 @@ date: 2021-04-08 09:00:00 -0500
 categories: kubernetes rancher
 tags: homelab rancher kubernetes k3s traefik
 image:
-  path: /assets/img/headers/traffic-streaks.jpg
+  path: /assets/img/headers/traffic-streaks.webp
 ---
 
 This guide is for installing `traefik 2` on `k3s`.  If you're not using rancher, that's fine, just skip to `Reconfiguring k3s`

@@ -5,7 +5,7 @@ date: 2020-12-19 09:00:00 -0500
 categories: kubernetes rancher
 tags: homelab rancher kubernetes k3s
 image:
-  path: /assets/img/headers/rancher-cattle.jpg
+  path: /assets/img/headers/rancher-cattle.webp
 ---
 
 Are you running Kubernetes in your homelab or in the enterprise?

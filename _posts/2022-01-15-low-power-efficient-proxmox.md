@@ -5,7 +5,7 @@ date: 2022-01-15 8:00:00 -0500
 categories: homelab
 tags: homelab proxmox hardware
 image:
-  path: /assets/img/headers/small-sun.jpg
+  path: /assets/img/headers/small-sun.webp
 ---
 
 Have you been thinking about building a low power, efficient, small  form factor but performant Proxmox server?  This is the perfect home server build for anyone who wanted to virtualize some machines while still staying green.  This tiny, silent, and efficient build is one that won't drive up your electricity bill either.  

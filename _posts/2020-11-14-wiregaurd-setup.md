@@ -5,7 +5,7 @@ date: 2020-11-14 09:00:00 -0500
 categories: self-hosted
 tags: homelab rancher kubernetes docker wireguard self-hosted vpn portainer
 image:
-  path: /assets/img/headers/energy-ball.jpg
+  path: /assets/img/headers/energy-ball.webp
 ---
 
 Self hosting a VPN has traditionally been hard to set up and we've had very few options.  That is until WireGuard came about. WireGuard is an extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography.  It also supports running inside of a Docker container and that's exactly what we'll be using in this tutorial!

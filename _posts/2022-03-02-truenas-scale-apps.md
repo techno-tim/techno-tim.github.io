@@ -5,7 +5,7 @@ date: 2022-03-02 8:00:00 -0500
 categories: truenas
 tags: homelab docker-compose container image helm kubernetes k3s truenas docker
 image:
-  path: /assets/img/headers/books-shelf.jpg
+  path: /assets/img/headers/books-shelf.webp
 ---
 
 TrueNAS SCALE is here and with it comes new way of installing and managing applications.  You can install official apps, unofficial and community apps using TrueCharts, and also any Docker image or Kubernetes deployment with helm.  Join me as we dive into managing applications and exploring TrueNAS SCALES's new app engine that runs Docker, Kubernetes, and K3S.

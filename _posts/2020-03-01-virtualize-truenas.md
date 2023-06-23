@@ -5,7 +5,7 @@ date: 2020-03-01 09:00:00 -0500
 categories: truenas
 tags: truenas proxmox windows
 image:
-  path: /assets/img/headers/folder-black.jpg
+  path: /assets/img/headers/folder-black.webp
 ---
 
 Do you want a DIY NAS?  Do you want to set up TrueNAS?  Have you considered virtualizing TrueNAS with Proxmox?  In this video we'll walk through installing and setting up TrueNAS and configure a samba share for Windows.  We'll also install it on a virtual server using ProxmoxVE that's running in my Homelab.  Both are free and open source.

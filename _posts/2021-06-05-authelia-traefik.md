@@ -5,7 +5,7 @@ date: 2021-06-05 09:00:00 -0500
 categories: traefik
 tags: authelia homelab traefik portainer ssl docker self-hosted
 image:
-  path: /assets/img/headers/lock-night.jpg
+  path: /assets/img/headers/lock-night.webp
 ---
 
 Authelia is an open source Single Sign On and 2FA companion for reverse proxies.  It helps you secure your endpoints with single factor and 2 factor auth.  It works with Nginx, Traefik, and HA proxy.  Today, we'll configure Authelia with Portainer and Traefik and have 2 Factor up and running with brute force protection!

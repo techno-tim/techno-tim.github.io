@@ -5,7 +5,7 @@ date:   2021-02-19 09:00:00 -0500
 categories: portainer
 tags: portainer kubernetes homelab docker
 image:
-  path: /assets/img/headers/port-container.jpg
+  path: /assets/img/headers/port-container.webp
 ---
 
 Updating Portainer is easy, if you know how.  In this quick no fluff video, I will show you how to update any version of Portainer.  This guide can be used for installing it too.  Portainer is a container management system for Docker, Kubernetes, Swarm, and Azure ACI.  Portainer is free and open source.

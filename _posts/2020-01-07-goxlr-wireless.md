@@ -5,7 +5,7 @@ date: 2020-01-07 09:00:00 -0500
 categories: streaming
 tags: goxlr streaming twitch hardware
 image:
-  path: /assets/img/headers/headset-black.jpg
+  path: /assets/img/headers/headset-black.webp
 ---
 
 Connect any wireless headset to a GoXLR or GoXLR mini. In this video, I show you how you can connect any pair of wireless bluetooth headphones to a GoXLR or GoXLR mini.  They can be AirPods, Beats, Beats Wireless Pro, Bose, or any other wireless bluetooth headset.  You can use this bluetooth adapter transmitter to stream while using the GoXLR or GoXLR mini.

@@ -5,7 +5,7 @@ date: 2023-01-28 09:00:00 -0500
 categories: maas
 tags: homelab packer maas hashicorp canonical ubuntu proxmox open-source
 image:
-  path: /assets/img/headers/metal-packer.jpg
+  path: /assets/img/headers/metal-packer.webp
 ---
 
 MaaS or Metal as a service from Canonical is a great way to provision bare metal machines as well as virtual machines.  MaaS allows you to deploy Windows, Linux, ESXi, and many other operating systems to your systems helping you to build a bare metal cloud.  You can even use Packer from Hashicorp to configure custom images too!  We'll cover all of this and more in this tutorial on how to install and configure MaaS from start to finish with Packer!

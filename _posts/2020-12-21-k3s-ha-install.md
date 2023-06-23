@@ -5,7 +5,7 @@ date: 2020-12-19 09:00:00 -0500
 categories: kubernetes k3s
 tags: homelab rancher kubernetes k3s mysql nginx
 image:
-  path: /assets/img/headers/prism-neon.jpg
+  path: /assets/img/headers/prism-neon.webp
 ---
 
 Are you running Kubernetes in your homelab or in the enterprise?  Do you want an easy way to manage and create Kubernetes clusters? Do you want high availability Rancher? Join me as we walk through stalling Rancher on an existing high availability k3s cluster in this step-by-step tutorial.  We install Rancher, configure a load balancer, install and configure helm, install cert-manager, configure Rancher, walk through the GUI, scale up our cluster, and set up a health check and liveness check!  Join me, it's easy in this straightforward guide.

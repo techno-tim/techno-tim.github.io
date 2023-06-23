@@ -5,7 +5,7 @@ date: 2020-03-20 09:00:00 -0500
 categories: proxmox
 tags: proxmox ubuntu linux
 image:
-  path: /assets/img/headers/ubuntu-terminal.jpg
+  path: /assets/img/headers/ubuntu-terminal.webp
 ---
 
 Do you need to virtualize Ubuntu Server with Proxmox? Join me as we install and configure Ubuntu Server LTS on Proxmox VE step-by-step using the best performance options.

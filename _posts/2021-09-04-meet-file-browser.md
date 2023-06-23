@@ -5,7 +5,7 @@ date: 2021-09-04 10:00:00 -0500
 categories: self-hosted
 tags: homelab portainer self-hosted docker rancher file-browser
 image:
-  path: /assets/img/headers/folders-colorful.jpg
+  path: /assets/img/headers/folders-colorful.webp
 ---
 
 Meet [File Browser](https://github.com/filebrowser/filebrowser), an open source, self-hosted alternative to services like Dropbox and other web based file browsers.  Today we'll configure a containerized version of File Browser and have you up and going in just a few minutes.  We'll also walk through creating, editing, moving, copying, and even sharing files and folders so that you get a better understanding about what File Browser is all about.

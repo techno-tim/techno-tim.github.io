@@ -5,7 +5,7 @@ date: 2021-02-01 09:00:00 -0500
 categories: homelab
 tags: windows linux homelab machine-learning deep-learning ai nvidia hardware life
 image:
-  path: /assets/img/headers/lego-red.jpg
+  path: /assets/img/headers/lego-red.webp
 ---
 
 My life, ran against a neural network and detected by Deep Learning.  If you'd like to see how this video was generated using ML and Deep Learning, check out the video here:

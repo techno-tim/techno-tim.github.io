@@ -5,7 +5,7 @@ date: 2023-01-14 10:00:00 -0500
 categories: truenas
 tags: homelab truenas zfs storage open-source
 image:
-  path: /assets/img/headers/stretch-cat.jpg
+  path: /assets/img/headers/stretch-cat.webp
 ---
 
 ZFS is a great file system that comes with TrueNAS and can meet all of your storage needs.  But with it comes some complexity on how to manage and expand your ZFS storage pools.  Over the last week I learned all about storage pools and how to move them, expand them, and even what not to do when trying to grow your storage pool.  Join me as I figure out how to move a 20 TB pool to my new storage server with 100 TB of raw data.

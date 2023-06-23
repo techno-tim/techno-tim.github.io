@@ -5,7 +5,7 @@ date: 2022-03-26 10:00:00 -0500
 categories: kubernetes k3s
 tags: k3s rancher etcd ansible cloud-image metallb kube-vip
 image:
-  path: /assets/img/headers/k8s-blocks.jpg
+  path: /assets/img/headers/k8s-blocks.webp
 ---
 
 Setting up k3s is hard.  That's why we made it easy.  Today we'll set up a High Availability K3s cluster using etcd, MetalLB, kube-vip, and Ansible.  We'll automate the entire process giving you an easy, repeatable way to create a k3s cluster that you can run in a few minutes.

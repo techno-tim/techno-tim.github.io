@@ -5,7 +5,7 @@ date: 2022-08-27 09:00:00 -0500
 categories: homelab
 tags: homelab tools accessories
 image:
-  path: /assets/img/headers/tools-desk.jpg
+  path: /assets/img/headers/tools-desk.webp
 ---
 
 Every Home Labber and IT person has their go to set of tools and accessories to help them accomplish tasks for technical projects in their HomeLab.  This ranges from the very specialized, to the common.  I do all kinds of projects at home, from building and racking servers, to building mini and full-size PCs, to upgrading and troubleshooting hardware, to home office upgrades, to installing wireless access points and cameras, down to building raspberry pi projects.  I’ve gathered up some of my most essential tools and accessories to assist you in your projects!

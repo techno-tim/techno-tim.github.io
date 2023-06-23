@@ -5,7 +5,7 @@ date: 2021-08-14 11:00:00 -0500
 categories: docker
 tags: homelab docker docker-compose
 image:
-  path: /assets/img/headers/docker-gold.jpg
+  path: /assets/img/headers/docker-gold.webp
 ---
 
 This guide will walk you through how to Install Docker Engine, containerd, and Docker Compose on Ubuntu.

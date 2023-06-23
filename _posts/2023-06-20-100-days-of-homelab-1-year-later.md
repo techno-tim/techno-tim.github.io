@@ -5,7 +5,7 @@ date: 2023-06-20 10:00:00 -0500
 categories: homelab
 tags: homelab
 image:
-  path: /assets/img/headers/homelab-rocket-servers.jpg
+  path: /assets/img/headers/homelab-rocket-servers.webp
 ---
 
 A year ago I started a challenge that encouraged everyone to join the [#100DaysOfHomeLab challenge](/posts/100-days-of-homelab), a challenge designed to help improve your skills in IT. This is similar to any of the "100 Days" challenges - pick a topic, stick with it for 100 days, and form a habit. Some of you might be asking what a "HomeLab" is, and I think in it's simplest terms it's a "lab environment" mostly at home. Think of this as a test environment to learn about technology without the fear of breaking anything. If you'd like to learn more about HomeLabs and how to get started, I [summarized it in a video](https://www.youtube.com/watch?v=gPGf4Y8nQqM).

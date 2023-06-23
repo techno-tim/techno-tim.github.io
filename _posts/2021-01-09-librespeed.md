@@ -5,7 +5,7 @@ date: 2021-01-09 09:00:00 -0500
 categories: self-hosted
 tags: homelab rancher kubernetes docker librespeed self-hosted
 image:
-  path: /assets/img/headers/rocket-illustration.jpg
+  path: /assets/img/headers/rocket-illustration.webp
 ---
 
 Internet speed tests are full of junk, ads, tracking, and some even contain deprecated plug-ins.  Who needs this when we can self-host an open source one?  LibreSpeed is a lightweight speedtest implemented in JavaScript using XHR requests and web workers.  It's fast, feature rich, and supports every modern browser.  Say goodbye to those other speed tests and host your own containerized in Docker or Kubernetes today!

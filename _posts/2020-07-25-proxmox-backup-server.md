@@ -5,7 +5,7 @@ date: 2020-07-25 09:00:00 -0500
 categories: proxmox
 tags: homelab proxmox
 image:
-  path: /assets/img/headers/floppy-red.jpg
+  path: /assets/img/headers/floppy-red.webp
 ---
 
 Proxmox Backup Server is an enterprise-class client-server backup software that backs up virtual machines, containers, and physical hosts.  In this step by step tutorial, we install and configure Proxmox Backup Server (PBS) and back up all of our virtual machines. We'll start with nothing and end up with a fully functional Proxmox Backup Server with a ZFS datastore you can use to back up and restore your machines today.  

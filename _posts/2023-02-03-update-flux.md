@@ -5,7 +5,7 @@ date: 2023-02-03 20:00:00 -0500
 categories: kubernetes
 tags: flux devops gitops kubernetes open-source
 image:
-  path: /assets/img/headers/flux-multi.jpg
+  path: /assets/img/headers/flux-multi.webp
 ---
 
 ## What is Flux?

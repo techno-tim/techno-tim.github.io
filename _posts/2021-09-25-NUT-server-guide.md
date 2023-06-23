@@ -5,7 +5,7 @@ date: 2021-09-25 10:00:00 -0500
 categories: homelab
 tags: homelab nut self-hosted docker ups pdu open-source
 image:
-  path: /assets/img/headers/lightning-island.jpg
+  path: /assets/img/headers/lightning-island.webp
 ---
 
 Meet NUT Server, or Network UPS Tools.  It's an open UPS networking monitoring tool that runs on many different operating systems and processors.  This means you can run the server on Linux, MacOS, or BSD and run the client on Windows, MacOS, Linux, and more.  It' perfect for your Pi, server, or desktop.  It works with hundreds of UPS devices, PDUs, and many other power management systems.

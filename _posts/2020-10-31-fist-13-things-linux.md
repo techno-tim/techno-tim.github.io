@@ -5,7 +5,7 @@ date: 2020-10-31 09:00:00 -0500
 categories: homelab
 tags: homelab linux ubuntu
 image:
-  path: /assets/img/headers/penguin-looking.jpg
+  path: /assets/img/headers/penguin-looking.webp
 ---
 
 After setting up my Linux servers, there are a few things I do before I use them for their intended purpose.  This ranges from security, to tools, to config.  Join me as we set up our first Linux server in this tutorial and walk through setting it up proper (and maybe some bonus items sprinkled in).

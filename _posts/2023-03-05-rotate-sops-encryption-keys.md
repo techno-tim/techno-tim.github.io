@@ -5,7 +5,7 @@ date: 2023-03-05 10:00:00 -0500
 categories: utilities
 tags: sops age flux kubernetes
 image:
-  path: /assets/img/headers/museum-hieroglyphics.jpg
+  path: /assets/img/headers/museum-hieroglyphics.webp
 ---
 
 If you've been encrypting your secrets with SOPS and Age you know how useful it is to keep your secrets safe from prying eyes. If you're not familiar with encrypting your secrets with SOPS and Age, I highly recommend checking out a post I did a while back that shows you how easy it is to [encrypt your secrets](/posts/secret-encryption-sops) and even hide them in plain sight in a Git repo.  I am happy (and relieved) that I started doing this for all of my secrets.

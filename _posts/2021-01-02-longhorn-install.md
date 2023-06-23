@@ -5,7 +5,7 @@ date: 2021-01-02 09:00:00 -0500
 categories: kubernetes rancher
 tags: homelab rancher kubernetes longhorn k3s
 image:
-  path: /assets/img/headers/longhorn-cattle.jpg
+  path: /assets/img/headers/longhorn-cattle.webp
 ---
 
 Storage in Kubernetes is hard, complicated, and messy.  Configuring volumes, mounts, and persistent volumes claims and getting it right can be a challenge.  It's also challenging to manage that storage and replicate it across all your Kubernetes clusters.  It's also been very challenging to do this on bare metal, outside of a cloud provider.  That's where Longhorn comes.  Longhorn is an open source, a CNCF distributed block storage system for Kubernetes.  It comes with a UI, backups, snapshots, cluster disaster recovery, and it does all this with or without Rancher.  Rancher is NOT a requirement.
