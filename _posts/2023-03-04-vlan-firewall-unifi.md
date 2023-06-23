@@ -45,7 +45,8 @@ UniFi UDM Pro - <https://amzn.to/3J8Ebtw>
 
 ## How to Create a VLAN with UniFi
 
-![Unifi Network - Networks](/assets/img/posts/unifi-na-networks.webp)
+![Unifi Network - Networks](/assets/img/posts/unifi-na-networks.webp){: lqip="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAYACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP4hbjWby5utVvrqRri4nuZZNzMoUFWVFBUxsCmSm9FCmQAkuGJLXUqSqzlUm7yk7t6XbtbW1l87XfXVtkxgoJRirRWyu2lq31u93329Ec79pvf+fu4/7/y//FVBR//Z
+" }
 _A list of common VLANs in UniFi Network Application_
 
 - Navigate Settings
@@ -68,7 +69,8 @@ Congrats you just created your first VLAN! 🎉
 
 ## Creating Wireless Network for a VLAN
 
-![Unifi Network - WiFi](/assets/img/posts/unifi-na-wifi-networks.webp)
+![Unifi Network - WiFi](/assets/img/posts/unifi-na-wifi-networks.webp){: lqip="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAYACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP4hrnUdSvrnVdRurqa5nkupS0lxcSTSbyrCPLTJMWjiVAAhYDCog2qK0nOdacp1JynN+9KdSTnOVrL3pyvJ6LS7e1iIxjCKjCMYRWijFKKV29krJXbu7W3vuc59pvf+fu4/7/y//FVmWf/Z
+" }
 _A list of common WiFI networks in UniFi Network Application_
 
 Once we’ve created our VLAN, we can now add this to a wireless network.  This is perfect for IoT devices or really any VLAN that you want to use over your wireless network.
@@ -85,7 +87,8 @@ If you check your access points, you can now see this wireless network being set
 
 ## Assigning a VLAN to a Switch port
 
-![Unifi Network - Ports](/assets/img/posts/unifi-na-ports.webp)
+![Unifi Network - Ports](/assets/img/posts/unifi-na-ports.webp){: lqip="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAYACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP4nNQ8RzSTXUJhtCztOks32CBppt7S/vZJppJ5VnTYESWF42x+8yJmdnlQblKU6lWTlLnfNOTs0tlZxum02+a+7Xw2islBJKXNPRXS52lu5WsrK2trWtyqKtoZ6eJJo0VBaWTBFVAXglZyFAALMbrLMQMsx5Jya6FVSSXJTdkld01d26v3t318yXRk237Wtq29KiS+S9novI//Z
+" }
 _UniFi Network application port management_
 
 You can now assign this to one of your switch post by going into your switch and assigning it this VLAN / VLAN ID
@@ -102,7 +105,9 @@ We can fix that, with a firewall rule!
 
 ## Configuring a Network Profile
 
-![Unifi Network - Profiles](/assets/img/posts/unifi-na-profiles.webp)
+![Unifi Network - Profiles](/assets/img/posts/unifi-na-profiles.webp){: lqip="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAYACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP4h5tZEt7q1zdQ3rTXssyj7Jqr28UIaRDIwS8s9TleSR4yzN9oVVErpGiDZtupPnnKaShzO9lKcrO2r5pynNtu7blJu7fTQmK5Ypczlbq1FPfTSMYx0WitFaLW7uzBknuy7mK5ukjLsY0ku5ZHVCTsV5FWJZHVcBnWKMMQWEaA7RBR//9k=
+" }
+
 _A list of common WiFI networks in UniFi Network Application_
 
 Before we set up our firewall rules, first let's create a profile.  Profiles are a simple way to group items or alias them.  This comes in handy later when creating firewall rules.
@@ -145,7 +150,9 @@ You'll also want to be sure that this rule applies after every rule that you wan
 
 ## Testing
 
-![Testing Your Rules](/assets/img/posts/vlan-testing-rules.webp)
+![Testing Your Rules](/assets/img/posts/vlan-testing-rules.webp){: lqip="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAYACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APz0/wCC2kGk6D8EfCWnNBJdXsPxa8O3L3TRReXLp934F8fXlgpDyyOLkWdxp4u4/mhS7juPJleFYWb+9PpD8Z4ni/wPyLFYzB4fBYiPihXoqjg+aWGjhsuw/G+X4WSlUaqe2rYalRq4mKiqaxDqKneCg3/jt9BjgaHh79KPjjh/L85zHOMoj4F5RmSxGbumswlmeeT8Mc5zCMoYeP1f6phcbjMdhcvnzuu8DHDuulWnVUf5dH8Y6ZG7xnSTlGZDhbbHykjj5Bxx6D6V/BZ/sSf/2Q==
+" }
+
 _Be sure to test all of your firewall rules!_
 
 Once you have these rules in place, I highly recommend you test your firewall rules.  Some examples of things you should test

@@ -26,7 +26,8 @@ Once you're in you're in we'll start changing some settings.
 
 You'll want to look around for something similar to power settings.  If you do not see these options in your power settings, it could be in advanced, networking, or onboard devices.
 
-![Windows WOL Client](/assets/img/posts/intel-nuc-power-settings.webp)
+![Windows WOL Client](/assets/img/posts/intel-nuc-power-settings.webp){: lqip="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAYACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP49re4+0eD9R0O5Fo2oX91ozt4pOlo+r6DpdoNPF1aaTDHf2tvfteGS4e4F81u0u2KOO5tfMlkH6tWoVamEcKWLarSpR5b4SnCKqaPWrGrOdv7/ALNy1+FH49RxVKljIyq4GLoRqSjP/bKlWThdrmjRqYeNPm/ue1ilsqjPMlfxdbqtvJ4l1LzIFEMnk6rqSQ74hsbylDoFj3KdihEAXACrjA8f6nilpLEXktJPnq6yW73W78l6I9f+0MM9YYZKD1gnTo3Ufsp6PVKyer9Wf//Z
+" }
 _Power settings menu for Intel NUC.  This will look different for your machine but the idea is still the same_
 
 Here are some things to look for:
@@ -61,7 +62,7 @@ First we'll want to open the Device Manager.  You can do this from the UI or fro
 devmgmt.msc
 ```
 
-![Windows device manager](/assets/img/posts/device-manager-wol.webp)
+![Windows device manager](/assets/img/posts/device-manager-wol.webp){: lqip="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAcACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP7cfhs2kr4b0uObw74X+xiF0W/Ml2t9OkVxLHGZ7JPDksIkChmONQZVyEDSNvmfSclf3Zza/vK1l0StKWi+XoXQhQ9lN151KVZcns4UqMK0J3i+d1Ksq9CVNpqKXLSrc6cm3HlSl5T4hi8Kf2/rmy108J/bGp7QNPcAL9tn2gD7PwAMcdqi77v72Qf/2Q==" }
 _Be sure to select the network card that you use to connect to your network._
 
 - Once open you'll want to expand Network adapters and find your network adapter, then right click and choose **Properties**
@@ -70,7 +71,8 @@ _Be sure to select the network card that you use to connect to your network._
   - **Allow this device to wake the computer**
   - **Only allow a magic packet to wake the computer**.
 
-![Windows Power management for NIC](/assets/img/posts/windows-nic-power-management-wol.webp)
+![Windows Power management for NIC](/assets/img/posts/windows-nic-power-management-wol.webp){: lqip="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAYACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP4kJZ5CJ5S26aSSOSWbasbmaQmRiojwNoZX5JyW2uFjy60Bp5/f/X5lQNNgYlcDAwA7DA7DHbFAH//Z
+" }
 _Power Management options for your network adapter._
 
 Then we'll need to verify a few more settings.  These settings may or may not exist and depend on your network adapter manufacturer.
@@ -265,7 +267,7 @@ For all other Macs you'll want to search System Preferences for another option.
 - Search for **"Energy Saver"**
 - Here you'll see an option to **Wake for network access**.  Be sure this is check
 
-![Windows WOL Client](/assets/img/posts/macos-wake-on-lan.webp)
+![Windows WOL Client](/assets/img/posts/macos-wake-on-lan.webp){: lqip="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAoACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP5MtHTwTqun2T67q8tnqUzzR3UFrb237iRJpIbQoj/2XZQxTweXNe3FxfTSbiZ2VizbOPDxp1K0adapOlTl7sZ06VKp77aUFL2+KwlKFO79+rOtGNNe81ZO31M6svqsatOFGpUp04xdOUvYRVOlHlbSw2ExFSdVxinZUZVMRVlKdScqs3KXBnBJICgE5ACJgDsBweB9T9T1rPXrv19S+S+umvaWny93YxEJOcknp/Wg5KG0vX9CwZpiSTLKSTkkyMSSepJz1oNz/9k=" }
 _This option might appear different in different versions of macOS and it also varies by form factor, but you'll want to be sure that the "Wake for network access" option is turned on_
 
 ## Installing a Wake on LAN client
@@ -276,7 +278,7 @@ In order to wake up a remote machine machine up, you will need a tool that can s
 
 I am a fan of doing this in a terminal however a decent Windows utility with a GUI is [WakeOnLAN](https://github.com/basildane/WakeOnLAN).  It's also open source and hosted on GitHub.  After installing it and configuring a machine to wake you should be able to wake your machine if it is on the same network and you've followed the other steps that are outlined in this guide.
 
-![Windows WOL Client](/assets/img/posts/wake-on-lan-app-windows.webp)
+![Windows WOL Client](/assets/img/posts/wake-on-lan-app-windows.webp){: lqip="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAgACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP7t7Hwr4QtbSRYNsaSMJUij1i7iWExII0WHybyNwjbPMdXeQu7sCTHsjW/aT095uyUU3q7K1tXdt6JNvVrRtpsSVrtNq7u/el5+ei1dktF02R44/ia1DuAZSAzAEx3eSATgnNqTkjrkk+pNbRjeMW6/K2k2uaLs2tr+11ttcl1ay2Tt09+a06acmnof/9k=" }
 _WakeOnLAN is an open source Windows utility that has a nice GUI_
 
 ### Linux Wake on LAN client

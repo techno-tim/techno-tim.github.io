@@ -3,6 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 async function ls(path) {
+  console.log('starting')
   const dir = await fs.promises.opendir(path)
   for await (const file of dir) {
     if (file.name.includes('.jpg')) {
@@ -12,9 +13,11 @@ async function ls(path) {
       });
     }
   }
+  console.log('done')
 }
 
-ls('assets/img/headers').catch(console.error)
-// ls('assets/img/posts').catch(console.error)
+// ls('assets/img/headers').catch(console.error)
+ls('assets/img/posts')
+.catch(console.error)
 
 
