@@ -6,6 +6,7 @@ categories: homelab
 tags: homelab nut self-hosted docker ups pdu open-source
 image:
   path: /assets/img/headers/lightning-island.webp
+  lqip: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAUACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP4utAS7vfhh4if7Y8ULeLPCNpLCqBvMdtL8WzJceYWDK8ZLKowTsd1DqrsD7cpcmFqOzdqlK/vWcrRq9bN7vTey0MIw56kdbWjPW193HzXY8pFhJgf6ZN0HZf8AGoVBNJ8z27GTnZtW2ff/AIB//9k=
 ---
 
 Meet NUT Server, or Network UPS Tools.  It's an open UPS networking monitoring tool that runs on many different operating systems and processors.  This means you can run the server on Linux, MacOS, or BSD and run the client on Windows, MacOS, Linux, and more.  It' perfect for your Pi, server, or desktop.  It works with hundreds of UPS devices, PDUs, and many other power management systems.

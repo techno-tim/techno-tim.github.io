@@ -6,6 +6,8 @@ categories: homelab
 tags: homelab travel hardware proxmox docker portainer openwrt
 image:
   path: /assets/img/headers/mobile-vanlife.webp
+  lqip: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAUACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP3M1f8A4KE/F7QvjD4G+HlhofhKTRfEFzaW+qXV/aXU+q4m1S906RrCe1nsbS2+WO2kjFxY320pOrF/Pja3858QOcVJYRRVruP1mrK92lZPlVtHa9ntseBLA4mFeNP63SlF2Tvg4czeut1VStdXtyv1PsKL9qjxbJFG50ixBeNHIE0eAWUEgf6B05rH+3Y/9Ab/APCqX/yo7fqNb/oIp/8AhLH/AOWH/9k=
+
 ---
 
 This has been months in the making, my new Mobile HomeLab! It's a device that I can take with me to provide secure internet access for all of my devices. Not only can it provide secure access, but it can also let me bring apps and services with me when I travel. It's built on Proxmox, OpenWRT, Pi-hole, and many other services. I'm taking this with me everywhere!

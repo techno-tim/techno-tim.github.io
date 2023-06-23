@@ -6,6 +6,7 @@ categories: docker
 tags: docker docker-compose container image
 image:
   path: /assets/img/headers/whale-water.webp
+  lqip: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAUACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP4o/DNy+o3eg2T5itpHi0544xEQwvbnAnyYd3mQzzGQAsVaLfB8hfzV/W8P7RctaNVpcihOi0nSnHZSUdHCqpK/tE7Ne7KD91x+UqcrU6bjrF3jNO0lK/pZxs9V3Saad74s2uzLNKohjwsjqOT0DEDtWTx0nryf+TL/AOQG4OLced6Nr7tO5//Z
 ---
 
 We spin up all types of containers on my channel in my tutorials, but we have yet to build our own custom Docker container image.  Today we'll start from scratch with an empty Dockerfile and create, build, and run our very own custom Docker image!  We'll learn all the commands that everyone should know when building and maintaining images with Docker.  This tutorial is a great way to get started with Docker!

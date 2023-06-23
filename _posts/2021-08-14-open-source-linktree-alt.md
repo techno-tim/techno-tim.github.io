@@ -5,7 +5,9 @@ date: 2021-08-14 11:00:00 -0500
 categories: self-hosted
 tags: homelab pi-hole dns littlelink-server portainer self-hosted docker rancher
 image:
-  path: /assets/img/headers/tree-colorful.jpg
+  path: /assets/img/headers/tree-colorful.webp
+  lqip: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAUACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APjz9n7wt8R9V+F/g690r4y+KND8PJ4q8f2+m+Cjaf2j4c0+1+z2um60Et31K1k+167DqqC7vrVrKVUsod4uJ1t7m1/nnxnzDAR8X8yyTNsiy3OcwXAnC+YVOIa9OOHzKdOHEPE9fL8BBUYezhhMvxeTVMbSjN1pSxOPqyjKlTg6db4TwVeF4mzz/UrMMFRqYHEyxGW5tKpPEVKGbU8zyHI6ePeJwMKtGlGGIwValgnCFTnhTw9OcKqlouQ12xfT9b1mwm07wfey2Wq6haS3knhy/SS7ktruaF7l0/4SOTY87IZWXe+0uRvbGT7mVYXNMTleW4ilxBmWGpYjAYOtSw6hgqioU6uHp1IUVP6tDnVKMlBT5Ic3Lfljey+1zXjN8LZnmPDGByuE8Fw5j8ZkODnPMcw5pYXKMRUy/Dylz1as+aVLDwb5qlSV2+ac3eT/AP/Z
+
 ---
 
 Meet LittleLink & LittleLink-Server  - a DIY, self hosted, and open source alternative to the popular service Linktree.  This web site inside of a container allows you to create and host your own web site with all of your social information and links, giving your followers multiple ways to connect with you!  In this video we talk about what LittleLink-Server is, what it does, and how to create your own site using this Docker container with only a few environment variables, no knowledge of web development required.  Be sure to check the documentation for details!

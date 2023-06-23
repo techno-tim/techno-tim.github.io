@@ -6,6 +6,8 @@ categories: homelab
 tags: tdarr plex
 image:
   path: /assets/img/headers/radar-milkyway.webp
+  lqip: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAUACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP5nW+Lup+CrzxhoFjpGmXemWvw3mubS3u0Qrbana6LPqq6jEyQCUyM5jgMMkrwGOMsyMxTy/wB1qcY5pl+JzDCYb2UcPTwlKl7GcKdSEpvBwxEqt3TU1J/WVFRU7L2UZa3UY/lGXcIZbjsPl2Lrur9YxWJrqdWEpxkqX1p0PZW53CS/2fn5pQbTqNK1rv8APy78e+KLm6ubk6xqkRuLiacxxalfLFGZZGkKRgzsRGhbagLEhQASTzXw0sfi5ylN16t5ScnarUSvJ3dlz6LXRH69TynLadOFNYHCNQhGCcsPRcmopRTb5NW7avqz/9k=
+
 ---
 
 Tdarr is a distributed transcoding system that runs on on Windows, Mac, Linux, Arm, Docker, and even Unraid.  It uses a server with one or more nodes to transcode videos into any format you like.  Today, we'll set up the Docker and Windows version of Tdarr using a GPU to regain up to 50% of your disk space back.  I converted my video collection using Tdarr to h265 and saved over 700 GB of disk space.  

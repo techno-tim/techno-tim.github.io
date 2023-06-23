@@ -6,6 +6,8 @@ categories: kubernetes rancher
 tags: homelab rancher kubernetes
 image:
   path: /assets/img/headers/floppy-black.webp
+  lqip: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAUACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP3z/ar+HkmuftLfAnX08f8AxU0BtPvPAkthoHhT4meOvC3gu9/srx/cX/iKPxl4K8PeIdM8M+PIfFOjTw+HpIPEmmXUNhaW/mPHqMTizj/U6ftJYvCzVetTjTnf2dOpOFOpeUXJVIKSjUTXu+9F2V7aNp/i+IeHo4fEU54SjXniY0/Z4ipKp7XCuLnd0eWcYe/ze8pwafLF2uk19Fy2FuJJBtHDuOn+0a+zi5uKfO1dJ27aHzbpJNrTf+VH/9k=
+
 ---
 
 It use to be hard to back up Rancher, but with Rancher 2 it's super simple.  Upgrading, backing up, and restoring your Rancher server should be part of your regular routine.  Join me in this tutorial as we walk through backing up, upgrading, and restoring a single node Rancher Docker install in just a couple of minutes.  Trust me, you'll feel better after you do.

@@ -6,6 +6,8 @@ categories: homelab
 tags: ups eaton tripp-lite server server-rack
 image:
   path: /assets/img/headers/ups-install.webp
+  lqip: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAUACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APxD8Mf8FUfil4W09bOH4YfDedlTYJ4xrdtzjhtjX1zyPTzPpjnPi18uzKtK6z7HRje9nToydu3NaP8A6SftMPFmrJfveG8tc1H4qWKxdON115Je1dtdud973Oif/grp8YWd2Hww+GiBmZggk8UEKCSQoJ1nJCjgE88c1l/ZGYf9D/H/APgvD/8AyJH/ABFvE9OHcrt0/wBoxj/Hn19T/9k=
+
 ---
 
 Today I look at 2 (or 3 depending on how you count them) UPS systems from Tripp Lite and Eaton.  These UPS devices couldn't be any different but they are awesome nonetheless.  Each has it's own unique capabilities and features.  Which on will you choose when looking for your next UPS?  Join me as we walk through and review these type UPS systems and rack them in my new rack!

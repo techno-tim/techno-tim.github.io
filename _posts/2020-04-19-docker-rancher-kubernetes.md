@@ -6,6 +6,8 @@ categories: homelab
 tags: homelab rancher kubernetes docker minecraft gaming
 image:
   path: /assets/img/headers/block-dark.webp
+  lqip: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAUACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP5ILq3a10Ca3RNOYX95CJ7qXTY59RSGMo629pdzyyrYRtPFFLLPZQQX8qK9m959gubu0uPpMRX58dRqt1ksOpqNGGIlTw9SVWPI5VqVOMfbOMZPkhWlUpRmo1Y01WhTqR4sNgFTy+vDmpT+tToP2ksNCVej7Jyly0KspSdJVHJe0cFGclBQ51CVSM+INiMn96ep/hH+NdH1v/p3/wCT/wD2pwPBJNr2s9G106P1P//Z
+
 ---
 
 If you want to set up Kubernetes at home using Rancher to run Docker containers, this is the guide for you. This is a step by step tutorial of how to install and configure Rancher, Docker, and Kubernetes for your homelab.  In this video we set up and configure a Minecraft server in just a matter of minutes with some enterprise like features.  You can use this same process to spin up other Docker containers at home on your server or desktop.

@@ -6,6 +6,8 @@ categories: utilities
 tags: sops age flux kubernetes
 image:
   path: /assets/img/headers/museum-hieroglyphics.webp
+  lqip: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAUACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APyS1v8AaHutK/Zk8MaBpfgfwzYrP8PfD1veajHb2zanNeaFNHdaZqkF8+nm7s7yK5mmllMVwwn37Xwq8/5gZZ4X0q3ibm+ZV+IMzq1XxLj6mHpt1lSw1HGSqU8Xho01jPZyp1qUYUr8kXGEbWdz/VbF8Y1qPB+WuGAoxhTyai501OKVWdKhSdGbl7BuLpVL1Vu+d3TRSsf+Cwf7XOlWNnpdlqfhqKz021t7C0jOjQMY7azhS3gQttG4pFGi5xzjNfa/8S0cLPVcQ8SQT1UIYiioQT2jFOm2oxWkbtuyV23qfBy8X8a5ScuHsolJybcpSxDlJt6ttNK7erslr0R//9k=
+
 ---
 
 If you've been encrypting your secrets with SOPS and Age you know how useful it is to keep your secrets safe from prying eyes. If you're not familiar with encrypting your secrets with SOPS and Age, I highly recommend checking out a post I did a while back that shows you how easy it is to [encrypt your secrets](/posts/secret-encryption-sops) and even hide them in plain sight in a Git repo.  I am happy (and relieved) that I started doing this for all of my secrets.
