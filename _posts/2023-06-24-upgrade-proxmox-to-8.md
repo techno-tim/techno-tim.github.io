@@ -157,7 +157,7 @@ As you can see there are a few warnings but nothing failing.  The warnings I hav
 
 ## Upgrade APT Packages
 
-We'll want to be sure that we've applied all updates to our current installation before upgrading to 8.  You can do this by running
+We'll want to be sure that we've applied all updates to our current installation before upgrading to 8.  You can do this by running:
 
 ```bash
 apt update
@@ -205,7 +205,7 @@ Mine is actually at `/etc/apt/sources.list.d/pve-no-enterprise.list` so I will r
 sed -i -e 's/bullseye/bookworm/g' /etc/apt/sources.list.d/pve-no-enterprise.list
 ```
 
-You can veryfy these fules by checking to be sure they were updated with `bookworm`
+You can veryfy these files by checking to be sure they were updated with `bookworm`
 
 ```bash
 cat  /etc/apt/sources.list
