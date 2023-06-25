@@ -251,9 +251,9 @@ The upgrade might ask you to approve changes to configurations files.  I am goin
 >   - It's recommended to check the difference for any relevant change, note that changes in comments (lines starting with #) are not relevant.
 >   - If unsure, we suggested to selected "No" (keep your currently-installed version)
 
-### Verifying the upgrade
+### Verifying the Upgrade
 
-After upgrading all packages you can verify the upgrade by running
+After upgrading all packages you can verify the upgrade by running:
 
 ```bash
 pve7to8
@@ -265,8 +265,8 @@ You can now reboot your system.
 
 After rebooting and logging into the system for the first time, you'll want to clear the cache for your browser for pve web, ot just run a hard reload:
 
-For Windows  (CTRL + SHIFT + R)
-macOS (⌘ + Alt + R)
+- Windows  (CTRL + SHIFT + R)
+- macOS (⌘ + Alt + R)
 
 If you have more servers in your cluster, releat this for each server!
 
