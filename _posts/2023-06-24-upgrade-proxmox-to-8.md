@@ -9,7 +9,7 @@ image:
   lqip: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAUACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APwC8H/Hn4PeEvE3xh+Hmqfsh/AnxWfB+iaKvw217UfDXh21v9D0+xttOsL2LxlJb+FG1H4harqN3qthqB1661fRL5DZaha3Y1FNVhk0r9Jji8bSzjELDYqWFhTdSfs6EeWHLzRTpx154wcJSi4qTjqny6WPyjCTqT4SymtjK9fG43E0aVKrjKtTlqSqyw9ebrulGLoOXtKUZJOk3a6c225vTX9h34OeJ1HiVRq+jr4hA1waTpz2aafpY1Yfbxp1in2UbLOyFx9mtVwNsESDAxivslDAJJSwFOTSV5OrO8nbVvR6t6n5rPjPiyE5wWZ4a0ZSir4F3tFtK9sUley6JLsktD//2Q==
 ---
 
-Proxmox 8.0 has been releases (June, 22, 2023) and includes several new features and a Debian version upgrade. Among the changes are are:
+Proxmox 8.0 has been releases (June, 22, 2023) and includes several new features and a Debian version upgrade. Among the changes are:
 
 - Debian 12 "Bookworm", but using a newer Linux kernel 6.2
 - QEMU 8.0.2, LXC 5.0.2, ZFS 2.1.12
@@ -21,17 +21,17 @@ Proxmox 8.0 has been releases (June, 22, 2023) and includes several new features
 - Resource mappings between PCI(e) or USB devices and nodes in a cluster
 - and more....
 
-Many have been asking how to upgrade, so I decided to put togther an easy to follow post to get your Proxmox server upgraded to 8!
+Many have been asking how to upgrade, so I decided to put together an easy-to-follow post to get your Proxmox server upgraded to 8!
 
 ## Preparing the Upgrade to Proxmox 8
 
-This might go without saying, but you'll want to be sure you back up your Proxmox server's configs as well as any virtual machines running on thi server.  After you've done that, you'll need to check to be sure you are running at least 7.4.15 or newer (If you need to upgrade from 6 to 7, see my [post on how to do this](https://technotim.live/posts/proxmox-7/)).  If you aren't sure which version you are running,  you can run this to check:
+This might go without saying, but you'll want to be sure you back up your Proxmox server's configs as well as any virtual machines running on thi server.  After you've done that, you'll need to check to be sure you are running at least 7.4.15 or newer (If you need to upgrade from 6 to 7, see my [post on how to do this](https://technotim.live/posts/proxmox-7/)).  If you aren't sure which version you are running, you can run this to check:
 
 ```bash
 pveversion
 ```
 
-This should output something simiar to:
+This should output something similar to:
 
 ```bash
 pve-manager/7.4-15/a5d2a31e (running kernel: 5.15.108-1-pve)
@@ -45,13 +45,13 @@ You can run it by executing:
 pve7to8
 ```
 
-You can aslo run it with *all* checks enabled by executing
+You can also run it with *all* checks enabled by executing:
 
 ```bash
  pve7to8 --full
 ```
 
-You should see something simialr to the following in the output:
+You should see something similar to the following in the output:
 
 ```bash
 ➜  ~  pve7to8 --full
@@ -157,14 +157,14 @@ As you can see there are a few warnings but nothing failing.  The warnings I hav
 
 ## Update APT Repositories
 
-We'll want to be sure that we've applied all upddates to our current installation before upgrading to 8.  You can do this by running
+We'll want to be sure that we've applied all updates to our current installation before upgrading to 8.  You can do this by running
 
 ```bash
 apt update
 apt dist-upgrade
 ```
 
-If there are updates, I recommend applying them all, rebooting, and upgrdaing more if needed.  Repeat this until there aren't any up updates to apply.
+If there are updates, I recommend applying them all, rebooting, and upgrading more if needed.  Repeat this until there aren't any up updates to apply.
 
 ```bash
 ➜  ~ apt update
@@ -185,7 +185,7 @@ Calculating upgrade... Done
 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
 ```
 
-## Upgdating APT Recpsitories
+## Updating APT Repositories
 
 Well need to update our Debian and Proxmox apt repositories to Bookworm.  
 
@@ -227,7 +227,7 @@ You should see something like this:
 deb http://download.proxmox.com/debian/pve bookworm pve-no-subscription
 ```
 
-Remeber, you are just verifying the `sed` replaced `bullseye` with `bookworm` in each file.
+Remember, you are just verifying the `sed` replaced `bullseye` with `bookworm` in each file.
 
 ## Upgrading Ceph
 
@@ -244,7 +244,7 @@ apt dist-upgrade
 
 This step and take some time depending on your internet speed and server resources.
 
-The upgrade might ask you to approve changes to configurations files.  I am going to defer to the [Proxmox documenation](https://pve.proxmox.com/wiki/Upgrade_from_7_to_8) for this step:
+The upgrade might ask you to approve changes to configurations files.  I am going to defer to the [Proxmox documentation](https://pve.proxmox.com/wiki/Upgrade_from_7_to_8) for this step:
 
 > It's suggested to check the difference for each file in question and choose the answer accordingly to what's most appropriate for your setup.
 > Common configuration files with changes, and the recommended choices are:
@@ -279,7 +279,7 @@ If you have more servers in your cluster, repeat this for each server!
 Enjoy Proxmox 8!
 
 ![Proxmox upgraded!](/assets/img/posts/proxmox-8-upgrade-screen-shot.webp){: lqip="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAYACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP5+vCvwH1Hxv4c/4S5/E1nBFdHV4P7Mu9KmuyY9L1bVLQs99FfWs8cskluXVrdYtquoOTH83yOccXYjBZpPAvL4YpQ9iniamPlSqSdWnTqXdNYGtfl9o1eVZt8qd1e0eZYnD4aUqcqMpWaaUPcjG6vZJTStaWq5Vqlbrfx19HvUdk+w6KNjMuBe6ywG0kYDM24jjq3J6nmvppYmEW4tTum07JdHb+Y7FiMO0n9X3SetSfX5n//Z" }
-_Check to be sure you see Promox 8 here!_
+_Check to be sure you see Proxmox 8 here!_
 
 ## Links
 
