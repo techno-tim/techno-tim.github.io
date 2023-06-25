@@ -155,7 +155,7 @@ We'll want to be sure that we've applied all upddates to our current installatio
 
 ```bash
 apt update
-apt dist-upgrad
+apt dist-upgrade
 ```
 
 If there are updates, I recommend applying them all, rebooting, and upgrdaing more if needed.  Repeat this until there aren't any up updates to apply.
