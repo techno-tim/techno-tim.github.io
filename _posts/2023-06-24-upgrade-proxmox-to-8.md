@@ -25,7 +25,13 @@ Many have been asking how to upgrade, so I decided to put togther an easy to fol
 
 ## Preparing the Upgrade to Proxmox 8
 
-This might go without saying, but you'll want to be sure you back up your Proxmox server's configs as well as any virtual machines running on thi server.  After you've done that, you'll need to check to be sure you are running at least 7.4.15 or newer (If you need to upgrade from 6 to 7, see my [post on how to do this](https://technotim.live/posts/proxmox-7/)).  If you aren't sure you can run `pveversion` to check. first. This should output something simiar to:
+This might go without saying, but you'll want to be sure you back up your Proxmox server's configs as well as any virtual machines running on thi server.  After you've done that, you'll need to check to be sure you are running at least 7.4.15 or newer (If you need to upgrade from 6 to 7, see my [post on how to do this](https://technotim.live/posts/proxmox-7/)).  If you aren't sure which version you are running,  you can run this to check:
+
+```bash
+pveversion
+```
+
+This should output something simiar to:
 
 ```bash
 pve-manager/7.4-15/a5d2a31e (running kernel: 5.15.108-1-pve)
