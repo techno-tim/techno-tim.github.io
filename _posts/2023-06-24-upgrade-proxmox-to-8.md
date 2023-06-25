@@ -229,7 +229,7 @@ deb http://download.proxmox.com/debian/pve bookworm pve-no-subscription
 
 Remeber, you are just verifying the `sed` replaced `bullseye` with `bookworm` in each file.
 
-## Upgradin Ceph
+## Upgrading Ceph
 
 If you're running `ceph` you'll want to check the [Proxmox 7 to 8 Upgrade Wiki](https://pve.proxmox.com/wiki/Upgrade_from_7_to_8) for a few additional steps.  I am not running `ceph` so I will skip this part.
 
@@ -265,16 +265,16 @@ After upgrading all packages you can verify the upgrade by running:
 pve7to8
 ```
 
-If all wen well, you should see everything pass (or with minimal warnings).
+If all went well, you should see everything pass (or with minimal warnings).
 
 You can now reboot your system.
 
-After rebooting and logging into the system for the first time, you'll want to clear the cache for your browser for pve web, ot just run a hard reload:
+After rebooting and logging into the system for the first time, you'll want to clear your browser's cache for pve web, r just run a hard reload:
 
 - Windows  (CTRL + SHIFT + R)
 - macOS (⌘ + Alt + R)
 
-If you have more servers in your cluster, releat this for each server!
+If you have more servers in your cluster, repeat this for each server!
 
 Enjoy Proxmox 8!
 
