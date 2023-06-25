@@ -155,7 +155,7 @@ ATTENTION: Please check the output for detailed information!
 
 As you can see there are a few warnings but nothing failing.  The warnings I have listed are ones related to time packages (which I am going to ignore) and one related to machines still running.  To resole the second warnings I will shutdown all the machines before I upgrade.
 
-## Update APT Repositories
+## Upgrade APT Packages
 
 We'll want to be sure that we've applied all updates to our current installation before upgrading to 8.  You can do this by running
 
