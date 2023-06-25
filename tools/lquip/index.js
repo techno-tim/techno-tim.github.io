@@ -16,7 +16,7 @@ async function ls(path) {
   console.log('done')
 }
 
-// ls('assets/img/headers').catch(console.error)
+ls('assets/img/headers').catch(console.error)
 ls('assets/img/posts')
 .catch(console.error)
 
