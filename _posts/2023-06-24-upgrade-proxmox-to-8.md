@@ -231,7 +231,7 @@ Remember, you are just verifying the `sed` replaced `bullseye` with `bookworm` i
 
 ## Upgrading Ceph
 
-If you're running `ceph` you'll want to check the [Proxmox 7 to 8 Upgrade Wiki](https://pve.proxmox.com/wiki/Upgrade_from_7_to_8) for a few additional steps.  I am not running `ceph` so I will skip this part.
+If you're running `ceph` you'll want to check the [Proxmox 7 to 8 Upgrade Wiki](https://pve.proxmox.com/wiki/Upgrade_from_7_to_8#Update_the_Ceph_Package_Repository) for a few additional steps.  I am not running `ceph` so I will skip this part.
 
 ## Upgrade the system to Debian Bookworm and Proxmox VE 8.0
 
@@ -244,7 +244,7 @@ apt dist-upgrade
 
 This step and take some time depending on your internet speed and server resources.
 
-The upgrade might ask you to approve changes to configurations files.  I am going to defer to the [Proxmox documentation](https://pve.proxmox.com/wiki/Upgrade_from_7_to_8) for this step:
+The upgrade might ask you to approve changes to configurations files.  I am going to defer to the [Proxmox documentation](https://pve.proxmox.com/wiki/Upgrade_from_7_to_8#Upgrade_the_system_to_Debian_Bookworm_and_Proxmox_VE_8.0) for this step, whcih is shown below:
 
 > It's suggested to check the difference for each file in question and choose the answer accordingly to what's most appropriate for your setup.
 > Common configuration files with changes, and the recommended choices are:
