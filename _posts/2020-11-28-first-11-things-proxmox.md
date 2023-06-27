@@ -57,6 +57,17 @@ Edit `/etc/apt/sources.list.d/pve-enterprise.list`
 # deb https://enterprise.proxmox.com/debian/pve buster pve-enterprise
 ```
 
+### Proxmox Version 8.X
+
+Create a file at `/etc/apt/sources.list.d/pve-no-enterprise.list` with the following contents:
+
+```bash
+# not for production use
+deb http://download.proxmox.com/debian/pve bookworm pve-no-subscription
+```
+
+_If you're looking to upgrade to Proxmox 8, [see this post](/posts/upgrade-proxmox-to-8/)_
+
 Run
 
 ```bash
