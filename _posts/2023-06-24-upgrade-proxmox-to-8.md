@@ -153,7 +153,7 @@ FAILURES: 0
 ATTENTION: Please check the output for detailed information!
 ```
 
-As you can see there are a few warnings but nothing failing.  The warnings I have listed are ones related to time packages (which I am going to ignore) and one related to machines still running.  To resole the second warnings I will shutdown all the machines before I upgrade.
+As you can see there are a few warnings but nothing failing.  The warnings I have listed are ones related to time packages (which I am going to ignore) and one related to machines still running.  To resolve the second warning I will shutdown all the machines before I upgrade.
 
 ## Upgrade APT Packages
 
@@ -164,7 +164,7 @@ apt update
 apt dist-upgrade
 ```
 
-If there are updates, I recommend applying them all, rebooting, and upgrading more if needed.  Repeat this until there aren't any up updates to apply.
+If there are updates, I recommend applying them all, rebooting, and upgrading again if needed.  Repeat this until there aren't any up updates to apply.
 
 ```bash
 ➜  ~ apt update
@@ -187,13 +187,13 @@ Calculating upgrade... Done
 
 ## Updating APT Repositories
 
-Well need to update our Debian and Proxmox apt repositories to Bookworm.  
+Well need to update our Debian and Proxmox apt repositories to Bookworm:
 
 ```bash
 sed -i 's/bullseye/bookworm/g' /etc/apt/sources.list
 ```
 
-If you're also using the "no-subscription" repository, you'll also want to update those too.
+If you're also using the "no-subscription" repository, you'll also want to update those too:
 
 ```bash
 sed -i -e 's/bullseye/bookworm/g' /etc/apt/sources.list.d/pve-install-repo.list 
@@ -205,10 +205,10 @@ Mine is actually at `/etc/apt/sources.list.d/pve-no-enterprise.list` so I will r
 sed -i -e 's/bullseye/bookworm/g' /etc/apt/sources.list.d/pve-no-enterprise.list
 ```
 
-You can veryfy these files by checking to be sure they were updated with `bookworm`
+You can veryfy these files by checking to be sure they were updated with `bookworm`:
 
 ```bash
-cat  /etc/apt/sources.list
+cat /etc/apt/sources.list
 ```
 
 ```bash
@@ -235,7 +235,7 @@ If you're running `ceph` you'll want to check the [Proxmox 7 to 8 Upgrade Wiki](
 
 ## Upgrade the system to Debian Bookworm and Proxmox VE 8.0
 
-Now all that's left is updating the system! If you've made it this far it's now time to upgrade the system!  I would recommend stoping or migrating any virtual machines and LXC containers before proceeding.
+Now all that's left is updating the system! If you've made it this far it's now time to upgrade!  I would recommend stoping or migrating any virtual machines and LXC containers before proceeding.
 
 ```bash
 apt update
@@ -269,7 +269,7 @@ If all went well, you should see everything pass (or with minimal warnings).
 
 You can now reboot your system.
 
-After rebooting and logging into the system for the first time, you'll want to clear your browser's cache for pve web, r just run a hard reload:
+After rebooting and logging into the system for the first time, you'll want to clear your browser's cache for pve web, or just hard reload:
 
 - Windows  (CTRL + SHIFT + R)
 - macOS (⌘ + Alt + R)
