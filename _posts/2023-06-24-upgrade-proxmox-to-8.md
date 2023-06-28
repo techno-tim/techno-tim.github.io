@@ -25,7 +25,7 @@ Many have been asking how to upgrade, so I decided to put together an easy-to-fo
 
 ## Preparing the Upgrade to Proxmox 8
 
-This might go without saying, but you'll want to be sure you back up your Proxmox server's configs as well as any virtual machines running on thi server.  After you've done that, you'll need to check to be sure you are running at least 7.4.15 or newer (If you need to upgrade from 6 to 7, see my [post on how to do this](/posts/proxmox-7/)).  If you aren't sure which version you are running, you can run this to check:
+This might go without saying, but you'll want to be sure you back up your Proxmox server's configs as well as any virtual machines running on thi server. After you've done that, you'll need to check to be sure you are running at least 7.4.15 or newer (If you need to upgrade from 6 to 7, see my [post on how to do this](/posts/proxmox-7/)). If you aren't sure which version you are running, you can run this to check:
 
 ```bash
 pveversion
@@ -37,7 +37,7 @@ This should output something similar to:
 pve-manager/7.4-15/a5d2a31e (running kernel: 5.15.108-1-pve)
 ```
 
-Next we'll want to run an upgrade script to check to if there are any potential issues during the upgrade process.  Don't worry, this does not execute anthing other than checks and is safe to run multiple times.
+Next we'll want to run an upgrade script to check to if there are any potential issues during the upgrade process. Don't worry, this does not execute anything other than checks and is safe to run multiple times.
 
 You can run it by executing:
 
@@ -45,7 +45,7 @@ You can run it by executing:
 pve7to8
 ```
 
-You can also run it with *all* checks enabled by executing:
+You can also run it with _all_ checks enabled by executing:
 
 ```bash
  pve7to8 --full
@@ -153,18 +153,18 @@ FAILURES: 0
 ATTENTION: Please check the output for detailed information!
 ```
 
-As you can see there are a few warnings but nothing failing.  The warnings I have listed are ones related to time packages (which I am going to ignore) and one related to machines still running.  To resolve the second warning I will shutdown all the machines before I upgrade.
+As you can see there are a few warnings but nothing failing. The warnings I have listed are ones related to time packages (which I am going to ignore) and one related to machines still running. To resolve the second warning I will shutdown all the machines before I upgrade.
 
 ## Upgrade APT Packages
 
-We'll want to be sure that we've applied all updates to our current installation before upgrading to 8.  You can do this by running:
+We'll want to be sure that we've applied all updates to our current installation before upgrading to 8. You can do this by running:
 
 ```bash
 apt update
 apt dist-upgrade
 ```
 
-If there are updates, I recommend applying them all, rebooting, and upgrading again if needed.  Repeat this until there aren't any up updates to apply.
+If there are updates, I recommend applying them all, rebooting, and upgrading again if needed. Repeat this until there aren't any up updates to apply.
 
 ```bash
 ➜  ~ apt update
@@ -196,7 +196,7 @@ sed -i 's/bullseye/bookworm/g' /etc/apt/sources.list
 If you're also using the "no-subscription" repository, you'll also want to update those too:
 
 ```bash
-sed -i -e 's/bullseye/bookworm/g' /etc/apt/sources.list.d/pve-install-repo.list 
+sed -i -e 's/bullseye/bookworm/g' /etc/apt/sources.list.d/pve-install-repo.list
 ```
 
 Mine is actually at `/etc/apt/sources.list.d/pve-no-enterprise.list` so I will run instead:
@@ -205,14 +205,14 @@ Mine is actually at `/etc/apt/sources.list.d/pve-no-enterprise.list` so I will r
 sed -i -e 's/bullseye/bookworm/g' /etc/apt/sources.list.d/pve-no-enterprise.list
 ```
 
-You can veryfy these files by checking to be sure they were updated with `bookworm`:
+You can verify these files by checking to be sure they were updated with `bookworm`:
 
 ```bash
 cat /etc/apt/sources.list
 ```
 
 ```bash
-cat /etc/apt/sources.list.d/pve-install-repo.list 
+cat /etc/apt/sources.list.d/pve-install-repo.list
 ```
 
 or for me personally:
@@ -231,11 +231,11 @@ Remember, you are just verifying the `sed` replaced `bullseye` with `bookworm` i
 
 ## Upgrading Ceph
 
-If you're running `ceph` you'll want to check the [Proxmox 7 to 8 Upgrade Wiki](https://pve.proxmox.com/wiki/Upgrade_from_7_to_8#Update_the_Ceph_Package_Repository) for a few additional steps.  I am not running `ceph` so I will skip this part.
+If you're running `ceph` you'll want to check the [Proxmox 7 to 8 Upgrade Wiki](https://pve.proxmox.com/wiki/Upgrade_from_7_to_8#Update_the_Ceph_Package_Repository) for a few additional steps. I am not running `ceph` so I will skip this part.
 
 ## Upgrade the system to Debian Bookworm and Proxmox VE 8.0
 
-Now all that's left is updating the system! If you've made it this far it's now time to upgrade!  I would recommend stoping or migrating any virtual machines and LXC containers before proceeding.
+Now all that's left is updating the system! If you've made it this far it's now time to upgrade! I would recommend stopping or migrating any virtual machines and LXC containers before proceeding.
 
 ```bash
 apt update
@@ -244,7 +244,7 @@ apt dist-upgrade
 
 This step and take some time depending on your internet speed and server resources.
 
-The upgrade might ask you to approve changes to configurations files.  I am going to defer to the [Proxmox documentation](https://pve.proxmox.com/wiki/Upgrade_from_7_to_8#Upgrade_the_system_to_Debian_Bookworm_and_Proxmox_VE_8.0) for this step, whcih is shown below:
+The upgrade might ask you to approve changes to configurations files. I am going to defer to the [Proxmox documentation](https://pve.proxmox.com/wiki/Upgrade_from_7_to_8#Upgrade_the_system_to_Debian_Bookworm_and_Proxmox_VE_8.0) for this step, which is shown below:
 
 > It's suggested to check the difference for each file in question and choose the answer accordingly to what's most appropriate for your setup.
 > Common configuration files with changes, and the recommended choices are:
@@ -271,7 +271,7 @@ You can now reboot your system.
 
 After rebooting and logging into the system for the first time, you'll want to clear your browser's cache for pve web, or just hard reload:
 
-- Windows  (CTRL + SHIFT + R)
+- Windows (CTRL + SHIFT + R)
 - macOS (⌘ + Alt + R)
 
 If you have more servers in your cluster, repeat this for each server!
