@@ -176,7 +176,7 @@ After we commit and push this up, we can wait for Renovate to check our reposito
 Now, if we look at the logs again we should see that it detected Wordpress, however it is unversioned. The `latest` tag is nondeterministic, meaning that it is not deterministic, or simply put, it can mean more than one thing. Renovate can’t use this because it can’t determine what the current version is and what the next possible version is. So,  instead of pinning this version to “latest”, we can actually pin it to a digest.
 
 So if we look at the current `latest` tag in Docker Hub and inspect the digest, we can see it [here](https://hub.docker.com/_/wordpress).
-`
+
 It’s this long string of characters:
 
 `DIGEST:sha256:75ba772cce073ec2aa6cec95c5ca229dfde9029c49874350a971499d567adae7`
