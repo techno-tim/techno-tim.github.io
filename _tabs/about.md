@@ -1,6 +1,6 @@
 ---
 icon: fas fa-info-circle
-order: 3
+order: 5
 ---
 
 ![Hero image](/assets/img/posts/techno-timgithub-profile.webp)
