@@ -219,6 +219,10 @@ So now with Renovate bot we can keep track and upgrade our Kubernetes deployment
 
 Well, I learned a ton about Renovate Bot, how to add it to your Git Repository and how to automate Pull Requests when there are updates available, and I hope you leanred something too!  And remember if you found anything in this post helpful, don’t forget to share. Thanks for Reading!
 
+## Join the conversation
+
+<blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">Keeping track of container image updates is hard. I started using Renovate Bot to to track these for me and I now get pull requests from a bot for my Docker and Kubernetes container images. Automation is awesome. It&#39;s a game changer.<br><br> Check it out!<br>👉<a href="https://t.co/2ku5EayOIO">https://t.co/2ku5EayOIO</a> <a href="https://t.co/uLF1PC7Swi">pic.twitter.com/uLF1PC7Swi</a></p>&mdash; Techno Tim (@TechnoTimLive) <a href="https://twitter.com/TechnoTimLive/status/1675173605687033858?ref_src=twsrc%5Etfw">July 1, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ## Links
 
 ⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>
