@@ -30,7 +30,7 @@ Renovate works with many different source control providers like GitHub, GitLab,
 
 We’re going to go with GitHub and the GitHub app because it’s super simple to set up. First we need to create a github repo, this is as simple as going to GitHub and well, [creating a new repo](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository). After naming your repo you’ll want to choose whether to make this public or private. The choice is up to you and Renovate will work either way.
 
-> *Note: if yuo want to see the repo I created in this post and video, you can check it out here [technotim-k8s-renovate](https://github.com/techno-tim/k8s-renovate)*
+> *Note: if you want to see the repo I created in this post and video, you can check it out here [technotim-k8s-renovate](https://github.com/techno-tim/k8s-renovate)*
 {: .prompt-info }
 
 ![GitHub Repo!](/assets/img/posts/github-create-repo.webp){: lqip="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAYACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP4g3hg/se3YwQs7XV0xfyUDjiJTuchvMD78kMqsu35ZMMyn6FK6dre6k/ldK34/1sea371nfVf0+6e+3z6Wydif3F/75H+FIu77v7z/AP/Z" }
@@ -179,7 +179,7 @@ So if we look at the current `latest` tag in Docker Hub and inspect the digest, 
 `
 It’s this long string of characters:
 
-`DIGEST:sha256:75ba772cce073ec2aa6cec95c5ca229dfde9029c49874350a971499d567adae7
+`DIGEST:sha256:75ba772cce073ec2aa6cec95c5ca229dfde9029c49874350a971499d567adae7`
 
  The digest is an immutable identifier for a container image and it is deterministic, meaning it can’t be changed and it only references one image. We can use that for Renovate. Once we have that, we can then pin our Wordpress container to this digest by using the like this, it’s:
 
