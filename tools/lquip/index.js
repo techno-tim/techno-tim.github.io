@@ -9,6 +9,7 @@ async function ls(path) {
     if (file.name.includes('.jpg')) {
       lqip.base64(`${path}/${file.name}`).then(res => {
         console.log(file.name)
+        console.log(' ')
         console.log(res); // "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhY.....
       });
     }
