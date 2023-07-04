@@ -200,7 +200,6 @@ image:
   version: 9.9.0
 persistence:
   enabled: true
-  storageClass: longhorn
   size: 10Gi
 architecture: replication
 auth:
