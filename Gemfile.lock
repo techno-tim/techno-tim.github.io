@@ -78,7 +78,7 @@ GEM
     parallel (1.23.0)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
-    public_suffix (5.0.1)
+    public_suffix (5.0.3)
     racc (1.7.1)
     rainbow (3.1.1)
     rb-fsevent (0.11.2)
