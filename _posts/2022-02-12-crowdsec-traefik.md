@@ -12,6 +12,10 @@ image:
 
 [CrowdSec](https://crowdsec.net/) is a free, open-source and collaborative IPS. Analyze behaviors, respond to attacks & share signals across the community.  With CrowdSec, you can set up your own intrusion detection system that parses logs, detects and blocks threats, and shares bad actors with the larger CrowdSec community.  It works great with a reverse proxy like [traefik](https://traefik.io/) to help keep hackers at bay.  Could this be a viable alternative to fail2ban?
 
+{% include embed/youtube.html id='-GxUP6bNxF0' %}
+
+📺 [Watch Video](https://www.youtube.com/watch?v=-GxUP6bNxF0)
+
 A HUGE THANK YOU to Micro Center for sponsoring this video!
 
 New Customers Exclusive – Get a Free 240gb SSD at Micro Center: <https://micro.center/1fbb85>
@@ -19,10 +23,6 @@ New Customers Exclusive – Get a Free 240gb SSD at Micro Center: <https://micro
 If you need to set up traefik, you can follow this post here on [configuring traefik](/posts/traefik-portainer-ssl/)
 
 If you need a high level overview of HomeLab and Self-Hosting Security, check out [this video](https://www.youtube.com/watch?v=Cs8yOmTJNYQ) that will help you keep your network safe.
-
-{% include embed/youtube.html id='-GxUP6bNxF0' %}
-
-📺 [Watch Video](https://www.youtube.com/watch?v=-GxUP6bNxF0)
 
 ## Configure CrowdSec
 

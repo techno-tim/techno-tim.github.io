@@ -14,6 +14,9 @@ image:
 
 Today we’re going to cover setting up VLANs using UniFi’s network controller.  We’ll set up a VLAN, from start to finish, which includes creating a new network, configuring a wireless network that uses VLANs, and then we’ll set up firewall rules to make sure we’re keeping our network safe.   If you think VLANs are only for the enterprise, you’re wrong, I will show you how they are helpful at home too.
 
+{% include embed/youtube.html id='v0B2IDEfnjA' %}
+📺 [Watch Video](https://www.youtube.com/watch?v=v0B2IDEfnjA)
+
 So what’s a VLAN?  A VLAN or Virtual Local Area Networks, is a group of devices, computers, or servers that communicate with each other as if they are on the same physical LAN, but they are actually located on separate physical LAN segments.  VLANs can be created by configuring a managed network switch to segment the network into different broadcast domains.
 
 So why are VLANs important, even to the home user?
@@ -29,9 +32,6 @@ So why are VLANs important, even to the home user?
 
 So what’s not to love about VLANs if they give you greater control over network traffic, help optimize network performance, give you better security, and give you management and flexibility?
 Well, for me it was complexity and knowing where to start.
-
-{% include embed/youtube.html id='v0B2IDEfnjA' %}
-📺 [Watch Video](https://www.youtube.com/watch?v=v0B2IDEfnjA)
 
 ## Hardware
 
