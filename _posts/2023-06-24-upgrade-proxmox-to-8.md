@@ -242,7 +242,7 @@ apt update
 apt dist-upgrade
 ```
 
-This step and take some time depending on your internet speed and server resources.
+This step may take some time depending on your internet speed and server resources.
 
 The upgrade might ask you to approve changes to configurations files. I am going to defer to the [Proxmox documentation](https://pve.proxmox.com/wiki/Upgrade_from_7_to_8#Upgrade_the_system_to_Debian_Bookworm_and_Proxmox_VE_8.0) for this step, which is shown below:
 
