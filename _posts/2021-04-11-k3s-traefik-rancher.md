@@ -9,7 +9,7 @@ image:
   lqip: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAUACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP5gfjj+zZ8MfgD+zB8HPCseg6X418c/F/xp4g8Yar8UtX0u10/XtC0vQPDl5b/8IZoUVjvv4tAv5bKy1KVbrXrmS31OKee1EcF9e2k/yGOx+JeJxOJp1atGlgKNKEcPTqe5VqV8VRp+2q80XTk4QqSioSoyTWqcZ8s4/pPC+WYKeLy3LMThcJjYZzWqxxNTFYdTnTo0sHXrqnhqlOdLFYaftKMJKthsVRm2uWftKMqlGf5h6/4Ns9I13WtJjup5Y9L1bUdOSUqqGRLK8mtlkK5faXEQYrvbBONzYyfVy7NKmNy/A4yVKEJYvB4XFSgm5KDr0IVXFS0uoudr2V7XstiuKOB8HkXEvEWR0cbiK1LJs9zbKqVaUIQlVp5dj8RhIVZQvPllUjRUnHnlyt25pWu//9k=
 ---
 
-This guide is for installing `traefik 2` on `k3s`.  If you're not using rancher, that's fine, just skip to `Reconfiguring k3s`
+This guide is for installing `traefik 2` on `k3s`.If you're not using rancher, that's fine, just skip to `Reconfiguring k3s`
 
 > *Note: There is an updated tutorial on installing traefik + cert-manager on Kubernetes [here](/posts/kube-traefik-cert-manager-le/). However, if you want to store your certificates on disk, this tutorial here is perfectly fine.*
 {: .prompt-info }
@@ -64,7 +64,7 @@ export INSTALL_K3S_VERSION=v1.20.5+k3s1
 curl -sfL https://get.k3s.io | sh -s - server --node-taint CriticalAddonsOnly=true:NoExecute --tls-san your.load.balancer.ip --write-kubeconfig-mode 644 --disable traefik --disable servicelb
 ```
 
-This should reconfigure your servers.  Just run it on all server nodes, not agent nodes.
+This should reconfigure your servers.Just run it on all server nodes, not agent nodes.
 
 ## Install Metal LB
 
@@ -209,8 +209,8 @@ In Rancher go to Load Balancing
 * choose a target (your workload)
 * set the port to the exposed port within the container
 * go to labels and annotations and add `kubernetes.io/ingress.class` = `traefik-external`
-* note, `traefik-external` comes from `--providers.kubernetesingress.ingressclass=traefik-external` in `traefik-chart-values.yml`.  If you used something else, you will need to set your label properly.
-* when you visit your website (`https://service.example.com`) you should now see a certificate issues.  If it's a staging cert, see the note about switching to production in `traefik-chart-values.yaml`.  After changing, you will need to delete your certs in storage and reapply that file
+* note, `traefik-external` comes from `--providers.kubernetesingress.ingressclass=traefik-external` in `traefik-chart-values.yml`.If you used something else, you will need to set your label properly.
+* when you visit your website (`https://service.example.com`) you should now see a certificate issues.If it's a staging cert, see the note about switching to production in `traefik-chart-values.yaml`.After changing, you will need to delete your certs in storage and reapply that file
 
 ```bash
 kubectl delete -n kube-system persistentvolumeclaims acme-json-certs

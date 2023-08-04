@@ -11,7 +11,7 @@ image:
 
 ## What is FAST.com?
 
-**FAST.com** is speed test gives you an estimate of your current Internet speed. It was created by Netflix to bring transparency to your  upload / download speeds and to see if your ISP may be prioritizing traffic.  I've run this quite a bit in a browser to do a quick spot check or my speeds, but I've never had a great tool to check this from some of my Linux machines. Let me clarify, some of my Linux servers that do not have a browser - that's until I found this utility, `fast`.  `fast` is an open source utility to run internet speed checks from machines that don't have a browser, from the terminal, all in a small, zero dependency binary.  You can read more about it on the [GitHub repo](https://github.com/ddo/fast/).
+**FAST.com** is speed test gives you an estimate of your current Internet speed. It was created by Netflix to bring transparency to your  upload / download speeds and to see if your ISP may be prioritizing traffic.I've run this quite a bit in a browser to do a quick spot check or my speeds, but I've never had a great tool to check this from some of my Linux machines. Let me clarify, some of my Linux servers that do not have a browser - that's until I found this utility, `fast`.`fast` is an open source utility to run internet speed checks from machines that don't have a browser, from the terminal, all in a small, zero dependency binary.You can read more about it on the [GitHub repo](https://github.com/ddo/fast/).
 
 ## Installing fast
 

@@ -10,7 +10,7 @@ image:
 
 ---
 
-Committing secrets to your Git Repo can expose information like passwords, access tokens, and other types of sensitive information.  Some might think that committing secrets to a private Git Repo is OK, but I am here to tell you it's not.  If you're going to commit secrets to a git repo, private or public, you should encrypt them first using Mozilla SOPS (Secret Operations) and AGE.  SOPS is an editor of encrypted files that supports YAML, JSON, ENV, INI and BINARY formats and encrypts with AWS KMS, GCP KMS, Azure Key Vault, age, and PGP.  Age is a simple, modern, and secure file encryption tool, format, and build using Go.  It can encrypt and decrypt your files making then safe enough to commit to your Git repos!
+Committing secrets to your Git Repo can expose information like passwords, access tokens, and other types of sensitive information.Some might think that committing secrets to a private Git Repo is OK, but I am here to tell you it's not.If you're going to commit secrets to a git repo, private or public, you should encrypt them first using Mozilla SOPS (Secret Operations) and AGE.SOPS is an editor of encrypted files that supports YAML, JSON, ENV, INI and BINARY formats and encrypts with AWS KMS, GCP KMS, Azure Key Vault, age, and PGP.Age is a simple, modern, and secure file encryption tool, format, and build using Go.It can encrypt and decrypt your files making then safe enough to commit to your Git repos!
 
 A HUGE thanks to Datree for sponsoring this video!  
 Combat misconfigurations. Empower engineers.
@@ -124,7 +124,7 @@ source ~/.zshrc
 
 ## Now! Let's encrypt
 
-A few ways you can do this.  You can encrypt in place or encrypt with an editor but we’re going to do an in place encryption.
+A few ways you can do this.You can encrypt in place or encrypt with an editor but we’re going to do an in place encryption.
 
 ## YAML
 
@@ -302,7 +302,7 @@ sops --decrypt --age $(cat $SOPS_AGE_KEY_FILE |grep -oP "public key: \K(.*)") --
 
 ## Flux
 
-If you're thinking of doing GitOps with Flux, you can [check out my video on this topic](https://www.youtube.com/watch?v=PFLimPh5-wo) or see my [documentation](/posts/flux-devops-gitops/).  You can do cluster decryption and fully automate decryption of secrets.
+If you're thinking of doing GitOps with Flux, you can [check out my video on this topic](https://www.youtube.com/watch?v=PFLimPh5-wo) or see my [documentation](/posts/flux-devops-gitops/).You can do cluster decryption and fully automate decryption of secrets.
 
 In cluster decryption with Flux
 

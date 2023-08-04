@@ -10,7 +10,7 @@ image:
 
 ---
 
-Traefik, cert-manager, Cloudflare, and Let's Encrypt are a winning combination when it comes to securing your services with certificates in Kubernetes.  Today, we'll install and configure Traefik, the cloud native proxy and load balancer, as our Kubernetes Ingress Controller.  We'll then install and configure cert-manager  to manage certificates for our cluster.  We'll set up Let's Encrypt as our Cluster Issuer so that cert-manager can automatically provision TLS certificates and even wildcard certificates using Cloudflare DNS challenge absolutely free.  We'll walk through all of this, step by step, so you can help secure your cluster today.
+Traefik, cert-manager, Cloudflare, and Let's Encrypt are a winning combination when it comes to securing your services with certificates in Kubernetes.Today, we'll install and configure Traefik, the cloud native proxy and load balancer, as our Kubernetes Ingress Controller.We'll then install and configure cert-manager  to manage certificates for our cluster.We'll set up Let's Encrypt as our Cluster Issuer so that cert-manager can automatically provision TLS certificates and even wildcard certificates using Cloudflare DNS challenge absolutely free.We'll walk through all of this, step by step, so you can help secure your cluster today.
 
 {% include embed/youtube.html id='G4CmbYL9UPg' %}
 📺 [Watch Video](https://www.youtube.com/watch?v=G4CmbYL9UPg)
@@ -288,7 +288,7 @@ helm install cert-manager jetstack/cert-manager --namespace cert-manager --value
 
 Apply secrets
 
-> Be sure to generate the correct token if using Cloudflare.  This is using an [API Token](https://cert-manager.io/docs/configuration/acme/dns01/cloudflare/#api-tokens) and not a global key.
+> Be sure to generate the correct token if using Cloudflare.This is using an [API Token](https://cert-manager.io/docs/configuration/acme/dns01/cloudflare/#api-tokens) and not a global key.
 {: .prompt-info }
 
 From `issuers` folder

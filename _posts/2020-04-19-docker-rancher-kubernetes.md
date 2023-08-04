@@ -10,7 +10,7 @@ image:
 
 ---
 
-If you want to set up Kubernetes at home using Rancher to run Docker containers, this is the guide for you. This is a step by step tutorial of how to install and configure Rancher, Docker, and Kubernetes for your homelab.  In this video we set up and configure a Minecraft server in just a matter of minutes with some enterprise like features.  You can use this same process to spin up other Docker containers at home on your server or desktop.
+If you want to set up Kubernetes at home using Rancher to run Docker containers, this is the guide for you. This is a step by step tutorial of how to install and configure Rancher, Docker, and Kubernetes for your homelab.In this video we set up and configure a Minecraft server in just a matter of minutes with some enterprise like features.You can use this same process to spin up other Docker containers at home on your server or desktop.
 
 {% include embed/youtube.html id='oILc0ywDVTk' %}
 
@@ -41,8 +41,8 @@ docker run -d --restart=unless-stopped -p 9090:80 -p 9091:443 --privileged -v /o
 
 - Make sure you have a static IP on your Rancher host
 - Be sure to use the ports above if you want to add SSL later and use commands in future videos
-- The new UI is now the "Cluster Explorer".  You can toggle between this and the "Cluser Manager" UI by clicking the button.
-- Do not create workloads in the `local` cluster.  This is a management cluster for Rancher.  You should create new cluster for your workload, just like in this video.
+- The new UI is now the "Cluster Explorer".You can toggle between this and the "Cluser Manager" UI by clicking the button.
+- Do not create workloads in the `local` cluster.This is a management cluster for Rancher.You should create new cluster for your workload, just like in this video.
 
 ## Links
 

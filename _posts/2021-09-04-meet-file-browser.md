@@ -10,7 +10,7 @@ image:
 
 ---
 
-Meet [File Browser](https://github.com/filebrowser/filebrowser), an open source, self-hosted alternative to services like Dropbox and other web based file browsers.  Today we'll configure a containerized version of File Browser and have you up and going in just a few minutes.  We'll also walk through creating, editing, moving, copying, and even sharing files and folders so that you get a better understanding about what File Browser is all about.
+Meet [File Browser](https://github.com/filebrowser/filebrowser), an open source, self-hosted alternative to services like Dropbox and other web based file browsers.Today we'll configure a containerized version of File Browser and have you up and going in just a few minutes.We'll also walk through creating, editing, moving, copying, and even sharing files and folders so that you get a better understanding about what File Browser is all about.
 
 {% include embed/youtube.html id='W2yZ5_sd9Hc' %}
 

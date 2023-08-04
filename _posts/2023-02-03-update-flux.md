@@ -53,7 +53,7 @@ This should return something similar to the following
 flux version 0.39.0
 ```
 
-Next we'll need to locate our `gotk-components.yaml` file for flux in our git repo.  For example, mine lives in `clusters/cluster-01/base`
+Next we'll need to locate our `gotk-components.yaml` file for flux in our git repo.For example, mine lives in `clusters/cluster-01/base`
 
 
 ```console

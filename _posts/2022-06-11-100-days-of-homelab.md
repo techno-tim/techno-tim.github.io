@@ -10,9 +10,9 @@ image:
 
 ---
 
-It's here. The #100DaysOfHomeLab challenge!  This challenge is meant to accelerate your knowledge in servers, networking, infrastructure, automation, storage, containerization, orchestration, virtualization, Windows, Linux, and more.  It can even possibly accelerate your IT career!  So, commit to the Hundred Days of HomeLab challenge, share your progress, and encourage others along the way!  
+It's here. The #100DaysOfHomeLab challenge!  This challenge is meant to accelerate your knowledge in servers, networking, infrastructure, automation, storage, containerization, orchestration, virtualization, Windows, Linux, and more.It can even possibly accelerate your IT career!  So, commit to the Hundred Days of HomeLab challenge, share your progress, and encourage others along the way!  
 
-So, to celebrate my 100k subs, I brought in some of the biggest names in the HomeLab community and some new faces too!  A hue thanks to everyone that took part in this video.  I can't thank you enough!
+So, to celebrate my 100k subs, I brought in some of the biggest names in the HomeLab community and some new faces too!  A hue thanks to everyone that took part in this video.I can't thank you enough!
 
 {% include embed/youtube.html id='bwDVW_ifkBU' %}
 📺 [Watch Video](https://www.youtube.com/watch?v=bwDVW_ifkBU)

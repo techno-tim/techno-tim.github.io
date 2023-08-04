@@ -9,7 +9,7 @@ image:
   lqip: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAUACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APyO1D/gvr+1HrekaWsXwt+Buj3vhy9ltdQuNO0bxS1t4mxp9xpqf2nY33ie7FrAktzHqgt9Lns/+JhaQ/vRZF7NjL8rrVKUK1TMsU4y0VNRpx5WlGTfPZ3TXu2cet23pb0sXmVGE3COAoKUG7yc6jUldxScLq3dtS12VloefS/8Fwv2mZpJJX+Fv7PxeV3kc/8ACK+L+WdizH/kee5JrreWTu/9vxi125qf/wAgcaxsGk/qWG2/6e//ACw//9k=
 ---
 
-After setting up my Linux servers, there are a few things I do before I use them for their intended purpose.  This ranges from security, to tools, to config.  Join me as we set up our first Linux server in this tutorial and walk through setting it up proper (and maybe some bonus items sprinkled in).
+After setting up my Linux servers, there are a few things I do before I use them for their intended purpose.This ranges from security, to tools, to config.Join me as we set up our first Linux server in this tutorial and walk through setting it up proper (and maybe some bonus items sprinkled in).
 
 {% include embed/youtube.html id='ZsjK4VDopiE' %}
 

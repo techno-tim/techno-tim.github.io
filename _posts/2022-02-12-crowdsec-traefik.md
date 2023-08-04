@@ -10,7 +10,7 @@ image:
 
 ---
 
-[CrowdSec](https://crowdsec.net/) is a free, open-source and collaborative IPS. Analyze behaviors, respond to attacks & share signals across the community.  With CrowdSec, you can set up your own intrusion detection system that parses logs, detects and blocks threats, and shares bad actors with the larger CrowdSec community.  It works great with a reverse proxy like [traefik](https://traefik.io/) to help keep hackers at bay.  Could this be a viable alternative to fail2ban?
+[CrowdSec](https://crowdsec.net/) is a free, open-source and collaborative IPS. Analyze behaviors, respond to attacks & share signals across the community.With CrowdSec, you can set up your own intrusion detection system that parses logs, detects and blocks threats, and shares bad actors with the larger CrowdSec community.It works great with a reverse proxy like [traefik](https://traefik.io/) to help keep hackers at bay.Could this be a viable alternative to fail2ban?
 
 {% include embed/youtube.html id='-GxUP6bNxF0' %}
 

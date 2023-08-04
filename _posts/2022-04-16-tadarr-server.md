@@ -10,7 +10,7 @@ image:
 
 ---
 
-Tdarr is a distributed transcoding system that runs on on Windows, Mac, Linux, Arm, Docker, and even Unraid.  It uses a server with one or more nodes to transcode videos into any format you like.  Today, we'll set up the Docker and Windows version of Tdarr using a GPU to regain up to 50% of your disk space back.  I converted my video collection using Tdarr to h265 and saved over 700 GB of disk space.  
+Tdarr is a distributed transcoding system that runs on on Windows, Mac, Linux, Arm, Docker, and even Unraid.It uses a server with one or more nodes to transcode videos into any format you like.Today, we'll set up the Docker and Windows version of Tdarr using a GPU to regain up to 50% of your disk space back.I converted my video collection using Tdarr to h265 and saved over 700 GB of disk space.
 
 A HUGE THANKS to our sponsor, Micro Center!
 

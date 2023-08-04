@@ -9,7 +9,7 @@ image:
   lqip: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAUACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP4hvBOoaXqUOg+F9c0mXUobq3ZluItR+xFNxHlrIi2c88iovmK7RXdvI4cCKSBQyyN0ZOhmMqNV0MV/Z+IrUMUqVGtKjLDxeJlHkrwqRcKsKcqMuR0p3lGbnOMPZS6KNeCxOW0q1J1qU8ww1KdP2tSlCSxM44bnl7LllKdP2vPBzlKKcWlFOXMvbz8FvAi/L/wjukNt+Xc1x4xy2OMnb4zVcnqdqgZ6ADivnMHgc3xeDwmL/wBYcXT+tYahiPZrAZVJU/b0o1ORSeETko83LzNK9r2Wx6WLzDK8LisThf7AwtT6tiK1D2n17M4e09jUlT5+T61Ll5uXm5eaXLe13a5//9k=
 ---
 
-You want to get started developing JavaScript with NodeJS, ReactJS, or AngularJS but you're not sure how to get started?  This is a complete, step by step guide on how to configure your Windows machines for JavaScript development the right way.  You'll learn how to install and configure Windows, the new Windows Terminal, WSL, Ubuntu, ZSH with Oh My ZSH, yarn, NPM,  NVM, NodeJS, and VS Code.  We'll also configure our git client for SSH access to GitHub.  This is the perfect beginner tutorial for anyone trying to develop software on a Windows PC.
+You want to get started developing JavaScript with NodeJS, ReactJS, or AngularJS but you're not sure how to get started?  This is a complete, step by step guide on how to configure your Windows machines for JavaScript development the right way.You'll learn how to install and configure Windows, the new Windows Terminal, WSL, Ubuntu, ZSH with Oh My ZSH, yarn, NPM,  NVM, NodeJS, and VS Code.We'll also configure our git client for SSH access to GitHub.This is the perfect beginner tutorial for anyone trying to develop software on a Windows PC.
 
 {% include embed/youtube.html id='kL8iGErULiw' %}
 
@@ -77,7 +77,7 @@ curl -o- -L https://yarnpkg.com/install.sh | bash
 
 ## Configure Git
 
-You'll want to follow this guide for configuring git.  Be sure to follow the `LINUX` version
+You'll want to follow this guide for configuring git.Be sure to follow the `LINUX` version
 
 <https://docs.github.com/en/github/using-git/getting-started-with-git-and-github>
 

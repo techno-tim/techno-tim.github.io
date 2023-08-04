@@ -10,7 +10,7 @@ image:
 
 ---
 
-Using Cloud Images and Cloud Init with Proxmox is easy, fast, efficient, and fun!  Cloud Images are small images that are certified cloud ready that have Cloud Init preinstalled and ready to accept a Cloud Config.  Cloud Images and Cloud Init also work with Proxmox and if you combine the two you have a perfect, small, efficient, optimized clone template to provision machines with your ssh keys and network settings.  So join me as we discuss, set up, and configure Proxmox with Cloud Images and Cloud Init.
+Using Cloud Images and Cloud Init with Proxmox is easy, fast, efficient, and fun!  Cloud Images are small images that are certified cloud ready that have Cloud Init preinstalled and ready to accept a Cloud Config.Cloud Images and Cloud Init also work with Proxmox and if you combine the two you have a perfect, small, efficient, optimized clone template to provision machines with your ssh keys and network settings.So join me as we discuss, set up, and configure Proxmox with Cloud Images and Cloud Init.
 
 {% include embed/youtube.html id='shiIi38cJe4' %}
 
@@ -64,7 +64,7 @@ qm set 8000 --serial0 socket --vga serial0
 
 **DO NOT START YOUR VM**
 
-Now, configure hardware and cloud init, then create a template and clone.  If you want to expand your hard drive you can on this base image before creating a template or after you clone a new machine.  I prefer to expand the hard drive after I clone a new machine based on need.
+Now, configure hardware and cloud init, then create a template and clone.If you want to expand your hard drive you can on this base image before creating a template or after you clone a new machine.I prefer to expand the hard drive after I clone a new machine based on need.
 
 Create template.
 
@@ -87,7 +87,7 @@ sudo rm -f /etc/machine-id
 sudo rm -f /var/lib/dbus/machine-id
 ```
 
-Then shut it down and do not boot it up.  A new id will be generated the next time it boots.  If it does not you can run:
+Then shut it down and do not boot it up.A new id will be generated the next time it boots.If it does not you can run:
 
 ```bash
 sudo systemd-machine-id-setup

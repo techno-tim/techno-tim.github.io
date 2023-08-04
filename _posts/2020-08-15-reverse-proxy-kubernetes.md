@@ -102,7 +102,7 @@ traefik sample answers yaml
 
 ## Troubleshooting
 
-Be sure that your Traefik yaml matches the code above exactly, including whitespace.  Yaml is whitespace sensitive.
+Be sure that your Traefik yaml matches the code above exactly, including whitespace.Yaml is whitespace sensitive.
 
 ## Links
 

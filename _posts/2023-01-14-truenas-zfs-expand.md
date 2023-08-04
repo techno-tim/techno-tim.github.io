@@ -10,7 +10,7 @@ image:
 
 ---
 
-ZFS is a great file system that comes with TrueNAS and can meet all of your storage needs.  But with it comes some complexity on how to manage and expand your ZFS storage pools.  Over the last week I learned all about storage pools and how to move them, expand them, and even what not to do when trying to grow your storage pool.  Join me as I figure out how to move a 20 TB pool to my new storage server with 100 TB of raw data.
+ZFS is a great file system that comes with TrueNAS and can meet all of your storage needs.But with it comes some complexity on how to manage and expand your ZFS storage pools.Over the last week I learned all about storage pools and how to move them, expand them, and even what not to do when trying to grow your storage pool.Join me as I figure out how to move a 20 TB pool to my new storage server with 100 TB of raw data.
 
 {% include embed/youtube.html id='Uzk6Janio0g' %}
 📺 [Watch Video](https://www.youtube.com/watch?v=Uzk6Janio0g)

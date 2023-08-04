@@ -15,7 +15,7 @@ order: 5
 
 # 👋 Hi!
 
-I'm Timothy Stewart (Techno Tim), a full stack software engineer, content creator, and a HomeLab enthusiast.   I create fun and easy to follow tech content on [YouTube](https://l.technotim.live/subscribe), host a community live stream on [Twitch](https://l.technotim.live/twitch), and share tech related content on all social platforms.  I even host a community [wiki](https://l.technotim.live/wiki) that is open for anyone to contribute to from our [Discord Community](https://l.technotim.live/discord). I also create and contribute to many open source projects. Even my [documentation site](https://l.technotim.live/docs) for all my videos is open source! I really enjoy building open source software, creating and contributing to communities, teaching through video content, and helping out anywhere on the web.
+I'm Timothy Stewart (Techno Tim), a full stack software engineer, content creator, and a HomeLab enthusiast. I create fun and easy to follow tech content on [YouTube](https://l.technotim.live/subscribe), host a community live stream on [Twitch](https://l.technotim.live/twitch), and share tech related content on all social platforms.I even host a community [wiki](https://l.technotim.live/wiki) that is open for anyone to contribute to from our [Discord Community](https://l.technotim.live/discord). I also create and contribute to many open source projects. Even my [documentation site](https://l.technotim.live/docs) for all my videos is open source! I really enjoy building open source software, creating and contributing to communities, teaching through video content, and helping out anywhere on the web.
 
 ## Contact
 

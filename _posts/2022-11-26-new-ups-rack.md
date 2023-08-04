@@ -10,12 +10,12 @@ image:
 
 ---
 
-Today I look at 2 (or 3 depending on how you count them) UPS systems from Tripp Lite and Eaton.  These UPS devices couldn't be any different but they are awesome nonetheless.  Each has it's own unique capabilities and features.  Which on will you choose when looking for your next UPS?  Join me as we walk through and review these type UPS systems and rack them in my new rack!
+Today I look at 2 (or 3 depending on how you count them) UPS systems from Tripp Lite and Eaton.These UPS devices couldn't be any different but they are awesome nonetheless.Each has it's own unique capabilities and features.Which on will you choose when looking for your next UPS?  Join me as we walk through and review these type UPS systems and rack them in my new rack!
 
 {% include embed/youtube.html id='tnrNGE5SRhQ' %}
 📺 [Watch Video](https://www.youtube.com/watch?v=tnrNGE5SRhQ)
 
-Huge THANK YOU to Eaton / Tripp Lite for sending these UPS systems.  If you're looking for a new UPS for home or work, you should totally check them out!
+Huge THANK YOU to Eaton / Tripp Lite for sending these UPS systems.If you're looking for a new UPS for home or work, you should totally check them out!
 
 Tripp Lite
 

@@ -10,7 +10,7 @@ image:
 
 ---
 
-Setting up alerts in Proxmox is important and critical to making sure you are notified if something goes wrong with your servers.  It's so easy, I should have done this years ago!  In this tutorial, we'll set up email notifications using SMTP with Gmail or G Suite that send email alerts when there are disk errors, ZSF Issues, or when backup jobs run.  We'll then test the alerts to make sure they are working by yoinking a drive from my ZFS pool (and hopefully it doesn't fail).
+Setting up alerts in Proxmox is important and critical to making sure you are notified if something goes wrong with your servers.It's so easy, I should have done this years ago!  In this tutorial, we'll set up email notifications using SMTP with Gmail or G Suite that send email alerts when there are disk errors, ZSF Issues, or when backup jobs run.We'll then test the alerts to make sure they are working by yoinking a drive from my ZFS pool (and hopefully it doesn't fail).
 
 {% include embed/youtube.html id='85ME8i4Ry6A' %}
 📺 [Watch Video](https://www.youtube.com/watch?v=85ME8i4Ry6A)

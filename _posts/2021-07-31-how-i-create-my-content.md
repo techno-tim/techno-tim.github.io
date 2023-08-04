@@ -11,7 +11,7 @@ image:
 ---
 
 
-People have asked how I've been able to create and grow a Tech YouTube channel and what my process is when planning, filming, editing, and producing content.  Today we talk about just that.  All my secrets unveiled as we celebrate 50,000 subscribers in this behind the scenes look.  Thank you so much!
+People have asked how I've been able to create and grow a Tech YouTube channel and what my process is when planning, filming, editing, and producing content.Today we talk about just that.All my secrets unveiled as we celebrate 50,000 subscribers in this behind the scenes look.Thank you so much!
 
 {% include embed/youtube.html id='SivkS9Ug5dw' %}
 

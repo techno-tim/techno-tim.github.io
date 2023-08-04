@@ -10,7 +10,7 @@ image:
 
 ---
 
-Rancher released a next generation open source HCI software hypervisor built on Kubernetes that helps you run virtual machines.  With Harvester you can create Linux, Windows, or any virtual machine that can be easily scaled and cluster giving your high availability virtual machines with a few clicks.  It also gives you a platform to automatically create HA RKE1, RKE2, and K3S Kubernetes clusters with etcd along with the virtual machines it runs on.  Now you can run virtual machines and kubernetes on the edge on one machine.
+Rancher released a next generation open source HCI software hypervisor built on Kubernetes that helps you run virtual machines.With Harvester you can create Linux, Windows, or any virtual machine that can be easily scaled and cluster giving your high availability virtual machines with a few clicks.It also gives you a platform to automatically create HA RKE1, RKE2, and K3S Kubernetes clusters with etcd along with the virtual machines it runs on.Now you can run virtual machines and kubernetes on the edge on one machine.
 
 {% include embed/youtube.html id='tVsMen_e6OI' %}
 

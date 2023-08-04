@@ -10,7 +10,7 @@ image:
 
 ---
 
-You've spun up lots of self-hosted services in your HomeLab but you haven't set up monitoring and alerting yet.  Well, be glad you waited because today well set up Uptime Kuma to do just that.  Uptime Kuma is a self-hosted, open source, fancy uptime monitoring and alerting system.  It can monitor HTTP, HTTP with keyword, TCP, Ping, and even DNS systems!
+You've spun up lots of self-hosted services in your HomeLab but you haven't set up monitoring and alerting yet.Well, be glad you waited because today well set up Uptime Kuma to do just that.Uptime Kuma is a self-hosted, open source, fancy uptime monitoring and alerting system.It can monitor HTTP, HTTP with keyword, TCP, Ping, and even DNS systems!
 
 [https://github.com/louislam/uptime-kuma](https://github.com/louislam/uptime-kuma)
 

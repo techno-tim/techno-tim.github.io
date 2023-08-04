@@ -10,7 +10,7 @@ image:
 
 ---
 
-Jekyll is a static site generator that transforms your plain text into beautiful static web sites and blogs.  It can be use for a documentation site, a blog, an event site, or really any web site you like.   It's fast, secure, easy, and open source.  It's also the same site generator I use to maintain my open source documentation.  Today, we'll be installing and configuring Jekyll using the Chirpy theme.  We configure the site, create some pages with markdown, automatically build it with a GitHub action and even host it for FREE on GitHub pages.  If you don't want to host in the cloud, I show how to host it on your own server or even in Docker.
+Jekyll is a static site generator that transforms your plain text into beautiful static web sites and blogs.It can be use for a documentation site, a blog, an event site, or really any web site you like. It's fast, secure, easy, and open source.It's also the same site generator I use to maintain my open source documentation.Today, we'll be installing and configuring Jekyll using the Chirpy theme.We configure the site, create some pages with markdown, automatically build it with a GitHub action and even host it for FREE on GitHub pages.If you don't want to host in the cloud, I show how to host it on your own server or even in Docker.
 
 A HUGE THANK YOU to Micro Center for Sponsoring this video!
 
@@ -166,7 +166,7 @@ See more post formatting rules on the [Jekyll site](https://jekyllrb.com/docs/po
 
 If you need some help with markdown, check out the [markdown cheat sheet](https://www.markdownguide.org/cheat-sheet/)
 
-I have lots of examples in my [documentation site repo](https://github.com/techno-tim/techno-tim.github.io/tree/master/_posts).  Just click on the Raw button to see the code behind the page.
+I have lots of examples in my [documentation site repo](https://github.com/techno-tim/techno-tim.github.io/tree/master/_posts).Just click on the Raw button to see the code behind the page.
 
 For more neat syntax for the Chirpy theme check their demo page on making posts <https://chirpy.cotes.page/posts/write-a-new-post/>
 

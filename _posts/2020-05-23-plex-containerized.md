@@ -10,7 +10,7 @@ image:
 
 ---
 
-I'm a huge fan of virtualization and containerization (if you couldn't tell already)!  Today, we'll walk though the various ways to install Plex step-by-step.  We also see how easy it is to get Plex running on Docker and Kubernetes using Rancher.
+I'm a huge fan of virtualization and containerization (if you couldn't tell already)!  Today, we'll walk though the various ways to install Plex step-by-step.We also see how easy it is to get Plex running on Docker and Kubernetes using Rancher.
 
 {% include embed/youtube.html id='MG_1XQxWns0' %}
 

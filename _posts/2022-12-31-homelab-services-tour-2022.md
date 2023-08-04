@@ -10,7 +10,7 @@ image:
 
 ---
 
-Wow, what a year of self-hosting! After showing off my Home Lab hardware in my late 2022 tour, many of you asked what services are self-hosted in this stack.   This is always a moving target so I decided it was time to share which services I am running here at home.  Today, we walk through everything I am hosting including:  Dashboard, Hypervisor, Virtualization, Containerization, Network Attached Storage (NAS), DNS, Network Management, Home Security, Kubernetes, Kubernetes Storage, Docker, Reverse Proxy, Certificates, Monitoring, Logging, Syncing Data, File Sharing, Link Page, Link Shortening, Home Entertainment, Home Automation, Battery / UPS Monitoring, CMS, Static Site Generators, Dynamic DNS, CI/CD, Git Ops, Dev Ops, and many, many others.  Enjoy the virtual tour!
+Wow, what a year of self-hosting! After showing off my Home Lab hardware in my late 2022 tour, many of you asked what services are self-hosted in this stack. This is always a moving target so I decided it was time to share which services I am running here at home.Today, we walk through everything I am hosting including:  Dashboard, Hypervisor, Virtualization, Containerization, Network Attached Storage (NAS), DNS, Network Management, Home Security, Kubernetes, Kubernetes Storage, Docker, Reverse Proxy, Certificates, Monitoring, Logging, Syncing Data, File Sharing, Link Page, Link Shortening, Home Entertainment, Home Automation, Battery / UPS Monitoring, CMS, Static Site Generators, Dynamic DNS, CI/CD, Git Ops, Dev Ops, and many, many others.Enjoy the virtual tour!
 
 Worth mentioning, I have videos on almost every service mentioned in this video!
 

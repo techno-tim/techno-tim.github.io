@@ -9,11 +9,11 @@ image:
   lqip: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAUACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APww/Z81j4Zx/DnWfBWofBvwnrV9dTxX8vijVDbzar9jkuNKgl05LiPSYtVQQsZJtNuBrX+iGV4biG/gZo2/N8yjjfbLEU8wr04xjf2KjFxunNtpt2i5KSUko20ukm04/ZZZi8qo4aOCr5Dg8VUr1FH61OpKNSKkqWluSTkoOLcL1FJc1nKUVJS+X9b8FfD631nVre38IWEcEGp38MEbRaVIUhiupUjQyPoxZyqKql2+ZiNx5Jr2KWIxjp028VNtwg271N3FdqqX3JLyPCrYDLFWqpYNJKpNJf7O7JSaSvLCuTt3bb7tvU//2Q==
 ---
 
-In my previous video ([Meet Grafana LOKI, a log aggregation system for everything](https://www.youtube.com/watch?v=h_GGd7HfKQ8) and [post](/posts/grafana-loki/), I promised that I would also explain how to install Granfana Loki on Kubernetes using `helm`.  If you're looking to set this up in `docker-compose`, be sure to check out this [video](https://www.youtube.com/watch?v=h_GGd7HfKQ8)
+In my previous video ([Meet Grafana LOKI, a log aggregation system for everything](https://www.youtube.com/watch?v=h_GGd7HfKQ8) and [post](/posts/grafana-loki/), I promised that I would also explain how to install Granfana Loki on Kubernetes using `helm`.If you're looking to set this up in `docker-compose`, be sure to check out this [video](https://www.youtube.com/watch?v=h_GGd7HfKQ8)
 
 ## Installing helm
 
-Think of `helm` as a package manager for kubernetes. It'a an easy way to bundle and deploy config to kubernetes with versioning.  If you need to install `helm` visit [helm.sh](https://helm.sh/docs/intro/install/)
+Think of `helm` as a package manager for kubernetes. It'a an easy way to bundle and deploy config to kubernetes with versioning.If you need to install `helm` visit [helm.sh](https://helm.sh/docs/intro/install/)
 
 ## Installing Loki Stack
 

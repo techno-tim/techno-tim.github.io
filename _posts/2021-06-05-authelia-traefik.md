@@ -10,7 +10,7 @@ image:
 
 ---
 
-Authelia is an open source Single Sign On and 2FA companion for reverse proxies.  It helps you secure your endpoints with single factor and 2 factor auth.  It works with Nginx, Traefik, and HA proxy.  Today, we'll configure Authelia with Portainer and Traefik and have 2 Factor up and running with brute force protection!
+Authelia is an open source Single Sign On and 2FA companion for reverse proxies.It helps you secure your endpoints with single factor and 2 factor auth.It works with Nginx, Traefik, and HA proxy.Today, we'll configure Authelia with Portainer and Traefik and have 2 Factor up and running with brute force protection!
 
 {% include embed/youtube.html id='u6H-Qwf4nZA' %}
 
@@ -18,7 +18,7 @@ Authelia is an open source Single Sign On and 2FA companion for reverse proxies.
 
 ## Traefik
 
-Authelia will work with other reverse proxies but I used Traefik.  If you want to configure Traefik as your reverse proxy see this [guide](/posts/traefik-portainer-ssl/).
+Authelia will work with other reverse proxies but I used Traefik.If you want to configure Traefik as your reverse proxy see this [guide](/posts/traefik-portainer-ssl/).
 
 ## Docker Setup
 

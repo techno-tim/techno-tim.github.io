@@ -10,7 +10,7 @@ image:
 
 ---
 
-You asked for a tour of my homelab, well here it is.  In this tour I will take you through my home server rack and network setup.  This includes my all of my home networking  equipment, my servers, disk array, and everything else in my server rack.
+You asked for a tour of my homelab, well here it is.In this tour I will take you through my home server rack and network setup.This includes my all of my home networking  equipment, my servers, disk array, and everything else in my server rack.
 
 {% include embed/youtube.html id='23jbcw_n20I' %}
 

@@ -10,7 +10,7 @@ image:
 
 ---
 
-My Storinator server from 45Drives is great, except for 1 thing.  It's a little loud for my home.  It would be fine if it were in a data center or a real network closet, however this is in my basement.  I decided to swap out all the fans to make it quieter, and install RGB fans along with a ZigBee controller so I can control them with Home Automation!
+My Storinator server from 45Drives is great, except for 1 thing.It's a little loud for my home.It would be fine if it were in a data center or a real network closet, however this is in my basement.I decided to swap out all the fans to make it quieter, and install RGB fans along with a ZigBee controller so I can control them with Home Automation!
 
 {% include embed/youtube.html id='zaAUn0QeKVo' %}
 📺 [Watch Video](https://www.youtube.com/watch?v=zaAUn0QeKVo)

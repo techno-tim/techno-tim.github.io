@@ -10,7 +10,7 @@ image:
 
 ---
 
-Storage in Kubernetes is hard, complicated, and messy.  Configuring volumes, mounts, and persistent volumes claims and getting it right can be a challenge.  It's also challenging to manage that storage and replicate it across all your Kubernetes clusters.  It's also been very challenging to do this on bare metal, outside of a cloud provider.  That's where Longhorn comes.  Longhorn is an open source, a CNCF distributed block storage system for Kubernetes.  It comes with a UI, backups, snapshots, cluster disaster recovery, and it does all this with or without Rancher.  Rancher is NOT a requirement.
+Storage in Kubernetes is hard, complicated, and messy.Configuring volumes, mounts, and persistent volumes claims and getting it right can be a challenge.It's also challenging to manage that storage and replicate it across all your Kubernetes clusters.It's also been very challenging to do this on bare metal, outside of a cloud provider.That's where Longhorn comes.Longhorn is an open source, a CNCF distributed block storage system for Kubernetes.It comes with a UI, backups, snapshots, cluster disaster recovery, and it does all this with or without Rancher.Rancher is NOT a requirement.
 
 {% include embed/youtube.html id='eKBBHc0t7bc' %}
 
@@ -64,7 +64,7 @@ kubectl -n longhorn-system get pod
 
 ## Taints
 
-> This is not required, nor do I taint nodes anymore.  I allow Longhorn storage to use any available space on any node that is not running `etcd` / control plane.  You can simply skip this step and it will work like this.  If you're still convinced you need dedicated nodes, it's much easier doing it in the Longhorn UI after a node joins the cluster than with taints.
+> This is not required, nor do I taint nodes anymore.I allow Longhorn storage to use any available space on any node that is not running `etcd` / control plane.You can simply skip this step and it will work like this.If you're still convinced you need dedicated nodes, it's much easier doing it in the Longhorn UI after a node joins the cluster than with taints.
 {: .prompt-info }
 
 I ended up tainting my storage nodes using this command

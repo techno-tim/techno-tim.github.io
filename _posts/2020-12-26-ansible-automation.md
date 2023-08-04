@@ -9,7 +9,7 @@ image:
   lqip: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAUACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APyR+IH7ZfjNNT+H8UHg/wAI2+v64fh94lk8Uj+2L/V7LWrrw14O8J3F5aXGuajq9zPFJpml6VFFpWrXep6DpsVmP7F0nS71LG/sPMwdT6vTWHpxUbezjz037Jc0/Z05yVOFqaUlHWCioJ2cUmrv6/GQeZ4qWPrVJyU5YifsK0pYh+ypPEYilRniKsnXq8kpcqrVJSqyX8SU17p8HeLPin4o1zxT4l1q9vZzeav4g1nVLsr/AGftNzqGo3N3OV3aYzbTLM+NzM2OpJ5rpWIqWXvVNlvUbe3V6XfyMJ0qUZzj7GlpKS92MorRtaR53yrsruy0uf/Z
 ---
 
-Ansible.  Need I say more?  Well, maybe, if you've never heard of it. Ansible is a simple IT / DevOps automation that anyone can use.  You can Automate anything with an SSH connection and WITHOUT installing any agents or clients. Join me as we set up, configure and start automating with Ansible!
+Ansible.Need I say more?  Well, maybe, if you've never heard of it. Ansible is a simple IT / DevOps automation that anyone can use.You can Automate anything with an SSH connection and WITHOUT installing any agents or clients. Join me as we set up, configure and start automating with Ansible!
 
 {% include embed/youtube.html id='w9eCU4bGgjQ' %}
 
@@ -23,7 +23,7 @@ sudo apt install ansible
 sudo apt install sshpass
 ```
 
-> *Note: Most distributions include an "older" version of Ansible.  If you want to install the latest version of Ansible, see [installing the latest version of ansible](#installing-the-latest-version-of-ansible)*
+> *Note: Most distributions include an "older" version of Ansible.If you want to install the latest version of Ansible, see [installing the latest version of ansible](#installing-the-latest-version-of-ansible)*
 {: .prompt-info }
 
 `hosts`
@@ -148,7 +148,7 @@ FallbackNTP=time.cloudflare.com
 
 ## Installing the latest version of Ansible
 
-Most distributions have an older version of Ansible installed.  This is usually fine except sometimes you may need to use features from the latest Ansible.  Use the following commands to update Ansible to the latest version.
+Most distributions have an older version of Ansible installed.This is usually fine except sometimes you may need to use features from the latest Ansible.Use the following commands to update Ansible to the latest version.
 
 Check version
 

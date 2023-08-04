@@ -9,7 +9,7 @@ image:
   lqip: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAUACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP5sfDF3rnjS10ueTU4NLj1TQdN1l4rXT1uHhF/e3ET2ay3lzKsiJBBGouJopLkzSTzeYFFjDYf7T1+JsZTw9Gs4RcuWcZxhL2dKdXC4pc9VR5ZSpxxFCEqM6MZ8lNzdSly+/Cf8uYrAYPDVqlFUVUtKHLOTtaNWkmk4xSTdOpJTTulKMVBrVyOq/wCEBhX5X1/WpHX5Xk26UvmOOGfaNNIXccttBOM4ya8iPGOLjGMXg8NNqKTnKVbmk0rOUrVIrmlu7JK70SWhzSwVFybVOjFNtqKpyaim9Er1G7LZXbfdn//Z
 ---
 
-Setting up k3s is hard.  That's why we made it easy.  Today we'll set up a High Availability K3s cluster using etcd, MetalLB, kube-vip, and Ansible.  We'll automate the entire process giving you an easy, repeatable way to create a k3s cluster that you can run in a few minutes.
+Setting up k3s is hard.That's why we made it easy.Today we'll set up a High Availability K3s cluster using etcd, MetalLB, kube-vip, and Ansible.We'll automate the entire process giving you an easy, repeatable way to create a k3s cluster that you can run in a few minutes.
 
 A HUGE THANKS to our sponsor, Micro Center!
 
@@ -25,7 +25,7 @@ You'll need to be sure you have Ansible installed on your machine and that it is
 
 Second, you'll need to provision the VMs. Here's an easy way to create [perfect Proxmox templates with cloud image and cloud init](/posts/cloud-init-cloud-image/) and a video if you need.
 
-Next, you'll need to fork and clone [the repo](https://github.com/techno-tim/k3s-ansible).  While you're at it, give it a ⭐ too :).
+Next, you'll need to fork and clone [the repo](https://github.com/techno-tim/k3s-ansible).While you're at it, give it a ⭐ too :).
 
 ```bash
 git clone https://github.com/techno-tim/k3s-ansible
@@ -37,7 +37,7 @@ Next you'll want to create a local copy of `ansible.example.cfg`.
 cp ansible.example.cfg ansible.cfg
 ```
 
-You'll want to adapt this to suit your needs however the defaults should work without issue.  If you're looking for the old defaults, you can see them in this [PR that remove the file](https://github.com/techno-tim/k3s-ansible/blob/96c49c864e3b9427e8eb59a6f420f032db51e831/ansible.cfg).
+You'll want to adapt this to suit your needs however the defaults should work without issue.If you're looking for the old defaults, you can see them in this [PR that remove the file](https://github.com/techno-tim/k3s-ansible/blob/96c49c864e3b9427e8eb59a6f420f032db51e831/ansible.cfg).
 
 Next you'll need to install some requirements for `ansible`
 
@@ -55,7 +55,7 @@ cp -R inventory/sample inventory/my-cluster
 
 ## Installing k3s
 
-Next, edit the `inventory/my-cluster/hosts.ini` to match your systems.  DNS works here too.
+Next, edit the `inventory/my-cluster/hosts.ini` to match your systems.DNS works here too.
 
 ```ini
 [master]
@@ -72,7 +72,7 @@ master
 node
 ```
 
-Edit `inventory/my-cluster/group_vars/all.yml`  to your liking.  See comments inline.
+Edit `inventory/my-cluster/group_vars/all.yml`  to your liking.See comments inline.
 
 It's best to start using these args, and optionally include `traefik` if you want it installed with `k3s` however I would recommend installing it later with `helm`
 
@@ -90,9 +90,9 @@ extra_agent_args: >-
   {{ extra_args }}
 ```
 
-I would not change these values unless you know what you are doing.  It will most likely not work for you but listing for posterity.
+I would not change these values unless you know what you are doing.It will most likely not work for you but listing for posterity.
 
-> *Note: These are for an advanced use case. There isn't a one size fits all setting for everyone and their needs, I would try using k3s with the above values before changing them.  This could have undesired effects like nodes going offline, pods jumping or being removed, etc... Using these args might come at the cost of stability Also, these will not work anymore without some modifications*  
+> *Note: These are for an advanced use case. There isn't a one size fits all setting for everyone and their needs, I would try using k3s with the above values before changing them.This could have undesired effects like nodes going offline, pods jumping or being removed, etc... Using these args might come at the cost of stability Also, these will not work anymore without some modifications*  
 {: .prompt-danger }
 
 ```yaml
@@ -174,7 +174,7 @@ kubectl delete -f example/service.yml
 
 ## Resetting your cluster
 
-This will remove k3s from all nodes.  These nodes should be rebooted afterwards.
+This will remove k3s from all nodes.These nodes should be rebooted afterwards.
 
 ```bash
 ansible-playbook ./reset.yml -i ./inventory/my-cluster/hosts.ini

@@ -10,7 +10,7 @@ image:
 
 ---
 
-I decided to tear apart our office and convert my old Ikea hack table tops into a standing desk.  Oh, and I also clamped on 3 - 27" 1440p gaming monitors while I was at it 😉
+I decided to tear apart our office and convert my old Ikea hack table tops into a standing desk.Oh, and I also clamped on 3 - 27" 1440p gaming monitors while I was at it 😉
 
 {% include embed/youtube.html id='wOSx4pDyq7E' %}
 

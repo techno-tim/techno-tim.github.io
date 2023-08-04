@@ -10,7 +10,7 @@ image:
 
 ---
 
-I've been on a quest to find a new logging system.  I've use quite a few in the past, some open source, some proprietary, and some home grown, but recently I've decided to switch.  I've switched to Grafana Loki for all of my logs for all of my systems - this includes machines, devices, docker systems and hosts, and my all of my kubernetes clusters.  If you're thinking of using Grafana and are also looking for a fast way to log all of your systems, join me as we discuss and configure Grafana Loki.
+I've been on a quest to find a new logging system.I've use quite a few in the past, some open source, some proprietary, and some home grown, but recently I've decided to switch.I've switched to Grafana Loki for all of my logs for all of my systems - this includes machines, devices, docker systems and hosts, and my all of my kubernetes clusters.If you're thinking of using Grafana and are also looking for a fast way to log all of your systems, join me as we discuss and configure Grafana Loki.
 
 {% include embed/youtube.html id='h_GGd7HfKQ8' %}
 

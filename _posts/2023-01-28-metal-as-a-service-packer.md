@@ -9,7 +9,7 @@ image:
   lqip: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAUACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP5YtN+KHh7w18KD4esPhzo7+Kpjolnpvjea7g+0aZozaI8epac2jRaNHbalLqd29tftf3128tlcQTyWUcM2p6jPcf17wh4hY3gbh3GYbJspyiVfMacMJPG4zD+3rUKUsLh2vYU17Ohz+7WcpVadVylXnNOM1zP8O4n4FwnGGc4LEZpmma06GAk8TDBYLEfV6NaosTVl++qNVK3InyKMKM6UeSmoVFUioqHxhcSTSTzSM6bnmkdv3KdWdmPQAdT2AHtX4zXzvMqtetVnVpudSrUqSfsKespzcpPbu2fqFLLMJSpU6cIzUKdOEIr2k3aMIqMVe+tkkf/Z
 ---
 
-MaaS or Metal as a service from Canonical is a great way to provision bare metal machines as well as virtual machines.  MaaS allows you to deploy Windows, Linux, ESXi, and many other operating systems to your systems helping you to build a bare metal cloud.  You can even use Packer from Hashicorp to configure custom images too!  We'll cover all of this and more in this tutorial on how to install and configure MaaS from start to finish with Packer!
+MaaS or Metal as a service from Canonical is a great way to provision bare metal machines as well as virtual machines.MaaS allows you to deploy Windows, Linux, ESXi, and many other operating systems to your systems helping you to build a bare metal cloud.You can even use Packer from Hashicorp to configure custom images too!  We'll cover all of this and more in this tutorial on how to install and configure MaaS from start to finish with Packer!
 
 {% include embed/youtube.html id='lEqD3mRcqSo' %}
 📺 [Watch Video](https://www.youtube.com/watch?v=lEqD3mRcqSo)
@@ -26,7 +26,7 @@ Visit Micro Center's Community Page: <https://micro.center/2vr>
 
 ## Installing MaaS
 
-MaaS can be installed via `apt` or `snap`.  I had some issues with the `apt` version so I used `snap` for this install.
+MaaS can be installed via `apt` or `snap`.I had some issues with the `apt` version so I used `snap` for this install.
 
 ### snap install
 
@@ -79,7 +79,7 @@ sudo maas init region+rack --database-uri maas-test-db:///
 
 ```
 
-If you already have postgres in your environment you can initialize MaaS using your existing postgres service.  Be sure to create the database, user, and assign that user permissions before running the init command.
+If you already have postgres in your environment you can initialize MaaS using your existing postgres service.Be sure to create the database, user, and assign that user permissions before running the init command.
 
 ```bash
 sudo maas init region+rack --database-uri "postgres://username:password@192.168.0.100/maas" # replace username /password / ip /db name

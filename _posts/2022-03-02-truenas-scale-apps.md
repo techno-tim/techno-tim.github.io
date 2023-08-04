@@ -10,7 +10,7 @@ image:
 
 ---
 
-TrueNAS SCALE is here and with it comes new way of installing and managing applications.  You can install official apps, unofficial and community apps using TrueCharts, and also any Docker image or Kubernetes deployment with helm.  Join me as we dive into managing applications and exploring TrueNAS SCALES's new app engine that runs Docker, Kubernetes, and K3S.
+TrueNAS SCALE is here and with it comes new way of installing and managing applications.You can install official apps, unofficial and community apps using TrueCharts, and also any Docker image or Kubernetes deployment with helm.Join me as we dive into managing applications and exploring TrueNAS SCALES's new app engine that runs Docker, Kubernetes, and K3S.
 
 {% include embed/youtube.html id='oafOky5GSzc' %}
 

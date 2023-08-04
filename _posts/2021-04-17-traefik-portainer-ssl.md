@@ -9,7 +9,7 @@ image:
   lqip: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAUACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP5LLS6lGp6WYY4Elur23tjNK19I0FvEs95cpbwQ39tZFr2KJ7WZr21vRHuguIUSe1jJ9aSbqUpKTjyuzivhkmnv53Sae+h83TmnSrU5QjLSM4y1UoyU1Fa63jrdx699Ln0Amj2jojlcF0VyNq8FgD6e9d6hBpPlWquee6kk2rR0dtkf/9k=
 ---
 
-Today, we're going to use SSL for everything.  No more self-sign certs.  No more http.  No more hosting things on odd ports.  We're going all in with SSL for our internal services and our external services too.  We going to set up a reverse proxy using Traefik, Portainer, and use that to get wildcard certificates from Let's Encrypt. Join me and let's secure all the things.
+Today, we're going to use SSL for everything.No more self-sign certs.No more http.No more hosting things on odd ports.We're going all in with SSL for our internal services and our external services too.We going to set up a reverse proxy using Traefik, Portainer, and use that to get wildcard certificates from Let's Encrypt. Join me and let's secure all the things.
 
 {% include embed/youtube.html id='liV3c9m_OX8' %}
 
@@ -109,7 +109,7 @@ nano config.yml
 docker-compose up -d --force-recreate
 ```
 
-Your folder structure should look like the below, if you are following along with the example.  But feel free to make it however you wish just keep in mind you'll need to change the location in the corresponding files.
+Your folder structure should look like the below, if you are following along with the example.But feel free to make it however you wish just keep in mind you'll need to change the location in the corresponding files.
 
 ```bash
 ./traefik

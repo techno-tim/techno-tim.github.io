@@ -10,7 +10,7 @@ image:
 
 ---
 
-Meet LittleLink & LittleLink-Server  - a DIY, self hosted, and open source alternative to the popular service Linktree.  This web site inside of a container allows you to create and host your own web site with all of your social information and links, giving your followers multiple ways to connect with you!  In this video we talk about what LittleLink-Server is, what it does, and how to create your own site using this Docker container with only a few environment variables, no knowledge of web development required.  Be sure to check the documentation for details!
+Meet LittleLink & LittleLink-Server  - a DIY, self hosted, and open source alternative to the popular service Linktree.This web site inside of a container allows you to create and host your own web site with all of your social information and links, giving your followers multiple ways to connect with you!  In this video we talk about what LittleLink-Server is, what it does, and how to create your own site using this Docker container with only a few environment variables, no knowledge of web development required.Be sure to check the documentation for details!
 
 {% include embed/youtube.html id='42SqfI_AjXU' %}
 
