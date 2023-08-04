@@ -10,9 +10,9 @@ image:
 
 ---
 
-If you've been encrypting your secrets with SOPS and Age you know how useful it is to keep your secrets safe from prying eyes. If you're not familiar with encrypting your secrets with SOPS and Age, I highly recommend checking out a post I did a while back that shows you how easy it is to [encrypt your secrets](/posts/secret-encryption-sops) and even hide them in plain sight in a Git repo.  I am happy (and relieved) that I started doing this for all of my secrets.
+If you've been encrypting your secrets with SOPS and Age you know how useful it is to keep your secrets safe from prying eyes. If you're not familiar with encrypting your secrets with SOPS and Age, I highly recommend checking out a post I did a while back that shows you how easy it is to [encrypt your secrets](/posts/secret-encryption-sops) and even hide them in plain sight in a Git repo.I am happy (and relieved) that I started doing this for all of my secrets.
 
-This works great, until you need to rotate your encryption key that's used to encrypt your secrets. I use [FLUX for GitOps](/posts/flux-devops-gitops) which helps me deliver changes to my Kubernetes cluster via code and since I can commit my infrastructure, I can also commit my secrets as code too (SOPS, or Secrets Operations).  This means that all of my secret files (typically `secret.sops.yaml`) are all encrypted using my key.  But what happens when I need to change the key, either for good security hygiene or because it was compromised?  The short answer is, there's no easy way other than writing a little bit of code.
+This works great, until you need to rotate your encryption key that's used to encrypt your secrets. I use [FLUX for GitOps](/posts/flux-devops-gitops) which helps me deliver changes to my Kubernetes cluster via code and since I can commit my infrastructure, I can also commit my secrets as code too (SOPS, or Secrets Operations).This means that all of my secret files (typically `secret.sops.yaml`) are all encrypted using my key.But what happens when I need to change the key, either for good security hygiene or because it was compromised?  The short answer is, there's no easy way other than writing a little bit of code.
 
 ### Scripting it with Bash
 
@@ -22,7 +22,7 @@ First you'll need to generate a new `age` file with
 age-keygen -o age.agekey
 ```
 
-This will output a `age.agekey` file.  Take note of this location.
+This will output a `age.agekey` file.Take note of this location.
 
 Then you'll want to execute this script in the folder where you have secrets that need to be updated.
 
@@ -61,7 +61,7 @@ sops --decrypt --age $(cat $SOPS_AGE_KEY_FILE |grep -oP "public key: \K(.*)") --
 
 ## Updating your FLUX Secret in Kubernetes
 
-If you are able to see the decrypted secret, you are all set as far as the ket goes.  Another thing you'll need to do is delete your old secret in Kubernetes and replace it with this new one so that your secrets can be decrypted in your cluster!
+If you are able to see the decrypted secret, you are all set as far as the ket goes.Another thing you'll need to do is delete your old secret in Kubernetes and replace it with this new one so that your secrets can be decrypted in your cluster!
 
 ```bash
 kubectl delete -n flux-system secrets sops-age

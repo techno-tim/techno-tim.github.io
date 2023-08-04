@@ -12,12 +12,12 @@ image:
 
 ## What is a VLAN and How Do They Help?
 
-Today we’re going to cover setting up VLANs using UniFi’s network controller.  We’ll set up a VLAN, from start to finish, which includes creating a new network, configuring a wireless network that uses VLANs, and then we’ll set up firewall rules to make sure we’re keeping our network safe.   If you think VLANs are only for the enterprise, you’re wrong, I will show you how they are helpful at home too.
+Today we’re going to cover setting up VLANs using UniFi’s network controller.We’ll set up a VLAN, from start to finish, which includes creating a new network, configuring a wireless network that uses VLANs, and then we’ll set up firewall rules to make sure we’re keeping our network safe. If you think VLANs are only for the enterprise, you’re wrong, I will show you how they are helpful at home too.
 
 {% include embed/youtube.html id='v0B2IDEfnjA' %}
 📺 [Watch Video](https://www.youtube.com/watch?v=v0B2IDEfnjA)
 
-So what’s a VLAN?  A VLAN or Virtual Local Area Networks, is a group of devices, computers, or servers that communicate with each other as if they are on the same physical LAN, but they are actually located on separate physical LAN segments.  VLANs can be created by configuring a managed network switch to segment the network into different broadcast domains.
+So what’s a VLAN?  A VLAN or Virtual Local Area Networks, is a group of devices, computers, or servers that communicate with each other as if they are on the same physical LAN, but they are actually located on separate physical LAN segments.VLANs can be created by configuring a managed network switch to segment the network into different broadcast domains.
 
 So why are VLANs important, even to the home user?
 
@@ -62,7 +62,7 @@ _A list of common VLANs in UniFi Network Application_
   - I typically match the 3rd octet in my case that would be 100
 - If you’re using Apple devices or Chromecast (or similar devices) on this network, you’ll want to turn on IGMP snooping & Multicast DNS
 - DHCP Mode - you’ll want to keep as DHCP server
-- For DHCP Range you’ll want to choose the beginning and end of your range.  Can be anything within range.  At home I usually start at 100 so I know which devices are using DHCP at a glance.
+- For DHCP Range you’ll want to choose the beginning and end of your range.Can be anything within range.At home I usually start at 100 so I know which devices are using DHCP at a glance.
 - There are other options here that you don’t really need to change but if you do, change them to your liking
 
 Congrats you just created your first VLAN! 🎉
@@ -73,7 +73,7 @@ Congrats you just created your first VLAN! 🎉
 " }
 _A list of common WiFI networks in UniFi Network Application_
 
-Once we’ve created our VLAN, we can now add this to a wireless network.  This is perfect for IoT devices or really any VLAN that you want to use over your wireless network.
+Once we’ve created our VLAN, we can now add this to a wireless network.This is perfect for IoT devices or really any VLAN that you want to use over your wireless network.
 
 - First, we’ll go to Settings, then WiFi
 - Then choose create new WiFi Network
@@ -97,9 +97,9 @@ Choose the new VLAN and let your device get a new DHCP address from the new VLAN
 
 Once you choose once we assign it, let’s connect a device and test it out.
 
-Connect a device, check its IP, ping google, then ping another device on another VLAN.  Uh-oh!
+Connect a device, check its IP, ping google, then ping another device on another VLAN.Uh-oh!
 
-UniFi allows inter VLAN communication out of the box.  I guess this was a conscious decision from them to make things easier, but it does make your networks open to other networks.  
+UniFi allows inter VLAN communication out of the box.I guess this was a conscious decision from them to make things easier, but it does make your networks open to other networks.
 
 We can fix that, with a firewall rule!
 
@@ -110,7 +110,7 @@ We can fix that, with a firewall rule!
 
 _A list of common WiFI networks in UniFi Network Application_
 
-Before we set up our firewall rules, first let's create a profile.  Profiles are a simple way to group items or alias them.  This comes in handy later when creating firewall rules.
+Before we set up our firewall rules, first let's create a profile.Profiles are a simple way to group items or alias them.This comes in handy later when creating firewall rules.
 
 - Navigate to Profiles
 - Create a new Profile
@@ -124,7 +124,7 @@ Again, this Profile is for all other VLANs, not our new VLAN we just created.
 
 ## Configuring Firewall Rule
 
-In order to block inter VLAN Communication we'll need to set up some firewall rules.  The pattern I usually follow is blocking all traffic from one VLAN destined to all other VLANs.  This can be done by creating Profiles.
+In order to block inter VLAN Communication we'll need to set up some firewall rules.The pattern I usually follow is blocking all traffic from one VLAN destined to all other VLANs.This can be done by creating Profiles.
 
 - Navigate to Firewall & Security
 - Choose the Type
@@ -146,7 +146,7 @@ You'll also want to be sure that this rule applies after every rule that you wan
 
 - Navigate to Firewall & Security
 - Check rule order
-- Be sure that any rule you create that Allows / Accepts is above this rule that Blocks / Denies.  
+- Be sure that any rule you create that Allows / Accepts is above this rule that Blocks / Denies.
 
 ## Testing
 
@@ -155,14 +155,14 @@ You'll also want to be sure that this rule applies after every rule that you wan
 
 _Be sure to test all of your firewall rules!_
 
-Once you have these rules in place, I highly recommend you test your firewall rules.  Some examples of things you should test
+Once you have these rules in place, I highly recommend you test your firewall rules.Some examples of things you should test
 
 - Can you communicate with the IoT VLAN from your Trusted VLAN?
 - Can you communicate with the Trusted VLAN from your IoT VLAN?
 - Can you communicate with the gateway (`192.168.100.1`) from your IoT VLAN?
 - Can you communicate with DNS from your IoT VLAN?
 
-Checking these types of things will help you verify that your network rules are being applied properly.  Repeat these tests anytime you make changes.
+Checking these types of things will help you verify that your network rules are being applied properly.Repeat these tests anytime you make changes.
 
 ## Wrapping up
 

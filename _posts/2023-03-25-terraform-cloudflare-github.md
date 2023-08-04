@@ -11,7 +11,7 @@ image:
 ---
 
 
-Today, we're going to set up and configure Terraform on your machine so we can start using Terraform.  Then we'll configure `cf-terraforming` to import our Cloudflare state and configuration into Terraform.  After that we'll set up a GitHub report and configure GitHub actions so you have CI and CD for deploying your Infrastructure automatically using a Git Flow.  If you're new to Terraform, that's fine!  This is a beginner tutorial for Terraform and by the end of this, you will feel like an expert!
+Today, we're going to set up and configure Terraform on your machine so we can start using Terraform.Then we'll configure `cf-terraforming` to import our Cloudflare state and configuration into Terraform.After that we'll set up a GitHub report and configure GitHub actions so you have CI and CD for deploying your Infrastructure automatically using a Git Flow.If you're new to Terraform, that's fine!  This is a beginner tutorial for Terraform and by the end of this, you will feel like an expert!
 
 {% include embed/youtube.html id='FmYvrxYvBP0' %}
 📺 [Watch Video](https://www.youtube.com/watch?v=FmYvrxYvBP0)
@@ -255,7 +255,7 @@ If we run `terraform plan` now, we can see that there aren't any changes.
 
 [Terraform Cloud](https://app.terraform.io/)
 
-Be sure to sign up for an account and then get add your `CLOUDFLARE_API_TOKEN` and an ENV variable in Terraform Cloud.  Mark it as seneitive.
+Be sure to sign up for an account and then get add your `CLOUDFLARE_API_TOKEN` and an ENV variable in Terraform Cloud.Mark it as seneitive.
 
 Then you'll want to updated your `cloudflare.tf`
 
