@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Over 20 FREE Utilities for Windows to help you use Windows like a Pro! - PowerToys Tutorial"
+title: "Use Windows like a Pro! - PowerToys Tutorial"
 date: 2023-08-20 08:00:00 -0500
 categories: utilities
 tags: windows powertoys productivity microsoft open-source
