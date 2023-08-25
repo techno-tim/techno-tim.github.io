@@ -80,6 +80,10 @@ Last but not least was Tom Lawrence from Lawrence systems.  He joined virtual be
 
 Outside of lunch, dinner, and lots of snacks, that pretty much summed up the day.  Lots of great talked and more to come tomorrow!
 
+## Join the conversation
+
+<blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">If you&#39;re curios what we&#39;ve been up to here at at 45 Drives here&#39;s my recap of Day 1<a href="https://t.co/qWvzC4XdHd">https://t.co/qWvzC4XdHd</a></p>&mdash; Techno Tim (@TechnoTimLive) <a href="https://twitter.com/TechnoTimLive/status/1695091344018960660?ref_src=twsrc%5Etfw">August 25, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ## Links
 
 ⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>
