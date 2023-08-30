@@ -15,6 +15,7 @@ http:
         - "https"
       rule: "Host(`pihole.local.example.com`)"
       middlewares:
+        - redirectregex-pihole
         - default-headers
         - addprefix-pihole
         - https-redirectscheme
@@ -199,6 +200,10 @@ http:
       redirectScheme:
         scheme: https
         permanent: true
+    redirectregex-pihole:
+      redirectRegex:
+        regex: /admin/$
+        replacement: /
 
     default-headers:
       headers:
