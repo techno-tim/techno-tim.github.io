@@ -19,7 +19,7 @@ jobs:
         fetch-depth: 0  # for posts's lastmod
 
     - name: Mirror + trigger CI
-      uses: SvanBoxel/gitlab-mirror-and-ci-action@871fb56ab2be794ca4df43e81cd03236ad8fba62 # 0.3+
+      uses: timothystewart6/gitlab-mirror-and-ci-action@ea004e530874f6943f4354808361219276568fdb # 0.3+
       with:
         args: 'https://gitlab.com/${{ secrets.GITLAB_PROJECT_ID }}'
       env:
