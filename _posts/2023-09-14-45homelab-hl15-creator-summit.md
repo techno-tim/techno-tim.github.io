@@ -16,7 +16,7 @@ I took a trip with 3 other Tech YouTubers to 45 Drives Headquarters to see the n
 
 ## Info
 
-If you're looking for details on the creator summit, you can read all about it [in a previous post](/posts/45drives-creator-summit-day-1)!
+If you're looking for details on the Creator Summit, you can read all about it [in a previous post](/posts/45drives-creator-summit-day-1)!
 
 Thank you so much to [45Drives](https://www.45drives.com/) for paying for this trip to the Creator Summit!  
 
