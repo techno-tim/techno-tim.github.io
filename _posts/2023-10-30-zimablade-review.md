@@ -103,7 +103,7 @@ _The engineering sample came with a white PCB, let's hope it sticks around_
 
 I do have some thoughts after using this for a couple of days.  Overall it’s great and hard to complain about something when there’s so much to like.
 
-I think my biggest gripe has been power.  I went into this thinking that I can use any USB C power adapter since it supports Power Delivery 3.0.  Turns out that this is a 12v Power Delivery 3.0 power supply and I couldn’t find any power adapters here at home that supported it, not my macbook charger, an Anker charger, or even this no-name charger.  This really isn’t a big deal however if I used one of my existing adapters, it seemed to also do something weird to the device to where I had to reset the CMOS a few times.  I reached out to IceWhale and they pointed out that I needed to use a Power Delivery 3.0 12v/3a power adapter like the one that is included.  I 100% agree that the provided adapter works but USB C Power Delivery 3.0 with 12v/3a is less common in North America with a lot of power adapters, at least the ones I have access to.  IceWhale did say that they were going to try to make it compatible with more adapters before production so we’ll see.  Moral of the story is just use the adapter they ship and you’ll be fine, which means you might want to buy their power adapter to be sure.  When using the correct power adapter with a USB C hub, everything worked fine including USB, HDMI, and power delivery.
+I think my biggest gripe has been power.  I went into this thinking that I can use any USB C power adapter since it supports Power Delivery 3.0.  Turns out that this is a 12v Power Delivery 3.0 power supply and I couldn’t find any power adapters here at home that supported it, not my Macbook charger, an Anker charger, or even this no-name charger.  This really isn’t a big deal however if I used one of my existing adapters, it seemed to also do something weird to the device to where I had to reset the CMOS a few times.  I reached out to IceWhale and they pointed out that I needed to use a Power Delivery 3.0 12v/3a power adapter like the one that is included.  I 100% agree that the provided adapter works but USB C Power Delivery 3.0 with 12v/3a is less common in North America with a lot of power adapters, at least the ones I have access to.  IceWhale did say that they were going to try to make it compatible with more adapters before production so we’ll see.  Moral of the story is just use the adapter they ship and you’ll be fine, which means you might want to buy their power adapter to be sure.  When using the correct power adapter with a USB C hub, everything worked fine including USB, HDMI, and power delivery.
 
 Another small gripe is that you can’t see the power LED when you have it in the case.  The only reason I am bringing this up is because I had to check the LED over and over when figuring out the previous issue related to power.  Not a big deal but one little hole or clear cutout in the case would go a long way.
 
@@ -126,13 +126,35 @@ And I think that’s the goal of this device as stated by IceWhale:
 
 > “The ZimaBoard was built on top of a relatively expensive ($120-$200) x86 single-board computer compared with the popular Raspberry Pi. Since most people can’t afford such expensive hardware without knowing what exactly it can do, we decided to create something better suited for the broader cyber native – something that is cheaper, smaller, and easier to use and carry around.”
 
-If this is something you want to support, see the links in the description on how you can order a ZimaBlade.
+If this is something you want to support, check out the links for more information:
+
+- ZimaBlade on CrowdSupply: https://bit.ly/3PeSpxv
+- ZimaBlade Official Site: https://bit.ly/3tOlpUx
 
 Well I learned a lot about the new ZimaBlade, Power Delivery over USB C, Dual Booting Windows and Linux and I hope you learned something too.  And remember if you found anything in this post helpful, don’t forget to share!
 
 ## Join the conversation
 
 <blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">The past week I got to play with and configure the ZimaBlade, a new single board computer. Super fun device with some quirks. Did it replace my ZimaBoard? <br><br>👉<a href="https://t.co/GfuWbkqXMJ">https://t.co/GfuWbkqXMJ</a><br><br>(Also I couldn&#39;t pass up doing a Halloween themed thumbnail!) <a href="https://t.co/HzW7mxE35n">pic.twitter.com/HzW7mxE35n</a></p>&mdash; Techno Tim (@TechnoTimLive) <a href="https://twitter.com/TechnoTimLive/status/1719361580092035521?ref_src=twsrc%5Etfw">October 31, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+## Where to Buy
+
+ZimaBlade:
+
+- https://bit.ly/3PeSpxv
+
+ZimaBlade Accessories:
+
+- 10g NIC: https://amzn.to/47aLJXl
+- Quad 2.5g NIC: https://amzn.to/3sl2Bf1
+- 4 Port USB Card: https://amzn.to/3FFIzPr
+- WiFi 6 PCIe: https://amzn.to/3sfwLQY
+- PCIe SATA Expansion: https://amzn.to/3sbNdlj
+- SAMSUNG SSDs: https://amzn.to/3Sf5bxU
+- 8GB SODIMM RAM: https://amzn.to/40iXUiw
+- Anker USB C Hub: https://amzn.to/49tQCwL
+- Slim Cat6 Cables: https://amzn.to/45NVj1e
+- 2.5 to 3.5 Bracket: https://amzn.to/3s6q7fZ
 
 ## Links
 
