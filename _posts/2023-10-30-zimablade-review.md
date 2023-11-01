@@ -128,8 +128,8 @@ And I think that’s the goal of this device as stated by IceWhale:
 
 If this is something you want to support, check out the links for more information:
 
-- ZimaBlade on CrowdSupply: https://bit.ly/3PeSpxv
-- ZimaBlade Official Site: https://bit.ly/3tOlpUx
+- ZimaBlade on CrowdSupply: <https://bit.ly/3PeSpxv>
+- ZimaBlade Official Site: <https://bit.ly/3tOlpUx>
 
 Well I learned a lot about the new ZimaBlade, Power Delivery over USB C, Dual Booting Windows and Linux and I hope you learned something too.  And remember if you found anything in this post helpful, don’t forget to share!
 
@@ -141,20 +141,20 @@ Well I learned a lot about the new ZimaBlade, Power Delivery over USB C, Dual Bo
 
 ZimaBlade:
 
-- https://bit.ly/3PeSpxv
+- <https://bit.ly/3PeSpxv>
 
 ZimaBlade Accessories:
 
-- 10g NIC: https://amzn.to/47aLJXl
-- Quad 2.5g NIC: https://amzn.to/3sl2Bf1
-- 4 Port USB Card: https://amzn.to/3FFIzPr
-- WiFi 6 PCIe: https://amzn.to/3sfwLQY
-- PCIe SATA Expansion: https://amzn.to/3sbNdlj
-- SAMSUNG SSDs: https://amzn.to/3Sf5bxU
-- 8GB SODIMM RAM: https://amzn.to/40iXUiw
-- Anker USB C Hub: https://amzn.to/49tQCwL
-- Slim Cat6 Cables: https://amzn.to/45NVj1e
-- 2.5 to 3.5 Bracket: https://amzn.to/3s6q7fZ
+- 10g NIC: <https://amzn.to/47aLJXl>
+- Quad 2.5g NIC: <https://amzn.to/3sl2Bf1>
+- 4 Port USB Card: <https://amzn.to/3FFIzPr>
+- WiFi 6 PCIe: <https://amzn.to/3sfwLQY>
+- PCIe SATA Expansion: <https://amzn.to/3sbNdlj>
+- SAMSUNG SSDs: <https://amzn.to/3Sf5bxU>
+- 8GB SODIMM RAM: <https://amzn.to/40iXUiw>
+- Anker USB C Hub: <https://amzn.to/49tQCwL>
+- Slim Cat6 Cables: <https://amzn.to/45NVj1e>
+- 2.5 to 3.5 Bracket: <https://amzn.to/3s6q7fZ>
 
 ## Links
 
