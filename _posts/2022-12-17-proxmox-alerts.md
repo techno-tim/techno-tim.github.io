@@ -58,7 +58,7 @@ hash the file
 postmap hash:/etc/postfix/sasl_passwd
 ```
 
-check to to be sure the db file was create
+check to to be sure the db file was created
 
 ```bash
 cat /etc/postfix/sasl_passwd.db
@@ -89,7 +89,7 @@ reload postfix
 postfix reload
 ```
 
-send a test emails
+send a test email
 
 ```bash
 echo "This is a test message sent from postfix on my Proxmox Server" | mail -s "Test Email from Proxmox" your-email@gmail.com
