@@ -1,0 +1,9 @@
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: technotim-docs-pdb
+spec:
+  selector:
+    matchLabels:
+      app: technotim-docs
+  maxUnavailable: 1
