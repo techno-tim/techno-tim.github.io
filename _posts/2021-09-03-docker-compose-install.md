@@ -73,7 +73,7 @@ You'll need to log out then back in to apply this
 If you need to uninstall Docker, run the following
 
 ```bash
- sudo apt-get remove docker docker-engine docker.io containerd runc
+sudo apt-get purge docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin docker-ce-rootless-extras
 ```
 
 ## Links
