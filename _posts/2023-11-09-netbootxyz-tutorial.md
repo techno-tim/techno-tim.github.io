@@ -18,7 +18,7 @@ Disclosures:
 
 - Nothing in this video was sponsored
 
-Don't forget to ⭐ [netboot.xyz on GitHub](https://github.com/netbootxyz/netboot.xyz!
+Don't forget to ⭐ [netboot.xyz on GitHub](https://github.com/netbootxyz/netboot.xyz)!
 
 ## Requirements
 
