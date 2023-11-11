@@ -339,6 +339,12 @@ then type
 net use F: \\<server-ip-address>\<share-name> /user:<server-ip-address>\<username-if-needed> <password-if-needed>
 ```
 
+If you want it to prompt for a username and password, remove the `user` argument
+
+```shell
+net use F: \\<server-ip-address>\<share-name>
+```
+
 This will map the `F:` drive to your `Windows`` share that the Windows ISO extracted
 
 then type
