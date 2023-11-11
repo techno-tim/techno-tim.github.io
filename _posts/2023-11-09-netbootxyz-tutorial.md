@@ -18,6 +18,8 @@ Disclosures:
 
 - Nothing in this video was sponsored
 
+Don't forget to ⭐ [netboot.xyz on GitHub](https://github.com/netbootxyz/netboot.xyz!
+
 ## Requirements
 
 - docker (and compose)
@@ -265,7 +267,11 @@ Requirements
 
 [Windows 11 ADK downloads here](https://learn.microsoft.com/en-us/windows-hardware/get-started/adk-install#download-the-adk-for-windows-11-version-22h2-updated-september-2023)
 
-Run `Deployment and Imaging Tools Environment` as administrator
+Install Windows ADK for Windows 10/11.
+
+Install Windows PE add-on for the Windows ADK.
+
+Run `Deployment and Imaging Tools Environment` as administrator from the start menu.
 
 Navigate to folder
 
