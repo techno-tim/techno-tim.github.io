@@ -24,6 +24,10 @@ Disclosures:
 - docker machine has a static IP
 - dhcp server & access to settings (or install your own)
 
+## Docker Setup
+
+See [this post](/posts/docker-compose-install/) on how to install `docker` and `docker compose`
+
 ## Install
 
 create folders `netboot_xyz`, `netboot_xyz/assets`, `netboot_xyz/config`
@@ -341,25 +345,7 @@ Then hit enter and Windows installer should launch!
 
 ## Join the conversation
 
-
-## Where to Buy
-
-ZimaBlade:
-
-- <https://bit.ly/3PeSpxv>
-
-ZimaBlade Accessories:
-
-- 10g NIC: <https://amzn.to/47aLJXl>
-- Quad 2.5g NIC: <https://amzn.to/3sl2Bf1>
-- 4 Port USB Card: <https://amzn.to/3FFIzPr>
-- WiFi 6 PCIe: <https://amzn.to/3sfwLQY>
-- PCIe SATA Expansion: <https://amzn.to/3sbNdlj>
-- SAMSUNG SSDs: <https://amzn.to/3Sf5bxU>
-- 8GB SODIMM RAM: <https://amzn.to/40iXUiw>
-- Anker USB C Hub: <https://amzn.to/49tQCwL>
-- Slim Cat6 Cables: <https://amzn.to/45NVj1e>
-- 2.5 to 3.5 Bracket: <https://amzn.to/3s6q7fZ>
+<blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">Back in my tech support days I thought that if I had PXE network boot at home, that I &quot;made it&quot;. We&#39;ll, that day has come! This past week I learned all about netboot xyz! I can now boot and install any operating system over the network!<br><br>Check it out! <a href="https://t.co/PzPmYzKWLH">https://t.co/PzPmYzKWLH</a> <a href="https://t.co/FQr4W4TPtp">pic.twitter.com/FQr4W4TPtp</a></p>&mdash; Techno Tim (@TechnoTimLive) <a href="https://twitter.com/TechnoTimLive/status/1723377803700076676?ref_src=twsrc%5Etfw">November 11, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## Links
 
