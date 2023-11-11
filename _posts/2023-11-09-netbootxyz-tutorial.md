@@ -246,13 +246,13 @@ To boot to the network you'll need a BIOS and NIC that supports it
   - enable EFI PXE Boot
   - enable Legacy (BIOS) PXE Boot
 - Figure out boot override or network boot key
-- power on an boot to network (BIOS of EFI)
+- Power on and boot to network (BIOS of EFI)
 
 See the boot menu, choose OS and go!
-Word of caution, there might be some that do not work.  This is a moving target.
-e.g.  Ubuntu 23.10 isn't working for me now, but could soon.  Other OS are fine.
 
-Test Live, Test Utilities, Test Install
+> *Word of caution, there might be some that do not work.  This is a moving target.
+e.g.  Ubuntu 23.10 isn't working for me now, but could soon.  Other OS are fine. You may need to try different NICs if you are using virtualization*
+{: .prompt-info }
 
 ## What about Windows?
 
