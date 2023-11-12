@@ -1,201 +1,148 @@
 #!/usr/bin/env bash
 #
-# Release a new version to the GitLab flow production branch.
+# Build, test and then deploy the site content to 'origin/<pages_branch>'
 #
-# For a new major/minor version, bump version on the main branch, and then merge into the production branch.
+# Requirement: html-proofer, jekyll
 #
-# For a patch version, bump the version number on the patch branch, then merge that branch into the main branch
-# and production branch.
-#
-#
-# Usage: run on the default, release or the patch branch
-#
-# Requires: Git, NPM and RubyGems
+# Usage: See help information
 
 set -eu
 
-opt_pre=false # preview mode option
+PAGES_BRANCH="gh-pages"
 
-working_branch="$(git branch --show-current)"
+SITE_DIR="_site"
 
-DEFAULT_BRANCH="$(git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@')"
+_opt_dry_run=false
 
-PROD_BRANCH="production"
+_config="_config.yml"
 
-GEM_SPEC="jekyll-theme-chirpy.gemspec"
-NODE_CONFIG="package.json"
-CHANGE_LOG="docs/CHANGELOG.md"
+_no_pages_branch=false
 
-JS_DIST="assets/js/dist"
-BACKUP_PATH="$(mktemp -d)"
+_backup_dir="$(mktemp -d)"
 
-FILES=(
-  "$GEM_SPEC"
-  "$NODE_CONFIG"
-)
-
-TOOLS=(
-  "git"
-  "npm"
-  "standard-version"
-  "gem"
-)
+_baseurl=""
 
 help() {
-  echo "A tool to release new version Chirpy gem"
+  echo "Build, test and then deploy the site content to 'origin/<pages_branch>'"
   echo
   echo "Usage:"
   echo
-  echo "   bash ./tools/release [options]"
+  echo "   bash ./tools/deploy.sh [options]"
   echo
   echo "Options:"
-  echo "     -p, --preview            Enable preview mode, only package, and will not modify the branches"
+  echo '     -c, --config   "<config_a[,config_b[...]]>"    Specify config file(s)'
+  echo "     --dry-run                Build site and test, but not deploy"
   echo "     -h, --help               Print this information."
 }
 
-_check_cli() {
-  for i in "${!TOOLS[@]}"; do
-    cli="${TOOLS[$i]}"
-    if ! command -v "$cli" &>/dev/null; then
-      echo "> Command '$cli' not found!"
-      exit 1
-    fi
-  done
-}
-
-_check_git() {
-  # ensure that changes have been committed
-  if [[ -n $(git status . -s) ]]; then
-    echo "> Abort: Commit the staged files first, and then run this tool again."
-    exit 1
+init() {
+  if [[ -z ${GITHUB_ACTION+x} && $_opt_dry_run == 'false' ]]; then
+    echo "ERROR: It is not allowed to deploy outside of the GitHub Action envrionment."
+    echo "Type option '-h' to see the help information."
+    exit -1
   fi
 
-  if [[ $working_branch != "$DEFAULT_BRANCH" &&
-    $working_branch != hotfix/* &&
-    $working_branch != "$PROD_BRANCH" ]]; then
-    echo "> Abort: Please run on the default, release or patch branch."
-    exit 1
+  _baseurl="$(grep '^baseurl:' _config.yml | sed "s/.*: *//;s/['\"]//g;s/#.*//")"
+}
+
+build() {
+  # clean up
+  if [[ -d $SITE_DIR ]]; then
+    rm -rf "$SITE_DIR"
   fi
+
+  # build
+  JEKYLL_ENV=production bundle exec jekyll b -d "$SITE_DIR$_baseurl" --config "$_config"
 }
 
-_check_src() {
-  for i in "${!FILES[@]}"; do
-    _src="${FILES[$i]}"
-    if [[ ! -f $_src && ! -d $_src ]]; then
-      echo -e "> Error: Missing file \"$_src\"!\n"
-      exit 1
-    fi
-  done
+test() {
+  bundle exec htmlproofer \
+    --disable-external \
+    --check-html \
+    --allow_hash_href \
+    "$SITE_DIR"
 }
 
-_check_node_packages() {
-  if [[ ! -d node_modules || "$(du node_modules | awk '{print $1}')" == "0" ]]; then
-    npm i
+resume_site_dir() {
+  if [[ -n $_baseurl ]]; then
+    # Move the site file to the regular directory '_site'
+    mv "$SITE_DIR$_baseurl" "${SITE_DIR}-rename"
+    rm -rf "$SITE_DIR"
+    mv "${SITE_DIR}-rename" "$SITE_DIR"
   fi
 }
 
-check() {
-  _check_cli
-  _check_git
-  _check_src
-  _check_node_packages
-}
-
-# Auto-generate a new version number to the file 'package.json'
-bump_node() {
-  bump="standard-version -i $CHANGE_LOG"
-
-  if $opt_pre; then
-    bump="$bump -p rc"
-  fi
-
-  eval "$bump"
-
-  # Change heading of Patch version to heading level 2 (a bug from `standard-version`)
-  sed -i "s/^### \[/## \[/g" "$CHANGE_LOG"
-  # Replace multiple empty lines with a single empty line
-  sed -i "/^$/N;/^\n$/D" "$CHANGE_LOG"
-}
-
-## Bump new version to gem config file
-bump_gem() {
-  _ver="$1"
-
-  if $opt_pre; then
-    _ver="${1/-/.}"
-  fi
-
-  sed -i "s/[[:digit:]]\+\.[[:digit:]]\+\.[[:digit:]]\+/$_ver/" "$GEM_SPEC"
-}
-
-# Creates a new tag on the production branch with the given version number.
-# Also commits the changes and merges the production branch into the default branch.
-branch() {
-  _version="$1" # X.Y.Z
-
-  git add .
-  git commit -m "chore(release): $_version"
-
-  # Create a new tag on production branch
-  echo -e "> Create tag v$_version\n"
-  git tag "v$_version"
-
-  git checkout "$DEFAULT_BRANCH"
-  git merge --no-ff --no-edit "$PROD_BRANCH"
-
-  if [[ $working_branch == hotfix/* ]]; then
-    # delete the patch branch
-    git branch -D "$working_branch"
+setup_gh() {
+  if [[ -z $(git branch -av | grep "$PAGES_BRANCH") ]]; then
+    _no_pages_branch=true
+    git checkout -b "$PAGES_BRANCH"
+  else
+    git checkout "$PAGES_BRANCH"
   fi
 }
 
-## Build a gem package
-build_gem() {
-  # Remove unnecessary theme settings
-  sed -i "s/^img_cdn:.*/img_cdn:/;s/^avatar:.*/avatar:/" _config.yml
-  rm -f ./*.gem
+backup() {
+  mv "$SITE_DIR"/* "$_backup_dir"
+  mv .git "$_backup_dir"
 
-  npm run build
-  git add "$JS_DIST" -f # add JS dist to gem
-  gem build "$GEM_SPEC"
-  cp "$JS_DIST"/* "$BACKUP_PATH"
+  # When adding custom domain from Github website,
+  # the CANME only exist on `gh-pages` branch
+  if [[ -f CNAME ]]; then
+    mv CNAME "$_backup_dir"
+  fi
+}
 
-  # Resume the settings
-  git reset
-  git checkout .
+flush() {
+  rm -rf ./*
+  rm -rf .[^.] .??*
 
-  # restore the dist files for future development
-  mkdir -p "$JS_DIST" && cp "$BACKUP_PATH"/* "$JS_DIST"
+  shopt -s dotglob nullglob
+  mv "$_backup_dir"/* .
+  [[ -f ".nojekyll" ]] || echo "" >".nojekyll"
+}
+
+deploy() {
+  git config --global user.name "GitHub Actions"
+  git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+  git update-ref -d HEAD
+  git add -A
+  git commit -m "[Automation] Site update No.${GITHUB_RUN_NUMBER}"
+
+  if $_no_pages_branch; then
+    git push -u origin "$PAGES_BRANCH"
+  else
+    git push -f
+  fi
 }
 
 main() {
-  check
+  init
+  build
+  # test
+  resume_site_dir
 
-  if [[ $opt_pre = false && $working_branch != "$PROD_BRANCH" ]]; then
-    git checkout "$PROD_BRANCH"
-    git merge --no-ff --no-edit "$working_branch"
+  if $_opt_dry_run; then
+    exit 0
   fi
 
-  bump_node
-
-  _version="$(grep '"version":' "$NODE_CONFIG" | sed 's/.*: "//;s/".*//')"
-
-  bump_gem "$_version"
-
-  if [[ $opt_pre = false ]]; then
-    branch "$_version"
-  fi
-
-  echo -e "> Build the gem package for v$_version\n"
-
-  build_gem
+  setup_gh
+  backup
+  flush
+  deploy
 }
 
 while (($#)); do
   opt="$1"
   case $opt in
-  -p | --preview)
-    opt_pre=true
+  -c | --config)
+    _config="$2"
+    shift
+    shift
+    ;;
+  --dry-run)
+    # build & test, but not deploy
+    _opt_dry_run=true
     shift
     ;;
   -h | --help)
