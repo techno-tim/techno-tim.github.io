@@ -299,6 +299,12 @@ Unmount the WinPE image, committing changes.
 Dism /Unmount-Image /MountDir:"C:\WinPE_amd64\mount" /commit
 ```
 
+Delete the temp folder that was created earlier (so we don't get an error when copying)
+
+```shell
+rmdir /s C:\WinPE_amd64
+```
+
 Create working files
 
 ```shell
@@ -311,13 +317,13 @@ Create a bootable WinPE ISO
 MakeWinPEMedia /ISO C:\WinPE_amd64 C:\WinPE_amd64\WinPE_amd64.iso
 ```
 
-Then copy the contents of `WinPE_amd64.iso` to your `WinPE` folder
+Then copy the contents of `WinPE_amd64.iso` to your `WinPE` folder located at `C:\WinPE_amd64`
 
 Upload Windows PE to netboot.xyz container's `/assets/WinPE/x64/` folder (need to create folder first)
 
-Then you'll want to create an SMB share named `Windows` in your environment.  You can create a Windows ISO by visiting [Microsoft's site](https://support.microsoft.com/en-us/windows/create-installation-media-for-windows-99a58364-8c02-206f-aa6f-40c3b507420d)
+Then you'll want to create an SMB share named `Windows` in your environment.  You can create or download a Windows ISO by visiting [Microsoft's site](https://support.microsoft.com/en-us/windows/create-installation-media-for-windows-99a58364-8c02-206f-aa6f-40c3b507420d)
 
-Once you have created your Windows ISO, you can then extra the files to the root of the `Windows` share you just created above.
+Once you have created your Windows ISO, you can then extract the files to the root of the `Windows` share you just created above.
 
 Now we need to configure netboot.xyz
 
@@ -353,7 +359,9 @@ then type
 F:\setup.exe
 ```
 
-Then hit enter and Windows installer should launch!
+Then hit enter and Windows installer should launch!  
+
+I'd love to also automate the mounting of the share however I haven't found a clean way to do it yet.  If you know, let me know in the comments below and I can add it!
 
 ## Join the conversation
 
