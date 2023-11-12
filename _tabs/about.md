@@ -6,7 +6,7 @@ order: 5
 ![Hero image](/assets/img/posts/techno-timgithub-profile.webp)
 
 [![YouTube Subscribers](https://img.shields.io/youtube/channel/subscribers/UCOk-gHyjcWZNj3Br4oxwh0A?logo=youtube&logoColor=E05D44&style=for-the-badge&label=YouTube)](https://l.technotim.live/subscribe) 
-[![Twitter Followers](https://img.shields.io/twitter/follow/technotimlive?color=0E7FC0&logo=twitter&style=for-the-badge&label=Twitter)](https://l.technotim.live/twitter)
+[![Twitter Followers](https://img.shields.io/badge/follow-%40technotimlive-1DA1F2?logo=twitter&style=for-the-badge)](https://l.technotim.live/twitter)
 [![GitHub followers](https://img.shields.io/github/followers/timothystewart6?logo=GitHub&style=for-the-badge)](https://l.technotim.live/github)
 [![Twitch Status](https://img.shields.io/twitch/status/technotim?color=9147FF&logo=twitch&style=for-the-badge)](https://l.technotim.live/twitch)
 [![Discord Invite](https://img.shields.io/discord/677701098101932032?color=4A55CC&label=Discord&logo=discord&style=for-the-badge)](https://l.technotim.live/discord)
