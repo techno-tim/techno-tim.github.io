@@ -16,9 +16,9 @@ You can support me and my work directly:
 
 I also make a small commission (at no cot to you) if you use one of my affiliate links below:
 
-- [Humble Bundle Game Store](https://l.technotim.live/humble-store)
 - [Shop at Amazon](https://amzn.to/40xIvLe)
 - [Shop at Target](https://l.technotim.live/target-free-shipping)
+- [Humble Bundle Game Store](https://l.technotim.live/humble-store)
 - [Grovemade](https://l.technotim.live/grovemade)
 - [Free Month of Backblaze](https://l.technotim.live/backblaze)
 
