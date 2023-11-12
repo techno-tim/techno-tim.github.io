@@ -349,7 +349,7 @@ If you want it to prompt for a username and password, remove the `user` argument
 net use F: \\<server-ip-address>\<share-name>
 ```
 
-This will map the `F:` drive to your `Windows`` share that the Windows ISO extracted
+This will map the `F:` drive to your `Windows` share that the Windows ISO extracted
 
 then type
 
