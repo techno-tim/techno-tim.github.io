@@ -317,9 +317,7 @@ Create a bootable WinPE ISO
 MakeWinPEMedia /ISO C:\WinPE_amd64 C:\WinPE_amd64\WinPE_amd64.iso
 ```
 
-Then copy the contents of `WinPE_amd64.iso` to your `WinPE` folder located at `C:\WinPE_amd64`
-
-Upload Windows PE to netboot.xyz container's `/assets/WinPE/x64/` folder (need to create folder first)
+Then copy the contents of `WinPE_amd64.iso` to netboot.xyz container's `/assets/WinPE/x64/` folder (need to create folders first)
 
 Then you'll want to create an SMB share named `Windows` in your environment.  You can create or download a Windows ISO by visiting [Microsoft's site](https://support.microsoft.com/en-us/windows/create-installation-media-for-windows-99a58364-8c02-206f-aa6f-40c3b507420d)
 
