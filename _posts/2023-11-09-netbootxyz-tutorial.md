@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Meet netboot.xyz - Network Boot Any Operating System"
+title: "Meet netboot xyz - Network Boot Any Operating System"
 date: 2023-11-11 08:00:00 -0500
 categories: self-hosted
 tags: netbootxyz pxe docker open-source homelab
