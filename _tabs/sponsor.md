@@ -22,7 +22,7 @@ I also make a small commission (at no cot to you) if you use one of my affiliate
 - [Grovemade](https://l.technotim.live/grovemade)
 - [Free Month of Backblaze](https://l.technotim.live/backblaze)
 
-Donating Directly:
+Donating directly:
 
 - [@technotimothystewart](https://l.technotim.live/venmo) on Venmo
 - [@technotimothystewart](https://l.technotim.live/paypal) on PayPal
