@@ -14,7 +14,7 @@ You can support me and my work directly:
 - [Subscribing on Twitch](https://l.technotim.live/twitch-subscribe)
 - [Becoming a member on YouTube](https://l.technotim.live/youtube-member)
 
-I also make a small commission (at no cot to you) if you use one of my affiliate links below:
+I also make a small commission (at no cost to you) if you use one of my affiliate links below:
 
 - [Shop at Amazon](https://amzn.to/40xIvLe)
 - [Shop at Target](https://l.technotim.live/target-free-shipping)
