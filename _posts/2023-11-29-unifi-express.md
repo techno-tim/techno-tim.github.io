@@ -224,7 +224,7 @@ _UniFi express is a great way to expand your network_
 
 The more I think about this device the more use cases I come up with, from the first time home user that wants reliable WiFi at home, to the "pro-sumer" at home that wants to dip their toes in the UnFi ecosystem at a budget, to the company that wants to give a small remote site wifi access and the ability to expand while still managing their network, to the remote user that wants access back to their corporate LAN without a bunch of network gear in their home, to me, the odd ball, who just wants to bring a device with them when the travel so that all devices can securely connect back to home.  I am sure there are plenty more use cases I missed, so let me know your thoughts in the comments below.
 
-Well I learned a ton about the net UniFi express, how to mesh wireless networks, and I hope you learned something too, and remember if you found anything in this video helpful, don’t forget to like and subscribe.
+Well I learned a ton about the net UniFi Express, how to mesh wireless networks, and I hope you learned something too, and remember if you found anything in this post helpful, don’t forget share with a friend!
 
 ## Join the conversation
 
