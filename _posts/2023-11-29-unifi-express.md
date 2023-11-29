@@ -46,7 +46,7 @@ It’s a small compact device that’s all white.
 
 Setting up this device is easy too.
 
-## Setting up / network app
+## Setting up / Network App
 
 After powering it on you’ll want to adopt this device.  It has bluetooth built in so you can adopt it if you have an existing unifi device on your network that also has bluetooth, or even easier from the UniFi network app on your phone.
 
