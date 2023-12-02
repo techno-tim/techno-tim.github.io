@@ -349,6 +349,10 @@ From `certificates/production` folder
 kubectl apply -f local-example-com.yaml
 ```
 
+## Learn More
+
+If you're using `cert-manager` to manage certificates, you might want to check out this post on how to  [mirror your Kubernetes configs, secrets, and resources to other namespaces](/posts/traefik-portainer-ssl/).  This is helpful when you need to share you secrets / certificates across namespaces!
+
 ## Links
 
 ⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>
