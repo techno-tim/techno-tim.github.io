@@ -63,7 +63,6 @@ Accessories
 - APC 1500VA UPS <https://amzn.to/3GXLJh6>
 - APC 600 VA UPS <https://amzn.to/3mMxsM1>
 - Wall Control Galvanized Steel Pegboard <https://amzn.to/3bJ8R4s>
-- HDHomeRun Network Tuner <https://amzn.to/3Gdkd0x>
 - Elgato Key Light Mini <https://amzn.to/41d9Fre>
 - Hue Light Strip <https://amzn.to/3I124o3>
 - Hue Motion & Temp <https://amzn.to/3qb1FXf>
