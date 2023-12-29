@@ -14,7 +14,7 @@ services:
       - 443:443
     environment:
       - CF_DNS_API_TOKEN=YOUR_API_TOKEN
-      # If you choose to use an API Key instead of a token, specify your email as well
+      # If you choose to use an API Key instead of a Token, specify your email as well
       # - CF_API_EMAIL=user@example.com
       # - CF_API_KEY=YOUR_API_KEY
     volumes:
