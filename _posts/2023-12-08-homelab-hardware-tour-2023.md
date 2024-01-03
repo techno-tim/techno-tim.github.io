@@ -28,7 +28,7 @@ Rack & Accessories
 - 1u Rack Mount Full Depth Shelf <https://amzn.to/3jrm5Kp>
 - Right Angle Extension Cord <https://amzn.to/3Wl7gay>
 - Black Outlet Covers <https://amzn.to/3jrf7Vu>
-- UniFi SmartPower PDU Pro <https://store.ui.com/us/en>
+- UniFi SmartPower PDU Pro <https://store.ui.com/us/en?a_aid=TechnoTim>
 
 Network
 
@@ -37,10 +37,10 @@ Network
 - Slim Network Cables <https://amzn.to/3kbYV85>
 - SFP+ Dust Covers <https://amzn.to/3TmGfou>
 - SFP+ DAC <https://amzn.to/3TajUut>
-- UniFi Flex <https://store.ui.com/us/en>
-- UDM SE <https://store.ui.com/us/en>
-- UDM Pro <https://store.ui.com/us/en>
-- UniFi 48 Port Enterprise <https://store.ui.com/us/en>
+- UniFi Flex <https://store.ui.com/us/en?a_aid=TechnoTim>
+- UDM SE <https://store.ui.com/us/en?a_aid=TechnoTim>
+- UDM Pro <https://store.ui.com/us/en?a_aid=TechnoTim>
+- UniFi 48 Port Enterprise <https://store.ui.com/us/en?a_aid=TechnoTim>
 
 Servers & Accessories
 
