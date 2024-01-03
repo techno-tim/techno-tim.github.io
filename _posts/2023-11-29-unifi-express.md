@@ -234,7 +234,7 @@ Well I learned a ton about the net UniFi Express, how to mesh wireless networks,
 
 UniFi Express:
 
-- <https://store.ui.com/us/en/pro/category/all-unifi-cloud-gateways/products/ux>
+- <https://store.ui.com/us/en/pro/category/all-unifi-cloud-gateways/products/ux?a_aid=TechnoTim>
 
 Other items in this video (because I know you will ask)
 
