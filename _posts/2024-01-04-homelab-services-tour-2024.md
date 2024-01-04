@@ -129,7 +129,6 @@ Here's a breakdown of all the services I use
 - [Netboot.xyz](https://github.com/netbootxyz/netboot.xyz)
 - much, much more!
 
-
 ## Join the conversation
 
 <blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">What a year of self-hosting! Join me as we walk though my entire infrastructure and services that I have running in my HomeLab! <a href="https://t.co/9b2hGFzoPz">https://t.co/9b2hGFzoPz</a> <a href="https://t.co/zqEVKy8rhy">pic.twitter.com/zqEVKy8rhy</a></p>&mdash; Techno Tim (@TechnoTimLive) <a href="https://twitter.com/TechnoTimLive/status/1742944476199375020?ref_src=twsrc%5Etfw">January 4, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
