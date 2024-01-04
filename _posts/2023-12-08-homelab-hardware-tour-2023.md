@@ -14,7 +14,7 @@ Well, here it is!  My Late 2023 Server Rack and HomeLab tour!  I've upgraded, re
 {% include embed/youtube.html id='r4NCofJyOHE' %}
 📺 [Watch Video](https://www.youtube.com/watch?v=r4NCofJyOHE)
 
-In case you missed it, check out my [HomeLab Services Tour (2024)](/homelab-services-tour-2024/)!
+In case you missed it, check out my [HomeLab Services Tour (2024)](/posts/homelab-services-tour-2024/)!
 
 ## Join the conversation
 
