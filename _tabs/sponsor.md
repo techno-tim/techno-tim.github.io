@@ -23,6 +23,7 @@ I also make a small commission (at no cost to you) if you use one of my affiliat
 - [UniFi gear from Ubiquiti](https://l.technotim.live/ubiquiti)
 - [Free Month of Backblaze](https://l.technotim.live/backblaze)
 - [Figma](https://l.technotim.live/figma)
+
 Donating directly:
 
 - [@technotimothystewart](https://l.technotim.live/venmo) on Venmo
