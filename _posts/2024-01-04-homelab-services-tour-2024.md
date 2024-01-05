@@ -49,11 +49,11 @@ Here's a breakdown of all the services I use
 
 ### Network Management
 
-- [UniFi Network Controller](https://l.technotim.live/ubiquiti)
+- [UniFi Network Controller](https://l.technotim.live/ubiquiti) (affiliate link)
 
 ### Home Security
 
-- [UniFi Protect](https://l.technotim.live/ubiquiti)
+- [UniFi Protect](https://l.technotim.live/ubiquiti) (affiliate link)
 
 ### Containerization
 
@@ -74,7 +74,7 @@ Here's a breakdown of all the services I use
 ### Monitoring & Logging
 
 - [Uptime Kuma](https://github.com/louislam/uptime-kuma)
-- [Uptime Robot](https://uptimerobot.com/)
+- [Uptime Robot](https://l.technotim.live/uptime-robot) (affiliate link)
 
 ### Data Visualization
 
