@@ -31,85 +31,199 @@ Here's a breakdown of all the services I use
 
 ### Dashboard
 
+Sites:
+
 - [Heimdall](https://heimdall.site/)
+
+Tutorials:
+
+- [Meet Heimdall, Your Homelab Application Dashboard](posts/heimdall-dashboard/)
 
 ### Hypervisor
 
+Sites:
+
 - [Proxmox](https://www.proxmox.com)
 
+Tutorials:
+
+- [Before I do anything on Proxmox, I do this first...](/posts/first-11-things-proxmox/)
+
 ### Storage
+
+Sites:
 
 - [TrueNAS SCALE](https://www.truenas.com/truenas-scale/)
 - [MinIO](https://min.io/)
 
+Tutorials:
+
+- [TrueNAS Scale Apps - Official, Unofficial, Docker, and Kubernetes](/posts/truenas-scale-apps/)
+
+- [The EASIEST way to Expand Your ZFS Pool in TrueNAS (But is it the Best?)](/posts/truenas-zfs-expand/)
+
 ### DNS
 
+Sites:
+
 - [PiHole](https://pi-hole.net/)
+
 - [Cloudflare](https://www.cloudflare.com/)
+
+Tutorials:
+
+- [Automate Cloudflare with Terraform and GitHub Actions! - Terraform Tutorial for Beginners](/posts/terraform-cloudflare-github/)
+- [High Availability Pi-Hole? Yes please!](/posts/ha-pi-hold-gravity-sync/)
+- [Is adding 3 MILLION domains to your Pi-Hole Block List a good thing?](/posts/pi-hole-blocklists/)
 
 ### Network Management
 
+Sites:
+
 - [UniFi Network Controller](https://l.technotim.live/ubiquiti) (affiliate link)
+
+Tutorials:
+
+- [Setting up your UniFi Express](/posts/unifi-express/)
+- [Configuring VLANs, Firewall Rules, and WiFi Networks - UniFi Network Application](/posts/vlan-firewall-unifi/)
 
 ### Home Security
 
+Sites:
+
 - [UniFi Protect](https://l.technotim.live/ubiquiti) (affiliate link)
 
+Tutorials:
+
+- [My HUGE Home Security Upgrade](/posts/home-security-upgrade/)
+
 ### Containerization
+
+Sites:
 
 - [k3s](https://github.com/k3s-io/k3s)
 - [Portainer](https://www.portainer.io/)
 - [Rancher](https://www.rancher.com/)
 
+Tutorials:
+
+- [Fully Automated K3S etcd High Availability Install](/posts/k3s-etcd-ansible/)
+- [High Availability Rancher on Kubernetes](e/posts/rancher-ha-install/)
+- [How to Update Portainer Fast, Simple, and Easy Guide](/posts/portainer-update/)
+
 ### GitOps
+
+Sites:
 
 - [Flux](https://fluxcd.io/)
 - [Renovate](https://www.mend.io/renovate/)
 
+Tutorials:
+
+- [The FASTEST way to deploy apps to Kubernetes - GitOps with FLUX](/posts/flux-devops-gitops/)
+- [Meet Renovate - Your Update Automation Bot for Kubernetes and More!](/posts/renovate-bot-kubernetes/)
+- [Encrypt Your Sensitive Information Before Storing It - Encrypting with Mozilla SOPS and AGE](/posts/secret-encryption-sops/)
+
 ### Reverse Proxy (and Ingress Controller)
+
+Sites:
 
 - [Traefik](https://traefik.io/traefik/)
 - [cert-manager](https://cert-manager.io/)
 
+Tutorials:
+
+- [Wildcard Certificates with Traefik + cert-manager + Let's Encrypt in Kubernetes Tutorial](/posts/kube-traefik-cert-manager-le/)
+- [Put Wildcard Certificates and SSL on EVERYTHING](/posts/traefik-portainer-ssl/)
+
 ### Monitoring & Logging
+
+Sites:
 
 - [Uptime Kuma](https://github.com/louislam/uptime-kuma)
 - [Uptime Robot](https://l.technotim.live/uptime-robot) (affiliate link)
 
+Tutorials:
+
+- [Meet Uptime Kuma, a Fancy Open Source Uptime Monitor for all your HomeLab Monitoring Needs](/posts/uptime-kuma/)
+
 ### Data Visualization
+
+Sites:
 
 - [Loki](https://github.com/grafana/loki)
 - [Grafana](https://github.com/grafana/grafana)
 - [Prometheus](https://github.com/prometheus/prometheus)
 - [Alert manager](https://github.com/prometheus/alertmanager)
 
+Tutorials:
+
+- [Meet Grafana LOKI, a Log Aggregation System for Everything](posts/grafana-loki/)
+- [Installing Grafana Loki with Helm on Kubernetes](/posts/grafana-loki-kubernetes/)
+- [Beautiful Dashboards with Grafana and Prometheus - Monitoring Kubernetes Tutorial](/posts/kube-grafana-prometheus/)
+- [Monitoring Your Kubernetes Cluster with Grafana, Prometheus, and Alertmanager (Rancher Monitoring)](/posts/rancher-monitoring/)
+
 ## Home Automation
+
+Sites:
 
 - [Home Assistant](https://github.com/home-assistant/core)
 - [Scrypted](https://github.com/koush/scrypted)
 - [Broadlink Control](https://github.com/techno-tim/techno-broadlink)
 
+Tutorials:
+
+- [Home Assistant on Docker and Kubernetes (Open Source Home Automation)](/posts/home-assistant/)
+- [Meet Scrypted - Stream ANY Camera to ANY Home Hub](/posts/scrypted-home-hub/)
+- [I Built Something for Your Homelab... (Broadlink Control)](/posts/broadlink-control/)
+
 ### Data Synchronization
+
+Sites:
 
 - [SyncThing](https://github.com/syncthing/syncthing)
 
 ### Links Page
 
+Sites:
+
 - [littlelink-server](https://github.com/techno-tim/littlelink-server)
 
+Tutorials:
+
+- [Self-Hosted, DIY, Open Source Alternative to Linktree](/posts/open-source-linktree-alt/)
+
 ### Link Shortener
+
+Sites:
 
 - [Shlink](https://github.com/shlinkio/shlink)
 
 ### Media Server
 
+Sites:
+
 - [Plex](https://www.plex.tv/)
+
+Tutorials:
+
+- [Turn Plex into a Powerful DVR](/posts/ota-tv-with-plex/)
 
 ### Power Management
 
+Sites:
+
 - [NUT Server](https://networkupstools.org/)
+- [Automated NUT install](https://github.com/dzomaya/NUTandRpi)
+
+Tutorials:
+
+- [Network UPS Tools (NUT) Ultimate Guide](/posts/NUT-server-guide/)
+- [Automated NUT Server Install](/posts/nut-server-script/)
 
 ### Content Management Systems (CMS)
+
+Sites:
 
 - [Wordpress](https://wordpress.org/)
 - [Ghost Blog](https://ghost.org/)
@@ -117,19 +231,39 @@ Here's a breakdown of all the services I use
 
 ### Static Site Generators (SSG)
 
+Sites:
+
 - [Jekyll](https://github.com/jekyll/jekyll)
 - [Hugo](https://github.com/gohugoio/hugo)
 
+Tutorials:
+
+- [Meet Jekyll - The Static Site Generator](/posts/jekyll-docs-site/)
+
 ### Continuous Integration / Continuous Delivery (CI /CD)
+
+Sites:
 
 - [GitLab](https://gitlab.com/)
 - [GitHub](https://github.com/)
 
+Tutorials:
+
+- [Build & Deploy Your Own Code in Your Homelab!](/posts/self-hosted-devops-stack/)
+
 ### Everything else...
+
+Sites:
 
 - [Longhorn](https://github.com/longhorn/longhorn)
 - [Netboot.xyz](https://github.com/netbootxyz/netboot.xyz)
 - much, much more!
+
+Tutorials:
+
+- [Cloud Native Distributed Storage in Kubernetes with Longhorn](/posts/longhorn-install/)
+- [Meet netboot xyz - Network Boot Any Operating System](/posts/netbootxyz-tutorial/)
+- [much, much more!](/all-posts/)
 
 ## Join the conversation
 
