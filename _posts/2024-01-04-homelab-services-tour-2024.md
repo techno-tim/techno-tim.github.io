@@ -59,7 +59,6 @@ Sites:
 Tutorials:
 
 - [TrueNAS Scale Apps - Official, Unofficial, Docker, and Kubernetes](/posts/truenas-scale-apps/)
-
 - [The EASIEST way to Expand Your ZFS Pool in TrueNAS (But is it the Best?)](/posts/truenas-zfs-expand/)
 
 ### DNS
