@@ -37,7 +37,7 @@ Sites:
 
 Tutorials:
 
-- [Meet Heimdall, Your Homelab Application Dashboard](posts/heimdall-dashboard/)
+- [Meet Heimdall, Your Homelab Application Dashboard](/posts/heimdall-dashboard/)
 
 ### Hypervisor
 
@@ -107,7 +107,7 @@ Sites:
 Tutorials:
 
 - [Fully Automated K3S etcd High Availability Install](/posts/k3s-etcd-ansible/)
-- [High Availability Rancher on Kubernetes](e/posts/rancher-ha-install/)
+- [High Availability Rancher on Kubernetes](/posts/rancher-ha-install/)
 - [How to Update Portainer Fast, Simple, and Easy Guide](/posts/portainer-update/)
 
 ### GitOps
@@ -157,7 +157,7 @@ Sites:
 
 Tutorials:
 
-- [Meet Grafana LOKI, a Log Aggregation System for Everything](posts/grafana-loki/)
+- [Meet Grafana LOKI, a Log Aggregation System for Everything](/posts/grafana-loki/)
 - [Installing Grafana Loki with Helm on Kubernetes](/posts/grafana-loki-kubernetes/)
 - [Beautiful Dashboards with Grafana and Prometheus - Monitoring Kubernetes Tutorial](/posts/kube-grafana-prometheus/)
 - [Monitoring Your Kubernetes Cluster with Grafana, Prometheus, and Alertmanager (Rancher Monitoring)](/posts/rancher-monitoring/)
