@@ -14,6 +14,8 @@ Well, here it is!  My Late 2023 Server Rack and HomeLab tour!  I've upgraded, re
 {% include embed/youtube.html id='r4NCofJyOHE' %}
 📺 [Watch Video](https://www.youtube.com/watch?v=r4NCofJyOHE)
 
+In case you missed it, check out my [HomeLab Services Tour (2024)](/posts/homelab-services-tour-2024/)!
+
 ## Join the conversation
 
 <blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">It&#39;s time of year again! Time for my Server Rack and HomeLab tour! If you&#39;ve ever wondered what servers, networking, and even low power PCs I am running in my setup, check it out!<br><br>👉<a href="https://t.co/IolyDljMuq">https://t.co/IolyDljMuq</a> <a href="https://t.co/jo1qzchS8S">pic.twitter.com/jo1qzchS8S</a></p>&mdash; Techno Tim (@TechnoTimLive) <a href="https://twitter.com/TechnoTimLive/status/1733142610091401593?ref_src=twsrc%5Etfw">December 8, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -100,3 +102,5 @@ Intel NUC Mini Cluster
 ⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>
 
 🚀 Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files
+
+🤝 Support me and [help keep this site ad-free!](/sponsor)
