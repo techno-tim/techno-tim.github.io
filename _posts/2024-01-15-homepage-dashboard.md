@@ -723,6 +723,9 @@ layout:
 
 `.env`
 
+> *Note: These variables will be replace in the configuration above.  You will need to supply your own values here in your file.*
+{: .prompt-info }
+
 ```bash
 PUID=1000
 PGID=1000
