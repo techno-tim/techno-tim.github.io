@@ -564,7 +564,7 @@ services:
             type: plex
             url: "{{HOMEPAGE_VAR_PLEX_URL}}"
             key: "{{HOMEPAGE_VAR_PLEX_API_TOKEN}}"
-    - Tautulla:
+    - Tautulli:
         icon: tautulli.svg
         href: "{{HOMEPAGE_VAR_TAUTULLI_URL}}"
         description: plex stats
