@@ -233,8 +233,7 @@ background:
     weatherapi: weatherapiapikey
 ```
 
-> *Note: Why do this?  Isn't this a lot of work?*
-1 word, it's "repeatable".  We can back up our yaml files and even share them if we want.  Also works great with Kubernetes since you can pass a `ConfigMap` file to your deployment thus not needed a volume.
+> *Why do this?  Isn't this a lot of work?* <br /> 1 word, it's "repeatable".  We can back up our yaml files and even share them if we want.  Also works great with Kubernetes since you can pass a `ConfigMap` file to your deployment thus not needing a volume.
 {: .prompt-info }
 
 ## Services
