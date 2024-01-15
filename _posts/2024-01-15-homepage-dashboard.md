@@ -334,7 +334,7 @@ nano config/service.yaml
         widget:
           type: pihole
           url: http://192.168.60.10
-          key: "{{HOMEPAGE_VAR_PIHOLE_API_KEY}}" # <--- updated with API key from PiHole
+          key:{% raw %} "{{HOMEPAGE_VAR_PIHOLE_API_KEY}}" {% endraw %} # <--- updated with API key from PiHole
     - Cowboy:
         icon: mdi-account-cowboy-hat-#FF0000 # icons found here https://pictogrammers.com/library/mdi/
         href: https://localhost/
