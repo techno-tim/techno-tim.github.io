@@ -92,7 +92,7 @@ PUID=1000
 PGID=1000
 ```
 
-Dave and exit
+Save and exit
 
 Start the container
 
