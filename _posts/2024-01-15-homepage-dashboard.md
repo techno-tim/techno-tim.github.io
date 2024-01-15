@@ -791,7 +791,400 @@ HOMEPAGE_VAR_SHLINK_URL=
 
 ### Kubernetes Config
 
-Coming soon!
+> *Note: This is a work in progress.  This note will be removed when I have fully moved it to Kubernetes with the proper config.  Here's a good starting point*
+{: .prompt-info }
+
+Here's my Kubernetes config!
+
+`deployment.yaml`
+
+```yaml
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: homepage
+  namespace: default
+  labels:
+    app: homepage
+  annotations:
+    reloader.stakater.com/auto: "true"
+spec:
+  selector:
+    matchLabels:
+      app: homepage
+  replicas: 3
+  progressDeadlineSeconds: 600
+  revisionHistoryLimit: 1
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 25%
+      maxSurge: 1
+  template:
+    metadata:
+      labels:
+        app: homepage
+      annotations:
+        deploy-date: "deploy-date-value"
+    spec:
+      containers:
+        - name: homepage
+          image: ghcr.io/gethomepage/homepage:v0.8.4
+          resources:
+            requests:
+              memory: 128Mi
+              cpu: 200m
+          ports:
+            - containerPort: 3000
+              name: http
+          readinessProbe:
+            httpGet:
+              path: /
+              port: http
+            initialDelaySeconds: 60
+            periodSeconds: 10
+            failureThreshold: 5
+            timeoutSeconds: 5
+          livenessProbe:
+            httpGet:
+              path: /
+              port: http
+            initialDelaySeconds: 10
+            periodSeconds: 10
+            timeoutSeconds: 5
+          volumeMounts:
+            - mountPath: /app/config/custom.js
+              name: homepage-config
+              subPath: custom.js
+            - mountPath: /app/config/custom.css
+              name: homepage-config
+              subPath: custom.css
+            - mountPath: /app/config/bookmarks.yaml
+              name: homepage-config
+              subPath: bookmarks.yaml
+            - mountPath: /app/config/docker.yaml
+              name: homepage-config
+              subPath: docker.yaml
+            - mountPath: /app/config/kubernetes.yaml
+              name: homepage-config
+              subPath: kubernetes.yaml
+            - mountPath: /app/config/services.yaml
+              name: homepage-config
+              subPath: services.yaml
+            - mountPath: /app/config/settings.yaml
+              name: homepage-config
+              subPath: settings.yaml
+            - mountPath: /app/config/widgets.yaml
+              name: homepage-config
+              subPath: widgets.yaml
+            - mountPath: /app/config/logs
+              name: logs
+      volumes:
+        - name: homepage-config
+          configMap:
+            name: homepage
+        - name: logs
+          emptyDir: {}
+      topologySpreadConstraints:
+        - maxSkew: 1
+          topologyKey: topology.kubernetes.io/zone
+          whenUnsatisfiable: DoNotSchedule
+          labelSelector:
+            matchLabels:
+              app: homepage
+```
+
+`config.yaml`
+
+```yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: homepage
+  namespace: default
+  labels:
+    app: homepage
+data:
+  kubernetes.yaml: |
+    mode: cluster
+  settings.yaml: |
+    title: Techno Tim Homepage
+
+    background:
+      image: https://cdnb.artstation.com/p/assets/images/images/006/897/659/large/mikael-gustafsson-wallpaper-mikael-gustafsson.jpg
+      blur: sm # sm, md, xl... see https://tailwindcss.com/docs/backdrop-blur
+      saturate: 100 # 0, 50, 100... see https://tailwindcss.com/docs/backdrop-saturate
+      brightness: 50 # 0, 50, 75... see https://tailwindcss.com/docs/backdrop-brightness
+      opacity: 100 # 0-100
+
+    theme: dark
+    color: slate
+
+    useEqualHeights: true
+
+    layout:
+      Hypervisor:
+        header: true
+        style: row
+        columns: 4
+      Containers:
+        header: true
+        style: row
+        columns: 4
+      DNS:
+        header: true
+        style: row
+        columns: 4
+      Network:
+        header: true
+        style: row
+        columns: 4
+      Remote Access:
+        header: true
+        style: row
+        columns: 4
+      Storage:
+        header: true
+        style: row
+        columns: 4
+      Media:
+        header: true
+        style: row
+        columns: 4
+      Home Automation:
+        header: true
+        style: row
+        columns: 4
+      Other:
+        header: true
+        style: row
+        columns: 4
+  custom.css: ""
+  custom.js: ""
+  bookmarks.yaml: ""
+  services.yaml: |
+    - Hypervisor:
+        - Proxmox:
+            icon: proxmox.svg
+            href: "{{HOMEPAGE_VAR_PROXMOX_URL}}"
+            description: pve1
+            widget:
+                type: proxmox
+                url: "{{HOMEPAGE_VAR_PROXMOX_URL}}"
+                username: "{{HOMEPAGE_VAR_PROXMOX_USER}}"
+                password: "{{HOMEPAGE_VAR_PROXMOX_API_KEY}}"
+                node: xing-01
+        - Proxmox:
+            icon: proxmox.svg
+            href: "{{HOMEPAGE_VAR_PROXMOX_URL}}"
+            description: pve2
+            widget:
+                type: proxmox
+                url: "{{HOMEPAGE_VAR_PROXMOX_URL}}"
+                username: "{{HOMEPAGE_VAR_PROXMOX_USER}}"
+                password: "{{HOMEPAGE_VAR_PROXMOX_API_KEY}}"
+                node: xing-02
+        - Proxmox:
+            icon: proxmox.svg
+            href: "{{HOMEPAGE_VAR_PROXMOX_URL}}"
+            description: pve2
+            widget:
+                type: proxmox
+                url: "{{HOMEPAGE_VAR_PROXMOX_URL}}"
+                username: "{{HOMEPAGE_VAR_PROXMOX_USER}}"
+                password: "{{HOMEPAGE_VAR_PROXMOX_API_KEY}}"
+                node: xing-03
+        - Proxmox:
+            icon: proxmox.svg
+            href: "{{HOMEPAGE_VAR_PROXMOX_URL}}"
+            description: pve4
+            widget:
+                type: proxmox
+                url: "{{HOMEPAGE_VAR_PROXMOX_URL}}"
+                username: "{{HOMEPAGE_VAR_PROXMOX_USER}}"
+                password: "{{HOMEPAGE_VAR_PROXMOX_API_KEY}}"
+                node: storinator
+    - Containers:
+        - Rancher:
+            icon: rancher.svg
+            href: "{{HOMEPAGE_VAR_RACNHER_URL}}"
+            description: k8s
+        - Longhorn:
+            icon: longhorn.svg
+            href: "{{HOMEPAGE_VAR_LONGHORN_URL}}"
+            description: k8s storage
+        - Portainer:
+            icon: portainer.svg
+            href: "{{HOMEPAGE_VAR_PORTAINER_URL}}"
+            description: docker
+            widget:
+                type: portainer
+                url: "{{HOMEPAGE_VAR_PORTAINER_URL}}"
+                env: 2
+                key: "{{HOMEPAGE_VAR_PORTAINER_API_KEY}}"
+    - DNS:
+        - Pi-Hole1:
+            icon: pi-hole.svg
+            href: "{{HOMEPAGE_VAR_PIHOLE_URL_1}}"
+            description: quasar
+            widget:
+                type: pihole
+                url: "{{HOMEPAGE_VAR_PIHOLE_URL_1}}"
+                key: "{{HOMEPAGE_VAR_PIHOLE_API_KEY_1}}"
+        - Pi-Hole2:
+            icon: pi-hole.svg
+            href: "{{HOMEPAGE_VAR_PIHOLE_URL_2}}"
+            description: blazar
+            widget:
+                type: pihole
+                url: "{{HOMEPAGE_VAR_PIHOLE_URL_2}}"
+                key: "{{HOMEPAGE_VAR_PIHOLE_API_KEY_2}}"
+        - Pi-Hole3:
+            icon: pi-hole.svg
+            href: "{{HOMEPAGE_VAR_PIHOLE_URL_3}}"
+            description: electron
+            widget:
+                type: pihole
+                url: "{{HOMEPAGE_VAR_PIHOLE_URL_3}}"
+                key: "{{HOMEPAGE_VAR_PIHOLE_API_KEY_3}}"
+    - Network:
+        - UniFi:
+            icon: unifi.svg
+            href: "{{HOMEPAGE_VAR_UNIFI_NETWORK_URL}}"
+            description: network
+            widget:
+                type: unifi
+                url: "{{HOMEPAGE_VAR_UNIFI_NETWORK_URL}}"
+                username: "{{HOMEPAGE_VAR_UNIFI_NETWORK_USERNAME}}"
+                password: "{{HOMEPAGE_VAR_UNIFI_NETWORK_PASSWORD}}"
+        - Uptime Kuma:
+            icon: uptime-kuma.svg
+            href: "{{HOMEPAGE_VAR_UPTIME_KUMA_URL}}"
+            description: internal
+            widget:
+                type: uptimekuma
+                url: "{{HOMEPAGE_VAR_UPTIME_KUMA_URL}}"
+                slug: home
+        - Uptime Robot:
+            icon: https://play-lh.googleusercontent.com/cUrv0t00FYQ1GKLuOTvv8qjo1lSDjqZC16IOp3Fb6ijew6Br5m4o16HhDp0GBu_Bw8Y=w240-h480-rw
+            href: https://uptimerobot.com/dashboard
+            description: external
+            widget:
+                type: uptimerobot
+                url: https://api.uptimerobot.com
+                key: "{{HOMEPAGE_VAR_UPTIME_ROBOT_API_KEY}}"
+    - Storage:
+        - TrueNAS:
+            icon: truenas.svg
+            href: "{{HOMEPAGE_VAR_TRUENAS_URL}}"
+            description: scale
+            widget:
+                type: truenas
+                url: "{{HOMEPAGE_VAR_TRUENAS_URL}}"
+                key: "{{HOMEPAGE_VAR_TRUENAS_API_KEY}}"
+        - MinIO:
+            icon: minio.svg
+            href: "{{HOMEPAGE_VAR_MINIO_URL}}"
+            description: object storage
+    - Media:
+        - Plex:
+            icon: plex.svg
+            href: "{{HOMEPAGE_VAR_PLEX_URL}}"
+            description: media server
+            widget:
+                type: plex
+                url: "{{HOMEPAGE_VAR_PLEX_URL}}"
+                key: "{{HOMEPAGE_VAR_PLEX_API_TOKEN}}"
+        - Tautulla:
+            icon: tautulli.svg
+            href: "{{HOMEPAGE_VAR_TAUTULLI_URL}}"
+            description: plex stats
+            widget:
+                type: tautulli
+                url: "{{HOMEPAGE_VAR_TAUTULLI_URL}}"
+                key: "{{HOMEPAGE_VAR_TAUTULLI_API_KEY}}"
+        - HDHomerun:
+            icon: hdhomerun.png
+            href: "{{HOMEPAGE_VAR_HDHOMERUN_URL}}"
+            description: flex 4k
+            widget:
+                type: hdhomerun
+                url: "{{HOMEPAGE_VAR_HDHOMERUN_URL}}"
+    - Remote Access:
+        - PiKVM:
+            icon: https://avatars.githubusercontent.com/u/41749659?s=200&v=4
+            href: "{{HOMEPAGE_VAR_PIKVM_URL}}"
+            description: remote kvm
+        - IPMI:
+            icon: https://upload.wikimedia.org/wikipedia/commons/1/1d/Super_Micro_Computer_Logo.svg
+            href: "{{HOMEPAGE_VAR_IPMI_1_URL}}"
+            description: storinator
+        - IPMI:
+            icon: https://upload.wikimedia.org/wikipedia/commons/1/1d/Super_Micro_Computer_Logo.svg
+            href: "{{HOMEPAGE_VAR_IPMI_2_URL}}"
+            description: hl15
+        - Netboot:
+            icon: https://netboot.xyz/img/nbxyz-laptop.gif
+            href: "{{HOMEPAGE_VAR_NETBOOT_URL}}"
+            description: network boot utility
+        - Tripp Lite:
+            icon: https://upload.wikimedia.org/wikipedia/commons/f/f9/Tripp_Lite_logo.svg
+            href: "{{HOMEPAGE_VAR_UPS_1_URL}}"
+            description: 1500
+        - Eaton:
+            icon: https://cdn11.bigcommerce.com/s-fg272t4iw0/images/stencil/1280x1280/products/2549/2802/C-12556__63907.1557814942.jpg?c=2
+            href: "{{HOMEPAGE_VAR_UPS_2_URL}}"
+            description: 5p
+    - Home Automation:
+        - Home Assistant:
+            icon: home-assistant.svg
+            href: "{{HOMEPAGE_VAR_HOME_ASSISTANT_URL}}"
+            description: home
+            widget:
+                type: homeassistant
+                url: "{{HOMEPAGE_VAR_HOME_ASSISTANT_URL}}"
+                key: "{{HOMEPAGE_VAR_HOME_ASSISTANT_API_KEY}}"
+        - UniFi:
+            icon: https://play-lh.googleusercontent.com/DmgQvSdocOrGr0D0rxSBE9sqh23Fw3ck3BgKRN788cZnOKgcZlcEAFRYwmUbp6vMTVI
+            href: "{{HOMEPAGE_VAR_UNIFI_PROTECT_URL}}"
+            description: protect
+        - Scryped:
+            icon: https://www.scrypted.app/images/web_hi_res_512.png
+            href: "{{HOMEPAGE_VAR_SCRYPTED_URL}}"
+            description: mgmt console
+        - Broadlink Control:
+            icon: https://nwzimg.wezhan.net/contents/sitefiles3606/18030899/images/5430245.png
+            href: "{{HOMEPAGE_VAR_BROADLINK_CONTROL_URL}}"
+            description: light control
+    - Other:
+        - GitLab:
+            icon: gitlab.svg
+            href: https://gitlab.com
+            description: source code
+        - GitHub:
+            icon: github.svg
+            href: https://github.com
+            description: source code
+        - Shlink:
+            icon: https://shlink.io/images/shlink-logo-blue.svg
+            href: "{{HOMEPAGE_VAR_SHLINK_URL}}"
+            description: dashboard
+  widgets.yaml: |
+    - resources:
+        cpu: true
+        memory: true
+        disk: /
+
+    - datetime:
+        text_size: xl
+        format:
+          timeStyle: short
+  docker.yaml: ""
+
+```
+
+`TODO://  create secrets file so they are replaced in config.yaml`
 
 ## Join the conversation
 
