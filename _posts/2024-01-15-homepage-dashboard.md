@@ -30,7 +30,7 @@ See [this post](/posts/docker-compose-install/) on how to install `docker` and `
 
 ## Install
 
-make a directory
+Make a directory
 
 ```bash
 mkdir homepage
@@ -48,7 +48,7 @@ create a `docker-compose.yaml` file
 touch docker-compose.yaml
 ```
 
-edit it
+Edit it
 
 ```bash
 nano docker-compose.yaml
@@ -58,7 +58,7 @@ nano docker-compose.yaml
 mkdir config
 ```
 
-place the contents
+Place the contents
 
 ```yaml
 version: "3.3"
@@ -77,13 +77,13 @@ services:
       PGID: $PGID # read them from .env
 ```
 
-create an `.env` file for variables
+Create an `.env` file for variables
 
 ```bash
 touch .env
 ```
 
-edit it
+Edit it
 
 ```bash
 nano .env
@@ -96,9 +96,9 @@ PUID=1000
 PGID=1000
 ```
 
-save and exit
+Dave and exit
 
-start the container
+Start the container
 
 ```bash
 docker compose up -d
@@ -106,7 +106,7 @@ docker compose up -d
 
 Give it a few seconds to start (could take up to 1 min depending on your docker machine)
 
-you can check by running
+You can check by running:
 
 ```bash
 docker ps
@@ -148,7 +148,7 @@ providers:
 
 ```
 
-save, exit, and revisit your homepage
+Save, exit, and revisit your homepage
 
 Should refresh, if not click the refresh in lower right hand corner
 
@@ -158,7 +158,7 @@ Title of document should now be
 
 If we want, we can also customize the background but updating this file too
 
-edit `settings.yaml`
+Edit `settings.yaml`
 
 ```bash
 nano settings.yaml
@@ -228,15 +228,15 @@ background:
     weatherapi: weatherapiapikey
 ```
 
-Why do this?  Isn't this a lot of work?
-
+> *Note: Why do this?  Isn't this a lot of work?*
 1 word, it's "repeatable".  We can back up our yaml files and even share them if we want.  Also works great with Kubernetes since you can pass a `ConfigMap` file to your deployment thus not needed a volume.
+{: .prompt-info }
 
 ## Services
 
-services are configured in `service.yaml` and really are button for accessing some of your services
+Services are configured in `service.yaml` and really are button for accessing some of your services
 
-edit `service.yaml`
+Edit `service.yaml`
 
 ```bash
 nano config/service.yaml
@@ -288,11 +288,18 @@ As you can see we configured 4 services:
 - one that use [Material Design icons](https://pictogrammers.com/library/mdi/)
 - one that used [Simple Icons](https://simpleicons.org/)
 
-** If you're using Material Design Icons or Simple Icons you can change the color of the icon by appending the hex values to the icon name as shown above.
+> *Note: If you're using Material Design Icons or Simple Icons you can change the color of the icon by appending the hex values to the icon name as shown above.*
+{: .prompt-info }
 
 ## Service Widgets
 
 These extend the functionality of service buttons.  Optional but cool.
+
+Edit `service.yaml`
+
+```bash
+nano config/service.yaml
+```
 
 ```yaml
 ---
@@ -336,13 +343,24 @@ These extend the functionality of service buttons.  Optional but cool.
         description: homepage
 ```
 
+Stop the Docker container
+
+`docker stop homepage`
+
+Start the Docker container
+
+`docker start homepage`
+
+> *Note: I have noticed that sometimes you need to recreate the container in order for the variables from your `.env` to be replaced.  Not sure if this is a feature or a bug, but `docker compose up -d --force-recreate` will stop the old container, remove it, and create a new one*
+{: .prompt-warning }
+
 We should now see pi hole statistics
 
 ## Widgets
 
-Widgets are standalone items like the resource and search at the top
+Widgets are standalone items like the resource and search at the top.
 
-If you want to edit these items
+If you want to edit these items:
 
 ```bash
 nano config/widgets.yaml
