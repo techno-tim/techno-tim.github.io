@@ -54,10 +54,6 @@ Edit it
 nano docker-compose.yaml
 ```
 
-```bash
-mkdir config
-```
-
 Place the contents
 
 ```yaml
@@ -112,7 +108,12 @@ You can check by running:
 docker ps
 ```
 
-Check to be sure you see that the container is healthy. You should see something like:
+> *Note: The container can take up to 60 seconds to start the first time.  It's a good idea to check the container to see if it is passing health checks before browsing to your site.*
+{: .prompt-info }
+
+Check to be sure you see that the container is healthy.
+
+You should see something like:
 
 ```
 CONTAINER ID   IMAGE                                 COMMAND                  CREATED         STATUS                    PORTS                                       NAMES
@@ -126,6 +127,10 @@ You should see your new homepage!
 ## Configure
 
 On docker machine, cd into `config` directory
+
+```bash
+mkdir config
+```
 
 You'll see yaml files, these are configurations we can edit to configure our homepage
 
