@@ -100,18 +100,16 @@ Start the container
 docker compose up -d
 ```
 
-Give it a few seconds to start (could take up to 1 min depending on your docker machine)
+> *Note: The container can take up to 60 seconds to start the first time.  It's a good idea to check the container to see if it is passing health checks before browsing to your site.*
+{: .prompt-info }
+
+Check to be sure you see that the container is healthy.
 
 You can check by running:
 
 ```bash
 docker ps
 ```
-
-> *Note: The container can take up to 60 seconds to start the first time.  It's a good idea to check the container to see if it is passing health checks before browsing to your site.*
-{: .prompt-info }
-
-Check to be sure you see that the container is healthy.
 
 You should see something like:
 
