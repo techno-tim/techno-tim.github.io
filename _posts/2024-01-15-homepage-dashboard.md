@@ -77,7 +77,7 @@ services:
       PGID: $PGID # read them from .env
 ```
 
-create an `.env`` file for variables
+create an `.env` file for variables
 
 ```bash
 touch .env
@@ -122,6 +122,8 @@ CONTAINER ID   IMAGE                                 COMMAND                  CR
 Once it's healthy, visit `http://<IP-ADDRESS-DOCKER-MACHINE>:3000`
 
 You should see your new homepage!
+
+## Configure
 
 On docker machine, cd into `config` directory
 
