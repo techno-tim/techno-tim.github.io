@@ -63,6 +63,7 @@ flushcache:
     image: alpine/curl
     stage: flushcache
     script:
+    - sleep 600
     - |
         curl --fail --output "/dev/null" --silent --show-error -X POST "https://api.cloudflare.com/client/v4/zones/$CF_ZONE_ID/purge_cache" \
         -H "Authorization: Bearer $CF_API_TOKEN" -H "Content-Type: application/json" \
