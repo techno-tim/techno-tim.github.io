@@ -9,8 +9,8 @@ This site and all of its contents is self-hosted and ad-free. If you'd like to h
 
 You can support me and my work directly:
 
-- [Sponsoring me on GitHub](https://l.technotim.live/github-sponsor)
 - [Becoming a member on Patreon](https://l.technotim.live/patreon)
+- [Sponsoring me on GitHub](https://l.technotim.live/github-sponsor)
 - [Subscribing on Twitch](https://l.technotim.live/twitch-subscribe)
 - [Becoming a member on YouTube](https://l.technotim.live/youtube-member)
 
