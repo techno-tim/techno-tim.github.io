@@ -2,6 +2,7 @@ stages:
   - test
   - docker
   - deploy
+  - flushcache
 
 variables:
   KUBECONFIG: .kube/config
@@ -57,3 +58,12 @@ deploy:
     - echo ${KUBERNETES_EXTERNAL_CLUSTER} | base64 -d -i > ${KUBECONFIG}
   script:
     - kubectl apply -f kubernetes
+
+flushcache:
+    image: alpine/curl
+    stage: flushcache
+    script:
+    - |
+        curl --fail --output "/dev/null" --silent --show-error -X POST "https://api.cloudflare.com/client/v4/zones/$CF_ZONE_ID/purge_cache" \
+        -H "Authorization: Bearer $CF_API_TOKEN" -H "Content-Type: application/json" \
+        --data '{"purge_everything":true}'
