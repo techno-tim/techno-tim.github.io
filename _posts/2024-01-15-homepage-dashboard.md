@@ -794,9 +794,6 @@ HOMEPAGE_VAR_SHLINK_URL=
 
 ### Kubernetes Config
 
-> *Note: This is a work in progress.  This note will be removed when I have fully moved it to Kubernetes with the proper config.  Here's a good starting point*
-{: .prompt-info }
-
 Here's my Kubernetes config!
 
 `deployment.yaml`
@@ -838,6 +835,9 @@ spec:
             requests:
               memory: 128Mi
               cpu: 200m
+          envFrom:
+            - secretRef:
+              name: homepage-secret
           ports:
             - containerPort: 3000
               name: http
@@ -1184,10 +1184,57 @@ data:
         format:
           timeStyle: short
   docker.yaml: ""
-
 ```
 
-`TODO://  create secrets file so they are replaced in config.yaml`
+`secret.yaml`
+
+```yaml
+kind: Secret
+apiVersion: v1
+type: Opaque
+metadata:
+    name: homepage-secret
+    namespace: default
+stringData:
+    HOMEPAGE_VAR_PIHOLE_API_KEY_1: ""
+    HOMEPAGE_VAR_PIHOLE_API_KEY_2: ""
+    HOMEPAGE_VAR_PIHOLE_API_KEY_3: ""
+    HOMEPAGE_VAR_PIHOLE_URL_1: ""
+    HOMEPAGE_VAR_PIHOLE_URL_2: ""
+    HOMEPAGE_VAR_PIHOLE_URL_3: ""
+    HOMEPAGE_VAR_PLEX_URL: ""
+    HOMEPAGE_VAR_PLEX_API_TOKEN: ""
+    HOMEPAGE_VAR_TAUTULLI_URL: ""
+    HOMEPAGE_VAR_TAUTULLI_API_KEY: ""
+    HOMEPAGE_VAR_HDHOMERUN_URL: ""
+    HOMEPAGE_VAR_HOME_ASSISTANT_URL: ""
+    HOMEPAGE_VAR_HOME_ASSISTANT_API_KEY: ""
+    HOMEPAGE_VAR_TRUENAS_URL: ""
+    HOMEPAGE_VAR_TRUENAS_API_KEY: ""
+    HOMEPAGE_VAR_UNIFI_NETWORK_URL: ""
+    HOMEPAGE_VAR_UNIFI_NETWORK_USERNAME: ""
+    HOMEPAGE_VAR_UNIFI_NETWORK_PASSWORD: ""
+    HOMEPAGE_VAR_UNIFI_PROTECT_URL: ""
+    HOMEPAGE_VAR_UPTIME_KUMA_URL: ""
+    HOMEPAGE_VAR_MINIO_URL: ""
+    HOMEPAGE_VAR_RACNHER_URL: ""
+    HOMEPAGE_VAR_LONGHORN_URL: ""
+    HOMEPAGE_VAR_PORTAINER_URL: ""
+    HOMEPAGE_VAR_PORTAINER_API_KEY: ""
+    HOMEPAGE_VAR_PROXMOX_URL: ""
+    HOMEPAGE_VAR_PROXMOX_USER: ""
+    HOMEPAGE_VAR_PROXMOX_API_KEY: ""
+    HOMEPAGE_VAR_UPTIME_ROBOT_API_KEY: ""
+    HOMEPAGE_VAR_SCRYPTED_URL: ""
+    HOMEPAGE_VAR_PIKVM_URL: ""
+    HOMEPAGE_VAR_NETBOOT_URL: ""
+    HOMEPAGE_VAR_BROADLINK_CONTROL_URL: ""
+    HOMEPAGE_VAR_IPMI_1_URL: ""
+    HOMEPAGE_VAR_IPMI_2_URL: ""
+    HOMEPAGE_VAR_UPS_1_URL: ""
+    HOMEPAGE_VAR_UPS_2_URL: ""
+    HOMEPAGE_VAR_SHLINK_URL: ""
+```
 
 ## Join the conversation
 
