@@ -1,13 +1,16 @@
 #  The contact options.
-
+-
+  type: links
+  icon: 'fa-solid fa-address-card'
+  url:  'https://l.technotim.live/links'
 -
   type: twitter
-  icon: 'fab fa-twitter'
+  icon: 'fa-brands fa-x-twitter'
   url: 'https://l.technotim.live/twitter'
--
-  type: youtube
-  icon: 'fab fa-youtube'
-  url: 'https://l.technotim.live/subscribe'
+# -
+#   type: youtube
+#   icon: 'fab fa-youtube'
+#   url: 'https://l.technotim.live/subscribe'
 # -
 #   type: twitch
 #   icon: 'fab fa-twitch'
@@ -17,13 +20,9 @@
 #   icon: 'fab fa-discord'
 #   url: 'https://l.technotim.live/discord'
 -
-  type: github
+  type: github-custom
   icon: 'fab fa-github'
   url: 'https://l.technotim.live/github'
-# -
-#   type: instagram
-#   icon: 'fab fa-instagram'
-#   url:  'https://l.technotim.live/instagram'
 # -
 #   type: linkedin
 #   icon: 'fab fa-linkedin'
@@ -40,10 +39,10 @@
 #   type: facebook
 #   icon: 'fab fa-facebook'
 #   url:  'https://l.technotim.live/facebook'
--
-  type: patreon
-  icon: 'fab fa-patreon'
-  url: 'https://l.technotim.live/patreon'
+# -
+#   type: patreon
+#   icon: 'fab fa-patreon'
+#   url: 'https://l.technotim.live/patreon'
 -
   type: rss
   icon: 'fas fa-rss'
