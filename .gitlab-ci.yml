@@ -60,6 +60,7 @@ deploy:
     - kubectl apply -f kubernetes
 
 flushcache:
+    image: alpine/curl
     cache: []
     stage: flushcache
     retry: 2
