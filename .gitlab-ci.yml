@@ -62,6 +62,7 @@ deploy:
 flushcache:
     image: alpine/curl
     cache: []
+    artifacts: {}
     stage: flushcache
     retry: 2
     script:
