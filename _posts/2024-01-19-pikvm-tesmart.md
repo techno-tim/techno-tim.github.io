@@ -95,6 +95,7 @@ Here are the items that I used during this project.
 - USB B Cables - <https://amzn.to/3Eel0wU>
 - EDID emulator (the ones I use) - <https://amzn.to/3tQp04Z>
 - EDID emulators (3 pack recommended by the community) - <https://amzn.to/47MUtCO>
+- VGA to HDMI Adapter (great for connecting VGA devices to a PiKVM) - <https://amzn.to/491uAAo>
 - Intel NUC 11 kit - <https://amzn.to/3vRDAJK>
 
 (Affiliate links may be included. I may receive a small commission at no cost to you.)
