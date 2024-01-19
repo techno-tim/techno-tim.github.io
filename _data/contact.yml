@@ -1,7 +1,7 @@
 #  The contact options.
 -
   type: links
-  icon: 'fa-solid fa-address-card'
+  icon: 'fa-solid fa-link'
   url:  'https://l.technotim.live/links'
 -
   type: twitter
