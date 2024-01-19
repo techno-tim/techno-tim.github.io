@@ -42,6 +42,7 @@ spec:
             failureThreshold: 5
             timeoutSeconds: 5
           readinessProbe:
+            initialDelaySeconds: 10
             successThreshold: 2
             failureThreshold: 2
             periodSeconds: 10
