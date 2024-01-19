@@ -90,7 +90,7 @@ Here are the items that I used during this project.
 
 - PiKVM - <https://pikvm.org>
 - TESmart Switch - <https://amzn.to/3YV0Gsi>
-- TESmart Switch (buy direct, usually cheaper) - https://l.technotim.live/tesmart
+- TESmart Switch (buy direct, usually cheaper) - <https://l.technotim.live/tesmart>
 - HDMI Cables - <https://amzn.to/3SgJ34g>
 - USB B Cables - <https://amzn.to/3Eel0wU>
 - EDID emulator (the ones I use) - <https://amzn.to/3tQp04Z>
