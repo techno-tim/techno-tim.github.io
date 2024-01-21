@@ -84,6 +84,175 @@ Some people have mentioned that this happens more often when running Linux, and 
 
 I am considering this "fixed" now even though technically this is a "workaround."  A huge thanks to Max from PiKVM, Ray from TESmart (and the TESmart team), and juristoeckli and NateDiTo in the comments because without all of you I would have given up.  Each new idea or additional troubleshooting step motivated me to keep going.  I can finally use this switch and recommend it to those who want something rackmountable (with workarounds).
 
+## Config
+
+Here is the configuration I use:
+
+`/etc/kvmd/override.yaml`
+
+```yaml
+# /etc/kvmd/override.yaml.bak.tesmart
+####################################################################
+#                                                                  #
+# Override Pi-KVM system settings. This file uses the YAML syntax. #
+#                                                                  #
+#    https://github.com/pikvm/pikvm/blob/master/pages/config.md    #
+#                                                                  #
+# All overridden parameters will be applied AFTER other configs    #
+# and "!include" directives and BEFORE validation.                 #
+# Not: Sections should be combined under shared keys.              #
+#                                                                  #
+####################################################################
+
+kvmd:
+  gpio:
+    drivers:
+      tes:
+        type: tesmart
+        host: 192.168.20.63
+        port: 5000
+      wol_server0:
+        type: wol
+        mac: 1c:69:7a:ad:11:85
+      wol_server1:
+        type: wol
+        mac: 88:ae:dd:05:cf:09
+      wol_server2:
+        type: wol
+        mac: 88:ae:dd:05:c6:3b
+      wol_server3:
+        type: wol
+        mac: 3c:ec:ef:0e:d3:a4
+      wol_server3a:
+        type: wol
+        mac: 3c:ec:ef:0e:d3:a5
+      wol_server4:
+        type: wol
+        mac: 3c:ec:ef:90:c8:0c
+      wol_server4a:
+        type: wol
+        mac: 3c:ec:ef:90:c8:0d
+      reboot:
+        type: cmd
+        cmd: [/usr/bin/sudo, reboot]
+      restart_service:
+        type: cmd
+        cmd: [/usr/bin/sudo, systemctl, restart, kvmd]
+    scheme:
+      ch0_led:
+        driver: tes
+        pin: 0
+        mode: input
+      ch1_led:
+        driver: tes
+        pin: 1
+        mode: input
+      ch2_led:
+        driver: tes
+        pin: 2
+        mode: input
+      ch3_led:
+        driver: tes
+        pin: 3
+        mode: input
+      ch4_led:
+        driver: tes
+        pin: 4
+        mode: input
+      pikvm_led:
+        pin: 0
+        mode: input
+      ch0_button:
+        driver: tes
+        pin: 0
+        mode: output
+        switch: false
+      ch1_button:
+        driver: tes
+        pin: 1
+        mode: output
+        switch: false
+      ch2_button:
+        driver: tes
+        pin: 2
+        mode: output
+        switch: false
+      ch3_button:
+        driver: tes
+        pin: 3
+        mode: output
+        switch: false
+      ch4_button:
+        driver: tes
+        pin: 4
+        mode: output
+        switch: false
+      wol_server0:
+        driver: wol_server0
+        pin: 0
+        mode: output
+        switch: false
+      wol_server1:
+        driver: wol_server1
+        pin: 0
+        mode: output
+        switch: false
+      wol_server2:
+        driver: wol_server2
+        pin: 0
+        mode: output
+        switch: false
+      wol_server3:
+        driver: wol_server3
+        pin: 0
+        mode: output
+        switch: false
+      wol_server3a:
+        driver: wol_server3a
+        pin: 0
+        mode: output
+        switch: false
+      wol_server4:
+        driver: wol_server4
+        pin: 0
+        mode: output
+        switch: false
+      wol_server4a:
+        driver: wol_server4a
+        pin: 0
+        mode: output
+        switch: false
+      reboot_button:
+        driver: reboot
+        pin: 0
+        mode: output
+        switch: false
+      restart_service_button:
+        driver: restart_service
+        pin: 0
+        mode: output
+        switch: false
+    view:
+      table:
+        - ["#NUC1", ch0_led, ch0_button, "wol_server0 | WoL"]
+        - ["#NUC2", ch1_led, ch1_button, "wol_server1 | WoL"]
+        - ["#NUC3", ch2_led, ch2_button, "wol_server2 | WoL"]
+        - ["#HL15", ch3_led, ch3_button, "wol_server3 | WoL-10g", "wol_server3a | WoL-10g"]
+        - ["#Storinator", ch4_led, ch4_button, "wol_server4 | WoL-10g", "wol_server4a | WoL-10g"]
+        - ["#PiKVM", "pikvm_led|green", "restart_service_button|confirm|Service", "reboot_button|confirm|Reboot"]
+```
+
+edit `/etc/sudoers.d/99_kvmd`
+
+add to the end:
+
+```bash
+kvmd ALL=(ALL) NOPASSWD: /usr/bin/reboot
+kvmd ALL=(ALL) NOPASSWD: /usr/bin/systemctl
+```
+
+Then reboot or restart services.
+
 ## Where to Buy
 
 Here are the items that I used during this project.
