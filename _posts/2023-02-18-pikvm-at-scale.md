@@ -10,6 +10,9 @@ image:
 
 ---
 
+> If you're looking to configure the TESmart switch with PiKVM, I finally figured it out and you can [read all about it here.](/posts/pikvm-tesmart/)
+{: .prompt-info }
+
 ## What is the PiKVM?
 
 If you don’t know what a KVM switch is, it’s a device that allows you to connect multiple computers to one device which allows you to control them with a single keyboard, monitor, and mouse.They’re relatively cheap unless you’re looking for an IP based one that will let you connect over the network.IP KVMs are really expensive, that is until the [PiKVM](https://pikvm.org/) came along. The PiKVM is a Raspberry Pi-based KVM switch, which allows you to remotely control a computer using a keyboard, a web browser, and mouse from anywhere in the world.It runs a web server that lets you connect to any computer connected to it and remote control it as if you’re sitting right in front of it, without plugins or installing any agents on the device. It’s much more capable than remote controlling it using a remote desktop client, it can even let you remote control a machine before it boots to let you change things in the bios, or even reformat and reinstall your operating system remotely.
@@ -285,7 +288,6 @@ If you're having issues with Wake on LAN, see [The Ultimate Guide to Wake on LAN
 ## Join the conversation
 
 <blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">The last few weeks I have been trying to figure out how to scale the PiKVM to more than one device. It took a lot of twists and turns but I finally figured out a solution, even if the first attempts failed... <br><br>Check it out ⬇️<a href="https://t.co/4qgwcmPwMi">https://t.co/4qgwcmPwMi</a><a href="https://twitter.com/hashtag/raspberrypi?src=hash&amp;ref_src=twsrc%5Etfw">#raspberrypi</a> <a href="https://twitter.com/hashtag/homelab?src=hash&amp;ref_src=twsrc%5Etfw">#homelab</a> <a href="https://t.co/ljxpIE3cYx">pic.twitter.com/ljxpIE3cYx</a></p>&mdash; Techno Tim (@TechnoTimLive) <a href="https://twitter.com/TechnoTimLive/status/1626989646713430018?ref_src=twsrc%5Etfw">February 18, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 
 ## Links
 
