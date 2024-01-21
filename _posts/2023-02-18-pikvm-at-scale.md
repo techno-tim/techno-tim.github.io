@@ -294,3 +294,5 @@ If you're having issues with Wake on LAN, see [The Ultimate Guide to Wake on LAN
 ⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>
 
 🚀 Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files
+
+🤝 Support me and [help keep this site ad-free!](/sponsor)
