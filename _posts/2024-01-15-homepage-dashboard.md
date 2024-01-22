@@ -334,7 +334,7 @@ nano config/service.yaml
         widget:
           type: pihole
           url: http://192.168.60.10
-          key:{% raw %} "{{HOMEPAGE_VAR_PIHOLE_API_KEY}}" {% endraw %} # <--- updated with API key from PiHole
+          key: {% raw %}"{{HOMEPAGE_VAR_PIHOLE_API_KEY}}"{% endraw %} # <--- updated with API key from PiHole
     - Cowboy:
         icon: mdi-account-cowboy-hat-#FF0000 # icons found here https://pictogrammers.com/library/mdi/
         href: https://localhost/
@@ -437,104 +437,104 @@ services:
 - Hypervisor:
     - Proxmox:
         icon: proxmox.svg
-        href: {% raw %} "{{HOMEPAGE_VAR_PROXMOX_URL}}" {% endraw %}
+        href: {% raw %}"{{HOMEPAGE_VAR_PROXMOX_URL}}"{% endraw %}
         description: pve1
         widget:
             type: proxmox
-            url: {% raw %} "{{HOMEPAGE_VAR_PROXMOX_URL}}" {% endraw %}
-            username: {% raw %} "{{HOMEPAGE_VAR_PROXMOX_USER}}" {% endraw %}
-            password: {% raw %} "{{HOMEPAGE_VAR_PROXMOX_API_KEY}}" {% endraw %}
+            url: {% raw %}"{{HOMEPAGE_VAR_PROXMOX_URL}}"{% endraw %}
+            username: {% raw %} "{{HOMEPAGE_VAR_PROXMOX_USER}}"{% endraw %}
+            password: {% raw %} "{{HOMEPAGE_VAR_PROXMOX_API_KEY}}"{% endraw %}
             node: xing-01
     - Proxmox:
         icon: proxmox.svg
-        href: {% raw %} "{{HOMEPAGE_VAR_PROXMOX_URL}}" {% endraw %}
+        href: {% raw %}"{{HOMEPAGE_VAR_PROXMOX_URL}}"{% endraw %}
         description: pve2
         widget:
             type: proxmox
-            url: {% raw %} "{{HOMEPAGE_VAR_PROXMOX_URL}}" {% endraw %}
-            username: {% raw %} "{{HOMEPAGE_VAR_PROXMOX_USER}}" {% endraw %}
-            password: {% raw %} "{{HOMEPAGE_VAR_PROXMOX_API_KEY}}" {% endraw %}
+            url: {% raw %}"{{HOMEPAGE_VAR_PROXMOX_URL}}"{% endraw %}
+            username: {% raw %} "{{HOMEPAGE_VAR_PROXMOX_USER}}"{% endraw %}
+            password: {% raw %} "{{HOMEPAGE_VAR_PROXMOX_API_KEY}}"{% endraw %}
             node: xing-02
     - Proxmox:
         icon: proxmox.svg
-        href: {% raw %} "{{HOMEPAGE_VAR_PROXMOX_URL}}" {% endraw %}
+        href: {% raw %}"{{HOMEPAGE_VAR_PROXMOX_URL}}"{% endraw %}
         description: pve2
         widget:
             type: proxmox
-            url: {% raw %} "{{HOMEPAGE_VAR_PROXMOX_URL}}" {% endraw %}
-            username: {% raw %} "{{HOMEPAGE_VAR_PROXMOX_USER}}" {% endraw %}
-            password: {% raw %} "{{HOMEPAGE_VAR_PROXMOX_API_KEY}}" {% endraw %}
+            url: {% raw %}"{{HOMEPAGE_VAR_PROXMOX_URL}}"{% endraw %}
+            username: {% raw %} "{{HOMEPAGE_VAR_PROXMOX_USER}}"{% endraw %}
+            password: {% raw %} "{{HOMEPAGE_VAR_PROXMOX_API_KEY}}"{% endraw %}
             node: xing-03
     - Proxmox:
         icon: proxmox.svg
-        href: {% raw %} "{{HOMEPAGE_VAR_PROXMOX_URL}}" {% endraw %}
+        href: {% raw %}"{{HOMEPAGE_VAR_PROXMOX_URL}}"{% endraw %}
         description: pve4
         widget:
             type: proxmox
-            url: {% raw %} "{{HOMEPAGE_VAR_PROXMOX_URL}}" {% endraw %}
-            username: {% raw %} "{{HOMEPAGE_VAR_PROXMOX_USER}}" {% endraw %}
-            password: {% raw %} "{{HOMEPAGE_VAR_PROXMOX_API_KEY}}" {% endraw %}
+            url: {% raw %}"{{HOMEPAGE_VAR_PROXMOX_URL}}"{% endraw %}
+            username: {% raw %} "{{HOMEPAGE_VAR_PROXMOX_USER}}"{% endraw %}
+            password: {% raw %} "{{HOMEPAGE_VAR_PROXMOX_API_KEY}}"{% endraw %}
             node: storinator
 - Containers:
     - Rancher:
         icon: rancher.svg
-        href: {% raw %} "{{HOMEPAGE_VAR_RACNHER_URL}}" {% endraw %}
+        href: {% raw %}"{{HOMEPAGE_VAR_RACNHER_URL}}"{% endraw %}
         description: k8s
     - Longhorn:
         icon: longhorn.svg
-        href: {% raw %} "{{HOMEPAGE_VAR_LONGHORN_URL}}" {% endraw %}
+        href: {% raw %}"{{HOMEPAGE_VAR_LONGHORN_URL}}"{% endraw %}
         description: k8s storage
     - Portainer:
         icon: portainer.svg
-        href: {% raw %} "{{HOMEPAGE_VAR_PORTAINER_URL}}" {% endraw %}
+        href: {% raw %}"{{HOMEPAGE_VAR_PORTAINER_URL}}"{% endraw %}
         description: docker
         widget:
             type: portainer
-            url: {% raw %} "{{HOMEPAGE_VAR_PORTAINER_URL}}" {% endraw %}
+            url: {% raw %}"{{HOMEPAGE_VAR_PORTAINER_URL}}"{% endraw %}
             env: 2
-            key: {% raw %} "{{HOMEPAGE_VAR_PORTAINER_API_KEY}}" {% endraw %}
+            key: {% raw %}"{{HOMEPAGE_VAR_PORTAINER_API_KEY}}"{% endraw %}
 - DNS:
     - Pi-Hole1:
         icon: pi-hole.svg
-        href: {% raw %} "{{HOMEPAGE_VAR_PIHOLE_URL_1}}" {% endraw %}
+        href: {% raw %}"{{HOMEPAGE_VAR_PIHOLE_URL_1}}"{% endraw %}
         description: quasar
         widget:
             type: pihole
-            url: {% raw %} "{{HOMEPAGE_VAR_PIHOLE_URL_1}}" {% endraw %}
-            key: {% raw %} "{{HOMEPAGE_VAR_PIHOLE_API_KEY_1}}" {% endraw %}
+            url: {% raw %}"{{HOMEPAGE_VAR_PIHOLE_URL_1}}"{% endraw %}
+            key: {% raw %}"{{HOMEPAGE_VAR_PIHOLE_API_KEY_1}}"{% endraw %}
     - Pi-Hole2:
         icon: pi-hole.svg
-        href: {% raw %} "{{HOMEPAGE_VAR_PIHOLE_URL_2}}" {% endraw %}
+        href: {% raw %}"{{HOMEPAGE_VAR_PIHOLE_URL_2}}"{% endraw %}
         description: blazar
         widget:
             type: pihole
-            url: {% raw %} "{{HOMEPAGE_VAR_PIHOLE_URL_2}}" {% endraw %}
-            key: {% raw %} "{{HOMEPAGE_VAR_PIHOLE_API_KEY_2}}" {% endraw %}
+            url: {% raw %}"{{HOMEPAGE_VAR_PIHOLE_URL_2}}"{% endraw %}
+            key: {% raw %}"{{HOMEPAGE_VAR_PIHOLE_API_KEY_2}}"{% endraw %}
     - Pi-Hole3:
         icon: pi-hole.svg
-        href: {% raw %} "{{HOMEPAGE_VAR_PIHOLE_URL_3}}" {% endraw %}
+        href: {% raw %}"{{HOMEPAGE_VAR_PIHOLE_URL_3}}"{% endraw %}
         description: electron
         widget:
             type: pihole
-            url: {% raw %} "{{HOMEPAGE_VAR_PIHOLE_URL_3}}" {% endraw %}
-            key: {% raw %} "{{HOMEPAGE_VAR_PIHOLE_API_KEY_3}}" {% endraw %}
+            url: {% raw %}"{{HOMEPAGE_VAR_PIHOLE_URL_3}}"{% endraw %}
+            key: {% raw %}"{{HOMEPAGE_VAR_PIHOLE_API_KEY_3}}"{% endraw %}
 - Network:
     - UniFi:
         icon: unifi.svg
-        href: {% raw %} "{{HOMEPAGE_VAR_UNIFI_NETWORK_URL}}" {% endraw %}
+        href: {% raw %}"{{HOMEPAGE_VAR_UNIFI_NETWORK_URL}}"{% endraw %}
         description: network
         widget:
             type: unifi
-            url: {% raw %} "{{HOMEPAGE_VAR_UNIFI_NETWORK_URL}}" {% endraw %}
-            username: {% raw %} "{{HOMEPAGE_VAR_UNIFI_NETWORK_USERNAME}}" {% endraw %}
-            password: {% raw %} "{{HOMEPAGE_VAR_UNIFI_NETWORK_PASSWORD}}" {% endraw %}
+            url: {% raw %}"{{HOMEPAGE_VAR_UNIFI_NETWORK_URL}}"{% endraw %}
+            username: {% raw %} "{{HOMEPAGE_VAR_UNIFI_NETWORK_USERNAME}}"{% endraw %}
+            password: {% raw %} "{{HOMEPAGE_VAR_UNIFI_NETWORK_PASSWORD}}"{% endraw %}
     - Uptime Kuma:
         icon: uptime-kuma.svg
-        href: {% raw %} "{{HOMEPAGE_VAR_UPTIME_KUMA_URL}}" {% endraw %}
+        href: {% raw %}"{{HOMEPAGE_VAR_UPTIME_KUMA_URL}}"{% endraw %}
         description: internal
         widget:
             type: uptimekuma
-            url: {% raw %} "{{HOMEPAGE_VAR_UPTIME_KUMA_URL}}" {% endraw %}
+            url: {% raw %}"{{HOMEPAGE_VAR_UPTIME_KUMA_URL}}"{% endraw %}
             slug: home
     - Uptime Robot:
         icon: https://play-lh.googleusercontent.com/cUrv0t00FYQ1GKLuOTvv8qjo1lSDjqZC16IOp3Fb6ijew6Br5m4o16HhDp0GBu_Bw8Y=w240-h480-rw
@@ -543,89 +543,89 @@ services:
         widget:
             type: uptimerobot
             url: https://api.uptimerobot.com
-            key: {% raw %} "{{HOMEPAGE_VAR_UPTIME_ROBOT_API_KEY}}" {% endraw %}
+            key: {% raw %}"{{HOMEPAGE_VAR_UPTIME_ROBOT_API_KEY}}"{% endraw %}
 - Storage:
     - TrueNAS:
         icon: truenas.svg
-        href: {% raw %} "{{HOMEPAGE_VAR_TRUENAS_URL}}" {% endraw %}
+        href: {% raw %}"{{HOMEPAGE_VAR_TRUENAS_URL}}"{% endraw %}
         description: scale
         widget:
             type: truenas
-            url: {% raw %} "{{HOMEPAGE_VAR_TRUENAS_URL}}" {% endraw %}
-            key: {% raw %} "{{HOMEPAGE_VAR_TRUENAS_API_KEY}}" {% endraw %}
+            url: {% raw %}"{{HOMEPAGE_VAR_TRUENAS_URL}}"{% endraw %}
+            key: {% raw %}"{{HOMEPAGE_VAR_TRUENAS_API_KEY}}"{% endraw %}
     - MinIO:
         icon: minio.svg
-        href: {% raw %} "{{HOMEPAGE_VAR_MINIO_URL}}" {% endraw %}
+        href: {% raw %}"{{HOMEPAGE_VAR_MINIO_URL}}"{% endraw %}
         description: object storage
 - Media:
     - Plex:
         icon: plex.svg
-        href: {% raw %} "{{HOMEPAGE_VAR_PLEX_URL}}" {% endraw %}
+        href: {% raw %}"{{HOMEPAGE_VAR_PLEX_URL}}"{% endraw %}
         description: media server
         widget:
             type: plex
-            url: {% raw %} "{{HOMEPAGE_VAR_PLEX_URL}}" {% endraw %}
-            key: {% raw %} "{{HOMEPAGE_VAR_PLEX_API_TOKEN}}" {% endraw %}
+            url: {% raw %}"{{HOMEPAGE_VAR_PLEX_URL}}"{% endraw %}
+            key: {% raw %}"{{HOMEPAGE_VAR_PLEX_API_TOKEN}}"{% endraw %}
     - Tautulli:
         icon: tautulli.svg
-        href: {% raw %} "{{HOMEPAGE_VAR_TAUTULLI_URL}}" {% endraw %}
+        href: {% raw %}"{{HOMEPAGE_VAR_TAUTULLI_URL}}"{% endraw %}
         description: plex stats
         widget:
             type: tautulli
-            url: {% raw %} "{{HOMEPAGE_VAR_TAUTULLI_URL}}" {% endraw %}
-            key: {% raw %} "{{HOMEPAGE_VAR_TAUTULLI_API_KEY}}" {% endraw %}
+            url: {% raw %}"{{HOMEPAGE_VAR_TAUTULLI_URL}}"{% endraw %}
+            key: {% raw %}"{{HOMEPAGE_VAR_TAUTULLI_API_KEY}}"{% endraw %}
     - HDHomerun:
         icon: hdhomerun.png
-        href: {% raw %} "{{HOMEPAGE_VAR_HDHOMERUN_URL}}" {% endraw %}
+        href: {% raw %}"{{HOMEPAGE_VAR_HDHOMERUN_URL}}"{% endraw %}
         description: flex 4k
         widget:
             type: hdhomerun
-            url: {% raw %} "{{HOMEPAGE_VAR_HDHOMERUN_URL}}" {% endraw %}
+            url: {% raw %}"{{HOMEPAGE_VAR_HDHOMERUN_URL}}"{% endraw %}
 - Remote Access:
     - PiKVM:
         icon: https://avatars.githubusercontent.com/u/41749659?s=200&v=4
-        href: {% raw %} "{{HOMEPAGE_VAR_PIKVM_URL}}" {% endraw %}
+        href: {% raw %}"{{HOMEPAGE_VAR_PIKVM_URL}}"{% endraw %}
         description: remote kvm
     - IPMI:
         icon: https://upload.wikimedia.org/wikipedia/commons/1/1d/Super_Micro_Computer_Logo.svg
-        href: {% raw %} "{{HOMEPAGE_VAR_IPMI_1_URL}}" {% endraw %}
+        href: {% raw %}"{{HOMEPAGE_VAR_IPMI_1_URL}}"{% endraw %}
         description: storinator
     - IPMI:
         icon: https://upload.wikimedia.org/wikipedia/commons/1/1d/Super_Micro_Computer_Logo.svg
-        href: {% raw %} "{{HOMEPAGE_VAR_IPMI_2_URL}}" {% endraw %}
+        href: {% raw %}"{{HOMEPAGE_VAR_IPMI_2_URL}}"{% endraw %}
         description: hl15
     - Netboot:
         icon: https://netboot.xyz/img/nbxyz-laptop.gif
-        href: {% raw %} "{{HOMEPAGE_VAR_NETBOOT_URL}}" {% endraw %}
+        href: {% raw %}"{{HOMEPAGE_VAR_NETBOOT_URL}}"{% endraw %}
         description: network boot utility
     - Tripp Lite:
         icon: https://upload.wikimedia.org/wikipedia/commons/f/f9/Tripp_Lite_logo.svg
-        href: {% raw %} "{{HOMEPAGE_VAR_UPS_1_URL}}" {% endraw %}
+        href: {% raw %}"{{HOMEPAGE_VAR_UPS_1_URL}}"{% endraw %}
         description: 1500
     - Eaton:
         icon: https://cdn11.bigcommerce.com/s-fg272t4iw0/images/stencil/1280x1280/products/2549/2802/C-12556__63907.1557814942.jpg?c=2
-        href: {% raw %} "{{HOMEPAGE_VAR_UPS_2_URL}}" {% endraw %}
+        href: {% raw %}"{{HOMEPAGE_VAR_UPS_2_URL}}"{% endraw %}
         description: 5p
 - Home Automation:
     - Home Assistant:
         icon: home-assistant.svg
-        href: {% raw %} "{{HOMEPAGE_VAR_HOME_ASSISTANT_URL}}" {% endraw %}
+        href: {% raw %}"{{HOMEPAGE_VAR_HOME_ASSISTANT_URL}}"{% endraw %}
         description: home
         widget:
             type: homeassistant
-            url: {% raw %} "{{HOMEPAGE_VAR_HOME_ASSISTANT_URL}}" {% endraw %}
-            key: {% raw %} "{{HOMEPAGE_VAR_HOME_ASSISTANT_API_KEY}}" {% endraw %}
+            url: {% raw %}"{{HOMEPAGE_VAR_HOME_ASSISTANT_URL}}"{% endraw %}
+            key: {% raw %}"{{HOMEPAGE_VAR_HOME_ASSISTANT_API_KEY}}"{% endraw %}
     - UniFi:
         icon: https://play-lh.googleusercontent.com/DmgQvSdocOrGr0D0rxSBE9sqh23Fw3ck3BgKRN788cZnOKgcZlcEAFRYwmUbp6vMTVI
-        href: {% raw %} "{{HOMEPAGE_VAR_UNIFI_PROTECT_URL}}" {% endraw %}
+        href: {% raw %}"{{HOMEPAGE_VAR_UNIFI_PROTECT_URL}}"{% endraw %}
         description: protect
     - Scryped:
         icon: https://www.scrypted.app/images/web_hi_res_512.png
-        href: {% raw %} "{{HOMEPAGE_VAR_SCRYPTED_URL}}" {% endraw %}
+        href: {% raw %}"{{HOMEPAGE_VAR_SCRYPTED_URL}}"{% endraw %}
         description: mgmt console
     - Broadlink Control:
         icon: https://nwzimg.wezhan.net/contents/sitefiles3606/18030899/images/5430245.png
-        href: {% raw %} "{{HOMEPAGE_VAR_BROADLINK_CONTROL_URL}}" {% endraw %}
+        href: {% raw %}"{{HOMEPAGE_VAR_BROADLINK_CONTROL_URL}}"{% endraw %}
         description: light control
 - Other:
     - GitLab:
@@ -638,7 +638,7 @@ services:
         description: source code
     - Shlink:
         icon: https://shlink.io/images/shlink-logo-blue.svg
-        href: {% raw %} "{{HOMEPAGE_VAR_SHLINK_URL}}" {% endraw %}
+        href: {% raw %}"{{HOMEPAGE_VAR_SHLINK_URL}}"{% endraw %}
         description: dashboard
 
 ```
@@ -970,104 +970,104 @@ data:
     - Hypervisor:
         - Proxmox:
             icon: proxmox.svg
-            href: "{{HOMEPAGE_VAR_PROXMOX_URL}}"
+            href: {% raw %}"{{HOMEPAGE_VAR_PROXMOX_URL}}"{% endraw %}
             description: pve1
             widget:
                 type: proxmox
-                url: "{{HOMEPAGE_VAR_PROXMOX_URL}}"
-                username: "{{HOMEPAGE_VAR_PROXMOX_USER}}"
-                password: "{{HOMEPAGE_VAR_PROXMOX_API_KEY}}"
+                url: {% raw %}"{{HOMEPAGE_VAR_PROXMOX_URL}}"{% endraw %}
+                username: {% raw %}"{{HOMEPAGE_VAR_PROXMOX_USER}}"{% endraw %}
+                password: {% raw %}"{{HOMEPAGE_VAR_PROXMOX_API_KEY}}"{% endraw %}
                 node: xing-01
         - Proxmox:
             icon: proxmox.svg
-            href: "{{HOMEPAGE_VAR_PROXMOX_URL}}"
+            href: {% raw %}"{{HOMEPAGE_VAR_PROXMOX_URL}}"{% endraw %}
             description: pve2
             widget:
                 type: proxmox
-                url: "{{HOMEPAGE_VAR_PROXMOX_URL}}"
-                username: "{{HOMEPAGE_VAR_PROXMOX_USER}}"
-                password: "{{HOMEPAGE_VAR_PROXMOX_API_KEY}}"
+                url: {% raw %}"{{HOMEPAGE_VAR_PROXMOX_URL}}"{% endraw %}
+                username: {% raw %}"{{HOMEPAGE_VAR_PROXMOX_USER}}"{% endraw %}
+                password: {% raw %}"{{HOMEPAGE_VAR_PROXMOX_API_KEY}}"{% endraw %}
                 node: xing-02
         - Proxmox:
             icon: proxmox.svg
-            href: "{{HOMEPAGE_VAR_PROXMOX_URL}}"
+            href: {% raw %}"{{HOMEPAGE_VAR_PROXMOX_URL}}"{% endraw %}
             description: pve2
             widget:
                 type: proxmox
-                url: "{{HOMEPAGE_VAR_PROXMOX_URL}}"
-                username: "{{HOMEPAGE_VAR_PROXMOX_USER}}"
-                password: "{{HOMEPAGE_VAR_PROXMOX_API_KEY}}"
+                url: {% raw %}"{{HOMEPAGE_VAR_PROXMOX_URL}}"{% endraw %}
+                username: {% raw %}"{{HOMEPAGE_VAR_PROXMOX_USER}}"{% endraw %}
+                password: {% raw %}"{{HOMEPAGE_VAR_PROXMOX_API_KEY}}"{% endraw %}
                 node: xing-03
         - Proxmox:
             icon: proxmox.svg
-            href: "{{HOMEPAGE_VAR_PROXMOX_URL}}"
+            href: {% raw %}"{{HOMEPAGE_VAR_PROXMOX_URL}}"{% endraw %}
             description: pve4
             widget:
                 type: proxmox
-                url: "{{HOMEPAGE_VAR_PROXMOX_URL}}"
-                username: "{{HOMEPAGE_VAR_PROXMOX_USER}}"
-                password: "{{HOMEPAGE_VAR_PROXMOX_API_KEY}}"
+                url: {% raw %}"{{HOMEPAGE_VAR_PROXMOX_URL}}"{% endraw %}
+                username: {% raw %}"{{HOMEPAGE_VAR_PROXMOX_USER}}"{% endraw %}
+                password: {% raw %}"{{HOMEPAGE_VAR_PROXMOX_API_KEY}}"{% endraw %}
                 node: storinator
     - Containers:
         - Rancher:
             icon: rancher.svg
-            href: "{{HOMEPAGE_VAR_RACNHER_URL}}"
+            href: {% raw %}"{{HOMEPAGE_VAR_RACNHER_URL}}"{% endraw %}
             description: k8s
         - Longhorn:
             icon: longhorn.svg
-            href: "{{HOMEPAGE_VAR_LONGHORN_URL}}"
+            href: {% raw %}"{{HOMEPAGE_VAR_LONGHORN_URL}}"{% endraw %}
             description: k8s storage
         - Portainer:
             icon: portainer.svg
-            href: "{{HOMEPAGE_VAR_PORTAINER_URL}}"
+            href: {% raw %}"{{HOMEPAGE_VAR_PORTAINER_URL}}"{% endraw %}
             description: docker
             widget:
                 type: portainer
-                url: "{{HOMEPAGE_VAR_PORTAINER_URL}}"
+                url: {% raw %}"{{HOMEPAGE_VAR_PORTAINER_URL}}"{% endraw %}
                 env: 2
-                key: "{{HOMEPAGE_VAR_PORTAINER_API_KEY}}"
+                key: {% raw %}"{{HOMEPAGE_VAR_PORTAINER_API_KEY}}"{% endraw %}
     - DNS:
         - Pi-Hole1:
             icon: pi-hole.svg
-            href: "{{HOMEPAGE_VAR_PIHOLE_URL_1}}"
+            href: {% raw %}"{{HOMEPAGE_VAR_PIHOLE_URL_1}}"{% endraw %}
             description: quasar
             widget:
                 type: pihole
-                url: "{{HOMEPAGE_VAR_PIHOLE_URL_1}}"
-                key: "{{HOMEPAGE_VAR_PIHOLE_API_KEY_1}}"
+                url: {% raw %}"{{HOMEPAGE_VAR_PIHOLE_URL_1}}"{% endraw %}
+                key: {% raw %}"{{HOMEPAGE_VAR_PIHOLE_API_KEY_1}}"{% endraw %}
         - Pi-Hole2:
             icon: pi-hole.svg
-            href: "{{HOMEPAGE_VAR_PIHOLE_URL_2}}"
+            href: {% raw %}"{{HOMEPAGE_VAR_PIHOLE_URL_2}}"{% endraw %}
             description: blazar
             widget:
                 type: pihole
-                url: "{{HOMEPAGE_VAR_PIHOLE_URL_2}}"
-                key: "{{HOMEPAGE_VAR_PIHOLE_API_KEY_2}}"
+                url: {% raw %}"{{HOMEPAGE_VAR_PIHOLE_URL_2}}"{% endraw %}
+                key: {% raw %}"{{HOMEPAGE_VAR_PIHOLE_API_KEY_2}}"{% endraw %}
         - Pi-Hole3:
             icon: pi-hole.svg
-            href: "{{HOMEPAGE_VAR_PIHOLE_URL_3}}"
+            href: {% raw %}"{{HOMEPAGE_VAR_PIHOLE_URL_3}}"{% endraw %}
             description: electron
             widget:
                 type: pihole
-                url: "{{HOMEPAGE_VAR_PIHOLE_URL_3}}"
-                key: "{{HOMEPAGE_VAR_PIHOLE_API_KEY_3}}"
+                url: {% raw %}"{{HOMEPAGE_VAR_PIHOLE_URL_3}}"{% endraw %}
+                key: {% raw %}"{{HOMEPAGE_VAR_PIHOLE_API_KEY_3}}"{% endraw %}
     - Network:
         - UniFi:
             icon: unifi.svg
-            href: "{{HOMEPAGE_VAR_UNIFI_NETWORK_URL}}"
+            href: {% raw %}"{{HOMEPAGE_VAR_UNIFI_NETWORK_URL}}"{% endraw %}
             description: network
             widget:
                 type: unifi
-                url: "{{HOMEPAGE_VAR_UNIFI_NETWORK_URL}}"
-                username: "{{HOMEPAGE_VAR_UNIFI_NETWORK_USERNAME}}"
-                password: "{{HOMEPAGE_VAR_UNIFI_NETWORK_PASSWORD}}"
+                url: {% raw %}"{{HOMEPAGE_VAR_UNIFI_NETWORK_URL}}"{% endraw %}
+                username: {% raw %}"{{HOMEPAGE_VAR_UNIFI_NETWORK_USERNAME}}"{% endraw %}
+                password: {% raw %}"{{HOMEPAGE_VAR_UNIFI_NETWORK_PASSWORD}}"{% endraw %}
         - Uptime Kuma:
             icon: uptime-kuma.svg
-            href: "{{HOMEPAGE_VAR_UPTIME_KUMA_URL}}"
+            href: {% raw %}"{{HOMEPAGE_VAR_UPTIME_KUMA_URL}}"{% endraw %}
             description: internal
             widget:
                 type: uptimekuma
-                url: "{{HOMEPAGE_VAR_UPTIME_KUMA_URL}}"
+                url: {% raw %}"{{HOMEPAGE_VAR_UPTIME_KUMA_URL}}"{% endraw %}
                 slug: home
         - Uptime Robot:
             icon: https://play-lh.googleusercontent.com/cUrv0t00FYQ1GKLuOTvv8qjo1lSDjqZC16IOp3Fb6ijew6Br5m4o16HhDp0GBu_Bw8Y=w240-h480-rw
@@ -1076,89 +1076,89 @@ data:
             widget:
                 type: uptimerobot
                 url: https://api.uptimerobot.com
-                key: "{{HOMEPAGE_VAR_UPTIME_ROBOT_API_KEY}}"
+                key: {% raw %}"{{HOMEPAGE_VAR_UPTIME_ROBOT_API_KEY}}"{% endraw %}
     - Storage:
         - TrueNAS:
             icon: truenas.svg
-            href: "{{HOMEPAGE_VAR_TRUENAS_URL}}"
+            href: {% raw %}"{{HOMEPAGE_VAR_TRUENAS_URL}}"{% endraw %}
             description: scale
             widget:
                 type: truenas
-                url: "{{HOMEPAGE_VAR_TRUENAS_URL}}"
-                key: "{{HOMEPAGE_VAR_TRUENAS_API_KEY}}"
+                url: {% raw %}"{{HOMEPAGE_VAR_TRUENAS_URL}}"{% endraw %}
+                key: {% raw %}"{{HOMEPAGE_VAR_TRUENAS_API_KEY}}"{% endraw %}
         - MinIO:
             icon: minio.svg
-            href: "{{HOMEPAGE_VAR_MINIO_URL}}"
+            href: {% raw %}"{{HOMEPAGE_VAR_MINIO_URL}}"{% endraw %}
             description: object storage
     - Media:
         - Plex:
             icon: plex.svg
-            href: "{{HOMEPAGE_VAR_PLEX_URL}}"
+            href: {% raw %}"{{HOMEPAGE_VAR_PLEX_URL}}"{% endraw %}
             description: media server
             widget:
                 type: plex
-                url: "{{HOMEPAGE_VAR_PLEX_URL}}"
-                key: "{{HOMEPAGE_VAR_PLEX_API_TOKEN}}"
+                url: {% raw %}"{{HOMEPAGE_VAR_PLEX_URL}}"{% endraw %}
+                key: {% raw %}"{{HOMEPAGE_VAR_PLEX_API_TOKEN}}"{% endraw %}
         - Tautulla:
             icon: tautulli.svg
-            href: "{{HOMEPAGE_VAR_TAUTULLI_URL}}"
+            href: {% raw %}"{{HOMEPAGE_VAR_TAUTULLI_URL}}"{% endraw %}
             description: plex stats
             widget:
                 type: tautulli
-                url: "{{HOMEPAGE_VAR_TAUTULLI_URL}}"
-                key: "{{HOMEPAGE_VAR_TAUTULLI_API_KEY}}"
+                url: {% raw %}"{{HOMEPAGE_VAR_TAUTULLI_URL}}"{% endraw %}
+                key: {% raw %}"{{HOMEPAGE_VAR_TAUTULLI_API_KEY}}"{% endraw %}
         - HDHomerun:
             icon: hdhomerun.png
-            href: "{{HOMEPAGE_VAR_HDHOMERUN_URL}}"
+            href: {% raw %}"{{HOMEPAGE_VAR_HDHOMERUN_URL}}"{% endraw %}
             description: flex 4k
             widget:
                 type: hdhomerun
-                url: "{{HOMEPAGE_VAR_HDHOMERUN_URL}}"
+                url: {% raw %}"{{HOMEPAGE_VAR_HDHOMERUN_URL}}"{% endraw %}
     - Remote Access:
         - PiKVM:
             icon: https://avatars.githubusercontent.com/u/41749659?s=200&v=4
-            href: "{{HOMEPAGE_VAR_PIKVM_URL}}"
+            href: {% raw %}"{{HOMEPAGE_VAR_PIKVM_URL}}"{% endraw %}
             description: remote kvm
         - IPMI:
             icon: https://upload.wikimedia.org/wikipedia/commons/1/1d/Super_Micro_Computer_Logo.svg
-            href: "{{HOMEPAGE_VAR_IPMI_1_URL}}"
+            href: {% raw %}"{{HOMEPAGE_VAR_IPMI_1_URL}}"{% endraw %}
             description: storinator
         - IPMI:
             icon: https://upload.wikimedia.org/wikipedia/commons/1/1d/Super_Micro_Computer_Logo.svg
-            href: "{{HOMEPAGE_VAR_IPMI_2_URL}}"
+            href: {% raw %}"{{HOMEPAGE_VAR_IPMI_2_URL}}"{% endraw %}
             description: hl15
         - Netboot:
             icon: https://netboot.xyz/img/nbxyz-laptop.gif
-            href: "{{HOMEPAGE_VAR_NETBOOT_URL}}"
+            href: {% raw %}"{{HOMEPAGE_VAR_NETBOOT_URL}}"{% endraw %}
             description: network boot utility
         - Tripp Lite:
             icon: https://upload.wikimedia.org/wikipedia/commons/f/f9/Tripp_Lite_logo.svg
-            href: "{{HOMEPAGE_VAR_UPS_1_URL}}"
+            href: {% raw %}"{{HOMEPAGE_VAR_UPS_1_URL}}"{% endraw %}
             description: 1500
         - Eaton:
             icon: https://cdn11.bigcommerce.com/s-fg272t4iw0/images/stencil/1280x1280/products/2549/2802/C-12556__63907.1557814942.jpg?c=2
-            href: "{{HOMEPAGE_VAR_UPS_2_URL}}"
+            href: {% raw %}"{{HOMEPAGE_VAR_UPS_2_URL}}"{% endraw %}
             description: 5p
     - Home Automation:
         - Home Assistant:
             icon: home-assistant.svg
-            href: "{{HOMEPAGE_VAR_HOME_ASSISTANT_URL}}"
+            href: {% raw %}"{{HOMEPAGE_VAR_HOME_ASSISTANT_URL}}"{% endraw %}
             description: home
             widget:
                 type: homeassistant
-                url: "{{HOMEPAGE_VAR_HOME_ASSISTANT_URL}}"
-                key: "{{HOMEPAGE_VAR_HOME_ASSISTANT_API_KEY}}"
+                url: {% raw %}"{{HOMEPAGE_VAR_HOME_ASSISTANT_URL}}"{% endraw %}
+                key: {% raw %}"{{HOMEPAGE_VAR_HOME_ASSISTANT_API_KEY}}"{% endraw %}
         - UniFi:
             icon: https://play-lh.googleusercontent.com/DmgQvSdocOrGr0D0rxSBE9sqh23Fw3ck3BgKRN788cZnOKgcZlcEAFRYwmUbp6vMTVI
-            href: "{{HOMEPAGE_VAR_UNIFI_PROTECT_URL}}"
+            href: {% raw %}"{{HOMEPAGE_VAR_UNIFI_PROTECT_URL}}"{% endraw %}
             description: protect
         - Scryped:
             icon: https://www.scrypted.app/images/web_hi_res_512.png
-            href: "{{HOMEPAGE_VAR_SCRYPTED_URL}}"
+            href: {% raw %}"{{HOMEPAGE_VAR_SCRYPTED_URL}}"{% endraw %}
             description: mgmt console
         - Broadlink Control:
             icon: https://nwzimg.wezhan.net/contents/sitefiles3606/18030899/images/5430245.png
-            href: "{{HOMEPAGE_VAR_BROADLINK_CONTROL_URL}}"
+            href: {% raw %}"{{HOMEPAGE_VAR_BROADLINK_CONTROL_URL}}"{% endraw %}
             description: light control
     - Other:
         - GitLab:
@@ -1171,7 +1171,7 @@ data:
             description: source code
         - Shlink:
             icon: https://shlink.io/images/shlink-logo-blue.svg
-            href: "{{HOMEPAGE_VAR_SHLINK_URL}}"
+            href: {% raw %}"{{HOMEPAGE_VAR_SHLINK_URL}}"{% endraw %}
             description: dashboard
   widgets.yaml: |
     - resources:
@@ -1202,38 +1202,38 @@ stringData:
     HOMEPAGE_VAR_PIHOLE_URL_1: ""
     HOMEPAGE_VAR_PIHOLE_URL_2: ""
     HOMEPAGE_VAR_PIHOLE_URL_3: ""
-    HOMEPAGE_VAR_PLEX_URL: ""
+    HOMEPAGE_VAR_PLEX_url: ""
     HOMEPAGE_VAR_PLEX_API_TOKEN: ""
-    HOMEPAGE_VAR_TAUTULLI_URL: ""
-    HOMEPAGE_VAR_TAUTULLI_API_KEY: ""
-    HOMEPAGE_VAR_HDHOMERUN_URL: ""
-    HOMEPAGE_VAR_HOME_ASSISTANT_URL: ""
-    HOMEPAGE_VAR_HOME_ASSISTANT_API_KEY: ""
-    HOMEPAGE_VAR_TRUENAS_URL: ""
-    HOMEPAGE_VAR_TRUENAS_API_KEY: ""
-    HOMEPAGE_VAR_UNIFI_NETWORK_URL: ""
-    HOMEPAGE_VAR_UNIFI_NETWORK_USERNAME: ""
-    HOMEPAGE_VAR_UNIFI_NETWORK_PASSWORD: ""
-    HOMEPAGE_VAR_UNIFI_PROTECT_URL: ""
-    HOMEPAGE_VAR_UPTIME_KUMA_URL: ""
-    HOMEPAGE_VAR_MINIO_URL: ""
-    HOMEPAGE_VAR_RACNHER_URL: ""
-    HOMEPAGE_VAR_LONGHORN_URL: ""
-    HOMEPAGE_VAR_PORTAINER_URL: ""
-    HOMEPAGE_VAR_PORTAINER_API_KEY: ""
-    HOMEPAGE_VAR_PROXMOX_URL: ""
+    HOMEPAGE_VAR_TAUTULLI_url: ""
+    HOMEPAGE_VAR_TAUTULLI_API_key: ""
+    HOMEPAGE_VAR_HDHOMERUN_url: ""
+    HOMEPAGE_VAR_HOME_ASSISTANT_url: ""
+    HOMEPAGE_VAR_HOME_ASSISTANT_API_key: ""
+    HOMEPAGE_VAR_TRUENAS_url: ""
+    HOMEPAGE_VAR_TRUENAS_API_key: ""
+    HOMEPAGE_VAR_UNIFI_NETWORK_url: ""
+    HOMEPAGE_VAR_UNIFI_NETWORK_username: ""
+    HOMEPAGE_VAR_UNIFI_NETWORK_password: ""
+    HOMEPAGE_VAR_UNIFI_PROTECT_url: ""
+    HOMEPAGE_VAR_UPTIME_KUMA_url: ""
+    HOMEPAGE_VAR_MINIO_url: ""
+    HOMEPAGE_VAR_RACNHER_url: ""
+    HOMEPAGE_VAR_LONGHORN_url: ""
+    HOMEPAGE_VAR_PORTAINER_url: ""
+    HOMEPAGE_VAR_PORTAINER_API_key: ""
+    HOMEPAGE_VAR_PROXMOX_url: ""
     HOMEPAGE_VAR_PROXMOX_USER: ""
-    HOMEPAGE_VAR_PROXMOX_API_KEY: ""
-    HOMEPAGE_VAR_UPTIME_ROBOT_API_KEY: ""
-    HOMEPAGE_VAR_SCRYPTED_URL: ""
-    HOMEPAGE_VAR_PIKVM_URL: ""
-    HOMEPAGE_VAR_NETBOOT_URL: ""
-    HOMEPAGE_VAR_BROADLINK_CONTROL_URL: ""
-    HOMEPAGE_VAR_IPMI_1_URL: ""
-    HOMEPAGE_VAR_IPMI_2_URL: ""
-    HOMEPAGE_VAR_UPS_1_URL: ""
-    HOMEPAGE_VAR_UPS_2_URL: ""
-    HOMEPAGE_VAR_SHLINK_URL: ""
+    HOMEPAGE_VAR_PROXMOX_API_key: ""
+    HOMEPAGE_VAR_UPTIME_ROBOT_API_key: ""
+    HOMEPAGE_VAR_SCRYPTED_url: ""
+    HOMEPAGE_VAR_PIKVM_url: ""
+    HOMEPAGE_VAR_NETBOOT_url: ""
+    HOMEPAGE_VAR_BROADLINK_CONTROL_url: ""
+    HOMEPAGE_VAR_IPMI_1_url: ""
+    HOMEPAGE_VAR_IPMI_2_url: ""
+    HOMEPAGE_VAR_UPS_1_url: ""
+    HOMEPAGE_VAR_UPS_2_url: ""
+    HOMEPAGE_VAR_SHLINK_url: ""
 ```
 
 ## Join the conversation
