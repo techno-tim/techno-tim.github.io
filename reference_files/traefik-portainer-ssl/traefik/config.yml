@@ -122,6 +122,15 @@ http:
         - https-redirectscheme
       tls: {}
       service: pterodactyl
+    openmediavault:
+      entryPoints:
+        - "https"
+      rule: "Host(`openmediavault.local.example.com`)"
+      middlewares:
+        - default-headers
+        - https-redirectscheme
+      tls: {}
+      service: openmediavault
 
 #endregion
 #region services
@@ -190,6 +199,11 @@ http:
       loadBalancer:
         servers:
           - url: "http://192.168.0.110:80"
+        passHostHeader: true
+    openmediavault:
+      loadBalancer:
+        servers:
+          - url: "http://192.168.0.111:80"
         passHostHeader: true
 #endregion
   middlewares:
