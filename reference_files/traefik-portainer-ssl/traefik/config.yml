@@ -216,7 +216,7 @@ http:
         permanent: true
     redirectregex-pihole:
       redirectRegex:
-        regex: /admin/$
+        regex: "/admin/(.*)"
         replacement: /
 
     default-headers:
