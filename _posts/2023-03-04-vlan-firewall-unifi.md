@@ -35,11 +35,11 @@ Well, for me it was complexity and knowing where to start.
 
 ## Hardware
 
-Ubiquiti UniFi 6 Lite Access Point - <https://amzn.to/41ZhyR7>
+Ubiquiti UniFi 6 Lite Access Point - <https://l.technotim.live/ubiquiti>
 
-UniFI UDM SE - <https://amzn.to/3yu7vpM>
+UniFI UDM SE - <https://l.technotim.live/ubiquiti>
 
-UniFi UDM Pro - <https://amzn.to/3J8Ebtw>
+UniFi UDM Pro - <https://l.technotim.live/ubiquiti>
 
 (Affiliate links are included in this description. I may receive a small commission at no cost to you.)
 

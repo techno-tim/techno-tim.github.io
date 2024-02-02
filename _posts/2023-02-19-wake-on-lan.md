@@ -42,7 +42,7 @@ Here are some things to look for:
 
 - **Wake on LAN** - **enable** this might sound obvious but some older systems have an option that says exactly that however newer systems have options for waking in all of the different sleep states.
 
-- **What to do when AC Power is restored** - This is optional but I usually set it to **Stay Off** if it's a desktop, **Power On** if it's a server that should always be on, and **Last power state** if it's something like a machine that I wake seldomly.There is one exception, which is if you have a way to toggle the power remotely too.I have a [USP PDU Pro](https://store.ui.com/products/usp-pdu-pro?a_aid=TechnoTim) from UniFi that I can toggle all of my servers on and off.If you are able to toggle them on and off, the best setting is **Power On**, that way you have a way to power them on, even if they were gracefully shut down previously.
+- **What to do when AC Power is restored** - This is optional but I usually set it to **Stay Off** if it's a desktop, **Power On** if it's a server that should always be on, and **Last power state** if it's something like a machine that I wake seldomly.There is one exception, which is if you have a way to toggle the power remotely too.I have a [USP PDU Pro](https://l.technotim.live/ubiquiti) from UniFi that I can toggle all of my servers on and off.If you are able to toggle them on and off, the best setting is **Power On**, that way you have a way to power them on, even if they were gracefully shut down previously.
 
 Another quick check you can do is power down the machine and check to be sure the network light is lit up on your NIC.If it's not, this means Wake on LAN is not enabled on your machine and you'll have to find the option in your BIOS to make it work.
 

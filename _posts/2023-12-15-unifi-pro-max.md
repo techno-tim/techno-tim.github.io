@@ -25,7 +25,7 @@ Disclosures:
 
 ## Where to Buy
 
-- UniFi Pro Max Switches <https://store.ui.com/us/en?category=switching-professional-max&a_aid=TechnoTim>
+- UniFi Pro Max Switches <https://l.technotim.live/ubiquiti>
 
 (Affiliate links may be included in this description. I may receive a small commission at no cost to you.)
 

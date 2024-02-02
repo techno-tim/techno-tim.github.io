@@ -58,17 +58,17 @@ Check out the kit here: <https://kit.co/TechnoTim/techno-tim-homelab-tour-late-2
 - 1u Rack Mount Full Depth Shelf <https://amzn.to/3jrm5Kp>
 - Right Angle Extension Cord <https://amzn.to/3Wl7gay>
 - Black Outlet Covers <https://amzn.to/3jrf7Vu>
-- UniFi SmartPower PDU Pro <https://amzn.to/3Wy2Ahs>
+- UniFi SmartPower PDU Pro <https://l.technotim.live/ubiquiti>
 
 ### Network
 
 - Patch Panel <https://amzn.to/3YIKtHq>
 - Wall Mount Patch Panel <https://amzn.to/3WyvnCk>
 - Slim Network Cables - <https://amzn.to/3kbYV85>
-- UniFi Flex Mini - <https://amzn.to/3BVV2NM>
-- UDM SE - <https://amzn.to/3VdeCf6>
-- UDM Pro - <https://amzn.to/3HXUvia>
-- UniFi 48 Port Pro Switch Gen 2 - <https://amzn.to/3FHbBxS>
+- UniFi Flex Mini - <https://l.technotim.live/ubiquiti>
+- UDM SE - <https://l.technotim.live/ubiquiti>
+- UDM Pro - <https://l.technotim.live/ubiquiti>
+- UniFi 48 Port Pro Switch Gen 2 - <https://l.technotim.live/ubiquiti>
 
 ### Servers & Accessories
 
