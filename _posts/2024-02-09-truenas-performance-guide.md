@@ -56,7 +56,8 @@ Downsides
 - This makes accessing files quicker because it doesn’t need to read from disk and takes the load off those disks so they can do another tasks
 - This isn’t really used for write, that’s ZIL, but some async writes and write directly to ARC
 - There’s a general rule of thumb that you should have 1GB for each TB, however the more the better.
-- General no tweaking other than one tweak that you might have to do if using ZFS on a Linux system like TrueNAS Scale and that’s adjusting the ARC allocation
+- One tweak that you might have to do if using ZFS on a Linux system like TrueNAS Scale and that’s adjusting the ARC allocation
+  - [This is not needed after this patch is released](https://www.truenas.com/docs/scale/gettingstarted/scalereleasenotes/)
   - By default linux only allocates 50%
   - You can override this with a quick command while the system is running and then you can also follow that up with a startup command to be sure that this persists between reboots
   - Generally speaking you should let your system run for a few days before making this adjustment as well as running any services and VMs to be sure you don’t over allocate your RAM to ARC.
