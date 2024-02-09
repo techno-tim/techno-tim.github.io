@@ -136,6 +136,8 @@ Here are some items I found useful when building my NAS
 - SAMSUNG 990 PRO Series - 2TB PCIe Gen4. X4 NVMe 2.0c - M.2 Internal SSD - <https://amzn.to/4buzeZz>
 - Seagate IronWolf 12TB NAS Internal Hard Drive HDD - <https://amzn.to/3usqnH8>
 - Seagate Exos X18 ST14000NM000J 14 TB Hard Drive - <https://amzn.to/3SC6ntT>
+- APC UPS 1500VA UPS Battery Backup and Surge Protector - <https://amzn.to/499JvZx>
+- Tripp Lite SMART1500LCD 1500VA UPS Smart Battery Backup (rackmount) - <https://amzn.to/3SOXhLr>
 
 (Affiliate links may be included. I may receive a small commission at no cost to you.)
 
