@@ -2,7 +2,7 @@
 layout: post
 title: "HomeLab Services Tour 2024 - What Am I Self Hosting?"
 date: 2024-01-04 08:00:00 -0500
-categories: homelanb
+categories: homelab
 tags: homelab hardware network server self-hosted kubernetes k3s linux
 image:
  path: /assets/img/headers/homelab-services-2024-hero.webp
