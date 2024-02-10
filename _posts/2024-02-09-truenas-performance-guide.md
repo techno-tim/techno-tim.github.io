@@ -131,6 +131,7 @@ My Settings:
 Here are some items I found useful when building my NAS
 
 - Supermicro NVMe Add-in Card - <https://www.ebay.com/itm/375100900409?mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5338780159&customid=&toolid=10001&mkevt=1>
+- Dell NVMe Add-in Card - <https://www.ebay.com/itm/164864777644?mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5338780159&customid=&toolid=10001&mkevt=1>
 - M.2 Heatsink SSD Cooler for PS5 PCIE NVME - <https://amzn.to/4bwsYAq>
 - Intel OPTANE SSD P1600X Series 118GB M.2 PCIE - <https://amzn.to/497Np53>
 - SAMSUNG 990 PRO Series - 2TB PCIe Gen4. X4 NVMe 2.0c - M.2 Internal SSD - <https://amzn.to/4buzeZz>
