@@ -127,7 +127,7 @@ You should see your new homepage!
 On docker machine, cd into `config` directory
 
 ```bash
-mkdir config
+cd config
 ```
 
 You'll see yaml files, these are configurations we can edit to configure our homepage
