@@ -13,7 +13,7 @@ You can support me and my work directly:
 - [Sponsoring me on GitHub](https://l.technotim.live/github-sponsor)
 - [Subscribing on Twitch](https://l.technotim.live/twitch-subscribe)
 - [Becoming a member on YouTube](https://l.technotim.live/youtube-member)
-- [Picking up some swag in my shop!](https://l.technotim.live/shop)
+- [Picking up some merch in my shop!](https://l.technotim.live/shop)
 
 I also make a small commission (at no cost to you) if you use one of my affiliate links below:
 
