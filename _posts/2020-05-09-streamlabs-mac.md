@@ -17,6 +17,8 @@ Streamlabs OBS for MacOS is here!  In this video we'll walk through setting up S
 
 ## Links
 
+🛍️ Check out the new Merch Shop at <https://l.technotim.live/shop>
+
 ⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>
 
 🚀 Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files
