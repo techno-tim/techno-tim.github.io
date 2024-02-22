@@ -28,6 +28,7 @@ You can see all of the items I offer in my shop here:
 
 <blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">Today marks a very special day for me. It&#39;s something I&#39;ve been working on for quite some time, and it&#39;s finally ready for everyone to see! 🎉 <br><br>Today, I launched the Techno Tim Shop with its first drop: the &quot;Dark Mode Everything&quot; collection. <a href="https://t.co/ZBMUFcvjjJ">https://t.co/ZBMUFcvjjJ</a> <a href="https://t.co/KZYRFYAoAB">pic.twitter.com/KZYRFYAoAB</a></p>&mdash; Techno Tim (@TechnoTimLive) <a href="https://twitter.com/TechnoTimLive/status/1758923974963019867?ref_src=twsrc%5Etfw">February 17, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+
 ## Links
 
 🛍️ Check out the new Merch Shop at <https://l.technotim.live/shop>

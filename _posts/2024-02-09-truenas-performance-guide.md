@@ -146,6 +146,7 @@ Here are some items I found useful when building my NAS
 
 <blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">Over the last few weeks while building my new TrueNAS server I learned a lot about ZFS and how to optimize my new NAS for performance.<a href="https://t.co/qvAJBBSCkA">https://t.co/qvAJBBSCkA</a> <a href="https://t.co/6LB5IqHZo7">pic.twitter.com/6LB5IqHZo7</a></p>&mdash; Techno Tim (@TechnoTimLive) <a href="https://twitter.com/TechnoTimLive/status/1755985833495032218?ref_src=twsrc%5Etfw">February 9, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+
 ## Links
 
 🛍️ Check out the new Merch Shop at <https://l.technotim.live/shop>
