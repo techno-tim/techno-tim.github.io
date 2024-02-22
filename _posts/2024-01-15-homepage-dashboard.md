@@ -1240,7 +1240,6 @@ stringData:
 
 <blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">I finally replaced my homepage Dashboard!<a href="https://t.co/e571uMSQ89">https://t.co/e571uMSQ89</a> <a href="https://t.co/eN5sFrsVyN">pic.twitter.com/eN5sFrsVyN</a></p>&mdash; Techno Tim (@TechnoTimLive) <a href="https://twitter.com/TechnoTimLive/status/1746914958204350468?ref_src=twsrc%5Etfw">January 15, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-
 ## Links
 
 🛍️ Check out the new Merch Shop at <https://l.technotim.live/shop>

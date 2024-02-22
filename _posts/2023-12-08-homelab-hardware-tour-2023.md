@@ -22,7 +22,6 @@ In case you missed it, check out my [HomeLab Services Tour (2024)](/posts/homela
 
 ## Where to Buy
 
-
 Rack & Accessories
 
 - 32u Rack <https://amzn.to/3TlhdXb>

@@ -23,7 +23,6 @@ Disclosures:
 
 <blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">This past week I got to test out a Switch with RGB from Ubiquiti, yes RGB. They call it Etherlighting and have even made their own patch cables to emphasis the effect.<br><br>Are they any good?<br><br>👉<a href="https://t.co/DhOY0XBtz6">https://t.co/DhOY0XBtz6</a> <a href="https://t.co/7yOXZSK5a3">pic.twitter.com/7yOXZSK5a3</a></p>&mdash; Techno Tim (@TechnoTimLive) <a href="https://twitter.com/TechnoTimLive/status/1735683800795959804?ref_src=twsrc%5Etfw">December 15, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-
 ## Where to Buy
 
 - UniFi Pro Max Switches <https://l.technotim.live/ubiquiti>
