@@ -1,3 +1,7 @@
+---
+permalink: /robots.txt
+# The robots rules
+---
 User-agent: GPTBot
 Disallow: /
 User-agent: ChatGPT-User
