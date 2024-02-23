@@ -100,7 +100,48 @@ smartctl -a /dev/sda
 
 ## IOMMU (PCI Passthrough)
 
-See [Proxmox PCI Passthrough](https://pve.proxmox.com/wiki/Pci_passthrough)
+You'll first want to be sure that Vt-d / IOMMU is enabled in your BIOS before continuing.
+
+> If see *"No IOMMU detected, please activate it.See Documentation for further information."* It means that IOMMU is not enabled in your BIOS or that it has not been enabled in Proxmox yet.  If you're seeing this and you've enabled it in your BIOS, you can enable it in Proxmox below.
+{: .prompt-warning }
+
+### Checking your boot manager
+
+Enabling PCI passthrough depends on your boot manager.  You can check to see which one you are using by running
+
+`efibootmgr -v`
+
+If it returns an errors, it's running in Legacy/BIOS with GRUB, skip to GRUB section
+
+if it returns something like this, it's running `system-boot`, skip to `system-d` section section
+
+```bash
+Boot0002* proxmox	HD(2,GPT,b0f10348-020c-4bd6-b002-dc80edcf1899,0x800,0x100000)/File(\EFI\proxmox\shimx64.efi)
+```
+
+if it returns something like this.
+
+```bash
+Boot0006 * Linux Boot Manager [...] File(EFI\systemd\systemd-bootx64.efi)
+```
+
+### GRUB
+
+If you're using GRUB, use the following commands:
+
+`nano /etc/default/grub`
+
+add `iommu=pt` to `GRUB_CMDLINE_LINUX_DEFAULT` like so:
+
+```bash
+GRUB_CMDLINE_LINUX_DEFAULT="quiet intel_iommu=on iommu=pt"
+```
+
+If you aren't using an intel processor, remove `intel_iommu=on`
+
+### system-boot
+
+If you're using `system-boot` use the following commands.
 
 `nano /etc/kernel/cmdline`
 
@@ -109,6 +150,22 @@ add `intel_iommu=on iommu=pt` to the end of this line without line breaks
 ```bash
 root=ZFS=rpool/ROOT/pve-1 boot=zfs intel_iommu=on iommu=pt
 ```
+
+If you aren't using an intel processor, remove `intel_iommu=on`
+
+run
+
+```bash
+pve-efiboot-tool refresh
+```
+
+then reboot
+
+```bash
+reboot
+```
+
+### VFIO modules
 
 Edit `/etc/modules`
 
@@ -130,6 +187,18 @@ then reboot
 ```bash
 reboot
 ```
+
+### NVIDIA
+
+If you're planning on using an NVIDIA card, I've found this helps prevent some apps like GPUz from crashing on the VM.
+
+```bash
+echo "options kvm ignore_msrs=1 report_ignored_msrs=0" > /etc/modprobe.d/kvm.conf
+```
+
+### Still having trouble?
+
+See [Proxmox PCI Passthrough](https://pve.proxmox.com/wiki/Pci_passthrough)
 
 ## VLAN Aware
 
