@@ -9,7 +9,7 @@ image:
  lqip: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAUACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP5B/GesfD34MP8AEL4Y6n8EPh98TddtPEPjLSdI+KPibxF8Z9C8W6LI0CWthqFlpPgr4reHvBV3NpNwjalZW2ueGdXsZLyWZL23urKWW0fTCTp47IMmztUKOGnmVPFKthaMf9nhPBzjh6k6XNdwjiJwnV9kvcoqcaVNctNN9WKpqGJxNG6lGlKkk5xjJyVeLnaWmvLFRhrdy5bvey890n4d6xfaVpl6ni1YFvNPsrpYTo9zJ5K3FtHKIvMXX4Vfyw4TesUStjIjQHaPzzE8U06eIxFN5XCThXqwcvrEFzONSUb2eEk1e17OUn5vc9SGSynCE1jq8FKEZKMU+WKkk+VfvNley8kf/9k=
 ---
 
-Meet Gatus a self-hosted, open source, health dashboard that lets you monitor all of you services and systems!  The dash board not only tracks your uptime, but also measure the results plotting the results on a chart over time.  It also hooks into systems like Slack, Team, Discord, Twilio, and more!  Join me as we configure and deploy Gatus into our own environment to measure and monitor all the things!
+Meet Gatus a self-hosted, open source, health dashboard that lets you monitor all of you services and systems!  This dashboard not only tracks your uptime, but also measure the results plotting the results on a chart over time.  It also hooks into systems like Slack, Team, Discord, Twilio, and more!  Join me as we configure and deploy Gatus into our own environment to measure and monitor all the things!
 
 {% include embed/youtube.html id='LeZQjWlDUHs' %}
 📺 [Watch Video](https://www.youtube.com/watch?v=LeZQjWlDUHs)
@@ -60,7 +60,7 @@ services:
 
 I am going use postgres to hold out data. [Postgres](https://www.postgresql.org/) is an open source object-relational database system that uses and extends the SQL language combined with many features that safely store and scale the most complicated data workloads.
 
-> If you need to create a Postgres database, [here's the official Docker image.(https://hub.docker.com/_/postgres).  If you want to include Postgres in the same stack, [you can see an example here](https://github.com/TwiN/gatus/tree/master/.examples/docker-compose-postgres-storage).  It also [supports SQLite](https://github.com/TwiN/gatus/tree/master/.examples/docker-compose-sqlite-storage) if you don't want to use postgres
+> If you need to create a Postgres database, [here's the official Docker image.](https://hub.docker.com/_/postgres).  If you want to include Postgres in the same stack, [you can see an example here](https://github.com/TwiN/gatus/tree/master/.examples/docker-compose-postgres-storage).  It also [supports SQLite](https://github.com/TwiN/gatus/tree/master/.examples/docker-compose-sqlite-storage) if you don't want to use postgres
 {: .prompt-info }
 
 Using [pgadmin](https://www.pgadmin.org/) (Windows/macOS/Linux support) or similar tools:
