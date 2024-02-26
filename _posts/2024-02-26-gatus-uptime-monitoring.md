@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Meet Gatus: An Advanced Uptime Health Dashboard"
+title: "Meet Gatus - An Advanced Uptime Health Dashboard"
 date: 2024-02-26 08:00:00 -0500
 categories: self-hosted
 tags: gatus dashboard docker open-source homelab
