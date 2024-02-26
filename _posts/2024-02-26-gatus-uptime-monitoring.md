@@ -347,6 +347,8 @@ endpoints:
 
 ## Join the conversation
 
+<blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">Over the last few weeks I have been looking for a more advanced self-hosted monitoring system. One that gives me more than just a simple up and down status and one that is config based. I think I found it!<br><br>Check it out!<br><br>👉<a href="https://t.co/7Z2xGA0w65">https://t.co/7Z2xGA0w65</a> <a href="https://t.co/LkDOo3hPzo">pic.twitter.com/LkDOo3hPzo</a></p>&mdash; Techno Tim (@TechnoTimLive) <a href="https://twitter.com/TechnoTimLive/status/1762168640625885552?ref_src=twsrc%5Etfw">February 26, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ## Links
 
 🛍️ Check out the new Merch Shop at <https://l.technotim.live/shop>
