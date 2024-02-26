@@ -60,7 +60,7 @@ services:
 
 I am going use postgres to hold out data. [Postgres](https://www.postgresql.org/) is an open source object-relational database system that uses and extends the SQL language combined with many features that safely store and scale the most complicated data workloads.
 
-> If you need to create a Postgres database, [here's the official Docker image.](https://hub.docker.com/_/postgres).  If you want to include Postgres in the same stack, [you can see an example here](https://github.com/TwiN/gatus/tree/master/.examples/docker-compose-postgres-storage).  It also [supports SQLite](https://github.com/TwiN/gatus/tree/master/.examples/docker-compose-sqlite-storage) if you don't want to use postgres
+> If you need to create a Postgres database, [here's the official Docker image](https://hub.docker.com/_/postgres).  If you want to include Postgres in the same stack, [you can see an example here](https://github.com/TwiN/gatus/tree/master/.examples/docker-compose-postgres-storage).  It also [supports SQLite](https://github.com/TwiN/gatus/tree/master/.examples/docker-compose-sqlite-storage) if you don't want to use postgres
 {: .prompt-info }
 
 Using [pgadmin](https://www.pgadmin.org/) (Windows/macOS/Linux support) or similar tools:
