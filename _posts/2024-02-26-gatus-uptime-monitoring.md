@@ -132,7 +132,7 @@ endpoints:
 
 Be sure to update the DB hostname with your IP if you're using an external database.
 
-`path: "postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@192.168.40.240:5432/${POSTGRES_DB}?sslmode=disable"`
+`path: "postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@192.168.30.240:5432/${POSTGRES_DB}?sslmode=disable"`
 
 You can use DNS here too if you like e.g. `@database.example.com:5432`
 
@@ -167,7 +167,7 @@ Here's how I monitor my sites:
 ```yaml
 storage:
   type: postgres
-  path: "postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@192.168.40.240:5432/${POSTGRES_DB}?sslmode=disable"
+  path: "postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@192.168.30.240:5432/${POSTGRES_DB}?sslmode=disable"
 
 endpoint-defaults: &defaults
   group: External
@@ -215,7 +215,7 @@ endpoints:
 
   - name: Postgres
     group: Internal
-    url: "tcp://192.168.40.240:5432"
+    url: "tcp://192.168.30.240:5432"
     interval: 30s
     conditions:
       - "[CONNECTED] == true"
@@ -280,7 +280,7 @@ Full config example:
 ```yaml
 storage:
   type: postgres
-  path: "postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@192.168.40.240:5432/${POSTGRES_DB}?sslmode=disable"
+  path: "postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@192.168.30.240:5432/${POSTGRES_DB}?sslmode=disable"
 
 alerting:
   discord:
@@ -339,7 +339,7 @@ endpoints:
 
   - name: Postgres
     group: Internal
-    url: "tcp://192.168.40.240:5432"
+    url: "tcp://192.168.30.240:5432"
     interval: 30s
     conditions:
       - "[CONNECTED] == true"
