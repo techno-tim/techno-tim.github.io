@@ -218,7 +218,7 @@ _updating helm charts with Renovate are just as easy!_
 
 So now with Renovate bot we can keep track and upgrade our Kubernetes deployment and even helm charts but I bet you are wondering how you can deploy them?  There are quite a few ways to deploy these resources using GitOps tools like Flux and ArgoCD, or even just a simple CI task that runs kubectl and or helm. [I have a few videos on this topic](https://technotim.live/posts/flux-devops-gitops/). What about Docker deployments?  Well if you’re interested in how to automate deployments with Docker and Renovate let me know in the comments below.
 
-Well, I learned a ton about Renovate Bot, how to add it to your Git Repository and how to automate Pull Requests when there are updates available, and I hope you leanred something too!  And remember if you found anything in this post helpful, don’t forget to share. Thanks for Reading!
+Well, I learned a ton about Renovate Bot, how to add it to your Git Repository and how to automate Pull Requests when there are updates available, and I hope you learned something too!  And remember if you found anything in this post helpful, don’t forget to share. Thanks for Reading!
 
 ## Join the conversation
 
