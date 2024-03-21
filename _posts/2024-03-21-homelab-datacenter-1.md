@@ -2,7 +2,7 @@
 layout: post
 title: "I Colocated My HomeLab in a Data Center"
 date: 2024-03-21 08:00:00 -0500
-categories: apps
+categories: homelab
 tags: homelab datacenter colocation
 image:
  path: /assets/img/headers/homelab-datacenter-1-hero.webp
