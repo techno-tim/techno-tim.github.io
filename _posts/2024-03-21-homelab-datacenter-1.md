@@ -23,7 +23,7 @@ Disclosures:
 
 Find your UniFi cloud gateway here:
 
-- <https://store.ui.com/us/en?category=all-unifi-cloud-gateways&a_aid=TechnoTim>
+- <https://store.ui.com?a_aid=TechnoTim>
 
 (Affiliate links are included in this description. I may receive a small commission at no cost to you.)
 
