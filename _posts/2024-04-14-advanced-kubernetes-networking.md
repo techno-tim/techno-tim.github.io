@@ -392,7 +392,7 @@ You can now do the same thing for your other workloads that need to use Multus!
 
 ## Join the conversation
 
-<blockquote class="twitter-tweet"  data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">After moving some of my HomeLab servers into the new colocation I have so many choices to make when it comes to services and architecture! <a href="https://t.co/J998yIGsaY">https://t.co/J998yIGsaY</a></p>&mdash; Techno Tim (@TechnoTimLive) <a href="https://twitter.com/TechnoTimLive/status/1776269252653207816?ref_src=twsrc%5Etfw">April 5, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"  data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">Today I released 40 minute, super niche technical video on advanced Kubernetes networking with Multus. <br><br>I didn&#39;t do it for the algorithm, I did it because I loved every minute of it. (Well, after I got it working)<a href="https://t.co/O7sLjDIMXt">https://t.co/O7sLjDIMXt</a> <a href="https://t.co/bBnBbmlsDx">pic.twitter.com/bBnBbmlsDx</a></p>&mdash; Techno Tim (@TechnoTimLive) <a href="https://twitter.com/TechnoTimLive/status/1779516238533627905?ref_src=twsrc%5Etfw">April 14, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## Links
 
