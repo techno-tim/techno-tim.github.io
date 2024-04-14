@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Advanced Kubernetes Networking with Multus"
+title: "Advanced Kubernetes Networking with Multus (It's easier than you think)"
 date: 2024-04-14 08:00:00 -0500
 categories: homelab
 tags: multus kubernetes networking rke2 k3s cni cilium
@@ -9,7 +9,7 @@ image:
  lqip: ddata:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAYACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1/uPh1dah4cXzLy38+e8iuDcw3OpWtzHvjbakDxvLbRKheMp5llcBQJQwkd4poPDjQ/du8nU55SnLnk7cs425Yxs1Hl6Je69eZcz51hzwVF1JKdT2tOLjFuKjzSSteLjJqDho4KT97VOzaPG3/AGXtevXa8Xx9rUC3bNcrCviLWysKzkyiJT5IysYfYD6Cslgo2X7mjsvtf/cTnhS54QmsNg7TjGSvGztJJq69k7PXa7t3e5//2Q==
 ---
 
-I just discovered Multus and it fixed Kubernetes networking!  In this video we cover a lot of Kubernetes networking topics from beginner topics like CNIs, to advanced topics like adding Multus for more traditional networking within Kubernetes - which fixes a lot of problems you see with Kubernetes networking.
+I just discovered Multus and it fixed Kubernetes networking!  In this video we cover a lot of Kubernetes networking topics from beginner topics like CNIs, to advanced topics like adding Multus for more traditional networking within Kubernetes - which fixes a lot of problems you see with Kubernetes networking.  Also, I had to turn the nerd up to 11 on this one.
 
 {% include embed/youtube.html id='atfLTiW5yvM' %}
 📺 [Watch Video](https://www.youtube.com/watch?v=atfLTiW5yvM)
@@ -18,6 +18,7 @@ I just discovered Multus and it fixed Kubernetes networking!  In this video we c
 - Network diagram created with Excalidraw <https://github.com/excalidraw/excalidraw>
 - Much of the documentation and diagrams we walked through can be found on [DevOpsTales](https://devopstales.github.io/kubernetes/multus/)
 - Huge thanks to the folks over in the [Home Operations Discord](https://discord.com/servers/home-operations-673534664354430999) too!
+- Huge thanks to [Andy (@clemenko)](https://twitter.com/clemenko) for helping me troubleshoot and diagnose issues with Multus/RKE2/Cilium
 
 Disclosures:
 
@@ -390,10 +391,6 @@ Address: 10.43.143.7
 If all of the tests passed, you should be good!
 
 You can now do the same thing for your other workloads that need to use Multus!
-
-## Thanks
-
-
 
 ## Join the conversation
 
