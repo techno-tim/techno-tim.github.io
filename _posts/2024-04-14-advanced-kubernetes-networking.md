@@ -17,6 +17,7 @@ I just discovered Multus and it fixed Kubernetes networking!  In this video we c
 - Be sure to check out and ⭐ the [Multus repo on GitHub](https://github.com/k8snetworkplumbingwg/multus-cni)!
 - Network diagram created with Excalidraw <https://github.com/excalidraw/excalidraw>
 - Much of the documentation and diagrams we walked through can be found on [DevOpsTales](https://devopstales.github.io/kubernetes/multus/)
+- Huge thanks to the folks over in the [Home Operations Discord](https://discord.com/servers/home-operations-673534664354430999) too!
 
 Disclosures:
 
@@ -389,6 +390,10 @@ Address: 10.43.143.7
 If all of the tests passed, you should be good!
 
 You can now do the same thing for your other workloads that need to use Multus!
+
+## Thanks
+
+
 
 ## Join the conversation
 
