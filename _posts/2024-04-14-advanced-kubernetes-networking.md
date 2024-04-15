@@ -392,6 +392,40 @@ If all of the tests passed, you should be good!
 
 You can now do the same thing for your other workloads that need to use Multus!
 
+## Gotchas
+
+### RKE2
+
+If you're using RKE2 and you notice that your worker nodes are using the wrong IP address after adding an additional NIC, you can override the Node IP with config:
+
+```yaml
+# /etc/rancher/rke2/config.yaml
+node-ip: 192.168.60.53 # the node's primary IP used for kubernetes
+node-external-ip: 192.168.60.53 # the node's primary IP used for kubernetes
+```
+
+You will need to restart the rke service or reboot.
+
+Check with
+
+```bash
+kubectl get nodes -o wide
+```
+
+You should then see the IP on the node (note my `k8s-home-worker-01` has the fix, but `k8s-home-worker-02` and `k8s-home-worker-03` don't)
+
+```bash
+NAME                 STATUS   ROLES                       AGE   VERSION          INTERNAL-IP     EXTERNAL-IP     OS-IMAGE             KERNEL-VERSION       CONTAINER-RUNTIME
+k8s-home-01          Ready    control-plane,etcd,master   5d    v1.28.8+rke2r1   192.168.60.50   <none>          Ubuntu 22.04.4 LTS   5.15.0-102-generic   containerd://1.7.11-k3s2
+k8s-home-02          Ready    control-plane,etcd,master   5d    v1.28.8+rke2r1   192.168.60.51   <none>          Ubuntu 22.04.4 LTS   5.15.0-102-generic   containerd://1.7.11-k3s2
+k8s-home-03          Ready    control-plane,etcd,master   5d    v1.28.8+rke2r1   192.168.60.52   <none>          Ubuntu 22.04.4 LTS   5.15.0-102-generic   containerd://1.7.11-k3s2
+k8s-home-worker-01   Ready    worker                      5d    v1.28.8+rke2r1   192.168.60.53   192.168.60.53   Ubuntu 22.04.4 LTS   5.15.0-102-generic   containerd://1.7.11-k3s2
+k8s-home-worker-02   Ready    worker                      5d    v1.28.8+rke2r1   192.168.20.71   <none>          Ubuntu 22.04.4 LTS   5.15.0-102-generic   containerd://1.7.11-k3s2
+k8s-home-worker-03   Ready    worker                      5d    v1.28.8+rke2r1   192.168.20.72   <none>          Ubuntu 22.04.4 LTS   5.15.0-102-generic   containerd://1.7.11-k3s2
+```
+
+You can see more flags on the [RKE2 documentation page](https://docs.rke2.io/reference/linux_agent_config)
+
 ## Join the conversation
 
 <blockquote class="twitter-tweet"  data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">Today I released 40 minute, super niche technical video on advanced Kubernetes networking with Multus. <br><br>I didn&#39;t do it for the algorithm, I did it because I loved every minute of it. (Well, after I got it working)<a href="https://t.co/O7sLjDIMXt">https://t.co/O7sLjDIMXt</a> <a href="https://t.co/bBnBbmlsDx">pic.twitter.com/bBnBbmlsDx</a></p>&mdash; Techno Tim (@TechnoTimLive) <a href="https://twitter.com/TechnoTimLive/status/1779516238533627905?ref_src=twsrc%5Etfw">April 14, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
