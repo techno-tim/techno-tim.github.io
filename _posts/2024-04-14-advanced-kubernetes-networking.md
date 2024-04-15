@@ -426,6 +426,70 @@ k8s-home-worker-03   Ready    worker                      5d    v1.28.8+rke2r1  
 
 You can see more flags on the [RKE2 documentation page](https://docs.rke2.io/reference/linux_agent_config)
 
+### cloud-init and routing
+
+I have also seen odd issues when with routing and using cloud init.  I've had to override some settings using `netplan`
+
+You can see there is a misplaced route in your tables
+
+```bash
+➜  ~ ip route
+192.168.20.0/24 dev eth1 proto kernel scope link src 192.168.20.72 metric 100
+192.168.20.1 dev eth1 proto dhcp scope link src 192.168.20.72 metric 100
+192.168.60.0/24 dev eth0 proto kernel scope link src 192.168.60.55 metric 100
+192.168.60.1 dev eth0 proto dhcp scope link src 192.168.60.55 metric 100
+192.168.60.10 via 192.168.20.1 dev eth1 proto dhcp src 192.168.20.72 metric 100 # wrong
+192.168.60.10 dev eth0 proto dhcp scope link src 192.168.60.55 metric 100
+192.168.60.22 via 192.168.20.1 dev eth1 proto dhcp src 192.168.20.72 metric 100 #wrong
+192.168.60.22 dev eth0 proto dhcp scope link src 192.168.60.55 metric 100
+```
+
+To fix this, we need to override the routes with `netplan`
+
+```bash
+sudo nano /etc/netplan/50-cloud-init.yaml
+```
+
+ ```yaml
+# This file is generated from information provided by the datasource.  Changes
+# to it will not persist across an instance reboot.  To disable cloud-init's
+# network configuration capabilities, write a file
+# /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg with the following:
+# network: {config: disabled}
+network:
+  version: 2
+  ethernets:
+    eth0:
+      dhcp4: true
+      match:
+        macaddress: bc:25:12:26:27:7d
+      set-name: eth0
+      routes:
+        - to: 0.0.0.0/0
+          via: 192.168.60.1
+          metric: 100
+      dhcp4-overrides:
+        use-dns: false  # Disable DNS from DHCP
+      nameservers:
+        addresses: [192.168.60.10, 192.168.60.22]  # DNS servers for eth0
+
+    eth1:
+      dhcp4: true
+      match:
+        macaddress: bc:27:21:b1:4b:37
+      set-name: eth1
+      routes:
+        - to: 0.0.0.0/0
+          via: 192.168.20.1
+          metric: 101
+      dhcp4-overrides:
+        use-dns: false  # Disable DNS from DHCP
+      nameservers:
+        addresses: [192.168.60.10, 192.168.60.22]  # DNS servers for eth1
+ ```
+
+ If you know of a better way to do this, please let me know in the comments.
+
 ## Join the conversation
 
 <blockquote class="twitter-tweet"  data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">Today I released 40 minute, super niche technical video on advanced Kubernetes networking with Multus. <br><br>I didn&#39;t do it for the algorithm, I did it because I loved every minute of it. (Well, after I got it working)<a href="https://t.co/O7sLjDIMXt">https://t.co/O7sLjDIMXt</a> <a href="https://t.co/bBnBbmlsDx">pic.twitter.com/bBnBbmlsDx</a></p>&mdash; Techno Tim (@TechnoTimLive) <a href="https://twitter.com/TechnoTimLive/status/1779516238533627905?ref_src=twsrc%5Etfw">April 14, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
