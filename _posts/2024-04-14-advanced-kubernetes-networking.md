@@ -48,8 +48,8 @@ metadata:
   namespace: kube-system
 spec:
   valuesContent: |-
-    eni:
-      enabled: true
+    cni:
+      exclusive: false
 ```
 
 ## Configuring Multus
