@@ -14,7 +14,7 @@ The UDM Pro Max is here and it's packed with upgrades like a faster CPU, more RA
 {% include embed/youtube.html id='Vk32qJk_gLI' %}
 📺 [Watch Video](https://www.youtube.com/watch?v=Vk32qJk_gLI)
 
-- Get your UDM Pro Max here: >https://l.technotim.live/udm-pro-max> (affiliate link)
+- Get your UDM Pro Max here: <https://l.technotim.live/udm-pro-max> (affiliate link)
 
 Disclosures:
 
