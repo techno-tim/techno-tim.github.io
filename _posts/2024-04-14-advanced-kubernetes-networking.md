@@ -490,6 +490,91 @@ network:
 
  If you know of a better way to do this, please let me know in the comments.
 
+### k3s
+
+You will have to make some changes for this to work with `k3s`. Thanks [ThePCGeek](https://github.com/ChrisThePCGeek)!
+
+ ```yaml
+ # k3s multus install
+apiVersion: helm.cattle.io/v1
+kind: HelmChart
+metadata:
+  name: multus
+  namespace: kube-system
+spec:
+  repo: https://rke2-charts.rancher.io
+  chart: rke2-multus
+  targetNamespace: kube-system
+  # createNamespace: true
+  valuesContent: |-
+    config:
+      cni_conf:
+        confDir: /var/lib/rancher/k3s/agent/etc/cni/net.d
+        clusterNetwork: /var/lib/rancher/k3s/agent/etc/cni/net.d/10-flannel.conflist
+        binDir: /var/lib/rancher/k3s/data/current/bin/
+        kubeconfig: /var/lib/rancher/k3s/agent/etc/cni/net.d/multus.d/multus.kubeconfig
+ ```
+
+### mac-vlan
+
+I have also used this `mac-vlan` config below successfully
+
+```yaml
+---
+apiVersion: "k8s.cni.cncf.io/v1"
+kind: NetworkAttachmentDefinition
+metadata:
+  name: multus-iot
+  namespace: default
+spec:
+  config: |-
+    {
+      "cniVersion": "0.3.1",
+      "name": "multus-iot",
+      "plugins": [
+        {
+          "type": "macvlan",
+          "master": "eth1",
+          "mode": "bridge",
+          "capabilities": {
+            "ips": true
+          },
+          "ipam": {
+            "type": "static",
+            "routes": [{
+              "dst": "192.168.0.0/16",
+              "gw": "192.168.20.1"
+            }]
+          }
+        }
+      ]
+    }
+```
+
+Sample Pods
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: sample-pod
+  namespace: default
+  annotations:
+    k8s.v1.cni.cncf.io/networks: |
+      [{
+        "name": "multus-iot",
+        "namespace": "default",
+        "mac": "c6:5e:a4:8e:7a:59",
+        "ips": ["192.168.20.210/24"],
+        "gateway": [ "192.168.20.1" ]
+      }]
+spec:
+  containers:
+  - name: sample-pod
+    command: ["/bin/ash", "-c", "trap : TERM INT; sleep infinity & wait"]
+    image: alpine
+```
+
 ## Join the conversation
 
 <blockquote class="twitter-tweet"  data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">Today I released 40 minute, super niche technical video on advanced Kubernetes networking with Multus. <br><br>I didn&#39;t do it for the algorithm, I did it because I loved every minute of it. (Well, after I got it working)<a href="https://t.co/O7sLjDIMXt">https://t.co/O7sLjDIMXt</a> <a href="https://t.co/bBnBbmlsDx">pic.twitter.com/bBnBbmlsDx</a></p>&mdash; Techno Tim (@TechnoTimLive) <a href="https://twitter.com/TechnoTimLive/status/1779516238533627905?ref_src=twsrc%5Etfw">April 14, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
