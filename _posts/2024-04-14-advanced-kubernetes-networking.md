@@ -457,35 +457,47 @@ sudo nano /etc/netplan/50-cloud-init.yaml
 # /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg with the following:
 # network: {config: disabled}
 network:
-  version: 2
-  ethernets:
-    eth0:
-      dhcp4: true
-      match:
-        macaddress: bc:25:12:26:27:7d
-      set-name: eth0
-      routes:
-        - to: 0.0.0.0/0
-          via: 192.168.60.1
-          metric: 100
-      dhcp4-overrides:
-        use-dns: false  # Disable DNS from DHCP
-      nameservers:
-        addresses: [192.168.60.10, 192.168.60.22]  # DNS servers for eth0
-
-    eth1:
-      dhcp4: true
-      match:
-        macaddress: bc:27:21:b1:4b:37
-      set-name: eth1
-      routes:
-        - to: 0.0.0.0/0
-          via: 192.168.20.1
-          metric: 101
-      dhcp4-overrides:
-        use-dns: false  # Disable DNS from DHCP
-      nameservers:
-        addresses: [192.168.60.10, 192.168.60.22]  # DNS servers for eth1
+    version: 2
+    ethernets:
+        eth0:
+            addresses:
+            - 192.168.60.55/24
+            match:
+                macaddress: bc:24:11:f1:2a:e7
+            nameservers:
+                addresses:
+                - 192.168.60.10
+                - 192.168.60.22
+            routes:
+            -   to: default
+                via: 192.168.60.1
+            set-name: eth0
+        eth1:
+            addresses:
+            - 192.168.20.65/24
+            match:
+                macaddress: bc:29:71:9a:01:29
+            nameservers:
+                addresses:
+                - 192.168.60.10
+                - 192.168.60.22
+            routes:
+            -   to: 192.168.20.0/24
+                via: 192.168.20.1
+            set-name: eth1
+        eth2:
+            addresses:
+            - 192.168.40.52/24
+            match:
+                macaddress: bc:24:11:3d:c9:f7
+            nameservers:
+                addresses:
+                - 192.168.60.10
+                - 192.168.60.22
+            routes:
+            -   to: 192.168.40.0/24
+                via: 192.168.40.1
+            set-name: eth2
  ```
 
  If you know of a better way to do this, please let me know in the comments.
