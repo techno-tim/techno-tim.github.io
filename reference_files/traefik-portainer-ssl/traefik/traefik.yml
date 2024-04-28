@@ -27,6 +27,7 @@ certificatesResolvers:
       dnsChallenge:
         provider: cloudflare
         #disablePropagationCheck: true # uncomment this if you have issues pulling certificates through cloudflare, By setting this flag to true disables the need to wait for the propagation of the TXT record to all authoritative name servers.
+        #delayBeforeCheck: 60s # uncomment along with disablePropagationCheck if needed to ensure the TXT record is ready before verification is attempted 
         resolvers:
           - "1.1.1.1:53"
           - "1.0.0.1:53"
