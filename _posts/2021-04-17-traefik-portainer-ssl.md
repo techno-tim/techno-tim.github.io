@@ -15,6 +15,9 @@ Today, we're going to use SSL for everything.No more self-sign certs.No more htt
 
 📺 [Watch Video](https://www.youtube.com/watch?v=liV3c9m_OX8)
 
+> *Looking for the Traefik 3.0 guide? Check out [traefik 3 on Docker](/posts/traefik-3-docker-certificates/)*
+{: .prompt-info }
+
 > *Looking to do this same thing in Kubernetes? Check out [traefik + cert-manager on Kubernetes](/posts/kube-traefik-cert-manager-le/)*
 {: .prompt-info }
 
@@ -119,6 +122,7 @@ Your folder structure should look like the below, if you are following along wit
 │   └── traefik.yml
 └── docker-compose.yml
 ```
+
 ## Links
 
 🛍️ Check out the new Merch Shop at <https://l.technotim.live/shop>
