@@ -139,7 +139,7 @@ chmod 600 acme.json
 
 ```bash
 touch traefik.yml
-nano traefik.yaml
+nano traefik.yml
 ```
 
 `traefik.yml` contents:
@@ -346,7 +346,7 @@ In `docker-compose.yaml`
 ...
 ```
 
-in `traefik.yaml
+in `traefik.yml
 
 ```yaml
 ...
@@ -528,7 +528,7 @@ certificatesResolvers:
           - "1.0.0.1:53"
 ```
 
-`config.yaml`
+`config.yml`
 
 ```yaml
 http:
