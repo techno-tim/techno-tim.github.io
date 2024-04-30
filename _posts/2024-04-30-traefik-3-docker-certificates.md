@@ -14,7 +14,7 @@ In today's Traefik tutorial we'll get FREE Wildcard certificates to use in our H
 {% include embed/youtube.html id='n1vOfdz5Nm8' %}
 📺 [Watch Video](https://www.youtube.com/watch?v=n1vOfdz5Nm8)
 
-- Save 20% on UptimeRobot <https://l.example.com/uptime-robot-technotim>!
+- Save 20% on UptimeRobot <https://l.technotim.live/uptime-robot-technotim>!
 
 Disclosures:
 
