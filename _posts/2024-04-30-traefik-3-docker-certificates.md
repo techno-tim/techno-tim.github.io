@@ -38,6 +38,8 @@ For reference, the following folder structure was used:
 └── docker-compose.yml
 ```
 
+You can also do this with [other DNS providers too](https://doc.traefik.io/traefik/https/acme/#providers)!
+
 ## Docker Setup
 
 See [this post](/posts/docker-compose-install/) on how to install `docker` and `docker-compose`
