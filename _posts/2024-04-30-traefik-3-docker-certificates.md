@@ -84,7 +84,7 @@ services:
     networks:
       - proxy
     ports:
-     - 80:80
+      - 80:80
       - 443:443/tcp
       # - 443:443/udp # Uncomment if you want HTTP3
     environment:
@@ -446,7 +446,7 @@ services:
     networks:
       - proxy
     ports:
-     - 80:80
+      - 80:80
       - 443:443/tcp
       # - 443:443/udp # Uncomment if you want HTTP3
     environment:
