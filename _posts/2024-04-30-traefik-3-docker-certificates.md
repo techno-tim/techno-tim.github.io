@@ -51,7 +51,7 @@ mkdir docker_volumes
 cd docker_volumes
 ```
 
-then well create a folder to hold traefik files
+then we'll create a folder to hold traefik files
 
 ```bash
 mkdir traefik
