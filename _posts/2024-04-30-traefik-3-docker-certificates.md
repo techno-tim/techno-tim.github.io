@@ -348,7 +348,7 @@ In `docker-compose.yaml`
 ...
 ```
 
-in `traefik.yml
+in `traefik.yml`
 
 ```yaml
 ...
