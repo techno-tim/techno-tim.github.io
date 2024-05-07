@@ -87,7 +87,8 @@ services:
       - proxy
     ports:
       - 80:80
-      - 443:443/tcp
+      - 443:443
+      # - 443:443/tcp # Uncomment if you want HTTP3
       # - 443:443/udp # Uncomment if you want HTTP3
     environment:
       CF_DNS_API_TOKEN_FILE: /run/secrets/cf_api_token # note using _FILE for docker secrets
@@ -449,7 +450,8 @@ services:
       - proxy
     ports:
       - 80:80
-      - 443:443/tcp
+      - 443:443
+      # - 443:443/tcp # Uncomment if you want HTTP3
       # - 443:443/udp # Uncomment if you want HTTP3
     environment:
       CF_DNS_API_TOKEN_FILE: /run/secrets/cf_api_token # note using _FILE for docker secrets
