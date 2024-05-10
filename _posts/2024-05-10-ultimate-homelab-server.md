@@ -14,7 +14,6 @@ Today I built the ultimate, all in one, HomeLab Home Server to handle everything
 {% include embed/youtube.html id='1lXSdg-8evA' %}
 📺 [Watch Video](https://www.youtube.com/watch?v=1lXSdg-8evA)
 
-
 Disclosures:
 
 - Sliger did send this case to me however asked for nothing in return.
@@ -30,7 +29,7 @@ Disclosures:
 - Samsung SSDs - <https://amzn.to/3USTxtj>
 - Corsair Airflow Case (newer) - <https://amzn.to/44BV0HI>
 - 10g Ethernet adapter - <https://amzn.to/3wkN0hP>
-- LSI HAB - <https://amzn.to/3UWBuCN>
+- LSI HBA - <https://amzn.to/3UWBuCN>
 
 (Affiliate links may be included in this description. I may receive a small commission at no cost to you.)
 
