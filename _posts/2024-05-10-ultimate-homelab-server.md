@@ -14,7 +14,6 @@ Today I built the ultimate, all in one, HomeLab Home Server to handle everything
 {% include embed/youtube.html id='1lXSdg-8evA' %}
 📺 [Watch Video](https://www.youtube.com/watch?v=1lXSdg-8evA)
 
-- Save 20% on UptimeRobot <https://l.technotim.live/uptime-robot-technotim>!
 
 Disclosures:
 
