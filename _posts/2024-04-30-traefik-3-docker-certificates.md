@@ -596,10 +596,10 @@ http:
 
 ## Links
 
-🛍️ Check out the new Merch Shop at <https://l.example.com/shop>
+🛍️ Check out the new Merch Shop at <https://l.technotim.live/shop>
 
-⚙️ See all the hardware I recommend at <https://l.example.com/gear>
+⚙️ See all the hardware I recommend at <https://l.technotim.live/gear>
 
-🚀 Don't forget to check out the [🚀Launchpad repo](https://l.example.com/quick-start) with all of the quick start source files
+🚀 Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files
 
 🤝 Support me and [help keep this site ad-free!](/sponsor)
