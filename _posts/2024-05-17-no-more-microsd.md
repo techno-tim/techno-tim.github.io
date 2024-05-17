@@ -33,6 +33,10 @@ Things mentioned in the video (some are affiliate links) :
 
 (Affiliate links may be included in this description. I may receive a small commission at no cost to you.)
 
+## Projects
+
+This project was built using [rpi-rgb-led-matrix](https://github.com/hzeller/rpi-rgb-led-matrix)
+
 ## Join the conversation
 
 <blockquote class="twitter-tweet" data-dnt="true" data-theme="dark">I just posted my first video on the new (3rd) channel &quot;Techno Tim Tinkers&quot;. 🎉. . <br><br>It&#39;s a project that I have been putting off forever...<a href="https://t.co/aL1k98Z9rO">https://t.co/aL1k98Z9rO</a></p>&mdash; Techno Tim (@TechnoTimLive) <a href="https://twitter.com/TechnoTimLive/status/1791478502773891454?ref_src=twsrc%5Etfw">May 17, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
