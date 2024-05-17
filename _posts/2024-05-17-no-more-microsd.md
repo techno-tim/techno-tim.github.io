@@ -27,7 +27,7 @@ Things mentioned in the video (some are affiliate links) :
 - Shadow Box (similar to mine, 12"x16"): <https://amzn.to/4dU7vTs>
 - Cheapest SSD I could find: <https://amzn.to/3QPzQQG>
 - 32x32 LED Panel: <https://www.adafruit.com/product/607>
-- Matrix LED Hat: <https://learn.adafruit.com/adafruit-rgb-matrix-plus-real-time-clock-hat-for-raspberry-pi>
+- Matrix LED Hat: <https://www.adafruit.com/product/2345>
 - Rainbow Ribbon Cable: <https://amzn.to/3V3pz62>
 - 5v/5a USB-C Power Supply: <https://amzn.to/3wC0SnW>
 
