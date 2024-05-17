@@ -351,29 +351,29 @@ Now test DNS by looking up something on the internet, something on your local ne
 
 ```bash
 / # nslookup google.com
-Server:		10.43.0.10
-Address:	10.43.0.10:53
+Server:  10.43.0.10
+Address: 10.43.0.10:53
 
 Non-authoritative answer:
-Name:	google.com
+Name: google.com
 Address: 142.250.191.238
 
 Non-authoritative answer:
-Name:	google.com
+Name: google.com
 Address: 2607:f8b0:4009:81b::200e
 
 / # nslookup k8s-home-worker-01.local.techtronic.us
-Server:		10.43.0.10
-Address:	10.43.0.10:53
+Server:  10.43.0.10
+Address: 10.43.0.10:53
 
-Name:	k8s-home-worker-01.local.techtronic.us
+Name: k8s-home-worker-01.local.techtronic.us
 Address: 192.168.60.53
 
 Non-authoritative answer:
 
 / # nslookup homepage
-Server:		10.43.0.10
-Address:	10.43.0.10:53
+Server:  10.43.0.10
+Address: 10.43.0.10:53
 
 ** server can't find homepage.cluster.local: NXDOMAIN
 
@@ -384,7 +384,7 @@ Address:	10.43.0.10:53
 ** server can't find homepage.svc.cluster.local: NXDOMAIN
 
 
-Name:	homepage.default.svc.cluster.local
+Name: homepage.default.svc.cluster.local
 Address: 10.43.143.7
 ```
 
