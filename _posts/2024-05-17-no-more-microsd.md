@@ -30,6 +30,8 @@ Things mentioned in the video (some are affiliate links) :
 - Matrix LED Hat: <https://www.adafruit.com/product/2345>
 - Rainbow Ribbon Cable: <https://amzn.to/3V3pz62>
 - 5v/10a AC to DC Power Supply: <https://amzn.to/3K5b5MT>
+- Desk Mount for Camera - <https://amzn.to/4dDvSV8>
+- Phone Mount Adapter - <https://amzn.to/3yquo0m>
 
 (Affiliate links may be included in this description. I may receive a small commission at no cost to you.)
 
