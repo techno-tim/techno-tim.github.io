@@ -29,13 +29,26 @@ Things mentioned in the video (some are affiliate links) :
 - 32x32 LED Panel: <https://www.adafruit.com/product/607>
 - Matrix LED Hat: <https://www.adafruit.com/product/2345>
 - Rainbow Ribbon Cable: <https://amzn.to/3V3pz62>
-- 5v/5a USB-C Power Supply: <https://amzn.to/3wC0SnW>
+- 5v/10a AC to DC Power Supply: <https://amzn.to/3K5b5MT>
 
 (Affiliate links may be included in this description. I may receive a small commission at no cost to you.)
 
-## Projects
+## Notes
 
 This project was built using [rpi-rgb-led-matrix](https://github.com/hzeller/rpi-rgb-led-matrix)
+
+After getting the new power supply I noticed a few odd things
+
+- When powered via hat only with the new 5v/10a AC to DC power supply, the USB drive wasn't recognized
+- When powering via USB-C 5v/5a the LED panel was too dim to display some colors so it looked distorted
+
+I read the Pi hat [documentation](https://learn.adafruit.com/adafruit-rgb-matrix-plus-real-time-clock-hat-for-raspberry-pi) over and over, and no where did it mention that anything else was needed other than a large power supply.  I thought for sure it was now a hardware issue and was in over my head.  I dropped a message in a Discord that both [Jeff Geerling](https://www.jeffgeerling.com/) and I are in and he mentioned checking out [this post](https://raspberrypi.stackexchange.com/questions/27708/is-setting-max-usb-current-1-to-give-more-power-to-usb-devices-a-bad-idea)
+
+In that post it suggests to add `max_usb_current=1` to your `config.txt`.
+
+I tested it and sure enough the Pi can now power the LED panel, the Pi, and the USB drive all from a single power supply connected to the hat. 🎉
+
+Thanks Jeff!
 
 ## Join the conversation
 
