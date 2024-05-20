@@ -37,6 +37,11 @@ Import the downloaded Ubuntu disk to local-lvm storage
 ```bash
 qm importdisk 8000 jammy-server-cloudimg-amd64.img local-lvm
 ```
+If you are on Proxmox 8.2+ use the below to import the downloaded Ubuntu disk to local-lvm storage 
+
+```bash
+qm disk import 8000 jammy-server-cloudimg-amd64.img local-lvm
+```
 
 Attach the new disk to the vm as a scsi drive on the scsi controller
 
