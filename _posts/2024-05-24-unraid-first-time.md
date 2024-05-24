@@ -20,6 +20,14 @@ Disclosures:
 - I bought Unraid with my own money.
 - If you'd like see more sponsor-free videos, see one of the ways to support me below!
 
+Quality USB Drives
+
+- SAMSUNG FIT Plus: <https://amzn.to/3VfsHvR>
+- SanDisk Ultra Fit: <https://amzn.to/3WP2zcm>
+- PNY Elite-X Fit: <https://amzn.to/3wFqoZB>
+
+(Affiliate links may be included in this description. I may receive a small commission at no cost to you.)
+
 Ways to support:
 
 - Support me on Patreon: <https://www.patreon.com/technotim>
