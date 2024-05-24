@@ -14,13 +14,13 @@ I knew nothing about Unraid until today. I finally installed Unraid in my HomeLa
 {% include embed/youtube.html id='Hu6WemKa__k' %}
 📺 [Watch Video](https://www.youtube.com/watch?v=Hu6WemKa__k)
 
-Disclosures:
+## Disclosures
 
 - This video is NOT sponsored.
 - I bought Unraid with my own money.
 - If you'd like see more sponsor-free videos, see one of the ways to support me below!
 
-Quality USB Drives
+## Quality USB Drives
 
 - SAMSUNG FIT Plus: <https://amzn.to/3VfsHvR>
 - SanDisk Ultra Fit: <https://amzn.to/3WP2zcm>
@@ -28,7 +28,7 @@ Quality USB Drives
 
 (Affiliate links may be included in this description. I may receive a small commission at no cost to you.)
 
-Ways to support:
+## Ways to support
 
 - Support me on Patreon: <https://www.patreon.com/technotim>
 - Sponsor me on GitHub: <https://github.com/sponsors/timothystewart6>
