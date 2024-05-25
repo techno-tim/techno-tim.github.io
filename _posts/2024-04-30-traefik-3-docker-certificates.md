@@ -271,7 +271,7 @@ echo ${TRAEFIK_DASHBOARD_CREDENTIALS}
 nslookup traefik-dashboard.local.example.com
 ```
 
-## Switch to Production Acme Endpoings
+## Switch to Production Acme Endpoints
 
 ```yaml
 ...
