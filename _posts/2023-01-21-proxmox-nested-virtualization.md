@@ -68,7 +68,7 @@ If you're running an **AMD CPU** run this command:
 cat /sys/module/kvm_amd/parameters/nested
 ```
 
-You should see **Y** this time.This means that you can now using virtulization inside of a VM, just be sure to set your VM's processor accordingly! (use HOST for CPU type)
+You should see **Y** this time.This means that you can now using virtualization inside of a VM, just be sure to set your VM's processor accordingly! (use HOST for CPU type)
 
 ## Links
 
