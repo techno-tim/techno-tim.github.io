@@ -2,7 +2,7 @@
 layout: post
 title: "Proxmox Automation with Proxmox Helper Scripts!"
 date: 2024-05-30 08:00:00 -0500
-categories: homelab hardware
+categories: proxmox
 tags: proxmox homelab lxc docker virtualization
 image:
  path: /assets/img/headers/proxmox-helper-scripts-hero.webp
