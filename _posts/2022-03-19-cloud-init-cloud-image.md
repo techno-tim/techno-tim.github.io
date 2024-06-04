@@ -23,7 +23,7 @@ Choose your [Ubuntu Cloud Image](https://cloud-images.ubuntu.com/)
 Download Ubuntu (replace with the url of the one you chose from above)
 
 ```bash
-wget https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd64.img
+wget https://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-amd64.img
 ```
 
 Create a new virtual machine
@@ -32,27 +32,22 @@ Create a new virtual machine
 qm create 8000 --memory 2048 --core 2 --name ubuntu-cloud --net0 virtio,bridge=vmbr0
 ```
 
-Import the downloaded Ubuntu disk to local-lvm storage
+Import the downloaded Ubuntu disk to `local` storage (Change `local` to the storage of your choice)
 
 ```bash
-qm importdisk 8000 jammy-server-cloudimg-amd64.img local-lvm
-```
-If you are on Proxmox 8.2+ use the below to import the downloaded Ubuntu disk to local-lvm storage 
-
-```bash
-qm disk import 8000 jammy-server-cloudimg-amd64.img local-lvm
+qm disk import 8000 focal-server-cloudimg-amd64.img local
 ```
 
-Attach the new disk to the vm as a scsi drive on the scsi controller
+Attach the new disk to the vm as a scsi drive on the scsi controller (Change `local` to the storage of your choice)
 
 ```bash
-qm set 8000 --scsihw virtio-scsi-pci --scsi0 local-lvm:vm-8000-disk-0
+qm set 8000 --scsihw virtio-scsi-pci --scsi0 local:vm-8000-disk-0
 ```
 
-Add cloud init drive
+Add cloud init drive ((Change `local` to the storage of your choice)
 
 ```bash
-qm set 8000 --ide2 local-lvm:cloudinit
+qm set 8000 --ide2 local:cloudinit
 ```
 
 Make the cloud init drive bootable and restrict BIOS to boot from disk only
