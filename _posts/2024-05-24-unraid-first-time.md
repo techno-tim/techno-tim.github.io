@@ -26,6 +26,10 @@ I knew nothing about Unraid until today. I finally installed Unraid in my HomeLa
 - SanDisk Ultra Fit: <https://amzn.to/3WP2zcm>
 - PNY Elite-X Fit: <https://amzn.to/3wFqoZB>
 
+## Unraid License
+
+- Unraid Buying Options: <https://l.technotim.live/unraid>
+
 (Affiliate links may be included in this description. I may receive a small commission at no cost to you.)
 
 ## Ways to support
