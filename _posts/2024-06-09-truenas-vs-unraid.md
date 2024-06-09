@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "TrueNAS vs Unraid - Which one is the BEST NAS OS?"
+title: "TrueNAS vs Unraid - Which one is the BEST NAS OS for my HomeLab"
 date: 2024-06-09 08:00:00 -0500
 categories: homelab hardware
 tags: truenas unraid homelab hardware software
