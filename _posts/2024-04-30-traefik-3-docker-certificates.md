@@ -16,7 +16,7 @@ In today's Traefik tutorial we'll get FREE Wildcard certificates to use in our H
 
 - Save 20% on UptimeRobot <https://l.technotim.live/uptime-robot-technotim>!
 
-Disclosures:
+## Disclosures
 
 - Video was sponsored by UptimeRobot
 
