@@ -28,6 +28,8 @@ Tracking things on the web just got a whole lot easier with ChangeDetection, the
 
 See [this post](/posts/docker-compose-install/) on how to install `docker` and `docker compose`
 
+## Prepare Our Server
+
 Create folder for your compose and mounts
 
 ```bash
@@ -61,6 +63,10 @@ Your folder structure should look like this
 └── docker-compose.yml
 ```
 
+## Tasks from Our Compose File
+
+### Docker Compose Contents
+
 Simple version of `change detection`
 
 ```yaml
@@ -70,6 +76,8 @@ services:
     image: ghcr.io/dgtlmoon/changedetection.io:latest
     container_name: changedetection
     hostname: changedetection
+    environment:
+      # - BASE_URL=https://mysite.com # configure this for your own domain
     volumes:
       - ./data/datastore:/datastore
     ports:
@@ -79,6 +87,8 @@ services:
 Advanced version of `change detection`
 
 If you want to use Selenium + Webdriver, uncomment the `WEBDRIVER_URL` variable and the `browser-chrome` service, and then comment out `PLAYWRIGHT_DRIVER_URL` variable and `playwright-chrome` service.
+
+To see all supported configurations, see the [Docker compose file on github](https://github.com/dgtlmoon/changedetection.io/blob/master/docker-compose.yml)
 
 ```yaml
 ---
@@ -94,6 +104,8 @@ services:
     environment:
       # - WEBDRIVER_URL=http://playwright-chrome:4444/wd/hub
       - PLAYWRIGHT_DRIVER_URL=ws://playwright-chrome:3000
+      # - BASE_URL=https://mysite.com # configure this for your own domain
+
     depends_on:
       playwright-chrome:
         condition: service_started
@@ -126,8 +138,17 @@ services:
       - DEFAULT_STEALTH=true
       # Ignore HTTPS errors, like for self-signed certs
       - DEFAULT_IGNORE_HTTPS_ERRORS=true
-
 ```
+
+## Chrome Extension
+
+If you want to install the Chrome Extenions, you can but adding it here
+
+- <https://chromewebstore.google.com/detail/changedetectionio-website/kefcfmgmlhmankjmnbijimhofdjekbop?hl=en>
+
+Then all you need to do to configure it is visit your ChangeDetection site and click Settings and it will automatically configure it for you!
+
+Then when visiting a site, all you need to do it click the extension and click add!
 
 ## Join the conversation
 
