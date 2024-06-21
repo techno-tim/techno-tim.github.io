@@ -18,7 +18,7 @@ Tracking things on the web just got a whole lot easier with ChangeDetection, the
 ## Disclosures
 
 - Thanks to Docker for Sponsoring this Video!  
-- Get Actionable insights for software supply chain management with Docker Scout! <https://www.docker.com/products/docker-scout/>
+- Get Actionable insights for software supply chain management with Docker Scout! <https://dockr.ly/45HWDnR>
 
 ## Info
 
