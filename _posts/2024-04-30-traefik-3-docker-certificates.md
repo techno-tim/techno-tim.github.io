@@ -14,11 +14,10 @@ In today's Traefik tutorial we'll get FREE Wildcard certificates to use in our H
 {% include embed/youtube.html id='n1vOfdz5Nm8' %}
 📺 [Watch Video](https://www.youtube.com/watch?v=n1vOfdz5Nm8)
 
-- Save 20% on UptimeRobot <https://l.technotim.live/uptime-robot-technotim>!
-
 ## Disclosures
 
 - Video was sponsored by UptimeRobot
+- Save 20% on UptimeRobot <https://l.technotim.live/uptime-robot-technotim>!
 
 > *Looking to do this same thing in Kubernetes? Check out [traefik + cert-manager on Kubernetes](/posts/kube-traefik-cert-manager-le/)*
 {: .prompt-info }
