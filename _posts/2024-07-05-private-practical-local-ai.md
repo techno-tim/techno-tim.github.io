@@ -23,6 +23,23 @@ I built a private, local, and self-hosted AI stack to help me out with daily tas
 
 Full tutorial coming soon on my other channel! [TechnoTimTinkers](https://www.youtube.com/channel/UCZKdfneLKfx7kp64a8Ks2Yg)
 
+### Hardware
+
+- Machine Used for AI: [Building My ULTIMATE, All-inOne, HomeLab Server](https://www.youtube.com/watch?v=1lXSdg-8evA)
+
+### Software
+
+- [Ollama](https://ollama.com/)
+- [Open WebUI](https://github.com/open-webui/open-webui)
+- [ComfyUI](https://github.com/comfyanonymous/ComfyUI)
+- [Stable Diffusion web UI](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
+- [pluja/whishper](https://github.com/pluja/whishper)
+- [HuggingFace](https://huggingface.co/)
+- [Home Assistant Wyoming Protocol](https://www.home-assistant.io/integrations/wyoming/)
+- [Continue Code Assistant](https://github.com/continuedev/continue)
+- [searXNG](https://github.com/searxng/searxng)
+- [MacWhisper](https://goodsnooze.gumroad.com/l/macwhisper)
+
 ## Join the conversation
 
 <blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">AI should also be private, local, and useful. Here are some practical projects that prove it can be.<a href="https://t.co/2IQwvVbq5s">https://t.co/2IQwvVbq5s</a> <a href="https://t.co/FU0a47K0uU">pic.twitter.com/FU0a47K0uU</a></p>&mdash; Techno Tim (@TechnoTimLive) <a href="https://twitter.com/TechnoTimLive/status/1809253387705463127?ref_src=twsrc%5Etfw">July 5, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
