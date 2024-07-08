@@ -729,6 +729,7 @@ If you are going to use auth, please replace the `xxx` with the value from [abov
 
 ## Join the conversation
 
+<blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">You know that video on self-hosted AI that I just released? <br><br>Well I just followed up with one of the most in-depth tutorials I have ever released.<br><br>FULL TUTORIAL HERE👇<a href="https://t.co/5JAo9Phd1Y">https://t.co/5JAo9Phd1Y</a> <a href="https://t.co/zdqgd0IgS8">pic.twitter.com/zdqgd0IgS8</a></p>&mdash; Techno Tim (@TechnoTimLive) <a href="https://twitter.com/TechnoTimLive/status/1810415330550063300?ref_src=twsrc%5Etfw">July 8, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## Links
 
