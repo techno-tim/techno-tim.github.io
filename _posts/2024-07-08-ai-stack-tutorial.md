@@ -729,7 +729,6 @@ If you are going to use auth, please replace the `xxx` with the value from [abov
 
 ## Join the conversation
 
-<blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">AI should also be private, local, and useful. Here are some practical projects that prove it can be.<a href="https://t.co/2IQwvVbq5s">https://t.co/2IQwvVbq5s</a> <a href="https://t.co/FU0a47K0uU">pic.twitter.com/FU0a47K0uU</a></p>&mdash; Techno Tim (@TechnoTimLive) <a href="https://twitter.com/TechnoTimLive/status/1809253387705463127?ref_src=twsrc%5Etfw">July 5, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## Links
 
