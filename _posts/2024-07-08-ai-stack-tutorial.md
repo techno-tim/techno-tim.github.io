@@ -111,7 +111,7 @@ Here are the packages and repo's we're be using
 
 I am using Traefik as the only entry point into this stack.  No ports are exposed on the host.  If you don't want to use traefik, just comment out the labels (and optionally rename the network named `traefik`).  You will then need to expose ports for `open-webui`, `stable-diffusion-webui`, and `whipser` in your Docker compose file.
 
-If you need help installing Traefik, see this post on [installing Traefik 3]([traefik 3 on Docker](/posts/traefik-3-docker-certificates/)*)
+If you need help installing Traefik, see this post on [installing traefik 3 on Docker](/posts/traefik-3-docker-certificates/)
 
 ### DNS
 
@@ -199,7 +199,7 @@ You should see the same output as running `nvidia-smi` without Docker.
 
 Stacks live in `/opt/stacks`
 
-Here is the folder structure. Most subfolders create when binding volumes.
+Here is the folder structure. Most subfolders are created when binding volumes.
 
 ```bash
 ├── ai-stack
@@ -250,6 +250,8 @@ docker compose up -d --build
 ```
 
 There are additional steps you'll need to do before starting this stack.  Please continue on to the end.
+
+`compose.yaml`
 
 ```yaml
 services:
