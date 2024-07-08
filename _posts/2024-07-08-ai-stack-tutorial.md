@@ -217,6 +217,14 @@ Here is the folder structure. Most subfolders are created when binding volumes.
 │   └── wyoming-piper
 ```
 
+## Folder Permissions
+
+If you run into any folder permission errors while running any of this, you can simple change the owner to yourself using the command.  Please replace the user and group with your own user and group.
+
+```bash
+sudo chown serveradmin:serveradmin -R /opt/stacks
+```
+
 ## Variables with .env
 
 My `ai-stack` `.env`is pretty minimal
