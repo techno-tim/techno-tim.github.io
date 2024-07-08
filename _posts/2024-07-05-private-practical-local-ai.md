@@ -3,13 +3,13 @@ layout: post
 title: "Self-Hosted AI That's Actually Useful"
 date: 2024-07-05 08:00:00 -0500
 categories: homelab self-hosted
-tags: changedetection docker software
+tags: ai docker software llm ollama whisper
 image:
  path: /assets/img/headers/private-practical-local-ai-hero.webp
  lqip: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAUACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APmS48D/AAt+HHw9sPh+nwi+GviRfiN4xg8HN4m1vw4s/iXQm8QaFr93NrdjqbXMk4vtMXRbRNEgtJNNtLOU3M9zFfC8vYrn9LzKtWWfZP8Av8RerHEysqiVOKwsqDsqfI0/bOu/aSbcuWKjFpar57DUYPL8a+Wn+7dKOsW23VVS8ubmTTh7P3LaJu7vscN/wyB8K/8AnzX/AMArb/Gvqvr1by/E8j2H97/yX/gn/9k=
 ---
 
-I built a private, local, and self-hosted AI stack to help me out with daily tasks.
+I built a private, local, and self-hosted AI stack to help me out with daily tasks.  If you're looking for the tutorial to run this yourself, you can out the video here [How to Self-Host Your Own Private AI Stack](/posts/ai-stack-tutorial/)
 
 {% include embed/youtube.html id='GrLpdfhTwLg' %}
 📺 [Watch Video](https://www.youtube.com/watch?v=GrLpdfhTwLg)
