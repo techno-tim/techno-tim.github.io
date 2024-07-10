@@ -9,7 +9,7 @@ image:
  lqip: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAUACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP5oPBP7UPhPwl8J9G01/wBln4Ca3NYadpnhJ72/m+L0L6zfaFpwkk8X66tn8UoXm8Q+Ibi4juPEa6LPoOkzbJ7TRNN0HTruWyH1H+1VsdhaKxUqWGw2HpznSo0oUpYqNStWdOji503CnjMPRqpTjRx9DFxcb0/di1bwKWb4TDYOvg6uVUMXipKpicNjMR9VrRwVT91F1cNRxOBxFfD4mpySVXEYLG4Oc6cuS0bOUvzt1+4sdX13WtWttE0vw/bapq2pajb6DojaodG0SC9vJrmLSNJOtanrOsHTNNjlWysDq2r6rqZtYYjf6lfXXm3UvNKEVKS3s3rtfXeysl6JJdkVGtNxTTSuk7JKy02V1eyP/9k=
 ---
 
-In this tutorial we'll walk through my local, private, self-hosted AI stack so that you can run it too.  If you're looking for the overview of this stack, you can out the video here [Self-Hosted AI That's Actually Useful](/posts/private-practical-local-ai/)
+In this tutorial we'll walk through my local, private, self-hosted AI stack so that you can run it too.
 
 {% include embed/youtube.html id='yoze1IxdBdM' %}
 📺 [Watch Video](https://www.youtube.com/watch?v=yoze1IxdBdM)
@@ -17,6 +17,10 @@ In this tutorial we'll walk through my local, private, self-hosted AI stack so t
 ## Disclosures
 
 - Nothing in this video was sponsored
+
+## Info
+
+ If you're looking for the overview of this stack, you can out the video here [Self-Hosted AI That's Actually Useful](/posts/private-practical-local-ai/)
 
 ## Hardware
 
@@ -107,9 +111,9 @@ Here are the packages and repo's we're be using
 
 ## Traefik
 
-### Info
+### Using
 
-I am using Traefik as the only entry point into this stack.  No ports are exposed on the host.  If you don't want to use traefik, just comment out the labels (and optionally rename the network named `traefik`).  You will then need to expose ports for `open-webui`, `stable-diffusion-webui`, and `whipser` in your Docker compose file.
+I am using Traefik as the only entry point into this stack.  No ports are exposed on the host.  If you don't want to use traefik, just comment out the labels (and optionally rename the network named `traefik`).  You will then need to expose ports for `open-webui`, `stable-diffusion-webui`, and `whisper` in your Docker compose file.
 
 If you need help installing Traefik, see this post on [installing traefik 3 on Docker](/posts/traefik-3-docker-certificates/)
 
@@ -507,7 +511,7 @@ git clone https://github.com/AbdBarho/stable-diffusion-webui-docker.git
 After cloning, you'll want to make a change to the Docker file
 
 ```bash
-nano stable-diffusion-webui-docker/services.comfy/Dockerfile
+nano stable-diffusion-webui-docker/services/comfy/Dockerfile
 ```
 
 I commented out the pinning to commit hash and just grabbed the latest comfy.
@@ -695,7 +699,7 @@ networks:
 
 ## Code Completion (VSCode)
 
-I am using Basic Auth Middlware with traefik.  Please see [traefik section](#traefik) for details on how to set this up.
+I am using Basic Auth Middleware with traefik.  Please see [traefik section](#traefik) for details on how to set this up.
 
 ### Extension
 
