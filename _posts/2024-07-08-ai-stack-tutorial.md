@@ -263,6 +263,30 @@ docker compose up -d --build
 
 There are additional steps you'll need to do before starting this stack.  Please continue on to the end.
 
+Here are 2 Docker compose files that you can use on your system.
+
+### My Docker Compose Stack
+
+The stack is the one I use in the video as well as at home.  If you want to use the general stack without traefik and macvlan, see [the general Docker compose stack](#general-docker-compose-stack)
+
+Before running this, you will need to create the network for Docker to use.
+
+This might already exist if you are using traefik.  If so skip this step.
+
+```bash
+docker network create traefik
+```
+
+This will create the `macvlan` network.  Adjust accordingly.
+
+```bash
+docker network create -d macvlan \
+--subnet=192.168.20.0/24 \
+--gateway=192.168.20.1 \
+-o parent=eth1 \
+iot_macvlan
+```
+
 `compose.yaml`
 
 ```yaml
@@ -498,6 +522,222 @@ networks:
     external: true
 ```
 
+### General Docker Compose Stack
+
+This Docker compose stack does not use traefik and also exposes the port on the host for each service.  If you don't want to expose the port, comment that section out.  If you want to use the stack with traefik and macvlan, see the [stack I used in the video](#ai-stack-docker-compose)
+
+Before running this, you will need to create the network for Docker to use.
+
+```bash
+docker network create ai-stack
+```
+
+```yaml
+services:
+
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama
+    restart: unless-stopped
+    environment:
+      - PUID=${PUID:-1000}
+      - PGID=${PGID:-1000}
+      - OLLAMA_KEEP_ALIVE=24h
+      - ENABLE_IMAGE_GENERATION=True
+      - COMFYUI_BASE_URL=http://stable-diffusion-webui:7860
+    networks:
+      - traefik
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+      - ./ollama:/root/.ollama
+    ports:
+      - "11434:11434" # Add this line to expose the port
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+  open-webui:
+    image: ghcr.io/open-webui/open-webui:latest
+    container_name: open-webui
+    restart: unless-stopped
+    networks:
+      - traefik
+    environment:
+      - PUID=${PUID:-1000}
+      - PGID=${PGID:-1000}
+      - 'OLLAMA_BASE_URL=http://ollama:11434'
+      - ENABLE_RAG_WEB_SEARCH=True
+      - RAG_WEB_SEARCH_ENGINE=searxng
+      - RAG_WEB_SEARCH_RESULT_COUNT=3
+      - RAG_WEB_SEARCH_CONCURRENT_REQUESTS=10
+      - SEARXNG_QUERY_URL=http://searxng:8080/search?q=<query>
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+      - ./open-webui:/app/backend/data
+    depends_on:
+      - ollama
+    extra_hosts:
+      - host.docker.internal:host-gateway
+    ports:
+      - "8080:8080" # Add this line to expose the port
+
+  searxng:
+    image: searxng/searxng:latest
+    container_name: searxng
+    networks:
+      - traefik
+    environment:
+      - PUID=${PUID:-1000}
+      - PGID=${PGID:-1000}
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+      - ./searxng:/etc/searxng
+    depends_on:
+      - ollama
+      - open-webui
+    restart: unless-stopped
+    ports:
+      - "8081:8080" # Add this line to expose the port
+
+  stable-diffusion-download:
+    build: ./stable-diffusion-webui-docker/services/download/
+    image: comfy-download
+    environment:
+      - PUID=${PUID:-1000}
+      - PGID=${PGID:-1000}
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+      - ./stable-diffusion-webui-docker/data:/data
+
+  stable-diffusion-webui:
+    build: ./stable-diffusion-webui-docker/services/comfy/
+    image: comfy-ui
+    environment:
+      - PUID=${PUID:-1000}
+      - PGID=${PGID:-1000}
+      - CLI_ARGS=
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+      - ./stable-diffusion-webui-docker/data:/data
+      - ./stable-diffusion-webui-docker/output:/output
+    stop_signal: SIGKILL
+    tty: true
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ['0']
+              capabilities: [compute, utility]
+    restart: unless-stopped
+    networks:
+      - traefik
+    ports:
+      - "7860:7860" # Add this line to expose the port
+
+  mongo:
+    image: mongo
+    env_file:
+      - .env
+    networks:
+      - traefik
+    restart: unless-stopped
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+      - ./whisper/db_data:/data/db
+      - ./whisper/db_data/logs/:/var/log/mongodb/
+    environment:
+      - PUID=${PUID:-1000}
+      - PGID=${PGID:-1000}
+      - MONGO_INITDB_ROOT_USERNAME=${DB_USER:-whishper}
+      - MONGO_INITDB_ROOT_PASSWORD=${DB_PASS:-whishper}
+    command: ['--logpath', '/var/log/mongodb/mongod.log']
+    ports:
+      - "27017:27017" # Add this line to expose the port
+
+  translate:
+    container_name: whisper-libretranslate
+    image: libretranslate/libretranslate:latest-cuda
+    env_file:
+      - .env
+    networks:
+      - traefik
+    restart: unless-stopped
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+      - ./whisper/libretranslate/data:/home/libretranslate/.local/share
+      - ./whisper/libretranslate/cache:/home/libretranslate/.local/cache
+    user: root
+    tty: true
+    environment:
+      - PUID=${PUID:-1000}
+      - PGID=${PGID:-1000}
+      - LT_DISABLE_WEB_UI=True
+      - LT_LOAD_ONLY=${LT_LOAD_ONLY:-en,fr,es}
+      - LT_UPDATE_MODELS=True
+    deploy:
+      resources:
+        reservations:
+          devices:
+          - driver: nvidia
+            count: all
+            capabilities: [gpu]
+    ports:
+      - "5000:5000" # Add this line to expose the port
+
+  whisper:
+    container_name: whisper
+    pull_policy: always
+    image: pluja/whishper:latest-gpu
+    env_file:
+      - .env
+    networks:
+      - traefik
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+      - ./whisper/uploads:/app/uploads
+      - ./whisper/logs:/var/log/whishper
+      - ./whisper/models:/app/models
+    restart: unless-stopped
+    depends_on:
+      - mongo
+      - translate
+    environment:
+      - PUID=${PUID:-1000}
+      - PGID=${PGID:-1000}
+      - PUBLIC_INTERNAL_API_HOST=${WHISHPER_HOST}
+      - PUBLIC_TRANSLATION_API_HOST=${WHISHPER_HOST}
+      - PUBLIC_API_HOST=${WHISHPER_HOST:-}
+      - PUBLIC_WHISHPER_PROFILE=gpu
+      - WHISPER_MODELS_DIR=/app/models
+      - UPLOAD_DIR=/app/uploads
+    deploy:
+      resources:
+        reservations:
+          devices:
+          - driver: nvidia
+            count: all
+            capabilities: [gpu]
+    ports:
+      - "8000:80" # Add this line to expose the port
+
+networks:
+  ai-stack:
+    external: true
+```
+
 ## Changes for ComfyUI
 
 Before starting the stack, in the room `ai-stack` folder, you'll want to clone the repo (or just copy the necessary files).
@@ -615,6 +855,24 @@ You'll want to be sure the checksum matches the checksum from the source ([Huggi
 
 Please see [folder structure](#folder-structure) above
 
+Before running this, you will need to create the network for Docker to use.
+
+This might already exist if you are using traefik.  If so skip this step.
+
+```bash
+docker network create traefik
+```
+
+This will create the `macvlan` network.  Adjust accordingly.
+
+```bash
+docker network create -d macvlan \
+--subnet=192.168.20.0/24 \
+--gateway=192.168.20.1 \
+-o parent=eth1 \
+iot_macvlan
+```
+
 ```yaml
 ---
 services:
@@ -622,7 +880,7 @@ services:
     container_name: homeassistant
     networks:
       iot_macvlan:
-        ipv4_address: 192.168.20.202 #optional, I am using mac vlan, if you don't want to, remove iot_macvlan
+        ipv4_address: 192.168.20.202 #optional, I am using mac vlan, if you don't want to, remove iot_macvlan and don't create the network above
       traefik:
     image: ghcr.io/home-assistant/home-assistant:stable
     depends_on:
