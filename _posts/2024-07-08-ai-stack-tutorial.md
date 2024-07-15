@@ -546,7 +546,7 @@ services:
       - ENABLE_IMAGE_GENERATION=True
       - COMFYUI_BASE_URL=http://stable-diffusion-webui:7860
     networks:
-      - traefik
+      - ai-stack
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /etc/timezone:/etc/timezone:ro
@@ -566,7 +566,7 @@ services:
     container_name: open-webui
     restart: unless-stopped
     networks:
-      - traefik
+      - ai-stack
     environment:
       - PUID=${PUID:-1000}
       - PGID=${PGID:-1000}
@@ -591,7 +591,7 @@ services:
     image: searxng/searxng:latest
     container_name: searxng
     networks:
-      - traefik
+      - ai-stack
     environment:
       - PUID=${PUID:-1000}
       - PGID=${PGID:-1000}
@@ -640,7 +640,7 @@ services:
               capabilities: [compute, utility]
     restart: unless-stopped
     networks:
-      - traefik
+      - ai-stack
     ports:
       - "7860:7860" # Add this line to expose the port
 
@@ -649,7 +649,7 @@ services:
     env_file:
       - .env
     networks:
-      - traefik
+      - ai-stack
     restart: unless-stopped
     volumes:
       - /etc/localtime:/etc/localtime:ro
@@ -671,7 +671,7 @@ services:
     env_file:
       - .env
     networks:
-      - traefik
+      - ai-stack
     restart: unless-stopped
     volumes:
       - /etc/localtime:/etc/localtime:ro
@@ -703,7 +703,7 @@ services:
     env_file:
       - .env
     networks:
-      - traefik
+      - ai-stack
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /etc/timezone:/etc/timezone:ro
