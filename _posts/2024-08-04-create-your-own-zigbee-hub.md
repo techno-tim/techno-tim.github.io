@@ -218,7 +218,7 @@ networks:
 
 ## Join the conversation
 
-<blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">I finished my mini server rack build! I basically shrunk an entire HomeLab into this small rack.<br><br>Check it out! ----&gt;<a href="https://t.co/NPI2YcSZcb">https://t.co/NPI2YcSZcb</a> <a href="https://t.co/xJRmwyXYzP">pic.twitter.com/xJRmwyXYzP</a></p>&mdash; Techno Tim (@TechnoTimLive) <a href="https://twitter.com/TechnoTimLive/status/1816858365676650959?ref_src=twsrc%5Etfw">July 26, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">In today&#39;s side quest, I created my own Zigbee hub and network and added it to Home Assistant with this awesome little adapter!!<br><br>check it out---&gt;<a href="https://t.co/s0VRC6oLOD">https://t.co/s0VRC6oLOD</a> <a href="https://t.co/8V9pavNH1T">pic.twitter.com/8V9pavNH1T</a></p>&mdash; Techno Tim (@TechnoTimLive) <a href="https://twitter.com/TechnoTimLive/status/1820127269194772603?ref_src=twsrc%5Etfw">August 4, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## Links
 
