@@ -28,7 +28,7 @@ This simple but powerful little adapter lets you build your own Zigbee network a
 ## Hardware
 
 SMLIGHT SLZB-06: <https://amzn.to/4doSJ6B> (affiliate link)
-THIRDREALITY ZigBee Smart Plug : <https://amzn.to/3A8AlA7> (affiliate link)
+THIRDREALITY ZigBee Smart Plug: <https://amzn.to/3A8AlA7> (affiliate link)
 
 ## Code
 
