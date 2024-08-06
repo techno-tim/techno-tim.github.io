@@ -76,7 +76,6 @@ services:
       - PGID=${PGID:-1000}
     restart: unless-stopped
     image: koenkk/zigbee2mqtt:latest
-    restart: unless-stopped
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - /etc/timezone:/etc/timezone:ro
