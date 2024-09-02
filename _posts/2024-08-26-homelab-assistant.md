@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Best HomeLab Service Dashboard Yet!"
-date: 2024-08-26` 08:00:00 -0500
+date: 2024-08-26 08:00:00 -0500
 categories: homelab
 tags: home-automation home-assistant homelab
 image:
