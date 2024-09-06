@@ -18,7 +18,7 @@ Thanks to 45Drives for inviting me to this event!  If you'd like to learn more a
 
 ## Disclosures
 
-- 45Drives did pay for travel and accommodations to attend this event, however I was not paid.
+- 45Drives did provide travel and accommodations to attend this event, however I was not paid.
 
 ## Info
 
