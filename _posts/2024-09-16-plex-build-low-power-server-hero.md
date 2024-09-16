@@ -35,6 +35,7 @@ Explore and learn more from Plex Pros here:  <https://www.plex.tv/pro-week>.
 - Noctua NF-A8 PWM Fan - <https://amzn.to/4d3t42h>
 - Hard Drive Rubber Stands - <https://amzn.to/4gueXWs>
 - Kill A Watt Electricity Monitor - <https://amzn.to/3zpAVt5>
+- Mini monitor everyone keeps asking about - <https://amzn.to/4deDP1E>
 
 Check out the whole kit here: <https://kit.co/TechnoTim/low-power-media-server>
 
