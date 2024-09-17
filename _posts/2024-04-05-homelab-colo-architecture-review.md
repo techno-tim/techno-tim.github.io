@@ -11,7 +11,7 @@ image:
 
 After moving some of my HomeLab servers into the new colocation I have so many choices to make when it comes to services and architecture! From networking, to VPN, to security, to hypervisors, to backups, and even DNS!  I NEED YOUR HELP!  Help me decide if I have created a solid foundation for my new HomeLab in a Colo!
 
-Network diagram created with Figma <https://l.technotim.live/figma> (affiliate link but they have a free option)
+Network diagram created with Figma
 
 {% include embed/youtube.html id='cqFEP4sCkU8' %}
 📺 [Watch Video](https://www.youtube.com/watch?v=cqFEP4sCkU8)
