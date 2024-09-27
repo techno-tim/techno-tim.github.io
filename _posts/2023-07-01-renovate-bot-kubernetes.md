@@ -117,6 +117,24 @@ So we’ll need to `git pull` to get latest and we should see our Renovate confi
 ```
 {: file="renovate.json" }
 
+If you're using FluxCD ([as shown here](https://technotim.live/posts/flux-devops-gitops)) you also want add the `flux` extension and filematch. This will allow Renovate to scan your FluxCD manifests as well as creating Pull Requests for your Helm chart versions.
+
+```json
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base"
+  ],
+  "flux": {
+    "fileMatch": ["\\.yml$"]
+  },
+  "kubernetes": {
+    "fileMatch": ["\\.yml$"]
+  }
+}
+```
+{: file="renovate.json" }
+
 Once we’ve made that change to our config locally, we’ll then commit that change and push it up.
 
 Once we push this change up and it scans our repo, we can see a new [issue that was created](https://github.com/techno-tim/k8s-renovate/issues/2)!  This is a special type of issue that Renovate creates for us and it is kind of like a dashboard for all of our dependencies.
