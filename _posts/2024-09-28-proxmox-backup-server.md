@@ -25,6 +25,7 @@ Helpful links:
 - [Proxmox Backup Server Prune Simulator](https://pbs.proxmox.com/docs/prune-simulator/)
 
 - [Guide on using NFS for your Proxmox Backup Server Dataset](https://www.derekseaman.com/2023/04/how-to-setup-synology-nfs-for-proxmox-backup-server-datastore.html)
+  - I followed this guide but stored the dataset on my TrueNAS server on an NFS share.  The process is almost the same except use TrueNAS instead of Synology.
 
 ## Join the conversation
 
