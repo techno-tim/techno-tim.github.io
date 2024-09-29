@@ -117,7 +117,7 @@ So we’ll need to `git pull` to get latest and we should see our Renovate confi
 ```
 {: file="renovate.json" }
 
-If you're using FluxCD ([as shown here](https://technotim.live/posts/flux-devops-gitops)) you also want add the `flux` extension and filematch. This will allow Renovate to scan your FluxCD manifests as well as creating Pull Requests for your Helm chart versions.
+If you're using FluxCD ([as shown here](/posts/flux-devops-gitops)) you also want add the `flux` extension and filematch. This will allow Renovate to scan your FluxCD manifests as well as creating Pull Requests for your Helm chart versions.
 
 ```json
 {
