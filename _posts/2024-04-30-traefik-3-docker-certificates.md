@@ -184,17 +184,17 @@ certificatesResolvers:
           - "1.0.0.1:53"
 ```
 
+### Create Docker Network
+
+```bash
+docker network create proxy
+```
+
 ### Cloudflare API Token Secret
 
 ```bash
 touch cf_api_token.txt
 nano cf_api_token.txt
-```
-
-### Create Docker Network
-
-```bash
-docker network create proxy
 ```
 
 Paste your token into file from Cloudflare
