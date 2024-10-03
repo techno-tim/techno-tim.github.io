@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "I turned a gaming case into a living room NAS"
-date: 2024-09-28 08:00:00 -0500
+date: 2024-10-03 08:00:00 -0500
 categories: homelab
 tags: proxmox homelab
 image:
