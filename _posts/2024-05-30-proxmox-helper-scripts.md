@@ -14,7 +14,12 @@ Proxmox helper scripts is a collection of scripts to help you easily make change
 {% include embed/youtube.html id='kcpu4z5eSEU' %}
 📺 [Watch Video](https://www.youtube.com/watch?v=kcpu4z5eSEU)
 
-Check out Proxmox VE Helper Scripts on Github: <https://github.com/tteck/Proxmox>
+> *Note: [ttek](https://github.com/tteck) who created the scripts initially is no longer able to maintain these scripts due to health issues.  We thank [ttek](https://github.com/tteck) for his contributions and wish him the best.  He has turned it over the the community and links in this post were updated to reflect the community version*
+{: .prompt-info }
+
+Check out Proxmox VE Helper Scripts on Github: <https://github.com/community-scripts/ProxmoxVE>
+
+- This is the new community version of the repo
 
 ## Disclosures
 
@@ -25,18 +30,21 @@ Check out Proxmox VE Helper Scripts on Github: <https://github.com/tteck/Proxmox
 > *Note: Be sure to always inspect any script before executing it, whether local or from the internet!*
 {: .prompt-warning }
 
-You can find the website here: <https://helper-scripts.com/scripts>
+You can find the website here: <https://community-scripts.github.io/Proxmox/scripts>
+
+- This is the new community version of the site
 
 If you want to execute scripts from a commit SHA (somewhat immutable), you can execute the script like so (commit SHA of the date this video was released):
 
-- Visit the link with a commit hash <https://github.com/tteck/Proxmox/tree/e842d2ec3d8f358eed443be2ecbecb2f3b4137d0>
+- Visit the link with a commit hash <https://github.com/community-scripts/ProxmoxVE/blob/a4a1821822f0f00fde56bc9b1ebe7204f5e01c08>
+  - This is the new community version of the repo
 - Find your script (`homeassistant-core-install.sh`) choose the RAW option
-- This will create a link like <https://raw.githubusercontent.com/tteck/Proxmox/e842d2ec3d8f358eed443be2ecbecb2f3b4137d0/install/homeassistant-core-install.sh>
+- This will create a link like <https://raw.githubusercontent.com/community-scripts/ProxmoxVE/a4a1821822f0f00fde56bc9b1ebe7204f5e01c08/install/homeassistant-core-install.sh>
 
 You can now use this hash to execute this script.  This will ensure that you can run this repeatable (and not always latest)
 
 ```bash
-bash -c "$(wget -qLO - https://raw.githubusercontent.com/tteck/Proxmox/e842d2ec3d8f358eed443be2ecbecb2f3b4137d0/install/homeassistant-core-install.sh)"
+bash -c "$(wget -qLO - https://raw.githubusercontent.com/community-scripts/ProxmoxVE/a4a1821822f0f00fde56bc9b1ebe7204f5e01c08/install/homeassistant-core-install.sh)"
 ```
 
 You can reuse this commit SHA for all other scripts (just replace the path)
