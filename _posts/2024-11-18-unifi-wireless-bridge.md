@@ -27,7 +27,6 @@ Thank you Micro Center for sponsoring today's video!
 - Shop the AMD Ryzen 5 7600X3D Bundle: <https://micro.center/1115b4>
 - Shop Micro Center’s selection of Ubiquiti Networking gear: <https://micro.center/lkgs>
 
-
 📦 Products in video (affiliate links):
 
 - UniFi WiFi - <https://store.ui.com/us/en?category=all-wifi&a_aid=TechnoTim>
