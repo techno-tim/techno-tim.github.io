@@ -71,8 +71,8 @@ GEM
       jekyll-sitemap (~> 1.4)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
-    kramdown (2.4.0)
-      rexml
+    kramdown (2.5.1)
+      rexml (>= 3.3.9)
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
     liquid (4.0.4)
@@ -95,7 +95,7 @@ GEM
     rb-inotify (0.11.1)
       ffi (~> 1.0)
     rexml (3.3.9)
-    rouge (4.4.0)
+    rouge (4.5.1)
     safe_yaml (1.0.5)
     sass-embedded (1.77.5-arm64-darwin)
       google-protobuf (>= 3.25, < 5.0)
@@ -107,7 +107,7 @@ GEM
     typhoeus (1.4.1)
       ethon (>= 0.9.0)
     unicode-display_width (2.6.0)
-    webrick (1.8.2)
+    webrick (1.9.0)
     yell (2.2.2)
 
 PLATFORMS
