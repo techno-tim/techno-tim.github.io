@@ -159,7 +159,7 @@ listening on *:3000
 
 You can now browse to the container's homepage
 
-`http://192.168.10:3000/`
+`http://192.168.10.125:3000/`
 
 You should see a list of pxe boot menu items and the option to cache the pre boot environment locally
 
