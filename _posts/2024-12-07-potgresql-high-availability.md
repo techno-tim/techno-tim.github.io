@@ -693,7 +693,7 @@ Now that we have postgres certs configured, it's now time to configure patroni t
 
 ## Patroni
 
-## Installing Patroni
+### Installing Patroni
 
 ```bash
 sudo apt install -y patroni
@@ -707,7 +707,7 @@ Make a dir for `patroni`
 sudo mkdir -p /etc/patroni/
 ```
 
-## Configuring Patroni
+### Configuring Patroni
 
 Create a config file and edit
 
@@ -905,7 +905,7 @@ tags:
 
 ```
 
-## Patroni Certificates
+### Patroni Certificates
 
 Let's also use a certificate for this, requires a pem
 
@@ -1317,15 +1317,7 @@ DROP TABLE IF EXISTS nintendo_characters;
 
 ## Troubleshooting
 
-Reset all data but certs and start
-
-modifying the shared patroni config (if you make a mistake when bootstrapping or need to make changes later)
-
-show config
-
-```bash
-sudo patronictl -c /etc/patroni/config.yml show-config
-```
+Reset all data but certs and start over
 
 ```bash
 sudo systemctl stop patroni
