@@ -1336,6 +1336,10 @@ sudo systemctl start etcd
 sudo systemctl start patroni
 ```
 
+## Join the conversation
+
+<blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">Today, I teach you how you can self-host a production-ready PostgreSQL cluster. I&#39;ve even included all of the copy pasta commands!<a href="https://t.co/OGHUGfDEs2">https://t.co/OGHUGfDEs2</a> <a href="https://t.co/9NWtYcWcO6">pic.twitter.com/9NWtYcWcO6</a></p>&mdash; Techno Tim (@TechnoTimLive) <a href="https://twitter.com/TechnoTimLive/status/1865482821151736011?ref_src=twsrc%5Etfw">December 7, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ## Links
 
 🛍️ Check out the new Merch Shop at <https://l.technotim.live/shop>
