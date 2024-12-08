@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Self-hosting a production-ready PostgreSQL cluster"
+title: "PostgresSQL Clustering the hard way..."
 date: 2024-12-07 08:00:00 -0500
 categories: self-hosted
 tags: postgresql homelab
@@ -9,7 +9,7 @@ image:
  lqip: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAUACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APwX+G3x7+GekfCm8064/ZK+BesT/YLITXeo618cGF80Nu9ldXF4kXxbS5hubyQ2d8w0a+0eygvLaRorHybp4Y/7HybJMXiOHKOKhxBmmHpewqRlhaWFyFwvFOouStVyepWUdJxkqk6s5Rl/ETV5fy5mOa4WjnE6U8ky+vUVaP7+pic4TkruDcqVPM4Uue7jNOEYRUov3LNcv5++KPEfh7WvEviLWdK8A6B4U0zVtd1bU9N8LaNqfiu60fw1YX9/cXVnoGlXOu69q+uXGm6Nbyx6dYz6zqup6rNa20Umo6he3bTXMv4/KnOEpRdaU3GTi5yhSUptOznJQhCCcmrtQhGKbtGMVZL9FjOEkpKjGCkk1CMqjjBNXUYuc5TajsnKUpNL3pN3Z//Z
 ---
 
-Today is the day that you stop paying for a PostgreSQL cluster and host it yourself.  In this tutorial we'll be setting up a production ready Postres cluster that's highly available and fault tolerant using PostgreSQL, etcd, Patroni, HA Proxy, and keepalived.  This resilient combination will ensure that you can always reach your database even when a node in the cluster goes down!
+Today is the day that you start running PostgresSQL in a cluster!  In this tutorial we'll be setting up a production ready Postgres cluster that's highly available and fault tolerant using PostgreSQL, etcd, Patroni, HA Proxy, and keepalived.  This resilient combination will ensure that you can always reach your database even when a node in the cluster goes down!
 
 {% include embed/youtube.html id='RHwglGf_z40' %}
 📺 [Watch Video](https://www.youtube.com/watch?v=RHwglGf_z40)
