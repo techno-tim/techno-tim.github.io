@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Building My ULTIMATE Linux Workstation"
-date: 2024-12-07 08:00:00 -0500
-categories: self-hosted
+date: 2024-12-23 08:00:00 -0500
+categories: homelab
 tags: linux ubuntu hardware
 image:
  path: /assets/img/headers/linux-workstation-hero.webp
