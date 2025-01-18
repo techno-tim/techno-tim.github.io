@@ -28,13 +28,6 @@ Other Products in this Video:
 - Beelink EQ13: <https://amzn.to/4hfdTWJ>
 
 Merch Shop 🛍️: <https://l.technotim.live/shop>
-Support me on Patreon: <https://www.patreon.com/technotim>
-Sponsor me on GitHub: <https://github.com/sponsors/timothystewart6>
-Subscribe on Twitch: <https://www.twitch.tv/technotim>
-Become a YouTube member: <https://www.youtube.com/channel/UCOk-gHyjcWZNj3Br4oxwh0A/join>
-Gear Recommendations: <https://l.technotim.live/gear>
-Get Help in Our Discord Community: <https://l.technotim.live/discord>
-2nd channel: <https://www.youtube.com/@TechnoTimTinker>
 
 (Affiliate links may be included in this description. I may receive a small commission at no cost to you.)
 
