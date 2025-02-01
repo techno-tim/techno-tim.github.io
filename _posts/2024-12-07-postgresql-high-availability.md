@@ -144,7 +144,7 @@ Make sure `openssl` is installed
 Windows
 
 ```powershell
-winget install -e --id ShiningLight.OpenSSL
+winget install -e --id FireDaemon.OpenSSL
 ```
 
 macOS
