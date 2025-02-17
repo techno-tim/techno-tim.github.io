@@ -54,6 +54,7 @@ What are you self-hosting in 2025?
 ## Join the conversation
 
 <blockquote class="twitter-tweet" data-dnt="true" data-theme="dark">Self-hosting in 2025: What’s running in my HomeLab?<br><br>After sharing my HomeLab hardware setup, the next big question was—what am I actually running on it? <br><br>I break it all down here: <a href="https://t.co/fxSZ77KxaL">https://t.co/fxSZ77KxaL</a><br><br>What are you self-hosting in 2025?<a href="https://twitter.com/hashtag/homelab?src=hash&amp;ref_src=twsrc%5Etfw">#homelab</a> <a href="https://t.co/xutLjxmExp">pic.twitter.com/xutLjxmExp</a></p>&mdash; Techno Tim (@TechnoTimLive) <a href="https://twitter.com/TechnoTimLive/status/1885391522780074056?ref_src=twsrc%5Etfw">January 31, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ## Links
 
 🛍️ Check out the new Merch Shop at <https://l.technotim.live/shop>
