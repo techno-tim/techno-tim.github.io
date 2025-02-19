@@ -979,9 +979,9 @@ However we don't always know who the leader is so we can't use an IP
 We can test the patroni endpoint to see who is leader
 
 ```bash
-curl -k https://192.168.60.103:8080/primary
-curl -k https://192.168.60.104:8080/primary
-curl -k https://192.168.60.105:8080/primary
+curl -k https://192.168.60.103:8008/primary
+curl -k https://192.168.60.104:8008/primary
+curl -k https://192.168.60.105:8008/primary
 ```
 
 ### Editing your pg_hba after bootstrapping
