@@ -1234,7 +1234,7 @@ sudo journalctl -u keepalived -f
 we should not be able to ping the VIP
 
 ```bash
-ping 192.168.60.100
+ping 192.168.60.110
 ```
 
 ## PGAdmin
@@ -1245,7 +1245,7 @@ Connected with a client
 
 <https://www.pgadmin.org/>
 
-Connect to your VIP `192.168.60.100` and use the `postgres` user and password.
+Connect to your VIP `192.168.60.110` and use the `postgres` user and password.
 
 ### Adding Data
 
