@@ -3,7 +3,7 @@ layout: post
 title: "JetKVM: Promises Made, Promises Kept?"
 date: 2025-03-05 08:00:00 -0500
 categories: homelab
-tags: homelab haradware jetkvm kvm
+tags: homelab hardware jetkvm kvm
 image:
  path: /assets/img/headers/jetkvm-tested-hero.webp
  lqip: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAUACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APxh8Gt8XfGnwa+LPxRHxs8X2LfDifXdQ1TTrl77UdY8eSeF/A9j4kgg8TeMYtb03Wb+0SLTp9N0W21dNbTw2NX1efS9sOoXdjN+lZpmmKweLwUIVKjj7WM6t6jTrJ8icKjS96Okrc3M4+0nZ7W/NsrybB4zBYmpOlRi3Bxgo0YtUmlKSlSUm1CT5oxlypc0YR2kuY/Mab9on4xCWUQfEXx1awCRxDa23jXxRDbW0W4+XBbwx6oqRQQpiOKNFVEjVVUAACuCWfZhzS5a9aEeZ8sI4jEJRjfSKSqpJRWiSSVlokepHh7K+VXwmEk7K8pYTDuUnbWUm4Xcm9W3q3qz/9k=
@@ -26,10 +26,6 @@ Other Products I used (affiliate links below)
 - EZCOO KVM Switch: <https://amzn.to/41GuWvb>
 - PoE Splitter: <https://amzn.to/41pxKeU>
 - Mini Monitor: <https://amzn.to/4ihjH1U>
-
-## Join the conversation
-
-<blockquote class="twitter-tweet" data-dnt="true" data-theme="dark">My MINI network RACKs are &quot;done&quot;.<a href="https://t.co/NPEz6Gi3ga">https://t.co/NPEz6Gi3ga</a> <a href="https://t.co/AYKtoATWtb">pic.twitter.com/AYKtoATWtb</a></p>&mdash; Techno Tim (@TechnoTimLive) <a href="https://twitter.com/TechnoTimLive/status/1891227742793765132?ref_src=twsrc%5Etfw">February 16, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## Links
 
