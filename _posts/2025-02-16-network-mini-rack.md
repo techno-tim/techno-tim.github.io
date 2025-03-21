@@ -43,6 +43,10 @@ Products in this Video (includes affiliate links)
 - Gigabit PoE Splitter with USB-C: <https://amzn.to/410n2vd>
 - Cat6 Keystone Couplers: <https://amzn.to/4hE49Fy>
 
+Other Items that will fit
+
+- Cloud Gateway Fiber: <https://store.ui.com/us/en/category/all-cloud-gateways/collections/cloud-gateway-fiber/products/ucg-fiber?a_aid=TechnoTim>
+
 3D Printed Items
 
 - Thank you to "Mauker" for creating many of the prints used in this video: <https://makerworld.com/en/@mauker>
