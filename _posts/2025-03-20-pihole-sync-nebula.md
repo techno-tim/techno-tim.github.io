@@ -38,6 +38,31 @@ sudo pihole setpassword
 
 Your password will instantly be updated.
 
+## Upgrading from Pi-Hole 5 + Gravity Sync
+
+> *Note: Pi-Hole 5 is not compatible with `gravity-sync` so if you're using Pi-Hole 5 or `gravity-sync` please follow this first*
+{: .prompt-warning }
+
+DO NOT UPGRADE TO PI-HOLE 6 YET
+
+Unistall `gravity-sync` by running:
+
+```bash
+gravity-sync purge
+```
+
+This should remove `gravity-sync`
+
+Personally I would reboot the server afterwards and run `gravity-sync` command afterwards to be sure it's fully remove.  You should get an error like `command not found: gravity-sync`, which means it's fully removed.
+
+Next I take a backup of your Pi-Hole instance and even export your config with Teleporter just to be sure.
+
+Upgrade to Pi-Hole 6.  Test it, reboot it, make sure it works.
+
+Do this for each Pi-Hole 5 instance you have.
+
+Then continue on with this tutorial.
+
 ## Instructions
 
 ssh into server.
