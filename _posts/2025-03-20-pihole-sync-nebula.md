@@ -45,7 +45,7 @@ Your password will instantly be updated.
 
 DO NOT UPGRADE TO PI-HOLE 6 YET
 
-Unistall `gravity-sync` by running:
+Uninstall `gravity-sync` by running:
 
 ```bash
 gravity-sync purge
