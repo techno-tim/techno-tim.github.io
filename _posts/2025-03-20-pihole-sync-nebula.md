@@ -102,8 +102,8 @@ Create our `.env` with our variables.
 Replace with your server IPs, passwords, timezone, and how frequently you want so run this sync job.
 
 ```bash
-PRIMARY=https://192.168.60.10|abc123
-REPLICAS=https://192.168.60.26|abc123,https://10.0.200.5|abc123,https://10.0.200.6|abc123
+PRIMARY="https://192.168.60.10|abc123"  # Be sure to add quotes if you have special characters
+REPLICAS="https://192.168.60.26|abc123,https://10.0.200.5|abc123,https://10.0.200.6|abc123" # Be sure to add quotes if you have special characters
 FULL_SYNC=false
 RUN_GRAVITY=false
 CRON=*/15 * * * *
