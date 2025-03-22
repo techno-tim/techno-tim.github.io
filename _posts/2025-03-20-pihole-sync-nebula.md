@@ -88,7 +88,7 @@ nano compose.yaml
 
 Inside of our `compose.yaml` paste:
 
-```bash
+```yaml
 ---
 services:
   nebula-sync:
