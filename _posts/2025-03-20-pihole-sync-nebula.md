@@ -63,6 +63,10 @@ Do this for each Pi-Hole 5 instance you have.
 
 Then continue on with this tutorial.
 
+## Install Docker
+
+To install docker, see [this post](/posts/docker-compose-install/)
+
 ## Instructions
 
 ssh into server.
@@ -150,13 +154,22 @@ Check container logs
 docker logs nebula-sync
 ```
 
+If you don't want to use Docker Compose and want to use the Docker CLI you can run this command:
+
+```bash
+docker run \
+  --name=nebula-sync \  
+  --env-file .env \
+  ghcr.io/lovelaze/nebula-sync:latest
+```
+
 ### Blocklists
 
 Here is the list of blocklists that I use.  Use these with caution and prepare to add exceptions for sites you may need.
 
 Most of these were collected from <https://firebog.net/>
 
-```list
+```bash
 https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
 
 https://mirror1.malwaredomains.com/files/justdomains
