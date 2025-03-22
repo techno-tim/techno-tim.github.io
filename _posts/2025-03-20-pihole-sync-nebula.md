@@ -40,7 +40,7 @@ Your password will instantly be updated.
 
 ## Upgrading from Pi-Hole 5 + Gravity Sync
 
-> *Note: Pi-Hole 5 is not compatible with `gravity-sync` so if you're using Pi-Hole 5 or `gravity-sync` please follow this first*
+> *Note: Pi-Hole 6 is not compatible with `gravity-sync` so if you're using Pi-Hole 5 or `gravity-sync` please follow this first*
 {: .prompt-warning }
 
 DO NOT UPGRADE TO PI-HOLE 6 YET
