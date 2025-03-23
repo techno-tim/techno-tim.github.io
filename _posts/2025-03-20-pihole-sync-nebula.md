@@ -94,6 +94,7 @@ services:
   nebula-sync:
     image: ghcr.io/lovelaze/nebula-sync:latest
     container_name: nebula-sync
+    restart: unless-stopped
     env_file: .env
 ```
 
@@ -158,6 +159,7 @@ If you don't want to use Docker Compose and want to use the Docker CLI you can r
 
 ```bash
 docker run \
+  --restart unless-stopped \
   --name=nebula-sync \  
   --env-file .env \
   ghcr.io/lovelaze/nebula-sync:latest
