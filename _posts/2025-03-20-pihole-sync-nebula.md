@@ -223,6 +223,10 @@ https://v.firebog.net/hosts/RPiList-Phishing.txt
 https://raw.githubusercontent.com/AssoEchap/stalkerware-indicators/master/generated/hosts
 ```
 
+## Join the conversation
+
+<blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">Tired of the Internet going down when you reboot your Pi-Hole server?<a href="https://t.co/sKfXYhK8qf">https://t.co/sKfXYhK8qf</a> <a href="https://t.co/skFjb1sVMd">pic.twitter.com/skFjb1sVMd</a></p>&mdash; Techno Tim (@TechnoTimLive) <a href="https://twitter.com/TechnoTimLive/status/1903141385735188712?ref_src=twsrc%5Etfw">March 21, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ## Links
 
 🛍️ Check out the new Merch Shop at <https://l.technotim.live/shop>

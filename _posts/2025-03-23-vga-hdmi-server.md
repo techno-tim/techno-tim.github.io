@@ -31,6 +31,10 @@ Here are the 10 adapters I tested with my Supermicro servers. Most of these work
 | Onten          | ✅    | ✅    | ✅      | ✅      | $9.99  | <https://amzn.to/4kHwc90>             | Worked fine, comes with cables needed        |
 | JideTech       | ❌    | ❌    | ❌      | ❌      | $45.99 | <https://amzn.to/4bSycat>             | This one didn't work for me even though the Amazon reviews said it worked for others |
 
+## Join the conversation
+
+<blockquote class="twitter-tweet" data-dnt="true" data-theme="dark">I tested 10 VGA to HDMI adapters with my Homelab servers so that you don&#39;t have to.<a href="https://t.co/UrwOcF3L4C">https://t.co/UrwOcF3L4C</a></p>&mdash; Techno Tim (@TechnoTimLive) <a href="https://twitter.com/TechnoTimLive/status/1903834329962197384?ref_src=twsrc%5Etfw">March 23, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ## Links
 
 🛍️ Check out the new Merch Shop at <https://l.technotim.live/shop>

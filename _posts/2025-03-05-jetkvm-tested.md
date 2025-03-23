@@ -27,6 +27,10 @@ Other Products I used (affiliate links below)
 - PoE Splitter: <https://amzn.to/41pxKeU>
 - Mini Monitor: <https://amzn.to/4ihjH1U>
 
+## Join the conversation
+
+<blockquote class="twitter-tweet" data-dnt="true" data-theme="dark">I received my JetKVM from backing it on Kickstarter and I wanted to find out if it delivers on all of its many promises it made during their campaign.<br><br>SPOILER ALERT: It&#39;s awesome!<a href="https://t.co/XNYzj3NpCA">https://t.co/XNYzj3NpCA</a> <a href="https://t.co/6P9WzsoE4U">pic.twitter.com/6P9WzsoE4U</a></p>&mdash; Techno Tim (@TechnoTimLive) <a href="https://twitter.com/TechnoTimLive/status/1897320959306293549?ref_src=twsrc%5Etfw">March 5, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ## Links
 
 🛍️ Check out the new Merch Shop at <https://l.technotim.live/shop>
