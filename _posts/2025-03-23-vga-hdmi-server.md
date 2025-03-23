@@ -20,16 +20,16 @@ Here are the 10 adapters I tested with my Supermicro servers. Most of these work
 
 | Adapter         | BIOS | OS   | PiKVM | JetKVM | Price  | Link                                | Notes                                      |
 |----------------|------|------|--------|--------|--------|-------------------------------------|--------------------------------------------|
-| MINI           | ✅    | ✅    | ✅      | ✅      | $10.55 | <https://amzn.to/4kFIAq3>             |                                            |
-| UGREEN         | ❌    | ❌    | ❌      | ❌      | $9.99  | <https://amzn.to/4bGRhfL>             | This is HDMI in to VGA out                |
-| Fairikabe      | ✅    | ✅    | ✅      | ✅      | $9.99  | <https://amzn.to/41Gopj3>             | Best value, 3.5 mm analog                 |
-| Foinnex        | ✅    | ✅    | ✅      | ✅      | $15.99 | <https://amzn.to/4hstfGx>             |                                            |
-| Foinnex block  | ✅    | ✅    | ✅      | ✅      | $13.99 | <https://amzn.to/4imRLds>             |                                            |
-| Cable Matters  | ✅    | ✅    | ✅      | ✅      | $21.99 | <https://amzn.to/4iLqSzM>             | Best quality and USB chip for audio.  Check return policy though, they might not have one!       |
-| Tendak         | ❌    | ❌    | ❌      | ❌      | $13.99 | <https://amzn.to/4kBXlu5>             | This is HDMI in to VGA out                |
-| Benfei         | ✅    | ✅    | ✅      | ✅      | $12.59 | <https://amzn.to/4bSetI0>             | Best value and USB chip for audio         |
-| Onten          | ✅    | ✅    | ✅      | ✅      | $9.99  | <https://amzn.to/4kHwc90>             |                                            |
-| JideTech       | ❌    | ❌    | ❌      | ❌      | $45.99 | <https://amzn.to/4bSycat>             |                                            |
+| MINI           | ✅    | ✅    | ✅      | ✅      | $10.55 | <https://amzn.to/4kFIAq3>             | First one I tested, worked, white, need to buy your own VGA cables     |
+| UGREEN         | ❌    | ❌    | ❌      | ❌      | $9.99  | <https://amzn.to/4bGRhfL>             | This is HDMI in to VGA out                   |
+| Fairikabe      | ✅    | ✅    | ✅      | ✅      | $9.99  | <https://amzn.to/41Gopj3>             | Best value, 3.5 mm analog                    |
+| Foinnex        | ✅    | ✅    | ✅      | ✅      | $15.99 | <https://amzn.to/4hstfGx>             | Worked dine, no VGA cabled needed            |
+| Foinnex block  | ✅    | ✅    | ✅      | ✅      | $13.99 | <https://amzn.to/4imRLds>             | Most unique, very compact                    |
+| Cable Matters  | ✅    | ✅    | ✅      | ✅      | $21.99 | <https://amzn.to/4iLqSzM>             | Best quality and USB chip for audio.  Check return policy though, they might not have one!    |
+| Tendak         | ❌    | ❌    | ❌      | ❌      | $13.99 | <https://amzn.to/4kBXlu5>             | This is HDMI in to VGA out                   |
+| Benfei         | ✅    | ✅    | ✅      | ✅      | $12.59 | <https://amzn.to/4bSetI0>             | Best value and USB chip for audio, my choice |
+| Onten          | ✅    | ✅    | ✅      | ✅      | $9.99  | <https://amzn.to/4kHwc90>             | Worked fine, comes with cables needed        |
+| JideTech       | ❌    | ❌    | ❌      | ❌      | $45.99 | <https://amzn.to/4bSycat>             | This one didn't work for me even though the Amazon reviews said it worked for others |
 
 ## Links
 
