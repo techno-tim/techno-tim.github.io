@@ -22,13 +22,107 @@ Today, I expand my home server with more NVMe storage, put a Samsung 990 Pro and
 
 I decided to test each drive to be sure that I wasn't being throttled and that I was getting the highest speeds my motherboard would support.
 
+## Finding Your Drives
+
+First install the `nvme` utility
+
+```console
+sudo apt update
+sudo apt install nvme-cli
+```
+
+Then we can list all of our NVMe drives
+
+```console
+nvme list
+```
+
+You should see something like this
+
+```console
+Node                  Generic               SN                   Model                                    Namespace Usage                      Format           FW Rev
+--------------------- --------------------- -------------------- ---------------------------------------- --------- -------------------------- ---------------- --------
+/dev/nvme2n1          /dev/ng2n1            PHOC331301K11111     INTEL SSDPEK1A118GA                      1         118.41  GB / 118.41  GB    512   B +  0 B   U5110550
+/dev/nvme1n1          /dev/ng1n1            1846E1D22222         CT500P1SSD8                              1         500.11  GB / 500.11  GB    512   B +  0 B   P3CR013
+/dev/nvme0n1          /dev/ng0n1            S3EWNX0JA0YYYYY      Samsung SSD 960 PRO 512GB                1         512.11  GB / 512.11  GB    512   B +  0 B   4B6QCXP7
+```
+
+From there you can also check to see which lane it's in
+
+```console
+lspci | grep -i nvme
+```
+
+You should see something like this
+
+```console
+01:00.0 Non-Volatile memory controller: Samsung Electronics Co Ltd NVMe SSD Controller SM961/PM961/SM963
+04:00.0 Non-Volatile memory controller: Micron/Crucial Technology P1 NVMe PCIe SSD (rev 03)
+69:00.0 Non-Volatile memory controller: Intel Corporation Optane NVME SSD P1600X Series
+```
+
+## Checking PCIe Speeds
+
+Then you can check to see what each drive is negotiated at (update with your lane assignment)
+
+```console
+lspci -s 68:00.0 -vv | grep -iE 'LnkCap|LnkSta'
+```
+
+You should see something like this (keep in mind, mine shows PCIe Gen 3 speeds)
+
+```console
+  LnkCap: Port #0, Speed 8GT/s, Width x4, ASPM L1, Exit Latency L1 unlimited
+  LnkSta: Speed 8GT/s, Width x4
+  LnkCap2: Supported Link Speeds: 2.5-8GT/s, Crosslink- Retimer- 2Retimers- DRS-
+  LnkSta2: Current De-emphasis Level: -3.5dB, EqualizationComplete+ EqualizationPhase1+
+```
+
+## Checking Drive Temps and Throttling
+
+If you want to see the SMART log to check for throttling and temps you can run (updated with your drive path)
+
+```console
+nvme smart-log /dev/ng0n1
+```
+
+You should see something like this
+
+```bash
+Smart Log for NVME device:ng0n1 namespace-id:ffffffff
+critical_warning			: 0
+temperature				: 32°C (305 Kelvin)
+available_spare				: 100%
+available_spare_threshold		: 10%
+percentage_used				: 8%
+endurance group critical warning summary: 0
+Data Units Read				: 127385723 (65.22 TB)
+Data Units Written			: 186302952 (95.39 TB)
+host_read_commands			: 1823391462
+host_write_commands			: 3042922234
+controller_busy_time			: 8341
+power_cycles				: 4402
+power_on_hours				: 11430
+unsafe_shutdowns			: 348
+media_errors				: 0
+num_err_log_entries			: 13652
+Warning Temperature Time		: 0
+Critical Composite Temperature Time	: 0
+Temperature Sensor 1           : 32°C (305 Kelvin)
+Temperature Sensor 2           : 37°C (310 Kelvin)
+Thermal Management T1 Trans Count	: 0
+Thermal Management T2 Trans Count	: 0
+Thermal Management T1 Total Time	: 0
+Thermal Management T2 Total Time	: 0
+```
+
 ### Sequential Performance
 
 Here is the command I ran to test sequential read and writes.  Keep in mind that although the drives and adapter support PCIe gen 4, my board only supports gen 3.
 
 ### Sequential Read/Write (Large Files, 1MiB Block Size)
 
-```bash
+```console
 fio --name=seqreadwrite \
     --filename=/dev/nvme3n1 \
     --ioengine=libaio \
@@ -53,7 +147,7 @@ Random 4K tests were using 4k block size, random read/write (`randrw`).
 
 ### Random Read/Write 4KiB (IOPS/Small Files Test)
 
-```bash
+```console
 fio --name=random4k \
     --filename=/dev/nvme3n1 \
     --ioengine=libaio \
@@ -78,7 +172,7 @@ I then wanted to test latency, since that's where Intel Optane drives are claime
 
 ### Latency Focused Test (1 I/O at a Time, 4KiB Random Read)
 
-```bash
+```console
 fio --name=latency_test \
     --filename=/dev/nvme3n1 \
     --ioengine=sync \
