@@ -48,7 +48,7 @@ If you want to check the small blocks values for your pool:
 List pool
 
 ```shell
-zpool list -v pond # change based on your pool name
+zpool list -v test-1 # change based on your pool name
 ```
 
 ## Setting Small Blocks & Record Size
@@ -71,20 +71,20 @@ You always want to be sure that your record size > small blocks size, otherwise 
 Get value
 
 ```shell
-zfs get special_small_blocks pond -r # change based on your pool name
+zfs get special_small_blocks test-1 -r # change based on your pool name
 ```
 
 Set value
 
 ```shell
-zfs set special_small_blocks=64k pond # change based on your pool name and the small block value you want to use
+zfs set special_small_blocks=64k test-1 # change based on your pool name and the small block value you want to use
 ```
 
 If you want to use something higher than 128K you would do something like this
 
 ```console
-zfs set recordsize=256K yourpool/yourdataset
-zfs set special_small_blocks=128K yourpool/yourdataset
+zfs set recordsize=256K test-1/yourdataset
+zfs set special_small_blocks=128K test-1/yourdataset
 ```
 
 ## My Test results
