@@ -195,6 +195,8 @@ services:
       DB_STORAGE_TYPE: ${DB_STORAGE_TYPE:-SSD}
     volumes:
       - ${DB_DATA_LOCATION}:/var/lib/postgresql/data
+    env_file:
+      - .env
     restart: always
 
 volumes:
