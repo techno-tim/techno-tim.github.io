@@ -174,6 +174,10 @@ From here, you’re ready to start building workflows.
 
 If you are looking to combine this stack with an AI/LLM stack, [this post](/posts/ai-stack-tutorial/)
 
+## Join the conversation
+
+<blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">Just published a full tutorial on self-hosting n8n with Docker on Ubuntu.<br>From setup to building workflows with Google Sheets, Ollama, and Discord - this guide walks you through everything.<a href="https://t.co/cUK7wtNFe2">https://t.co/cUK7wtNFe2</a> <a href="https://t.co/4yKMd8mJvU">pic.twitter.com/4yKMd8mJvU</a></p>&mdash; Techno Tim (@TechnoTimLive) <a href="https://twitter.com/TechnoTimLive/status/1943700350768169206?ref_src=twsrc%5Etfw">July 11, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ## Links
 
 🛍️ Check out the new Merch Shop at <https://l.technotim.live/shop>

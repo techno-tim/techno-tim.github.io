@@ -356,6 +356,10 @@ immich back up docs
 
 - <https://immich.app/docs/administration/backup-and-restore/>
 
+## Join the conversation
+
+<blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">Just launched: My guide to self‑hosted photo backups with Immich!<br><br>- Docker<br>- Optional GPU acceleration<br>- Mount external NAS shares<br>- Full control over your library (no more vendor lock‑in!<br><br>Check it out! <a href="https://t.co/kAZGPZWPBg">https://t.co/kAZGPZWPBg</a> <a href="https://t.co/nrSFvb6WZz">pic.twitter.com/nrSFvb6WZz</a></p>&mdash; Techno Tim (@TechnoTimLive) <a href="https://twitter.com/TechnoTimLive/status/1934278938324279667?ref_src=twsrc%5Etfw">June 15, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ## Links
 
 🛍️ Check out the new Merch Shop at <https://l.technotim.live/shop>
