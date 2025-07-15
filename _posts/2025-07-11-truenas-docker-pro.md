@@ -266,7 +266,7 @@ docker network create -d macvlan \
   iot_macvlan
 ```
 
-> *Warning: macvlan works best with physical interfaces like `eth0`. It can work with bonded or VLAN interfaces too, but compatibility depends on your network setup and driver support.*
+> *Warning: macvlan works best with physical interfaces like `eth0`. It can work with bonded or VLAN interfaces too, but compatibility depends on your network setup and driver support. (I am using a bond without ay issues but worth mentioning in case you run into issues)*
 {: .prompt-warning }
 
 > *Danger: If you assign the same IP to more than one container or device, it will cause an IP conflict and could take your Home Assistant or host offline.*
