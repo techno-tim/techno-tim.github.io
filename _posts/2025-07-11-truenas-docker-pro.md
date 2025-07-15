@@ -34,6 +34,8 @@ Then create the `compose.yaml` file
 nano compose.yaml
 ```
 
+### drawio `docker-compose.yml`
+
 ```yaml
 ---
 services:
@@ -66,6 +68,8 @@ Then create the `compose.yaml` file
 nano compose.yaml
 ```
 
+### nginx `docker-compose.yml`
+
 ```yaml
 ---
 services:
@@ -89,6 +93,8 @@ inside of there create an `index.html` file
 cd html
 nano index.html
 ```
+
+### nginx `index.html`
 
 ```html
 <!DOCTYPE html>
@@ -130,6 +136,8 @@ Then create the `compose.yaml` file
 nano compose.yaml
 ```
 
+### code-server `docker-compose.yml`
+
 ```yaml
 ---
 services:
@@ -163,9 +171,133 @@ PUID=950
 PGID=950
 TZ=America/Chicago
 ```
+
 ---
 
 Then add it to your `includes:` while creating a Custom App based on YAML.
+
+## Bonus: Run Home Assistant with macvlan and Traefik on TrueNAS
+
+If you’re self-hosting Home Assistant on TrueNAS, and you want:
+
+- Native device discovery on your LAN (or VLAN!)
+- Reverse proxy access through your domain
+- A clean, Compose-managed setup
+
+Then this combo of **Docker Compose + macvlan + Traefik** is exactly what you’re looking for.
+
+> *Note: This setup is designed for users with a single NIC.*  I have it connected to a bond in my homelab, which works fine, but I just want to keep it simple for this example. Also, you can host your Home Assistant on one network or VLAN while having your TrueNAS on another (that's how I do it).
+{: .prompt-info }
+
+---
+
+### Why macvlan?
+
+By using `macvlan`, you give your Home Assistant container a **LAN IP**, just like a physical device. This enables:
+
+- Proper device discovery (e.g., Google Home, Shelly, Zigbee)
+- Direct network communication with other LAN devices
+- Better compatibility with smart home protocols
+
+---
+
+### What You Need
+
+Assumptions for this setup:
+
+- Your NIC is `eth0`
+- Your LAN subnet is `192.168.20.0/24`
+- Your gateway is `192.168.20.1`
+- You want Home Assistant to have IP `192.168.20.202`
+- You're using **Traefik** as a reverse proxy (but optional)
+
+---
+
+### `docker-compose.yml`
+
+```yaml
+services:
+  homeassistant:
+    container_name: homeassistant
+    image: ghcr.io/home-assistant/home-assistant:stable
+    pull_policy: always
+    restart: unless-stopped
+    env_file:
+      - .env
+    security_opt:
+      - no-new-privileges:true
+    networks:
+      iot_macvlan:
+        ipv4_address: 192.168.20.202
+      traefik:
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+      - /mnt/storage0/home-assistant/config:/config
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.homeassistant.rule=Host(`homeassistant.yourdomain.com`)"
+      - "traefik.http.routers.homeassistant.entrypoints=https"
+      - "traefik.http.routers.homeassistant.tls=true"
+      - "traefik.http.routers.homeassistant.tls.certresolver=cloudflare"
+      - "traefik.http.services.homeassistant.loadbalancer.server.port=8123"
+
+networks:
+  iot_macvlan:
+    external: true
+  traefik:
+    external: true
+```
+
+> *Note: The `iot_macvlan` and `traefik` networks must already exist as external Docker networks. You can create the `macvlan` network using the command below.*
+{: .prompt-info }
+
+---
+
+### Create the macvlan Network
+
+You only need to create the macvlan network once:
+
+```bash
+docker network create -d macvlan \
+  --subnet=192.168.20.0/24 \
+  --gateway=192.168.20.1 \
+  -o parent=eth0 \
+  iot_macvlan
+```
+
+> *Warning: macvlan works best with physical interfaces like `eth0`. It can work with bonded or VLAN interfaces too, but compatibility depends on your network setup and driver support.*
+{: .prompt-warning }
+
+> *Danger: If you assign the same IP to more than one container or device, it will cause an IP conflict and could take your Home Assistant or host offline.*
+{: .prompt-danger }
+
+---
+
+### macvlan + Traefik
+
+| Setting               | Value                             | Description                                             |
+|----------------------|-----------------------------------|---------------------------------------------------------|
+| **Interface**         | `eth0`                            | Your physical NIC  or bond that has access to tagged packets      |
+| **Subnet**            | `192.168.20.0/24`                 | Matches your LAN range                                  |
+| **Gateway**           | `192.168.20.1`                    | Gateway IP                              |
+| **Home Assistant IP** | `192.168.20.202`                  | LAN IP assigned to the container                        |
+| **Domain**            | `homeassistant.yourdomain.com`   | Used in your Traefik rule                               |
+| **Networks**          | `iot_macvlan`, `traefik`          | Must exist as external networks, created with the docker command                        |
+
+---
+
+### Results
+
+With this setup:
+
+- Home Assistant has a dedicated IP on your LAN
+- You can access it securely via Traefik + HTTPS
+- Everything is defined in Compose.
+
+## Join the conversation
+
+<blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">&quot;Keep your data close… but your apps closer.&quot;<br>My new setup runs Docker apps on TrueNAS the clean way — using Compose, .env, and no hacks.<a href="https://t.co/RQ90braua3">https://t.co/RQ90braua3</a> <a href="https://t.co/NNvDO0zn0O">pic.twitter.com/NNvDO0zn0O</a></p>&mdash; Techno Tim (@TechnoTimLive) <a href="https://twitter.com/TechnoTimLive/status/1945145367072309294?ref_src=twsrc%5Etfw">July 15, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## Links
 
