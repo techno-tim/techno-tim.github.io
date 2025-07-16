@@ -112,6 +112,7 @@ N8N_HOST=n8n.example.com
 N8N_PROTOCOL=https
 WEBHOOK_URL=https://n8n.example.com/
 N8N_SECURE_COOKIE=false
+NODE_ENV=production
 
 # Traefik (optional)
 TRAEFIK_ROUTER_NAME=n8n
