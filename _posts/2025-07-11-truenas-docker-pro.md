@@ -295,7 +295,7 @@ With this setup:
 - You can access it securely via Traefik + HTTPS
 - Everything is defined in Compose.
 
-## Bonus: Fix Custom Icons to TrueNAS Custom Apps
+## Bonus: Fix Custom Icons for TrueNAS Custom Apps
 
 By default, when you deploy a custom app on TrueNAS using your own Docker Compose, the app will likely show up with a missing or blank icon in the Apps UI.
 
@@ -307,7 +307,7 @@ Fortunately, you can fix that by editing the app’s metadata file.
 
 Edit the following file on your TrueNAS system:
 
-```
+```bash
 /mnt/.ix-apps/app_configs/YOUR_APP_NAME/metadata.yaml
 ```
 
