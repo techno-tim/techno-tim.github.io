@@ -295,6 +295,66 @@ With this setup:
 - You can access it securely via Traefik + HTTPS
 - Everything is defined in Compose.
 
+## Bonus: Fix Custom Icons to TrueNAS Custom Apps
+
+By default, when you deploy a custom app on TrueNAS using your own Docker Compose, the app will likely show up with a missing or blank icon in the Apps UI.
+
+Fortunately, you can fix that by editing the app’s metadata file.
+
+---
+
+### Update the App Metadata
+
+Edit the following file on your TrueNAS system:
+
+```
+/mnt/.ix-apps/app_configs/YOUR_APP_NAME/metadata.yaml
+```
+
+Add the `icon:` property inside the `metadata:` block. For example:
+
+```yaml
+custom_app: true
+human_version: 1.0.0_custom
+metadata:
+  app_version: custom
+  capabilities: []
+  description: This is a custom app where user can use his/her own docker compose
+    file for deploying services
+  home: ''
+  host_mounts: []
+  maintainers: []
+  name: custom-app
+  run_as_context: []
+  sources: []
+  title: Custom App
+  train: stable
+  version: 1.0.0
+  icon: https://media.sys.truenas.net/apps/homepage/icons/icon.png
+migrated: false
+notes: null
+portals: {}
+version: 1.0.0
+```
+
+> *Note: You will need to redeploy the app and refresh the UI for the icon to show up.*
+{: .prompt-info }
+
+---
+
+### Mount App Configs in Code Server
+
+If you’re using Code Server like I am, you can easily edit app configs like this by mounting the app config directory into your container:
+
+```yaml
+volumes:
+  - /mnt/.ix-apps/app_configs/:/ix-apps
+```
+
+This makes `/ix-apps` accessible from inside Code Server, so you can quickly edit metadata, YAML, or other settings.
+
+---
+
 ## Join the conversation
 
 <blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">&quot;Keep your data close… but your apps closer.&quot;<br>My new setup runs Docker apps on TrueNAS the clean way — using Compose, .env, and no hacks.<a href="https://t.co/RQ90braua3">https://t.co/RQ90braua3</a> <a href="https://t.co/NNvDO0zn0O">pic.twitter.com/NNvDO0zn0O</a></p>&mdash; Techno Tim (@TechnoTimLive) <a href="https://twitter.com/TechnoTimLive/status/1945145367072309294?ref_src=twsrc%5Etfw">July 15, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
