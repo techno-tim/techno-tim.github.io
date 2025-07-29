@@ -353,6 +353,59 @@ volumes:
 
 This makes `/ix-apps` accessible from inside Code Server, so you can quickly edit metadata, YAML, or other settings.
 
+## Bonus: Embed Icons with Base64 (No Internet Needed)
+
+If you're customizing app metadata on **TrueNAS SCALE**, you can embed an image **directly** using a Base64-encoded **Data URL**. This is perfect if you don’t want your system to rely on the internet just to load icons.
+
+> *This method was originally shared in this excellent TrueNAS forum thread: [How to change icon of custom app](https://forums.truenas.com/t/how-to-change-icon-of-custom-app/24789/25?page=2)*
+{: .prompt-info }
+
+---
+
+### Option 1: Encode via Command Line (JPEG Example)
+
+**Linux:**
+
+```shell
+base64 -w 0 your-image.jpg > output.txt
+```
+
+**macOS:**
+
+```shell
+base64 your-image.jpg > output.txt
+```
+
+Then embed it into your app's metadata like this:
+
+```yaml
+icon: 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD...'
+```
+
+> Replace `...` with the full Base64 string from `output.txt`
+
+---
+
+### Option 2: Use a Web Tool
+
+Use [**base64.guru/converter/encode/image**](https://base64.guru/converter/encode/image)
+
+- Upload your image (JPEG/PNG/etc.)
+- Choose **“Data URI”** as the output format
+- Copy the full result into your app’s metadata:
+
+```yaml
+icon: 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD...'
+```
+
+---
+
+### Why This Is Useful
+
+- Keeps apps fully **offline-capable**
+- Avoids pulling icons from GitHub, Docker Hub, or external URLs
+- Ideal for **self-contained deployments** on isolated or air-gapped TrueNAS SCALE systems
+
 ---
 
 ## Join the conversation
