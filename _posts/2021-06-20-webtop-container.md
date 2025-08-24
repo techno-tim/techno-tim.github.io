@@ -21,7 +21,7 @@ See [this post](/posts/docker-compose-install/) on how to install `docker` and `
 
 ## Webtop
 
-`docker-compose.yml` and `.env` can be found [here](https://github.com/techno-tim/launchpad/tree/master/docker/webtop)
+`docker-compose.yml` and `.env` can be found [here](https://github.com/timothystewart6/tree/master/docker/webtop)
 
 ## Files and folders
 

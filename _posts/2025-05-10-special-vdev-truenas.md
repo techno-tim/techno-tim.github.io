@@ -16,7 +16,7 @@ Curious about how a special metadata VDEV can boost ZFS performance, especially 
 
 ## Testing
 
-I created a test script that you can find here: <https://github.com/techno-tim/zfs-tools>
+I created a test script that you can find here: <https://github.com/timothystewart6/zfs-tools>
 
 The test script will try to create a pool based on 3 drives. `HDD1`, `HDD2`, and `NVME_SPECIAL`.  You can modify these to match your disk Ids.
 

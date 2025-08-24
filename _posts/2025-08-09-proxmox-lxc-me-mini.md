@@ -22,7 +22,7 @@ While it’s marketed for storage, pairing it with Proxmox and LXC containers tu
 
 ## Unboxing & First Impressions
 
-The ME Mini has a smaller than the Beelink EQ14, and has an internal power supply instead of an external brick. 
+The ME Mini has a smaller than the Beelink EQ14, and has an internal power supply instead of an external brick.
 
 Ports:
 

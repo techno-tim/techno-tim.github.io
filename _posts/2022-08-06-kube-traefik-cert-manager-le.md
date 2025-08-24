@@ -27,7 +27,7 @@ If you need to install a new kubernetes cluster you can use my [Ansible Playbook
 
 ## Resources
 
-> You can find all of the resources for this tutorial [here](https://github.com/techno-tim/launchpad/tree/master/kubernetes/traefik-cert-manager)
+> You can find all of the resources for this tutorial [here](https://github.com/timothystewart6/tree/master/kubernetes/traefik-cert-manager)
 {: .prompt-info }
 
 ### Helm
@@ -73,7 +73,7 @@ version.BuildInfo{Version:"v3.8.0", GitCommit:"d14138609b01886f544b2025f5000351c
 
 ## Traefik
 
-> These [resources](https://github.com/techno-tim/launchpad/tree/master/kubernetes/traefik-cert-manager) are in the `launchpad/kubernetes/traefik-cert-manager/traefik/` folder
+> These [resources](https://github.com/timothystewart6/tree/master/kubernetes/traefik-cert-manager) are in the `launchpad/kubernetes/traefik-cert-manager/traefik/` folder
 {: .prompt-info }
 
 Add repo
@@ -214,7 +214,7 @@ Visit `https://traefik.local.example.com`
 
 ## Sample Workload
 
-> These [resources](https://github.com/techno-tim/launchpad/tree/master/kubernetes/traefik-cert-manager) are in the `launchpad/kubernetes/traefik-cert-manager/nginx/` folder
+> These [resources](https://github.com/timothystewart6/tree/master/kubernetes/traefik-cert-manager) are in the `launchpad/kubernetes/traefik-cert-manager/nginx/` folder
 {: .prompt-info }
 
 ```bash
@@ -231,7 +231,7 @@ kubectl apply -f nginx
 
 ## cert-manager
 
-> These [resources](https://github.com/techno-tim/launchpad/tree/master/kubernetes/traefik-cert-manager) are in the `launchpad/kubernetes/traefik-cert-manager/cert-manager/` folder
+> These [resources](https://github.com/timothystewart6/tree/master/kubernetes/traefik-cert-manager) are in the `launchpad/kubernetes/traefik-cert-manager/cert-manager/` folder
 {: .prompt-info }
 
 Add repo

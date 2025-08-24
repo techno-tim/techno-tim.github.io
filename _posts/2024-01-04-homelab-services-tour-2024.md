@@ -168,7 +168,7 @@ Sites:
 
 - [Home Assistant](https://github.com/home-assistant/core)
 - [Scrypted](https://github.com/koush/scrypted)
-- [Broadlink Control](https://github.com/techno-tim/techno-broadlink)
+- [Broadlink Control](https://github.com/timothystewart6/techno-broadlink)
 
 Tutorials:
 
@@ -186,7 +186,7 @@ Sites:
 
 Sites:
 
-- [littlelink-server](https://github.com/techno-tim/littlelink-server)
+- [littlelink-server](https://github.com/timothystewart6/littlelink-server)
 
 Tutorials:
 

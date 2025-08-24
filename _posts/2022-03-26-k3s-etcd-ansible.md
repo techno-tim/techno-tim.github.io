@@ -25,10 +25,10 @@ You'll need to be sure you have Ansible installed on your machine and that it is
 
 Second, you'll need to provision the VMs. Here's an easy way to create [perfect Proxmox templates with cloud image and cloud init](/posts/cloud-init-cloud-image/) and a video if you need.
 
-Next, you'll need to fork and clone [the repo](https://github.com/techno-tim/k3s-ansible).While you're at it, give it a ⭐ too :).
+Next, you'll need to fork and clone [the repo](https://github.com/timothystewart6/k3s-ansible).While you're at it, give it a ⭐ too :).
 
 ```bash
-git clone https://github.com/techno-tim/k3s-ansible
+git clone https://github.com/timothystewart6/k3s-ansible
 ```
 
 Next you'll want to create a local copy of `ansible.example.cfg`.
@@ -37,7 +37,7 @@ Next you'll want to create a local copy of `ansible.example.cfg`.
 cp ansible.example.cfg ansible.cfg
 ```
 
-You'll want to adapt this to suit your needs however the defaults should work without issue.If you're looking for the old defaults, you can see them in this [PR that remove the file](https://github.com/techno-tim/k3s-ansible/blob/96c49c864e3b9427e8eb59a6f420f032db51e831/ansible.cfg).
+You'll want to adapt this to suit your needs however the defaults should work without issue.If you're looking for the old defaults, you can see them in this [PR that remove the file](https://github.com/timothystewart6/k3s-ansible/blob/96c49c864e3b9427e8eb59a6f420f032db51e831/ansible.cfg).
 
 Next you'll need to install some requirements for `ansible`
 
@@ -47,7 +47,7 @@ ansible-galaxy install -r ./collections/requirements.yml
 
 Next, you'll want to `cd` into the repo and copy the `sample` directory within the `inventory` directory.
 
-(Be sure you're using the [latest template](https://github.com/techno-tim/k3s-ansible/blob/master/inventory/sample/group_vars/all.yml))
+(Be sure you're using the [latest template](https://github.com/timothystewart6/k3s-ansible/blob/master/inventory/sample/group_vars/all.yml))
 
 ```bash
 cp -R inventory/sample inventory/my-cluster
@@ -76,7 +76,7 @@ Edit `inventory/my-cluster/group_vars/all.yml`  to your liking.See comments inli
 
 It's best to start using these args, and optionally include `traefik` if you want it installed with `k3s` however I would recommend installing it later with `helm`
 
-It's best to start with the [default values in the repo](https://github.com/techno-tim/k3s-ansible/blob/master/inventory/sample/group_vars/all.yml).
+It's best to start with the [default values in the repo](https://github.com/timothystewart6/k3s-ansible/blob/master/inventory/sample/group_vars/all.yml).
 
 ```yaml
 # change these to your liking, the only required are: --disable servicelb, --tls-san {{ apiserver_endpoint }}
@@ -188,7 +188,7 @@ See here for steps to deploy [rancher](/posts/rancher-ha-install/#install)
 
 ## Troubleshooting
 
-Be sure to see [this post on](https://github.com/techno-tim/k3s-ansible/discussions/20) how to troubleshoot common problems
+Be sure to see [this post on](https://github.com/timothystewart6/k3s-ansible/discussions/20) how to troubleshoot common problems
 
 ## Links
 

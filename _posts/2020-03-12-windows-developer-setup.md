@@ -106,7 +106,7 @@ mkdir code && cd code
 Be sure you choose the right repo before cloning, this is just an example
 
 ```bash
-git clone git@github.com:techno-tim/techno-boto-discord.git
+git clone git@github.com:timothystewart6/techno-boto-discord.git
 ```
 
 ```bash

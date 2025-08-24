@@ -21,7 +21,7 @@ To install docker, see [this post](/posts/docker-compose-install/)
 
 ## Docker commands
 
-[Source files](https://github.com/techno-tim/launchpad/tree/master/docker/custom-image)
+[Source files](https://github.com/timothystewart6/tree/master/docker/custom-image)
 
 build image
 

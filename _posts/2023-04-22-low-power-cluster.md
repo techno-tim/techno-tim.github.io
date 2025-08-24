@@ -78,7 +78,7 @@ Now, for the most difficult part of this all, installing kubernetes.I bet you’
 
 So to install Kubernetes I can do it one of a million different ways and on top of that I have my distributions to choose from.I ended up going with [k3s](https://k3s.io/) because I like how lightweight that it is as well as the active community behind it.
 
-As far as installation goes I could spend the 20+ hours doing it manually but I’ve already created an [Ansible playbook that can do this all for me](https://github.com/techno-tim/k3s-ansible).It does everything that I need to give me a high availability Kubernetes cluster, with both an HA Kubernetes API as well as an HA service load balancer.With three nodes I can lose 1 node and everything will still function normally.
+As far as installation goes I could spend the 20+ hours doing it manually but I’ve already created an [Ansible playbook that can do this all for me](https://github.com/timothystewart6/k3s-ansible).It does everything that I need to give me a high availability Kubernetes cluster, with both an HA Kubernetes API as well as an HA service load balancer.With three nodes I can lose 1 node and everything will still function normally.
 
 After setting my IP address it was off to the races. 🚀
 

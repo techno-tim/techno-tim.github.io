@@ -32,7 +32,7 @@ Renovate works with many different source control providers like GitHub, GitLab,
 
 We’re going to go with GitHub and the GitHub app because it’s super simple to set up. First we need to create a github repo, this is as simple as going to GitHub and well, [creating a new repo](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository). After naming your repo you’ll want to choose whether to make this public or private. The choice is up to you and Renovate will work either way.
 
-> *Note: if you want to see the repo I created in this post and video, you can check it out here [technotim-k8s-renovate](https://github.com/techno-tim/k8s-renovate)*
+> *Note: if you want to see the repo I created in this post and video, you can check it out here [technotim-k8s-renovate](https://github.com/timothystewart6/k8s-renovate)*
 {: .prompt-info }
 
 ![GitHub Repo!](/assets/img/posts/github-create-repo.webp){: lqip="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAYACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP4g3hg/se3YwQs7XV0xfyUDjiJTuchvMD78kMqsu35ZMMyn6FK6dre6k/ldK34/1sea371nfVf0+6e+3z6Wydif3F/75H+FIu77v7z/AP/Z" }
@@ -90,7 +90,7 @@ Now that we have a simple Kubernetes deployment committed to our repo, we should
 
 If you ever decide to change your mind and remove this app for your repo, you can go to the repo settings and remove this app at any time.
 
-Once the Renovate bot is authorized and installed, it won’t actually do anything until you merge a Pull Request that will be opened by the bot on your repo!  [This pull request](https://github.com/techno-tim/k8s-renovate/pull/1) is a special “onboarding” pull request that will show you what the bot has detected along with adding a default config for the bot. Renovate won’t take any further actions until you accept and merge this pull request. Once you have reviewed this PR, you can merge it in and it will activate the bot on your repo.
+Once the Renovate bot is authorized and installed, it won’t actually do anything until you merge a Pull Request that will be opened by the bot on your repo!  [This pull request](https://github.com/timothystewart6/k8s-renovate/pull/1) is a special “onboarding” pull request that will show you what the bot has detected along with adding a default config for the bot. Renovate won’t take any further actions until you accept and merge this pull request. Once you have reviewed this PR, you can merge it in and it will activate the bot on your repo.
 
 ![Renovate in GitHub Marketplace!](/assets/img/posts/github-marketplace-renovate.webp){: lqip="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAYACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP5+vCvwH1Hxv4c/4S5/E1nBFdHV4P7Mu9KmuyY9L1bVLQs99FfWs8cskluXVrdYtquoOTH83yOccXYjBZpPAvL4YpQ9iniamPlSqSdWnTqXdNYGtfl9o1eVZt8qd1e0eZYnD4aUqcqMpWaaUPcjG6vZJTStaWq5Vqlbrfx19HvUdk+w6KNjMuBe6ywG0kYDM24jjq3J6nmvppYmEW4tTum07JdHb+Y7FiMO0n9X3SetSfX5n//Z" }
 _Add the Renovate app to your repo_
@@ -137,13 +137,13 @@ If you're using FluxCD ([as shown here](/posts/flux-devops-gitops)) you also wan
 
 Once we’ve made that change to our config locally, we’ll then commit that change and push it up.
 
-Once we push this change up and it scans our repo, we can see a new [issue that was created](https://github.com/techno-tim/k8s-renovate/issues/2)!  This is a special type of issue that Renovate creates for us and it is kind of like a dashboard for all of our dependencies.
+Once we push this change up and it scans our repo, we can see a new [issue that was created](https://github.com/timothystewart6/k8s-renovate/issues/2)!  This is a special type of issue that Renovate creates for us and it is kind of like a dashboard for all of our dependencies.
 
 If we look at this issue, it’s telling us that it detected a new dependency that’s related to Kubernetes and that it detected not only our nginx tag but also our Kubernetes API version for the deployment. Super awesome. If you like you can choose to disable this dashboard issue in your config, but I would recommend keeping it.
 
 If we look at the logs again from Renovate, we can also see that it detected our nginx deployment and that it created a PR for us to review. Now for the actual PR. We should see a new PR that was opened from the Renovate bot!
 
-If we [look at this PR](https://github.com/techno-tim/k8s-renovate/pull/3) we can see the proposed changes, it's suggesting that we change  our nginx container image from `1.24` to `1.25` which is the current latest tag. If we’re happy with the change we can merge it into our code with just a click.
+If we [look at this PR](https://github.com/timothystewart6/k8s-renovate/pull/3) we can see the proposed changes, it's suggesting that we change  our nginx container image from `1.24` to `1.25` which is the current latest tag. If we’re happy with the change we can merge it into our code with just a click.
 
 ## How to Handle “latest” tag
 
@@ -227,7 +227,7 @@ primary:
 ```
 {: file="mysql/values.yml" }
 
-If you don’t specify the repository it will default to Docker hub, but as you can see here I am getting this chart from Bitnami. After we commit and push this up, we should now see a new dependency type of helm and since it detected an update we should also see a [pull request](https://github.com/techno-tim/k8s-renovate/pull/4) to update this file!
+If you don’t specify the repository it will default to Docker hub, but as you can see here I am getting this chart from Bitnami. After we commit and push this up, we should now see a new dependency type of helm and since it detected an update we should also see a [pull request](https://github.com/timothystewart6/k8s-renovate/pull/4) to update this file!
 
 ![Renovate helm charts!](/assets/img/posts/renovate-github-helm-mysql.webp){: lqip="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAYACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP4qLrUNHl0bTbB/CXhiW/ntILGfVJLPV47+R0UW/wBtNxF4gFobraBuY6V5MzfvZYDJuL/RpQ1tBWT5tdXffS9+vRNK1kkkkjx/ZV/aqosfi1BS5vYWwvsrX+C7wrr8nS/tlNJ2UkebSRRiRwY4hh2GFRQowTwoAAC+gwMDtWnLHsvuOrnl/NL73/mf/9k=" }
 _updating helm charts with Renovate are just as easy!_

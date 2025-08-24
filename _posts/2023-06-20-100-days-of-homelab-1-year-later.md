@@ -25,7 +25,7 @@ Over the last year I learned so much about HomeLabbing, but specifically Docker,
 
 ## Bots & Website
 
-I started out by creating a [Twitter bot](https://twitter.com/100DaysHomeLab) that would retweet everyone who was joining the challenge. I felt like this was important to build and grow a community around HomeLab and a simple way to bringing people together. This is a self-hosted bot that I wrote myself, and even [open sourced the code](https://github.com/techno-tim/techno-boto-twitter)!
+I started out by creating a [Twitter bot](https://twitter.com/100DaysHomeLab) that would retweet everyone who was joining the challenge. I felt like this was important to build and grow a community around HomeLab and a simple way to bringing people together. This is a self-hosted bot that I wrote myself, and even [open sourced the code](https://github.com/timothystewart6/techno-boto-twitter)!
 
 I also decided to create a [100 Days of HomeLab website](https://100daysofhomelab.com/) so people could learn more about the challenge and even showcase some of the creators I worked with to make this possible. Huge thanks to all creators, featured on this page or not, who joined in on the fun!
 
@@ -64,7 +64,7 @@ I made lots of changes to my HomeLab over the past year, from a pile of machines
 
 ## Automation
 
-I also got to dive into [Ansible](https://www.ansible.com/) deeper than ever before! Ansible is a powerful tool for automating things, especially infrastructure. I automated things like updates, configuration of my machines, password changes, and even building a fully [HA Kubernetes cluster with k3s](https://github.com/techno-tim/k3s-ansible). The time spent learning this tool has already paid back in dividends compared to the time I would put into doing these task manually or even worse, pile up tech debt because I would skip them.
+I also got to dive into [Ansible](https://www.ansible.com/) deeper than ever before! Ansible is a powerful tool for automating things, especially infrastructure. I automated things like updates, configuration of my machines, password changes, and even building a fully [HA Kubernetes cluster with k3s](https://github.com/timothystewart6/k3s-ansible). The time spent learning this tool has already paid back in dividends compared to the time I would put into doing these task manually or even worse, pile up tech debt because I would skip them.
 
 I also picked up [Terraform too](https://www.terraform.io/)! Terraform is one of those things you may not ever learn until you need to. It's definitely been eye opening building up new infrastructure with Terraform. Every time I see a form or a UI to create some sort of Infra, I automatically think about how I can automate this with Terraform... but thinking and doing are two different things and I need to start doing this more often. I've already figured out how to apply [Terraform to Cloudflare DNS](https://www.youtube.com/watch?v=FmYvrxYvBP0) and will be applying to more systems in the future.
 

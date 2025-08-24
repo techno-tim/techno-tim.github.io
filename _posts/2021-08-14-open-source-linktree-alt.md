@@ -28,7 +28,7 @@ cd littlelink-server
 touch docker-compose.yml
 ```
 
-If you're using Docker compose (see the [GitHub repo](https://github.com/techno-tim/littlelink-server) for the latest file)
+If you're using Docker compose (see the [GitHub repo](https://github.com/timothystewart6/littlelink-server) for the latest file)
 
 `docker-compose.yml`
 
@@ -37,7 +37,7 @@ If you're using Docker compose (see the [GitHub repo](https://github.com/techno-
 version: '3'
 services:
   little-link:
-    image: ghcr.io/techno-tim/littlelink-server:latest
+    image: ghcr.io/timothystewart6/littlelink-server:latest
     container_name: littlelink-server
     environment:
       - META_TITLE=Techno Tim
@@ -113,7 +113,7 @@ docker run -d \
   -e TIKTOK='https://l.technotim.live/tiktok' \
   -e KIT='https://l.technotim.live/gear' \
   --restart unless-stopped \
-  ghcr.io/techno-tim/littlelink-server:latest
+  ghcr.io/timothystewart6/littlelink-server:latest
 ```
 
 If you're using Rancher, Portainer, Open Media Vault, Unraid, or anything else with a GUI, just copy and paste the environment variables above into the form on the web page.

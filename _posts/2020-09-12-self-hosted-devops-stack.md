@@ -28,19 +28,19 @@ So you're a software engineer or a developer who wants to self-host your own cod
 
 See the app here:
 
-[https://github.com/techno-tim/techno-react](https://github.com/techno-tim/techno-react)
+[https://github.com/timothystewart6/techno-react](https://github.com/timothystewart6/techno-react)
 
 Docker file:
 
-[https://github.com/techno-tim/techno-react/blob/master/Dockerfile](https://github.com/techno-tim/techno-react/blob/master/Dockerfile)
+[https://github.com/timothystewart6/techno-react/blob/master/Dockerfile](https://github.com/timothystewart6/techno-react/blob/master/Dockerfile)
 
 Kubernetes deployment yaml
 
-[https://github.com/techno-tim/techno-react/blob/master/kubernetes/deployment.yaml](https://github.com/techno-tim/techno-react/blob/master/kubernetes/deployment.yaml)
+[https://github.com/timothystewart6/techno-react/blob/master/kubernetes/deployment.yaml](https://github.com/timothystewart6/techno-react/blob/master/kubernetes/deployment.yaml)
 
 nginx config for your react application
 
-[https://github.com/techno-tim/techno-react/blob/master/nginx.conf](https://github.com/techno-tim/techno-react/blob/master/nginx.conf)
+[https://github.com/timothystewart6/techno-react/blob/master/nginx.conf](https://github.com/timothystewart6/techno-react/blob/master/nginx.conf)
 
 `pbcopy` for WSL on Windows
 

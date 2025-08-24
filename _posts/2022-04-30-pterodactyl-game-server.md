@@ -261,7 +261,7 @@ sudo reboot
 
 ## Kubernetes
 
-If you are looking to install the Pterodactyl Panel on kubernetes, [see the manifests here](https://github.com/techno-tim/launchpad/tree/master/kubernetes/pterodactyl).
+If you are looking to install the Pterodactyl Panel on kubernetes, [see the manifests here](https://github.com/timothystewart6/tree/master/kubernetes/pterodactyl).
 
 ## Links
 
