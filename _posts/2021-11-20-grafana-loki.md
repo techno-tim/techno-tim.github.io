@@ -233,7 +233,7 @@ Read more about LogQL [here](https://grafana.com/docs/loki/latest/logql/)
 
 ## ARM CPU (Raspberry Pi)
 
-There is a workaround for using this with ARM CPUs. Credit to [AndreiTelteu](https://github.com/AndreiTelteu) for finding this [in this discussion](https://github.com/techno-tim/techno-tim.github.io/discussions/97)
+There is a workaround for using this with ARM CPUs. Credit to [AndreiTelteu](https://github.com/AndreiTelteu) for finding this [in this discussion](https://github.com/timothystewart6/techno-tim.github.io/discussions/97)
 
 delete `/etc/docker/daemon.json`
 

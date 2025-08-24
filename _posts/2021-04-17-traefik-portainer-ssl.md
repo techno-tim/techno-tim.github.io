@@ -37,7 +37,7 @@ chmod 600 acme.json
 touch traefik.yml
 ```
 
-`traefik.yml` can be found [here](https://github.com/techno-tim/techno-tim.github.io/tree/master/reference_files/traefik-portainer-ssl/traefik)
+`traefik.yml` can be found [here](https://github.com/timothystewart6/techno-tim.github.io/tree/master/reference_files/traefik-portainer-ssl/traefik)
 
 create docker network
 
@@ -49,7 +49,7 @@ docker network create proxy
 touch docker-compose.yml
 ```
 
-`docker-compose.yml` can be found [here](https://github.com/techno-tim/techno-tim.github.io/tree/master/reference_files/traefik-portainer-ssl/traefik)
+`docker-compose.yml` can be found [here](https://github.com/timothystewart6/techno-tim.github.io/tree/master/reference_files/traefik-portainer-ssl/traefik)
 
 ```bash
 cd data
@@ -69,7 +69,7 @@ touch docker-compose.yml
 mkdir data
 ```
 
-`docker-compose.yml` can be found [here](https://github.com/techno-tim/techno-tim.github.io/tree/master/reference_files/traefik-portainer-ssl/portainer)
+`docker-compose.yml` can be found [here](https://github.com/timothystewart6/techno-tim.github.io/tree/master/reference_files/traefik-portainer-ssl/portainer)
 
 ### Generate Basic Auth Password
 
@@ -106,7 +106,7 @@ cd traefik/data
 nano config.yml
 ```
 
-`config.yml` [here](https://github.com/techno-tim/techno-tim.github.io/tree/master/reference_files/traefik-portainer-ssl/traefik)
+`config.yml` [here](https://github.com/timothystewart6/techno-tim.github.io/tree/master/reference_files/traefik-portainer-ssl/traefik)
 
 ```bash
 docker-compose up -d --force-recreate

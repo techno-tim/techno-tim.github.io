@@ -110,7 +110,7 @@ This will output the production site to `_site`
 
 This site already works with GitHub actions, just push it up and check the actions Tab.,
 
-For GitLab you can see the [pipeline I built for my own docs site here](https://github.com/techno-tim/techno-tim.github.io/blob/master/.gitlab-ci.yml#L18)
+For GitLab you can see the [pipeline I built for my own docs site here](https://github.com/timothystewart6/techno-tim.github.io/blob/master/.gitlab-ci.yml#L18)
 
 ## Building with Docker
 
@@ -174,7 +174,7 @@ See more post formatting rules on the [Jekyll site](https://jekyllrb.com/docs/po
 
 If you need some help with markdown, check out the [markdown cheat sheet](https://www.markdownguide.org/cheat-sheet/)
 
-I have lots of examples in my [documentation site repo](https://github.com/techno-tim/techno-tim.github.io/tree/master/_posts).Just click on the Raw button to see the code behind the page.
+I have lots of examples in my [documentation site repo](https://github.com/timothystewart6/techno-tim.github.io/tree/master/_posts).Just click on the Raw button to see the code behind the page.
 
 For more neat syntax for the Chirpy theme check their demo page on making posts <https://chirpy.cotes.page/posts/write-a-new-post/>
 

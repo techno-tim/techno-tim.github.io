@@ -28,9 +28,9 @@ See [this post](/posts/docker-compose-install/) on how to install `docker` and `
 
 `configuration.yml`,  `users_database.yml`, and `docker-compose.yml` can be found [here](https://github.com/timothystewart6/tree/master/docker/authelia)
 
-Example `heimdall` can be found here [here](https://github.com/techno-tim/techno-tim.github.io/tree/master/reference_files/authelia-traefik/heimdall)
+Example `heimdall` can be found here [here](https://github.com/timothystewart6/techno-tim.github.io/tree/master/reference_files/authelia-traefik/heimdall)
 
-Traefik configuration changes can be found  [here](https://github.com/techno-tim/techno-tim.github.io/tree/master/reference_files/authelia-traefik/traefik)
+Traefik configuration changes can be found  [here](https://github.com/timothystewart6/techno-tim.github.io/tree/master/reference_files/authelia-traefik/traefik)
 
 ## Generation a hashed password
 

@@ -429,7 +429,7 @@ Restart the stack
 docker compose up -d --force-recreate
 ```
 
-To see more examples of commonly used services check out [config.yml in the reference files](https://github.com/techno-tim/techno-tim.github.io/blob/master/reference_files/traefik-portainer-ssl/traefik/config.yml)
+To see more examples of commonly used services check out [config.yml in the reference files](https://github.com/timothystewart6/techno-tim.github.io/blob/master/reference_files/traefik-portainer-ssl/traefik/config.yml)
 
 ## Final Production Files
 
